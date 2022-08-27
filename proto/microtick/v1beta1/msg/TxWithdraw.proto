@@ -1,0 +1,55 @@
+syntax = "proto3";
+package microtick.v1beta1.msg;
+
+import "gogoproto/gogo.proto";
+import "cosmos/base/v1beta1/coin.proto";
+
+option go_package = "github.com/microtick/mtzone/x/microtick/msg";
+
+message TxWithdrawQuote {
+  
+  uint32 id = 1 [
+    (gogoproto.jsontag) = "id"
+  ];
+  
+  bytes requester = 2 [
+    (gogoproto.casttype) = "github.com/cosmos/cosmos-sdk/types.AccAddress",
+    (gogoproto.jsontag) = "requester"
+  ];
+  
+  string withdraw = 3 [
+    (gogoproto.jsontag) = "withdraw"
+  ];
+  
+}
+
+message WithdrawQuoteData {
+  
+  int64 time = 1 [
+    (gogoproto.jsontag) = "time"
+  ];
+  
+  string market = 2 [
+    (gogoproto.jsontag) = "market"
+  ];
+  
+  string duration = 3 [
+    (gogoproto.jsontag) = "duration"
+  ];
+  
+  cosmos.base.v1beta1.DecCoin consensus = 4 [
+    (gogoproto.nullable) = false,
+    (gogoproto.jsontag) = "consensus"
+  ];
+  
+  cosmos.base.v1beta1.DecCoin backing = 5 [
+    (gogoproto.nullable) = false,
+    (gogoproto.jsontag) = "backing"
+  ];
+  
+  cosmos.base.v1beta1.DecCoin commission = 6 [
+    (gogoproto.nullable) = false,
+    (gogoproto.jsontag) = "commission"
+  ];
+  
+}

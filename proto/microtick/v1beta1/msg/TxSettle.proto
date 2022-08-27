@@ -1,0 +1,90 @@
+syntax = "proto3";
+package microtick.v1beta1.msg;
+
+import "gogoproto/gogo.proto";
+import "cosmos/base/v1beta1/coin.proto";
+
+option go_package = "github.com/microtick/mtzone/x/microtick/msg";
+
+message TxSettleTrade {
+  
+  uint32 id = 1 [
+    (gogoproto.jsontag) = "id"
+  ];
+  
+  bytes requester = 2 [
+    (gogoproto.casttype) = "github.com/cosmos/cosmos-sdk/types.AccAddress",
+    (gogoproto.jsontag) = "requester"
+  ];
+   
+}
+
+message SettleLegData {
+  
+  uint32 leg_id = 1 [
+    (gogoproto.jsontag) = "leg_id"
+  ];
+  
+  bytes settle_account = 2 [
+    (gogoproto.casttype) = "github.com/cosmos/cosmos-sdk/types.AccAddress",
+    (gogoproto.jsontag) = "settle_account"
+  ];
+   
+  cosmos.base.v1beta1.DecCoin settle = 3 [
+    (gogoproto.nullable) = false,
+    (gogoproto.jsontag) = "settle"
+  ];
+  
+  bytes refund_account = 4 [
+    (gogoproto.casttype) = "github.com/cosmos/cosmos-sdk/types.AccAddress",
+    (gogoproto.jsontag) = "refund_account"
+  ];
+   
+  cosmos.base.v1beta1.DecCoin refund = 5 [
+    (gogoproto.nullable) = false,
+    (gogoproto.jsontag) = "refund"
+  ];
+  
+}
+
+message SettleTradeData {
+
+  int64 time = 1 [
+    (gogoproto.jsontag) = "time"
+  ];
+  
+  uint32 id = 2 [
+    (gogoproto.jsontag) = "id"
+  ];  
+  
+  cosmos.base.v1beta1.DecCoin final = 3 [
+    (gogoproto.nullable) = false,
+    (gogoproto.jsontag) = "final"
+  ];
+  
+  repeated SettleLegData legs = 4 [
+    (gogoproto.nullable) = false,
+    (gogoproto.jsontag) = "legs"
+  ];
+  
+  cosmos.base.v1beta1.DecCoin incentive = 5 [
+    (gogoproto.nullable) = false,
+    (gogoproto.jsontag) = "incentive"
+  ];
+  
+  bytes settler = 6 [
+    (gogoproto.casttype) = "github.com/cosmos/cosmos-sdk/types.AccAddress",
+    (gogoproto.jsontag) = "settler"
+  ];
+  
+  cosmos.base.v1beta1.DecCoin commission = 7 [
+    (gogoproto.nullable) = false,
+    (gogoproto.jsontag) = "commission"
+  ];
+  
+  cosmos.base.v1beta1.Coin reward = 8 [
+    (gogoproto.nullable) = false,
+    (gogoproto.jsontag) = "reward"
+  ];
+   
+}

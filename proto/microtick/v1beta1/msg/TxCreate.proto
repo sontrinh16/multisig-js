@@ -1,0 +1,71 @@
+syntax = "proto3";
+package microtick.v1beta1.msg;
+
+import "gogoproto/gogo.proto";
+import "cosmos/base/v1beta1/coin.proto";
+
+option go_package = "github.com/microtick/mtzone/x/microtick/msg";
+
+message TxCreateQuote {
+  
+  string market = 1 [
+    (gogoproto.jsontag) = "market"
+  ];
+  
+  string duration = 2 [
+    (gogoproto.jsontag) = "duration"
+  ];
+  
+  bytes provider = 3 [
+    (gogoproto.casttype) = "github.com/cosmos/cosmos-sdk/types.AccAddress",
+    (gogoproto.jsontag) = "provider"
+  ];
+  
+  string backing = 4 [
+    (gogoproto.jsontag) = "backing"
+  ];  
+  
+  string spot = 5 [
+    (gogoproto.jsontag) = "spot"
+  ];
+  
+  string ask = 6 [
+    (gogoproto.jsontag) = "ask"
+  ];
+  
+  string bid = 7 [
+    (gogoproto.jsontag) = "bid"
+  ];  
+  
+}
+
+message CreateQuoteData {
+  
+  int64 time = 1 [
+    (gogoproto.jsontag) = "time"
+  ];
+  
+  uint32 id = 2 [
+    (gogoproto.jsontag) = "id"
+  ];
+  
+  cosmos.base.v1beta1.DecCoin consensus = 3 [
+    (gogoproto.nullable) = false,
+    (gogoproto.jsontag) = "consensus"
+  ];  
+  
+  cosmos.base.v1beta1.DecCoin commission = 4 [
+    (gogoproto.nullable) = false,
+    (gogoproto.jsontag) = "commission"
+  ];  
+  
+  cosmos.base.v1beta1.Coin reward = 5 [
+    (gogoproto.nullable) = false,
+    (gogoproto.jsontag) = "reward"
+  ];
+  
+  string adjustment = 6 [
+    (gogoproto.jsontag) = "adjustment"
+  ];
+  
+}

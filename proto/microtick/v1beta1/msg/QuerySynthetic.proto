@@ -1,0 +1,84 @@
+syntax = "proto3";
+package microtick.v1beta1.msg;
+
+import "gogoproto/gogo.proto";
+import "cosmos/base/v1beta1/coin.proto";
+
+option go_package = "github.com/microtick/mtzone/x/microtick/msg";
+
+message QuerySyntheticRequest {
+  
+  string market = 1 [
+    (gogoproto.jsontag) = "market"
+  ];
+  
+  string duration = 2 [
+    (gogoproto.jsontag) = "duration"
+  ];
+  
+  uint32 offset = 3 [
+    (gogoproto.jsontag) = "offset"
+  ];
+  
+  uint32 limit = 4 [
+    (gogoproto.jsontag) = "limit"
+  ];
+  
+}
+
+message SyntheticQuote {
+  
+  cosmos.base.v1beta1.DecCoin spot = 5 [
+    (gogoproto.nullable) = false,
+    (gogoproto.jsontag) = "spot"
+  ];
+  
+  cosmos.base.v1beta1.DecCoin quantity = 6 [
+    (gogoproto.nullable) = false,
+    (gogoproto.jsontag) = "quantity"
+  ];
+  
+}
+
+message QuerySyntheticResponse {
+  
+  cosmos.base.v1beta1.DecCoin consensus = 1 [
+    (gogoproto.nullable) = false,
+    (gogoproto.jsontag) = "consensus"
+  ];
+
+  cosmos.base.v1beta1.DecCoin sum_backing = 2 [
+    (gogoproto.nullable) = false,
+    (gogoproto.jsontag) = "sum_backing"
+  ];
+  
+  cosmos.base.v1beta1.DecCoin sum_weight = 3 [
+    (gogoproto.nullable) = false,
+    (gogoproto.jsontag) = "sum_weight"
+  ];
+  
+  uint32 offset = 4 [
+    (gogoproto.jsontag) = "offset"
+  ];
+  
+  uint32 limit = 5 [
+    (gogoproto.jsontag) = "limit"
+  ];
+  
+  uint32 total_asks = 6 [
+    (gogoproto.jsontag) = "total_asks"
+  ];
+  
+  uint32 total_bids = 7 [
+    (gogoproto.jsontag) = "total_bids"
+  ];
+  
+  repeated SyntheticQuote asks = 8 [
+    (gogoproto.jsontag) = "asks"
+  ];
+  
+  repeated SyntheticQuote bids = 9 [
+    (gogoproto.jsontag) = "bids"
+  ];
+
+}

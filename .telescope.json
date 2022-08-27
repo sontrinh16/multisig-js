@@ -1,0 +1,21 @@
+{
+  "protoDirs": [
+    "./proto"
+  ],
+  "outPath": "./src/proto",
+  "options": {
+    "typingsFormat": {
+      "timestamp": "date",
+      "duration": "string"
+    },
+    "aminoEncoding": {
+      "enabled": true
+    },
+    "lcdClients": {
+      "enabled": false
+    },
+    "rpcClients": {
+      "enabled": false
+    }
+  }
+}
