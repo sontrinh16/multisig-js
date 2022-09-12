@@ -215,7 +215,10 @@ export declare namespace irishub {
             fromJSON(object: any): _368.Minter;
             toJSON(message: _368.Minter): unknown;
             fromPartial(object: {
-                lastUpdate?: Date;
+                lastUpdate?: {
+                    seconds?: any;
+                    nanos?: number;
+                };
                 inflationBase?: string;
             }): _368.Minter;
         };
@@ -236,7 +239,10 @@ export declare namespace irishub {
             toJSON(message: _367.GenesisState): unknown;
             fromPartial(object: {
                 minter?: {
-                    lastUpdate?: Date;
+                    lastUpdate?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     inflationBase?: string;
                 };
                 params?: {

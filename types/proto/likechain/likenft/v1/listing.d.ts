@@ -1,3 +1,4 @@
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { Long, DeepPartial } from "@osmonauts/helpers";
 export interface Listing {
@@ -5,14 +6,14 @@ export interface Listing {
     nftId: string;
     seller: string;
     price: Long;
-    expiration: Date;
+    expiration: Timestamp;
 }
 export interface ListingStoreRecord {
     classId: string;
     nftId: string;
     seller: Uint8Array;
     price: Long;
-    expiration: Date;
+    expiration: Timestamp;
 }
 export declare const Listing: {
     encode(message: Listing, writer?: _m0.Writer): _m0.Writer;

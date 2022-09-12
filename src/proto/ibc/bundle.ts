@@ -22,14 +22,14 @@ import * as _359 from "./lightclients/localhost/v1/localhost";
 import * as _360 from "./lightclients/solomachine/v1/solomachine";
 import * as _361 from "./lightclients/solomachine/v2/solomachine";
 import * as _362 from "./lightclients/tendermint/v1/tendermint";
-import * as _793 from "./applications/transfer/v1/tx.amino";
-import * as _794 from "./core/channel/v1/tx.amino";
-import * as _795 from "./core/client/v1/tx.amino";
-import * as _796 from "./core/connection/v1/tx.amino";
-import * as _797 from "./applications/transfer/v1/tx.registry";
-import * as _798 from "./core/channel/v1/tx.registry";
-import * as _799 from "./core/client/v1/tx.registry";
-import * as _800 from "./core/connection/v1/tx.registry";
+import * as _812 from "./applications/transfer/v1/tx.amino";
+import * as _813 from "./core/channel/v1/tx.amino";
+import * as _814 from "./core/client/v1/tx.amino";
+import * as _815 from "./core/connection/v1/tx.amino";
+import * as _816 from "./applications/transfer/v1/tx.registry";
+import * as _817 from "./core/channel/v1/tx.registry";
+import * as _818 from "./core/client/v1/tx.registry";
+import * as _819 from "./core/connection/v1/tx.registry";
 export namespace ibc {
   export namespace applications {
     export namespace transfer {
@@ -37,8 +37,8 @@ export namespace ibc {
         ..._340,
         ..._341,
         ..._342,
-        ..._793,
-        ..._797
+        ..._812,
+        ..._816
       };
       export const v2 = { ..._343
       };
@@ -50,8 +50,8 @@ export namespace ibc {
         ..._345,
         ..._346,
         ..._347,
-        ..._794,
-        ..._798
+        ..._813,
+        ..._817
       };
     }
     export namespace client {
@@ -59,8 +59,8 @@ export namespace ibc {
         ..._349,
         ..._350,
         ..._351,
-        ..._795,
-        ..._799
+        ..._814,
+        ..._818
       };
     }
     export namespace commitment {
@@ -72,8 +72,8 @@ export namespace ibc {
         ..._354,
         ..._355,
         ..._356,
-        ..._796,
-        ..._800
+        ..._815,
+        ..._819
       };
     }
     export namespace port {

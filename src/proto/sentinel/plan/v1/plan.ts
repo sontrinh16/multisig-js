@@ -3,15 +3,15 @@ import { Duration } from "../../../google/protobuf/duration";
 import { Status, statusFromJSON, statusToJSON } from "../../types/v1/status";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { toDuration, toTimestamp, Long, fromDuration, fromTimestamp, isSet, fromJsonTimestamp, DeepPartial } from "@osmonauts/helpers";
+import { Long, isSet, fromJsonTimestamp, fromTimestamp, DeepPartial } from "@osmonauts/helpers";
 export interface Plan {
   id: Long;
   provider: string;
   price: Coin[];
-  validity: string;
+  validity: Duration;
   bytes: string;
   status: Status;
-  statusAt: Date;
+  statusAt: Timestamp;
 }
 
 function createBasePlan(): Plan {
@@ -41,7 +41,7 @@ export const Plan = {
     }
 
     if (message.validity !== undefined) {
-      Duration.encode(toDuration(message.validity), writer.uint32(34).fork()).ldelim();
+      Duration.encode(message.validity, writer.uint32(34).fork()).ldelim();
     }
 
     if (message.bytes !== "") {
@@ -53,7 +53,7 @@ export const Plan = {
     }
 
     if (message.statusAt !== undefined) {
-      Timestamp.encode(toTimestamp(message.statusAt), writer.uint32(58).fork()).ldelim();
+      Timestamp.encode(message.statusAt, writer.uint32(58).fork()).ldelim();
     }
 
     return writer;
@@ -81,7 +81,7 @@ export const Plan = {
           break;
 
         case 4:
-          message.validity = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.validity = Duration.decode(reader, reader.uint32());
           break;
 
         case 5:
@@ -93,7 +93,7 @@ export const Plan = {
           break;
 
         case 7:
-          message.statusAt = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.statusAt = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -110,7 +110,7 @@ export const Plan = {
       id: isSet(object.id) ? Long.fromString(object.id) : Long.UZERO,
       provider: isSet(object.provider) ? String(object.provider) : "",
       price: Array.isArray(object?.price) ? object.price.map((e: any) => Coin.fromJSON(e)) : [],
-      validity: isSet(object.validity) ? String(object.validity) : undefined,
+      validity: isSet(object.validity) ? Duration.fromJSON(object.validity) : undefined,
       bytes: isSet(object.bytes) ? String(object.bytes) : "",
       status: isSet(object.status) ? statusFromJSON(object.status) : 0,
       statusAt: isSet(object.statusAt) ? fromJsonTimestamp(object.statusAt) : undefined
@@ -131,7 +131,7 @@ export const Plan = {
     message.validity !== undefined && (obj.validity = message.validity);
     message.bytes !== undefined && (obj.bytes = message.bytes);
     message.status !== undefined && (obj.status = statusToJSON(message.status));
-    message.statusAt !== undefined && (obj.statusAt = message.statusAt.toISOString());
+    message.statusAt !== undefined && (obj.statusAt = fromTimestamp(message.statusAt).toISOString());
     return obj;
   },
 
@@ -143,7 +143,7 @@ export const Plan = {
     message.validity = object.validity ?? undefined;
     message.bytes = object.bytes ?? "";
     message.status = object.status ?? 0;
-    message.statusAt = object.statusAt ?? undefined;
+    message.statusAt = object.statusAt !== undefined && object.statusAt !== null ? Timestamp.fromPartial(object.statusAt) : undefined;
     return message;
   }
 

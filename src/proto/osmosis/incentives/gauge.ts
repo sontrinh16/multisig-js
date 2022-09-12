@@ -3,7 +3,7 @@ import { Coin } from "../../cosmos/base/v1beta1/coin";
 import { Timestamp } from "../../google/protobuf/timestamp";
 import { Duration } from "../../google/protobuf/duration";
 import * as _m0 from "protobufjs/minimal";
-import { toTimestamp, Long, fromTimestamp, isSet, fromJsonTimestamp, DeepPartial } from "@osmonauts/helpers";
+import { Long, isSet, fromJsonTimestamp, fromTimestamp, DeepPartial } from "@osmonauts/helpers";
 export interface Gauge {
   /** unique ID of a Gauge */
   id: Long;
@@ -27,7 +27,7 @@ export interface Gauge {
   coins: Coin[];
 
   /** distribution start time */
-  startTime: Date;
+  startTime: Timestamp;
 
   /** number of epochs distribution will be done */
   numEpochsPaidOver: Long;
@@ -39,7 +39,7 @@ export interface Gauge {
   distributedCoins: Coin[];
 }
 export interface LockableDurationsInfo {
-  lockableDurations: string[];
+  lockableDurations: Duration[];
 }
 
 function createBaseGauge(): Gauge {
@@ -74,7 +74,7 @@ export const Gauge = {
     }
 
     if (message.startTime !== undefined) {
-      Timestamp.encode(toTimestamp(message.startTime), writer.uint32(42).fork()).ldelim();
+      Timestamp.encode(message.startTime, writer.uint32(42).fork()).ldelim();
     }
 
     if (!message.numEpochsPaidOver.isZero()) {
@@ -118,7 +118,7 @@ export const Gauge = {
           break;
 
         case 5:
-          message.startTime = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.startTime = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 6:
@@ -167,7 +167,7 @@ export const Gauge = {
       obj.coins = [];
     }
 
-    message.startTime !== undefined && (obj.startTime = message.startTime.toISOString());
+    message.startTime !== undefined && (obj.startTime = fromTimestamp(message.startTime).toISOString());
     message.numEpochsPaidOver !== undefined && (obj.numEpochsPaidOver = (message.numEpochsPaidOver || Long.UZERO).toString());
     message.filledEpochs !== undefined && (obj.filledEpochs = (message.filledEpochs || Long.UZERO).toString());
 
@@ -186,7 +186,7 @@ export const Gauge = {
     message.isPerpetual = object.isPerpetual ?? false;
     message.distributeTo = object.distributeTo !== undefined && object.distributeTo !== null ? QueryCondition.fromPartial(object.distributeTo) : undefined;
     message.coins = object.coins?.map(e => Coin.fromPartial(e)) || [];
-    message.startTime = object.startTime ?? undefined;
+    message.startTime = object.startTime !== undefined && object.startTime !== null ? Timestamp.fromPartial(object.startTime) : undefined;
     message.numEpochsPaidOver = object.numEpochsPaidOver !== undefined && object.numEpochsPaidOver !== null ? Long.fromValue(object.numEpochsPaidOver) : Long.UZERO;
     message.filledEpochs = object.filledEpochs !== undefined && object.filledEpochs !== null ? Long.fromValue(object.filledEpochs) : Long.UZERO;
     message.distributedCoins = object.distributedCoins?.map(e => Coin.fromPartial(e)) || [];

@@ -1,4 +1,5 @@
 import { DateCriteria } from "./types";
+import { Timestamp } from "../../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { Long, DeepPartial } from "@osmonauts/helpers";
 /** Basket represents a basket in state. */
@@ -60,7 +61,7 @@ export interface BasketBalance {
      * batch_start_date is the start date of the batch. This field is used
      * to create an index which is used to remove the oldest credits first.
      */
-    batchStartDate: Date;
+    batchStartDate: Timestamp;
 }
 export declare const Basket: {
     encode(message: Basket, writer?: _m0.Writer): _m0.Writer;

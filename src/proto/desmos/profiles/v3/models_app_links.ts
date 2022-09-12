@@ -1,6 +1,6 @@
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { toTimestamp, fromTimestamp, isSet, fromJsonTimestamp, DeepPartial, Long } from "@osmonauts/helpers";
+import { isSet, fromJsonTimestamp, fromTimestamp, DeepPartial, Long } from "@osmonauts/helpers";
 
 /**
  * ApplicationLinkState defines if an application link is in the following
@@ -94,10 +94,10 @@ export interface ApplicationLink {
   result: Result;
 
   /** CreationTime represents the time in which the link was created */
-  creationTime: Date;
+  creationTime: Timestamp;
 
   /** ExpirationTime represents the time in which the link will expire */
-  expirationTime: Date;
+  expirationTime: Timestamp;
 }
 
 /**
@@ -210,11 +210,11 @@ export const ApplicationLink = {
     }
 
     if (message.creationTime !== undefined) {
-      Timestamp.encode(toTimestamp(message.creationTime), writer.uint32(50).fork()).ldelim();
+      Timestamp.encode(message.creationTime, writer.uint32(50).fork()).ldelim();
     }
 
     if (message.expirationTime !== undefined) {
-      Timestamp.encode(toTimestamp(message.expirationTime), writer.uint32(58).fork()).ldelim();
+      Timestamp.encode(message.expirationTime, writer.uint32(58).fork()).ldelim();
     }
 
     return writer;
@@ -250,11 +250,11 @@ export const ApplicationLink = {
           break;
 
         case 6:
-          message.creationTime = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.creationTime = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 7:
-          message.expirationTime = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.expirationTime = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -285,8 +285,8 @@ export const ApplicationLink = {
     message.state !== undefined && (obj.state = applicationLinkStateToJSON(message.state));
     message.oracleRequest !== undefined && (obj.oracleRequest = message.oracleRequest ? OracleRequest.toJSON(message.oracleRequest) : undefined);
     message.result !== undefined && (obj.result = message.result ? Result.toJSON(message.result) : undefined);
-    message.creationTime !== undefined && (obj.creationTime = message.creationTime.toISOString());
-    message.expirationTime !== undefined && (obj.expirationTime = message.expirationTime.toISOString());
+    message.creationTime !== undefined && (obj.creationTime = fromTimestamp(message.creationTime).toISOString());
+    message.expirationTime !== undefined && (obj.expirationTime = fromTimestamp(message.expirationTime).toISOString());
     return obj;
   },
 
@@ -297,8 +297,8 @@ export const ApplicationLink = {
     message.state = object.state ?? 0;
     message.oracleRequest = object.oracleRequest !== undefined && object.oracleRequest !== null ? OracleRequest.fromPartial(object.oracleRequest) : undefined;
     message.result = object.result !== undefined && object.result !== null ? Result.fromPartial(object.result) : undefined;
-    message.creationTime = object.creationTime ?? undefined;
-    message.expirationTime = object.expirationTime ?? undefined;
+    message.creationTime = object.creationTime !== undefined && object.creationTime !== null ? Timestamp.fromPartial(object.creationTime) : undefined;
+    message.expirationTime = object.expirationTime !== undefined && object.expirationTime !== null ? Timestamp.fromPartial(object.expirationTime) : undefined;
     return message;
   }
 

@@ -1,4 +1,5 @@
 import { Any } from "../../../google/protobuf/any";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { Long, DeepPartial } from "@osmonauts/helpers";
 /** Report contains the data of a generic report */
@@ -16,7 +17,7 @@ export interface Report {
     /** Target of the report */
     target: Any;
     /** Time in which the report was created */
-    creationDate: Date;
+    creationDate: Timestamp;
 }
 /** UserTarget contains the data of a report about a user */
 export interface UserTarget {

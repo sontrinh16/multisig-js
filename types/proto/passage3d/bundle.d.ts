@@ -109,9 +109,18 @@ export declare namespace passage3d {
                 fromPartial(object: {
                     params?: {
                         airdropEnabled?: boolean;
-                        airdropStartTime?: Date;
-                        durationUntilDecay?: string;
-                        durationOfDecay?: string;
+                        airdropStartTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        durationUntilDecay?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        durationOfDecay?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         claimDenom?: string;
                     };
                 }): _540.QueryParamsResponse;
@@ -191,9 +200,18 @@ export declare namespace passage3d {
                 toJSON(message: _539.Params): unknown;
                 fromPartial(object: {
                     airdropEnabled?: boolean;
-                    airdropStartTime?: Date;
-                    durationUntilDecay?: string;
-                    durationOfDecay?: string;
+                    airdropStartTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    durationUntilDecay?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    durationOfDecay?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     claimDenom?: string;
                 }): _539.Params;
             };
@@ -209,9 +227,18 @@ export declare namespace passage3d {
                     };
                     params?: {
                         airdropEnabled?: boolean;
-                        airdropStartTime?: Date;
-                        durationUntilDecay?: string;
-                        durationOfDecay?: string;
+                        airdropStartTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        durationUntilDecay?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        durationOfDecay?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         claimDenom?: string;
                     };
                     claimRecords?: {

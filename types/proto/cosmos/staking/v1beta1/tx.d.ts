@@ -1,6 +1,7 @@
 import { Description, CommissionRates } from "./staking";
 import { Any } from "../../../google/protobuf/any";
 import { Coin } from "../../base/v1beta1/coin";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
 /** MsgCreateValidator defines a SDK message for creating a new validator. */
@@ -56,7 +57,7 @@ export interface MsgBeginRedelegate {
 }
 /** MsgBeginRedelegateResponse defines the Msg/BeginRedelegate response type. */
 export interface MsgBeginRedelegateResponse {
-    completionTime: Date;
+    completionTime: Timestamp;
 }
 /**
  * MsgUndelegate defines a SDK message for performing an undelegation from a
@@ -69,7 +70,7 @@ export interface MsgUndelegate {
 }
 /** MsgUndelegateResponse defines the Msg/Undelegate response type. */
 export interface MsgUndelegateResponse {
-    completionTime: Date;
+    completionTime: Timestamp;
 }
 export declare const MsgCreateValidator: {
     encode(message: MsgCreateValidator, writer?: _m0.Writer): _m0.Writer;

@@ -6,7 +6,7 @@ import { MerkleRoot } from "../../../core/commitment/v1/commitment";
 import { SignedHeader } from "../../../../tendermint/types/types";
 import { ValidatorSet } from "../../../../tendermint/types/validator";
 import * as _m0 from "protobufjs/minimal";
-import { toDuration, fromDuration, isSet, DeepPartial, toTimestamp, fromTimestamp, fromJsonTimestamp, bytesFromBase64, base64FromBytes, Long } from "@osmonauts/helpers";
+import { isSet, DeepPartial, fromJsonTimestamp, bytesFromBase64, fromTimestamp, base64FromBytes, Long } from "@osmonauts/helpers";
 
 /**
  * ClientState from Tendermint tracks the current validator set, latest height,
@@ -20,13 +20,13 @@ export interface ClientState {
    * duration of the period since the LastestTimestamp during which the
    * submitted headers are valid for upgrade
    */
-  trustingPeriod: string;
+  trustingPeriod: Duration;
 
   /** duration of the staking unbonding period */
-  unbondingPeriod: string;
+  unbondingPeriod: Duration;
 
   /** defines how much new (untrusted) header's Time can drift into the future. */
-  maxClockDrift: string;
+  maxClockDrift: Duration;
 
   /** Block height when the client was frozen due to a misbehaviour */
   frozenHeight: Height;
@@ -67,7 +67,7 @@ export interface ConsensusState {
    * timestamp that corresponds to the block height in which the ConsensusState
    * was stored.
    */
-  timestamp: Date;
+  timestamp: Timestamp;
 
   /** commitment root (i.e app hash) */
   root: MerkleRoot;
@@ -141,15 +141,15 @@ export const ClientState = {
     }
 
     if (message.trustingPeriod !== undefined) {
-      Duration.encode(toDuration(message.trustingPeriod), writer.uint32(26).fork()).ldelim();
+      Duration.encode(message.trustingPeriod, writer.uint32(26).fork()).ldelim();
     }
 
     if (message.unbondingPeriod !== undefined) {
-      Duration.encode(toDuration(message.unbondingPeriod), writer.uint32(34).fork()).ldelim();
+      Duration.encode(message.unbondingPeriod, writer.uint32(34).fork()).ldelim();
     }
 
     if (message.maxClockDrift !== undefined) {
-      Duration.encode(toDuration(message.maxClockDrift), writer.uint32(42).fork()).ldelim();
+      Duration.encode(message.maxClockDrift, writer.uint32(42).fork()).ldelim();
     }
 
     if (message.frozenHeight !== undefined) {
@@ -197,15 +197,15 @@ export const ClientState = {
           break;
 
         case 3:
-          message.trustingPeriod = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.trustingPeriod = Duration.decode(reader, reader.uint32());
           break;
 
         case 4:
-          message.unbondingPeriod = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.unbondingPeriod = Duration.decode(reader, reader.uint32());
           break;
 
         case 5:
-          message.maxClockDrift = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.maxClockDrift = Duration.decode(reader, reader.uint32());
           break;
 
         case 6:
@@ -245,9 +245,9 @@ export const ClientState = {
     return {
       chainId: isSet(object.chainId) ? String(object.chainId) : "",
       trustLevel: isSet(object.trustLevel) ? Fraction.fromJSON(object.trustLevel) : undefined,
-      trustingPeriod: isSet(object.trustingPeriod) ? String(object.trustingPeriod) : undefined,
-      unbondingPeriod: isSet(object.unbondingPeriod) ? String(object.unbondingPeriod) : undefined,
-      maxClockDrift: isSet(object.maxClockDrift) ? String(object.maxClockDrift) : undefined,
+      trustingPeriod: isSet(object.trustingPeriod) ? Duration.fromJSON(object.trustingPeriod) : undefined,
+      unbondingPeriod: isSet(object.unbondingPeriod) ? Duration.fromJSON(object.unbondingPeriod) : undefined,
+      maxClockDrift: isSet(object.maxClockDrift) ? Duration.fromJSON(object.maxClockDrift) : undefined,
       frozenHeight: isSet(object.frozenHeight) ? Height.fromJSON(object.frozenHeight) : undefined,
       latestHeight: isSet(object.latestHeight) ? Height.fromJSON(object.latestHeight) : undefined,
       proofSpecs: Array.isArray(object?.proofSpecs) ? object.proofSpecs.map((e: any) => ProofSpec.fromJSON(e)) : [],
@@ -313,7 +313,7 @@ function createBaseConsensusState(): ConsensusState {
 export const ConsensusState = {
   encode(message: ConsensusState, writer: _m0.Writer = _m0.Writer.create()): _m0.Writer {
     if (message.timestamp !== undefined) {
-      Timestamp.encode(toTimestamp(message.timestamp), writer.uint32(10).fork()).ldelim();
+      Timestamp.encode(message.timestamp, writer.uint32(10).fork()).ldelim();
     }
 
     if (message.root !== undefined) {
@@ -337,7 +337,7 @@ export const ConsensusState = {
 
       switch (tag >>> 3) {
         case 1:
-          message.timestamp = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.timestamp = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 2:
@@ -367,7 +367,7 @@ export const ConsensusState = {
 
   toJSON(message: ConsensusState): unknown {
     const obj: any = {};
-    message.timestamp !== undefined && (obj.timestamp = message.timestamp.toISOString());
+    message.timestamp !== undefined && (obj.timestamp = fromTimestamp(message.timestamp).toISOString());
     message.root !== undefined && (obj.root = message.root ? MerkleRoot.toJSON(message.root) : undefined);
     message.nextValidatorsHash !== undefined && (obj.nextValidatorsHash = base64FromBytes(message.nextValidatorsHash !== undefined ? message.nextValidatorsHash : new Uint8Array()));
     return obj;
@@ -375,7 +375,7 @@ export const ConsensusState = {
 
   fromPartial(object: DeepPartial<ConsensusState>): ConsensusState {
     const message = createBaseConsensusState();
-    message.timestamp = object.timestamp ?? undefined;
+    message.timestamp = object.timestamp !== undefined && object.timestamp !== null ? Timestamp.fromPartial(object.timestamp) : undefined;
     message.root = object.root !== undefined && object.root !== null ? MerkleRoot.fromPartial(object.root) : undefined;
     message.nextValidatorsHash = object.nextValidatorsHash ?? new Uint8Array();
     return message;

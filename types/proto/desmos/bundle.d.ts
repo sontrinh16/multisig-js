@@ -171,8 +171,14 @@ export declare namespace desmos {
                         position?: any;
                     }[];
                     replySettings?: _222.ReplySetting;
-                    creationDate?: Date;
-                    lastEditedDate?: Date;
+                    creationDate?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    lastEditedDate?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _222.Post;
             };
             PostReference: {
@@ -279,7 +285,10 @@ export declare namespace desmos {
                             };
                         }[];
                     }[];
-                    endDate?: Date;
+                    endDate?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     allowsMultipleAnswers?: boolean;
                     allowsAnswerEdits?: boolean;
                     finalTallyResults?: {
@@ -743,8 +752,14 @@ export declare namespace desmos {
                             position?: any;
                         }[];
                         replySettings?: _224.ReplySetting;
-                        creationDate?: Date;
-                        lastEditedDate?: Date;
+                        creationDate?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        lastEditedDate?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                     pagination?: {
                         nextKey?: Uint8Array;
@@ -808,8 +823,14 @@ export declare namespace desmos {
                             position?: any;
                         }[];
                         replySettings?: _224.ReplySetting;
-                        creationDate?: Date;
-                        lastEditedDate?: Date;
+                        creationDate?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        lastEditedDate?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                     pagination?: {
                         nextKey?: Uint8Array;
@@ -866,8 +887,14 @@ export declare namespace desmos {
                             position?: any;
                         }[];
                         replySettings?: _224.ReplySetting;
-                        creationDate?: Date;
-                        lastEditedDate?: Date;
+                        creationDate?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        lastEditedDate?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                 }): _226.QueryPostResponse;
             };
@@ -1015,7 +1042,10 @@ export declare namespace desmos {
                 toJSON(message: _225.MsgCreatePostResponse): unknown;
                 fromPartial(object: {
                     postId?: any;
-                    creationDate?: Date;
+                    creationDate?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _225.MsgCreatePostResponse;
             };
             MsgEditPost: {
@@ -1055,7 +1085,10 @@ export declare namespace desmos {
                 fromJSON(object: any): _225.MsgEditPostResponse;
                 toJSON(message: _225.MsgEditPostResponse): unknown;
                 fromPartial(object: {
-                    editDate?: Date;
+                    editDate?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _225.MsgEditPostResponse;
             };
             MsgDeletePost: {
@@ -1098,7 +1131,10 @@ export declare namespace desmos {
                 toJSON(message: _225.MsgAddPostAttachmentResponse): unknown;
                 fromPartial(object: {
                     attachmentId?: number;
-                    editDate?: Date;
+                    editDate?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _225.MsgAddPostAttachmentResponse;
             };
             MsgRemovePostAttachment: {
@@ -1119,7 +1155,10 @@ export declare namespace desmos {
                 fromJSON(object: any): _225.MsgRemovePostAttachmentResponse;
                 toJSON(message: _225.MsgRemovePostAttachmentResponse): unknown;
                 fromPartial(object: {
-                    editDate?: Date;
+                    editDate?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _225.MsgRemovePostAttachmentResponse;
             };
             MsgAnswerPoll: {
@@ -1186,8 +1225,14 @@ export declare namespace desmos {
                         position?: any;
                     }[];
                     replySettings?: _224.ReplySetting;
-                    creationDate?: Date;
-                    lastEditedDate?: Date;
+                    creationDate?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    lastEditedDate?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _224.Post;
             };
             PostReference: {
@@ -1292,7 +1337,10 @@ export declare namespace desmos {
                             };
                         }[];
                     }[];
-                    endDate?: Date;
+                    endDate?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     allowsMultipleAnswers?: boolean;
                     allowsAnswerEdits?: boolean;
                     finalTallyResults?: {
@@ -1413,8 +1461,14 @@ export declare namespace desmos {
                             position?: any;
                         }[];
                         replySettings?: _224.ReplySetting;
-                        creationDate?: Date;
-                        lastEditedDate?: Date;
+                        creationDate?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        lastEditedDate?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                     attachments?: {
                         subspaceId?: any;
@@ -1429,7 +1483,10 @@ export declare namespace desmos {
                         subspaceId?: any;
                         postId?: any;
                         pollId?: number;
-                        endDate?: Date;
+                        endDate?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                     userAnswers?: {
                         subspaceId?: any;
@@ -1473,7 +1530,10 @@ export declare namespace desmos {
                     subspaceId?: any;
                     postId?: any;
                     pollId?: number;
-                    endDate?: Date;
+                    endDate?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _223.ActivePollData;
             };
         };
@@ -1520,7 +1580,10 @@ export declare namespace desmos {
                         profile?: string;
                         cover?: string;
                     };
-                    creationDate?: Date;
+                    creationDate?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _230.Profile;
             };
             Pictures: {
@@ -1566,7 +1629,10 @@ export declare namespace desmos {
                     chainConfig?: {
                         name?: string;
                     };
-                    creationTime?: Date;
+                    creationTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _228.ChainLink;
             };
             ChainConfig: {
@@ -1654,7 +1720,10 @@ export declare namespace desmos {
                             error?: string;
                         };
                     };
-                    creationTime?: Date;
+                    creationTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _227.ApplicationLink;
             };
             Data: {
@@ -1745,7 +1814,10 @@ export declare namespace desmos {
                         profile?: string;
                         cover?: string;
                     };
-                    creationDate?: Date;
+                    creationDate?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _236.Profile;
             };
             Pictures: {
@@ -1872,7 +1944,10 @@ export declare namespace desmos {
                     chainConfig?: {
                         name?: string;
                     };
-                    creationTime?: Date;
+                    creationTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _233.ChainLink;
             };
             ChainConfig: {
@@ -1989,7 +2064,10 @@ export declare namespace desmos {
                             error?: string;
                         };
                     };
-                    creationTime?: Date;
+                    creationTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _232.ApplicationLink;
             };
             Data: {
@@ -2543,7 +2621,10 @@ export declare namespace desmos {
                             }[];
                         };
                         appLinks?: {
-                            validityDuration?: string;
+                            validityDuration?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
                         };
                     };
                 }): _252.QueryParamsResponse;
@@ -2625,7 +2706,10 @@ export declare namespace desmos {
                         chainConfig?: {
                             name?: string;
                         };
-                        creationTime?: Date;
+                        creationTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                     pagination?: {
                         nextKey?: Uint8Array;
@@ -2721,7 +2805,10 @@ export declare namespace desmos {
                         chainConfig?: {
                             name?: string;
                         };
-                        creationTime?: Date;
+                        creationTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                     pagination?: {
                         nextKey?: Uint8Array;
@@ -2778,8 +2865,14 @@ export declare namespace desmos {
                                 error?: string;
                             };
                         };
-                        creationTime?: Date;
-                        expirationTime?: Date;
+                        creationTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        expirationTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                     pagination?: {
                         nextKey?: Uint8Array;
@@ -2827,8 +2920,14 @@ export declare namespace desmos {
                                 error?: string;
                             };
                         };
-                        creationTime?: Date;
-                        expirationTime?: Date;
+                        creationTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        expirationTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                 }): _249.QueryApplicationLinkByClientIDResponse;
             };
@@ -3116,7 +3215,10 @@ export declare namespace desmos {
                         profile?: string;
                         cover?: string;
                     };
-                    creationDate?: Date;
+                    creationDate?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _243.Profile;
             };
             Pictures: {
@@ -3159,7 +3261,10 @@ export declare namespace desmos {
                         }[];
                     };
                     appLinks?: {
-                        validityDuration?: string;
+                        validityDuration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                 }): _242.Params;
             };
@@ -3216,7 +3321,10 @@ export declare namespace desmos {
                 fromJSON(object: any): _242.AppLinksParams;
                 toJSON(message: _242.AppLinksParams): unknown;
                 fromPartial(object: {
-                    validityDuration?: string;
+                    validityDuration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _242.AppLinksParams;
             };
             LinkChainAccountPacketData: {
@@ -3305,7 +3413,10 @@ export declare namespace desmos {
                     chainConfig?: {
                         name?: string;
                     };
-                    creationTime?: Date;
+                    creationTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _239.ChainLink;
             };
             ChainConfig: {
@@ -3422,8 +3533,14 @@ export declare namespace desmos {
                             error?: string;
                         };
                     };
-                    creationTime?: Date;
-                    expirationTime?: Date;
+                    creationTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    expirationTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _238.ApplicationLink;
             };
             Data: {
@@ -3526,7 +3643,10 @@ export declare namespace desmos {
                         chainConfig?: {
                             name?: string;
                         };
-                        creationTime?: Date;
+                        creationTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                     applicationLinks?: {
                         user?: string;
@@ -3553,8 +3673,14 @@ export declare namespace desmos {
                                 error?: string;
                             };
                         };
-                        creationTime?: Date;
-                        expirationTime?: Date;
+                        creationTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        expirationTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                     defaultExternalAddresses?: {
                         owner?: string;
@@ -3587,7 +3713,10 @@ export declare namespace desmos {
                             }[];
                         };
                         appLinks?: {
-                            validityDuration?: string;
+                            validityDuration?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
                         };
                     };
                 }): _237.GenesisState;
@@ -4855,7 +4984,10 @@ export declare namespace desmos {
                             typeUrl?: string;
                             value?: Uint8Array;
                         };
-                        creationDate?: Date;
+                        creationDate?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                     pagination?: {
                         nextKey?: Uint8Array;
@@ -4889,7 +5021,10 @@ export declare namespace desmos {
                             typeUrl?: string;
                             value?: Uint8Array;
                         };
-                        creationDate?: Date;
+                        creationDate?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                 }): _266.QueryReportResponse;
             };
@@ -4996,7 +5131,10 @@ export declare namespace desmos {
                 toJSON(message: _265.MsgCreateReportResponse): unknown;
                 fromPartial(object: {
                     reportId?: any;
-                    creationDate?: Date;
+                    creationDate?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _265.MsgCreateReportResponse;
             };
             MsgDeleteReport: {
@@ -5091,7 +5229,10 @@ export declare namespace desmos {
                         typeUrl?: string;
                         value?: Uint8Array;
                     };
-                    creationDate?: Date;
+                    creationDate?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _264.Report;
             };
             UserTarget: {
@@ -5175,7 +5316,10 @@ export declare namespace desmos {
                             typeUrl?: string;
                             value?: Uint8Array;
                         };
-                        creationDate?: Date;
+                        creationDate?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                     params?: {
                         standardReasons?: {
@@ -5213,7 +5357,10 @@ export declare namespace desmos {
                     treasury?: string;
                     owner?: string;
                     creator?: string;
-                    creationTime?: Date;
+                    creationTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _267.Subspace;
             };
             UserGroup: {
@@ -5862,7 +6009,10 @@ export declare namespace desmos {
                         treasury?: string;
                         owner?: string;
                         creator?: string;
-                        creationTime?: Date;
+                        creationTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                     pagination?: {
                         nextKey?: Uint8Array;
@@ -5892,7 +6042,10 @@ export declare namespace desmos {
                         treasury?: string;
                         owner?: string;
                         creator?: string;
-                        creationTime?: Date;
+                        creationTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                 }): _272.QuerySubspaceResponse;
             };
@@ -6428,7 +6581,10 @@ export declare namespace desmos {
                     treasury?: string;
                     owner?: string;
                     creator?: string;
-                    creationTime?: Date;
+                    creationTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _270.Subspace;
             };
             Section: {
@@ -6489,7 +6645,10 @@ export declare namespace desmos {
                         treasury?: string;
                         owner?: string;
                         creator?: string;
-                        creationTime?: Date;
+                        creationTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                     sections?: {
                         subspaceId?: any;

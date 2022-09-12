@@ -1,3 +1,4 @@
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
 /** MsgPostPrice represents a method for creating a new post price */
@@ -6,7 +7,7 @@ export interface MsgPostPrice {
     from: string;
     marketId: string;
     price: string;
-    expiry: Date;
+    expiry: Timestamp;
 }
 /** MsgPostPriceResponse defines the Msg/PostPrice response type. */
 export interface MsgPostPriceResponse {

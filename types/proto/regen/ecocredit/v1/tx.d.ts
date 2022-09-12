@@ -1,4 +1,5 @@
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import { OriginTx } from "./types";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
@@ -73,12 +74,12 @@ export interface MsgCreateBatch {
      * start_date is the beginning of the period during which this credit batch
      * was quantified and verified.
      */
-    startDate: Date;
+    startDate: Timestamp;
     /**
      * end_date is the end of the period during which this credit batch was
      * quantified and verified.
      */
-    endDate: Date;
+    endDate: Timestamp;
     /**
      * If open is true we will enable future minting.
      * Otherwise we will seal the batch and disable the future minting.

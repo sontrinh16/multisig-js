@@ -1,5 +1,6 @@
 import { PageRequest, PageResponse } from "../../../cosmos/base/query/v1beta1/pagination";
 import { Any } from "../../../google/protobuf/any";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import { VoteType } from "./genesis";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial, Long } from "@osmonauts/helpers";
@@ -35,7 +36,7 @@ export interface QueryProposalResponse {
     pubProposal: Any;
     id: Long;
     committeeId: Long;
-    deadline: Date;
+    deadline: Timestamp;
 }
 /** QueryNextProposalIDRequest defines the request type for querying x/committee NextProposalID. */
 export interface QueryNextProposalIDRequest {

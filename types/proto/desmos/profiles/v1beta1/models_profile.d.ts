@@ -1,4 +1,5 @@
 import { Any } from "../../../google/protobuf/any";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
 /**
@@ -17,7 +18,7 @@ export interface Profile {
     /** Pictures contains the data about the pictures associated with he profile */
     pictures: Pictures;
     /** CreationTime represents the time in which the profile has been created */
-    creationDate: Date;
+    creationDate: Timestamp;
 }
 /** Pictures contains the data of a user profile's related pictures */
 export interface Pictures {

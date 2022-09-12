@@ -1,19 +1,19 @@
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { toTimestamp, Long, fromTimestamp, isSet, fromJsonTimestamp, DeepPartial, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
+import { Long, isSet, fromJsonTimestamp, fromTimestamp, DeepPartial, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
 export interface Offer {
   classId: string;
   nftId: string;
   buyer: string;
   price: Long;
-  expiration: Date;
+  expiration: Timestamp;
 }
 export interface OfferStoreRecord {
   classId: string;
   nftId: string;
   buyer: Uint8Array;
   price: Long;
-  expiration: Date;
+  expiration: Timestamp;
 }
 
 function createBaseOffer(): Offer {
@@ -45,7 +45,7 @@ export const Offer = {
     }
 
     if (message.expiration !== undefined) {
-      Timestamp.encode(toTimestamp(message.expiration), writer.uint32(42).fork()).ldelim();
+      Timestamp.encode(message.expiration, writer.uint32(42).fork()).ldelim();
     }
 
     return writer;
@@ -77,7 +77,7 @@ export const Offer = {
           break;
 
         case 5:
-          message.expiration = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.expiration = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -105,7 +105,7 @@ export const Offer = {
     message.nftId !== undefined && (obj.nftId = message.nftId);
     message.buyer !== undefined && (obj.buyer = message.buyer);
     message.price !== undefined && (obj.price = (message.price || Long.UZERO).toString());
-    message.expiration !== undefined && (obj.expiration = message.expiration.toISOString());
+    message.expiration !== undefined && (obj.expiration = fromTimestamp(message.expiration).toISOString());
     return obj;
   },
 
@@ -115,7 +115,7 @@ export const Offer = {
     message.nftId = object.nftId ?? "";
     message.buyer = object.buyer ?? "";
     message.price = object.price !== undefined && object.price !== null ? Long.fromValue(object.price) : Long.UZERO;
-    message.expiration = object.expiration ?? undefined;
+    message.expiration = object.expiration !== undefined && object.expiration !== null ? Timestamp.fromPartial(object.expiration) : undefined;
     return message;
   }
 
@@ -150,7 +150,7 @@ export const OfferStoreRecord = {
     }
 
     if (message.expiration !== undefined) {
-      Timestamp.encode(toTimestamp(message.expiration), writer.uint32(42).fork()).ldelim();
+      Timestamp.encode(message.expiration, writer.uint32(42).fork()).ldelim();
     }
 
     return writer;
@@ -182,7 +182,7 @@ export const OfferStoreRecord = {
           break;
 
         case 5:
-          message.expiration = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.expiration = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -210,7 +210,7 @@ export const OfferStoreRecord = {
     message.nftId !== undefined && (obj.nftId = message.nftId);
     message.buyer !== undefined && (obj.buyer = base64FromBytes(message.buyer !== undefined ? message.buyer : new Uint8Array()));
     message.price !== undefined && (obj.price = (message.price || Long.UZERO).toString());
-    message.expiration !== undefined && (obj.expiration = message.expiration.toISOString());
+    message.expiration !== undefined && (obj.expiration = fromTimestamp(message.expiration).toISOString());
     return obj;
   },
 
@@ -220,7 +220,7 @@ export const OfferStoreRecord = {
     message.nftId = object.nftId ?? "";
     message.buyer = object.buyer ?? new Uint8Array();
     message.price = object.price !== undefined && object.price !== null ? Long.fromValue(object.price) : Long.UZERO;
-    message.expiration = object.expiration ?? undefined;
+    message.expiration = object.expiration !== undefined && object.expiration !== null ? Timestamp.fromPartial(object.expiration) : undefined;
     return message;
   }
 

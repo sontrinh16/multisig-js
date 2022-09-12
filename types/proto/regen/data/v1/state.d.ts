@@ -1,3 +1,4 @@
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial, Long } from "@osmonauts/helpers";
 /** DataID stores a compact data ID and its full IRI. */
@@ -15,7 +16,7 @@ export interface DataAnchor {
      * timestamp is the anchor timestamp for this object - the time at which
      * it was first known to the blockchain.
      */
-    timestamp: Date;
+    timestamp: Timestamp;
 }
 /** DataAttestor is a join table for associating data IDs and attestors. */
 export interface DataAttestor {
@@ -24,7 +25,7 @@ export interface DataAttestor {
     /** attestor is the account address of the attestor. */
     attestor: Uint8Array;
     /** timestamp is the time at which the attestor signed this data object. */
-    timestamp: Date;
+    timestamp: Timestamp;
 }
 /** ResolverInfo describes a data resolver. */
 export interface ResolverInfo {

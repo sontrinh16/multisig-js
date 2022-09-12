@@ -5,7 +5,7 @@ import { Deposit, TotalPrincipal, TotalCollateral } from "./cdp";
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial, isSet, Long, toTimestamp, fromTimestamp, fromJsonTimestamp } from "@osmonauts/helpers";
+import { DeepPartial, isSet, Long, fromJsonTimestamp, fromTimestamp } from "@osmonauts/helpers";
 
 /** QueryParamsRequest defines the request type for the Query/Params RPC method. */
 export interface QueryParamsRequest {}
@@ -90,7 +90,7 @@ export interface CDPResponse {
   collateral: Coin;
   principal: Coin;
   accumulatedFees: Coin;
-  feesUpdated: Date;
+  feesUpdated: Timestamp;
   interestFactor: string;
   collateralValue: Coin;
   collateralizationRatio: string;
@@ -1022,7 +1022,7 @@ export const CDPResponse = {
     }
 
     if (message.feesUpdated !== undefined) {
-      Timestamp.encode(toTimestamp(message.feesUpdated), writer.uint32(58).fork()).ldelim();
+      Timestamp.encode(message.feesUpdated, writer.uint32(58).fork()).ldelim();
     }
 
     if (message.interestFactor !== "") {
@@ -1074,7 +1074,7 @@ export const CDPResponse = {
           break;
 
         case 7:
-          message.feesUpdated = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.feesUpdated = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 8:
@@ -1121,7 +1121,7 @@ export const CDPResponse = {
     message.collateral !== undefined && (obj.collateral = message.collateral ? Coin.toJSON(message.collateral) : undefined);
     message.principal !== undefined && (obj.principal = message.principal ? Coin.toJSON(message.principal) : undefined);
     message.accumulatedFees !== undefined && (obj.accumulatedFees = message.accumulatedFees ? Coin.toJSON(message.accumulatedFees) : undefined);
-    message.feesUpdated !== undefined && (obj.feesUpdated = message.feesUpdated.toISOString());
+    message.feesUpdated !== undefined && (obj.feesUpdated = fromTimestamp(message.feesUpdated).toISOString());
     message.interestFactor !== undefined && (obj.interestFactor = message.interestFactor);
     message.collateralValue !== undefined && (obj.collateralValue = message.collateralValue ? Coin.toJSON(message.collateralValue) : undefined);
     message.collateralizationRatio !== undefined && (obj.collateralizationRatio = message.collateralizationRatio);
@@ -1136,7 +1136,7 @@ export const CDPResponse = {
     message.collateral = object.collateral !== undefined && object.collateral !== null ? Coin.fromPartial(object.collateral) : undefined;
     message.principal = object.principal !== undefined && object.principal !== null ? Coin.fromPartial(object.principal) : undefined;
     message.accumulatedFees = object.accumulatedFees !== undefined && object.accumulatedFees !== null ? Coin.fromPartial(object.accumulatedFees) : undefined;
-    message.feesUpdated = object.feesUpdated ?? undefined;
+    message.feesUpdated = object.feesUpdated !== undefined && object.feesUpdated !== null ? Timestamp.fromPartial(object.feesUpdated) : undefined;
     message.interestFactor = object.interestFactor ?? "";
     message.collateralValue = object.collateralValue !== undefined && object.collateralValue !== null ? Coin.fromPartial(object.collateralValue) : undefined;
     message.collateralizationRatio = object.collateralizationRatio ?? "";

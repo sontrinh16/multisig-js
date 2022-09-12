@@ -1,4 +1,5 @@
 import { Any } from "../../../google/protobuf/any";
+import { Duration } from "../../../google/protobuf/duration";
 import * as _m0 from "protobufjs/minimal";
 import { Long, DeepPartial } from "@osmonauts/helpers";
 /** TallyOption enumerates the valid types of a tally. */
@@ -22,7 +23,7 @@ export interface BaseCommittee {
     /** Smallest percentage that must vote for a proposal to pass */
     voteThreshold: string;
     /** The length of time a proposal remains active for. Proposals will close earlier if they get enough votes. */
-    proposalDuration: string;
+    proposalDuration: Duration;
     tallyOption: TallyOption;
 }
 /** MemberCommittee is an alias of BaseCommittee */

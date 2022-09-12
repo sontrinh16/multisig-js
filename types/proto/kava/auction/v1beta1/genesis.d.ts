@@ -1,4 +1,5 @@
 import { Any } from "../../../google/protobuf/any";
+import { Duration } from "../../../google/protobuf/duration";
 import * as _m0 from "protobufjs/minimal";
 import { Long, DeepPartial } from "@osmonauts/helpers";
 /** GenesisState defines the auction module's genesis state. */
@@ -10,9 +11,9 @@ export interface GenesisState {
 }
 /** Params defines the parameters for the issuance module. */
 export interface Params {
-    maxAuctionDuration: string;
-    forwardBidDuration: string;
-    reverseBidDuration: string;
+    maxAuctionDuration: Duration;
+    forwardBidDuration: Duration;
+    reverseBidDuration: Duration;
     incrementSurplus: Uint8Array;
     incrementDebt: Uint8Array;
     incrementCollateral: Uint8Array;

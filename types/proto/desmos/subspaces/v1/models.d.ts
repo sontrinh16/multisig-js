@@ -1,3 +1,4 @@
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { Long, DeepPartial } from "@osmonauts/helpers";
 /** Subspace contains all the data of a Desmos subspace */
@@ -18,7 +19,7 @@ export interface Subspace {
     /** Address of the subspace creator */
     creator: string;
     /** the creation time of the subspace */
-    creationTime: Date;
+    creationTime: Timestamp;
 }
 /** UserGroup represents a group of users */
 export interface UserGroup {

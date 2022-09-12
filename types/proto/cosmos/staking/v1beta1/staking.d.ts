@@ -1,5 +1,7 @@
 import { Header } from "../../../tendermint/types/types";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import { Any } from "../../../google/protobuf/any";
+import { Duration } from "../../../google/protobuf/duration";
 import { Coin } from "../../base/v1beta1/coin";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial, Long } from "@osmonauts/helpers";
@@ -44,7 +46,7 @@ export interface Commission {
     /** commission_rates defines the initial commission rates to be used for creating a validator. */
     commissionRates: CommissionRates;
     /** update_time is the last time the commission rate was changed. */
-    updateTime: Date;
+    updateTime: Timestamp;
 }
 /** Description defines a validator description. */
 export interface Description {
@@ -87,7 +89,7 @@ export interface Validator {
     /** unbonding_height defines, if unbonding, the height at which this validator has begun unbonding. */
     unbondingHeight: Long;
     /** unbonding_time defines, if unbonding, the min time for the validator to complete unbonding. */
-    unbondingTime: Date;
+    unbondingTime: Timestamp;
     /** commission defines the commission parameters. */
     commission: Commission;
     /** min_self_delegation is the validator's self declared minimum self delegation. */
@@ -155,7 +157,7 @@ export interface UnbondingDelegationEntry {
     /** creation_height is the height which the unbonding took place. */
     creationHeight: Long;
     /** completion_time is the unix time for unbonding completion. */
-    completionTime: Date;
+    completionTime: Timestamp;
     /** initial_balance defines the tokens initially scheduled to receive at completion. */
     initialBalance: string;
     /** balance defines the tokens to receive at completion. */
@@ -166,7 +168,7 @@ export interface RedelegationEntry {
     /** creation_height  defines the height which the redelegation took place. */
     creationHeight: Long;
     /** completion_time defines the unix time for redelegation completion. */
-    completionTime: Date;
+    completionTime: Timestamp;
     /** initial_balance defines the initial balance when redelegation started. */
     initialBalance: string;
     /** shares_dst is the amount of destination-validator shares created by redelegation. */
@@ -189,7 +191,7 @@ export interface Redelegation {
 /** Params defines the parameters for the staking module. */
 export interface Params {
     /** unbonding_time is the time duration of unbonding. */
-    unbondingTime: string;
+    unbondingTime: Duration;
     /** max_validators is the maximum number of validators. */
     maxValidators: number;
     /** max_entries is the max entries for either unbonding delegation or redelegation (per pair/trio). */

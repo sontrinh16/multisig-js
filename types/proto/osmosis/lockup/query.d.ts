@@ -1,3 +1,5 @@
+import { Timestamp } from "../../google/protobuf/timestamp";
+import { Duration } from "../../google/protobuf/duration";
 import { Coin } from "../../cosmos/base/v1beta1/coin";
 import { PeriodLock, SyntheticLock } from "./lock";
 import * as _m0 from "protobufjs/minimal";
@@ -32,28 +34,28 @@ export interface AccountLockedCoinsResponse {
 }
 export interface AccountLockedPastTimeRequest {
     owner: string;
-    timestamp: Date;
+    timestamp: Timestamp;
 }
 export interface AccountLockedPastTimeResponse {
     locks: PeriodLock[];
 }
 export interface AccountLockedPastTimeNotUnlockingOnlyRequest {
     owner: string;
-    timestamp: Date;
+    timestamp: Timestamp;
 }
 export interface AccountLockedPastTimeNotUnlockingOnlyResponse {
     locks: PeriodLock[];
 }
 export interface AccountUnlockedBeforeTimeRequest {
     owner: string;
-    timestamp: Date;
+    timestamp: Timestamp;
 }
 export interface AccountUnlockedBeforeTimeResponse {
     locks: PeriodLock[];
 }
 export interface AccountLockedPastTimeDenomRequest {
     owner: string;
-    timestamp: Date;
+    timestamp: Timestamp;
     denom: string;
 }
 export interface AccountLockedPastTimeDenomResponse {
@@ -61,7 +63,7 @@ export interface AccountLockedPastTimeDenomResponse {
 }
 export interface LockedDenomRequest {
     denom: string;
-    duration: string;
+    duration: Duration;
 }
 export interface LockedDenomResponse {
     amount: string;
@@ -80,28 +82,28 @@ export interface SyntheticLockupsByLockupIDResponse {
 }
 export interface AccountLockedLongerDurationRequest {
     owner: string;
-    duration: string;
+    duration: Duration;
 }
 export interface AccountLockedLongerDurationResponse {
     locks: PeriodLock[];
 }
 export interface AccountLockedDurationRequest {
     owner: string;
-    duration: string;
+    duration: Duration;
 }
 export interface AccountLockedDurationResponse {
     locks: PeriodLock[];
 }
 export interface AccountLockedLongerDurationNotUnlockingOnlyRequest {
     owner: string;
-    duration: string;
+    duration: Duration;
 }
 export interface AccountLockedLongerDurationNotUnlockingOnlyResponse {
     locks: PeriodLock[];
 }
 export interface AccountLockedLongerDurationDenomRequest {
     owner: string;
-    duration: string;
+    duration: Duration;
     denom: string;
 }
 export interface AccountLockedLongerDurationDenomResponse {

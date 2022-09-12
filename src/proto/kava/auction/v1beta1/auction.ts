@@ -1,7 +1,7 @@
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { toTimestamp, Long, fromTimestamp, isSet, bytesFromBase64, fromJsonTimestamp, base64FromBytes, DeepPartial } from "@osmonauts/helpers";
+import { Long, isSet, bytesFromBase64, fromJsonTimestamp, base64FromBytes, fromTimestamp, DeepPartial } from "@osmonauts/helpers";
 
 /** BaseAuction defines common attributes of all auctions */
 export interface BaseAuction {
@@ -11,8 +11,8 @@ export interface BaseAuction {
   bidder: Uint8Array;
   bid: Coin;
   hasReceivedBids: boolean;
-  endTime: Date;
-  maxEndTime: Date;
+  endTime: Timestamp;
+  maxEndTime: Timestamp;
 }
 
 /**
@@ -93,11 +93,11 @@ export const BaseAuction = {
     }
 
     if (message.endTime !== undefined) {
-      Timestamp.encode(toTimestamp(message.endTime), writer.uint32(58).fork()).ldelim();
+      Timestamp.encode(message.endTime, writer.uint32(58).fork()).ldelim();
     }
 
     if (message.maxEndTime !== undefined) {
-      Timestamp.encode(toTimestamp(message.maxEndTime), writer.uint32(66).fork()).ldelim();
+      Timestamp.encode(message.maxEndTime, writer.uint32(66).fork()).ldelim();
     }
 
     return writer;
@@ -137,11 +137,11 @@ export const BaseAuction = {
           break;
 
         case 7:
-          message.endTime = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.endTime = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 8:
-          message.maxEndTime = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.maxEndTime = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -174,8 +174,8 @@ export const BaseAuction = {
     message.bidder !== undefined && (obj.bidder = base64FromBytes(message.bidder !== undefined ? message.bidder : new Uint8Array()));
     message.bid !== undefined && (obj.bid = message.bid ? Coin.toJSON(message.bid) : undefined);
     message.hasReceivedBids !== undefined && (obj.hasReceivedBids = message.hasReceivedBids);
-    message.endTime !== undefined && (obj.endTime = message.endTime.toISOString());
-    message.maxEndTime !== undefined && (obj.maxEndTime = message.maxEndTime.toISOString());
+    message.endTime !== undefined && (obj.endTime = fromTimestamp(message.endTime).toISOString());
+    message.maxEndTime !== undefined && (obj.maxEndTime = fromTimestamp(message.maxEndTime).toISOString());
     return obj;
   },
 
@@ -187,8 +187,8 @@ export const BaseAuction = {
     message.bidder = object.bidder ?? new Uint8Array();
     message.bid = object.bid !== undefined && object.bid !== null ? Coin.fromPartial(object.bid) : undefined;
     message.hasReceivedBids = object.hasReceivedBids ?? false;
-    message.endTime = object.endTime ?? undefined;
-    message.maxEndTime = object.maxEndTime ?? undefined;
+    message.endTime = object.endTime !== undefined && object.endTime !== null ? Timestamp.fromPartial(object.endTime) : undefined;
+    message.maxEndTime = object.maxEndTime !== undefined && object.maxEndTime !== null ? Timestamp.fromPartial(object.maxEndTime) : undefined;
     return message;
   }
 

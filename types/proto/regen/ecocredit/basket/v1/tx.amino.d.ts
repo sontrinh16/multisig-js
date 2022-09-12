@@ -15,7 +15,10 @@ export interface AminoMsgCreate extends AminoMsg {
                 seconds: string;
                 nanos: number;
             };
-            start_date_window: string;
+            start_date_window: {
+                seconds: string;
+                nanos: number;
+            };
             years_in_the_past: number;
         };
         fee: {

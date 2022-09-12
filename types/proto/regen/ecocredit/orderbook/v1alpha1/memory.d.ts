@@ -1,3 +1,4 @@
+import { Timestamp } from "../../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { Long, DeepPartial } from "@osmonauts/helpers";
 /**
@@ -33,9 +34,9 @@ export interface BuyOrderClassSelector {
     /** project_location is the project location in the selector's criteria. */
     projectLocation: string;
     /** min_start_date is the minimum start date in the selector's criteria. */
-    minStartDate: Date;
+    minStartDate: Timestamp;
     /** max_end_date is the maximum end date in the selector's criteria. */
-    maxEndDate: Date;
+    maxEndDate: Timestamp;
 }
 /** BuyOrderProjectSelector indexes a buy order with project selector. */
 export interface BuyOrderProjectSelector {
@@ -44,9 +45,9 @@ export interface BuyOrderProjectSelector {
     /** project_id is the project ID. */
     projectId: Long;
     /** min_start_date is the minimum start date in the selector's criteria. */
-    minStartDate: Date;
+    minStartDate: Timestamp;
     /** max_end_date is the maximum end date in the selector's criteria. */
-    maxEndDate: Date;
+    maxEndDate: Timestamp;
 }
 /** BuyOrderBatchSelector indexes a buy order with batch selector. */
 export interface BuyOrderBatchSelector {

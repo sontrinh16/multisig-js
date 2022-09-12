@@ -1,11 +1,11 @@
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { toTimestamp, fromTimestamp, isSet, fromJsonTimestamp, DeepPartial } from "@osmonauts/helpers";
+import { isSet, fromJsonTimestamp, fromTimestamp, DeepPartial } from "@osmonauts/helpers";
 export interface Inflation {
   max: string;
   min: string;
   rateChange: string;
-  timestamp: Date;
+  timestamp: Timestamp;
 }
 
 function createBaseInflation(): Inflation {
@@ -32,7 +32,7 @@ export const Inflation = {
     }
 
     if (message.timestamp !== undefined) {
-      Timestamp.encode(toTimestamp(message.timestamp), writer.uint32(34).fork()).ldelim();
+      Timestamp.encode(message.timestamp, writer.uint32(34).fork()).ldelim();
     }
 
     return writer;
@@ -60,7 +60,7 @@ export const Inflation = {
           break;
 
         case 4:
-          message.timestamp = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.timestamp = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -86,7 +86,7 @@ export const Inflation = {
     message.max !== undefined && (obj.max = message.max);
     message.min !== undefined && (obj.min = message.min);
     message.rateChange !== undefined && (obj.rateChange = message.rateChange);
-    message.timestamp !== undefined && (obj.timestamp = message.timestamp.toISOString());
+    message.timestamp !== undefined && (obj.timestamp = fromTimestamp(message.timestamp).toISOString());
     return obj;
   },
 
@@ -95,7 +95,7 @@ export const Inflation = {
     message.max = object.max ?? "";
     message.min = object.min ?? "";
     message.rateChange = object.rateChange ?? "";
-    message.timestamp = object.timestamp ?? undefined;
+    message.timestamp = object.timestamp !== undefined && object.timestamp !== null ? Timestamp.fromPartial(object.timestamp) : undefined;
     return message;
   }
 

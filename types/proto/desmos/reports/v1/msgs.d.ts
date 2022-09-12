@@ -1,4 +1,5 @@
 import { Any } from "../../../google/protobuf/any";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { Long, DeepPartial } from "@osmonauts/helpers";
 /** MsgCreateReport represents the message to be used to create a report */
@@ -19,7 +20,7 @@ export interface MsgCreateReportResponse {
     /** Id of the newly created report */
     reportId: Long;
     /** Time in which the report was created */
-    creationDate: Date;
+    creationDate: Timestamp;
 }
 /** MsgDeleteReport represents the message to be used when deleting a report */
 export interface MsgDeleteReport {

@@ -56,10 +56,19 @@ export declare namespace osmosis {
                 fromPartial(object: {
                     epochs?: {
                         identifier?: string;
-                        startTime?: Date;
-                        duration?: string;
+                        startTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        duration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         currentEpoch?: any;
-                        currentEpochStartTime?: Date;
+                        currentEpochStartTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         epochCountingStarted?: boolean;
                         currentEpochStartHeight?: any;
                     }[];
@@ -90,10 +99,19 @@ export declare namespace osmosis {
                 toJSON(message: _497.EpochInfo): unknown;
                 fromPartial(object: {
                     identifier?: string;
-                    startTime?: Date;
-                    duration?: string;
+                    startTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    duration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     currentEpoch?: any;
-                    currentEpochStartTime?: Date;
+                    currentEpochStartTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     epochCountingStarted?: boolean;
                     currentEpochStartHeight?: any;
                 }): _497.EpochInfo;
@@ -106,10 +124,19 @@ export declare namespace osmosis {
                 fromPartial(object: {
                     epochs?: {
                         identifier?: string;
-                        startTime?: Date;
-                        duration?: string;
+                        startTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        duration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         currentEpoch?: any;
-                        currentEpochStartTime?: Date;
+                        currentEpochStartTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         epochCountingStarted?: boolean;
                         currentEpochStartHeight?: any;
                     }[];
@@ -932,8 +959,14 @@ export declare namespace osmosis {
                 fromJSON(object: any): _499.SmoothWeightChangeParams;
                 toJSON(message: _499.SmoothWeightChangeParams): unknown;
                 fromPartial(object: {
-                    startTime?: Date;
-                    duration?: string;
+                    startTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    duration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     initialPoolWeights?: {
                         token?: {
                             denom?: string;
@@ -959,8 +992,14 @@ export declare namespace osmosis {
                     swapFee?: string;
                     exitFee?: string;
                     smoothWeightChangeParams?: {
-                        startTime?: Date;
-                        duration?: string;
+                        startTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        duration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         initialPoolWeights?: {
                             token?: {
                                 denom?: string;
@@ -1003,8 +1042,14 @@ export declare namespace osmosis {
                         swapFee?: string;
                         exitFee?: string;
                         smoothWeightChangeParams?: {
-                            startTime?: Date;
-                            duration?: string;
+                            startTime?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
+                            duration?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
                             initialPoolWeights?: {
                                 token?: {
                                     denom?: string;
@@ -1087,7 +1132,10 @@ export declare namespace osmosis {
                                             seconds: string;
                                             nanos: number;
                                         };
-                                        duration: string;
+                                        duration: {
+                                            seconds: string;
+                                            nanos: number;
+                                        };
                                         initialPoolWeights: {
                                             token: {
                                                 denom: string;
@@ -1123,7 +1171,10 @@ export declare namespace osmosis {
                                             seconds: string;
                                             nanos: number;
                                         };
-                                        duration: string;
+                                        duration: {
+                                            seconds: string;
+                                            nanos: number;
+                                        };
                                         initialPoolWeights: {
                                             token: {
                                                 denom: string;
@@ -1162,8 +1213,14 @@ export declare namespace osmosis {
                                 swapFee?: string;
                                 exitFee?: string;
                                 smoothWeightChangeParams?: {
-                                    startTime?: Date;
-                                    duration?: string;
+                                    startTime?: {
+                                        seconds?: any;
+                                        nanos?: number;
+                                    };
+                                    duration?: {
+                                        seconds?: any;
+                                        nanos?: number;
+                                    };
                                     initialPoolWeights?: {
                                         token?: {
                                             denom?: string;
@@ -1447,7 +1504,10 @@ export declare namespace osmosis {
                     distribute_to: {
                         lock_query_type: number;
                         denom: string;
-                        duration: string;
+                        duration: {
+                            seconds: string;
+                            nanos: number;
+                        };
                         timestamp: {
                             seconds: string;
                             nanos: number;
@@ -1469,7 +1529,10 @@ export declare namespace osmosis {
                     distribute_to: {
                         lock_query_type: number;
                         denom: string;
-                        duration: string;
+                        duration: {
+                            seconds: string;
+                            nanos: number;
+                        };
                         timestamp: {
                             seconds: string;
                             nanos: number;
@@ -1517,14 +1580,23 @@ export declare namespace osmosis {
                 distributeTo?: {
                     lockQueryType?: _512.LockQueryType;
                     denom?: string;
-                    duration?: string;
-                    timestamp?: Date;
+                    duration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    timestamp?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 };
                 coins?: {
                     denom?: string;
                     amount?: string;
                 }[];
-                startTime?: Date;
+                startTime?: {
+                    seconds?: any;
+                    nanos?: number;
+                };
                 numEpochsPaidOver?: any;
             }): _510.MsgCreateGauge;
         };
@@ -1615,14 +1687,23 @@ export declare namespace osmosis {
                     distributeTo?: {
                         lockQueryType?: _512.LockQueryType;
                         denom?: string;
-                        duration?: string;
-                        timestamp?: Date;
+                        duration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        timestamp?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                     coins?: {
                         denom?: string;
                         amount?: string;
                     }[];
-                    startTime?: Date;
+                    startTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     numEpochsPaidOver?: any;
                     filledEpochs?: any;
                     distributedCoins?: {
@@ -1659,14 +1740,23 @@ export declare namespace osmosis {
                     distributeTo?: {
                         lockQueryType?: _512.LockQueryType;
                         denom?: string;
-                        duration?: string;
-                        timestamp?: Date;
+                        duration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        timestamp?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                     coins?: {
                         denom?: string;
                         amount?: string;
                     }[];
-                    startTime?: Date;
+                    startTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     numEpochsPaidOver?: any;
                     filledEpochs?: any;
                     distributedCoins?: {
@@ -1707,14 +1797,23 @@ export declare namespace osmosis {
                     distributeTo?: {
                         lockQueryType?: _512.LockQueryType;
                         denom?: string;
-                        duration?: string;
-                        timestamp?: Date;
+                        duration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        timestamp?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                     coins?: {
                         denom?: string;
                         amount?: string;
                     }[];
-                    startTime?: Date;
+                    startTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     numEpochsPaidOver?: any;
                     filledEpochs?: any;
                     distributedCoins?: {
@@ -1756,14 +1855,23 @@ export declare namespace osmosis {
                     distributeTo?: {
                         lockQueryType?: _512.LockQueryType;
                         denom?: string;
-                        duration?: string;
-                        timestamp?: Date;
+                        duration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        timestamp?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                     coins?: {
                         denom?: string;
                         amount?: string;
                     }[];
-                    startTime?: Date;
+                    startTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     numEpochsPaidOver?: any;
                     filledEpochs?: any;
                     distributedCoins?: {
@@ -1804,14 +1912,23 @@ export declare namespace osmosis {
                     distributeTo?: {
                         lockQueryType?: _512.LockQueryType;
                         denom?: string;
-                        duration?: string;
-                        timestamp?: Date;
+                        duration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        timestamp?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                     coins?: {
                         denom?: string;
                         amount?: string;
                     }[];
-                    startTime?: Date;
+                    startTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     numEpochsPaidOver?: any;
                     filledEpochs?: any;
                     distributedCoins?: {
@@ -1853,14 +1970,23 @@ export declare namespace osmosis {
                     distributeTo?: {
                         lockQueryType?: _512.LockQueryType;
                         denom?: string;
-                        duration?: string;
-                        timestamp?: Date;
+                        duration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        timestamp?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                     coins?: {
                         denom?: string;
                         amount?: string;
                     }[];
-                    startTime?: Date;
+                    startTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     numEpochsPaidOver?: any;
                     filledEpochs?: any;
                     distributedCoins?: {
@@ -1910,7 +2036,10 @@ export declare namespace osmosis {
             fromJSON(object: any): _509.QueryLockableDurationsResponse;
             toJSON(message: _509.QueryLockableDurationsResponse): unknown;
             fromPartial(object: {
-                lockableDurations?: string[];
+                lockableDurations?: {
+                    seconds?: any;
+                    nanos?: number;
+                }[];
             }): _509.QueryLockableDurationsResponse;
         };
         Params: {
@@ -1937,14 +2066,23 @@ export declare namespace osmosis {
                     distributeTo?: {
                         lockQueryType?: _512.LockQueryType;
                         denom?: string;
-                        duration?: string;
-                        timestamp?: Date;
+                        duration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        timestamp?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                     coins?: {
                         denom?: string;
                         amount?: string;
                     }[];
-                    startTime?: Date;
+                    startTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     numEpochsPaidOver?: any;
                     filledEpochs?: any;
                     distributedCoins?: {
@@ -1952,7 +2090,10 @@ export declare namespace osmosis {
                         amount?: string;
                     }[];
                 }[];
-                lockableDurations?: string[];
+                lockableDurations?: {
+                    seconds?: any;
+                    nanos?: number;
+                }[];
                 lastGaugeId?: any;
             }): _507.GenesisState;
         };
@@ -1967,14 +2108,23 @@ export declare namespace osmosis {
                 distributeTo?: {
                     lockQueryType?: _512.LockQueryType;
                     denom?: string;
-                    duration?: string;
-                    timestamp?: Date;
+                    duration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    timestamp?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 };
                 coins?: {
                     denom?: string;
                     amount?: string;
                 }[];
-                startTime?: Date;
+                startTime?: {
+                    seconds?: any;
+                    nanos?: number;
+                };
                 numEpochsPaidOver?: any;
                 filledEpochs?: any;
                 distributedCoins?: {
@@ -1989,7 +2139,10 @@ export declare namespace osmosis {
             fromJSON(object: any): _506.LockableDurationsInfo;
             toJSON(message: _506.LockableDurationsInfo): unknown;
             fromPartial(object: {
-                lockableDurations?: string[];
+                lockableDurations?: {
+                    seconds?: any;
+                    nanos?: number;
+                }[];
             }): _506.LockableDurationsInfo;
         };
     };
@@ -2093,7 +2246,10 @@ export declare namespace osmosis {
                 aminoType: string;
                 toAmino: ({ owner, duration, coins }: _514.MsgLockTokens) => {
                     owner: string;
-                    duration: string;
+                    duration: {
+                        seconds: string;
+                        nanos: number;
+                    };
                     coins: {
                         denom: string;
                         amount: string;
@@ -2101,7 +2257,10 @@ export declare namespace osmosis {
                 };
                 fromAmino: ({ owner, duration, coins }: {
                     owner: string;
-                    duration: string;
+                    duration: {
+                        seconds: string;
+                        nanos: number;
+                    };
                     coins: {
                         denom: string;
                         amount: string;
@@ -2141,12 +2300,18 @@ export declare namespace osmosis {
                 toAmino: ({ owner, ID, duration }: _514.MsgExtendLockup) => {
                     owner: string;
                     ID: string;
-                    duration: string;
+                    duration: {
+                        seconds: string;
+                        nanos: number;
+                    };
                 };
                 fromAmino: ({ owner, ID, duration }: {
                     owner: string;
                     ID: string;
-                    duration: string;
+                    duration: {
+                        seconds: string;
+                        nanos: number;
+                    };
                 }) => _514.MsgExtendLockup;
             };
         };
@@ -2157,7 +2322,10 @@ export declare namespace osmosis {
             toJSON(message: _514.MsgLockTokens): unknown;
             fromPartial(object: {
                 owner?: string;
-                duration?: string;
+                duration?: {
+                    seconds?: any;
+                    nanos?: number;
+                };
                 coins?: {
                     denom?: string;
                     amount?: string;
@@ -2191,8 +2359,14 @@ export declare namespace osmosis {
                 unlocks?: {
                     ID?: any;
                     owner?: string;
-                    duration?: string;
-                    endTime?: Date;
+                    duration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    endTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     coins?: {
                         denom?: string;
                         amount?: string;
@@ -2231,7 +2405,10 @@ export declare namespace osmosis {
             fromPartial(object: {
                 owner?: string;
                 ID?: any;
-                duration?: string;
+                duration?: {
+                    seconds?: any;
+                    nanos?: number;
+                };
             }): _514.MsgExtendLockup;
         };
         MsgExtendLockupResponse: {
@@ -2351,7 +2528,10 @@ export declare namespace osmosis {
             toJSON(message: _513.AccountLockedPastTimeRequest): unknown;
             fromPartial(object: {
                 owner?: string;
-                timestamp?: Date;
+                timestamp?: {
+                    seconds?: any;
+                    nanos?: number;
+                };
             }): _513.AccountLockedPastTimeRequest;
         };
         AccountLockedPastTimeResponse: {
@@ -2363,8 +2543,14 @@ export declare namespace osmosis {
                 locks?: {
                     ID?: any;
                     owner?: string;
-                    duration?: string;
-                    endTime?: Date;
+                    duration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    endTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     coins?: {
                         denom?: string;
                         amount?: string;
@@ -2379,7 +2565,10 @@ export declare namespace osmosis {
             toJSON(message: _513.AccountLockedPastTimeNotUnlockingOnlyRequest): unknown;
             fromPartial(object: {
                 owner?: string;
-                timestamp?: Date;
+                timestamp?: {
+                    seconds?: any;
+                    nanos?: number;
+                };
             }): _513.AccountLockedPastTimeNotUnlockingOnlyRequest;
         };
         AccountLockedPastTimeNotUnlockingOnlyResponse: {
@@ -2391,8 +2580,14 @@ export declare namespace osmosis {
                 locks?: {
                     ID?: any;
                     owner?: string;
-                    duration?: string;
-                    endTime?: Date;
+                    duration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    endTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     coins?: {
                         denom?: string;
                         amount?: string;
@@ -2407,7 +2602,10 @@ export declare namespace osmosis {
             toJSON(message: _513.AccountUnlockedBeforeTimeRequest): unknown;
             fromPartial(object: {
                 owner?: string;
-                timestamp?: Date;
+                timestamp?: {
+                    seconds?: any;
+                    nanos?: number;
+                };
             }): _513.AccountUnlockedBeforeTimeRequest;
         };
         AccountUnlockedBeforeTimeResponse: {
@@ -2419,8 +2617,14 @@ export declare namespace osmosis {
                 locks?: {
                     ID?: any;
                     owner?: string;
-                    duration?: string;
-                    endTime?: Date;
+                    duration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    endTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     coins?: {
                         denom?: string;
                         amount?: string;
@@ -2435,7 +2639,10 @@ export declare namespace osmosis {
             toJSON(message: _513.AccountLockedPastTimeDenomRequest): unknown;
             fromPartial(object: {
                 owner?: string;
-                timestamp?: Date;
+                timestamp?: {
+                    seconds?: any;
+                    nanos?: number;
+                };
                 denom?: string;
             }): _513.AccountLockedPastTimeDenomRequest;
         };
@@ -2448,8 +2655,14 @@ export declare namespace osmosis {
                 locks?: {
                     ID?: any;
                     owner?: string;
-                    duration?: string;
-                    endTime?: Date;
+                    duration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    endTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     coins?: {
                         denom?: string;
                         amount?: string;
@@ -2464,7 +2677,10 @@ export declare namespace osmosis {
             toJSON(message: _513.LockedDenomRequest): unknown;
             fromPartial(object: {
                 denom?: string;
-                duration?: string;
+                duration?: {
+                    seconds?: any;
+                    nanos?: number;
+                };
             }): _513.LockedDenomRequest;
         };
         LockedDenomResponse: {
@@ -2494,8 +2710,14 @@ export declare namespace osmosis {
                 lock?: {
                     ID?: any;
                     owner?: string;
-                    duration?: string;
-                    endTime?: Date;
+                    duration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    endTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     coins?: {
                         denom?: string;
                         amount?: string;
@@ -2521,8 +2743,14 @@ export declare namespace osmosis {
                 syntheticLocks?: {
                     underlyingLockId?: any;
                     synthDenom?: string;
-                    endTime?: Date;
-                    duration?: string;
+                    endTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    duration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }[];
             }): _513.SyntheticLockupsByLockupIDResponse;
         };
@@ -2533,7 +2761,10 @@ export declare namespace osmosis {
             toJSON(message: _513.AccountLockedLongerDurationRequest): unknown;
             fromPartial(object: {
                 owner?: string;
-                duration?: string;
+                duration?: {
+                    seconds?: any;
+                    nanos?: number;
+                };
             }): _513.AccountLockedLongerDurationRequest;
         };
         AccountLockedLongerDurationResponse: {
@@ -2545,8 +2776,14 @@ export declare namespace osmosis {
                 locks?: {
                     ID?: any;
                     owner?: string;
-                    duration?: string;
-                    endTime?: Date;
+                    duration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    endTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     coins?: {
                         denom?: string;
                         amount?: string;
@@ -2561,7 +2798,10 @@ export declare namespace osmosis {
             toJSON(message: _513.AccountLockedDurationRequest): unknown;
             fromPartial(object: {
                 owner?: string;
-                duration?: string;
+                duration?: {
+                    seconds?: any;
+                    nanos?: number;
+                };
             }): _513.AccountLockedDurationRequest;
         };
         AccountLockedDurationResponse: {
@@ -2573,8 +2813,14 @@ export declare namespace osmosis {
                 locks?: {
                     ID?: any;
                     owner?: string;
-                    duration?: string;
-                    endTime?: Date;
+                    duration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    endTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     coins?: {
                         denom?: string;
                         amount?: string;
@@ -2589,7 +2835,10 @@ export declare namespace osmosis {
             toJSON(message: _513.AccountLockedLongerDurationNotUnlockingOnlyRequest): unknown;
             fromPartial(object: {
                 owner?: string;
-                duration?: string;
+                duration?: {
+                    seconds?: any;
+                    nanos?: number;
+                };
             }): _513.AccountLockedLongerDurationNotUnlockingOnlyRequest;
         };
         AccountLockedLongerDurationNotUnlockingOnlyResponse: {
@@ -2601,8 +2850,14 @@ export declare namespace osmosis {
                 locks?: {
                     ID?: any;
                     owner?: string;
-                    duration?: string;
-                    endTime?: Date;
+                    duration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    endTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     coins?: {
                         denom?: string;
                         amount?: string;
@@ -2617,7 +2872,10 @@ export declare namespace osmosis {
             toJSON(message: _513.AccountLockedLongerDurationDenomRequest): unknown;
             fromPartial(object: {
                 owner?: string;
-                duration?: string;
+                duration?: {
+                    seconds?: any;
+                    nanos?: number;
+                };
                 denom?: string;
             }): _513.AccountLockedLongerDurationDenomRequest;
         };
@@ -2630,8 +2888,14 @@ export declare namespace osmosis {
                 locks?: {
                     ID?: any;
                     owner?: string;
-                    duration?: string;
-                    endTime?: Date;
+                    duration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    endTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     coins?: {
                         denom?: string;
                         amount?: string;
@@ -2650,8 +2914,14 @@ export declare namespace osmosis {
             fromPartial(object: {
                 ID?: any;
                 owner?: string;
-                duration?: string;
-                endTime?: Date;
+                duration?: {
+                    seconds?: any;
+                    nanos?: number;
+                };
+                endTime?: {
+                    seconds?: any;
+                    nanos?: number;
+                };
                 coins?: {
                     denom?: string;
                     amount?: string;
@@ -2666,8 +2936,14 @@ export declare namespace osmosis {
             fromPartial(object: {
                 lockQueryType?: _512.LockQueryType;
                 denom?: string;
-                duration?: string;
-                timestamp?: Date;
+                duration?: {
+                    seconds?: any;
+                    nanos?: number;
+                };
+                timestamp?: {
+                    seconds?: any;
+                    nanos?: number;
+                };
             }): _512.QueryCondition;
         };
         SyntheticLock: {
@@ -2678,8 +2954,14 @@ export declare namespace osmosis {
             fromPartial(object: {
                 underlyingLockId?: any;
                 synthDenom?: string;
-                endTime?: Date;
-                duration?: string;
+                endTime?: {
+                    seconds?: any;
+                    nanos?: number;
+                };
+                duration?: {
+                    seconds?: any;
+                    nanos?: number;
+                };
             }): _512.SyntheticLock;
         };
         GenesisState: {
@@ -2692,8 +2974,14 @@ export declare namespace osmosis {
                 locks?: {
                     ID?: any;
                     owner?: string;
-                    duration?: string;
-                    endTime?: Date;
+                    duration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    endTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     coins?: {
                         denom?: string;
                         amount?: string;
@@ -2702,8 +2990,14 @@ export declare namespace osmosis {
                 syntheticLocks?: {
                     underlyingLockId?: any;
                     synthDenom?: string;
-                    endTime?: Date;
-                    duration?: string;
+                    endTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    duration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }[];
             }): _511.GenesisState;
         };
@@ -2865,7 +3159,10 @@ export declare namespace osmosis {
                 fromPartial(object: {
                     gaugeIdsWithDuration?: {
                         gaugeId?: any;
-                        duration?: string;
+                        duration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                 }): _521.QueryGaugeIdsResponse;
             };
@@ -2876,7 +3173,10 @@ export declare namespace osmosis {
                 toJSON(message: _521.QueryGaugeIdsResponse_GaugeIdWithDuration): unknown;
                 fromPartial(object: {
                     gaugeId?: any;
-                    duration?: string;
+                    duration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _521.QueryGaugeIdsResponse_GaugeIdWithDuration;
             };
             QueryDistrInfoRequest: {
@@ -2932,7 +3232,10 @@ export declare namespace osmosis {
                 fromJSON(object: any): _521.QueryLockableDurationsResponse;
                 toJSON(message: _521.QueryLockableDurationsResponse): unknown;
                 fromPartial(object: {
-                    lockableDurations?: string[];
+                    lockableDurations?: {
+                        seconds?: any;
+                        nanos?: number;
+                    }[];
                 }): _521.QueryLockableDurationsResponse;
             };
             QueryIncentivizedPoolsRequest: {
@@ -2949,7 +3252,10 @@ export declare namespace osmosis {
                 toJSON(message: _521.IncentivizedPool): unknown;
                 fromPartial(object: {
                     poolId?: any;
-                    lockableDuration?: string;
+                    lockableDuration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     gaugeId?: any;
                 }): _521.IncentivizedPool;
             };
@@ -2961,7 +3267,10 @@ export declare namespace osmosis {
                 fromPartial(object: {
                     incentivizedPools?: {
                         poolId?: any;
-                        lockableDuration?: string;
+                        lockableDuration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         gaugeId?: any;
                     }[];
                 }): _521.QueryIncentivizedPoolsResponse;
@@ -2985,14 +3294,23 @@ export declare namespace osmosis {
                         distributeTo?: {
                             lockQueryType?: _512.LockQueryType;
                             denom?: string;
-                            duration?: string;
-                            timestamp?: Date;
+                            duration?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
+                            timestamp?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
                         };
                         coins?: {
                             denom?: string;
                             amount?: string;
                         }[];
-                        startTime?: Date;
+                        startTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         numEpochsPaidOver?: any;
                         filledEpochs?: any;
                         distributedCoins?: {
@@ -3017,7 +3335,10 @@ export declare namespace osmosis {
                 fromJSON(object: any): _520.LockableDurationsInfo;
                 toJSON(message: _520.LockableDurationsInfo): unknown;
                 fromPartial(object: {
-                    lockableDurations?: string[];
+                    lockableDurations?: {
+                        seconds?: any;
+                        nanos?: number;
+                    }[];
                 }): _520.LockableDurationsInfo;
             };
             DistrInfo: {
@@ -3080,7 +3401,10 @@ export declare namespace osmosis {
                     params?: {
                         mintedDenom?: string;
                     };
-                    lockableDurations?: string[];
+                    lockableDurations?: {
+                        seconds?: any;
+                        nanos?: number;
+                    }[];
                     distrInfo?: {
                         totalWeight?: string;
                         records?: {
@@ -3734,8 +4058,14 @@ export declare namespace osmosis {
                 syntheticLocks?: {
                     underlyingLockId?: any;
                     synthDenom?: string;
-                    endTime?: Date;
-                    duration?: string;
+                    endTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    duration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }[];
             }): _525.SuperfluidUndelegationsByDelegatorResponse;
         };

@@ -1,6 +1,6 @@
 import { Timestamp } from "../../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { Long, isSet, DeepPartial, toTimestamp, fromTimestamp, fromJsonTimestamp } from "@osmonauts/helpers";
+import { Long, isSet, DeepPartial, fromJsonTimestamp, fromTimestamp } from "@osmonauts/helpers";
 
 /**
  * BuyOrderSellOrderMatch defines the data the FIFO/price-time-priority matching
@@ -43,10 +43,10 @@ export interface BuyOrderClassSelector {
   projectLocation: string;
 
   /** min_start_date is the minimum start date in the selector's criteria. */
-  minStartDate: Date;
+  minStartDate: Timestamp;
 
   /** max_end_date is the maximum end date in the selector's criteria. */
-  maxEndDate: Date;
+  maxEndDate: Timestamp;
 }
 
 /** BuyOrderProjectSelector indexes a buy order with project selector. */
@@ -58,10 +58,10 @@ export interface BuyOrderProjectSelector {
   projectId: Long;
 
   /** min_start_date is the minimum start date in the selector's criteria. */
-  minStartDate: Date;
+  minStartDate: Timestamp;
 
   /** max_end_date is the maximum end date in the selector's criteria. */
-  maxEndDate: Date;
+  maxEndDate: Timestamp;
 }
 
 /** BuyOrderBatchSelector indexes a buy order with batch selector. */
@@ -203,11 +203,11 @@ export const BuyOrderClassSelector = {
     }
 
     if (message.minStartDate !== undefined) {
-      Timestamp.encode(toTimestamp(message.minStartDate), writer.uint32(34).fork()).ldelim();
+      Timestamp.encode(message.minStartDate, writer.uint32(34).fork()).ldelim();
     }
 
     if (message.maxEndDate !== undefined) {
-      Timestamp.encode(toTimestamp(message.maxEndDate), writer.uint32(42).fork()).ldelim();
+      Timestamp.encode(message.maxEndDate, writer.uint32(42).fork()).ldelim();
     }
 
     return writer;
@@ -235,11 +235,11 @@ export const BuyOrderClassSelector = {
           break;
 
         case 4:
-          message.minStartDate = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.minStartDate = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 5:
-          message.maxEndDate = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.maxEndDate = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -266,8 +266,8 @@ export const BuyOrderClassSelector = {
     message.buyOrderId !== undefined && (obj.buyOrderId = (message.buyOrderId || Long.UZERO).toString());
     message.classId !== undefined && (obj.classId = (message.classId || Long.UZERO).toString());
     message.projectLocation !== undefined && (obj.projectLocation = message.projectLocation);
-    message.minStartDate !== undefined && (obj.minStartDate = message.minStartDate.toISOString());
-    message.maxEndDate !== undefined && (obj.maxEndDate = message.maxEndDate.toISOString());
+    message.minStartDate !== undefined && (obj.minStartDate = fromTimestamp(message.minStartDate).toISOString());
+    message.maxEndDate !== undefined && (obj.maxEndDate = fromTimestamp(message.maxEndDate).toISOString());
     return obj;
   },
 
@@ -276,8 +276,8 @@ export const BuyOrderClassSelector = {
     message.buyOrderId = object.buyOrderId !== undefined && object.buyOrderId !== null ? Long.fromValue(object.buyOrderId) : Long.UZERO;
     message.classId = object.classId !== undefined && object.classId !== null ? Long.fromValue(object.classId) : Long.UZERO;
     message.projectLocation = object.projectLocation ?? "";
-    message.minStartDate = object.minStartDate ?? undefined;
-    message.maxEndDate = object.maxEndDate ?? undefined;
+    message.minStartDate = object.minStartDate !== undefined && object.minStartDate !== null ? Timestamp.fromPartial(object.minStartDate) : undefined;
+    message.maxEndDate = object.maxEndDate !== undefined && object.maxEndDate !== null ? Timestamp.fromPartial(object.maxEndDate) : undefined;
     return message;
   }
 
@@ -303,11 +303,11 @@ export const BuyOrderProjectSelector = {
     }
 
     if (message.minStartDate !== undefined) {
-      Timestamp.encode(toTimestamp(message.minStartDate), writer.uint32(26).fork()).ldelim();
+      Timestamp.encode(message.minStartDate, writer.uint32(26).fork()).ldelim();
     }
 
     if (message.maxEndDate !== undefined) {
-      Timestamp.encode(toTimestamp(message.maxEndDate), writer.uint32(34).fork()).ldelim();
+      Timestamp.encode(message.maxEndDate, writer.uint32(34).fork()).ldelim();
     }
 
     return writer;
@@ -331,11 +331,11 @@ export const BuyOrderProjectSelector = {
           break;
 
         case 3:
-          message.minStartDate = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.minStartDate = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 4:
-          message.maxEndDate = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.maxEndDate = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -360,8 +360,8 @@ export const BuyOrderProjectSelector = {
     const obj: any = {};
     message.buyOrderId !== undefined && (obj.buyOrderId = (message.buyOrderId || Long.UZERO).toString());
     message.projectId !== undefined && (obj.projectId = (message.projectId || Long.UZERO).toString());
-    message.minStartDate !== undefined && (obj.minStartDate = message.minStartDate.toISOString());
-    message.maxEndDate !== undefined && (obj.maxEndDate = message.maxEndDate.toISOString());
+    message.minStartDate !== undefined && (obj.minStartDate = fromTimestamp(message.minStartDate).toISOString());
+    message.maxEndDate !== undefined && (obj.maxEndDate = fromTimestamp(message.maxEndDate).toISOString());
     return obj;
   },
 
@@ -369,8 +369,8 @@ export const BuyOrderProjectSelector = {
     const message = createBaseBuyOrderProjectSelector();
     message.buyOrderId = object.buyOrderId !== undefined && object.buyOrderId !== null ? Long.fromValue(object.buyOrderId) : Long.UZERO;
     message.projectId = object.projectId !== undefined && object.projectId !== null ? Long.fromValue(object.projectId) : Long.UZERO;
-    message.minStartDate = object.minStartDate ?? undefined;
-    message.maxEndDate = object.maxEndDate ?? undefined;
+    message.minStartDate = object.minStartDate !== undefined && object.minStartDate !== null ? Timestamp.fromPartial(object.minStartDate) : undefined;
+    message.maxEndDate = object.maxEndDate !== undefined && object.maxEndDate !== null ? Timestamp.fromPartial(object.maxEndDate) : undefined;
     return message;
   }
 

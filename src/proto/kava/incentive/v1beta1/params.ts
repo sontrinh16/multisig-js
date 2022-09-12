@@ -1,14 +1,14 @@
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import * as _m0 from "protobufjs/minimal";
-import { toTimestamp, fromTimestamp, isSet, fromJsonTimestamp, DeepPartial, Long, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
+import { isSet, fromJsonTimestamp, fromTimestamp, DeepPartial, Long, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
 
 /** RewardPeriod stores the state of an ongoing reward */
 export interface RewardPeriod {
   active: boolean;
   collateralType: string;
-  start: Date;
-  end: Date;
+  start: Timestamp;
+  end: Timestamp;
   rewardsPerSecond: Coin;
 }
 
@@ -16,8 +16,8 @@ export interface RewardPeriod {
 export interface MultiRewardPeriod {
   active: boolean;
   collateralType: string;
-  start: Date;
-  end: Date;
+  start: Timestamp;
+  end: Timestamp;
   rewardsPerSecond: Coin[];
 }
 
@@ -42,7 +42,7 @@ export interface Params {
   delegatorRewardPeriods: MultiRewardPeriod[];
   swapRewardPeriods: MultiRewardPeriod[];
   claimMultipliers: MultipliersPerDenom[];
-  claimEnd: Date;
+  claimEnd: Timestamp;
   savingsRewardPeriods: MultiRewardPeriod[];
 }
 
@@ -67,11 +67,11 @@ export const RewardPeriod = {
     }
 
     if (message.start !== undefined) {
-      Timestamp.encode(toTimestamp(message.start), writer.uint32(26).fork()).ldelim();
+      Timestamp.encode(message.start, writer.uint32(26).fork()).ldelim();
     }
 
     if (message.end !== undefined) {
-      Timestamp.encode(toTimestamp(message.end), writer.uint32(34).fork()).ldelim();
+      Timestamp.encode(message.end, writer.uint32(34).fork()).ldelim();
     }
 
     if (message.rewardsPerSecond !== undefined) {
@@ -99,11 +99,11 @@ export const RewardPeriod = {
           break;
 
         case 3:
-          message.start = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.start = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 4:
-          message.end = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.end = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 5:
@@ -133,8 +133,8 @@ export const RewardPeriod = {
     const obj: any = {};
     message.active !== undefined && (obj.active = message.active);
     message.collateralType !== undefined && (obj.collateralType = message.collateralType);
-    message.start !== undefined && (obj.start = message.start.toISOString());
-    message.end !== undefined && (obj.end = message.end.toISOString());
+    message.start !== undefined && (obj.start = fromTimestamp(message.start).toISOString());
+    message.end !== undefined && (obj.end = fromTimestamp(message.end).toISOString());
     message.rewardsPerSecond !== undefined && (obj.rewardsPerSecond = message.rewardsPerSecond ? Coin.toJSON(message.rewardsPerSecond) : undefined);
     return obj;
   },
@@ -143,8 +143,8 @@ export const RewardPeriod = {
     const message = createBaseRewardPeriod();
     message.active = object.active ?? false;
     message.collateralType = object.collateralType ?? "";
-    message.start = object.start ?? undefined;
-    message.end = object.end ?? undefined;
+    message.start = object.start !== undefined && object.start !== null ? Timestamp.fromPartial(object.start) : undefined;
+    message.end = object.end !== undefined && object.end !== null ? Timestamp.fromPartial(object.end) : undefined;
     message.rewardsPerSecond = object.rewardsPerSecond !== undefined && object.rewardsPerSecond !== null ? Coin.fromPartial(object.rewardsPerSecond) : undefined;
     return message;
   }
@@ -172,11 +172,11 @@ export const MultiRewardPeriod = {
     }
 
     if (message.start !== undefined) {
-      Timestamp.encode(toTimestamp(message.start), writer.uint32(26).fork()).ldelim();
+      Timestamp.encode(message.start, writer.uint32(26).fork()).ldelim();
     }
 
     if (message.end !== undefined) {
-      Timestamp.encode(toTimestamp(message.end), writer.uint32(34).fork()).ldelim();
+      Timestamp.encode(message.end, writer.uint32(34).fork()).ldelim();
     }
 
     for (const v of message.rewardsPerSecond) {
@@ -204,11 +204,11 @@ export const MultiRewardPeriod = {
           break;
 
         case 3:
-          message.start = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.start = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 4:
-          message.end = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.end = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 5:
@@ -238,8 +238,8 @@ export const MultiRewardPeriod = {
     const obj: any = {};
     message.active !== undefined && (obj.active = message.active);
     message.collateralType !== undefined && (obj.collateralType = message.collateralType);
-    message.start !== undefined && (obj.start = message.start.toISOString());
-    message.end !== undefined && (obj.end = message.end.toISOString());
+    message.start !== undefined && (obj.start = fromTimestamp(message.start).toISOString());
+    message.end !== undefined && (obj.end = fromTimestamp(message.end).toISOString());
 
     if (message.rewardsPerSecond) {
       obj.rewardsPerSecond = message.rewardsPerSecond.map(e => e ? Coin.toJSON(e) : undefined);
@@ -254,8 +254,8 @@ export const MultiRewardPeriod = {
     const message = createBaseMultiRewardPeriod();
     message.active = object.active ?? false;
     message.collateralType = object.collateralType ?? "";
-    message.start = object.start ?? undefined;
-    message.end = object.end ?? undefined;
+    message.start = object.start !== undefined && object.start !== null ? Timestamp.fromPartial(object.start) : undefined;
+    message.end = object.end !== undefined && object.end !== null ? Timestamp.fromPartial(object.end) : undefined;
     message.rewardsPerSecond = object.rewardsPerSecond?.map(e => Coin.fromPartial(e)) || [];
     return message;
   }
@@ -458,7 +458,7 @@ export const Params = {
     }
 
     if (message.claimEnd !== undefined) {
-      Timestamp.encode(toTimestamp(message.claimEnd), writer.uint32(58).fork()).ldelim();
+      Timestamp.encode(message.claimEnd, writer.uint32(58).fork()).ldelim();
     }
 
     for (const v of message.savingsRewardPeriods) {
@@ -502,7 +502,7 @@ export const Params = {
           break;
 
         case 7:
-          message.claimEnd = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.claimEnd = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 8:
@@ -570,7 +570,7 @@ export const Params = {
       obj.claimMultipliers = [];
     }
 
-    message.claimEnd !== undefined && (obj.claimEnd = message.claimEnd.toISOString());
+    message.claimEnd !== undefined && (obj.claimEnd = fromTimestamp(message.claimEnd).toISOString());
 
     if (message.savingsRewardPeriods) {
       obj.savingsRewardPeriods = message.savingsRewardPeriods.map(e => e ? MultiRewardPeriod.toJSON(e) : undefined);
@@ -589,7 +589,7 @@ export const Params = {
     message.delegatorRewardPeriods = object.delegatorRewardPeriods?.map(e => MultiRewardPeriod.fromPartial(e)) || [];
     message.swapRewardPeriods = object.swapRewardPeriods?.map(e => MultiRewardPeriod.fromPartial(e)) || [];
     message.claimMultipliers = object.claimMultipliers?.map(e => MultipliersPerDenom.fromPartial(e)) || [];
-    message.claimEnd = object.claimEnd ?? undefined;
+    message.claimEnd = object.claimEnd !== undefined && object.claimEnd !== null ? Timestamp.fromPartial(object.claimEnd) : undefined;
     message.savingsRewardPeriods = object.savingsRewardPeriods?.map(e => MultiRewardPeriod.fromPartial(e)) || [];
     return message;
   }

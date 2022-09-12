@@ -1,3 +1,4 @@
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
 /** MediaType defines MIME media types to be used with a ContentHash.Raw hash. */
@@ -128,7 +129,7 @@ export interface SignerEntry {
     /** signer is the address of the signer */
     signer: string;
     /** timestamp is the time at which the data was signed */
-    timestamp: Date;
+    timestamp: Timestamp;
 }
 export declare const ContentHash: {
     encode(message: ContentHash, writer?: _m0.Writer): _m0.Writer;

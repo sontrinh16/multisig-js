@@ -2,7 +2,7 @@ import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import { OriginTx } from "./types";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, toTimestamp, fromTimestamp, fromJsonTimestamp } from "@osmonauts/helpers";
+import { isSet, DeepPartial, fromJsonTimestamp, fromTimestamp } from "@osmonauts/helpers";
 
 /** MsgCreateClass is the Msg/CreateClass request type. */
 export interface MsgCreateClass {
@@ -91,13 +91,13 @@ export interface MsgCreateBatch {
    * start_date is the beginning of the period during which this credit batch
    * was quantified and verified.
    */
-  startDate: Date;
+  startDate: Timestamp;
 
   /**
    * end_date is the end of the period during which this credit batch was
    * quantified and verified.
    */
-  endDate: Date;
+  endDate: Timestamp;
 
   /**
    * If open is true we will enable future minting.
@@ -750,11 +750,11 @@ export const MsgCreateBatch = {
     }
 
     if (message.startDate !== undefined) {
-      Timestamp.encode(toTimestamp(message.startDate), writer.uint32(42).fork()).ldelim();
+      Timestamp.encode(message.startDate, writer.uint32(42).fork()).ldelim();
     }
 
     if (message.endDate !== undefined) {
-      Timestamp.encode(toTimestamp(message.endDate), writer.uint32(50).fork()).ldelim();
+      Timestamp.encode(message.endDate, writer.uint32(50).fork()).ldelim();
     }
 
     if (message.open === true) {
@@ -798,11 +798,11 @@ export const MsgCreateBatch = {
           break;
 
         case 5:
-          message.startDate = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.startDate = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 6:
-          message.endDate = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.endDate = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 7:
@@ -852,8 +852,8 @@ export const MsgCreateBatch = {
     }
 
     message.metadata !== undefined && (obj.metadata = message.metadata);
-    message.startDate !== undefined && (obj.startDate = message.startDate.toISOString());
-    message.endDate !== undefined && (obj.endDate = message.endDate.toISOString());
+    message.startDate !== undefined && (obj.startDate = fromTimestamp(message.startDate).toISOString());
+    message.endDate !== undefined && (obj.endDate = fromTimestamp(message.endDate).toISOString());
     message.open !== undefined && (obj.open = message.open);
     message.originTx !== undefined && (obj.originTx = message.originTx ? OriginTx.toJSON(message.originTx) : undefined);
     message.note !== undefined && (obj.note = message.note);
@@ -866,8 +866,8 @@ export const MsgCreateBatch = {
     message.projectId = object.projectId ?? "";
     message.issuance = object.issuance?.map(e => BatchIssuance.fromPartial(e)) || [];
     message.metadata = object.metadata ?? "";
-    message.startDate = object.startDate ?? undefined;
-    message.endDate = object.endDate ?? undefined;
+    message.startDate = object.startDate !== undefined && object.startDate !== null ? Timestamp.fromPartial(object.startDate) : undefined;
+    message.endDate = object.endDate !== undefined && object.endDate !== null ? Timestamp.fromPartial(object.endDate) : undefined;
     message.open = object.open ?? false;
     message.originTx = object.originTx !== undefined && object.originTx !== null ? OriginTx.fromPartial(object.originTx) : undefined;
     message.note = object.note ?? "";

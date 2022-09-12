@@ -3,7 +3,7 @@ import { Any } from "../../google/protobuf/any";
 import { Duration } from "../../google/protobuf/duration";
 import { Timestamp } from "../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, Long, toDuration, toTimestamp, fromDuration, fromTimestamp, fromJsonTimestamp } from "@osmonauts/helpers";
+import { isSet, DeepPartial, Long, fromJsonTimestamp, fromTimestamp } from "@osmonauts/helpers";
 
 /** PaymentTemplate contains details about a payment, with no info about the payer or payee. */
 export interface PaymentTemplate {
@@ -64,8 +64,8 @@ export interface BlockPeriod {
 
 /** TimePeriod implements the Period interface and specifies a period in terms of time. */
 export interface TimePeriod {
-  periodDurationNs: string;
-  periodStartTime: Date;
+  periodDurationNs: Duration;
+  periodStartTime: Timestamp;
 }
 
 /**
@@ -718,11 +718,11 @@ function createBaseTimePeriod(): TimePeriod {
 export const TimePeriod = {
   encode(message: TimePeriod, writer: _m0.Writer = _m0.Writer.create()): _m0.Writer {
     if (message.periodDurationNs !== undefined) {
-      Duration.encode(toDuration(message.periodDurationNs), writer.uint32(10).fork()).ldelim();
+      Duration.encode(message.periodDurationNs, writer.uint32(10).fork()).ldelim();
     }
 
     if (message.periodStartTime !== undefined) {
-      Timestamp.encode(toTimestamp(message.periodStartTime), writer.uint32(18).fork()).ldelim();
+      Timestamp.encode(message.periodStartTime, writer.uint32(18).fork()).ldelim();
     }
 
     return writer;
@@ -738,11 +738,11 @@ export const TimePeriod = {
 
       switch (tag >>> 3) {
         case 1:
-          message.periodDurationNs = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.periodDurationNs = Duration.decode(reader, reader.uint32());
           break;
 
         case 2:
-          message.periodStartTime = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.periodStartTime = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -756,7 +756,7 @@ export const TimePeriod = {
 
   fromJSON(object: any): TimePeriod {
     return {
-      periodDurationNs: isSet(object.periodDurationNs) ? String(object.periodDurationNs) : undefined,
+      periodDurationNs: isSet(object.periodDurationNs) ? Duration.fromJSON(object.periodDurationNs) : undefined,
       periodStartTime: isSet(object.periodStartTime) ? fromJsonTimestamp(object.periodStartTime) : undefined
     };
   },
@@ -764,14 +764,14 @@ export const TimePeriod = {
   toJSON(message: TimePeriod): unknown {
     const obj: any = {};
     message.periodDurationNs !== undefined && (obj.periodDurationNs = message.periodDurationNs);
-    message.periodStartTime !== undefined && (obj.periodStartTime = message.periodStartTime.toISOString());
+    message.periodStartTime !== undefined && (obj.periodStartTime = fromTimestamp(message.periodStartTime).toISOString());
     return obj;
   },
 
   fromPartial(object: DeepPartial<TimePeriod>): TimePeriod {
     const message = createBaseTimePeriod();
     message.periodDurationNs = object.periodDurationNs ?? undefined;
-    message.periodStartTime = object.periodStartTime ?? undefined;
+    message.periodStartTime = object.periodStartTime !== undefined && object.periodStartTime !== null ? Timestamp.fromPartial(object.periodStartTime) : undefined;
     return message;
   }
 

@@ -60,9 +60,18 @@ export declare namespace evmos {
                 fromPartial(object: {
                     params?: {
                         enableClaims?: boolean;
-                        airdropStartTime?: Date;
-                        durationUntilDecay?: string;
-                        durationOfDecay?: string;
+                        airdropStartTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        durationUntilDecay?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        durationOfDecay?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         claimsDenom?: string;
                         authorizedChannels?: string[];
                         evmChannels?: string[];
@@ -132,9 +141,18 @@ export declare namespace evmos {
                 fromPartial(object: {
                     params?: {
                         enableClaims?: boolean;
-                        airdropStartTime?: Date;
-                        durationUntilDecay?: string;
-                        durationOfDecay?: string;
+                        airdropStartTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        durationUntilDecay?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        durationOfDecay?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         claimsDenom?: string;
                         authorizedChannels?: string[];
                         evmChannels?: string[];
@@ -153,9 +171,18 @@ export declare namespace evmos {
                 toJSON(message: _297.Params): unknown;
                 fromPartial(object: {
                     enableClaims?: boolean;
-                    airdropStartTime?: Date;
-                    durationUntilDecay?: string;
-                    durationOfDecay?: string;
+                    airdropStartTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    durationUntilDecay?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    durationOfDecay?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     claimsDenom?: string;
                     authorizedChannels?: string[];
                     evmChannels?: string[];
@@ -223,10 +250,19 @@ export declare namespace evmos {
                 fromPartial(object: {
                     epochs?: {
                         identifier?: string;
-                        startTime?: Date;
-                        duration?: string;
+                        startTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        duration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         currentEpoch?: any;
-                        currentEpochStartTime?: Date;
+                        currentEpochStartTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         epochCountingStarted?: boolean;
                         currentEpochStartHeight?: any;
                     }[];
@@ -261,10 +297,19 @@ export declare namespace evmos {
                 toJSON(message: _299.EpochInfo): unknown;
                 fromPartial(object: {
                     identifier?: string;
-                    startTime?: Date;
-                    duration?: string;
+                    startTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    duration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     currentEpoch?: any;
-                    currentEpochStartTime?: Date;
+                    currentEpochStartTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     epochCountingStarted?: boolean;
                     currentEpochStartHeight?: any;
                 }): _299.EpochInfo;
@@ -277,10 +322,19 @@ export declare namespace evmos {
                 fromPartial(object: {
                     epochs?: {
                         identifier?: string;
-                        startTime?: Date;
-                        duration?: string;
+                        startTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        duration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         currentEpoch?: any;
-                        currentEpochStartTime?: Date;
+                        currentEpochStartTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         epochCountingStarted?: boolean;
                         currentEpochStartHeight?: any;
                     }[];
@@ -961,7 +1015,10 @@ export declare namespace evmos {
                             amount?: string;
                         }[];
                         epochs?: number;
-                        startTime?: Date;
+                        startTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         totalGas?: any;
                     }[];
                     pagination?: {
@@ -992,7 +1049,10 @@ export declare namespace evmos {
                             amount?: string;
                         }[];
                         epochs?: number;
-                        startTime?: Date;
+                        startTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         totalGas?: any;
                     };
                 }): _311.QueryIncentiveResponse;
@@ -1134,7 +1194,10 @@ export declare namespace evmos {
                         amount?: string;
                     }[];
                     epochs?: number;
-                    startTime?: Date;
+                    startTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     totalGas?: any;
                 }): _310.Incentive;
             };
@@ -1195,7 +1258,10 @@ export declare namespace evmos {
                             amount?: string;
                         }[];
                         epochs?: number;
-                        startTime?: Date;
+                        startTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         totalGas?: any;
                     }[];
                     gasMeters?: {
@@ -1431,7 +1497,10 @@ export declare namespace evmos {
                 fromPartial(object: {
                     params?: {
                         enableRecovery?: boolean;
-                        packetTimeoutDuration?: string;
+                        packetTimeoutDuration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                 }): _316.QueryParamsResponse;
             };
@@ -1443,7 +1512,10 @@ export declare namespace evmos {
                 fromPartial(object: {
                     params?: {
                         enableRecovery?: boolean;
-                        packetTimeoutDuration?: string;
+                        packetTimeoutDuration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                 }): _315.GenesisState;
             };
@@ -1454,7 +1526,10 @@ export declare namespace evmos {
                 toJSON(message: _315.Params): unknown;
                 fromPartial(object: {
                     enableRecovery?: boolean;
-                    packetTimeoutDuration?: string;
+                    packetTimeoutDuration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _315.Params;
             };
         };
@@ -1610,7 +1685,10 @@ export declare namespace evmos {
                         endTime?: any;
                     };
                     funderAddress?: string;
-                    startTime?: Date;
+                    startTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     lockupPeriods?: {
                         length?: any;
                         amount?: {
@@ -1635,7 +1713,10 @@ export declare namespace evmos {
                 fromPartial(object: {
                     fromAddress?: string;
                     toAddress?: string;
-                    startTime?: Date;
+                    startTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     lockupPeriods?: {
                         length?: any;
                         amount?: {

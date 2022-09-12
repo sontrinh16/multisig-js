@@ -708,8 +708,14 @@ export declare const payments: {
         fromJSON(object: any): _380.TimePeriod;
         toJSON(message: _380.TimePeriod): unknown;
         fromPartial(object: {
-            periodDurationNs?: string;
-            periodStartTime?: Date;
+            periodDurationNs?: {
+                seconds?: any;
+                nanos?: number;
+            };
+            periodStartTime?: {
+                seconds?: any;
+                nanos?: number;
+            };
         }): _380.TimePeriod;
     };
     TestPeriod: {

@@ -1,10 +1,11 @@
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
 export interface Inflation {
     max: string;
     min: string;
     rateChange: string;
-    timestamp: Date;
+    timestamp: Timestamp;
 }
 export declare const Inflation: {
     encode(message: Inflation, writer?: _m0.Writer): _m0.Writer;

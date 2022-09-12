@@ -3,6 +3,7 @@ import { Coin } from "../../../../cosmos/base/v1beta1/coin";
 import { AminoMsg } from "@cosmjs/amino";
 import { Long } from "@osmonauts/helpers";
 import { Timestamp } from "../../../../google/protobuf/timestamp";
+import { Duration } from "../../../../google/protobuf/duration";
 import { MsgCreate, MsgPut, MsgTake } from "./tx";
 export interface AminoMsgCreate extends AminoMsg {
   type: "/regen.ecocredit.basket.v1.MsgCreate";
@@ -19,7 +20,10 @@ export interface AminoMsgCreate extends AminoMsg {
         seconds: string;
         nanos: number;
       };
-      start_date_window: string;
+      start_date_window: {
+        seconds: string;
+        nanos: number;
+      };
       years_in_the_past: number;
     };
     fee: {

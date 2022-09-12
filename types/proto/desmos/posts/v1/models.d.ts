@@ -1,3 +1,4 @@
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import { Any } from "../../../google/protobuf/any";
 import * as _m0 from "protobufjs/minimal";
 import { Long, DeepPartial } from "@osmonauts/helpers";
@@ -54,9 +55,9 @@ export interface Post {
     /** Reply settings of this post */
     replySettings: ReplySetting;
     /** Creation date of the post */
-    creationDate: Date;
+    creationDate: Timestamp;
     /** (optional) Last edited time of the post */
-    lastEditedDate: Date;
+    lastEditedDate: Timestamp;
 }
 /** PostReference contains the details of a post reference */
 export interface PostReference {
@@ -127,7 +128,7 @@ export interface Poll {
     /** Answers the users can choose from */
     providedAnswers: Poll_ProvidedAnswer[];
     /** Date at which the poll will close */
-    endDate: Date;
+    endDate: Timestamp;
     /** Whether the poll allows multiple choices from the same user or not */
     allowsMultipleAnswers: boolean;
     /** Whether the poll allows to edit an answer or not */

@@ -78,7 +78,7 @@ export interface RewardsEstResponse {
 }
 export interface QueryLockableDurationsRequest {}
 export interface QueryLockableDurationsResponse {
-  lockableDurations: string[];
+  lockableDurations: Duration[];
 }
 
 function createBaseModuleToDistributeCoinsRequest(): ModuleToDistributeCoinsRequest {

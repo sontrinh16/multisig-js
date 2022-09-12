@@ -1,7 +1,7 @@
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import { Any } from "../../../google/protobuf/any";
 import * as _m0 from "protobufjs/minimal";
-import { toTimestamp, Long, fromTimestamp, isSet, fromJsonTimestamp, DeepPartial } from "@osmonauts/helpers";
+import { Long, isSet, fromJsonTimestamp, fromTimestamp, DeepPartial } from "@osmonauts/helpers";
 
 /** PostReferenceType represents the different types of references */
 export enum PostReferenceType {
@@ -165,10 +165,10 @@ export interface Post {
   replySettings: ReplySetting;
 
   /** Creation date of the post */
-  creationDate: Date;
+  creationDate: Timestamp;
 
   /** (optional) Last edited time of the post */
-  lastEditedDate: Date;
+  lastEditedDate: Timestamp;
 }
 
 /** PostReference contains the details of a post reference */
@@ -258,7 +258,7 @@ export interface Poll {
   providedAnswers: Poll_ProvidedAnswer[];
 
   /** Date at which the poll will close */
-  endDate: Date;
+  endDate: Timestamp;
 
   /** Whether the poll allows multiple choices from the same user or not */
   allowsMultipleAnswers: boolean;
@@ -382,11 +382,11 @@ export const Post = {
     }
 
     if (message.creationDate !== undefined) {
-      Timestamp.encode(toTimestamp(message.creationDate), writer.uint32(98).fork()).ldelim();
+      Timestamp.encode(message.creationDate, writer.uint32(98).fork()).ldelim();
     }
 
     if (message.lastEditedDate !== undefined) {
-      Timestamp.encode(toTimestamp(message.lastEditedDate), writer.uint32(106).fork()).ldelim();
+      Timestamp.encode(message.lastEditedDate, writer.uint32(106).fork()).ldelim();
     }
 
     return writer;
@@ -446,11 +446,11 @@ export const Post = {
           break;
 
         case 12:
-          message.creationDate = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.creationDate = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 13:
-          message.lastEditedDate = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.lastEditedDate = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -505,8 +505,8 @@ export const Post = {
     }
 
     message.replySettings !== undefined && (obj.replySettings = replySettingToJSON(message.replySettings));
-    message.creationDate !== undefined && (obj.creationDate = message.creationDate.toISOString());
-    message.lastEditedDate !== undefined && (obj.lastEditedDate = message.lastEditedDate.toISOString());
+    message.creationDate !== undefined && (obj.creationDate = fromTimestamp(message.creationDate).toISOString());
+    message.lastEditedDate !== undefined && (obj.lastEditedDate = fromTimestamp(message.lastEditedDate).toISOString());
     return obj;
   },
 
@@ -523,8 +523,8 @@ export const Post = {
     message.conversationId = object.conversationId !== undefined && object.conversationId !== null ? Long.fromValue(object.conversationId) : Long.UZERO;
     message.referencedPosts = object.referencedPosts?.map(e => PostReference.fromPartial(e)) || [];
     message.replySettings = object.replySettings ?? 0;
-    message.creationDate = object.creationDate ?? undefined;
-    message.lastEditedDate = object.lastEditedDate ?? undefined;
+    message.creationDate = object.creationDate !== undefined && object.creationDate !== null ? Timestamp.fromPartial(object.creationDate) : undefined;
+    message.lastEditedDate = object.lastEditedDate !== undefined && object.lastEditedDate !== null ? Timestamp.fromPartial(object.lastEditedDate) : undefined;
     return message;
   }
 
@@ -1066,7 +1066,7 @@ export const Poll = {
     }
 
     if (message.endDate !== undefined) {
-      Timestamp.encode(toTimestamp(message.endDate), writer.uint32(26).fork()).ldelim();
+      Timestamp.encode(message.endDate, writer.uint32(26).fork()).ldelim();
     }
 
     if (message.allowsMultipleAnswers === true) {
@@ -1102,7 +1102,7 @@ export const Poll = {
           break;
 
         case 3:
-          message.endDate = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.endDate = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 4:
@@ -1147,7 +1147,7 @@ export const Poll = {
       obj.providedAnswers = [];
     }
 
-    message.endDate !== undefined && (obj.endDate = message.endDate.toISOString());
+    message.endDate !== undefined && (obj.endDate = fromTimestamp(message.endDate).toISOString());
     message.allowsMultipleAnswers !== undefined && (obj.allowsMultipleAnswers = message.allowsMultipleAnswers);
     message.allowsAnswerEdits !== undefined && (obj.allowsAnswerEdits = message.allowsAnswerEdits);
     message.finalTallyResults !== undefined && (obj.finalTallyResults = message.finalTallyResults ? PollTallyResults.toJSON(message.finalTallyResults) : undefined);
@@ -1158,7 +1158,7 @@ export const Poll = {
     const message = createBasePoll();
     message.question = object.question ?? "";
     message.providedAnswers = object.providedAnswers?.map(e => Poll_ProvidedAnswer.fromPartial(e)) || [];
-    message.endDate = object.endDate ?? undefined;
+    message.endDate = object.endDate !== undefined && object.endDate !== null ? Timestamp.fromPartial(object.endDate) : undefined;
     message.allowsMultipleAnswers = object.allowsMultipleAnswers ?? false;
     message.allowsAnswerEdits = object.allowsAnswerEdits ?? false;
     message.finalTallyResults = object.finalTallyResults !== undefined && object.finalTallyResults !== null ? PollTallyResults.fromPartial(object.finalTallyResults) : undefined;

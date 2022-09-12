@@ -1,5 +1,6 @@
 import { Entities, ReplySetting, PostReference } from "./models";
 import { Any } from "../../../google/protobuf/any";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { Long, DeepPartial } from "@osmonauts/helpers";
 /** MsgCreatePost represents the message to be used to create a post. */
@@ -32,7 +33,7 @@ export interface MsgCreatePostResponse {
     /** Id of the newly created post */
     postId: Long;
     /** Creation date of the post */
-    creationDate: Date;
+    creationDate: Timestamp;
 }
 /** MsgEditPost represents the message to be used to edit a post. */
 export interface MsgEditPost {
@@ -61,7 +62,7 @@ export interface MsgEditPost {
 /** MsgCreatePostResponse defines the Msg/EditPost response type. */
 export interface MsgEditPostResponse {
     /** Edit date of the post */
-    editDate: Date;
+    editDate: Timestamp;
 }
 /** MsgDeletePost represents the message used when deleting a post. */
 export interface MsgDeletePost {
@@ -94,7 +95,7 @@ export interface MsgAddPostAttachmentResponse {
     /** New id of the uploaded attachment */
     attachmentId: number;
     /** Edit date of the post */
-    editDate: Date;
+    editDate: Timestamp;
 }
 /**
  * MsgRemovePostAttachment represents the message to be used when
@@ -116,7 +117,7 @@ export interface MsgRemovePostAttachment {
  */
 export interface MsgRemovePostAttachmentResponse {
     /** Edit date of the post */
-    editDate: Date;
+    editDate: Timestamp;
 }
 /** MsgAnswerPoll represents the message used to answer a poll */
 export interface MsgAnswerPoll {

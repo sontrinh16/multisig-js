@@ -1,10 +1,10 @@
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import { Duration } from "../../../google/protobuf/duration";
 import * as _m0 from "protobufjs/minimal";
-import { toDuration, fromDuration, isSet, DeepPartial } from "@osmonauts/helpers";
+import { isSet, DeepPartial } from "@osmonauts/helpers";
 export interface Params {
   deposit: Coin;
-  inactiveDuration: string;
+  inactiveDuration: Duration;
 }
 
 function createBaseParams(): Params {
@@ -21,7 +21,7 @@ export const Params = {
     }
 
     if (message.inactiveDuration !== undefined) {
-      Duration.encode(toDuration(message.inactiveDuration), writer.uint32(18).fork()).ldelim();
+      Duration.encode(message.inactiveDuration, writer.uint32(18).fork()).ldelim();
     }
 
     return writer;
@@ -41,7 +41,7 @@ export const Params = {
           break;
 
         case 2:
-          message.inactiveDuration = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.inactiveDuration = Duration.decode(reader, reader.uint32());
           break;
 
         default:
@@ -56,7 +56,7 @@ export const Params = {
   fromJSON(object: any): Params {
     return {
       deposit: isSet(object.deposit) ? Coin.fromJSON(object.deposit) : undefined,
-      inactiveDuration: isSet(object.inactiveDuration) ? String(object.inactiveDuration) : undefined
+      inactiveDuration: isSet(object.inactiveDuration) ? Duration.fromJSON(object.inactiveDuration) : undefined
     };
   },
 

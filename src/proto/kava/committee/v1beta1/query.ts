@@ -3,7 +3,7 @@ import { Any } from "../../../google/protobuf/any";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import { VoteType, voteTypeFromJSON, voteTypeToJSON } from "./genesis";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial, Long, isSet, toTimestamp, fromTimestamp, fromJsonTimestamp } from "@osmonauts/helpers";
+import { DeepPartial, Long, isSet, fromJsonTimestamp, fromTimestamp } from "@osmonauts/helpers";
 
 /** QueryCommitteesRequest defines the request type for querying x/committee committees. */
 export interface QueryCommitteesRequest {}
@@ -43,7 +43,7 @@ export interface QueryProposalResponse {
   pubProposal: Any;
   id: Long;
   committeeId: Long;
-  deadline: Date;
+  deadline: Timestamp;
 }
 
 /** QueryNextProposalIDRequest defines the request type for querying x/committee NextProposalID. */
@@ -530,7 +530,7 @@ export const QueryProposalResponse = {
     }
 
     if (message.deadline !== undefined) {
-      Timestamp.encode(toTimestamp(message.deadline), writer.uint32(34).fork()).ldelim();
+      Timestamp.encode(message.deadline, writer.uint32(34).fork()).ldelim();
     }
 
     return writer;
@@ -558,7 +558,7 @@ export const QueryProposalResponse = {
           break;
 
         case 4:
-          message.deadline = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.deadline = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -584,7 +584,7 @@ export const QueryProposalResponse = {
     message.pubProposal !== undefined && (obj.pubProposal = message.pubProposal ? Any.toJSON(message.pubProposal) : undefined);
     message.id !== undefined && (obj.id = (message.id || Long.UZERO).toString());
     message.committeeId !== undefined && (obj.committeeId = (message.committeeId || Long.UZERO).toString());
-    message.deadline !== undefined && (obj.deadline = message.deadline.toISOString());
+    message.deadline !== undefined && (obj.deadline = fromTimestamp(message.deadline).toISOString());
     return obj;
   },
 
@@ -593,7 +593,7 @@ export const QueryProposalResponse = {
     message.pubProposal = object.pubProposal !== undefined && object.pubProposal !== null ? Any.fromPartial(object.pubProposal) : undefined;
     message.id = object.id !== undefined && object.id !== null ? Long.fromValue(object.id) : Long.UZERO;
     message.committeeId = object.committeeId !== undefined && object.committeeId !== null ? Long.fromValue(object.committeeId) : Long.UZERO;
-    message.deadline = object.deadline ?? undefined;
+    message.deadline = object.deadline !== undefined && object.deadline !== null ? Timestamp.fromPartial(object.deadline) : undefined;
     return message;
   }
 

@@ -1,7 +1,7 @@
 import { Duration } from "../../../google/protobuf/duration";
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial, Long, isSet, bytesFromBase64, base64FromBytes, toDuration, fromDuration } from "@osmonauts/helpers";
+import { DeepPartial, Long, isSet, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
 
 /** SwapStatus is the status of an AtomicSwap */
 export enum SwapStatus {
@@ -157,7 +157,7 @@ export interface SupplyLimit {
   timeLimited: boolean;
 
   /** time_period specifies the duration that time_based_limit is evalulated */
-  timePeriod: string;
+  timePeriod: Duration;
 
   /** time_based_limit defines the maximum supply that can be swapped within time_period */
   timeBasedLimit: string;
@@ -217,7 +217,7 @@ export interface AssetSupply {
   timeLimitedCurrentSupply: Coin;
 
   /** time_elapsed represents the time elapsed */
-  timeElapsed: string;
+  timeElapsed: Duration;
 }
 
 function createBaseParams(): Params {
@@ -468,7 +468,7 @@ export const SupplyLimit = {
     }
 
     if (message.timePeriod !== undefined) {
-      Duration.encode(toDuration(message.timePeriod), writer.uint32(26).fork()).ldelim();
+      Duration.encode(message.timePeriod, writer.uint32(26).fork()).ldelim();
     }
 
     if (message.timeBasedLimit !== "") {
@@ -496,7 +496,7 @@ export const SupplyLimit = {
           break;
 
         case 3:
-          message.timePeriod = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.timePeriod = Duration.decode(reader, reader.uint32());
           break;
 
         case 4:
@@ -516,7 +516,7 @@ export const SupplyLimit = {
     return {
       limit: isSet(object.limit) ? String(object.limit) : "",
       timeLimited: isSet(object.timeLimited) ? Boolean(object.timeLimited) : false,
-      timePeriod: isSet(object.timePeriod) ? String(object.timePeriod) : undefined,
+      timePeriod: isSet(object.timePeriod) ? Duration.fromJSON(object.timePeriod) : undefined,
       timeBasedLimit: isSet(object.timeBasedLimit) ? String(object.timeBasedLimit) : ""
     };
   },
@@ -765,7 +765,7 @@ export const AssetSupply = {
     }
 
     if (message.timeElapsed !== undefined) {
-      Duration.encode(toDuration(message.timeElapsed), writer.uint32(42).fork()).ldelim();
+      Duration.encode(message.timeElapsed, writer.uint32(42).fork()).ldelim();
     }
 
     return writer;
@@ -797,7 +797,7 @@ export const AssetSupply = {
           break;
 
         case 5:
-          message.timeElapsed = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.timeElapsed = Duration.decode(reader, reader.uint32());
           break;
 
         default:
@@ -815,7 +815,7 @@ export const AssetSupply = {
       outgoingSupply: isSet(object.outgoingSupply) ? Coin.fromJSON(object.outgoingSupply) : undefined,
       currentSupply: isSet(object.currentSupply) ? Coin.fromJSON(object.currentSupply) : undefined,
       timeLimitedCurrentSupply: isSet(object.timeLimitedCurrentSupply) ? Coin.fromJSON(object.timeLimitedCurrentSupply) : undefined,
-      timeElapsed: isSet(object.timeElapsed) ? String(object.timeElapsed) : undefined
+      timeElapsed: isSet(object.timeElapsed) ? Duration.fromJSON(object.timeElapsed) : undefined
     };
   },
 

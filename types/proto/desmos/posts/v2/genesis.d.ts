@@ -1,4 +1,5 @@
 import { Post, Attachment, UserAnswer, Params } from "./models";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial, Long } from "@osmonauts/helpers";
 /** GenesisState contains the data of the genesis state for the posts module */
@@ -27,7 +28,7 @@ export interface ActivePollData {
     subspaceId: Long;
     postId: Long;
     pollId: number;
-    endDate: Date;
+    endDate: Timestamp;
 }
 export declare const GenesisState: {
     encode(message: GenesisState, writer?: _m0.Writer): _m0.Writer;

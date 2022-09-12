@@ -2,14 +2,14 @@ import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import { Status, statusFromJSON, statusToJSON } from "../../types/v1/status";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { toTimestamp, fromTimestamp, isSet, fromJsonTimestamp, DeepPartial } from "@osmonauts/helpers";
+import { isSet, fromJsonTimestamp, fromTimestamp, DeepPartial } from "@osmonauts/helpers";
 export interface Node {
   address: string;
   provider: string;
   price: Coin[];
   remoteUrl: string;
   status: Status;
-  statusAt: Date;
+  statusAt: Timestamp;
 }
 
 function createBaseNode(): Node {
@@ -46,7 +46,7 @@ export const Node = {
     }
 
     if (message.statusAt !== undefined) {
-      Timestamp.encode(toTimestamp(message.statusAt), writer.uint32(50).fork()).ldelim();
+      Timestamp.encode(message.statusAt, writer.uint32(50).fork()).ldelim();
     }
 
     return writer;
@@ -82,7 +82,7 @@ export const Node = {
           break;
 
         case 6:
-          message.statusAt = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.statusAt = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -118,7 +118,7 @@ export const Node = {
 
     message.remoteUrl !== undefined && (obj.remoteUrl = message.remoteUrl);
     message.status !== undefined && (obj.status = statusToJSON(message.status));
-    message.statusAt !== undefined && (obj.statusAt = message.statusAt.toISOString());
+    message.statusAt !== undefined && (obj.statusAt = fromTimestamp(message.statusAt).toISOString());
     return obj;
   },
 
@@ -129,7 +129,7 @@ export const Node = {
     message.price = object.price?.map(e => Coin.fromPartial(e)) || [];
     message.remoteUrl = object.remoteUrl ?? "";
     message.status = object.status ?? 0;
-    message.statusAt = object.statusAt ?? undefined;
+    message.statusAt = object.statusAt !== undefined && object.statusAt !== null ? Timestamp.fromPartial(object.statusAt) : undefined;
     return message;
   }
 

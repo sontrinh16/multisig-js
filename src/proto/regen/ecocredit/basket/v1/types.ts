@@ -1,7 +1,7 @@
 import { Timestamp } from "../../../../google/protobuf/timestamp";
 import { Duration } from "../../../../google/protobuf/duration";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, toTimestamp, toDuration, fromTimestamp, fromDuration, fromJsonTimestamp } from "@osmonauts/helpers";
+import { isSet, DeepPartial, fromJsonTimestamp, fromTimestamp } from "@osmonauts/helpers";
 
 /** BasketCredit represents the information for a credit batch inside a basket. */
 export interface BasketCredit {
@@ -29,7 +29,7 @@ export interface DateCriteria {
    * allowed into the basket. At most only one of `start_date_window`,
    * `min_start_date`, and `years_in_the_past` can be set for a basket.
    */
-  minStartDate: Date;
+  minStartDate: Timestamp;
 
   /**
    * start_date_window (optional) is a duration of time measured into the past
@@ -39,7 +39,7 @@ export interface DateCriteria {
    * basket. At most only one of `start_date_window`, `min_start_date`, and
    * `years_in_the_past` can be set for a basket.
    */
-  startDateWindow: string;
+  startDateWindow: Duration;
 
   /**
    * years_in_the_past (optional) is the number of years into the past which
@@ -134,11 +134,11 @@ function createBaseDateCriteria(): DateCriteria {
 export const DateCriteria = {
   encode(message: DateCriteria, writer: _m0.Writer = _m0.Writer.create()): _m0.Writer {
     if (message.minStartDate !== undefined) {
-      Timestamp.encode(toTimestamp(message.minStartDate), writer.uint32(10).fork()).ldelim();
+      Timestamp.encode(message.minStartDate, writer.uint32(10).fork()).ldelim();
     }
 
     if (message.startDateWindow !== undefined) {
-      Duration.encode(toDuration(message.startDateWindow), writer.uint32(18).fork()).ldelim();
+      Duration.encode(message.startDateWindow, writer.uint32(18).fork()).ldelim();
     }
 
     if (message.yearsInThePast !== 0) {
@@ -158,11 +158,11 @@ export const DateCriteria = {
 
       switch (tag >>> 3) {
         case 1:
-          message.minStartDate = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.minStartDate = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 2:
-          message.startDateWindow = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.startDateWindow = Duration.decode(reader, reader.uint32());
           break;
 
         case 3:
@@ -181,14 +181,14 @@ export const DateCriteria = {
   fromJSON(object: any): DateCriteria {
     return {
       minStartDate: isSet(object.minStartDate) ? fromJsonTimestamp(object.minStartDate) : undefined,
-      startDateWindow: isSet(object.startDateWindow) ? String(object.startDateWindow) : undefined,
+      startDateWindow: isSet(object.startDateWindow) ? Duration.fromJSON(object.startDateWindow) : undefined,
       yearsInThePast: isSet(object.yearsInThePast) ? Number(object.yearsInThePast) : 0
     };
   },
 
   toJSON(message: DateCriteria): unknown {
     const obj: any = {};
-    message.minStartDate !== undefined && (obj.minStartDate = message.minStartDate.toISOString());
+    message.minStartDate !== undefined && (obj.minStartDate = fromTimestamp(message.minStartDate).toISOString());
     message.startDateWindow !== undefined && (obj.startDateWindow = message.startDateWindow);
     message.yearsInThePast !== undefined && (obj.yearsInThePast = Math.round(message.yearsInThePast));
     return obj;
@@ -196,7 +196,7 @@ export const DateCriteria = {
 
   fromPartial(object: DeepPartial<DateCriteria>): DateCriteria {
     const message = createBaseDateCriteria();
-    message.minStartDate = object.minStartDate ?? undefined;
+    message.minStartDate = object.minStartDate !== undefined && object.minStartDate !== null ? Timestamp.fromPartial(object.minStartDate) : undefined;
     message.startDateWindow = object.startDateWindow ?? undefined;
     message.yearsInThePast = object.yearsInThePast ?? 0;
     return message;

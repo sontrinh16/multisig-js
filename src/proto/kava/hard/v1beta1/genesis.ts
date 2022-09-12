@@ -2,7 +2,7 @@ import { Params, Deposit, Borrow } from "./hard";
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, toTimestamp, fromTimestamp, fromJsonTimestamp } from "@osmonauts/helpers";
+import { isSet, DeepPartial, fromJsonTimestamp, fromTimestamp } from "@osmonauts/helpers";
 
 /** GenesisState defines the hard module's genesis state. */
 export interface GenesisState {
@@ -18,7 +18,7 @@ export interface GenesisState {
 /** GenesisAccumulationTime stores the previous distribution time and its corresponding denom. */
 export interface GenesisAccumulationTime {
   collateralType: string;
-  previousAccumulationTime: Date;
+  previousAccumulationTime: Timestamp;
   supplyInterestFactor: string;
   borrowInterestFactor: string;
 }
@@ -199,7 +199,7 @@ export const GenesisAccumulationTime = {
     }
 
     if (message.previousAccumulationTime !== undefined) {
-      Timestamp.encode(toTimestamp(message.previousAccumulationTime), writer.uint32(18).fork()).ldelim();
+      Timestamp.encode(message.previousAccumulationTime, writer.uint32(18).fork()).ldelim();
     }
 
     if (message.supplyInterestFactor !== "") {
@@ -227,7 +227,7 @@ export const GenesisAccumulationTime = {
           break;
 
         case 2:
-          message.previousAccumulationTime = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.previousAccumulationTime = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 3:
@@ -259,7 +259,7 @@ export const GenesisAccumulationTime = {
   toJSON(message: GenesisAccumulationTime): unknown {
     const obj: any = {};
     message.collateralType !== undefined && (obj.collateralType = message.collateralType);
-    message.previousAccumulationTime !== undefined && (obj.previousAccumulationTime = message.previousAccumulationTime.toISOString());
+    message.previousAccumulationTime !== undefined && (obj.previousAccumulationTime = fromTimestamp(message.previousAccumulationTime).toISOString());
     message.supplyInterestFactor !== undefined && (obj.supplyInterestFactor = message.supplyInterestFactor);
     message.borrowInterestFactor !== undefined && (obj.borrowInterestFactor = message.borrowInterestFactor);
     return obj;
@@ -268,7 +268,7 @@ export const GenesisAccumulationTime = {
   fromPartial(object: DeepPartial<GenesisAccumulationTime>): GenesisAccumulationTime {
     const message = createBaseGenesisAccumulationTime();
     message.collateralType = object.collateralType ?? "";
-    message.previousAccumulationTime = object.previousAccumulationTime ?? undefined;
+    message.previousAccumulationTime = object.previousAccumulationTime !== undefined && object.previousAccumulationTime !== null ? Timestamp.fromPartial(object.previousAccumulationTime) : undefined;
     message.supplyInterestFactor = object.supplyInterestFactor ?? "";
     message.borrowInterestFactor = object.borrowInterestFactor ?? "";
     return message;

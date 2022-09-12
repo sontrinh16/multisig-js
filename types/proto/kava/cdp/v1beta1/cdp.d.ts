@@ -1,4 +1,5 @@
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { Long, DeepPartial } from "@osmonauts/helpers";
 /** CDP defines the state of a single collateralized debt position. */
@@ -9,7 +10,7 @@ export interface CDP {
     collateral: Coin;
     principal: Coin;
     accumulatedFees: Coin;
-    feesUpdated: Date;
+    feesUpdated: Timestamp;
     interestFactor: string;
 }
 /** Deposit defines an amount of coins deposited by an account to a cdp */

@@ -22,12 +22,12 @@ import * as _316 from "./recovery/v1/query";
 import * as _317 from "./vesting/v1/query";
 import * as _318 from "./vesting/v1/tx";
 import * as _319 from "./vesting/v1/vesting";
-import * as _785 from "./erc20/v1/tx.amino";
-import * as _786 from "./feesplit/v1/tx.amino";
-import * as _787 from "./vesting/v1/tx.amino";
-import * as _788 from "./erc20/v1/tx.registry";
-import * as _789 from "./feesplit/v1/tx.registry";
-import * as _790 from "./vesting/v1/tx.registry";
+import * as _804 from "./erc20/v1/tx.amino";
+import * as _805 from "./feesplit/v1/tx.amino";
+import * as _806 from "./vesting/v1/tx.amino";
+import * as _807 from "./erc20/v1/tx.registry";
+import * as _808 from "./feesplit/v1/tx.registry";
+import * as _809 from "./vesting/v1/tx.registry";
 export namespace evmos {
   export namespace claims {
     export const v1 = { ..._296,
@@ -45,8 +45,8 @@ export namespace evmos {
       ..._302,
       ..._303,
       ..._304,
-      ..._785,
-      ..._788
+      ..._804,
+      ..._807
     };
   }
   export namespace feesplit {
@@ -54,8 +54,8 @@ export namespace evmos {
       ..._306,
       ..._307,
       ..._308,
-      ..._786,
-      ..._789
+      ..._805,
+      ..._808
     };
   }
   export namespace incentives {
@@ -79,8 +79,8 @@ export namespace evmos {
     export const v1 = { ..._317,
       ..._318,
       ..._319,
-      ..._787,
-      ..._790
+      ..._806,
+      ..._809
     };
   }
 }

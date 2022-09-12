@@ -1,5 +1,6 @@
 import { CDP, Deposit } from "./cdp";
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { Long, DeepPartial } from "@osmonauts/helpers";
 /** GenesisState defines the cdp module's genesis state. */
@@ -50,7 +51,7 @@ export interface CollateralParam {
 /** GenesisAccumulationTime defines the previous distribution time and its corresponding denom */
 export interface GenesisAccumulationTime {
     collateralType: string;
-    previousAccumulationTime: Date;
+    previousAccumulationTime: Timestamp;
     interestFactor: string;
 }
 /** GenesisTotalPrincipal defines the total principal and its corresponding collateral type */

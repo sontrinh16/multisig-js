@@ -1,7 +1,7 @@
 import { Params, AtomicSwap, AssetSupply } from "./bep3";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { toTimestamp, fromTimestamp, isSet, fromJsonTimestamp, DeepPartial } from "@osmonauts/helpers";
+import { isSet, fromJsonTimestamp, fromTimestamp, DeepPartial } from "@osmonauts/helpers";
 
 /** GenesisState defines the pricefeed module's genesis state. */
 export interface GenesisState {
@@ -15,7 +15,7 @@ export interface GenesisState {
   supplies: AssetSupply[];
 
   /** previous_block_time represents the time of the previous block */
-  previousBlockTime: Date;
+  previousBlockTime: Timestamp;
 }
 
 function createBaseGenesisState(): GenesisState {
@@ -42,7 +42,7 @@ export const GenesisState = {
     }
 
     if (message.previousBlockTime !== undefined) {
-      Timestamp.encode(toTimestamp(message.previousBlockTime), writer.uint32(34).fork()).ldelim();
+      Timestamp.encode(message.previousBlockTime, writer.uint32(34).fork()).ldelim();
     }
 
     return writer;
@@ -70,7 +70,7 @@ export const GenesisState = {
           break;
 
         case 4:
-          message.previousBlockTime = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.previousBlockTime = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -107,7 +107,7 @@ export const GenesisState = {
       obj.supplies = [];
     }
 
-    message.previousBlockTime !== undefined && (obj.previousBlockTime = message.previousBlockTime.toISOString());
+    message.previousBlockTime !== undefined && (obj.previousBlockTime = fromTimestamp(message.previousBlockTime).toISOString());
     return obj;
   },
 
@@ -116,7 +116,7 @@ export const GenesisState = {
     message.params = object.params !== undefined && object.params !== null ? Params.fromPartial(object.params) : undefined;
     message.atomicSwaps = object.atomicSwaps?.map(e => AtomicSwap.fromPartial(e)) || [];
     message.supplies = object.supplies?.map(e => AssetSupply.fromPartial(e)) || [];
-    message.previousBlockTime = object.previousBlockTime ?? undefined;
+    message.previousBlockTime = object.previousBlockTime !== undefined && object.previousBlockTime !== null ? Timestamp.fromPartial(object.previousBlockTime) : undefined;
     return message;
   }
 

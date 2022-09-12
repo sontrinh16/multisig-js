@@ -1,6 +1,6 @@
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, bytesFromBase64, base64FromBytes, toTimestamp, fromTimestamp, fromJsonTimestamp } from "@osmonauts/helpers";
+import { isSet, DeepPartial, bytesFromBase64, base64FromBytes, fromJsonTimestamp, fromTimestamp } from "@osmonauts/helpers";
 
 /** DigestAlgorithm is the hash digest algorithm */
 export enum DigestAlgorithm {
@@ -370,7 +370,7 @@ export interface ContentEntry {
   iri: string;
 
   /** timestamp is the timestamp of the anchored data. */
-  timestamp: Date;
+  timestamp: Timestamp;
 }
 
 /**
@@ -388,7 +388,7 @@ export interface AttestorEntry {
   attestor: string;
 
   /** timestamp is the timestamp at which the data was attested to. */
-  timestamp: Date;
+  timestamp: Timestamp;
 }
 
 /** ContentHashes contains list of content ContentHash. */
@@ -659,7 +659,7 @@ export const ContentEntry = {
     }
 
     if (message.timestamp !== undefined) {
-      Timestamp.encode(toTimestamp(message.timestamp), writer.uint32(26).fork()).ldelim();
+      Timestamp.encode(message.timestamp, writer.uint32(26).fork()).ldelim();
     }
 
     return writer;
@@ -683,7 +683,7 @@ export const ContentEntry = {
           break;
 
         case 3:
-          message.timestamp = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.timestamp = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -707,7 +707,7 @@ export const ContentEntry = {
     const obj: any = {};
     message.contentHash !== undefined && (obj.contentHash = message.contentHash ? ContentHash.toJSON(message.contentHash) : undefined);
     message.iri !== undefined && (obj.iri = message.iri);
-    message.timestamp !== undefined && (obj.timestamp = message.timestamp.toISOString());
+    message.timestamp !== undefined && (obj.timestamp = fromTimestamp(message.timestamp).toISOString());
     return obj;
   },
 
@@ -715,7 +715,7 @@ export const ContentEntry = {
     const message = createBaseContentEntry();
     message.contentHash = object.contentHash !== undefined && object.contentHash !== null ? ContentHash.fromPartial(object.contentHash) : undefined;
     message.iri = object.iri ?? "";
-    message.timestamp = object.timestamp ?? undefined;
+    message.timestamp = object.timestamp !== undefined && object.timestamp !== null ? Timestamp.fromPartial(object.timestamp) : undefined;
     return message;
   }
 
@@ -740,7 +740,7 @@ export const AttestorEntry = {
     }
 
     if (message.timestamp !== undefined) {
-      Timestamp.encode(toTimestamp(message.timestamp), writer.uint32(26).fork()).ldelim();
+      Timestamp.encode(message.timestamp, writer.uint32(26).fork()).ldelim();
     }
 
     return writer;
@@ -764,7 +764,7 @@ export const AttestorEntry = {
           break;
 
         case 3:
-          message.timestamp = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.timestamp = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -788,7 +788,7 @@ export const AttestorEntry = {
     const obj: any = {};
     message.iri !== undefined && (obj.iri = message.iri);
     message.attestor !== undefined && (obj.attestor = message.attestor);
-    message.timestamp !== undefined && (obj.timestamp = message.timestamp.toISOString());
+    message.timestamp !== undefined && (obj.timestamp = fromTimestamp(message.timestamp).toISOString());
     return obj;
   },
 
@@ -796,7 +796,7 @@ export const AttestorEntry = {
     const message = createBaseAttestorEntry();
     message.iri = object.iri ?? "";
     message.attestor = object.attestor ?? "";
-    message.timestamp = object.timestamp ?? undefined;
+    message.timestamp = object.timestamp !== undefined && object.timestamp !== null ? Timestamp.fromPartial(object.timestamp) : undefined;
     return message;
   }
 

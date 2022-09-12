@@ -1,7 +1,8 @@
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
 export interface OfferExpireQueueEntry {
-    expireTime: Date;
+    expireTime: Timestamp;
     offerKey: Uint8Array;
 }
 export declare const OfferExpireQueueEntry: {

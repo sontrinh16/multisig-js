@@ -1,7 +1,7 @@
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import * as _m0 from "protobufjs/minimal";
-import { Long, isSet, bytesFromBase64, base64FromBytes, DeepPartial, toTimestamp, fromTimestamp, fromJsonTimestamp } from "@osmonauts/helpers";
+import { Long, isSet, bytesFromBase64, base64FromBytes, DeepPartial, fromJsonTimestamp, fromTimestamp } from "@osmonauts/helpers";
 
 /** ClassInfo represents the high-level on-chain information for a credit class. */
 export interface ClassInfo {
@@ -62,13 +62,13 @@ export interface BatchInfo {
    * start_date is the beginning of the period during which this credit batch
    * was quantified and verified.
    */
-  startDate: Date;
+  startDate: Timestamp;
 
   /**
    * end_date is the end of the period during which this credit batch was
    * quantified and verified.
    */
-  endDate: Date;
+  endDate: Timestamp;
 
   /**
    * project_location is the location of the project backing the credits in this
@@ -301,11 +301,11 @@ export const BatchInfo = {
     }
 
     if (message.startDate !== undefined) {
-      Timestamp.encode(toTimestamp(message.startDate), writer.uint32(58).fork()).ldelim();
+      Timestamp.encode(message.startDate, writer.uint32(58).fork()).ldelim();
     }
 
     if (message.endDate !== undefined) {
-      Timestamp.encode(toTimestamp(message.endDate), writer.uint32(66).fork()).ldelim();
+      Timestamp.encode(message.endDate, writer.uint32(66).fork()).ldelim();
     }
 
     if (message.projectLocation !== "") {
@@ -349,11 +349,11 @@ export const BatchInfo = {
           break;
 
         case 7:
-          message.startDate = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.startDate = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 8:
-          message.endDate = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.endDate = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 9:
@@ -391,8 +391,8 @@ export const BatchInfo = {
     message.totalAmount !== undefined && (obj.totalAmount = message.totalAmount);
     message.metadata !== undefined && (obj.metadata = base64FromBytes(message.metadata !== undefined ? message.metadata : new Uint8Array()));
     message.amountCancelled !== undefined && (obj.amountCancelled = message.amountCancelled);
-    message.startDate !== undefined && (obj.startDate = message.startDate.toISOString());
-    message.endDate !== undefined && (obj.endDate = message.endDate.toISOString());
+    message.startDate !== undefined && (obj.startDate = fromTimestamp(message.startDate).toISOString());
+    message.endDate !== undefined && (obj.endDate = fromTimestamp(message.endDate).toISOString());
     message.projectLocation !== undefined && (obj.projectLocation = message.projectLocation);
     return obj;
   },
@@ -405,8 +405,8 @@ export const BatchInfo = {
     message.totalAmount = object.totalAmount ?? "";
     message.metadata = object.metadata ?? new Uint8Array();
     message.amountCancelled = object.amountCancelled ?? "";
-    message.startDate = object.startDate ?? undefined;
-    message.endDate = object.endDate ?? undefined;
+    message.startDate = object.startDate !== undefined && object.startDate !== null ? Timestamp.fromPartial(object.startDate) : undefined;
+    message.endDate = object.endDate !== undefined && object.endDate !== null ? Timestamp.fromPartial(object.endDate) : undefined;
     message.projectLocation = object.projectLocation ?? "";
     return message;
   }

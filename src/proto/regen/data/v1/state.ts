@@ -1,6 +1,6 @@
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, bytesFromBase64, base64FromBytes, DeepPartial, toTimestamp, fromTimestamp, fromJsonTimestamp, Long } from "@osmonauts/helpers";
+import { isSet, bytesFromBase64, base64FromBytes, DeepPartial, fromJsonTimestamp, fromTimestamp, Long } from "@osmonauts/helpers";
 
 /** DataID stores a compact data ID and its full IRI. */
 export interface DataID {
@@ -20,7 +20,7 @@ export interface DataAnchor {
    * timestamp is the anchor timestamp for this object - the time at which
    * it was first known to the blockchain.
    */
-  timestamp: Date;
+  timestamp: Timestamp;
 }
 
 /** DataAttestor is a join table for associating data IDs and attestors. */
@@ -32,7 +32,7 @@ export interface DataAttestor {
   attestor: Uint8Array;
 
   /** timestamp is the time at which the attestor signed this data object. */
-  timestamp: Date;
+  timestamp: Timestamp;
 }
 
 /** ResolverInfo describes a data resolver. */
@@ -145,7 +145,7 @@ export const DataAnchor = {
     }
 
     if (message.timestamp !== undefined) {
-      Timestamp.encode(toTimestamp(message.timestamp), writer.uint32(18).fork()).ldelim();
+      Timestamp.encode(message.timestamp, writer.uint32(18).fork()).ldelim();
     }
 
     return writer;
@@ -165,7 +165,7 @@ export const DataAnchor = {
           break;
 
         case 2:
-          message.timestamp = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.timestamp = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -187,14 +187,14 @@ export const DataAnchor = {
   toJSON(message: DataAnchor): unknown {
     const obj: any = {};
     message.id !== undefined && (obj.id = base64FromBytes(message.id !== undefined ? message.id : new Uint8Array()));
-    message.timestamp !== undefined && (obj.timestamp = message.timestamp.toISOString());
+    message.timestamp !== undefined && (obj.timestamp = fromTimestamp(message.timestamp).toISOString());
     return obj;
   },
 
   fromPartial(object: DeepPartial<DataAnchor>): DataAnchor {
     const message = createBaseDataAnchor();
     message.id = object.id ?? new Uint8Array();
-    message.timestamp = object.timestamp ?? undefined;
+    message.timestamp = object.timestamp !== undefined && object.timestamp !== null ? Timestamp.fromPartial(object.timestamp) : undefined;
     return message;
   }
 
@@ -219,7 +219,7 @@ export const DataAttestor = {
     }
 
     if (message.timestamp !== undefined) {
-      Timestamp.encode(toTimestamp(message.timestamp), writer.uint32(26).fork()).ldelim();
+      Timestamp.encode(message.timestamp, writer.uint32(26).fork()).ldelim();
     }
 
     return writer;
@@ -243,7 +243,7 @@ export const DataAttestor = {
           break;
 
         case 3:
-          message.timestamp = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.timestamp = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -267,7 +267,7 @@ export const DataAttestor = {
     const obj: any = {};
     message.id !== undefined && (obj.id = base64FromBytes(message.id !== undefined ? message.id : new Uint8Array()));
     message.attestor !== undefined && (obj.attestor = base64FromBytes(message.attestor !== undefined ? message.attestor : new Uint8Array()));
-    message.timestamp !== undefined && (obj.timestamp = message.timestamp.toISOString());
+    message.timestamp !== undefined && (obj.timestamp = fromTimestamp(message.timestamp).toISOString());
     return obj;
   },
 
@@ -275,7 +275,7 @@ export const DataAttestor = {
     const message = createBaseDataAttestor();
     message.id = object.id ?? new Uint8Array();
     message.attestor = object.attestor ?? new Uint8Array();
-    message.timestamp = object.timestamp ?? undefined;
+    message.timestamp = object.timestamp !== undefined && object.timestamp !== null ? Timestamp.fromPartial(object.timestamp) : undefined;
     return message;
   }
 

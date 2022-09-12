@@ -1,7 +1,7 @@
 import { Coin } from "../../../../cosmos/base/v1beta1/coin";
 import { Timestamp } from "../../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, toTimestamp, fromTimestamp, fromJsonTimestamp, Long } from "@osmonauts/helpers";
+import { isSet, DeepPartial, fromJsonTimestamp, fromTimestamp, Long } from "@osmonauts/helpers";
 
 /** MsgSell is the Msg/Sell request type. */
 export interface MsgSell {
@@ -44,7 +44,7 @@ export interface MsgSell_Order {
    * expiration is an optional timestamp when the sell order expires. When the
    * expiration time is reached, the sell order is removed from state.
    */
-  expiration: Date;
+  expiration: Timestamp;
 }
 
 /** MsgSellResponse is the Msg/Sell response type. */
@@ -86,7 +86,7 @@ export interface MsgUpdateSellOrders_Update {
    * new_expiration is an optional timestamp when the sell order expires. When
    * the expiration time is reached, the sell order is removed from state.
    */
-  newExpiration: Date;
+  newExpiration: Timestamp;
 }
 
 /** MsgUpdateSellOrdersResponse is the Msg/UpdateSellOrders response type. */
@@ -250,7 +250,7 @@ export const MsgSell_Order = {
     }
 
     if (message.expiration !== undefined) {
-      Timestamp.encode(toTimestamp(message.expiration), writer.uint32(42).fork()).ldelim();
+      Timestamp.encode(message.expiration, writer.uint32(42).fork()).ldelim();
     }
 
     return writer;
@@ -282,7 +282,7 @@ export const MsgSell_Order = {
           break;
 
         case 5:
-          message.expiration = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.expiration = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -310,7 +310,7 @@ export const MsgSell_Order = {
     message.quantity !== undefined && (obj.quantity = message.quantity);
     message.askPrice !== undefined && (obj.askPrice = message.askPrice ? Coin.toJSON(message.askPrice) : undefined);
     message.disableAutoRetire !== undefined && (obj.disableAutoRetire = message.disableAutoRetire);
-    message.expiration !== undefined && (obj.expiration = message.expiration.toISOString());
+    message.expiration !== undefined && (obj.expiration = fromTimestamp(message.expiration).toISOString());
     return obj;
   },
 
@@ -320,7 +320,7 @@ export const MsgSell_Order = {
     message.quantity = object.quantity ?? "";
     message.askPrice = object.askPrice !== undefined && object.askPrice !== null ? Coin.fromPartial(object.askPrice) : undefined;
     message.disableAutoRetire = object.disableAutoRetire ?? false;
-    message.expiration = object.expiration ?? undefined;
+    message.expiration = object.expiration !== undefined && object.expiration !== null ? Timestamp.fromPartial(object.expiration) : undefined;
     return message;
   }
 
@@ -505,7 +505,7 @@ export const MsgUpdateSellOrders_Update = {
     }
 
     if (message.newExpiration !== undefined) {
-      Timestamp.encode(toTimestamp(message.newExpiration), writer.uint32(42).fork()).ldelim();
+      Timestamp.encode(message.newExpiration, writer.uint32(42).fork()).ldelim();
     }
 
     return writer;
@@ -537,7 +537,7 @@ export const MsgUpdateSellOrders_Update = {
           break;
 
         case 5:
-          message.newExpiration = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.newExpiration = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -565,7 +565,7 @@ export const MsgUpdateSellOrders_Update = {
     message.newQuantity !== undefined && (obj.newQuantity = message.newQuantity);
     message.newAskPrice !== undefined && (obj.newAskPrice = message.newAskPrice ? Coin.toJSON(message.newAskPrice) : undefined);
     message.disableAutoRetire !== undefined && (obj.disableAutoRetire = message.disableAutoRetire);
-    message.newExpiration !== undefined && (obj.newExpiration = message.newExpiration.toISOString());
+    message.newExpiration !== undefined && (obj.newExpiration = fromTimestamp(message.newExpiration).toISOString());
     return obj;
   },
 
@@ -575,7 +575,7 @@ export const MsgUpdateSellOrders_Update = {
     message.newQuantity = object.newQuantity ?? "";
     message.newAskPrice = object.newAskPrice !== undefined && object.newAskPrice !== null ? Coin.fromPartial(object.newAskPrice) : undefined;
     message.disableAutoRetire = object.disableAutoRetire ?? false;
-    message.newExpiration = object.newExpiration ?? undefined;
+    message.newExpiration = object.newExpiration !== undefined && object.newExpiration !== null ? Timestamp.fromPartial(object.newExpiration) : undefined;
     return message;
   }
 

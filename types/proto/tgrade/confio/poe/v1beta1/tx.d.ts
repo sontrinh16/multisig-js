@@ -1,6 +1,7 @@
 import { Description } from "../../../../cosmos/staking/v1beta1/staking";
 import { Any } from "../../../../google/protobuf/any";
 import { Coin } from "../../../../cosmos/base/v1beta1/coin";
+import { Timestamp } from "../../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
 /**
@@ -60,7 +61,7 @@ export interface MsgUndelegate {
 }
 /** MsgUndelegateResponse defines the Msg/Undelegate response type. */
 export interface MsgUndelegateResponse {
-    completionTime: Date;
+    completionTime: Timestamp;
 }
 export declare const MsgCreateValidator: {
     encode(message: MsgCreateValidator, writer?: _m0.Writer): _m0.Writer;

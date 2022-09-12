@@ -1332,11 +1332,17 @@ export declare namespace likechain {
                             maxSupply?: any;
                             blindBoxConfig?: {
                                 mintPeriods?: {
-                                    startTime?: Date;
+                                    startTime?: {
+                                        seconds?: any;
+                                        nanos?: number;
+                                    };
                                     allowedAddresses?: string[];
                                     mintPrice?: any;
                                 }[];
-                                revealTime?: Date;
+                                revealTime?: {
+                                    seconds?: any;
+                                    nanos?: number;
+                                };
                             };
                         };
                     };
@@ -1382,11 +1388,17 @@ export declare namespace likechain {
                             maxSupply?: any;
                             blindBoxConfig?: {
                                 mintPeriods?: {
-                                    startTime?: Date;
+                                    startTime?: {
+                                        seconds?: any;
+                                        nanos?: number;
+                                    };
                                     allowedAddresses?: string[];
                                     mintPrice?: any;
                                 }[];
-                                revealTime?: Date;
+                                revealTime?: {
+                                    seconds?: any;
+                                    nanos?: number;
+                                };
                             };
                         };
                     };
@@ -1558,7 +1570,10 @@ export declare namespace likechain {
                     classId?: string;
                     nftId?: string;
                     price?: any;
-                    expiration?: Date;
+                    expiration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _465.MsgCreateOffer;
             };
             MsgCreateOfferResponse: {
@@ -1572,7 +1587,10 @@ export declare namespace likechain {
                         nftId?: string;
                         buyer?: string;
                         price?: any;
-                        expiration?: Date;
+                        expiration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                 }): _465.MsgCreateOfferResponse;
             };
@@ -1586,7 +1604,10 @@ export declare namespace likechain {
                     classId?: string;
                     nftId?: string;
                     price?: any;
-                    expiration?: Date;
+                    expiration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _465.MsgUpdateOffer;
             };
             MsgUpdateOfferResponse: {
@@ -1600,7 +1621,10 @@ export declare namespace likechain {
                         nftId?: string;
                         buyer?: string;
                         price?: any;
-                        expiration?: Date;
+                        expiration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                 }): _465.MsgUpdateOfferResponse;
             };
@@ -1632,7 +1656,10 @@ export declare namespace likechain {
                     classId?: string;
                     nftId?: string;
                     price?: any;
-                    expiration?: Date;
+                    expiration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _465.MsgCreateListing;
             };
             MsgCreateListingResponse: {
@@ -1646,7 +1673,10 @@ export declare namespace likechain {
                         nftId?: string;
                         seller?: string;
                         price?: any;
-                        expiration?: Date;
+                        expiration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                 }): _465.MsgCreateListingResponse;
             };
@@ -1660,7 +1690,10 @@ export declare namespace likechain {
                     classId?: string;
                     nftId?: string;
                     price?: any;
-                    expiration?: Date;
+                    expiration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _465.MsgUpdateListing;
             };
             MsgUpdateListingResponse: {
@@ -1674,7 +1707,10 @@ export declare namespace likechain {
                         nftId?: string;
                         seller?: string;
                         price?: any;
-                        expiration?: Date;
+                        expiration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                 }): _465.MsgUpdateListingResponse;
             };
@@ -2212,7 +2248,10 @@ export declare namespace likechain {
                         nftId?: string;
                         buyer?: string;
                         price?: any;
-                        expiration?: Date;
+                        expiration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                 }): _463.QueryOfferResponse;
             };
@@ -2242,7 +2281,10 @@ export declare namespace likechain {
                         nftId?: string;
                         buyer?: string;
                         price?: any;
-                        expiration?: Date;
+                        expiration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                     pagination?: {
                         nextKey?: Uint8Array;
@@ -2277,7 +2319,10 @@ export declare namespace likechain {
                         nftId?: string;
                         buyer?: string;
                         price?: any;
-                        expiration?: Date;
+                        expiration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                     pagination?: {
                         nextKey?: Uint8Array;
@@ -2313,7 +2358,10 @@ export declare namespace likechain {
                         nftId?: string;
                         buyer?: string;
                         price?: any;
-                        expiration?: Date;
+                        expiration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                     pagination?: {
                         nextKey?: Uint8Array;
@@ -2343,7 +2391,10 @@ export declare namespace likechain {
                         nftId?: string;
                         seller?: string;
                         price?: any;
-                        expiration?: Date;
+                        expiration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                 }): _463.QueryListingResponse;
             };
@@ -2373,7 +2424,10 @@ export declare namespace likechain {
                         nftId?: string;
                         seller?: string;
                         price?: any;
-                        expiration?: Date;
+                        expiration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                     pagination?: {
                         nextKey?: Uint8Array;
@@ -2408,7 +2462,10 @@ export declare namespace likechain {
                         nftId?: string;
                         seller?: string;
                         price?: any;
-                        expiration?: Date;
+                        expiration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                     pagination?: {
                         nextKey?: Uint8Array;
@@ -2444,7 +2501,10 @@ export declare namespace likechain {
                         nftId?: string;
                         seller?: string;
                         price?: any;
-                        expiration?: Date;
+                        expiration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                     pagination?: {
                         nextKey?: Uint8Array;
@@ -2539,7 +2599,10 @@ export declare namespace likechain {
                     nftId?: string;
                     buyer?: string;
                     price?: any;
-                    expiration?: Date;
+                    expiration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _461.Offer;
             };
             OfferStoreRecord: {
@@ -2552,7 +2615,10 @@ export declare namespace likechain {
                     nftId?: string;
                     buyer?: Uint8Array;
                     price?: any;
-                    expiration?: Date;
+                    expiration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _461.OfferStoreRecord;
             };
             OfferExpireQueueEntry: {
@@ -2561,7 +2627,10 @@ export declare namespace likechain {
                 fromJSON(object: any): _460.OfferExpireQueueEntry;
                 toJSON(message: _460.OfferExpireQueueEntry): unknown;
                 fromPartial(object: {
-                    expireTime?: Date;
+                    expireTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     offerKey?: Uint8Array;
                 }): _460.OfferExpireQueueEntry;
             };
@@ -2602,7 +2671,10 @@ export declare namespace likechain {
                     nftId?: string;
                     seller?: string;
                     price?: any;
-                    expiration?: Date;
+                    expiration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _457.Listing;
             };
             ListingStoreRecord: {
@@ -2615,7 +2687,10 @@ export declare namespace likechain {
                     nftId?: string;
                     seller?: Uint8Array;
                     price?: any;
-                    expiration?: Date;
+                    expiration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _457.ListingStoreRecord;
             };
             ListingExpireQueueEntry: {
@@ -2624,7 +2699,10 @@ export declare namespace likechain {
                 fromJSON(object: any): _456.ListingExpireQueueEntry;
                 toJSON(message: _456.ListingExpireQueueEntry): unknown;
                 fromPartial(object: {
-                    expireTime?: Date;
+                    expireTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     listingKey?: Uint8Array;
                 }): _456.ListingExpireQueueEntry;
             };
@@ -2662,7 +2740,10 @@ export declare namespace likechain {
                         };
                     }[];
                     classRevealQueue?: {
-                        revealTime?: Date;
+                        revealTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         classId?: string;
                     }[];
                     offerList?: {
@@ -2670,21 +2751,33 @@ export declare namespace likechain {
                         nftId?: string;
                         buyer?: string;
                         price?: any;
-                        expiration?: Date;
+                        expiration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                     listingList?: {
                         classId?: string;
                         nftId?: string;
                         seller?: string;
                         price?: any;
-                        expiration?: Date;
+                        expiration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                     offerExpireQueue?: {
-                        expireTime?: Date;
+                        expireTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         offerKey?: Uint8Array;
                     }[];
                     listingExpireQueue?: {
-                        expireTime?: Date;
+                        expireTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         listingKey?: Uint8Array;
                     }[];
                     royaltyConfigByClassList?: {
@@ -2975,7 +3068,10 @@ export declare namespace likechain {
                 fromJSON(object: any): _451.ClassRevealQueueEntry;
                 toJSON(message: _451.ClassRevealQueueEntry): unknown;
                 fromPartial(object: {
-                    revealTime?: Date;
+                    revealTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     classId?: string;
                 }): _451.ClassRevealQueueEntry;
             };
@@ -2996,11 +3092,17 @@ export declare namespace likechain {
                         maxSupply?: any;
                         blindBoxConfig?: {
                             mintPeriods?: {
-                                startTime?: Date;
+                                startTime?: {
+                                    seconds?: any;
+                                    nanos?: number;
+                                };
                                 allowedAddresses?: string[];
                                 mintPrice?: any;
                             }[];
-                            revealTime?: Date;
+                            revealTime?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
                         };
                     };
                 }): _450.ClassInput;
@@ -3036,11 +3138,17 @@ export declare namespace likechain {
                         maxSupply?: any;
                         blindBoxConfig?: {
                             mintPeriods?: {
-                                startTime?: Date;
+                                startTime?: {
+                                    seconds?: any;
+                                    nanos?: number;
+                                };
                                 allowedAddresses?: string[];
                                 mintPrice?: any;
                             }[];
-                            revealTime?: Date;
+                            revealTime?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
                         };
                     };
                     blindBoxState?: {
@@ -3067,7 +3175,10 @@ export declare namespace likechain {
                 fromJSON(object: any): _449.MintPeriod;
                 toJSON(message: _449.MintPeriod): unknown;
                 fromPartial(object: {
-                    startTime?: Date;
+                    startTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     allowedAddresses?: string[];
                     mintPrice?: any;
                 }): _449.MintPeriod;
@@ -3082,11 +3193,17 @@ export declare namespace likechain {
                     maxSupply?: any;
                     blindBoxConfig?: {
                         mintPeriods?: {
-                            startTime?: Date;
+                            startTime?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
                             allowedAddresses?: string[];
                             mintPrice?: any;
                         }[];
-                        revealTime?: Date;
+                        revealTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                 }): _449.ClassConfig;
             };
@@ -3097,11 +3214,17 @@ export declare namespace likechain {
                 toJSON(message: _449.BlindBoxConfig): unknown;
                 fromPartial(object: {
                     mintPeriods?: {
-                        startTime?: Date;
+                        startTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         allowedAddresses?: string[];
                         mintPrice?: any;
                     }[];
-                    revealTime?: Date;
+                    revealTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _449.BlindBoxConfig;
             };
             BlindBoxState: {

@@ -1,3 +1,4 @@
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import { MultiRewardIndex, USDXMintingClaim, HardLiquidityProviderClaim, DelegatorClaim, SwapClaim, SavingsClaim } from "./claims";
 import { Params } from "./params";
 import * as _m0 from "protobufjs/minimal";
@@ -5,7 +6,7 @@ import { DeepPartial } from "@osmonauts/helpers";
 /** AccumulationTime stores the previous reward distribution time and its corresponding collateral type */
 export interface AccumulationTime {
     collateralType: string;
-    previousAccumulationTime: Date;
+    previousAccumulationTime: Timestamp;
 }
 /** GenesisRewardState groups together the global state for a particular reward so it can be exported in genesis. */
 export interface GenesisRewardState {

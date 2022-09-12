@@ -1,7 +1,7 @@
 import { Post, Attachment, UserAnswer, Params } from "./models";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, Long, toTimestamp, fromTimestamp, fromJsonTimestamp } from "@osmonauts/helpers";
+import { isSet, DeepPartial, Long, fromJsonTimestamp, fromTimestamp } from "@osmonauts/helpers";
 
 /** GenesisState contains the data of the genesis state for the posts module */
 export interface GenesisState {
@@ -32,7 +32,7 @@ export interface ActivePollData {
   subspaceId: Long;
   postId: Long;
   pollId: number;
-  endDate: Date;
+  endDate: Timestamp;
 }
 
 function createBaseGenesisState(): GenesisState {
@@ -369,7 +369,7 @@ export const ActivePollData = {
     }
 
     if (message.endDate !== undefined) {
-      Timestamp.encode(toTimestamp(message.endDate), writer.uint32(34).fork()).ldelim();
+      Timestamp.encode(message.endDate, writer.uint32(34).fork()).ldelim();
     }
 
     return writer;
@@ -397,7 +397,7 @@ export const ActivePollData = {
           break;
 
         case 4:
-          message.endDate = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.endDate = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -423,7 +423,7 @@ export const ActivePollData = {
     message.subspaceId !== undefined && (obj.subspaceId = (message.subspaceId || Long.UZERO).toString());
     message.postId !== undefined && (obj.postId = (message.postId || Long.UZERO).toString());
     message.pollId !== undefined && (obj.pollId = Math.round(message.pollId));
-    message.endDate !== undefined && (obj.endDate = message.endDate.toISOString());
+    message.endDate !== undefined && (obj.endDate = fromTimestamp(message.endDate).toISOString());
     return obj;
   },
 
@@ -432,7 +432,7 @@ export const ActivePollData = {
     message.subspaceId = object.subspaceId !== undefined && object.subspaceId !== null ? Long.fromValue(object.subspaceId) : Long.UZERO;
     message.postId = object.postId !== undefined && object.postId !== null ? Long.fromValue(object.postId) : Long.UZERO;
     message.pollId = object.pollId ?? 0;
-    message.endDate = object.endDate ?? undefined;
+    message.endDate = object.endDate !== undefined && object.endDate !== null ? Timestamp.fromPartial(object.endDate) : undefined;
     return message;
   }
 

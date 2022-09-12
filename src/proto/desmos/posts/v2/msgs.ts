@@ -2,7 +2,7 @@ import { Entities, ReplySetting, PostReference, replySettingFromJSON, replySetti
 import { Any } from "../../../google/protobuf/any";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { Long, isSet, DeepPartial, toTimestamp, fromTimestamp, fromJsonTimestamp } from "@osmonauts/helpers";
+import { Long, isSet, DeepPartial, fromJsonTimestamp, fromTimestamp } from "@osmonauts/helpers";
 
 /** MsgCreatePost represents the message to be used to create a post. */
 export interface MsgCreatePost {
@@ -46,7 +46,7 @@ export interface MsgCreatePostResponse {
   postId: Long;
 
   /** Creation date of the post */
-  creationDate: Date;
+  creationDate: Timestamp;
 }
 
 /** MsgEditPost represents the message to be used to edit a post. */
@@ -82,7 +82,7 @@ export interface MsgEditPost {
 /** MsgCreatePostResponse defines the Msg/EditPost response type. */
 export interface MsgEditPostResponse {
   /** Edit date of the post */
-  editDate: Date;
+  editDate: Timestamp;
 }
 
 /** MsgDeletePost represents the message used when deleting a post. */
@@ -124,7 +124,7 @@ export interface MsgAddPostAttachmentResponse {
   attachmentId: number;
 
   /** Edit date of the post */
-  editDate: Date;
+  editDate: Timestamp;
 }
 
 /**
@@ -151,7 +151,7 @@ export interface MsgRemovePostAttachment {
  */
 export interface MsgRemovePostAttachmentResponse {
   /** Edit date of the post */
-  editDate: Date;
+  editDate: Timestamp;
 }
 
 /** MsgAnswerPoll represents the message used to answer a poll */
@@ -383,7 +383,7 @@ export const MsgCreatePostResponse = {
     }
 
     if (message.creationDate !== undefined) {
-      Timestamp.encode(toTimestamp(message.creationDate), writer.uint32(18).fork()).ldelim();
+      Timestamp.encode(message.creationDate, writer.uint32(18).fork()).ldelim();
     }
 
     return writer;
@@ -403,7 +403,7 @@ export const MsgCreatePostResponse = {
           break;
 
         case 2:
-          message.creationDate = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.creationDate = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -425,14 +425,14 @@ export const MsgCreatePostResponse = {
   toJSON(message: MsgCreatePostResponse): unknown {
     const obj: any = {};
     message.postId !== undefined && (obj.postId = (message.postId || Long.UZERO).toString());
-    message.creationDate !== undefined && (obj.creationDate = message.creationDate.toISOString());
+    message.creationDate !== undefined && (obj.creationDate = fromTimestamp(message.creationDate).toISOString());
     return obj;
   },
 
   fromPartial(object: DeepPartial<MsgCreatePostResponse>): MsgCreatePostResponse {
     const message = createBaseMsgCreatePostResponse();
     message.postId = object.postId !== undefined && object.postId !== null ? Long.fromValue(object.postId) : Long.UZERO;
-    message.creationDate = object.creationDate ?? undefined;
+    message.creationDate = object.creationDate !== undefined && object.creationDate !== null ? Timestamp.fromPartial(object.creationDate) : undefined;
     return message;
   }
 
@@ -570,7 +570,7 @@ function createBaseMsgEditPostResponse(): MsgEditPostResponse {
 export const MsgEditPostResponse = {
   encode(message: MsgEditPostResponse, writer: _m0.Writer = _m0.Writer.create()): _m0.Writer {
     if (message.editDate !== undefined) {
-      Timestamp.encode(toTimestamp(message.editDate), writer.uint32(10).fork()).ldelim();
+      Timestamp.encode(message.editDate, writer.uint32(10).fork()).ldelim();
     }
 
     return writer;
@@ -586,7 +586,7 @@ export const MsgEditPostResponse = {
 
       switch (tag >>> 3) {
         case 1:
-          message.editDate = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.editDate = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -606,13 +606,13 @@ export const MsgEditPostResponse = {
 
   toJSON(message: MsgEditPostResponse): unknown {
     const obj: any = {};
-    message.editDate !== undefined && (obj.editDate = message.editDate.toISOString());
+    message.editDate !== undefined && (obj.editDate = fromTimestamp(message.editDate).toISOString());
     return obj;
   },
 
   fromPartial(object: DeepPartial<MsgEditPostResponse>): MsgEditPostResponse {
     const message = createBaseMsgEditPostResponse();
-    message.editDate = object.editDate ?? undefined;
+    message.editDate = object.editDate !== undefined && object.editDate !== null ? Timestamp.fromPartial(object.editDate) : undefined;
     return message;
   }
 
@@ -849,7 +849,7 @@ export const MsgAddPostAttachmentResponse = {
     }
 
     if (message.editDate !== undefined) {
-      Timestamp.encode(toTimestamp(message.editDate), writer.uint32(18).fork()).ldelim();
+      Timestamp.encode(message.editDate, writer.uint32(18).fork()).ldelim();
     }
 
     return writer;
@@ -869,7 +869,7 @@ export const MsgAddPostAttachmentResponse = {
           break;
 
         case 2:
-          message.editDate = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.editDate = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -891,14 +891,14 @@ export const MsgAddPostAttachmentResponse = {
   toJSON(message: MsgAddPostAttachmentResponse): unknown {
     const obj: any = {};
     message.attachmentId !== undefined && (obj.attachmentId = Math.round(message.attachmentId));
-    message.editDate !== undefined && (obj.editDate = message.editDate.toISOString());
+    message.editDate !== undefined && (obj.editDate = fromTimestamp(message.editDate).toISOString());
     return obj;
   },
 
   fromPartial(object: DeepPartial<MsgAddPostAttachmentResponse>): MsgAddPostAttachmentResponse {
     const message = createBaseMsgAddPostAttachmentResponse();
     message.attachmentId = object.attachmentId ?? 0;
-    message.editDate = object.editDate ?? undefined;
+    message.editDate = object.editDate !== undefined && object.editDate !== null ? Timestamp.fromPartial(object.editDate) : undefined;
     return message;
   }
 
@@ -1006,7 +1006,7 @@ function createBaseMsgRemovePostAttachmentResponse(): MsgRemovePostAttachmentRes
 export const MsgRemovePostAttachmentResponse = {
   encode(message: MsgRemovePostAttachmentResponse, writer: _m0.Writer = _m0.Writer.create()): _m0.Writer {
     if (message.editDate !== undefined) {
-      Timestamp.encode(toTimestamp(message.editDate), writer.uint32(10).fork()).ldelim();
+      Timestamp.encode(message.editDate, writer.uint32(10).fork()).ldelim();
     }
 
     return writer;
@@ -1022,7 +1022,7 @@ export const MsgRemovePostAttachmentResponse = {
 
       switch (tag >>> 3) {
         case 1:
-          message.editDate = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.editDate = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -1042,13 +1042,13 @@ export const MsgRemovePostAttachmentResponse = {
 
   toJSON(message: MsgRemovePostAttachmentResponse): unknown {
     const obj: any = {};
-    message.editDate !== undefined && (obj.editDate = message.editDate.toISOString());
+    message.editDate !== undefined && (obj.editDate = fromTimestamp(message.editDate).toISOString());
     return obj;
   },
 
   fromPartial(object: DeepPartial<MsgRemovePostAttachmentResponse>): MsgRemovePostAttachmentResponse {
     const message = createBaseMsgRemovePostAttachmentResponse();
-    message.editDate = object.editDate ?? undefined;
+    message.editDate = object.editDate !== undefined && object.editDate !== null ? Timestamp.fromPartial(object.editDate) : undefined;
     return message;
   }
 

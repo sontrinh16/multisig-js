@@ -20,14 +20,14 @@ import * as _204 from "./resources/v1beta1/genesis";
 import * as _205 from "./resources/v1beta1/query";
 import * as _206 from "./resources/v1beta1/tx";
 import * as _207 from "./resources/v1beta1/types";
-import * as _755 from "./dmn/v1beta1/tx.amino";
-import * as _756 from "./graph/v1beta1/tx.amino";
-import * as _757 from "./grid/v1beta1/tx.amino";
-import * as _758 from "./resources/v1beta1/tx.amino";
-import * as _759 from "./dmn/v1beta1/tx.registry";
-import * as _760 from "./graph/v1beta1/tx.registry";
-import * as _761 from "./grid/v1beta1/tx.registry";
-import * as _762 from "./resources/v1beta1/tx.registry";
+import * as _774 from "./dmn/v1beta1/tx.amino";
+import * as _775 from "./graph/v1beta1/tx.amino";
+import * as _776 from "./grid/v1beta1/tx.amino";
+import * as _777 from "./resources/v1beta1/tx.amino";
+import * as _778 from "./dmn/v1beta1/tx.registry";
+import * as _779 from "./graph/v1beta1/tx.registry";
+import * as _780 from "./grid/v1beta1/tx.registry";
+import * as _781 from "./resources/v1beta1/tx.registry";
 export namespace cyber {
   export namespace bandwidth {
     export const v1beta1 = { ..._186,
@@ -46,16 +46,16 @@ export namespace cyber {
       ..._191,
       ..._192,
       ..._193,
-      ..._755,
-      ..._759
+      ..._774,
+      ..._778
     };
   }
   export namespace graph {
     export const v1beta1 = { ..._194,
       ..._195,
       ..._196,
-      ..._756,
-      ..._760
+      ..._775,
+      ..._779
     };
   }
   export namespace grid {
@@ -63,8 +63,8 @@ export namespace cyber {
       ..._198,
       ..._199,
       ..._200,
-      ..._757,
-      ..._761
+      ..._776,
+      ..._780
     };
   }
   export namespace rank {
@@ -78,8 +78,8 @@ export namespace cyber {
       ..._205,
       ..._206,
       ..._207,
-      ..._758,
-      ..._762
+      ..._777,
+      ..._781
     };
   }
 }

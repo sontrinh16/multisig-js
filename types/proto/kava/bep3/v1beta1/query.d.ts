@@ -1,6 +1,7 @@
 import { SwapStatus, SwapDirection, Params } from "./bep3";
 import { PageRequest, PageResponse } from "../../../cosmos/base/query/v1beta1/pagination";
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
+import { Duration } from "../../../google/protobuf/duration";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial, Long } from "@osmonauts/helpers";
 /** QueryParamsRequest defines the request type for querying x/bep3 parameters. */
@@ -27,7 +28,7 @@ export interface AssetSupplyResponse {
     /** time_limited_current_supply represents the time limited current supply of an asset */
     timeLimitedCurrentSupply: Coin;
     /** time_elapsed represents the time elapsed */
-    timeElapsed: string;
+    timeElapsed: Duration;
 }
 /** QueryAssetSupplyResponse is the response type for the Query/AssetSupply RPC method. */
 export interface QueryAssetSupplyResponse {

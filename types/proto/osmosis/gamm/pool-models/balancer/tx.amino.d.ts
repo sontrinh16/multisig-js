@@ -12,7 +12,10 @@ export interface AminoMsgCreateBalancerPool extends AminoMsg {
                     seconds: string;
                     nanos: number;
                 };
-                duration: string;
+                duration: {
+                    seconds: string;
+                    nanos: number;
+                };
                 initialPoolWeights: {
                     token: {
                         denom: string;

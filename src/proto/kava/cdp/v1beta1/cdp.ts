@@ -1,7 +1,7 @@
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { toTimestamp, Long, fromTimestamp, isSet, bytesFromBase64, fromJsonTimestamp, base64FromBytes, DeepPartial } from "@osmonauts/helpers";
+import { Long, isSet, bytesFromBase64, fromJsonTimestamp, base64FromBytes, fromTimestamp, DeepPartial } from "@osmonauts/helpers";
 
 /** CDP defines the state of a single collateralized debt position. */
 export interface CDP {
@@ -11,7 +11,7 @@ export interface CDP {
   collateral: Coin;
   principal: Coin;
   accumulatedFees: Coin;
-  feesUpdated: Date;
+  feesUpdated: Timestamp;
   interestFactor: string;
 }
 
@@ -79,7 +79,7 @@ export const CDP = {
     }
 
     if (message.feesUpdated !== undefined) {
-      Timestamp.encode(toTimestamp(message.feesUpdated), writer.uint32(58).fork()).ldelim();
+      Timestamp.encode(message.feesUpdated, writer.uint32(58).fork()).ldelim();
     }
 
     if (message.interestFactor !== "") {
@@ -123,7 +123,7 @@ export const CDP = {
           break;
 
         case 7:
-          message.feesUpdated = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.feesUpdated = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 8:
@@ -160,7 +160,7 @@ export const CDP = {
     message.collateral !== undefined && (obj.collateral = message.collateral ? Coin.toJSON(message.collateral) : undefined);
     message.principal !== undefined && (obj.principal = message.principal ? Coin.toJSON(message.principal) : undefined);
     message.accumulatedFees !== undefined && (obj.accumulatedFees = message.accumulatedFees ? Coin.toJSON(message.accumulatedFees) : undefined);
-    message.feesUpdated !== undefined && (obj.feesUpdated = message.feesUpdated.toISOString());
+    message.feesUpdated !== undefined && (obj.feesUpdated = fromTimestamp(message.feesUpdated).toISOString());
     message.interestFactor !== undefined && (obj.interestFactor = message.interestFactor);
     return obj;
   },
@@ -173,7 +173,7 @@ export const CDP = {
     message.collateral = object.collateral !== undefined && object.collateral !== null ? Coin.fromPartial(object.collateral) : undefined;
     message.principal = object.principal !== undefined && object.principal !== null ? Coin.fromPartial(object.principal) : undefined;
     message.accumulatedFees = object.accumulatedFees !== undefined && object.accumulatedFees !== null ? Coin.fromPartial(object.accumulatedFees) : undefined;
-    message.feesUpdated = object.feesUpdated ?? undefined;
+    message.feesUpdated = object.feesUpdated !== undefined && object.feesUpdated !== null ? Timestamp.fromPartial(object.feesUpdated) : undefined;
     message.interestFactor = object.interestFactor ?? "";
     return message;
   }

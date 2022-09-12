@@ -1,4 +1,6 @@
 import { ClaimsRecordAddress } from "./claims";
+import { Timestamp } from "../../../google/protobuf/timestamp";
+import { Duration } from "../../../google/protobuf/duration";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
 /** GenesisState define the claims module's genesis state. */
@@ -13,11 +15,11 @@ export interface Params {
     /** enable claiming process */
     enableClaims: boolean;
     /** timestamp of the airdrop start */
-    airdropStartTime: Date;
+    airdropStartTime: Timestamp;
     /** duration until decay of claimable tokens begin */
-    durationUntilDecay: string;
+    durationUntilDecay: Duration;
     /** duration of the token claim decay period */
-    durationOfDecay: string;
+    durationOfDecay: Duration;
     /** denom of claimable coin */
     claimsDenom: string;
     /**

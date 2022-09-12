@@ -1,3 +1,4 @@
+import { Duration } from "../../../google/protobuf/duration";
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial, Long } from "@osmonauts/helpers";
@@ -62,7 +63,7 @@ export interface SupplyLimit {
     /** time_limited enables or disables time based supply limiting */
     timeLimited: boolean;
     /** time_period specifies the duration that time_based_limit is evalulated */
-    timePeriod: string;
+    timePeriod: Duration;
     /** time_based_limit defines the maximum supply that can be swapped within time_period */
     timeBasedLimit: string;
 }
@@ -104,7 +105,7 @@ export interface AssetSupply {
     /** time_limited_current_supply represents the time limited current supply of an asset */
     timeLimitedCurrentSupply: Coin;
     /** time_elapsed represents the time elapsed */
-    timeElapsed: string;
+    timeElapsed: Duration;
 }
 export declare const Params: {
     encode(message: Params, writer?: _m0.Writer): _m0.Writer;

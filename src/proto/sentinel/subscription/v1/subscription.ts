@@ -2,7 +2,7 @@ import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import { Status, statusFromJSON, statusToJSON } from "../../types/v1/status";
 import * as _m0 from "protobufjs/minimal";
-import { toTimestamp, Long, fromTimestamp, isSet, fromJsonTimestamp, DeepPartial } from "@osmonauts/helpers";
+import { Long, isSet, fromJsonTimestamp, fromTimestamp, DeepPartial } from "@osmonauts/helpers";
 export interface Subscription {
   id: Long;
   owner: string;
@@ -11,10 +11,10 @@ export interface Subscription {
   deposit: Coin;
   plan: Long;
   denom: string;
-  expiry: Date;
+  expiry: Timestamp;
   free: string;
   status: Status;
-  statusAt: Date;
+  statusAt: Timestamp;
 }
 
 function createBaseSubscription(): Subscription {
@@ -64,7 +64,7 @@ export const Subscription = {
     }
 
     if (message.expiry !== undefined) {
-      Timestamp.encode(toTimestamp(message.expiry), writer.uint32(66).fork()).ldelim();
+      Timestamp.encode(message.expiry, writer.uint32(66).fork()).ldelim();
     }
 
     if (message.free !== "") {
@@ -76,7 +76,7 @@ export const Subscription = {
     }
 
     if (message.statusAt !== undefined) {
-      Timestamp.encode(toTimestamp(message.statusAt), writer.uint32(90).fork()).ldelim();
+      Timestamp.encode(message.statusAt, writer.uint32(90).fork()).ldelim();
     }
 
     return writer;
@@ -120,7 +120,7 @@ export const Subscription = {
           break;
 
         case 8:
-          message.expiry = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.expiry = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 9:
@@ -132,7 +132,7 @@ export const Subscription = {
           break;
 
         case 11:
-          message.statusAt = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.statusAt = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -169,10 +169,10 @@ export const Subscription = {
     message.deposit !== undefined && (obj.deposit = message.deposit ? Coin.toJSON(message.deposit) : undefined);
     message.plan !== undefined && (obj.plan = (message.plan || Long.UZERO).toString());
     message.denom !== undefined && (obj.denom = message.denom);
-    message.expiry !== undefined && (obj.expiry = message.expiry.toISOString());
+    message.expiry !== undefined && (obj.expiry = fromTimestamp(message.expiry).toISOString());
     message.free !== undefined && (obj.free = message.free);
     message.status !== undefined && (obj.status = statusToJSON(message.status));
-    message.statusAt !== undefined && (obj.statusAt = message.statusAt.toISOString());
+    message.statusAt !== undefined && (obj.statusAt = fromTimestamp(message.statusAt).toISOString());
     return obj;
   },
 
@@ -185,10 +185,10 @@ export const Subscription = {
     message.deposit = object.deposit !== undefined && object.deposit !== null ? Coin.fromPartial(object.deposit) : undefined;
     message.plan = object.plan !== undefined && object.plan !== null ? Long.fromValue(object.plan) : Long.UZERO;
     message.denom = object.denom ?? "";
-    message.expiry = object.expiry ?? undefined;
+    message.expiry = object.expiry !== undefined && object.expiry !== null ? Timestamp.fromPartial(object.expiry) : undefined;
     message.free = object.free ?? "";
     message.status = object.status ?? 0;
-    message.statusAt = object.statusAt ?? undefined;
+    message.statusAt = object.statusAt !== undefined && object.statusAt !== null ? Timestamp.fromPartial(object.statusAt) : undefined;
     return message;
   }
 

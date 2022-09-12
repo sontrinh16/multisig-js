@@ -1,7 +1,7 @@
 import { DecCoin } from "../../../cosmos/base/v1beta1/coin";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { toTimestamp, fromTimestamp, Long, isSet, fromJsonTimestamp, DeepPartial } from "@osmonauts/helpers";
+import { Long, isSet, fromJsonTimestamp, fromTimestamp, DeepPartial } from "@osmonauts/helpers";
 
 /**
  * Incentive defines an instance that organizes distribution conditions for a
@@ -18,7 +18,7 @@ export interface Incentive {
   epochs: number;
 
   /** distribution start time */
-  startTime: Date;
+  startTime: Timestamp;
 
   /** cumulative gas spent by all gasmeters of the incentive during the epoch */
   totalGas: Long;
@@ -91,7 +91,7 @@ export const Incentive = {
     }
 
     if (message.startTime !== undefined) {
-      Timestamp.encode(toTimestamp(message.startTime), writer.uint32(34).fork()).ldelim();
+      Timestamp.encode(message.startTime, writer.uint32(34).fork()).ldelim();
     }
 
     if (!message.totalGas.isZero()) {
@@ -123,7 +123,7 @@ export const Incentive = {
           break;
 
         case 4:
-          message.startTime = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.startTime = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 5:
@@ -160,7 +160,7 @@ export const Incentive = {
     }
 
     message.epochs !== undefined && (obj.epochs = Math.round(message.epochs));
-    message.startTime !== undefined && (obj.startTime = message.startTime.toISOString());
+    message.startTime !== undefined && (obj.startTime = fromTimestamp(message.startTime).toISOString());
     message.totalGas !== undefined && (obj.totalGas = (message.totalGas || Long.UZERO).toString());
     return obj;
   },
@@ -170,7 +170,7 @@ export const Incentive = {
     message.contract = object.contract ?? "";
     message.allocations = object.allocations?.map(e => DecCoin.fromPartial(e)) || [];
     message.epochs = object.epochs ?? 0;
-    message.startTime = object.startTime ?? undefined;
+    message.startTime = object.startTime !== undefined && object.startTime !== null ? Timestamp.fromPartial(object.startTime) : undefined;
     message.totalGas = object.totalGas !== undefined && object.totalGas !== null ? Long.fromValue(object.totalGas) : Long.UZERO;
     return message;
   }

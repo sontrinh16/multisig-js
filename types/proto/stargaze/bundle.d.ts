@@ -1,86 +1,95 @@
-import * as _676 from "./mint/v1beta1/genesis";
-import * as _677 from "./mint/v1beta1/mint";
-import * as _678 from "./mint/v1beta1/query";
+import * as _695 from "./mint/v1beta1/genesis";
+import * as _696 from "./mint/v1beta1/mint";
+import * as _697 from "./mint/v1beta1/query";
 export declare namespace stargaze {
     namespace mint {
         const v1beta1: {
             QueryParamsRequest: {
-                encode(_: _678.QueryParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _678.QueryParamsRequest;
-                fromJSON(_: any): _678.QueryParamsRequest;
-                toJSON(_: _678.QueryParamsRequest): unknown;
-                fromPartial(_: {}): _678.QueryParamsRequest;
+                encode(_: _697.QueryParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _697.QueryParamsRequest;
+                fromJSON(_: any): _697.QueryParamsRequest;
+                toJSON(_: _697.QueryParamsRequest): unknown;
+                fromPartial(_: {}): _697.QueryParamsRequest;
             };
             QueryParamsResponse: {
-                encode(message: _678.QueryParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _678.QueryParamsResponse;
-                fromJSON(object: any): _678.QueryParamsResponse;
-                toJSON(message: _678.QueryParamsResponse): unknown;
+                encode(message: _697.QueryParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _697.QueryParamsResponse;
+                fromJSON(object: any): _697.QueryParamsResponse;
+                toJSON(message: _697.QueryParamsResponse): unknown;
                 fromPartial(object: {
                     params?: {
                         mintDenom?: string;
-                        startTime?: Date;
+                        startTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         initialAnnualProvisions?: string;
                         reductionFactor?: string;
                         blocksPerYear?: any;
                     };
-                }): _678.QueryParamsResponse;
+                }): _697.QueryParamsResponse;
             };
             QueryAnnualProvisionsRequest: {
-                encode(_: _678.QueryAnnualProvisionsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _678.QueryAnnualProvisionsRequest;
-                fromJSON(_: any): _678.QueryAnnualProvisionsRequest;
-                toJSON(_: _678.QueryAnnualProvisionsRequest): unknown;
-                fromPartial(_: {}): _678.QueryAnnualProvisionsRequest;
+                encode(_: _697.QueryAnnualProvisionsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _697.QueryAnnualProvisionsRequest;
+                fromJSON(_: any): _697.QueryAnnualProvisionsRequest;
+                toJSON(_: _697.QueryAnnualProvisionsRequest): unknown;
+                fromPartial(_: {}): _697.QueryAnnualProvisionsRequest;
             };
             QueryAnnualProvisionsResponse: {
-                encode(message: _678.QueryAnnualProvisionsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _678.QueryAnnualProvisionsResponse;
-                fromJSON(object: any): _678.QueryAnnualProvisionsResponse;
-                toJSON(message: _678.QueryAnnualProvisionsResponse): unknown;
+                encode(message: _697.QueryAnnualProvisionsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _697.QueryAnnualProvisionsResponse;
+                fromJSON(object: any): _697.QueryAnnualProvisionsResponse;
+                toJSON(message: _697.QueryAnnualProvisionsResponse): unknown;
                 fromPartial(object: {
                     annualProvisions?: Uint8Array;
-                }): _678.QueryAnnualProvisionsResponse;
+                }): _697.QueryAnnualProvisionsResponse;
             };
             Minter: {
-                encode(message: _677.Minter, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _677.Minter;
-                fromJSON(object: any): _677.Minter;
-                toJSON(message: _677.Minter): unknown;
+                encode(message: _696.Minter, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _696.Minter;
+                fromJSON(object: any): _696.Minter;
+                toJSON(message: _696.Minter): unknown;
                 fromPartial(object: {
                     annualProvisions?: string;
-                }): _677.Minter;
+                }): _696.Minter;
             };
             Params: {
-                encode(message: _677.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _677.Params;
-                fromJSON(object: any): _677.Params;
-                toJSON(message: _677.Params): unknown;
+                encode(message: _696.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _696.Params;
+                fromJSON(object: any): _696.Params;
+                toJSON(message: _696.Params): unknown;
                 fromPartial(object: {
                     mintDenom?: string;
-                    startTime?: Date;
+                    startTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     initialAnnualProvisions?: string;
                     reductionFactor?: string;
                     blocksPerYear?: any;
-                }): _677.Params;
+                }): _696.Params;
             };
             GenesisState: {
-                encode(message: _676.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _676.GenesisState;
-                fromJSON(object: any): _676.GenesisState;
-                toJSON(message: _676.GenesisState): unknown;
+                encode(message: _695.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _695.GenesisState;
+                fromJSON(object: any): _695.GenesisState;
+                toJSON(message: _695.GenesisState): unknown;
                 fromPartial(object: {
                     minter?: {
                         annualProvisions?: string;
                     };
                     params?: {
                         mintDenom?: string;
-                        startTime?: Date;
+                        startTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         initialAnnualProvisions?: string;
                         reductionFactor?: string;
                         blocksPerYear?: any;
                     };
-                }): _676.GenesisState;
+                }): _695.GenesisState;
             };
         };
     }

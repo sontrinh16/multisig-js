@@ -1,6 +1,6 @@
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, toTimestamp, fromTimestamp, fromJsonTimestamp, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
+import { isSet, DeepPartial, fromJsonTimestamp, bytesFromBase64, fromTimestamp, base64FromBytes } from "@osmonauts/helpers";
 
 /** Params governance parameters for kavadist module */
 export interface Params {
@@ -14,10 +14,10 @@ export interface Params {
  */
 export interface Period {
   /** example "2020-03-01T15:20:00Z" */
-  start: Date;
+  start: Timestamp;
 
   /** example "2020-06-01T15:20:00Z" */
-  end: Date;
+  end: Timestamp;
 
   /** example "1.000000003022265980"  - 10% inflation */
   inflation: Uint8Array;
@@ -109,11 +109,11 @@ function createBasePeriod(): Period {
 export const Period = {
   encode(message: Period, writer: _m0.Writer = _m0.Writer.create()): _m0.Writer {
     if (message.start !== undefined) {
-      Timestamp.encode(toTimestamp(message.start), writer.uint32(10).fork()).ldelim();
+      Timestamp.encode(message.start, writer.uint32(10).fork()).ldelim();
     }
 
     if (message.end !== undefined) {
-      Timestamp.encode(toTimestamp(message.end), writer.uint32(18).fork()).ldelim();
+      Timestamp.encode(message.end, writer.uint32(18).fork()).ldelim();
     }
 
     if (message.inflation.length !== 0) {
@@ -133,11 +133,11 @@ export const Period = {
 
       switch (tag >>> 3) {
         case 1:
-          message.start = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.start = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 2:
-          message.end = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.end = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 3:
@@ -163,16 +163,16 @@ export const Period = {
 
   toJSON(message: Period): unknown {
     const obj: any = {};
-    message.start !== undefined && (obj.start = message.start.toISOString());
-    message.end !== undefined && (obj.end = message.end.toISOString());
+    message.start !== undefined && (obj.start = fromTimestamp(message.start).toISOString());
+    message.end !== undefined && (obj.end = fromTimestamp(message.end).toISOString());
     message.inflation !== undefined && (obj.inflation = base64FromBytes(message.inflation !== undefined ? message.inflation : new Uint8Array()));
     return obj;
   },
 
   fromPartial(object: DeepPartial<Period>): Period {
     const message = createBasePeriod();
-    message.start = object.start ?? undefined;
-    message.end = object.end ?? undefined;
+    message.start = object.start !== undefined && object.start !== null ? Timestamp.fromPartial(object.start) : undefined;
+    message.end = object.end !== undefined && object.end !== null ? Timestamp.fromPartial(object.end) : undefined;
     message.inflation = object.inflation ?? new Uint8Array();
     return message;
   }

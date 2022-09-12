@@ -1,6 +1,6 @@
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { toTimestamp, fromTimestamp, isSet, fromJsonTimestamp, DeepPartial } from "@osmonauts/helpers";
+import { isSet, fromJsonTimestamp, fromTimestamp, DeepPartial } from "@osmonauts/helpers";
 
 /** MsgPostPrice represents a method for creating a new post price */
 export interface MsgPostPrice {
@@ -8,7 +8,7 @@ export interface MsgPostPrice {
   from: string;
   marketId: string;
   price: string;
-  expiry: Date;
+  expiry: Timestamp;
 }
 
 /** MsgPostPriceResponse defines the Msg/PostPrice response type. */
@@ -38,7 +38,7 @@ export const MsgPostPrice = {
     }
 
     if (message.expiry !== undefined) {
-      Timestamp.encode(toTimestamp(message.expiry), writer.uint32(34).fork()).ldelim();
+      Timestamp.encode(message.expiry, writer.uint32(34).fork()).ldelim();
     }
 
     return writer;
@@ -66,7 +66,7 @@ export const MsgPostPrice = {
           break;
 
         case 4:
-          message.expiry = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.expiry = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -92,7 +92,7 @@ export const MsgPostPrice = {
     message.from !== undefined && (obj.from = message.from);
     message.marketId !== undefined && (obj.marketId = message.marketId);
     message.price !== undefined && (obj.price = message.price);
-    message.expiry !== undefined && (obj.expiry = message.expiry.toISOString());
+    message.expiry !== undefined && (obj.expiry = fromTimestamp(message.expiry).toISOString());
     return obj;
   },
 
@@ -101,7 +101,7 @@ export const MsgPostPrice = {
     message.from = object.from ?? "";
     message.marketId = object.marketId ?? "";
     message.price = object.price ?? "";
-    message.expiry = object.expiry ?? undefined;
+    message.expiry = object.expiry !== undefined && object.expiry !== null ? Timestamp.fromPartial(object.expiry) : undefined;
     return message;
   }
 

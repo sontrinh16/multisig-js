@@ -1,7 +1,7 @@
 import { Any } from "../../../google/protobuf/any";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { toTimestamp, fromTimestamp, isSet, fromJsonTimestamp, DeepPartial } from "@osmonauts/helpers";
+import { isSet, fromJsonTimestamp, fromTimestamp, DeepPartial } from "@osmonauts/helpers";
 
 /**
  * Profile represents a generic first on Desmos, containing the information of a
@@ -24,7 +24,7 @@ export interface Profile {
   pictures: Pictures;
 
   /** CreationTime represents the time in which the profile has been created */
-  creationDate: Date;
+  creationDate: Timestamp;
 }
 
 /** Pictures contains the data of a user profile's related pictures */
@@ -70,7 +70,7 @@ export const Profile = {
     }
 
     if (message.creationDate !== undefined) {
-      Timestamp.encode(toTimestamp(message.creationDate), writer.uint32(50).fork()).ldelim();
+      Timestamp.encode(message.creationDate, writer.uint32(50).fork()).ldelim();
     }
 
     return writer;
@@ -106,7 +106,7 @@ export const Profile = {
           break;
 
         case 6:
-          message.creationDate = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.creationDate = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -136,7 +136,7 @@ export const Profile = {
     message.nickname !== undefined && (obj.nickname = message.nickname);
     message.bio !== undefined && (obj.bio = message.bio);
     message.pictures !== undefined && (obj.pictures = message.pictures ? Pictures.toJSON(message.pictures) : undefined);
-    message.creationDate !== undefined && (obj.creationDate = message.creationDate.toISOString());
+    message.creationDate !== undefined && (obj.creationDate = fromTimestamp(message.creationDate).toISOString());
     return obj;
   },
 
@@ -147,7 +147,7 @@ export const Profile = {
     message.nickname = object.nickname ?? "";
     message.bio = object.bio ?? "";
     message.pictures = object.pictures !== undefined && object.pictures !== null ? Pictures.fromPartial(object.pictures) : undefined;
-    message.creationDate = object.creationDate ?? undefined;
+    message.creationDate = object.creationDate !== undefined && object.creationDate !== null ? Timestamp.fromPartial(object.creationDate) : undefined;
     return message;
   }
 

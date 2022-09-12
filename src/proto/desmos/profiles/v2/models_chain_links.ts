@@ -3,7 +3,7 @@ import { Timestamp } from "../../../google/protobuf/timestamp";
 import { SignMode, signModeFromJSON, signModeToJSON } from "../../../cosmos/tx/signing/v1beta1/signing";
 import { CompactBitArray } from "../../../cosmos/crypto/multisig/v1beta1/multisig";
 import * as _m0 from "protobufjs/minimal";
-import { toTimestamp, fromTimestamp, isSet, fromJsonTimestamp, DeepPartial, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
+import { isSet, fromJsonTimestamp, fromTimestamp, DeepPartial, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
 
 /**
  * ChainLink contains the data representing either an inter- or cross- chain
@@ -26,7 +26,7 @@ export interface ChainLink {
   chainConfig: ChainConfig;
 
   /** CreationTime represents the time in which the link has been created */
-  creationTime: Date;
+  creationTime: Timestamp;
 }
 
 /** ChainConfig contains the data of the chain with which the link is made. */
@@ -132,7 +132,7 @@ export const ChainLink = {
     }
 
     if (message.creationTime !== undefined) {
-      Timestamp.encode(toTimestamp(message.creationTime), writer.uint32(42).fork()).ldelim();
+      Timestamp.encode(message.creationTime, writer.uint32(42).fork()).ldelim();
     }
 
     return writer;
@@ -164,7 +164,7 @@ export const ChainLink = {
           break;
 
         case 5:
-          message.creationTime = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.creationTime = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -192,7 +192,7 @@ export const ChainLink = {
     message.address !== undefined && (obj.address = message.address ? Any.toJSON(message.address) : undefined);
     message.proof !== undefined && (obj.proof = message.proof ? Proof.toJSON(message.proof) : undefined);
     message.chainConfig !== undefined && (obj.chainConfig = message.chainConfig ? ChainConfig.toJSON(message.chainConfig) : undefined);
-    message.creationTime !== undefined && (obj.creationTime = message.creationTime.toISOString());
+    message.creationTime !== undefined && (obj.creationTime = fromTimestamp(message.creationTime).toISOString());
     return obj;
   },
 
@@ -202,7 +202,7 @@ export const ChainLink = {
     message.address = object.address !== undefined && object.address !== null ? Any.fromPartial(object.address) : undefined;
     message.proof = object.proof !== undefined && object.proof !== null ? Proof.fromPartial(object.proof) : undefined;
     message.chainConfig = object.chainConfig !== undefined && object.chainConfig !== null ? ChainConfig.fromPartial(object.chainConfig) : undefined;
-    message.creationTime = object.creationTime ?? undefined;
+    message.creationTime = object.creationTime !== undefined && object.creationTime !== null ? Timestamp.fromPartial(object.creationTime) : undefined;
     return message;
   }
 

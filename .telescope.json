@@ -5,8 +5,8 @@
   "outPath": "./src/proto",
   "options": {
     "typingsFormat": {
-      "timestamp": "date",
-      "duration": "string"
+      "timestamp": "timestamp",
+      "duration": "duration"
     },
     "aminoEncoding": {
       "enabled": true

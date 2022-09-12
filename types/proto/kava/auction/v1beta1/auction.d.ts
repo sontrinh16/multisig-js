@@ -1,4 +1,5 @@
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { Long, DeepPartial } from "@osmonauts/helpers";
 /** BaseAuction defines common attributes of all auctions */
@@ -9,8 +10,8 @@ export interface BaseAuction {
     bidder: Uint8Array;
     bid: Coin;
     hasReceivedBids: boolean;
-    endTime: Date;
-    maxEndTime: Date;
+    endTime: Timestamp;
+    maxEndTime: Timestamp;
 }
 /**
  * SurplusAuction is a forward auction that burns what it receives from bids.

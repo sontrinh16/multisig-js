@@ -50,36 +50,36 @@ import * as _438 from "./swap/v1beta1/genesis";
 import * as _439 from "./swap/v1beta1/query";
 import * as _440 from "./swap/v1beta1/swap";
 import * as _441 from "./swap/v1beta1/tx";
-import * as _811 from "./auction/v1beta1/tx.amino";
-import * as _812 from "./bep3/v1beta1/tx.amino";
-import * as _813 from "./cdp/v1beta1/tx.amino";
-import * as _814 from "./committee/v1beta1/tx.amino";
-import * as _815 from "./earn/v1beta1/tx.amino";
-import * as _816 from "./hard/v1beta1/tx.amino";
-import * as _817 from "./incentive/v1beta1/tx.amino";
-import * as _818 from "./issuance/v1beta1/tx.amino";
-import * as _819 from "./pricefeed/v1beta1/tx.amino";
-import * as _820 from "./savings/v1beta1/tx.amino";
-import * as _821 from "./swap/v1beta1/tx.amino";
-import * as _822 from "./auction/v1beta1/tx.registry";
-import * as _823 from "./bep3/v1beta1/tx.registry";
-import * as _824 from "./cdp/v1beta1/tx.registry";
-import * as _825 from "./committee/v1beta1/tx.registry";
-import * as _826 from "./earn/v1beta1/tx.registry";
-import * as _827 from "./hard/v1beta1/tx.registry";
-import * as _828 from "./incentive/v1beta1/tx.registry";
-import * as _829 from "./issuance/v1beta1/tx.registry";
-import * as _830 from "./pricefeed/v1beta1/tx.registry";
-import * as _831 from "./savings/v1beta1/tx.registry";
-import * as _832 from "./swap/v1beta1/tx.registry";
+import * as _830 from "./auction/v1beta1/tx.amino";
+import * as _831 from "./bep3/v1beta1/tx.amino";
+import * as _832 from "./cdp/v1beta1/tx.amino";
+import * as _833 from "./committee/v1beta1/tx.amino";
+import * as _834 from "./earn/v1beta1/tx.amino";
+import * as _835 from "./hard/v1beta1/tx.amino";
+import * as _836 from "./incentive/v1beta1/tx.amino";
+import * as _837 from "./issuance/v1beta1/tx.amino";
+import * as _838 from "./pricefeed/v1beta1/tx.amino";
+import * as _839 from "./savings/v1beta1/tx.amino";
+import * as _840 from "./swap/v1beta1/tx.amino";
+import * as _841 from "./auction/v1beta1/tx.registry";
+import * as _842 from "./bep3/v1beta1/tx.registry";
+import * as _843 from "./cdp/v1beta1/tx.registry";
+import * as _844 from "./committee/v1beta1/tx.registry";
+import * as _845 from "./earn/v1beta1/tx.registry";
+import * as _846 from "./hard/v1beta1/tx.registry";
+import * as _847 from "./incentive/v1beta1/tx.registry";
+import * as _848 from "./issuance/v1beta1/tx.registry";
+import * as _849 from "./pricefeed/v1beta1/tx.registry";
+import * as _850 from "./savings/v1beta1/tx.registry";
+import * as _851 from "./swap/v1beta1/tx.registry";
 export namespace kava {
   export namespace auction {
     export const v1beta1 = { ..._390,
       ..._391,
       ..._392,
       ..._393,
-      ..._811,
-      ..._822
+      ..._830,
+      ..._841
     };
   }
   export namespace bep3 {
@@ -87,8 +87,8 @@ export namespace kava {
       ..._395,
       ..._396,
       ..._397,
-      ..._812,
-      ..._823
+      ..._831,
+      ..._842
     };
   }
   export namespace cdp {
@@ -96,8 +96,8 @@ export namespace kava {
       ..._399,
       ..._400,
       ..._401,
-      ..._813,
-      ..._824
+      ..._832,
+      ..._843
     };
   }
   export namespace committee {
@@ -107,8 +107,8 @@ export namespace kava {
       ..._405,
       ..._406,
       ..._407,
-      ..._814,
-      ..._825
+      ..._833,
+      ..._844
     };
   }
   export namespace earn {
@@ -118,8 +118,8 @@ export namespace kava {
       ..._411,
       ..._412,
       ..._413,
-      ..._815,
-      ..._826
+      ..._834,
+      ..._845
     };
   }
   export namespace evmutil {
@@ -131,8 +131,8 @@ export namespace kava {
       ..._416,
       ..._417,
       ..._418,
-      ..._816,
-      ..._827
+      ..._835,
+      ..._846
     };
   }
   export namespace incentive {
@@ -140,16 +140,16 @@ export namespace kava {
       ..._420,
       ..._421,
       ..._422,
-      ..._817,
-      ..._828
+      ..._836,
+      ..._847
     };
   }
   export namespace issuance {
     export const v1beta1 = { ..._423,
       ..._424,
       ..._425,
-      ..._818,
-      ..._829
+      ..._837,
+      ..._848
     };
   }
   export namespace kavadist {
@@ -164,8 +164,8 @@ export namespace kava {
       ..._431,
       ..._432,
       ..._433,
-      ..._819,
-      ..._830
+      ..._838,
+      ..._849
     };
   }
   export namespace savings {
@@ -173,8 +173,8 @@ export namespace kava {
       ..._435,
       ..._436,
       ..._437,
-      ..._820,
-      ..._831
+      ..._839,
+      ..._850
     };
   }
   export namespace swap {
@@ -182,8 +182,8 @@ export namespace kava {
       ..._439,
       ..._440,
       ..._441,
-      ..._821,
-      ..._832
+      ..._840,
+      ..._851
     };
   }
 }

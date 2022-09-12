@@ -143,9 +143,18 @@ export declare namespace kava {
                 toJSON(message: _392.QueryParamsResponse): unknown;
                 fromPartial(object: {
                     params?: {
-                        maxAuctionDuration?: string;
-                        forwardBidDuration?: string;
-                        reverseBidDuration?: string;
+                        maxAuctionDuration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        forwardBidDuration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        reverseBidDuration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         incrementSurplus?: Uint8Array;
                         incrementDebt?: Uint8Array;
                         incrementCollateral?: Uint8Array;
@@ -232,9 +241,18 @@ export declare namespace kava {
                 fromPartial(object: {
                     nextAuctionId?: any;
                     params?: {
-                        maxAuctionDuration?: string;
-                        forwardBidDuration?: string;
-                        reverseBidDuration?: string;
+                        maxAuctionDuration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        forwardBidDuration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        reverseBidDuration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         incrementSurplus?: Uint8Array;
                         incrementDebt?: Uint8Array;
                         incrementCollateral?: Uint8Array;
@@ -251,9 +269,18 @@ export declare namespace kava {
                 fromJSON(object: any): _391.Params;
                 toJSON(message: _391.Params): unknown;
                 fromPartial(object: {
-                    maxAuctionDuration?: string;
-                    forwardBidDuration?: string;
-                    reverseBidDuration?: string;
+                    maxAuctionDuration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    forwardBidDuration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    reverseBidDuration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     incrementSurplus?: Uint8Array;
                     incrementDebt?: Uint8Array;
                     incrementCollateral?: Uint8Array;
@@ -277,8 +304,14 @@ export declare namespace kava {
                         amount?: string;
                     };
                     hasReceivedBids?: boolean;
-                    endTime?: Date;
-                    maxEndTime?: Date;
+                    endTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    maxEndTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _390.BaseAuction;
             };
             SurplusAuction: {
@@ -300,8 +333,14 @@ export declare namespace kava {
                             amount?: string;
                         };
                         hasReceivedBids?: boolean;
-                        endTime?: Date;
-                        maxEndTime?: Date;
+                        endTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        maxEndTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                 }): _390.SurplusAuction;
             };
@@ -324,8 +363,14 @@ export declare namespace kava {
                             amount?: string;
                         };
                         hasReceivedBids?: boolean;
-                        endTime?: Date;
-                        maxEndTime?: Date;
+                        endTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        maxEndTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                     correspondingDebt?: {
                         denom?: string;
@@ -352,8 +397,14 @@ export declare namespace kava {
                             amount?: string;
                         };
                         hasReceivedBids?: boolean;
-                        endTime?: Date;
-                        maxEndTime?: Date;
+                        endTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        maxEndTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                     correspondingDebt?: {
                         denom?: string;
@@ -593,7 +644,10 @@ export declare namespace kava {
                             supplyLimit?: {
                                 limit?: string;
                                 timeLimited?: boolean;
-                                timePeriod?: string;
+                                timePeriod?: {
+                                    seconds?: any;
+                                    nanos?: number;
+                                };
                                 timeBasedLimit?: string;
                             };
                             active?: boolean;
@@ -638,7 +692,10 @@ export declare namespace kava {
                         denom?: string;
                         amount?: string;
                     };
-                    timeElapsed?: string;
+                    timeElapsed?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _396.AssetSupplyResponse;
             };
             QueryAssetSupplyResponse: {
@@ -664,7 +721,10 @@ export declare namespace kava {
                             denom?: string;
                             amount?: string;
                         };
-                        timeElapsed?: string;
+                        timeElapsed?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                 }): _396.QueryAssetSupplyResponse;
             };
@@ -698,7 +758,10 @@ export declare namespace kava {
                             denom?: string;
                             amount?: string;
                         };
-                        timeElapsed?: string;
+                        timeElapsed?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                 }): _396.QueryAssetSuppliesResponse;
             };
@@ -823,7 +886,10 @@ export declare namespace kava {
                             supplyLimit?: {
                                 limit?: string;
                                 timeLimited?: boolean;
-                                timePeriod?: string;
+                                timePeriod?: {
+                                    seconds?: any;
+                                    nanos?: number;
+                                };
                                 timeBasedLimit?: string;
                             };
                             active?: boolean;
@@ -869,9 +935,15 @@ export declare namespace kava {
                             denom?: string;
                             amount?: string;
                         };
-                        timeElapsed?: string;
+                        timeElapsed?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
-                    previousBlockTime?: Date;
+                    previousBlockTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _395.GenesisState;
             };
             swapStatusFromJSON(object: any): _394.SwapStatus;
@@ -892,7 +964,10 @@ export declare namespace kava {
                         supplyLimit?: {
                             limit?: string;
                             timeLimited?: boolean;
-                            timePeriod?: string;
+                            timePeriod?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
                             timeBasedLimit?: string;
                         };
                         active?: boolean;
@@ -916,7 +991,10 @@ export declare namespace kava {
                     supplyLimit?: {
                         limit?: string;
                         timeLimited?: boolean;
-                        timePeriod?: string;
+                        timePeriod?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         timeBasedLimit?: string;
                     };
                     active?: boolean;
@@ -936,7 +1014,10 @@ export declare namespace kava {
                 fromPartial(object: {
                     limit?: string;
                     timeLimited?: boolean;
-                    timePeriod?: string;
+                    timePeriod?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     timeBasedLimit?: string;
                 }): _394.SupplyLimit;
             };
@@ -985,7 +1066,10 @@ export declare namespace kava {
                         denom?: string;
                         amount?: string;
                     };
-                    timeElapsed?: string;
+                    timeElapsed?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _394.AssetSupply;
             };
         };
@@ -1488,7 +1572,10 @@ export declare namespace kava {
                             denom?: string;
                             amount?: string;
                         };
-                        feesUpdated?: Date;
+                        feesUpdated?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         interestFactor?: string;
                         collateralValue?: {
                             denom?: string;
@@ -1539,7 +1626,10 @@ export declare namespace kava {
                             denom?: string;
                             amount?: string;
                         };
-                        feesUpdated?: Date;
+                        feesUpdated?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         interestFactor?: string;
                         collateralValue?: {
                             denom?: string;
@@ -1648,7 +1738,10 @@ export declare namespace kava {
                         denom?: string;
                         amount?: string;
                     };
-                    feesUpdated?: Date;
+                    feesUpdated?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     interestFactor?: string;
                     collateralValue?: {
                         denom?: string;
@@ -1713,7 +1806,10 @@ export declare namespace kava {
                             denom?: string;
                             amount?: string;
                         };
-                        feesUpdated?: Date;
+                        feesUpdated?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         interestFactor?: string;
                     }[];
                     deposits?: {
@@ -1729,7 +1825,10 @@ export declare namespace kava {
                     govDenom?: string;
                     previousAccumulationTimes?: {
                         collateralType?: string;
-                        previousAccumulationTime?: Date;
+                        previousAccumulationTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         interestFactor?: string;
                     }[];
                     totalPrincipals?: {
@@ -1820,7 +1919,10 @@ export declare namespace kava {
                 toJSON(message: _399.GenesisAccumulationTime): unknown;
                 fromPartial(object: {
                     collateralType?: string;
-                    previousAccumulationTime?: Date;
+                    previousAccumulationTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     interestFactor?: string;
                 }): _399.GenesisAccumulationTime;
             };
@@ -1855,7 +1957,10 @@ export declare namespace kava {
                         denom?: string;
                         amount?: string;
                     };
-                    feesUpdated?: Date;
+                    feesUpdated?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     interestFactor?: string;
                 }): _398.CDP;
             };
@@ -2103,7 +2208,10 @@ export declare namespace kava {
                         };
                         id?: any;
                         committeeId?: any;
-                        deadline?: Date;
+                        deadline?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                 }): _406.QueryProposalsResponse;
             };
@@ -2128,7 +2236,10 @@ export declare namespace kava {
                     };
                     id?: any;
                     committeeId?: any;
-                    deadline?: Date;
+                    deadline?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _406.QueryProposalResponse;
             };
             QueryNextProposalIDRequest: {
@@ -2356,7 +2467,10 @@ export declare namespace kava {
                         };
                         id?: any;
                         committeeId?: any;
-                        deadline?: Date;
+                        deadline?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                     votes?: {
                         proposalId?: any;
@@ -2377,7 +2491,10 @@ export declare namespace kava {
                     };
                     id?: any;
                     committeeId?: any;
-                    deadline?: Date;
+                    deadline?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _403.Proposal;
             };
             Vote: {
@@ -2408,7 +2525,10 @@ export declare namespace kava {
                         value?: Uint8Array;
                     }[];
                     voteThreshold?: string;
-                    proposalDuration?: string;
+                    proposalDuration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     tallyOption?: _402.TallyOption;
                 }): _402.BaseCommittee;
             };
@@ -2427,7 +2547,10 @@ export declare namespace kava {
                             value?: Uint8Array;
                         }[];
                         voteThreshold?: string;
-                        proposalDuration?: string;
+                        proposalDuration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         tallyOption?: _402.TallyOption;
                     };
                 }): _402.MemberCommittee;
@@ -2447,7 +2570,10 @@ export declare namespace kava {
                             value?: Uint8Array;
                         }[];
                         voteThreshold?: string;
-                        proposalDuration?: string;
+                        proposalDuration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         tallyOption?: _402.TallyOption;
                     };
                     quorum?: string;
@@ -3702,7 +3828,10 @@ export declare namespace kava {
                     };
                     previousAccumulationTimes?: {
                         collateralType?: string;
-                        previousAccumulationTime?: Date;
+                        previousAccumulationTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         supplyInterestFactor?: string;
                         borrowInterestFactor?: string;
                     }[];
@@ -3749,7 +3878,10 @@ export declare namespace kava {
                 toJSON(message: _415.GenesisAccumulationTime): unknown;
                 fromPartial(object: {
                     collateralType?: string;
-                    previousAccumulationTime?: Date;
+                    previousAccumulationTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     supplyInterestFactor?: string;
                     borrowInterestFactor?: string;
                 }): _415.GenesisAccumulationTime;
@@ -4068,8 +4200,14 @@ export declare namespace kava {
                 fromPartial(object: {
                     active?: boolean;
                     collateralType?: string;
-                    start?: Date;
-                    end?: Date;
+                    start?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    end?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     rewardsPerSecond?: {
                         denom?: string;
                         amount?: string;
@@ -4084,8 +4222,14 @@ export declare namespace kava {
                 fromPartial(object: {
                     active?: boolean;
                     collateralType?: string;
-                    start?: Date;
-                    end?: Date;
+                    start?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    end?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     rewardsPerSecond?: {
                         denom?: string;
                         amount?: string;
@@ -4126,8 +4270,14 @@ export declare namespace kava {
                     usdxMintingRewardPeriods?: {
                         active?: boolean;
                         collateralType?: string;
-                        start?: Date;
-                        end?: Date;
+                        start?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        end?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         rewardsPerSecond?: {
                             denom?: string;
                             amount?: string;
@@ -4136,8 +4286,14 @@ export declare namespace kava {
                     hardSupplyRewardPeriods?: {
                         active?: boolean;
                         collateralType?: string;
-                        start?: Date;
-                        end?: Date;
+                        start?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        end?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         rewardsPerSecond?: {
                             denom?: string;
                             amount?: string;
@@ -4146,8 +4302,14 @@ export declare namespace kava {
                     hardBorrowRewardPeriods?: {
                         active?: boolean;
                         collateralType?: string;
-                        start?: Date;
-                        end?: Date;
+                        start?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        end?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         rewardsPerSecond?: {
                             denom?: string;
                             amount?: string;
@@ -4156,8 +4318,14 @@ export declare namespace kava {
                     delegatorRewardPeriods?: {
                         active?: boolean;
                         collateralType?: string;
-                        start?: Date;
-                        end?: Date;
+                        start?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        end?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         rewardsPerSecond?: {
                             denom?: string;
                             amount?: string;
@@ -4166,8 +4334,14 @@ export declare namespace kava {
                     swapRewardPeriods?: {
                         active?: boolean;
                         collateralType?: string;
-                        start?: Date;
-                        end?: Date;
+                        start?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        end?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         rewardsPerSecond?: {
                             denom?: string;
                             amount?: string;
@@ -4181,12 +4355,21 @@ export declare namespace kava {
                             factor?: Uint8Array;
                         }[];
                     }[];
-                    claimEnd?: Date;
+                    claimEnd?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     savingsRewardPeriods?: {
                         active?: boolean;
                         collateralType?: string;
-                        start?: Date;
-                        end?: Date;
+                        start?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        end?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         rewardsPerSecond?: {
                             denom?: string;
                             amount?: string;
@@ -4201,7 +4384,10 @@ export declare namespace kava {
                 toJSON(message: _420.AccumulationTime): unknown;
                 fromPartial(object: {
                     collateralType?: string;
-                    previousAccumulationTime?: Date;
+                    previousAccumulationTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _420.AccumulationTime;
             };
             GenesisRewardState: {
@@ -4212,7 +4398,10 @@ export declare namespace kava {
                 fromPartial(object: {
                     accumulationTimes?: {
                         collateralType?: string;
-                        previousAccumulationTime?: Date;
+                        previousAccumulationTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                     multiRewardIndexes?: {
                         collateralType?: string;
@@ -4233,8 +4422,14 @@ export declare namespace kava {
                         usdxMintingRewardPeriods?: {
                             active?: boolean;
                             collateralType?: string;
-                            start?: Date;
-                            end?: Date;
+                            start?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
+                            end?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
                             rewardsPerSecond?: {
                                 denom?: string;
                                 amount?: string;
@@ -4243,8 +4438,14 @@ export declare namespace kava {
                         hardSupplyRewardPeriods?: {
                             active?: boolean;
                             collateralType?: string;
-                            start?: Date;
-                            end?: Date;
+                            start?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
+                            end?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
                             rewardsPerSecond?: {
                                 denom?: string;
                                 amount?: string;
@@ -4253,8 +4454,14 @@ export declare namespace kava {
                         hardBorrowRewardPeriods?: {
                             active?: boolean;
                             collateralType?: string;
-                            start?: Date;
-                            end?: Date;
+                            start?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
+                            end?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
                             rewardsPerSecond?: {
                                 denom?: string;
                                 amount?: string;
@@ -4263,8 +4470,14 @@ export declare namespace kava {
                         delegatorRewardPeriods?: {
                             active?: boolean;
                             collateralType?: string;
-                            start?: Date;
-                            end?: Date;
+                            start?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
+                            end?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
                             rewardsPerSecond?: {
                                 denom?: string;
                                 amount?: string;
@@ -4273,8 +4486,14 @@ export declare namespace kava {
                         swapRewardPeriods?: {
                             active?: boolean;
                             collateralType?: string;
-                            start?: Date;
-                            end?: Date;
+                            start?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
+                            end?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
                             rewardsPerSecond?: {
                                 denom?: string;
                                 amount?: string;
@@ -4288,12 +4507,21 @@ export declare namespace kava {
                                 factor?: Uint8Array;
                             }[];
                         }[];
-                        claimEnd?: Date;
+                        claimEnd?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         savingsRewardPeriods?: {
                             active?: boolean;
                             collateralType?: string;
-                            start?: Date;
-                            end?: Date;
+                            start?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
+                            end?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
                             rewardsPerSecond?: {
                                 denom?: string;
                                 amount?: string;
@@ -4303,7 +4531,10 @@ export declare namespace kava {
                     usdxRewardState?: {
                         accumulationTimes?: {
                             collateralType?: string;
-                            previousAccumulationTime?: Date;
+                            previousAccumulationTime?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
                         }[];
                         multiRewardIndexes?: {
                             collateralType?: string;
@@ -4316,7 +4547,10 @@ export declare namespace kava {
                     hardSupplyRewardState?: {
                         accumulationTimes?: {
                             collateralType?: string;
-                            previousAccumulationTime?: Date;
+                            previousAccumulationTime?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
                         }[];
                         multiRewardIndexes?: {
                             collateralType?: string;
@@ -4329,7 +4563,10 @@ export declare namespace kava {
                     hardBorrowRewardState?: {
                         accumulationTimes?: {
                             collateralType?: string;
-                            previousAccumulationTime?: Date;
+                            previousAccumulationTime?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
                         }[];
                         multiRewardIndexes?: {
                             collateralType?: string;
@@ -4342,7 +4579,10 @@ export declare namespace kava {
                     delegatorRewardState?: {
                         accumulationTimes?: {
                             collateralType?: string;
-                            previousAccumulationTime?: Date;
+                            previousAccumulationTime?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
                         }[];
                         multiRewardIndexes?: {
                             collateralType?: string;
@@ -4355,7 +4595,10 @@ export declare namespace kava {
                     swapRewardState?: {
                         accumulationTimes?: {
                             collateralType?: string;
-                            previousAccumulationTime?: Date;
+                            previousAccumulationTime?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
                         }[];
                         multiRewardIndexes?: {
                             collateralType?: string;
@@ -4436,7 +4679,10 @@ export declare namespace kava {
                     savingsRewardState?: {
                         accumulationTimes?: {
                             collateralType?: string;
-                            previousAccumulationTime?: Date;
+                            previousAccumulationTime?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
                         }[];
                         multiRewardIndexes?: {
                             collateralType?: string;
@@ -4967,7 +5213,10 @@ export declare namespace kava {
                             rateLimit?: {
                                 active?: boolean;
                                 limit?: Uint8Array;
-                                timePeriod?: string;
+                                timePeriod?: {
+                                    seconds?: any;
+                                    nanos?: number;
+                                };
                             };
                         }[];
                     };
@@ -4989,7 +5238,10 @@ export declare namespace kava {
                             rateLimit?: {
                                 active?: boolean;
                                 limit?: Uint8Array;
-                                timePeriod?: string;
+                                timePeriod?: {
+                                    seconds?: any;
+                                    nanos?: number;
+                                };
                             };
                         }[];
                     };
@@ -4998,7 +5250,10 @@ export declare namespace kava {
                             denom?: string;
                             amount?: string;
                         };
-                        timeElapsed?: string;
+                        timeElapsed?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                 }): _423.GenesisState;
             };
@@ -5017,7 +5272,10 @@ export declare namespace kava {
                         rateLimit?: {
                             active?: boolean;
                             limit?: Uint8Array;
-                            timePeriod?: string;
+                            timePeriod?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
                         };
                     }[];
                 }): _423.Params;
@@ -5036,7 +5294,10 @@ export declare namespace kava {
                     rateLimit?: {
                         active?: boolean;
                         limit?: Uint8Array;
-                        timePeriod?: string;
+                        timePeriod?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                 }): _423.Asset;
             };
@@ -5048,7 +5309,10 @@ export declare namespace kava {
                 fromPartial(object: {
                     active?: boolean;
                     limit?: Uint8Array;
-                    timePeriod?: string;
+                    timePeriod?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _423.RateLimit;
             };
             AssetSupply: {
@@ -5061,7 +5325,10 @@ export declare namespace kava {
                         denom?: string;
                         amount?: string;
                     };
-                    timeElapsed?: string;
+                    timeElapsed?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _423.AssetSupply;
             };
         };
@@ -5084,8 +5351,14 @@ export declare namespace kava {
                     params?: {
                         active?: boolean;
                         periods?: {
-                            start?: Date;
-                            end?: Date;
+                            start?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
+                            end?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
                             inflation?: Uint8Array;
                         }[];
                     };
@@ -5169,8 +5442,14 @@ export declare namespace kava {
                 fromPartial(object: {
                     active?: boolean;
                     periods?: {
-                        start?: Date;
-                        end?: Date;
+                        start?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        end?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         inflation?: Uint8Array;
                     }[];
                 }): _427.Params;
@@ -5181,8 +5460,14 @@ export declare namespace kava {
                 fromJSON(object: any): _427.Period;
                 toJSON(message: _427.Period): unknown;
                 fromPartial(object: {
-                    start?: Date;
-                    end?: Date;
+                    start?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    end?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     inflation?: Uint8Array;
                 }): _427.Period;
             };
@@ -5195,12 +5480,21 @@ export declare namespace kava {
                     params?: {
                         active?: boolean;
                         periods?: {
-                            start?: Date;
-                            end?: Date;
+                            start?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
+                            end?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
                             inflation?: Uint8Array;
                         }[];
                     };
-                    previousBlockTime?: Date;
+                    previousBlockTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _426.GenesisState;
             };
         };
@@ -5273,7 +5567,10 @@ export declare namespace kava {
                     from?: string;
                     marketId?: string;
                     price?: string;
-                    expiry?: Date;
+                    expiry?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _433.MsgPostPrice;
             };
             MsgPostPriceResponse: {
@@ -5320,7 +5617,10 @@ export declare namespace kava {
                     marketId?: string;
                     oracleAddress?: Uint8Array;
                     price?: string;
-                    expiry?: Date;
+                    expiry?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _432.PostedPrice;
             };
             CurrentPrice: {
@@ -5416,7 +5716,10 @@ export declare namespace kava {
                         marketId?: string;
                         oracleAddress?: string;
                         price?: string;
-                        expiry?: Date;
+                        expiry?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                 }): _431.QueryRawPricesResponse;
             };
@@ -5469,7 +5772,10 @@ export declare namespace kava {
                     marketId?: string;
                     oracleAddress?: string;
                     price?: string;
-                    expiry?: Date;
+                    expiry?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _431.PostedPriceResponse;
             };
             CurrentPriceResponse: {
@@ -5514,7 +5820,10 @@ export declare namespace kava {
                         marketId?: string;
                         oracleAddress?: Uint8Array;
                         price?: string;
-                        expiry?: Date;
+                        expiry?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     }[];
                 }): _430.GenesisState;
             };

@@ -1,5 +1,7 @@
 import { QueryCondition } from "../lockup/lock";
 import { Coin } from "../../cosmos/base/v1beta1/coin";
+import { Timestamp } from "../../google/protobuf/timestamp";
+import { Duration } from "../../google/protobuf/duration";
 import * as _m0 from "protobufjs/minimal";
 import { Long, DeepPartial } from "@osmonauts/helpers";
 export interface Gauge {
@@ -21,7 +23,7 @@ export interface Gauge {
      */
     coins: Coin[];
     /** distribution start time */
-    startTime: Date;
+    startTime: Timestamp;
     /** number of epochs distribution will be done */
     numEpochsPaidOver: Long;
     /** number of epochs distributed already */
@@ -30,7 +32,7 @@ export interface Gauge {
     distributedCoins: Coin[];
 }
 export interface LockableDurationsInfo {
-    lockableDurations: string[];
+    lockableDurations: Duration[];
 }
 export declare const Gauge: {
     encode(message: Gauge, writer?: _m0.Writer): _m0.Writer;

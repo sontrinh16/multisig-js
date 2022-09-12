@@ -7,7 +7,7 @@ import { BlindBoxContent } from "./blind_box_content";
 import { Offer } from "./offer";
 import { Listing } from "./listing";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, toTimestamp, Long, fromTimestamp, fromJsonTimestamp } from "@osmonauts/helpers";
+import { isSet, DeepPartial, Long, fromJsonTimestamp, fromTimestamp } from "@osmonauts/helpers";
 export interface MsgNewClass {
   creator: string;
   parent: ClassParentInput;
@@ -68,7 +68,7 @@ export interface MsgCreateOffer {
   classId: string;
   nftId: string;
   price: Long;
-  expiration: Date;
+  expiration: Timestamp;
 }
 export interface MsgCreateOfferResponse {
   offer: Offer;
@@ -78,7 +78,7 @@ export interface MsgUpdateOffer {
   classId: string;
   nftId: string;
   price: Long;
-  expiration: Date;
+  expiration: Timestamp;
 }
 export interface MsgUpdateOfferResponse {
   offer: Offer;
@@ -94,7 +94,7 @@ export interface MsgCreateListing {
   classId: string;
   nftId: string;
   price: Long;
-  expiration: Date;
+  expiration: Timestamp;
 }
 export interface MsgCreateListingResponse {
   listing: Listing;
@@ -104,7 +104,7 @@ export interface MsgUpdateListing {
   classId: string;
   nftId: string;
   price: Long;
-  expiration: Date;
+  expiration: Timestamp;
 }
 export interface MsgUpdateListingResponse {
   listing: Listing;
@@ -1156,7 +1156,7 @@ export const MsgCreateOffer = {
     }
 
     if (message.expiration !== undefined) {
-      Timestamp.encode(toTimestamp(message.expiration), writer.uint32(42).fork()).ldelim();
+      Timestamp.encode(message.expiration, writer.uint32(42).fork()).ldelim();
     }
 
     return writer;
@@ -1188,7 +1188,7 @@ export const MsgCreateOffer = {
           break;
 
         case 5:
-          message.expiration = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.expiration = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -1216,7 +1216,7 @@ export const MsgCreateOffer = {
     message.classId !== undefined && (obj.classId = message.classId);
     message.nftId !== undefined && (obj.nftId = message.nftId);
     message.price !== undefined && (obj.price = (message.price || Long.UZERO).toString());
-    message.expiration !== undefined && (obj.expiration = message.expiration.toISOString());
+    message.expiration !== undefined && (obj.expiration = fromTimestamp(message.expiration).toISOString());
     return obj;
   },
 
@@ -1226,7 +1226,7 @@ export const MsgCreateOffer = {
     message.classId = object.classId ?? "";
     message.nftId = object.nftId ?? "";
     message.price = object.price !== undefined && object.price !== null ? Long.fromValue(object.price) : Long.UZERO;
-    message.expiration = object.expiration ?? undefined;
+    message.expiration = object.expiration !== undefined && object.expiration !== null ? Timestamp.fromPartial(object.expiration) : undefined;
     return message;
   }
 
@@ -1318,7 +1318,7 @@ export const MsgUpdateOffer = {
     }
 
     if (message.expiration !== undefined) {
-      Timestamp.encode(toTimestamp(message.expiration), writer.uint32(42).fork()).ldelim();
+      Timestamp.encode(message.expiration, writer.uint32(42).fork()).ldelim();
     }
 
     return writer;
@@ -1350,7 +1350,7 @@ export const MsgUpdateOffer = {
           break;
 
         case 5:
-          message.expiration = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.expiration = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -1378,7 +1378,7 @@ export const MsgUpdateOffer = {
     message.classId !== undefined && (obj.classId = message.classId);
     message.nftId !== undefined && (obj.nftId = message.nftId);
     message.price !== undefined && (obj.price = (message.price || Long.UZERO).toString());
-    message.expiration !== undefined && (obj.expiration = message.expiration.toISOString());
+    message.expiration !== undefined && (obj.expiration = fromTimestamp(message.expiration).toISOString());
     return obj;
   },
 
@@ -1388,7 +1388,7 @@ export const MsgUpdateOffer = {
     message.classId = object.classId ?? "";
     message.nftId = object.nftId ?? "";
     message.price = object.price !== undefined && object.price !== null ? Long.fromValue(object.price) : Long.UZERO;
-    message.expiration = object.expiration ?? undefined;
+    message.expiration = object.expiration !== undefined && object.expiration !== null ? Timestamp.fromPartial(object.expiration) : undefined;
     return message;
   }
 
@@ -1604,7 +1604,7 @@ export const MsgCreateListing = {
     }
 
     if (message.expiration !== undefined) {
-      Timestamp.encode(toTimestamp(message.expiration), writer.uint32(42).fork()).ldelim();
+      Timestamp.encode(message.expiration, writer.uint32(42).fork()).ldelim();
     }
 
     return writer;
@@ -1636,7 +1636,7 @@ export const MsgCreateListing = {
           break;
 
         case 5:
-          message.expiration = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.expiration = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -1664,7 +1664,7 @@ export const MsgCreateListing = {
     message.classId !== undefined && (obj.classId = message.classId);
     message.nftId !== undefined && (obj.nftId = message.nftId);
     message.price !== undefined && (obj.price = (message.price || Long.UZERO).toString());
-    message.expiration !== undefined && (obj.expiration = message.expiration.toISOString());
+    message.expiration !== undefined && (obj.expiration = fromTimestamp(message.expiration).toISOString());
     return obj;
   },
 
@@ -1674,7 +1674,7 @@ export const MsgCreateListing = {
     message.classId = object.classId ?? "";
     message.nftId = object.nftId ?? "";
     message.price = object.price !== undefined && object.price !== null ? Long.fromValue(object.price) : Long.UZERO;
-    message.expiration = object.expiration ?? undefined;
+    message.expiration = object.expiration !== undefined && object.expiration !== null ? Timestamp.fromPartial(object.expiration) : undefined;
     return message;
   }
 
@@ -1766,7 +1766,7 @@ export const MsgUpdateListing = {
     }
 
     if (message.expiration !== undefined) {
-      Timestamp.encode(toTimestamp(message.expiration), writer.uint32(42).fork()).ldelim();
+      Timestamp.encode(message.expiration, writer.uint32(42).fork()).ldelim();
     }
 
     return writer;
@@ -1798,7 +1798,7 @@ export const MsgUpdateListing = {
           break;
 
         case 5:
-          message.expiration = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.expiration = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -1826,7 +1826,7 @@ export const MsgUpdateListing = {
     message.classId !== undefined && (obj.classId = message.classId);
     message.nftId !== undefined && (obj.nftId = message.nftId);
     message.price !== undefined && (obj.price = (message.price || Long.UZERO).toString());
-    message.expiration !== undefined && (obj.expiration = message.expiration.toISOString());
+    message.expiration !== undefined && (obj.expiration = fromTimestamp(message.expiration).toISOString());
     return obj;
   },
 
@@ -1836,7 +1836,7 @@ export const MsgUpdateListing = {
     message.classId = object.classId ?? "";
     message.nftId = object.nftId ?? "";
     message.price = object.price !== undefined && object.price !== null ? Long.fromValue(object.price) : Long.UZERO;
-    message.expiration = object.expiration ?? undefined;
+    message.expiration = object.expiration !== undefined && object.expiration !== null ? Timestamp.fromPartial(object.expiration) : undefined;
     return message;
   }
 

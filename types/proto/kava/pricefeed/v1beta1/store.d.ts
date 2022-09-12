@@ -1,3 +1,4 @@
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
 /** Params defines the parameters for the pricefeed module. */
@@ -17,7 +18,7 @@ export interface PostedPrice {
     marketId: string;
     oracleAddress: Uint8Array;
     price: string;
-    expiry: Date;
+    expiry: Timestamp;
 }
 /**
  * CurrentPrice defines a current price for a particular market in the pricefeed

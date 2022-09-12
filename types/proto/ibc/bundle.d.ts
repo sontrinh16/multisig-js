@@ -2212,7 +2212,10 @@ export declare namespace ibc {
                         description?: string;
                         plan?: {
                             name?: string;
-                            time?: Date;
+                            time?: {
+                                seconds?: any;
+                                nanos?: number;
+                            };
                             height?: any;
                             info?: string;
                             upgradedClientState?: {
@@ -3769,9 +3772,18 @@ export declare namespace ibc {
                             numerator?: any;
                             denominator?: any;
                         };
-                        trustingPeriod?: string;
-                        unbondingPeriod?: string;
-                        maxClockDrift?: string;
+                        trustingPeriod?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        unbondingPeriod?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        maxClockDrift?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         frozenHeight?: {
                             revisionNumber?: any;
                             revisionHeight?: any;
@@ -3810,7 +3822,10 @@ export declare namespace ibc {
                     fromJSON(object: any): _362.ConsensusState;
                     toJSON(message: _362.ConsensusState): unknown;
                     fromPartial(object: {
-                        timestamp?: Date;
+                        timestamp?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         root?: {
                             hash?: Uint8Array;
                         };
@@ -3833,7 +3848,10 @@ export declare namespace ibc {
                                     };
                                     chainId?: string;
                                     height?: any;
-                                    time?: Date;
+                                    time?: {
+                                        seconds?: any;
+                                        nanos?: number;
+                                    };
                                     lastBlockId?: {
                                         hash?: Uint8Array;
                                         partSetHeader?: {
@@ -3864,7 +3882,10 @@ export declare namespace ibc {
                                     signatures?: {
                                         blockIdFlag?: import("../tendermint/types/types").BlockIDFlag;
                                         validatorAddress?: Uint8Array;
-                                        timestamp?: Date;
+                                        timestamp?: {
+                                            seconds?: any;
+                                            nanos?: number;
+                                        };
                                         signature?: Uint8Array;
                                     }[];
                                 };
@@ -3925,7 +3946,10 @@ export declare namespace ibc {
                                     };
                                     chainId?: string;
                                     height?: any;
-                                    time?: Date;
+                                    time?: {
+                                        seconds?: any;
+                                        nanos?: number;
+                                    };
                                     lastBlockId?: {
                                         hash?: Uint8Array;
                                         partSetHeader?: {
@@ -3956,7 +3980,10 @@ export declare namespace ibc {
                                     signatures?: {
                                         blockIdFlag?: import("../tendermint/types/types").BlockIDFlag;
                                         validatorAddress?: Uint8Array;
-                                        timestamp?: Date;
+                                        timestamp?: {
+                                            seconds?: any;
+                                            nanos?: number;
+                                        };
                                         signature?: Uint8Array;
                                     }[];
                                 };
@@ -4024,7 +4051,10 @@ export declare namespace ibc {
                                 };
                                 chainId?: string;
                                 height?: any;
-                                time?: Date;
+                                time?: {
+                                    seconds?: any;
+                                    nanos?: number;
+                                };
                                 lastBlockId?: {
                                     hash?: Uint8Array;
                                     partSetHeader?: {
@@ -4055,7 +4085,10 @@ export declare namespace ibc {
                                 signatures?: {
                                     blockIdFlag?: import("../tendermint/types/types").BlockIDFlag;
                                     validatorAddress?: Uint8Array;
-                                    timestamp?: Date;
+                                    timestamp?: {
+                                        seconds?: any;
+                                        nanos?: number;
+                                    };
                                     signature?: Uint8Array;
                                 }[];
                             };

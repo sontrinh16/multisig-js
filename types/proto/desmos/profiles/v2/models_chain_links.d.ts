@@ -1,4 +1,5 @@
 import { Any } from "../../../google/protobuf/any";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import { SignMode } from "../../../cosmos/tx/signing/v1beta1/signing";
 import { CompactBitArray } from "../../../cosmos/crypto/multisig/v1beta1/multisig";
 import * as _m0 from "protobufjs/minimal";
@@ -20,7 +21,7 @@ export interface ChainLink {
     /** ChainConfig contains the configuration of the external chain */
     chainConfig: ChainConfig;
     /** CreationTime represents the time in which the link has been created */
-    creationTime: Date;
+    creationTime: Timestamp;
 }
 /** ChainConfig contains the data of the chain with which the link is made. */
 export interface ChainConfig {

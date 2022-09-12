@@ -1,10 +1,11 @@
 import { Params } from "./params";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
 /** GenesisState defines the kavadist module's genesis state. */
 export interface GenesisState {
     params: Params;
-    previousBlockTime: Date;
+    previousBlockTime: Timestamp;
 }
 export declare const GenesisState: {
     encode(message: GenesisState, writer?: _m0.Writer): _m0.Writer;

@@ -1,9 +1,10 @@
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
+import { Duration } from "../../../google/protobuf/duration";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
 export interface Params {
     deposit: Coin;
-    inactiveDuration: string;
+    inactiveDuration: Duration;
 }
 export declare const Params: {
     encode(message: Params, writer?: _m0.Writer): _m0.Writer;

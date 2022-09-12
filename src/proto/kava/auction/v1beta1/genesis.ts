@@ -1,7 +1,7 @@
 import { Any } from "../../../google/protobuf/any";
 import { Duration } from "../../../google/protobuf/duration";
 import * as _m0 from "protobufjs/minimal";
-import { Long, isSet, DeepPartial, toDuration, fromDuration, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
+import { Long, isSet, DeepPartial, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
 
 /** GenesisState defines the auction module's genesis state. */
 export interface GenesisState {
@@ -14,9 +14,9 @@ export interface GenesisState {
 
 /** Params defines the parameters for the issuance module. */
 export interface Params {
-  maxAuctionDuration: string;
-  forwardBidDuration: string;
-  reverseBidDuration: string;
+  maxAuctionDuration: Duration;
+  forwardBidDuration: Duration;
+  reverseBidDuration: Duration;
   incrementSurplus: Uint8Array;
   incrementDebt: Uint8Array;
   incrementCollateral: Uint8Array;
@@ -123,15 +123,15 @@ function createBaseParams(): Params {
 export const Params = {
   encode(message: Params, writer: _m0.Writer = _m0.Writer.create()): _m0.Writer {
     if (message.maxAuctionDuration !== undefined) {
-      Duration.encode(toDuration(message.maxAuctionDuration), writer.uint32(10).fork()).ldelim();
+      Duration.encode(message.maxAuctionDuration, writer.uint32(10).fork()).ldelim();
     }
 
     if (message.forwardBidDuration !== undefined) {
-      Duration.encode(toDuration(message.forwardBidDuration), writer.uint32(50).fork()).ldelim();
+      Duration.encode(message.forwardBidDuration, writer.uint32(50).fork()).ldelim();
     }
 
     if (message.reverseBidDuration !== undefined) {
-      Duration.encode(toDuration(message.reverseBidDuration), writer.uint32(58).fork()).ldelim();
+      Duration.encode(message.reverseBidDuration, writer.uint32(58).fork()).ldelim();
     }
 
     if (message.incrementSurplus.length !== 0) {
@@ -159,15 +159,15 @@ export const Params = {
 
       switch (tag >>> 3) {
         case 1:
-          message.maxAuctionDuration = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.maxAuctionDuration = Duration.decode(reader, reader.uint32());
           break;
 
         case 6:
-          message.forwardBidDuration = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.forwardBidDuration = Duration.decode(reader, reader.uint32());
           break;
 
         case 7:
-          message.reverseBidDuration = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.reverseBidDuration = Duration.decode(reader, reader.uint32());
           break;
 
         case 3:
@@ -193,9 +193,9 @@ export const Params = {
 
   fromJSON(object: any): Params {
     return {
-      maxAuctionDuration: isSet(object.maxAuctionDuration) ? String(object.maxAuctionDuration) : undefined,
-      forwardBidDuration: isSet(object.forwardBidDuration) ? String(object.forwardBidDuration) : undefined,
-      reverseBidDuration: isSet(object.reverseBidDuration) ? String(object.reverseBidDuration) : undefined,
+      maxAuctionDuration: isSet(object.maxAuctionDuration) ? Duration.fromJSON(object.maxAuctionDuration) : undefined,
+      forwardBidDuration: isSet(object.forwardBidDuration) ? Duration.fromJSON(object.forwardBidDuration) : undefined,
+      reverseBidDuration: isSet(object.reverseBidDuration) ? Duration.fromJSON(object.reverseBidDuration) : undefined,
       incrementSurplus: isSet(object.incrementSurplus) ? bytesFromBase64(object.incrementSurplus) : new Uint8Array(),
       incrementDebt: isSet(object.incrementDebt) ? bytesFromBase64(object.incrementDebt) : new Uint8Array(),
       incrementCollateral: isSet(object.incrementCollateral) ? bytesFromBase64(object.incrementCollateral) : new Uint8Array()

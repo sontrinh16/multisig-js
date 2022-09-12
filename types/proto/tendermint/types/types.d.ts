@@ -1,5 +1,6 @@
 import { Proof } from "../crypto/proof";
 import { Consensus } from "../version/types";
+import { Timestamp } from "../../google/protobuf/timestamp";
 import { ValidatorSet } from "./validator";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial, Long } from "@osmonauts/helpers";
@@ -46,7 +47,7 @@ export interface Header {
     version: Consensus;
     chainId: string;
     height: Long;
-    time: Date;
+    time: Timestamp;
     /** prev block info */
     lastBlockId: BlockID;
     /** hashes of block data */
@@ -85,7 +86,7 @@ export interface Vote {
     round: number;
     /** zero if vote is nil. */
     blockId: BlockID;
-    timestamp: Date;
+    timestamp: Timestamp;
     validatorAddress: Uint8Array;
     validatorIndex: number;
     signature: Uint8Array;
@@ -101,7 +102,7 @@ export interface Commit {
 export interface CommitSig {
     blockIdFlag: BlockIDFlag;
     validatorAddress: Uint8Array;
-    timestamp: Date;
+    timestamp: Timestamp;
     signature: Uint8Array;
 }
 export interface Proposal {
@@ -110,7 +111,7 @@ export interface Proposal {
     round: number;
     polRound: number;
     blockId: BlockID;
-    timestamp: Date;
+    timestamp: Timestamp;
     signature: Uint8Array;
 }
 export interface SignedHeader {

@@ -1,4 +1,5 @@
 import { ContentHash, ContentHash_Graph, AttestorEntry } from "./types";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial, Long } from "@osmonauts/helpers";
 /** MsgAnchor is the Msg/Anchor request type. */
@@ -17,7 +18,7 @@ export interface MsgAnchorResponse {
     /** iri is the IRI of the data that was anchored. */
     iri: string;
     /** timestamp is the timestamp at which the data was anchored. */
-    timestamp: Date;
+    timestamp: Timestamp;
 }
 /** MsgAttest is the Msg/Attest request type. */
 export interface MsgAttest {

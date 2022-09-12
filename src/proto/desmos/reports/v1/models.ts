@@ -1,7 +1,7 @@
 import { Any } from "../../../google/protobuf/any";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { toTimestamp, Long, fromTimestamp, isSet, fromJsonTimestamp, DeepPartial } from "@osmonauts/helpers";
+import { Long, isSet, fromJsonTimestamp, fromTimestamp, DeepPartial } from "@osmonauts/helpers";
 
 /** Report contains the data of a generic report */
 export interface Report {
@@ -24,7 +24,7 @@ export interface Report {
   target: Any;
 
   /** Time in which the report was created */
-  creationDate: Date;
+  creationDate: Timestamp;
 }
 
 /** UserTarget contains the data of a report about a user */
@@ -121,7 +121,7 @@ export const Report = {
     }
 
     if (message.creationDate !== undefined) {
-      Timestamp.encode(toTimestamp(message.creationDate), writer.uint32(58).fork()).ldelim();
+      Timestamp.encode(message.creationDate, writer.uint32(58).fork()).ldelim();
     }
 
     return writer;
@@ -170,7 +170,7 @@ export const Report = {
           break;
 
         case 7:
-          message.creationDate = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.creationDate = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -208,7 +208,7 @@ export const Report = {
     message.message !== undefined && (obj.message = message.message);
     message.reporter !== undefined && (obj.reporter = message.reporter);
     message.target !== undefined && (obj.target = message.target ? Any.toJSON(message.target) : undefined);
-    message.creationDate !== undefined && (obj.creationDate = message.creationDate.toISOString());
+    message.creationDate !== undefined && (obj.creationDate = fromTimestamp(message.creationDate).toISOString());
     return obj;
   },
 
@@ -220,7 +220,7 @@ export const Report = {
     message.message = object.message ?? "";
     message.reporter = object.reporter ?? "";
     message.target = object.target !== undefined && object.target !== null ? Any.fromPartial(object.target) : undefined;
-    message.creationDate = object.creationDate ?? undefined;
+    message.creationDate = object.creationDate !== undefined && object.creationDate !== null ? Timestamp.fromPartial(object.creationDate) : undefined;
     return message;
   }
 

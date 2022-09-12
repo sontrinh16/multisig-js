@@ -54,18 +54,18 @@ import * as _270 from "./subspaces/v3/models";
 import * as _271 from "./subspaces/v3/msgs";
 import * as _272 from "./subspaces/v3/query";
 import * as _273 from "./supply/v1/query";
-import * as _767 from "./posts/v2/msgs.amino";
-import * as _768 from "./profiles/v3/msg_server.amino";
-import * as _769 from "./reactions/v1/msgs.amino";
-import * as _770 from "./relationships/v1/msgs.amino";
-import * as _771 from "./reports/v1/msgs.amino";
-import * as _772 from "./subspaces/v3/msgs.amino";
-import * as _773 from "./posts/v2/msgs.registry";
-import * as _774 from "./profiles/v3/msg_server.registry";
-import * as _775 from "./reactions/v1/msgs.registry";
-import * as _776 from "./relationships/v1/msgs.registry";
-import * as _777 from "./reports/v1/msgs.registry";
-import * as _778 from "./subspaces/v3/msgs.registry";
+import * as _786 from "./posts/v2/msgs.amino";
+import * as _787 from "./profiles/v3/msg_server.amino";
+import * as _788 from "./reactions/v1/msgs.amino";
+import * as _789 from "./relationships/v1/msgs.amino";
+import * as _790 from "./reports/v1/msgs.amino";
+import * as _791 from "./subspaces/v3/msgs.amino";
+import * as _792 from "./posts/v2/msgs.registry";
+import * as _793 from "./profiles/v3/msg_server.registry";
+import * as _794 from "./reactions/v1/msgs.registry";
+import * as _795 from "./relationships/v1/msgs.registry";
+import * as _796 from "./reports/v1/msgs.registry";
+import * as _797 from "./subspaces/v3/msgs.registry";
 export namespace desmos {
   export namespace fees {
     export const v1 = { ..._218,
@@ -81,8 +81,8 @@ export namespace desmos {
       ..._224,
       ..._225,
       ..._226,
-      ..._767,
-      ..._773
+      ..._786,
+      ..._792
     };
   }
   export namespace profiles {
@@ -116,8 +116,8 @@ export namespace desmos {
       ..._252,
       ..._253,
       ..._254,
-      ..._768,
-      ..._774
+      ..._787,
+      ..._793
     };
   }
   export namespace reactions {
@@ -125,8 +125,8 @@ export namespace desmos {
       ..._256,
       ..._257,
       ..._258,
-      ..._769,
-      ..._775
+      ..._788,
+      ..._794
     };
   }
   export namespace relationships {
@@ -134,8 +134,8 @@ export namespace desmos {
       ..._260,
       ..._261,
       ..._262,
-      ..._770,
-      ..._776
+      ..._789,
+      ..._795
     };
   }
   export namespace reports {
@@ -143,8 +143,8 @@ export namespace desmos {
       ..._264,
       ..._265,
       ..._266,
-      ..._771,
-      ..._777
+      ..._790,
+      ..._796
     };
   }
   export namespace subspaces {
@@ -158,8 +158,8 @@ export namespace desmos {
       ..._270,
       ..._271,
       ..._272,
-      ..._772,
-      ..._778
+      ..._791,
+      ..._797
     };
   }
   export namespace supply {

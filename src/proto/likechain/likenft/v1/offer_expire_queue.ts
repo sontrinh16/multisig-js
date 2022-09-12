@@ -1,8 +1,8 @@
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { toTimestamp, fromTimestamp, isSet, fromJsonTimestamp, bytesFromBase64, base64FromBytes, DeepPartial } from "@osmonauts/helpers";
+import { isSet, fromJsonTimestamp, bytesFromBase64, fromTimestamp, base64FromBytes, DeepPartial } from "@osmonauts/helpers";
 export interface OfferExpireQueueEntry {
-  expireTime: Date;
+  expireTime: Timestamp;
   offerKey: Uint8Array;
 }
 
@@ -16,7 +16,7 @@ function createBaseOfferExpireQueueEntry(): OfferExpireQueueEntry {
 export const OfferExpireQueueEntry = {
   encode(message: OfferExpireQueueEntry, writer: _m0.Writer = _m0.Writer.create()): _m0.Writer {
     if (message.expireTime !== undefined) {
-      Timestamp.encode(toTimestamp(message.expireTime), writer.uint32(10).fork()).ldelim();
+      Timestamp.encode(message.expireTime, writer.uint32(10).fork()).ldelim();
     }
 
     if (message.offerKey.length !== 0) {
@@ -36,7 +36,7 @@ export const OfferExpireQueueEntry = {
 
       switch (tag >>> 3) {
         case 1:
-          message.expireTime = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.expireTime = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 2:
@@ -61,14 +61,14 @@ export const OfferExpireQueueEntry = {
 
   toJSON(message: OfferExpireQueueEntry): unknown {
     const obj: any = {};
-    message.expireTime !== undefined && (obj.expireTime = message.expireTime.toISOString());
+    message.expireTime !== undefined && (obj.expireTime = fromTimestamp(message.expireTime).toISOString());
     message.offerKey !== undefined && (obj.offerKey = base64FromBytes(message.offerKey !== undefined ? message.offerKey : new Uint8Array()));
     return obj;
   },
 
   fromPartial(object: DeepPartial<OfferExpireQueueEntry>): OfferExpireQueueEntry {
     const message = createBaseOfferExpireQueueEntry();
-    message.expireTime = object.expireTime ?? undefined;
+    message.expireTime = object.expireTime !== undefined && object.expireTime !== null ? Timestamp.fromPartial(object.expireTime) : undefined;
     message.offerKey = object.offerKey ?? new Uint8Array();
     return message;
   }

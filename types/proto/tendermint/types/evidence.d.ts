@@ -1,4 +1,5 @@
 import { Vote, LightBlock } from "./types";
+import { Timestamp } from "../../google/protobuf/timestamp";
 import { Validator } from "./validator";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial, Long } from "@osmonauts/helpers";
@@ -12,7 +13,7 @@ export interface DuplicateVoteEvidence {
     voteB: Vote;
     totalVotingPower: Long;
     validatorPower: Long;
-    timestamp: Date;
+    timestamp: Timestamp;
 }
 /** LightClientAttackEvidence contains evidence of a set of validators attempting to mislead a light client. */
 export interface LightClientAttackEvidence {
@@ -20,7 +21,7 @@ export interface LightClientAttackEvidence {
     commonHeight: Long;
     byzantineValidators: Validator[];
     totalVotingPower: Long;
-    timestamp: Date;
+    timestamp: Timestamp;
 }
 export interface EvidenceList {
     evidence: Evidence[];

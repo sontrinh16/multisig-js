@@ -1,7 +1,7 @@
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import { Duration } from "../../../google/protobuf/duration";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, bytesFromBase64, base64FromBytes, Long, toDuration, fromDuration } from "@osmonauts/helpers";
+import { isSet, DeepPartial, bytesFromBase64, base64FromBytes, Long } from "@osmonauts/helpers";
 
 /** Params contains the parameters for the profiles module */
 export interface Params {
@@ -73,7 +73,7 @@ export interface OracleParams {
 /** AppLinksParams define the parameters related to the app links */
 export interface AppLinksParams {
   /** Default validity duration before an application link expires */
-  validityDuration: string;
+  validityDuration: Duration;
 }
 
 function createBaseParams(): Params {
@@ -520,7 +520,7 @@ function createBaseAppLinksParams(): AppLinksParams {
 export const AppLinksParams = {
   encode(message: AppLinksParams, writer: _m0.Writer = _m0.Writer.create()): _m0.Writer {
     if (message.validityDuration !== undefined) {
-      Duration.encode(toDuration(message.validityDuration), writer.uint32(10).fork()).ldelim();
+      Duration.encode(message.validityDuration, writer.uint32(10).fork()).ldelim();
     }
 
     return writer;
@@ -536,7 +536,7 @@ export const AppLinksParams = {
 
       switch (tag >>> 3) {
         case 1:
-          message.validityDuration = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.validityDuration = Duration.decode(reader, reader.uint32());
           break;
 
         default:
@@ -550,7 +550,7 @@ export const AppLinksParams = {
 
   fromJSON(object: any): AppLinksParams {
     return {
-      validityDuration: isSet(object.validityDuration) ? String(object.validityDuration) : undefined
+      validityDuration: isSet(object.validityDuration) ? Duration.fromJSON(object.validityDuration) : undefined
     };
   },
 

@@ -1,3 +1,4 @@
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial, Long } from "@osmonauts/helpers";
 export declare enum ClassParentType {
@@ -21,7 +22,7 @@ export interface ClassParent {
     account?: string;
 }
 export interface MintPeriod {
-    startTime: Date;
+    startTime: Timestamp;
     allowedAddresses: string[];
     mintPrice: Long;
 }
@@ -32,7 +33,7 @@ export interface ClassConfig {
 }
 export interface BlindBoxConfig {
     mintPeriods: MintPeriod[];
-    revealTime: Date;
+    revealTime: Timestamp;
 }
 export interface BlindBoxState {
     contentCount: Long;

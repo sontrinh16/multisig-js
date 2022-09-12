@@ -2,10 +2,10 @@ import { Duration } from "../../google/protobuf/duration";
 import { Coin } from "../../cosmos/base/v1beta1/coin";
 import { PeriodLock } from "./lock";
 import * as _m0 from "protobufjs/minimal";
-import { toDuration, fromDuration, isSet, DeepPartial, Long } from "@osmonauts/helpers";
+import { isSet, DeepPartial, Long } from "@osmonauts/helpers";
 export interface MsgLockTokens {
   owner: string;
-  duration: string;
+  duration: Duration;
   coins: Coin[];
 }
 export interface MsgLockTokensResponse {
@@ -40,7 +40,7 @@ export interface MsgExtendLockup {
    * duration to be set. fails if lower than the current duration, or is
    * unlocking
    */
-  duration: string;
+  duration: Duration;
 }
 export interface MsgExtendLockupResponse {
   success: boolean;
@@ -61,7 +61,7 @@ export const MsgLockTokens = {
     }
 
     if (message.duration !== undefined) {
-      Duration.encode(toDuration(message.duration), writer.uint32(18).fork()).ldelim();
+      Duration.encode(message.duration, writer.uint32(18).fork()).ldelim();
     }
 
     for (const v of message.coins) {
@@ -85,7 +85,7 @@ export const MsgLockTokens = {
           break;
 
         case 2:
-          message.duration = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.duration = Duration.decode(reader, reader.uint32());
           break;
 
         case 3:
@@ -104,7 +104,7 @@ export const MsgLockTokens = {
   fromJSON(object: any): MsgLockTokens {
     return {
       owner: isSet(object.owner) ? String(object.owner) : "",
-      duration: isSet(object.duration) ? String(object.duration) : undefined,
+      duration: isSet(object.duration) ? Duration.fromJSON(object.duration) : undefined,
       coins: Array.isArray(object?.coins) ? object.coins.map((e: any) => Coin.fromJSON(e)) : []
     };
   },
@@ -473,7 +473,7 @@ export const MsgExtendLockup = {
     }
 
     if (message.duration !== undefined) {
-      Duration.encode(toDuration(message.duration), writer.uint32(26).fork()).ldelim();
+      Duration.encode(message.duration, writer.uint32(26).fork()).ldelim();
     }
 
     return writer;
@@ -497,7 +497,7 @@ export const MsgExtendLockup = {
           break;
 
         case 3:
-          message.duration = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.duration = Duration.decode(reader, reader.uint32());
           break;
 
         default:
@@ -513,7 +513,7 @@ export const MsgExtendLockup = {
     return {
       owner: isSet(object.owner) ? String(object.owner) : "",
       ID: isSet(object.ID) ? Long.fromString(object.ID) : Long.UZERO,
-      duration: isSet(object.duration) ? String(object.duration) : undefined
+      duration: isSet(object.duration) ? Duration.fromJSON(object.duration) : undefined
     };
   },
 

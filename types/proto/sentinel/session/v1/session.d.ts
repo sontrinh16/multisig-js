@@ -1,5 +1,7 @@
+import { Duration } from "../../../google/protobuf/duration";
 import { Bandwidth } from "../../types/v1/bandwidth";
 import { Status } from "../../types/v1/status";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { Long, DeepPartial } from "@osmonauts/helpers";
 export interface Session {
@@ -7,10 +9,10 @@ export interface Session {
     subscription: Long;
     node: string;
     address: string;
-    duration: string;
+    duration: Duration;
     bandwidth: Bandwidth;
     status: Status;
-    statusAt: Date;
+    statusAt: Timestamp;
 }
 export declare const Session: {
     encode(message: Session, writer?: _m0.Writer): _m0.Writer;

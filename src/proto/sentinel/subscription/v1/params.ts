@@ -1,8 +1,8 @@
 import { Duration } from "../../../google/protobuf/duration";
 import * as _m0 from "protobufjs/minimal";
-import { toDuration, fromDuration, isSet, DeepPartial } from "@osmonauts/helpers";
+import { isSet, DeepPartial } from "@osmonauts/helpers";
 export interface Params {
-  inactiveDuration: string;
+  inactiveDuration: Duration;
 }
 
 function createBaseParams(): Params {
@@ -14,7 +14,7 @@ function createBaseParams(): Params {
 export const Params = {
   encode(message: Params, writer: _m0.Writer = _m0.Writer.create()): _m0.Writer {
     if (message.inactiveDuration !== undefined) {
-      Duration.encode(toDuration(message.inactiveDuration), writer.uint32(10).fork()).ldelim();
+      Duration.encode(message.inactiveDuration, writer.uint32(10).fork()).ldelim();
     }
 
     return writer;
@@ -30,7 +30,7 @@ export const Params = {
 
       switch (tag >>> 3) {
         case 1:
-          message.inactiveDuration = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.inactiveDuration = Duration.decode(reader, reader.uint32());
           break;
 
         default:
@@ -44,7 +44,7 @@ export const Params = {
 
   fromJSON(object: any): Params {
     return {
-      inactiveDuration: isSet(object.inactiveDuration) ? String(object.inactiveDuration) : undefined
+      inactiveDuration: isSet(object.inactiveDuration) ? Duration.fromJSON(object.inactiveDuration) : undefined
     };
   },
 

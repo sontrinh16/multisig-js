@@ -1,7 +1,7 @@
 import { BaseVestingAccount, Period } from "../../../cosmos/vesting/v1beta1/vesting";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { toTimestamp, fromTimestamp, isSet, fromJsonTimestamp, DeepPartial } from "@osmonauts/helpers";
+import { isSet, fromJsonTimestamp, fromTimestamp, DeepPartial } from "@osmonauts/helpers";
 
 /**
  * ClawbackVestingAccount implements the VestingAccount interface. It provides
@@ -20,7 +20,7 @@ export interface ClawbackVestingAccount {
   funderAddress: string;
 
   /** start_time defines the time at which the vesting period begins */
-  startTime: Date;
+  startTime: Timestamp;
 
   /** lockup_periods defines the unlocking schedule relative to the start_time */
   lockupPeriods: Period[];
@@ -50,7 +50,7 @@ export const ClawbackVestingAccount = {
     }
 
     if (message.startTime !== undefined) {
-      Timestamp.encode(toTimestamp(message.startTime), writer.uint32(26).fork()).ldelim();
+      Timestamp.encode(message.startTime, writer.uint32(26).fork()).ldelim();
     }
 
     for (const v of message.lockupPeriods) {
@@ -82,7 +82,7 @@ export const ClawbackVestingAccount = {
           break;
 
         case 3:
-          message.startTime = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.startTime = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 4:
@@ -116,7 +116,7 @@ export const ClawbackVestingAccount = {
     const obj: any = {};
     message.baseVestingAccount !== undefined && (obj.baseVestingAccount = message.baseVestingAccount ? BaseVestingAccount.toJSON(message.baseVestingAccount) : undefined);
     message.funderAddress !== undefined && (obj.funderAddress = message.funderAddress);
-    message.startTime !== undefined && (obj.startTime = message.startTime.toISOString());
+    message.startTime !== undefined && (obj.startTime = fromTimestamp(message.startTime).toISOString());
 
     if (message.lockupPeriods) {
       obj.lockupPeriods = message.lockupPeriods.map(e => e ? Period.toJSON(e) : undefined);
@@ -137,7 +137,7 @@ export const ClawbackVestingAccount = {
     const message = createBaseClawbackVestingAccount();
     message.baseVestingAccount = object.baseVestingAccount !== undefined && object.baseVestingAccount !== null ? BaseVestingAccount.fromPartial(object.baseVestingAccount) : undefined;
     message.funderAddress = object.funderAddress ?? "";
-    message.startTime = object.startTime ?? undefined;
+    message.startTime = object.startTime !== undefined && object.startTime !== null ? Timestamp.fromPartial(object.startTime) : undefined;
     message.lockupPeriods = object.lockupPeriods?.map(e => Period.fromPartial(e)) || [];
     message.vestingPeriods = object.vestingPeriods?.map(e => Period.fromPartial(e)) || [];
     return message;

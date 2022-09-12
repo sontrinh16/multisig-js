@@ -1,25 +1,25 @@
-import * as _637 from "./admin/v1/query";
-import * as _638 from "./admin/v1/tx";
-import * as _639 from "./admin/v1/types";
-import * as _640 from "./clp/v1/genesis";
-import * as _641 from "./clp/v1/params";
-import * as _642 from "./clp/v1/pool";
-import * as _643 from "./clp/v1/querier";
-import * as _644 from "./clp/v1/tx";
-import * as _645 from "./clp/v1/types";
-import * as _646 from "./dispensation/v1/query";
-import * as _647 from "./dispensation/v1/tx";
-import * as _648 from "./dispensation/v1/types";
-import * as _649 from "./ethbridge/v1/query";
-import * as _650 from "./ethbridge/v1/tx";
-import * as _651 from "./ethbridge/v1/types";
-import * as _652 from "./margin/v1/query";
-import * as _653 from "./margin/v1/tx";
-import * as _654 from "./margin/v1/types";
-import * as _655 from "./oracle/v1/types";
-import * as _656 from "./tokenregistry/v1/query";
-import * as _657 from "./tokenregistry/v1/tx";
-import * as _658 from "./tokenregistry/v1/types";
+import * as _656 from "./admin/v1/query";
+import * as _657 from "./admin/v1/tx";
+import * as _658 from "./admin/v1/types";
+import * as _659 from "./clp/v1/genesis";
+import * as _660 from "./clp/v1/params";
+import * as _661 from "./clp/v1/pool";
+import * as _662 from "./clp/v1/querier";
+import * as _663 from "./clp/v1/tx";
+import * as _664 from "./clp/v1/types";
+import * as _665 from "./dispensation/v1/query";
+import * as _666 from "./dispensation/v1/tx";
+import * as _667 from "./dispensation/v1/types";
+import * as _668 from "./ethbridge/v1/query";
+import * as _669 from "./ethbridge/v1/tx";
+import * as _670 from "./ethbridge/v1/types";
+import * as _671 from "./margin/v1/query";
+import * as _672 from "./margin/v1/tx";
+import * as _673 from "./margin/v1/types";
+import * as _674 from "./oracle/v1/types";
+import * as _675 from "./tokenregistry/v1/query";
+import * as _676 from "./tokenregistry/v1/tx";
+import * as _677 from "./tokenregistry/v1/types";
 export declare namespace sifnode {
     namespace admin {
         const v1: {
@@ -27,31 +27,31 @@ export declare namespace sifnode {
             load: (protoRegistry: import("@cosmjs/proto-signing").Registry) => void;
             MessageComposer: {
                 encoded: {
-                    addAccount(value: _638.MsgAddAccount): {
+                    addAccount(value: _657.MsgAddAccount): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    removeAccount(value: _638.MsgRemoveAccount): {
+                    removeAccount(value: _657.MsgRemoveAccount): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
                 };
                 withTypeUrl: {
-                    addAccount(value: _638.MsgAddAccount): {
+                    addAccount(value: _657.MsgAddAccount): {
                         typeUrl: string;
-                        value: _638.MsgAddAccount;
+                        value: _657.MsgAddAccount;
                     };
-                    removeAccount(value: _638.MsgRemoveAccount): {
+                    removeAccount(value: _657.MsgRemoveAccount): {
                         typeUrl: string;
-                        value: _638.MsgRemoveAccount;
+                        value: _657.MsgRemoveAccount;
                     };
                 };
                 toJSON: {
-                    addAccount(value: _638.MsgAddAccount): {
+                    addAccount(value: _657.MsgAddAccount): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    removeAccount(value: _638.MsgRemoveAccount): {
+                    removeAccount(value: _657.MsgRemoveAccount): {
                         typeUrl: string;
                         value: unknown;
                     };
@@ -59,28 +59,28 @@ export declare namespace sifnode {
                 fromJSON: {
                     addAccount(value: any): {
                         typeUrl: string;
-                        value: _638.MsgAddAccount;
+                        value: _657.MsgAddAccount;
                     };
                     removeAccount(value: any): {
                         typeUrl: string;
-                        value: _638.MsgRemoveAccount;
+                        value: _657.MsgRemoveAccount;
                     };
                 };
                 fromPartial: {
-                    addAccount(value: _638.MsgAddAccount): {
+                    addAccount(value: _657.MsgAddAccount): {
                         typeUrl: string;
-                        value: _638.MsgAddAccount;
+                        value: _657.MsgAddAccount;
                     };
-                    removeAccount(value: _638.MsgRemoveAccount): {
+                    removeAccount(value: _657.MsgRemoveAccount): {
                         typeUrl: string;
-                        value: _638.MsgRemoveAccount;
+                        value: _657.MsgRemoveAccount;
                     };
                 };
             };
             AminoConverter: {
                 "/sifnode.admin.v1.MsgAddAccount": {
                     aminoType: string;
-                    toAmino: ({ signer, account }: _638.MsgAddAccount) => {
+                    toAmino: ({ signer, account }: _657.MsgAddAccount) => {
                         signer: string;
                         account: {
                             admin_type: number;
@@ -93,11 +93,11 @@ export declare namespace sifnode {
                             admin_type: number;
                             admin_address: string;
                         };
-                    }) => _638.MsgAddAccount;
+                    }) => _657.MsgAddAccount;
                 };
                 "/sifnode.admin.v1.MsgRemoveAccount": {
                     aminoType: string;
-                    toAmino: ({ signer, account }: _638.MsgRemoveAccount) => {
+                    toAmino: ({ signer, account }: _657.MsgRemoveAccount) => {
                         signer: string;
                         account: {
                             admin_type: number;
@@ -110,92 +110,92 @@ export declare namespace sifnode {
                             admin_type: number;
                             admin_address: string;
                         };
-                    }) => _638.MsgRemoveAccount;
+                    }) => _657.MsgRemoveAccount;
                 };
             };
-            adminTypeFromJSON(object: any): _639.AdminType;
-            adminTypeToJSON(object: _639.AdminType): string;
-            AdminType: typeof _639.AdminType;
+            adminTypeFromJSON(object: any): _658.AdminType;
+            adminTypeToJSON(object: _658.AdminType): string;
+            AdminType: typeof _658.AdminType;
             GenesisState: {
-                encode(message: _639.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _639.GenesisState;
-                fromJSON(object: any): _639.GenesisState;
-                toJSON(message: _639.GenesisState): unknown;
+                encode(message: _658.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _658.GenesisState;
+                fromJSON(object: any): _658.GenesisState;
+                toJSON(message: _658.GenesisState): unknown;
                 fromPartial(object: {
                     adminAccounts?: {
-                        adminType?: _639.AdminType;
+                        adminType?: _658.AdminType;
                         adminAddress?: string;
                     }[];
-                }): _639.GenesisState;
+                }): _658.GenesisState;
             };
             AdminAccount: {
-                encode(message: _639.AdminAccount, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _639.AdminAccount;
-                fromJSON(object: any): _639.AdminAccount;
-                toJSON(message: _639.AdminAccount): unknown;
+                encode(message: _658.AdminAccount, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _658.AdminAccount;
+                fromJSON(object: any): _658.AdminAccount;
+                toJSON(message: _658.AdminAccount): unknown;
                 fromPartial(object: {
-                    adminType?: _639.AdminType;
+                    adminType?: _658.AdminType;
                     adminAddress?: string;
-                }): _639.AdminAccount;
+                }): _658.AdminAccount;
             };
             MsgAddAccount: {
-                encode(message: _638.MsgAddAccount, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _638.MsgAddAccount;
-                fromJSON(object: any): _638.MsgAddAccount;
-                toJSON(message: _638.MsgAddAccount): unknown;
+                encode(message: _657.MsgAddAccount, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _657.MsgAddAccount;
+                fromJSON(object: any): _657.MsgAddAccount;
+                toJSON(message: _657.MsgAddAccount): unknown;
                 fromPartial(object: {
                     signer?: string;
                     account?: {
-                        adminType?: _639.AdminType;
+                        adminType?: _658.AdminType;
                         adminAddress?: string;
                     };
-                }): _638.MsgAddAccount;
+                }): _657.MsgAddAccount;
             };
             MsgAddAccountResponse: {
-                encode(_: _638.MsgAddAccountResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _638.MsgAddAccountResponse;
-                fromJSON(_: any): _638.MsgAddAccountResponse;
-                toJSON(_: _638.MsgAddAccountResponse): unknown;
-                fromPartial(_: {}): _638.MsgAddAccountResponse;
+                encode(_: _657.MsgAddAccountResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _657.MsgAddAccountResponse;
+                fromJSON(_: any): _657.MsgAddAccountResponse;
+                toJSON(_: _657.MsgAddAccountResponse): unknown;
+                fromPartial(_: {}): _657.MsgAddAccountResponse;
             };
             MsgRemoveAccount: {
-                encode(message: _638.MsgRemoveAccount, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _638.MsgRemoveAccount;
-                fromJSON(object: any): _638.MsgRemoveAccount;
-                toJSON(message: _638.MsgRemoveAccount): unknown;
+                encode(message: _657.MsgRemoveAccount, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _657.MsgRemoveAccount;
+                fromJSON(object: any): _657.MsgRemoveAccount;
+                toJSON(message: _657.MsgRemoveAccount): unknown;
                 fromPartial(object: {
                     signer?: string;
                     account?: {
-                        adminType?: _639.AdminType;
+                        adminType?: _658.AdminType;
                         adminAddress?: string;
                     };
-                }): _638.MsgRemoveAccount;
+                }): _657.MsgRemoveAccount;
             };
             MsgRemoveAccountResponse: {
-                encode(_: _638.MsgRemoveAccountResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _638.MsgRemoveAccountResponse;
-                fromJSON(_: any): _638.MsgRemoveAccountResponse;
-                toJSON(_: _638.MsgRemoveAccountResponse): unknown;
-                fromPartial(_: {}): _638.MsgRemoveAccountResponse;
+                encode(_: _657.MsgRemoveAccountResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _657.MsgRemoveAccountResponse;
+                fromJSON(_: any): _657.MsgRemoveAccountResponse;
+                toJSON(_: _657.MsgRemoveAccountResponse): unknown;
+                fromPartial(_: {}): _657.MsgRemoveAccountResponse;
             };
             ListAccountsRequest: {
-                encode(_: _637.ListAccountsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _637.ListAccountsRequest;
-                fromJSON(_: any): _637.ListAccountsRequest;
-                toJSON(_: _637.ListAccountsRequest): unknown;
-                fromPartial(_: {}): _637.ListAccountsRequest;
+                encode(_: _656.ListAccountsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.ListAccountsRequest;
+                fromJSON(_: any): _656.ListAccountsRequest;
+                toJSON(_: _656.ListAccountsRequest): unknown;
+                fromPartial(_: {}): _656.ListAccountsRequest;
             };
             ListAccountsResponse: {
-                encode(message: _637.ListAccountsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _637.ListAccountsResponse;
-                fromJSON(object: any): _637.ListAccountsResponse;
-                toJSON(message: _637.ListAccountsResponse): unknown;
+                encode(message: _656.ListAccountsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.ListAccountsResponse;
+                fromJSON(object: any): _656.ListAccountsResponse;
+                toJSON(message: _656.ListAccountsResponse): unknown;
                 fromPartial(object: {
                     keys?: {
-                        adminType?: _639.AdminType;
+                        adminType?: _658.AdminType;
                         adminAddress?: string;
                     }[];
-                }): _637.ListAccountsResponse;
+                }): _656.ListAccountsResponse;
             };
         };
     }
@@ -205,211 +205,211 @@ export declare namespace sifnode {
             load: (protoRegistry: import("@cosmjs/proto-signing").Registry) => void;
             MessageComposer: {
                 encoded: {
-                    removeLiquidity(value: _644.MsgRemoveLiquidity): {
+                    removeLiquidity(value: _663.MsgRemoveLiquidity): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    removeLiquidityUnits(value: _644.MsgRemoveLiquidityUnits): {
+                    removeLiquidityUnits(value: _663.MsgRemoveLiquidityUnits): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    createPool(value: _644.MsgCreatePool): {
+                    createPool(value: _663.MsgCreatePool): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    addLiquidity(value: _644.MsgAddLiquidity): {
+                    addLiquidity(value: _663.MsgAddLiquidity): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    swap(value: _644.MsgSwap): {
+                    swap(value: _663.MsgSwap): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    decommissionPool(value: _644.MsgDecommissionPool): {
+                    decommissionPool(value: _663.MsgDecommissionPool): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    unlockLiquidity(value: _644.MsgUnlockLiquidityRequest): {
+                    unlockLiquidity(value: _663.MsgUnlockLiquidityRequest): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updateRewardsParams(value: _644.MsgUpdateRewardsParamsRequest): {
+                    updateRewardsParams(value: _663.MsgUpdateRewardsParamsRequest): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    addRewardPeriod(value: _644.MsgAddRewardPeriodRequest): {
+                    addRewardPeriod(value: _663.MsgAddRewardPeriodRequest): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    modifyPmtpRates(value: _644.MsgModifyPmtpRates): {
+                    modifyPmtpRates(value: _663.MsgModifyPmtpRates): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updatePmtpParams(value: _644.MsgUpdatePmtpParams): {
+                    updatePmtpParams(value: _663.MsgUpdatePmtpParams): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updateStakingRewardParams(value: _644.MsgUpdateStakingRewardParams): {
+                    updateStakingRewardParams(value: _663.MsgUpdateStakingRewardParams): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    setSymmetryThreshold(value: _644.MsgSetSymmetryThreshold): {
+                    setSymmetryThreshold(value: _663.MsgSetSymmetryThreshold): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    cancelUnlockLiquidity(value: _644.MsgCancelUnlock): {
+                    cancelUnlockLiquidity(value: _663.MsgCancelUnlock): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updateLiquidityProtectionParams(value: _644.MsgUpdateLiquidityProtectionParams): {
+                    updateLiquidityProtectionParams(value: _663.MsgUpdateLiquidityProtectionParams): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    modifyLiquidityProtectionRates(value: _644.MsgModifyLiquidityProtectionRates): {
+                    modifyLiquidityProtectionRates(value: _663.MsgModifyLiquidityProtectionRates): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    addProviderDistributionPeriod(value: _644.MsgAddProviderDistributionPeriodRequest): {
+                    addProviderDistributionPeriod(value: _663.MsgAddProviderDistributionPeriodRequest): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
                 };
                 withTypeUrl: {
-                    removeLiquidity(value: _644.MsgRemoveLiquidity): {
+                    removeLiquidity(value: _663.MsgRemoveLiquidity): {
                         typeUrl: string;
-                        value: _644.MsgRemoveLiquidity;
+                        value: _663.MsgRemoveLiquidity;
                     };
-                    removeLiquidityUnits(value: _644.MsgRemoveLiquidityUnits): {
+                    removeLiquidityUnits(value: _663.MsgRemoveLiquidityUnits): {
                         typeUrl: string;
-                        value: _644.MsgRemoveLiquidityUnits;
+                        value: _663.MsgRemoveLiquidityUnits;
                     };
-                    createPool(value: _644.MsgCreatePool): {
+                    createPool(value: _663.MsgCreatePool): {
                         typeUrl: string;
-                        value: _644.MsgCreatePool;
+                        value: _663.MsgCreatePool;
                     };
-                    addLiquidity(value: _644.MsgAddLiquidity): {
+                    addLiquidity(value: _663.MsgAddLiquidity): {
                         typeUrl: string;
-                        value: _644.MsgAddLiquidity;
+                        value: _663.MsgAddLiquidity;
                     };
-                    swap(value: _644.MsgSwap): {
+                    swap(value: _663.MsgSwap): {
                         typeUrl: string;
-                        value: _644.MsgSwap;
+                        value: _663.MsgSwap;
                     };
-                    decommissionPool(value: _644.MsgDecommissionPool): {
+                    decommissionPool(value: _663.MsgDecommissionPool): {
                         typeUrl: string;
-                        value: _644.MsgDecommissionPool;
+                        value: _663.MsgDecommissionPool;
                     };
-                    unlockLiquidity(value: _644.MsgUnlockLiquidityRequest): {
+                    unlockLiquidity(value: _663.MsgUnlockLiquidityRequest): {
                         typeUrl: string;
-                        value: _644.MsgUnlockLiquidityRequest;
+                        value: _663.MsgUnlockLiquidityRequest;
                     };
-                    updateRewardsParams(value: _644.MsgUpdateRewardsParamsRequest): {
+                    updateRewardsParams(value: _663.MsgUpdateRewardsParamsRequest): {
                         typeUrl: string;
-                        value: _644.MsgUpdateRewardsParamsRequest;
+                        value: _663.MsgUpdateRewardsParamsRequest;
                     };
-                    addRewardPeriod(value: _644.MsgAddRewardPeriodRequest): {
+                    addRewardPeriod(value: _663.MsgAddRewardPeriodRequest): {
                         typeUrl: string;
-                        value: _644.MsgAddRewardPeriodRequest;
+                        value: _663.MsgAddRewardPeriodRequest;
                     };
-                    modifyPmtpRates(value: _644.MsgModifyPmtpRates): {
+                    modifyPmtpRates(value: _663.MsgModifyPmtpRates): {
                         typeUrl: string;
-                        value: _644.MsgModifyPmtpRates;
+                        value: _663.MsgModifyPmtpRates;
                     };
-                    updatePmtpParams(value: _644.MsgUpdatePmtpParams): {
+                    updatePmtpParams(value: _663.MsgUpdatePmtpParams): {
                         typeUrl: string;
-                        value: _644.MsgUpdatePmtpParams;
+                        value: _663.MsgUpdatePmtpParams;
                     };
-                    updateStakingRewardParams(value: _644.MsgUpdateStakingRewardParams): {
+                    updateStakingRewardParams(value: _663.MsgUpdateStakingRewardParams): {
                         typeUrl: string;
-                        value: _644.MsgUpdateStakingRewardParams;
+                        value: _663.MsgUpdateStakingRewardParams;
                     };
-                    setSymmetryThreshold(value: _644.MsgSetSymmetryThreshold): {
+                    setSymmetryThreshold(value: _663.MsgSetSymmetryThreshold): {
                         typeUrl: string;
-                        value: _644.MsgSetSymmetryThreshold;
+                        value: _663.MsgSetSymmetryThreshold;
                     };
-                    cancelUnlockLiquidity(value: _644.MsgCancelUnlock): {
+                    cancelUnlockLiquidity(value: _663.MsgCancelUnlock): {
                         typeUrl: string;
-                        value: _644.MsgCancelUnlock;
+                        value: _663.MsgCancelUnlock;
                     };
-                    updateLiquidityProtectionParams(value: _644.MsgUpdateLiquidityProtectionParams): {
+                    updateLiquidityProtectionParams(value: _663.MsgUpdateLiquidityProtectionParams): {
                         typeUrl: string;
-                        value: _644.MsgUpdateLiquidityProtectionParams;
+                        value: _663.MsgUpdateLiquidityProtectionParams;
                     };
-                    modifyLiquidityProtectionRates(value: _644.MsgModifyLiquidityProtectionRates): {
+                    modifyLiquidityProtectionRates(value: _663.MsgModifyLiquidityProtectionRates): {
                         typeUrl: string;
-                        value: _644.MsgModifyLiquidityProtectionRates;
+                        value: _663.MsgModifyLiquidityProtectionRates;
                     };
-                    addProviderDistributionPeriod(value: _644.MsgAddProviderDistributionPeriodRequest): {
+                    addProviderDistributionPeriod(value: _663.MsgAddProviderDistributionPeriodRequest): {
                         typeUrl: string;
-                        value: _644.MsgAddProviderDistributionPeriodRequest;
+                        value: _663.MsgAddProviderDistributionPeriodRequest;
                     };
                 };
                 toJSON: {
-                    removeLiquidity(value: _644.MsgRemoveLiquidity): {
+                    removeLiquidity(value: _663.MsgRemoveLiquidity): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    removeLiquidityUnits(value: _644.MsgRemoveLiquidityUnits): {
+                    removeLiquidityUnits(value: _663.MsgRemoveLiquidityUnits): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    createPool(value: _644.MsgCreatePool): {
+                    createPool(value: _663.MsgCreatePool): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    addLiquidity(value: _644.MsgAddLiquidity): {
+                    addLiquidity(value: _663.MsgAddLiquidity): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    swap(value: _644.MsgSwap): {
+                    swap(value: _663.MsgSwap): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    decommissionPool(value: _644.MsgDecommissionPool): {
+                    decommissionPool(value: _663.MsgDecommissionPool): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    unlockLiquidity(value: _644.MsgUnlockLiquidityRequest): {
+                    unlockLiquidity(value: _663.MsgUnlockLiquidityRequest): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updateRewardsParams(value: _644.MsgUpdateRewardsParamsRequest): {
+                    updateRewardsParams(value: _663.MsgUpdateRewardsParamsRequest): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    addRewardPeriod(value: _644.MsgAddRewardPeriodRequest): {
+                    addRewardPeriod(value: _663.MsgAddRewardPeriodRequest): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    modifyPmtpRates(value: _644.MsgModifyPmtpRates): {
+                    modifyPmtpRates(value: _663.MsgModifyPmtpRates): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updatePmtpParams(value: _644.MsgUpdatePmtpParams): {
+                    updatePmtpParams(value: _663.MsgUpdatePmtpParams): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updateStakingRewardParams(value: _644.MsgUpdateStakingRewardParams): {
+                    updateStakingRewardParams(value: _663.MsgUpdateStakingRewardParams): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    setSymmetryThreshold(value: _644.MsgSetSymmetryThreshold): {
+                    setSymmetryThreshold(value: _663.MsgSetSymmetryThreshold): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    cancelUnlockLiquidity(value: _644.MsgCancelUnlock): {
+                    cancelUnlockLiquidity(value: _663.MsgCancelUnlock): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updateLiquidityProtectionParams(value: _644.MsgUpdateLiquidityProtectionParams): {
+                    updateLiquidityProtectionParams(value: _663.MsgUpdateLiquidityProtectionParams): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    modifyLiquidityProtectionRates(value: _644.MsgModifyLiquidityProtectionRates): {
+                    modifyLiquidityProtectionRates(value: _663.MsgModifyLiquidityProtectionRates): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    addProviderDistributionPeriod(value: _644.MsgAddProviderDistributionPeriodRequest): {
+                    addProviderDistributionPeriod(value: _663.MsgAddProviderDistributionPeriodRequest): {
                         typeUrl: string;
                         value: unknown;
                     };
@@ -417,148 +417,148 @@ export declare namespace sifnode {
                 fromJSON: {
                     removeLiquidity(value: any): {
                         typeUrl: string;
-                        value: _644.MsgRemoveLiquidity;
+                        value: _663.MsgRemoveLiquidity;
                     };
                     removeLiquidityUnits(value: any): {
                         typeUrl: string;
-                        value: _644.MsgRemoveLiquidityUnits;
+                        value: _663.MsgRemoveLiquidityUnits;
                     };
                     createPool(value: any): {
                         typeUrl: string;
-                        value: _644.MsgCreatePool;
+                        value: _663.MsgCreatePool;
                     };
                     addLiquidity(value: any): {
                         typeUrl: string;
-                        value: _644.MsgAddLiquidity;
+                        value: _663.MsgAddLiquidity;
                     };
                     swap(value: any): {
                         typeUrl: string;
-                        value: _644.MsgSwap;
+                        value: _663.MsgSwap;
                     };
                     decommissionPool(value: any): {
                         typeUrl: string;
-                        value: _644.MsgDecommissionPool;
+                        value: _663.MsgDecommissionPool;
                     };
                     unlockLiquidity(value: any): {
                         typeUrl: string;
-                        value: _644.MsgUnlockLiquidityRequest;
+                        value: _663.MsgUnlockLiquidityRequest;
                     };
                     updateRewardsParams(value: any): {
                         typeUrl: string;
-                        value: _644.MsgUpdateRewardsParamsRequest;
+                        value: _663.MsgUpdateRewardsParamsRequest;
                     };
                     addRewardPeriod(value: any): {
                         typeUrl: string;
-                        value: _644.MsgAddRewardPeriodRequest;
+                        value: _663.MsgAddRewardPeriodRequest;
                     };
                     modifyPmtpRates(value: any): {
                         typeUrl: string;
-                        value: _644.MsgModifyPmtpRates;
+                        value: _663.MsgModifyPmtpRates;
                     };
                     updatePmtpParams(value: any): {
                         typeUrl: string;
-                        value: _644.MsgUpdatePmtpParams;
+                        value: _663.MsgUpdatePmtpParams;
                     };
                     updateStakingRewardParams(value: any): {
                         typeUrl: string;
-                        value: _644.MsgUpdateStakingRewardParams;
+                        value: _663.MsgUpdateStakingRewardParams;
                     };
                     setSymmetryThreshold(value: any): {
                         typeUrl: string;
-                        value: _644.MsgSetSymmetryThreshold;
+                        value: _663.MsgSetSymmetryThreshold;
                     };
                     cancelUnlockLiquidity(value: any): {
                         typeUrl: string;
-                        value: _644.MsgCancelUnlock;
+                        value: _663.MsgCancelUnlock;
                     };
                     updateLiquidityProtectionParams(value: any): {
                         typeUrl: string;
-                        value: _644.MsgUpdateLiquidityProtectionParams;
+                        value: _663.MsgUpdateLiquidityProtectionParams;
                     };
                     modifyLiquidityProtectionRates(value: any): {
                         typeUrl: string;
-                        value: _644.MsgModifyLiquidityProtectionRates;
+                        value: _663.MsgModifyLiquidityProtectionRates;
                     };
                     addProviderDistributionPeriod(value: any): {
                         typeUrl: string;
-                        value: _644.MsgAddProviderDistributionPeriodRequest;
+                        value: _663.MsgAddProviderDistributionPeriodRequest;
                     };
                 };
                 fromPartial: {
-                    removeLiquidity(value: _644.MsgRemoveLiquidity): {
+                    removeLiquidity(value: _663.MsgRemoveLiquidity): {
                         typeUrl: string;
-                        value: _644.MsgRemoveLiquidity;
+                        value: _663.MsgRemoveLiquidity;
                     };
-                    removeLiquidityUnits(value: _644.MsgRemoveLiquidityUnits): {
+                    removeLiquidityUnits(value: _663.MsgRemoveLiquidityUnits): {
                         typeUrl: string;
-                        value: _644.MsgRemoveLiquidityUnits;
+                        value: _663.MsgRemoveLiquidityUnits;
                     };
-                    createPool(value: _644.MsgCreatePool): {
+                    createPool(value: _663.MsgCreatePool): {
                         typeUrl: string;
-                        value: _644.MsgCreatePool;
+                        value: _663.MsgCreatePool;
                     };
-                    addLiquidity(value: _644.MsgAddLiquidity): {
+                    addLiquidity(value: _663.MsgAddLiquidity): {
                         typeUrl: string;
-                        value: _644.MsgAddLiquidity;
+                        value: _663.MsgAddLiquidity;
                     };
-                    swap(value: _644.MsgSwap): {
+                    swap(value: _663.MsgSwap): {
                         typeUrl: string;
-                        value: _644.MsgSwap;
+                        value: _663.MsgSwap;
                     };
-                    decommissionPool(value: _644.MsgDecommissionPool): {
+                    decommissionPool(value: _663.MsgDecommissionPool): {
                         typeUrl: string;
-                        value: _644.MsgDecommissionPool;
+                        value: _663.MsgDecommissionPool;
                     };
-                    unlockLiquidity(value: _644.MsgUnlockLiquidityRequest): {
+                    unlockLiquidity(value: _663.MsgUnlockLiquidityRequest): {
                         typeUrl: string;
-                        value: _644.MsgUnlockLiquidityRequest;
+                        value: _663.MsgUnlockLiquidityRequest;
                     };
-                    updateRewardsParams(value: _644.MsgUpdateRewardsParamsRequest): {
+                    updateRewardsParams(value: _663.MsgUpdateRewardsParamsRequest): {
                         typeUrl: string;
-                        value: _644.MsgUpdateRewardsParamsRequest;
+                        value: _663.MsgUpdateRewardsParamsRequest;
                     };
-                    addRewardPeriod(value: _644.MsgAddRewardPeriodRequest): {
+                    addRewardPeriod(value: _663.MsgAddRewardPeriodRequest): {
                         typeUrl: string;
-                        value: _644.MsgAddRewardPeriodRequest;
+                        value: _663.MsgAddRewardPeriodRequest;
                     };
-                    modifyPmtpRates(value: _644.MsgModifyPmtpRates): {
+                    modifyPmtpRates(value: _663.MsgModifyPmtpRates): {
                         typeUrl: string;
-                        value: _644.MsgModifyPmtpRates;
+                        value: _663.MsgModifyPmtpRates;
                     };
-                    updatePmtpParams(value: _644.MsgUpdatePmtpParams): {
+                    updatePmtpParams(value: _663.MsgUpdatePmtpParams): {
                         typeUrl: string;
-                        value: _644.MsgUpdatePmtpParams;
+                        value: _663.MsgUpdatePmtpParams;
                     };
-                    updateStakingRewardParams(value: _644.MsgUpdateStakingRewardParams): {
+                    updateStakingRewardParams(value: _663.MsgUpdateStakingRewardParams): {
                         typeUrl: string;
-                        value: _644.MsgUpdateStakingRewardParams;
+                        value: _663.MsgUpdateStakingRewardParams;
                     };
-                    setSymmetryThreshold(value: _644.MsgSetSymmetryThreshold): {
+                    setSymmetryThreshold(value: _663.MsgSetSymmetryThreshold): {
                         typeUrl: string;
-                        value: _644.MsgSetSymmetryThreshold;
+                        value: _663.MsgSetSymmetryThreshold;
                     };
-                    cancelUnlockLiquidity(value: _644.MsgCancelUnlock): {
+                    cancelUnlockLiquidity(value: _663.MsgCancelUnlock): {
                         typeUrl: string;
-                        value: _644.MsgCancelUnlock;
+                        value: _663.MsgCancelUnlock;
                     };
-                    updateLiquidityProtectionParams(value: _644.MsgUpdateLiquidityProtectionParams): {
+                    updateLiquidityProtectionParams(value: _663.MsgUpdateLiquidityProtectionParams): {
                         typeUrl: string;
-                        value: _644.MsgUpdateLiquidityProtectionParams;
+                        value: _663.MsgUpdateLiquidityProtectionParams;
                     };
-                    modifyLiquidityProtectionRates(value: _644.MsgModifyLiquidityProtectionRates): {
+                    modifyLiquidityProtectionRates(value: _663.MsgModifyLiquidityProtectionRates): {
                         typeUrl: string;
-                        value: _644.MsgModifyLiquidityProtectionRates;
+                        value: _663.MsgModifyLiquidityProtectionRates;
                     };
-                    addProviderDistributionPeriod(value: _644.MsgAddProviderDistributionPeriodRequest): {
+                    addProviderDistributionPeriod(value: _663.MsgAddProviderDistributionPeriodRequest): {
                         typeUrl: string;
-                        value: _644.MsgAddProviderDistributionPeriodRequest;
+                        value: _663.MsgAddProviderDistributionPeriodRequest;
                     };
                 };
             };
             AminoConverter: {
                 "/sifnode.clp.v1.MsgRemoveLiquidity": {
                     aminoType: string;
-                    toAmino: ({ signer, externalAsset, wBasisPoints, asymmetry }: _644.MsgRemoveLiquidity) => {
+                    toAmino: ({ signer, externalAsset, wBasisPoints, asymmetry }: _663.MsgRemoveLiquidity) => {
                         signer: string;
                         external_asset: {
                             symbol: string;
@@ -573,11 +573,11 @@ export declare namespace sifnode {
                         };
                         w_basis_points: string;
                         asymmetry: string;
-                    }) => _644.MsgRemoveLiquidity;
+                    }) => _663.MsgRemoveLiquidity;
                 };
                 "/sifnode.clp.v1.MsgRemoveLiquidityUnits": {
                     aminoType: string;
-                    toAmino: ({ signer, externalAsset, withdrawUnits }: _644.MsgRemoveLiquidityUnits) => {
+                    toAmino: ({ signer, externalAsset, withdrawUnits }: _663.MsgRemoveLiquidityUnits) => {
                         signer: string;
                         external_asset: {
                             symbol: string;
@@ -590,11 +590,11 @@ export declare namespace sifnode {
                             symbol: string;
                         };
                         withdraw_units: string;
-                    }) => _644.MsgRemoveLiquidityUnits;
+                    }) => _663.MsgRemoveLiquidityUnits;
                 };
                 "/sifnode.clp.v1.MsgCreatePool": {
                     aminoType: string;
-                    toAmino: ({ signer, externalAsset, nativeAssetAmount, externalAssetAmount }: _644.MsgCreatePool) => {
+                    toAmino: ({ signer, externalAsset, nativeAssetAmount, externalAssetAmount }: _663.MsgCreatePool) => {
                         signer: string;
                         external_asset: {
                             symbol: string;
@@ -609,11 +609,11 @@ export declare namespace sifnode {
                         };
                         native_asset_amount: string;
                         external_asset_amount: string;
-                    }) => _644.MsgCreatePool;
+                    }) => _663.MsgCreatePool;
                 };
                 "/sifnode.clp.v1.MsgAddLiquidity": {
                     aminoType: string;
-                    toAmino: ({ signer, externalAsset, nativeAssetAmount, externalAssetAmount }: _644.MsgAddLiquidity) => {
+                    toAmino: ({ signer, externalAsset, nativeAssetAmount, externalAssetAmount }: _663.MsgAddLiquidity) => {
                         signer: string;
                         external_asset: {
                             symbol: string;
@@ -628,11 +628,11 @@ export declare namespace sifnode {
                         };
                         native_asset_amount: string;
                         external_asset_amount: string;
-                    }) => _644.MsgAddLiquidity;
+                    }) => _663.MsgAddLiquidity;
                 };
                 "/sifnode.clp.v1.MsgSwap": {
                     aminoType: string;
-                    toAmino: ({ signer, sentAsset, receivedAsset, sentAmount, minReceivingAmount }: _644.MsgSwap) => {
+                    toAmino: ({ signer, sentAsset, receivedAsset, sentAmount, minReceivingAmount }: _663.MsgSwap) => {
                         signer: string;
                         sent_asset: {
                             symbol: string;
@@ -653,22 +653,22 @@ export declare namespace sifnode {
                         };
                         sent_amount: string;
                         min_receiving_amount: string;
-                    }) => _644.MsgSwap;
+                    }) => _663.MsgSwap;
                 };
                 "/sifnode.clp.v1.MsgDecommissionPool": {
                     aminoType: string;
-                    toAmino: ({ signer, symbol }: _644.MsgDecommissionPool) => {
+                    toAmino: ({ signer, symbol }: _663.MsgDecommissionPool) => {
                         signer: string;
                         symbol: string;
                     };
                     fromAmino: ({ signer, symbol }: {
                         signer: string;
                         symbol: string;
-                    }) => _644.MsgDecommissionPool;
+                    }) => _663.MsgDecommissionPool;
                 };
                 "/sifnode.clp.v1.MsgUnlockLiquidityRequest": {
                     aminoType: string;
-                    toAmino: ({ signer, externalAsset, units }: _644.MsgUnlockLiquidityRequest) => {
+                    toAmino: ({ signer, externalAsset, units }: _663.MsgUnlockLiquidityRequest) => {
                         signer: string;
                         external_asset: {
                             symbol: string;
@@ -681,11 +681,11 @@ export declare namespace sifnode {
                             symbol: string;
                         };
                         units: string;
-                    }) => _644.MsgUnlockLiquidityRequest;
+                    }) => _663.MsgUnlockLiquidityRequest;
                 };
                 "/sifnode.clp.v1.MsgUpdateRewardsParamsRequest": {
                     aminoType: string;
-                    toAmino: ({ signer, liquidityRemovalLockPeriod, liquidityRemovalCancelPeriod }: _644.MsgUpdateRewardsParamsRequest) => {
+                    toAmino: ({ signer, liquidityRemovalLockPeriod, liquidityRemovalCancelPeriod }: _663.MsgUpdateRewardsParamsRequest) => {
                         signer: string;
                         liquidity_removal_lock_period: string;
                         liquidity_removal_cancel_period: string;
@@ -694,11 +694,11 @@ export declare namespace sifnode {
                         signer: string;
                         liquidity_removal_lock_period: string;
                         liquidity_removal_cancel_period: string;
-                    }) => _644.MsgUpdateRewardsParamsRequest;
+                    }) => _663.MsgUpdateRewardsParamsRequest;
                 };
                 "/sifnode.clp.v1.MsgAddRewardPeriodRequest": {
                     aminoType: string;
-                    toAmino: ({ signer, rewardPeriods }: _644.MsgAddRewardPeriodRequest) => {
+                    toAmino: ({ signer, rewardPeriods }: _663.MsgAddRewardPeriodRequest) => {
                         signer: string;
                         reward_periods: {
                             reward_period_id: string;
@@ -729,11 +729,11 @@ export declare namespace sifnode {
                             reward_period_distribute: boolean;
                             reward_period_mod: string;
                         }[];
-                    }) => _644.MsgAddRewardPeriodRequest;
+                    }) => _663.MsgAddRewardPeriodRequest;
                 };
                 "/sifnode.clp.v1.MsgModifyPmtpRates": {
                     aminoType: string;
-                    toAmino: ({ signer, blockRate, runningRate, endPolicy }: _644.MsgModifyPmtpRates) => {
+                    toAmino: ({ signer, blockRate, runningRate, endPolicy }: _663.MsgModifyPmtpRates) => {
                         signer: string;
                         block_rate: string;
                         running_rate: string;
@@ -744,11 +744,11 @@ export declare namespace sifnode {
                         block_rate: string;
                         running_rate: string;
                         end_policy: boolean;
-                    }) => _644.MsgModifyPmtpRates;
+                    }) => _663.MsgModifyPmtpRates;
                 };
                 "/sifnode.clp.v1.MsgUpdatePmtpParams": {
                     aminoType: string;
-                    toAmino: ({ signer, pmtpPeriodGovernanceRate, pmtpPeriodEpochLength, pmtpPeriodStartBlock, pmtpPeriodEndBlock }: _644.MsgUpdatePmtpParams) => {
+                    toAmino: ({ signer, pmtpPeriodGovernanceRate, pmtpPeriodEpochLength, pmtpPeriodStartBlock, pmtpPeriodEndBlock }: _663.MsgUpdatePmtpParams) => {
                         signer: string;
                         pmtp_period_governance_rate: string;
                         pmtp_period_epoch_length: string;
@@ -761,11 +761,11 @@ export declare namespace sifnode {
                         pmtp_period_epoch_length: string;
                         pmtp_period_start_block: string;
                         pmtp_period_end_block: string;
-                    }) => _644.MsgUpdatePmtpParams;
+                    }) => _663.MsgUpdatePmtpParams;
                 };
                 "/sifnode.clp.v1.MsgUpdateStakingRewardParams": {
                     aminoType: string;
-                    toAmino: ({ signer, minter, params }: _644.MsgUpdateStakingRewardParams) => {
+                    toAmino: ({ signer, minter, params }: _663.MsgUpdateStakingRewardParams) => {
                         signer: string;
                         minter: string;
                         params: string;
@@ -774,11 +774,11 @@ export declare namespace sifnode {
                         signer: string;
                         minter: string;
                         params: string;
-                    }) => _644.MsgUpdateStakingRewardParams;
+                    }) => _663.MsgUpdateStakingRewardParams;
                 };
                 "/sifnode.clp.v1.MsgSetSymmetryThreshold": {
                     aminoType: string;
-                    toAmino: ({ signer, threshold, ratio }: _644.MsgSetSymmetryThreshold) => {
+                    toAmino: ({ signer, threshold, ratio }: _663.MsgSetSymmetryThreshold) => {
                         signer: string;
                         threshold: string;
                         ratio: string;
@@ -787,11 +787,11 @@ export declare namespace sifnode {
                         signer: string;
                         threshold: string;
                         ratio: string;
-                    }) => _644.MsgSetSymmetryThreshold;
+                    }) => _663.MsgSetSymmetryThreshold;
                 };
                 "/sifnode.clp.v1.MsgCancelUnlock": {
                     aminoType: string;
-                    toAmino: ({ signer, externalAsset, units }: _644.MsgCancelUnlock) => {
+                    toAmino: ({ signer, externalAsset, units }: _663.MsgCancelUnlock) => {
                         signer: string;
                         external_asset: {
                             symbol: string;
@@ -804,11 +804,11 @@ export declare namespace sifnode {
                             symbol: string;
                         };
                         units: string;
-                    }) => _644.MsgCancelUnlock;
+                    }) => _663.MsgCancelUnlock;
                 };
                 "/sifnode.clp.v1.MsgUpdateLiquidityProtectionParams": {
                     aminoType: string;
-                    toAmino: ({ signer, maxRowanLiquidityThreshold, maxRowanLiquidityThresholdAsset, epochLength, isActive }: _644.MsgUpdateLiquidityProtectionParams) => {
+                    toAmino: ({ signer, maxRowanLiquidityThreshold, maxRowanLiquidityThresholdAsset, epochLength, isActive }: _663.MsgUpdateLiquidityProtectionParams) => {
                         signer: string;
                         max_rowan_liquidity_threshold: string;
                         max_rowan_liquidity_threshold_asset: string;
@@ -821,22 +821,22 @@ export declare namespace sifnode {
                         max_rowan_liquidity_threshold_asset: string;
                         epoch_length: string;
                         is_active: boolean;
-                    }) => _644.MsgUpdateLiquidityProtectionParams;
+                    }) => _663.MsgUpdateLiquidityProtectionParams;
                 };
                 "/sifnode.clp.v1.MsgModifyLiquidityProtectionRates": {
                     aminoType: string;
-                    toAmino: ({ signer, currentRowanLiquidityThreshold }: _644.MsgModifyLiquidityProtectionRates) => {
+                    toAmino: ({ signer, currentRowanLiquidityThreshold }: _663.MsgModifyLiquidityProtectionRates) => {
                         signer: string;
                         current_rowan_liquidity_threshold: string;
                     };
                     fromAmino: ({ signer, current_rowan_liquidity_threshold }: {
                         signer: string;
                         current_rowan_liquidity_threshold: string;
-                    }) => _644.MsgModifyLiquidityProtectionRates;
+                    }) => _663.MsgModifyLiquidityProtectionRates;
                 };
                 "/sifnode.clp.v1.MsgAddProviderDistributionPeriodRequest": {
                     aminoType: string;
-                    toAmino: ({ signer, distributionPeriods }: _644.MsgAddProviderDistributionPeriodRequest) => {
+                    toAmino: ({ signer, distributionPeriods }: _663.MsgAddProviderDistributionPeriodRequest) => {
                         signer: string;
                         distribution_periods: {
                             distribution_period_block_rate: string;
@@ -853,23 +853,23 @@ export declare namespace sifnode {
                             distribution_period_end_block: string;
                             distribution_period_mod: string;
                         }[];
-                    }) => _644.MsgAddProviderDistributionPeriodRequest;
+                    }) => _663.MsgAddProviderDistributionPeriodRequest;
                 };
             };
             Asset: {
-                encode(message: _645.Asset, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _645.Asset;
-                fromJSON(object: any): _645.Asset;
-                toJSON(message: _645.Asset): unknown;
+                encode(message: _664.Asset, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _664.Asset;
+                fromJSON(object: any): _664.Asset;
+                toJSON(message: _664.Asset): unknown;
                 fromPartial(object: {
                     symbol?: string;
-                }): _645.Asset;
+                }): _664.Asset;
             };
             LiquidityProvider: {
-                encode(message: _645.LiquidityProvider, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _645.LiquidityProvider;
-                fromJSON(object: any): _645.LiquidityProvider;
-                toJSON(message: _645.LiquidityProvider): unknown;
+                encode(message: _664.LiquidityProvider, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _664.LiquidityProvider;
+                fromJSON(object: any): _664.LiquidityProvider;
+                toJSON(message: _664.LiquidityProvider): unknown;
                 fromPartial(object: {
                     asset?: {
                         symbol?: string;
@@ -880,42 +880,42 @@ export declare namespace sifnode {
                         requestHeight?: any;
                         units?: string;
                     }[];
-                }): _645.LiquidityProvider;
+                }): _664.LiquidityProvider;
             };
             LiquidityUnlock: {
-                encode(message: _645.LiquidityUnlock, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _645.LiquidityUnlock;
-                fromJSON(object: any): _645.LiquidityUnlock;
-                toJSON(message: _645.LiquidityUnlock): unknown;
+                encode(message: _664.LiquidityUnlock, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _664.LiquidityUnlock;
+                fromJSON(object: any): _664.LiquidityUnlock;
+                toJSON(message: _664.LiquidityUnlock): unknown;
                 fromPartial(object: {
                     requestHeight?: any;
                     units?: string;
-                }): _645.LiquidityUnlock;
+                }): _664.LiquidityUnlock;
             };
             PmtpEpoch: {
-                encode(message: _645.PmtpEpoch, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _645.PmtpEpoch;
-                fromJSON(object: any): _645.PmtpEpoch;
-                toJSON(message: _645.PmtpEpoch): unknown;
+                encode(message: _664.PmtpEpoch, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _664.PmtpEpoch;
+                fromJSON(object: any): _664.PmtpEpoch;
+                toJSON(message: _664.PmtpEpoch): unknown;
                 fromPartial(object: {
                     epochCounter?: any;
                     blockCounter?: any;
-                }): _645.PmtpEpoch;
+                }): _664.PmtpEpoch;
             };
             WhiteList: {
-                encode(message: _645.WhiteList, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _645.WhiteList;
-                fromJSON(object: any): _645.WhiteList;
-                toJSON(message: _645.WhiteList): unknown;
+                encode(message: _664.WhiteList, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _664.WhiteList;
+                fromJSON(object: any): _664.WhiteList;
+                toJSON(message: _664.WhiteList): unknown;
                 fromPartial(object: {
                     validatorList?: string[];
-                }): _645.WhiteList;
+                }): _664.WhiteList;
             };
             LiquidityProviderData: {
-                encode(message: _645.LiquidityProviderData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _645.LiquidityProviderData;
-                fromJSON(object: any): _645.LiquidityProviderData;
-                toJSON(message: _645.LiquidityProviderData): unknown;
+                encode(message: _664.LiquidityProviderData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _664.LiquidityProviderData;
+                fromJSON(object: any): _664.LiquidityProviderData;
+                toJSON(message: _664.LiquidityProviderData): unknown;
                 fromPartial(object: {
                     liquidityProvider?: {
                         asset?: {
@@ -930,54 +930,54 @@ export declare namespace sifnode {
                     };
                     nativeAssetBalance?: string;
                     externalAssetBalance?: string;
-                }): _645.LiquidityProviderData;
+                }): _664.LiquidityProviderData;
             };
             EventPolicy: {
-                encode(message: _645.EventPolicy, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _645.EventPolicy;
-                fromJSON(object: any): _645.EventPolicy;
-                toJSON(message: _645.EventPolicy): unknown;
+                encode(message: _664.EventPolicy, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _664.EventPolicy;
+                fromJSON(object: any): _664.EventPolicy;
+                toJSON(message: _664.EventPolicy): unknown;
                 fromPartial(object: {
                     eventType?: string;
                     pmtpPeriodStartBlock?: string;
                     pmtpPeriodEndBlock?: string;
-                }): _645.EventPolicy;
+                }): _664.EventPolicy;
             };
             RemovalQueue: {
-                encode(message: _645.RemovalQueue, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _645.RemovalQueue;
-                fromJSON(object: any): _645.RemovalQueue;
-                toJSON(message: _645.RemovalQueue): unknown;
+                encode(message: _664.RemovalQueue, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _664.RemovalQueue;
+                fromJSON(object: any): _664.RemovalQueue;
+                toJSON(message: _664.RemovalQueue): unknown;
                 fromPartial(object: {
                     count?: any;
                     id?: any;
                     startHeight?: any;
                     totalValue?: string;
-                }): _645.RemovalQueue;
+                }): _664.RemovalQueue;
             };
             MsgUpdateStakingRewardParams: {
-                encode(message: _644.MsgUpdateStakingRewardParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgUpdateStakingRewardParams;
-                fromJSON(object: any): _644.MsgUpdateStakingRewardParams;
-                toJSON(message: _644.MsgUpdateStakingRewardParams): unknown;
+                encode(message: _663.MsgUpdateStakingRewardParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgUpdateStakingRewardParams;
+                fromJSON(object: any): _663.MsgUpdateStakingRewardParams;
+                toJSON(message: _663.MsgUpdateStakingRewardParams): unknown;
                 fromPartial(object: {
                     signer?: string;
                     minter?: string;
                     params?: string;
-                }): _644.MsgUpdateStakingRewardParams;
+                }): _663.MsgUpdateStakingRewardParams;
             };
             MsgUpdateStakingRewardParamsResponse: {
-                encode(_: _644.MsgUpdateStakingRewardParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgUpdateStakingRewardParamsResponse;
-                fromJSON(_: any): _644.MsgUpdateStakingRewardParamsResponse;
-                toJSON(_: _644.MsgUpdateStakingRewardParamsResponse): unknown;
-                fromPartial(_: {}): _644.MsgUpdateStakingRewardParamsResponse;
+                encode(_: _663.MsgUpdateStakingRewardParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgUpdateStakingRewardParamsResponse;
+                fromJSON(_: any): _663.MsgUpdateStakingRewardParamsResponse;
+                toJSON(_: _663.MsgUpdateStakingRewardParamsResponse): unknown;
+                fromPartial(_: {}): _663.MsgUpdateStakingRewardParamsResponse;
             };
             MsgRemoveLiquidity: {
-                encode(message: _644.MsgRemoveLiquidity, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgRemoveLiquidity;
-                fromJSON(object: any): _644.MsgRemoveLiquidity;
-                toJSON(message: _644.MsgRemoveLiquidity): unknown;
+                encode(message: _663.MsgRemoveLiquidity, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgRemoveLiquidity;
+                fromJSON(object: any): _663.MsgRemoveLiquidity;
+                toJSON(message: _663.MsgRemoveLiquidity): unknown;
                 fromPartial(object: {
                     signer?: string;
                     externalAsset?: {
@@ -985,40 +985,40 @@ export declare namespace sifnode {
                     };
                     wBasisPoints?: string;
                     asymmetry?: string;
-                }): _644.MsgRemoveLiquidity;
+                }): _663.MsgRemoveLiquidity;
             };
             MsgRemoveLiquidityResponse: {
-                encode(_: _644.MsgRemoveLiquidityResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgRemoveLiquidityResponse;
-                fromJSON(_: any): _644.MsgRemoveLiquidityResponse;
-                toJSON(_: _644.MsgRemoveLiquidityResponse): unknown;
-                fromPartial(_: {}): _644.MsgRemoveLiquidityResponse;
+                encode(_: _663.MsgRemoveLiquidityResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgRemoveLiquidityResponse;
+                fromJSON(_: any): _663.MsgRemoveLiquidityResponse;
+                toJSON(_: _663.MsgRemoveLiquidityResponse): unknown;
+                fromPartial(_: {}): _663.MsgRemoveLiquidityResponse;
             };
             MsgRemoveLiquidityUnits: {
-                encode(message: _644.MsgRemoveLiquidityUnits, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgRemoveLiquidityUnits;
-                fromJSON(object: any): _644.MsgRemoveLiquidityUnits;
-                toJSON(message: _644.MsgRemoveLiquidityUnits): unknown;
+                encode(message: _663.MsgRemoveLiquidityUnits, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgRemoveLiquidityUnits;
+                fromJSON(object: any): _663.MsgRemoveLiquidityUnits;
+                toJSON(message: _663.MsgRemoveLiquidityUnits): unknown;
                 fromPartial(object: {
                     signer?: string;
                     externalAsset?: {
                         symbol?: string;
                     };
                     withdrawUnits?: string;
-                }): _644.MsgRemoveLiquidityUnits;
+                }): _663.MsgRemoveLiquidityUnits;
             };
             MsgRemoveLiquidityUnitsResponse: {
-                encode(_: _644.MsgRemoveLiquidityUnitsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgRemoveLiquidityUnitsResponse;
-                fromJSON(_: any): _644.MsgRemoveLiquidityUnitsResponse;
-                toJSON(_: _644.MsgRemoveLiquidityUnitsResponse): unknown;
-                fromPartial(_: {}): _644.MsgRemoveLiquidityUnitsResponse;
+                encode(_: _663.MsgRemoveLiquidityUnitsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgRemoveLiquidityUnitsResponse;
+                fromJSON(_: any): _663.MsgRemoveLiquidityUnitsResponse;
+                toJSON(_: _663.MsgRemoveLiquidityUnitsResponse): unknown;
+                fromPartial(_: {}): _663.MsgRemoveLiquidityUnitsResponse;
             };
             MsgCreatePool: {
-                encode(message: _644.MsgCreatePool, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgCreatePool;
-                fromJSON(object: any): _644.MsgCreatePool;
-                toJSON(message: _644.MsgCreatePool): unknown;
+                encode(message: _663.MsgCreatePool, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgCreatePool;
+                fromJSON(object: any): _663.MsgCreatePool;
+                toJSON(message: _663.MsgCreatePool): unknown;
                 fromPartial(object: {
                     signer?: string;
                     externalAsset?: {
@@ -1026,20 +1026,20 @@ export declare namespace sifnode {
                     };
                     nativeAssetAmount?: string;
                     externalAssetAmount?: string;
-                }): _644.MsgCreatePool;
+                }): _663.MsgCreatePool;
             };
             MsgCreatePoolResponse: {
-                encode(_: _644.MsgCreatePoolResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgCreatePoolResponse;
-                fromJSON(_: any): _644.MsgCreatePoolResponse;
-                toJSON(_: _644.MsgCreatePoolResponse): unknown;
-                fromPartial(_: {}): _644.MsgCreatePoolResponse;
+                encode(_: _663.MsgCreatePoolResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgCreatePoolResponse;
+                fromJSON(_: any): _663.MsgCreatePoolResponse;
+                toJSON(_: _663.MsgCreatePoolResponse): unknown;
+                fromPartial(_: {}): _663.MsgCreatePoolResponse;
             };
             MsgAddLiquidity: {
-                encode(message: _644.MsgAddLiquidity, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgAddLiquidity;
-                fromJSON(object: any): _644.MsgAddLiquidity;
-                toJSON(message: _644.MsgAddLiquidity): unknown;
+                encode(message: _663.MsgAddLiquidity, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgAddLiquidity;
+                fromJSON(object: any): _663.MsgAddLiquidity;
+                toJSON(message: _663.MsgAddLiquidity): unknown;
                 fromPartial(object: {
                     signer?: string;
                     externalAsset?: {
@@ -1047,59 +1047,59 @@ export declare namespace sifnode {
                     };
                     nativeAssetAmount?: string;
                     externalAssetAmount?: string;
-                }): _644.MsgAddLiquidity;
+                }): _663.MsgAddLiquidity;
             };
             MsgAddLiquidityResponse: {
-                encode(_: _644.MsgAddLiquidityResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgAddLiquidityResponse;
-                fromJSON(_: any): _644.MsgAddLiquidityResponse;
-                toJSON(_: _644.MsgAddLiquidityResponse): unknown;
-                fromPartial(_: {}): _644.MsgAddLiquidityResponse;
+                encode(_: _663.MsgAddLiquidityResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgAddLiquidityResponse;
+                fromJSON(_: any): _663.MsgAddLiquidityResponse;
+                toJSON(_: _663.MsgAddLiquidityResponse): unknown;
+                fromPartial(_: {}): _663.MsgAddLiquidityResponse;
             };
             MsgModifyPmtpRates: {
-                encode(message: _644.MsgModifyPmtpRates, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgModifyPmtpRates;
-                fromJSON(object: any): _644.MsgModifyPmtpRates;
-                toJSON(message: _644.MsgModifyPmtpRates): unknown;
+                encode(message: _663.MsgModifyPmtpRates, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgModifyPmtpRates;
+                fromJSON(object: any): _663.MsgModifyPmtpRates;
+                toJSON(message: _663.MsgModifyPmtpRates): unknown;
                 fromPartial(object: {
                     signer?: string;
                     blockRate?: string;
                     runningRate?: string;
                     endPolicy?: boolean;
-                }): _644.MsgModifyPmtpRates;
+                }): _663.MsgModifyPmtpRates;
             };
             MsgModifyPmtpRatesResponse: {
-                encode(_: _644.MsgModifyPmtpRatesResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgModifyPmtpRatesResponse;
-                fromJSON(_: any): _644.MsgModifyPmtpRatesResponse;
-                toJSON(_: _644.MsgModifyPmtpRatesResponse): unknown;
-                fromPartial(_: {}): _644.MsgModifyPmtpRatesResponse;
+                encode(_: _663.MsgModifyPmtpRatesResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgModifyPmtpRatesResponse;
+                fromJSON(_: any): _663.MsgModifyPmtpRatesResponse;
+                toJSON(_: _663.MsgModifyPmtpRatesResponse): unknown;
+                fromPartial(_: {}): _663.MsgModifyPmtpRatesResponse;
             };
             MsgUpdatePmtpParams: {
-                encode(message: _644.MsgUpdatePmtpParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgUpdatePmtpParams;
-                fromJSON(object: any): _644.MsgUpdatePmtpParams;
-                toJSON(message: _644.MsgUpdatePmtpParams): unknown;
+                encode(message: _663.MsgUpdatePmtpParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgUpdatePmtpParams;
+                fromJSON(object: any): _663.MsgUpdatePmtpParams;
+                toJSON(message: _663.MsgUpdatePmtpParams): unknown;
                 fromPartial(object: {
                     signer?: string;
                     pmtpPeriodGovernanceRate?: string;
                     pmtpPeriodEpochLength?: any;
                     pmtpPeriodStartBlock?: any;
                     pmtpPeriodEndBlock?: any;
-                }): _644.MsgUpdatePmtpParams;
+                }): _663.MsgUpdatePmtpParams;
             };
             MsgUpdatePmtpParamsResponse: {
-                encode(_: _644.MsgUpdatePmtpParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgUpdatePmtpParamsResponse;
-                fromJSON(_: any): _644.MsgUpdatePmtpParamsResponse;
-                toJSON(_: _644.MsgUpdatePmtpParamsResponse): unknown;
-                fromPartial(_: {}): _644.MsgUpdatePmtpParamsResponse;
+                encode(_: _663.MsgUpdatePmtpParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgUpdatePmtpParamsResponse;
+                fromJSON(_: any): _663.MsgUpdatePmtpParamsResponse;
+                toJSON(_: _663.MsgUpdatePmtpParamsResponse): unknown;
+                fromPartial(_: {}): _663.MsgUpdatePmtpParamsResponse;
             };
             MsgSwap: {
-                encode(message: _644.MsgSwap, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgSwap;
-                fromJSON(object: any): _644.MsgSwap;
-                toJSON(message: _644.MsgSwap): unknown;
+                encode(message: _663.MsgSwap, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgSwap;
+                fromJSON(object: any): _663.MsgSwap;
+                toJSON(message: _663.MsgSwap): unknown;
                 fromPartial(object: {
                     signer?: string;
                     sentAsset?: {
@@ -1110,75 +1110,75 @@ export declare namespace sifnode {
                     };
                     sentAmount?: string;
                     minReceivingAmount?: string;
-                }): _644.MsgSwap;
+                }): _663.MsgSwap;
             };
             MsgSwapResponse: {
-                encode(_: _644.MsgSwapResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgSwapResponse;
-                fromJSON(_: any): _644.MsgSwapResponse;
-                toJSON(_: _644.MsgSwapResponse): unknown;
-                fromPartial(_: {}): _644.MsgSwapResponse;
+                encode(_: _663.MsgSwapResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgSwapResponse;
+                fromJSON(_: any): _663.MsgSwapResponse;
+                toJSON(_: _663.MsgSwapResponse): unknown;
+                fromPartial(_: {}): _663.MsgSwapResponse;
             };
             MsgDecommissionPool: {
-                encode(message: _644.MsgDecommissionPool, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgDecommissionPool;
-                fromJSON(object: any): _644.MsgDecommissionPool;
-                toJSON(message: _644.MsgDecommissionPool): unknown;
+                encode(message: _663.MsgDecommissionPool, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgDecommissionPool;
+                fromJSON(object: any): _663.MsgDecommissionPool;
+                toJSON(message: _663.MsgDecommissionPool): unknown;
                 fromPartial(object: {
                     signer?: string;
                     symbol?: string;
-                }): _644.MsgDecommissionPool;
+                }): _663.MsgDecommissionPool;
             };
             MsgDecommissionPoolResponse: {
-                encode(_: _644.MsgDecommissionPoolResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgDecommissionPoolResponse;
-                fromJSON(_: any): _644.MsgDecommissionPoolResponse;
-                toJSON(_: _644.MsgDecommissionPoolResponse): unknown;
-                fromPartial(_: {}): _644.MsgDecommissionPoolResponse;
+                encode(_: _663.MsgDecommissionPoolResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgDecommissionPoolResponse;
+                fromJSON(_: any): _663.MsgDecommissionPoolResponse;
+                toJSON(_: _663.MsgDecommissionPoolResponse): unknown;
+                fromPartial(_: {}): _663.MsgDecommissionPoolResponse;
             };
             MsgUnlockLiquidityRequest: {
-                encode(message: _644.MsgUnlockLiquidityRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgUnlockLiquidityRequest;
-                fromJSON(object: any): _644.MsgUnlockLiquidityRequest;
-                toJSON(message: _644.MsgUnlockLiquidityRequest): unknown;
+                encode(message: _663.MsgUnlockLiquidityRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgUnlockLiquidityRequest;
+                fromJSON(object: any): _663.MsgUnlockLiquidityRequest;
+                toJSON(message: _663.MsgUnlockLiquidityRequest): unknown;
                 fromPartial(object: {
                     signer?: string;
                     externalAsset?: {
                         symbol?: string;
                     };
                     units?: string;
-                }): _644.MsgUnlockLiquidityRequest;
+                }): _663.MsgUnlockLiquidityRequest;
             };
             MsgUnlockLiquidityResponse: {
-                encode(_: _644.MsgUnlockLiquidityResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgUnlockLiquidityResponse;
-                fromJSON(_: any): _644.MsgUnlockLiquidityResponse;
-                toJSON(_: _644.MsgUnlockLiquidityResponse): unknown;
-                fromPartial(_: {}): _644.MsgUnlockLiquidityResponse;
+                encode(_: _663.MsgUnlockLiquidityResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgUnlockLiquidityResponse;
+                fromJSON(_: any): _663.MsgUnlockLiquidityResponse;
+                toJSON(_: _663.MsgUnlockLiquidityResponse): unknown;
+                fromPartial(_: {}): _663.MsgUnlockLiquidityResponse;
             };
             MsgUpdateRewardsParamsRequest: {
-                encode(message: _644.MsgUpdateRewardsParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgUpdateRewardsParamsRequest;
-                fromJSON(object: any): _644.MsgUpdateRewardsParamsRequest;
-                toJSON(message: _644.MsgUpdateRewardsParamsRequest): unknown;
+                encode(message: _663.MsgUpdateRewardsParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgUpdateRewardsParamsRequest;
+                fromJSON(object: any): _663.MsgUpdateRewardsParamsRequest;
+                toJSON(message: _663.MsgUpdateRewardsParamsRequest): unknown;
                 fromPartial(object: {
                     signer?: string;
                     liquidityRemovalLockPeriod?: any;
                     liquidityRemovalCancelPeriod?: any;
-                }): _644.MsgUpdateRewardsParamsRequest;
+                }): _663.MsgUpdateRewardsParamsRequest;
             };
             MsgUpdateRewardsParamsResponse: {
-                encode(_: _644.MsgUpdateRewardsParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgUpdateRewardsParamsResponse;
-                fromJSON(_: any): _644.MsgUpdateRewardsParamsResponse;
-                toJSON(_: _644.MsgUpdateRewardsParamsResponse): unknown;
-                fromPartial(_: {}): _644.MsgUpdateRewardsParamsResponse;
+                encode(_: _663.MsgUpdateRewardsParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgUpdateRewardsParamsResponse;
+                fromJSON(_: any): _663.MsgUpdateRewardsParamsResponse;
+                toJSON(_: _663.MsgUpdateRewardsParamsResponse): unknown;
+                fromPartial(_: {}): _663.MsgUpdateRewardsParamsResponse;
             };
             MsgAddRewardPeriodRequest: {
-                encode(message: _644.MsgAddRewardPeriodRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgAddRewardPeriodRequest;
-                fromJSON(object: any): _644.MsgAddRewardPeriodRequest;
-                toJSON(message: _644.MsgAddRewardPeriodRequest): unknown;
+                encode(message: _663.MsgAddRewardPeriodRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgAddRewardPeriodRequest;
+                fromJSON(object: any): _663.MsgAddRewardPeriodRequest;
+                toJSON(message: _663.MsgAddRewardPeriodRequest): unknown;
                 fromPartial(object: {
                     signer?: string;
                     rewardPeriods?: {
@@ -1194,58 +1194,58 @@ export declare namespace sifnode {
                         rewardPeriodDistribute?: boolean;
                         rewardPeriodMod?: any;
                     }[];
-                }): _644.MsgAddRewardPeriodRequest;
+                }): _663.MsgAddRewardPeriodRequest;
             };
             MsgAddRewardPeriodResponse: {
-                encode(_: _644.MsgAddRewardPeriodResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgAddRewardPeriodResponse;
-                fromJSON(_: any): _644.MsgAddRewardPeriodResponse;
-                toJSON(_: _644.MsgAddRewardPeriodResponse): unknown;
-                fromPartial(_: {}): _644.MsgAddRewardPeriodResponse;
+                encode(_: _663.MsgAddRewardPeriodResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgAddRewardPeriodResponse;
+                fromJSON(_: any): _663.MsgAddRewardPeriodResponse;
+                toJSON(_: _663.MsgAddRewardPeriodResponse): unknown;
+                fromPartial(_: {}): _663.MsgAddRewardPeriodResponse;
             };
             MsgSetSymmetryThreshold: {
-                encode(message: _644.MsgSetSymmetryThreshold, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgSetSymmetryThreshold;
-                fromJSON(object: any): _644.MsgSetSymmetryThreshold;
-                toJSON(message: _644.MsgSetSymmetryThreshold): unknown;
+                encode(message: _663.MsgSetSymmetryThreshold, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgSetSymmetryThreshold;
+                fromJSON(object: any): _663.MsgSetSymmetryThreshold;
+                toJSON(message: _663.MsgSetSymmetryThreshold): unknown;
                 fromPartial(object: {
                     signer?: string;
                     threshold?: string;
                     ratio?: string;
-                }): _644.MsgSetSymmetryThreshold;
+                }): _663.MsgSetSymmetryThreshold;
             };
             MsgSetSymmetryThresholdResponse: {
-                encode(_: _644.MsgSetSymmetryThresholdResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgSetSymmetryThresholdResponse;
-                fromJSON(_: any): _644.MsgSetSymmetryThresholdResponse;
-                toJSON(_: _644.MsgSetSymmetryThresholdResponse): unknown;
-                fromPartial(_: {}): _644.MsgSetSymmetryThresholdResponse;
+                encode(_: _663.MsgSetSymmetryThresholdResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgSetSymmetryThresholdResponse;
+                fromJSON(_: any): _663.MsgSetSymmetryThresholdResponse;
+                toJSON(_: _663.MsgSetSymmetryThresholdResponse): unknown;
+                fromPartial(_: {}): _663.MsgSetSymmetryThresholdResponse;
             };
             MsgCancelUnlock: {
-                encode(message: _644.MsgCancelUnlock, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgCancelUnlock;
-                fromJSON(object: any): _644.MsgCancelUnlock;
-                toJSON(message: _644.MsgCancelUnlock): unknown;
+                encode(message: _663.MsgCancelUnlock, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgCancelUnlock;
+                fromJSON(object: any): _663.MsgCancelUnlock;
+                toJSON(message: _663.MsgCancelUnlock): unknown;
                 fromPartial(object: {
                     signer?: string;
                     externalAsset?: {
                         symbol?: string;
                     };
                     units?: string;
-                }): _644.MsgCancelUnlock;
+                }): _663.MsgCancelUnlock;
             };
             MsgCancelUnlockResponse: {
-                encode(_: _644.MsgCancelUnlockResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgCancelUnlockResponse;
-                fromJSON(_: any): _644.MsgCancelUnlockResponse;
-                toJSON(_: _644.MsgCancelUnlockResponse): unknown;
-                fromPartial(_: {}): _644.MsgCancelUnlockResponse;
+                encode(_: _663.MsgCancelUnlockResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgCancelUnlockResponse;
+                fromJSON(_: any): _663.MsgCancelUnlockResponse;
+                toJSON(_: _663.MsgCancelUnlockResponse): unknown;
+                fromPartial(_: {}): _663.MsgCancelUnlockResponse;
             };
             RemovalRequest: {
-                encode(message: _644.RemovalRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.RemovalRequest;
-                fromJSON(object: any): _644.RemovalRequest;
-                toJSON(message: _644.RemovalRequest): unknown;
+                encode(message: _663.RemovalRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.RemovalRequest;
+                fromJSON(object: any): _663.RemovalRequest;
+                toJSON(message: _663.RemovalRequest): unknown;
                 fromPartial(object: {
                     id?: any;
                     value?: string;
@@ -1257,50 +1257,50 @@ export declare namespace sifnode {
                         wBasisPoints?: string;
                         asymmetry?: string;
                     };
-                }): _644.RemovalRequest;
+                }): _663.RemovalRequest;
             };
             MsgModifyLiquidityProtectionRates: {
-                encode(message: _644.MsgModifyLiquidityProtectionRates, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgModifyLiquidityProtectionRates;
-                fromJSON(object: any): _644.MsgModifyLiquidityProtectionRates;
-                toJSON(message: _644.MsgModifyLiquidityProtectionRates): unknown;
+                encode(message: _663.MsgModifyLiquidityProtectionRates, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgModifyLiquidityProtectionRates;
+                fromJSON(object: any): _663.MsgModifyLiquidityProtectionRates;
+                toJSON(message: _663.MsgModifyLiquidityProtectionRates): unknown;
                 fromPartial(object: {
                     signer?: string;
                     currentRowanLiquidityThreshold?: string;
-                }): _644.MsgModifyLiquidityProtectionRates;
+                }): _663.MsgModifyLiquidityProtectionRates;
             };
             MsgModifyLiquidityProtectionRatesResponse: {
-                encode(_: _644.MsgModifyLiquidityProtectionRatesResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgModifyLiquidityProtectionRatesResponse;
-                fromJSON(_: any): _644.MsgModifyLiquidityProtectionRatesResponse;
-                toJSON(_: _644.MsgModifyLiquidityProtectionRatesResponse): unknown;
-                fromPartial(_: {}): _644.MsgModifyLiquidityProtectionRatesResponse;
+                encode(_: _663.MsgModifyLiquidityProtectionRatesResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgModifyLiquidityProtectionRatesResponse;
+                fromJSON(_: any): _663.MsgModifyLiquidityProtectionRatesResponse;
+                toJSON(_: _663.MsgModifyLiquidityProtectionRatesResponse): unknown;
+                fromPartial(_: {}): _663.MsgModifyLiquidityProtectionRatesResponse;
             };
             MsgUpdateLiquidityProtectionParams: {
-                encode(message: _644.MsgUpdateLiquidityProtectionParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgUpdateLiquidityProtectionParams;
-                fromJSON(object: any): _644.MsgUpdateLiquidityProtectionParams;
-                toJSON(message: _644.MsgUpdateLiquidityProtectionParams): unknown;
+                encode(message: _663.MsgUpdateLiquidityProtectionParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgUpdateLiquidityProtectionParams;
+                fromJSON(object: any): _663.MsgUpdateLiquidityProtectionParams;
+                toJSON(message: _663.MsgUpdateLiquidityProtectionParams): unknown;
                 fromPartial(object: {
                     signer?: string;
                     maxRowanLiquidityThreshold?: string;
                     maxRowanLiquidityThresholdAsset?: string;
                     epochLength?: any;
                     isActive?: boolean;
-                }): _644.MsgUpdateLiquidityProtectionParams;
+                }): _663.MsgUpdateLiquidityProtectionParams;
             };
             MsgUpdateLiquidityProtectionParamsResponse: {
-                encode(_: _644.MsgUpdateLiquidityProtectionParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgUpdateLiquidityProtectionParamsResponse;
-                fromJSON(_: any): _644.MsgUpdateLiquidityProtectionParamsResponse;
-                toJSON(_: _644.MsgUpdateLiquidityProtectionParamsResponse): unknown;
-                fromPartial(_: {}): _644.MsgUpdateLiquidityProtectionParamsResponse;
+                encode(_: _663.MsgUpdateLiquidityProtectionParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgUpdateLiquidityProtectionParamsResponse;
+                fromJSON(_: any): _663.MsgUpdateLiquidityProtectionParamsResponse;
+                toJSON(_: _663.MsgUpdateLiquidityProtectionParamsResponse): unknown;
+                fromPartial(_: {}): _663.MsgUpdateLiquidityProtectionParamsResponse;
             };
             MsgAddProviderDistributionPeriodRequest: {
-                encode(message: _644.MsgAddProviderDistributionPeriodRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgAddProviderDistributionPeriodRequest;
-                fromJSON(object: any): _644.MsgAddProviderDistributionPeriodRequest;
-                toJSON(message: _644.MsgAddProviderDistributionPeriodRequest): unknown;
+                encode(message: _663.MsgAddProviderDistributionPeriodRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgAddProviderDistributionPeriodRequest;
+                fromJSON(object: any): _663.MsgAddProviderDistributionPeriodRequest;
+                toJSON(message: _663.MsgAddProviderDistributionPeriodRequest): unknown;
                 fromPartial(object: {
                     signer?: string;
                     distributionPeriods?: {
@@ -1309,29 +1309,29 @@ export declare namespace sifnode {
                         distributionPeriodEndBlock?: any;
                         distributionPeriodMod?: any;
                     }[];
-                }): _644.MsgAddProviderDistributionPeriodRequest;
+                }): _663.MsgAddProviderDistributionPeriodRequest;
             };
             MsgAddProviderDistributionPeriodResponse: {
-                encode(_: _644.MsgAddProviderDistributionPeriodResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.MsgAddProviderDistributionPeriodResponse;
-                fromJSON(_: any): _644.MsgAddProviderDistributionPeriodResponse;
-                toJSON(_: _644.MsgAddProviderDistributionPeriodResponse): unknown;
-                fromPartial(_: {}): _644.MsgAddProviderDistributionPeriodResponse;
+                encode(_: _663.MsgAddProviderDistributionPeriodResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.MsgAddProviderDistributionPeriodResponse;
+                fromJSON(_: any): _663.MsgAddProviderDistributionPeriodResponse;
+                toJSON(_: _663.MsgAddProviderDistributionPeriodResponse): unknown;
+                fromPartial(_: {}): _663.MsgAddProviderDistributionPeriodResponse;
             };
             PoolReq: {
-                encode(message: _643.PoolReq, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.PoolReq;
-                fromJSON(object: any): _643.PoolReq;
-                toJSON(message: _643.PoolReq): unknown;
+                encode(message: _662.PoolReq, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.PoolReq;
+                fromJSON(object: any): _662.PoolReq;
+                toJSON(message: _662.PoolReq): unknown;
                 fromPartial(object: {
                     symbol?: string;
-                }): _643.PoolReq;
+                }): _662.PoolReq;
             };
             PoolRes: {
-                encode(message: _643.PoolRes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.PoolRes;
-                fromJSON(object: any): _643.PoolRes;
-                toJSON(message: _643.PoolRes): unknown;
+                encode(message: _662.PoolRes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.PoolRes;
+                fromJSON(object: any): _662.PoolRes;
+                toJSON(message: _662.PoolRes): unknown;
                 fromPartial(object: {
                     pool?: {
                         externalAsset?: {
@@ -1353,13 +1353,13 @@ export declare namespace sifnode {
                     };
                     clpModuleAddress?: string;
                     height?: any;
-                }): _643.PoolRes;
+                }): _662.PoolRes;
             };
             PoolsReq: {
-                encode(message: _643.PoolsReq, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.PoolsReq;
-                fromJSON(object: any): _643.PoolsReq;
-                toJSON(message: _643.PoolsReq): unknown;
+                encode(message: _662.PoolsReq, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.PoolsReq;
+                fromJSON(object: any): _662.PoolsReq;
+                toJSON(message: _662.PoolsReq): unknown;
                 fromPartial(object: {
                     pagination?: {
                         key?: Uint8Array;
@@ -1368,13 +1368,13 @@ export declare namespace sifnode {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _643.PoolsReq;
+                }): _662.PoolsReq;
             };
             PoolsRes: {
-                encode(message: _643.PoolsRes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.PoolsRes;
-                fromJSON(object: any): _643.PoolsRes;
-                toJSON(message: _643.PoolsRes): unknown;
+                encode(message: _662.PoolsRes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.PoolsRes;
+                fromJSON(object: any): _662.PoolsRes;
+                toJSON(message: _662.PoolsRes): unknown;
                 fromPartial(object: {
                     pools?: {
                         externalAsset?: {
@@ -1400,23 +1400,23 @@ export declare namespace sifnode {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _643.PoolsRes;
+                }): _662.PoolsRes;
             };
             LiquidityProviderReq: {
-                encode(message: _643.LiquidityProviderReq, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.LiquidityProviderReq;
-                fromJSON(object: any): _643.LiquidityProviderReq;
-                toJSON(message: _643.LiquidityProviderReq): unknown;
+                encode(message: _662.LiquidityProviderReq, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.LiquidityProviderReq;
+                fromJSON(object: any): _662.LiquidityProviderReq;
+                toJSON(message: _662.LiquidityProviderReq): unknown;
                 fromPartial(object: {
                     symbol?: string;
                     lpAddress?: string;
-                }): _643.LiquidityProviderReq;
+                }): _662.LiquidityProviderReq;
             };
             LiquidityProviderRes: {
-                encode(message: _643.LiquidityProviderRes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.LiquidityProviderRes;
-                fromJSON(object: any): _643.LiquidityProviderRes;
-                toJSON(message: _643.LiquidityProviderRes): unknown;
+                encode(message: _662.LiquidityProviderRes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.LiquidityProviderRes;
+                fromJSON(object: any): _662.LiquidityProviderRes;
+                toJSON(message: _662.LiquidityProviderRes): unknown;
                 fromPartial(object: {
                     liquidityProvider?: {
                         asset?: {
@@ -1432,13 +1432,13 @@ export declare namespace sifnode {
                     nativeAssetBalance?: string;
                     externalAssetBalance?: string;
                     height?: any;
-                }): _643.LiquidityProviderRes;
+                }): _662.LiquidityProviderRes;
             };
             AssetListReq: {
-                encode(message: _643.AssetListReq, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.AssetListReq;
-                fromJSON(object: any): _643.AssetListReq;
-                toJSON(message: _643.AssetListReq): unknown;
+                encode(message: _662.AssetListReq, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.AssetListReq;
+                fromJSON(object: any): _662.AssetListReq;
+                toJSON(message: _662.AssetListReq): unknown;
                 fromPartial(object: {
                     lpAddress?: string;
                     pagination?: {
@@ -1448,13 +1448,13 @@ export declare namespace sifnode {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _643.AssetListReq;
+                }): _662.AssetListReq;
             };
             AssetListRes: {
-                encode(message: _643.AssetListRes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.AssetListRes;
-                fromJSON(object: any): _643.AssetListRes;
-                toJSON(message: _643.AssetListRes): unknown;
+                encode(message: _662.AssetListRes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.AssetListRes;
+                fromJSON(object: any): _662.AssetListRes;
+                toJSON(message: _662.AssetListRes): unknown;
                 fromPartial(object: {
                     assets?: {
                         symbol?: string;
@@ -1464,13 +1464,13 @@ export declare namespace sifnode {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _643.AssetListRes;
+                }): _662.AssetListRes;
             };
             LiquidityProviderDataReq: {
-                encode(message: _643.LiquidityProviderDataReq, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.LiquidityProviderDataReq;
-                fromJSON(object: any): _643.LiquidityProviderDataReq;
-                toJSON(message: _643.LiquidityProviderDataReq): unknown;
+                encode(message: _662.LiquidityProviderDataReq, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.LiquidityProviderDataReq;
+                fromJSON(object: any): _662.LiquidityProviderDataReq;
+                toJSON(message: _662.LiquidityProviderDataReq): unknown;
                 fromPartial(object: {
                     lpAddress?: string;
                     pagination?: {
@@ -1480,13 +1480,13 @@ export declare namespace sifnode {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _643.LiquidityProviderDataReq;
+                }): _662.LiquidityProviderDataReq;
             };
             LiquidityProviderDataRes: {
-                encode(message: _643.LiquidityProviderDataRes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.LiquidityProviderDataRes;
-                fromJSON(object: any): _643.LiquidityProviderDataRes;
-                toJSON(message: _643.LiquidityProviderDataRes): unknown;
+                encode(message: _662.LiquidityProviderDataRes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.LiquidityProviderDataRes;
+                fromJSON(object: any): _662.LiquidityProviderDataRes;
+                toJSON(message: _662.LiquidityProviderDataRes): unknown;
                 fromPartial(object: {
                     liquidityProviderData?: {
                         liquidityProvider?: {
@@ -1511,13 +1511,13 @@ export declare namespace sifnode {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _643.LiquidityProviderDataRes;
+                }): _662.LiquidityProviderDataRes;
             };
             LiquidityProviderListReq: {
-                encode(message: _643.LiquidityProviderListReq, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.LiquidityProviderListReq;
-                fromJSON(object: any): _643.LiquidityProviderListReq;
-                toJSON(message: _643.LiquidityProviderListReq): unknown;
+                encode(message: _662.LiquidityProviderListReq, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.LiquidityProviderListReq;
+                fromJSON(object: any): _662.LiquidityProviderListReq;
+                toJSON(message: _662.LiquidityProviderListReq): unknown;
                 fromPartial(object: {
                     symbol?: string;
                     pagination?: {
@@ -1527,13 +1527,13 @@ export declare namespace sifnode {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _643.LiquidityProviderListReq;
+                }): _662.LiquidityProviderListReq;
             };
             LiquidityProviderListRes: {
-                encode(message: _643.LiquidityProviderListRes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.LiquidityProviderListRes;
-                fromJSON(object: any): _643.LiquidityProviderListRes;
-                toJSON(message: _643.LiquidityProviderListRes): unknown;
+                encode(message: _662.LiquidityProviderListRes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.LiquidityProviderListRes;
+                fromJSON(object: any): _662.LiquidityProviderListRes;
+                toJSON(message: _662.LiquidityProviderListRes): unknown;
                 fromPartial(object: {
                     liquidityProviders?: {
                         asset?: {
@@ -1551,13 +1551,13 @@ export declare namespace sifnode {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _643.LiquidityProviderListRes;
+                }): _662.LiquidityProviderListRes;
             };
             LiquidityProvidersReq: {
-                encode(message: _643.LiquidityProvidersReq, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.LiquidityProvidersReq;
-                fromJSON(object: any): _643.LiquidityProvidersReq;
-                toJSON(message: _643.LiquidityProvidersReq): unknown;
+                encode(message: _662.LiquidityProvidersReq, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.LiquidityProvidersReq;
+                fromJSON(object: any): _662.LiquidityProvidersReq;
+                toJSON(message: _662.LiquidityProvidersReq): unknown;
                 fromPartial(object: {
                     pagination?: {
                         key?: Uint8Array;
@@ -1566,13 +1566,13 @@ export declare namespace sifnode {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _643.LiquidityProvidersReq;
+                }): _662.LiquidityProvidersReq;
             };
             LiquidityProvidersRes: {
-                encode(message: _643.LiquidityProvidersRes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.LiquidityProvidersRes;
-                fromJSON(object: any): _643.LiquidityProvidersRes;
-                toJSON(message: _643.LiquidityProvidersRes): unknown;
+                encode(message: _662.LiquidityProvidersRes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.LiquidityProvidersRes;
+                fromJSON(object: any): _662.LiquidityProvidersRes;
+                toJSON(message: _662.LiquidityProvidersRes): unknown;
                 fromPartial(object: {
                     liquidityProviders?: {
                         asset?: {
@@ -1590,20 +1590,20 @@ export declare namespace sifnode {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _643.LiquidityProvidersRes;
+                }): _662.LiquidityProvidersRes;
             };
             ParamsReq: {
-                encode(_: _643.ParamsReq, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.ParamsReq;
-                fromJSON(_: any): _643.ParamsReq;
-                toJSON(_: _643.ParamsReq): unknown;
-                fromPartial(_: {}): _643.ParamsReq;
+                encode(_: _662.ParamsReq, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.ParamsReq;
+                fromJSON(_: any): _662.ParamsReq;
+                toJSON(_: _662.ParamsReq): unknown;
+                fromPartial(_: {}): _662.ParamsReq;
             };
             ParamsRes: {
-                encode(message: _643.ParamsRes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.ParamsRes;
-                fromJSON(object: any): _643.ParamsRes;
-                toJSON(message: _643.ParamsRes): unknown;
+                encode(message: _662.ParamsRes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.ParamsRes;
+                fromJSON(object: any): _662.ParamsRes;
+                toJSON(message: _662.ParamsRes): unknown;
                 fromPartial(object: {
                     params?: {
                         minCreatePoolThreshold?: any;
@@ -1611,20 +1611,20 @@ export declare namespace sifnode {
                     };
                     symmetryThreshold?: string;
                     symmetryRatioThreshold?: string;
-                }): _643.ParamsRes;
+                }): _662.ParamsRes;
             };
             RewardParamsReq: {
-                encode(_: _643.RewardParamsReq, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.RewardParamsReq;
-                fromJSON(_: any): _643.RewardParamsReq;
-                toJSON(_: _643.RewardParamsReq): unknown;
-                fromPartial(_: {}): _643.RewardParamsReq;
+                encode(_: _662.RewardParamsReq, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.RewardParamsReq;
+                fromJSON(_: any): _662.RewardParamsReq;
+                toJSON(_: _662.RewardParamsReq): unknown;
+                fromPartial(_: {}): _662.RewardParamsReq;
             };
             RewardParamsRes: {
-                encode(message: _643.RewardParamsRes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.RewardParamsRes;
-                fromJSON(object: any): _643.RewardParamsRes;
-                toJSON(message: _643.RewardParamsRes): unknown;
+                encode(message: _662.RewardParamsRes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.RewardParamsRes;
+                fromJSON(object: any): _662.RewardParamsRes;
+                toJSON(message: _662.RewardParamsRes): unknown;
                 fromPartial(object: {
                     params?: {
                         liquidityRemovalLockPeriod?: any;
@@ -1644,20 +1644,20 @@ export declare namespace sifnode {
                         }[];
                         rewardPeriodStartTime?: string;
                     };
-                }): _643.RewardParamsRes;
+                }): _662.RewardParamsRes;
             };
             PmtpParamsReq: {
-                encode(_: _643.PmtpParamsReq, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.PmtpParamsReq;
-                fromJSON(_: any): _643.PmtpParamsReq;
-                toJSON(_: _643.PmtpParamsReq): unknown;
-                fromPartial(_: {}): _643.PmtpParamsReq;
+                encode(_: _662.PmtpParamsReq, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.PmtpParamsReq;
+                fromJSON(_: any): _662.PmtpParamsReq;
+                toJSON(_: _662.PmtpParamsReq): unknown;
+                fromPartial(_: {}): _662.PmtpParamsReq;
             };
             PmtpParamsRes: {
-                encode(message: _643.PmtpParamsRes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.PmtpParamsRes;
-                fromJSON(object: any): _643.PmtpParamsRes;
-                toJSON(message: _643.PmtpParamsRes): unknown;
+                encode(message: _662.PmtpParamsRes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.PmtpParamsRes;
+                fromJSON(object: any): _662.PmtpParamsRes;
+                toJSON(message: _662.PmtpParamsRes): unknown;
                 fromPartial(object: {
                     params?: {
                         pmtpPeriodGovernanceRate?: string;
@@ -1675,20 +1675,20 @@ export declare namespace sifnode {
                         blockCounter?: any;
                     };
                     height?: any;
-                }): _643.PmtpParamsRes;
+                }): _662.PmtpParamsRes;
             };
             LiquidityProtectionParamsReq: {
-                encode(_: _643.LiquidityProtectionParamsReq, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.LiquidityProtectionParamsReq;
-                fromJSON(_: any): _643.LiquidityProtectionParamsReq;
-                toJSON(_: _643.LiquidityProtectionParamsReq): unknown;
-                fromPartial(_: {}): _643.LiquidityProtectionParamsReq;
+                encode(_: _662.LiquidityProtectionParamsReq, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.LiquidityProtectionParamsReq;
+                fromJSON(_: any): _662.LiquidityProtectionParamsReq;
+                toJSON(_: _662.LiquidityProtectionParamsReq): unknown;
+                fromPartial(_: {}): _662.LiquidityProtectionParamsReq;
             };
             LiquidityProtectionParamsRes: {
-                encode(message: _643.LiquidityProtectionParamsRes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.LiquidityProtectionParamsRes;
-                fromJSON(object: any): _643.LiquidityProtectionParamsRes;
-                toJSON(message: _643.LiquidityProtectionParamsRes): unknown;
+                encode(message: _662.LiquidityProtectionParamsRes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.LiquidityProtectionParamsRes;
+                fromJSON(object: any): _662.LiquidityProtectionParamsRes;
+                toJSON(message: _662.LiquidityProtectionParamsRes): unknown;
                 fromPartial(object: {
                     params?: {
                         maxRowanLiquidityThreshold?: string;
@@ -1700,20 +1700,20 @@ export declare namespace sifnode {
                         currentRowanLiquidityThreshold?: string;
                     };
                     height?: any;
-                }): _643.LiquidityProtectionParamsRes;
+                }): _662.LiquidityProtectionParamsRes;
             };
             ProviderDistributionParamsReq: {
-                encode(_: _643.ProviderDistributionParamsReq, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.ProviderDistributionParamsReq;
-                fromJSON(_: any): _643.ProviderDistributionParamsReq;
-                toJSON(_: _643.ProviderDistributionParamsReq): unknown;
-                fromPartial(_: {}): _643.ProviderDistributionParamsReq;
+                encode(_: _662.ProviderDistributionParamsReq, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.ProviderDistributionParamsReq;
+                fromJSON(_: any): _662.ProviderDistributionParamsReq;
+                toJSON(_: _662.ProviderDistributionParamsReq): unknown;
+                fromPartial(_: {}): _662.ProviderDistributionParamsReq;
             };
             ProviderDistributionParamsRes: {
-                encode(message: _643.ProviderDistributionParamsRes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.ProviderDistributionParamsRes;
-                fromJSON(object: any): _643.ProviderDistributionParamsRes;
-                toJSON(message: _643.ProviderDistributionParamsRes): unknown;
+                encode(message: _662.ProviderDistributionParamsRes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.ProviderDistributionParamsRes;
+                fromJSON(object: any): _662.ProviderDistributionParamsRes;
+                toJSON(message: _662.ProviderDistributionParamsRes): unknown;
                 fromPartial(object: {
                     params?: {
                         distributionPeriods?: {
@@ -1723,13 +1723,13 @@ export declare namespace sifnode {
                             distributionPeriodMod?: any;
                         }[];
                     };
-                }): _643.ProviderDistributionParamsRes;
+                }): _662.ProviderDistributionParamsRes;
             };
             Pool: {
-                encode(message: _642.Pool, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _642.Pool;
-                fromJSON(object: any): _642.Pool;
-                toJSON(message: _642.Pool): unknown;
+                encode(message: _661.Pool, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _661.Pool;
+                fromJSON(object: any): _661.Pool;
+                toJSON(message: _661.Pool): unknown;
                 fromPartial(object: {
                     externalAsset?: {
                         symbol?: string;
@@ -1747,23 +1747,23 @@ export declare namespace sifnode {
                     health?: string;
                     interestRate?: string;
                     lastHeightInterestRateComputed?: any;
-                }): _642.Pool;
+                }): _661.Pool;
             };
             Params: {
-                encode(message: _641.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _641.Params;
-                fromJSON(object: any): _641.Params;
-                toJSON(message: _641.Params): unknown;
+                encode(message: _660.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _660.Params;
+                fromJSON(object: any): _660.Params;
+                toJSON(message: _660.Params): unknown;
                 fromPartial(object: {
                     minCreatePoolThreshold?: any;
                     enableRemovalQueue?: boolean;
-                }): _641.Params;
+                }): _660.Params;
             };
             RewardParams: {
-                encode(message: _641.RewardParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _641.RewardParams;
-                fromJSON(object: any): _641.RewardParams;
-                toJSON(message: _641.RewardParams): unknown;
+                encode(message: _660.RewardParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _660.RewardParams;
+                fromJSON(object: any): _660.RewardParams;
+                toJSON(message: _660.RewardParams): unknown;
                 fromPartial(object: {
                     liquidityRemovalLockPeriod?: any;
                     liquidityRemovalCancelPeriod?: any;
@@ -1781,36 +1781,36 @@ export declare namespace sifnode {
                         rewardPeriodMod?: any;
                     }[];
                     rewardPeriodStartTime?: string;
-                }): _641.RewardParams;
+                }): _660.RewardParams;
             };
             PmtpRateParams: {
-                encode(message: _641.PmtpRateParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _641.PmtpRateParams;
-                fromJSON(object: any): _641.PmtpRateParams;
-                toJSON(message: _641.PmtpRateParams): unknown;
+                encode(message: _660.PmtpRateParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _660.PmtpRateParams;
+                fromJSON(object: any): _660.PmtpRateParams;
+                toJSON(message: _660.PmtpRateParams): unknown;
                 fromPartial(object: {
                     pmtpPeriodBlockRate?: string;
                     pmtpCurrentRunningRate?: string;
                     pmtpInterPolicyRate?: string;
-                }): _641.PmtpRateParams;
+                }): _660.PmtpRateParams;
             };
             PmtpParams: {
-                encode(message: _641.PmtpParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _641.PmtpParams;
-                fromJSON(object: any): _641.PmtpParams;
-                toJSON(message: _641.PmtpParams): unknown;
+                encode(message: _660.PmtpParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _660.PmtpParams;
+                fromJSON(object: any): _660.PmtpParams;
+                toJSON(message: _660.PmtpParams): unknown;
                 fromPartial(object: {
                     pmtpPeriodGovernanceRate?: string;
                     pmtpPeriodEpochLength?: any;
                     pmtpPeriodStartBlock?: any;
                     pmtpPeriodEndBlock?: any;
-                }): _641.PmtpParams;
+                }): _660.PmtpParams;
             };
             RewardPeriod: {
-                encode(message: _641.RewardPeriod, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _641.RewardPeriod;
-                fromJSON(object: any): _641.RewardPeriod;
-                toJSON(message: _641.RewardPeriod): unknown;
+                encode(message: _660.RewardPeriod, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _660.RewardPeriod;
+                fromJSON(object: any): _660.RewardPeriod;
+                toJSON(message: _660.RewardPeriod): unknown;
                 fromPartial(object: {
                     rewardPeriodId?: string;
                     rewardPeriodStartBlock?: any;
@@ -1823,56 +1823,56 @@ export declare namespace sifnode {
                     rewardPeriodDefaultMultiplier?: string;
                     rewardPeriodDistribute?: boolean;
                     rewardPeriodMod?: any;
-                }): _641.RewardPeriod;
+                }): _660.RewardPeriod;
             };
             PoolMultiplier: {
-                encode(message: _641.PoolMultiplier, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _641.PoolMultiplier;
-                fromJSON(object: any): _641.PoolMultiplier;
-                toJSON(message: _641.PoolMultiplier): unknown;
+                encode(message: _660.PoolMultiplier, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _660.PoolMultiplier;
+                fromJSON(object: any): _660.PoolMultiplier;
+                toJSON(message: _660.PoolMultiplier): unknown;
                 fromPartial(object: {
                     poolMultiplierAsset?: string;
                     multiplier?: string;
-                }): _641.PoolMultiplier;
+                }): _660.PoolMultiplier;
             };
             LiquidityProtectionParams: {
-                encode(message: _641.LiquidityProtectionParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _641.LiquidityProtectionParams;
-                fromJSON(object: any): _641.LiquidityProtectionParams;
-                toJSON(message: _641.LiquidityProtectionParams): unknown;
+                encode(message: _660.LiquidityProtectionParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _660.LiquidityProtectionParams;
+                fromJSON(object: any): _660.LiquidityProtectionParams;
+                toJSON(message: _660.LiquidityProtectionParams): unknown;
                 fromPartial(object: {
                     maxRowanLiquidityThreshold?: string;
                     maxRowanLiquidityThresholdAsset?: string;
                     epochLength?: any;
                     isActive?: boolean;
-                }): _641.LiquidityProtectionParams;
+                }): _660.LiquidityProtectionParams;
             };
             LiquidityProtectionRateParams: {
-                encode(message: _641.LiquidityProtectionRateParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _641.LiquidityProtectionRateParams;
-                fromJSON(object: any): _641.LiquidityProtectionRateParams;
-                toJSON(message: _641.LiquidityProtectionRateParams): unknown;
+                encode(message: _660.LiquidityProtectionRateParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _660.LiquidityProtectionRateParams;
+                fromJSON(object: any): _660.LiquidityProtectionRateParams;
+                toJSON(message: _660.LiquidityProtectionRateParams): unknown;
                 fromPartial(object: {
                     currentRowanLiquidityThreshold?: string;
-                }): _641.LiquidityProtectionRateParams;
+                }): _660.LiquidityProtectionRateParams;
             };
             ProviderDistributionPeriod: {
-                encode(message: _641.ProviderDistributionPeriod, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _641.ProviderDistributionPeriod;
-                fromJSON(object: any): _641.ProviderDistributionPeriod;
-                toJSON(message: _641.ProviderDistributionPeriod): unknown;
+                encode(message: _660.ProviderDistributionPeriod, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _660.ProviderDistributionPeriod;
+                fromJSON(object: any): _660.ProviderDistributionPeriod;
+                toJSON(message: _660.ProviderDistributionPeriod): unknown;
                 fromPartial(object: {
                     distributionPeriodBlockRate?: string;
                     distributionPeriodStartBlock?: any;
                     distributionPeriodEndBlock?: any;
                     distributionPeriodMod?: any;
-                }): _641.ProviderDistributionPeriod;
+                }): _660.ProviderDistributionPeriod;
             };
             ProviderDistributionParams: {
-                encode(message: _641.ProviderDistributionParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _641.ProviderDistributionParams;
-                fromJSON(object: any): _641.ProviderDistributionParams;
-                toJSON(message: _641.ProviderDistributionParams): unknown;
+                encode(message: _660.ProviderDistributionParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _660.ProviderDistributionParams;
+                fromJSON(object: any): _660.ProviderDistributionParams;
+                toJSON(message: _660.ProviderDistributionParams): unknown;
                 fromPartial(object: {
                     distributionPeriods?: {
                         distributionPeriodBlockRate?: string;
@@ -1880,13 +1880,13 @@ export declare namespace sifnode {
                         distributionPeriodEndBlock?: any;
                         distributionPeriodMod?: any;
                     }[];
-                }): _641.ProviderDistributionParams;
+                }): _660.ProviderDistributionParams;
             };
             GenesisState: {
-                encode(message: _640.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _640.GenesisState;
-                fromJSON(object: any): _640.GenesisState;
-                toJSON(message: _640.GenesisState): unknown;
+                encode(message: _659.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _659.GenesisState;
+                fromJSON(object: any): _659.GenesisState;
+                toJSON(message: _659.GenesisState): unknown;
                 fromPartial(object: {
                     params?: {
                         minCreatePoolThreshold?: any;
@@ -1922,7 +1922,7 @@ export declare namespace sifnode {
                             units?: string;
                         }[];
                     }[];
-                }): _640.GenesisState;
+                }): _659.GenesisState;
             };
         };
     }
@@ -1932,43 +1932,43 @@ export declare namespace sifnode {
             load: (protoRegistry: import("@cosmjs/proto-signing").Registry) => void;
             MessageComposer: {
                 encoded: {
-                    createDistribution(value: _647.MsgCreateDistribution): {
+                    createDistribution(value: _666.MsgCreateDistribution): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    createUserClaim(value: _647.MsgCreateUserClaim): {
+                    createUserClaim(value: _666.MsgCreateUserClaim): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    runDistribution(value: _647.MsgRunDistribution): {
+                    runDistribution(value: _666.MsgRunDistribution): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
                 };
                 withTypeUrl: {
-                    createDistribution(value: _647.MsgCreateDistribution): {
+                    createDistribution(value: _666.MsgCreateDistribution): {
                         typeUrl: string;
-                        value: _647.MsgCreateDistribution;
+                        value: _666.MsgCreateDistribution;
                     };
-                    createUserClaim(value: _647.MsgCreateUserClaim): {
+                    createUserClaim(value: _666.MsgCreateUserClaim): {
                         typeUrl: string;
-                        value: _647.MsgCreateUserClaim;
+                        value: _666.MsgCreateUserClaim;
                     };
-                    runDistribution(value: _647.MsgRunDistribution): {
+                    runDistribution(value: _666.MsgRunDistribution): {
                         typeUrl: string;
-                        value: _647.MsgRunDistribution;
+                        value: _666.MsgRunDistribution;
                     };
                 };
                 toJSON: {
-                    createDistribution(value: _647.MsgCreateDistribution): {
+                    createDistribution(value: _666.MsgCreateDistribution): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    createUserClaim(value: _647.MsgCreateUserClaim): {
+                    createUserClaim(value: _666.MsgCreateUserClaim): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    runDistribution(value: _647.MsgRunDistribution): {
+                    runDistribution(value: _666.MsgRunDistribution): {
                         typeUrl: string;
                         value: unknown;
                     };
@@ -1976,36 +1976,36 @@ export declare namespace sifnode {
                 fromJSON: {
                     createDistribution(value: any): {
                         typeUrl: string;
-                        value: _647.MsgCreateDistribution;
+                        value: _666.MsgCreateDistribution;
                     };
                     createUserClaim(value: any): {
                         typeUrl: string;
-                        value: _647.MsgCreateUserClaim;
+                        value: _666.MsgCreateUserClaim;
                     };
                     runDistribution(value: any): {
                         typeUrl: string;
-                        value: _647.MsgRunDistribution;
+                        value: _666.MsgRunDistribution;
                     };
                 };
                 fromPartial: {
-                    createDistribution(value: _647.MsgCreateDistribution): {
+                    createDistribution(value: _666.MsgCreateDistribution): {
                         typeUrl: string;
-                        value: _647.MsgCreateDistribution;
+                        value: _666.MsgCreateDistribution;
                     };
-                    createUserClaim(value: _647.MsgCreateUserClaim): {
+                    createUserClaim(value: _666.MsgCreateUserClaim): {
                         typeUrl: string;
-                        value: _647.MsgCreateUserClaim;
+                        value: _666.MsgCreateUserClaim;
                     };
-                    runDistribution(value: _647.MsgRunDistribution): {
+                    runDistribution(value: _666.MsgRunDistribution): {
                         typeUrl: string;
-                        value: _647.MsgRunDistribution;
+                        value: _666.MsgRunDistribution;
                     };
                 };
             };
             AminoConverter: {
                 "/sifnode.dispensation.v1.MsgCreateDistribution": {
                     aminoType: string;
-                    toAmino: ({ distributor, authorizedRunner, distributionType, output }: _647.MsgCreateDistribution) => {
+                    toAmino: ({ distributor, authorizedRunner, distributionType, output }: _666.MsgCreateDistribution) => {
                         distributor: string;
                         authorized_runner: string;
                         distribution_type: number;
@@ -2016,22 +2016,22 @@ export declare namespace sifnode {
                         authorized_runner: string;
                         distribution_type: number;
                         output: string[];
-                    }) => _647.MsgCreateDistribution;
+                    }) => _666.MsgCreateDistribution;
                 };
                 "/sifnode.dispensation.v1.MsgCreateUserClaim": {
                     aminoType: string;
-                    toAmino: ({ userClaimAddress, userClaimType }: _647.MsgCreateUserClaim) => {
+                    toAmino: ({ userClaimAddress, userClaimType }: _666.MsgCreateUserClaim) => {
                         user_claim_address: string;
                         user_claim_type: number;
                     };
                     fromAmino: ({ user_claim_address, user_claim_type }: {
                         user_claim_address: string;
                         user_claim_type: number;
-                    }) => _647.MsgCreateUserClaim;
+                    }) => _666.MsgCreateUserClaim;
                 };
                 "/sifnode.dispensation.v1.MsgRunDistribution": {
                     aminoType: string;
-                    toAmino: ({ authorizedRunner, distributionName, distributionType, distributionCount }: _647.MsgRunDistribution) => {
+                    toAmino: ({ authorizedRunner, distributionName, distributionType, distributionCount }: _666.MsgRunDistribution) => {
                         authorized_runner: string;
                         distribution_name: string;
                         distribution_type: number;
@@ -2042,25 +2042,25 @@ export declare namespace sifnode {
                         distribution_name: string;
                         distribution_type: number;
                         distribution_count: string;
-                    }) => _647.MsgRunDistribution;
+                    }) => _666.MsgRunDistribution;
                 };
             };
-            distributionTypeFromJSON(object: any): _648.DistributionType;
-            distributionTypeToJSON(object: _648.DistributionType): string;
-            distributionStatusFromJSON(object: any): _648.DistributionStatus;
-            distributionStatusToJSON(object: _648.DistributionStatus): string;
-            DistributionType: typeof _648.DistributionType;
-            DistributionStatus: typeof _648.DistributionStatus;
+            distributionTypeFromJSON(object: any): _667.DistributionType;
+            distributionTypeToJSON(object: _667.DistributionType): string;
+            distributionStatusFromJSON(object: any): _667.DistributionStatus;
+            distributionStatusToJSON(object: _667.DistributionStatus): string;
+            DistributionType: typeof _667.DistributionType;
+            DistributionStatus: typeof _667.DistributionStatus;
             GenesisState: {
-                encode(message: _648.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _648.GenesisState;
-                fromJSON(object: any): _648.GenesisState;
-                toJSON(message: _648.GenesisState): unknown;
+                encode(message: _667.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _667.GenesisState;
+                fromJSON(object: any): _667.GenesisState;
+                toJSON(message: _667.GenesisState): unknown;
                 fromPartial(object: {
                     distributionRecords?: {
                         distributionRecords?: {
-                            distributionStatus?: _648.DistributionStatus;
-                            distributionType?: _648.DistributionType;
+                            distributionStatus?: _667.DistributionStatus;
+                            distributionType?: _667.DistributionType;
                             distributionName?: string;
                             recipientAddress?: string;
                             coins?: {
@@ -2074,7 +2074,7 @@ export declare namespace sifnode {
                     };
                     distributions?: {
                         distributions?: {
-                            distributionType?: _648.DistributionType;
+                            distributionType?: _667.DistributionType;
                             distributionName?: string;
                             runner?: string;
                         }[];
@@ -2082,20 +2082,20 @@ export declare namespace sifnode {
                     claims?: {
                         userClaims?: {
                             userAddress?: string;
-                            userClaimType?: _648.DistributionType;
+                            userClaimType?: _667.DistributionType;
                             userClaimTime?: string;
                         }[];
                     };
-                }): _648.GenesisState;
+                }): _667.GenesisState;
             };
             DistributionRecord: {
-                encode(message: _648.DistributionRecord, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _648.DistributionRecord;
-                fromJSON(object: any): _648.DistributionRecord;
-                toJSON(message: _648.DistributionRecord): unknown;
+                encode(message: _667.DistributionRecord, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _667.DistributionRecord;
+                fromJSON(object: any): _667.DistributionRecord;
+                toJSON(message: _667.DistributionRecord): unknown;
                 fromPartial(object: {
-                    distributionStatus?: _648.DistributionStatus;
-                    distributionType?: _648.DistributionType;
+                    distributionStatus?: _667.DistributionStatus;
+                    distributionType?: _667.DistributionType;
                     distributionName?: string;
                     recipientAddress?: string;
                     coins?: {
@@ -2105,17 +2105,17 @@ export declare namespace sifnode {
                     distributionStartHeight?: any;
                     distributionCompletedHeight?: any;
                     authorizedRunner?: string;
-                }): _648.DistributionRecord;
+                }): _667.DistributionRecord;
             };
             DistributionRecords: {
-                encode(message: _648.DistributionRecords, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _648.DistributionRecords;
-                fromJSON(object: any): _648.DistributionRecords;
-                toJSON(message: _648.DistributionRecords): unknown;
+                encode(message: _667.DistributionRecords, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _667.DistributionRecords;
+                fromJSON(object: any): _667.DistributionRecords;
+                toJSON(message: _667.DistributionRecords): unknown;
                 fromPartial(object: {
                     distributionRecords?: {
-                        distributionStatus?: _648.DistributionStatus;
-                        distributionType?: _648.DistributionType;
+                        distributionStatus?: _667.DistributionStatus;
+                        distributionType?: _667.DistributionType;
                         distributionName?: string;
                         recipientAddress?: string;
                         coins?: {
@@ -2126,164 +2126,164 @@ export declare namespace sifnode {
                         distributionCompletedHeight?: any;
                         authorizedRunner?: string;
                     }[];
-                }): _648.DistributionRecords;
+                }): _667.DistributionRecords;
             };
             Distributions: {
-                encode(message: _648.Distributions, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _648.Distributions;
-                fromJSON(object: any): _648.Distributions;
-                toJSON(message: _648.Distributions): unknown;
+                encode(message: _667.Distributions, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _667.Distributions;
+                fromJSON(object: any): _667.Distributions;
+                toJSON(message: _667.Distributions): unknown;
                 fromPartial(object: {
                     distributions?: {
-                        distributionType?: _648.DistributionType;
+                        distributionType?: _667.DistributionType;
                         distributionName?: string;
                         runner?: string;
                     }[];
-                }): _648.Distributions;
+                }): _667.Distributions;
             };
             Distribution: {
-                encode(message: _648.Distribution, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _648.Distribution;
-                fromJSON(object: any): _648.Distribution;
-                toJSON(message: _648.Distribution): unknown;
+                encode(message: _667.Distribution, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _667.Distribution;
+                fromJSON(object: any): _667.Distribution;
+                toJSON(message: _667.Distribution): unknown;
                 fromPartial(object: {
-                    distributionType?: _648.DistributionType;
+                    distributionType?: _667.DistributionType;
                     distributionName?: string;
                     runner?: string;
-                }): _648.Distribution;
+                }): _667.Distribution;
             };
             UserClaim: {
-                encode(message: _648.UserClaim, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _648.UserClaim;
-                fromJSON(object: any): _648.UserClaim;
-                toJSON(message: _648.UserClaim): unknown;
+                encode(message: _667.UserClaim, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _667.UserClaim;
+                fromJSON(object: any): _667.UserClaim;
+                toJSON(message: _667.UserClaim): unknown;
                 fromPartial(object: {
                     userAddress?: string;
-                    userClaimType?: _648.DistributionType;
+                    userClaimType?: _667.DistributionType;
                     userClaimTime?: string;
-                }): _648.UserClaim;
+                }): _667.UserClaim;
             };
             UserClaims: {
-                encode(message: _648.UserClaims, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _648.UserClaims;
-                fromJSON(object: any): _648.UserClaims;
-                toJSON(message: _648.UserClaims): unknown;
+                encode(message: _667.UserClaims, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _667.UserClaims;
+                fromJSON(object: any): _667.UserClaims;
+                toJSON(message: _667.UserClaims): unknown;
                 fromPartial(object: {
                     userClaims?: {
                         userAddress?: string;
-                        userClaimType?: _648.DistributionType;
+                        userClaimType?: _667.DistributionType;
                         userClaimTime?: string;
                     }[];
-                }): _648.UserClaims;
+                }): _667.UserClaims;
             };
             MintController: {
-                encode(message: _648.MintController, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _648.MintController;
-                fromJSON(object: any): _648.MintController;
-                toJSON(message: _648.MintController): unknown;
+                encode(message: _667.MintController, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _667.MintController;
+                fromJSON(object: any): _667.MintController;
+                toJSON(message: _667.MintController): unknown;
                 fromPartial(object: {
                     totalCounter?: {
                         denom?: string;
                         amount?: string;
                     };
-                }): _648.MintController;
+                }): _667.MintController;
             };
             MsgCreateDistribution: {
-                encode(message: _647.MsgCreateDistribution, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _647.MsgCreateDistribution;
-                fromJSON(object: any): _647.MsgCreateDistribution;
-                toJSON(message: _647.MsgCreateDistribution): unknown;
+                encode(message: _666.MsgCreateDistribution, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgCreateDistribution;
+                fromJSON(object: any): _666.MsgCreateDistribution;
+                toJSON(message: _666.MsgCreateDistribution): unknown;
                 fromPartial(object: {
                     distributor?: string;
                     authorizedRunner?: string;
-                    distributionType?: _648.DistributionType;
+                    distributionType?: _667.DistributionType;
                     output?: string[];
-                }): _647.MsgCreateDistribution;
+                }): _666.MsgCreateDistribution;
             };
             MsgCreateDistributionResponse: {
-                encode(_: _647.MsgCreateDistributionResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _647.MsgCreateDistributionResponse;
-                fromJSON(_: any): _647.MsgCreateDistributionResponse;
-                toJSON(_: _647.MsgCreateDistributionResponse): unknown;
-                fromPartial(_: {}): _647.MsgCreateDistributionResponse;
+                encode(_: _666.MsgCreateDistributionResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgCreateDistributionResponse;
+                fromJSON(_: any): _666.MsgCreateDistributionResponse;
+                toJSON(_: _666.MsgCreateDistributionResponse): unknown;
+                fromPartial(_: {}): _666.MsgCreateDistributionResponse;
             };
             MsgCreateClaimResponse: {
-                encode(_: _647.MsgCreateClaimResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _647.MsgCreateClaimResponse;
-                fromJSON(_: any): _647.MsgCreateClaimResponse;
-                toJSON(_: _647.MsgCreateClaimResponse): unknown;
-                fromPartial(_: {}): _647.MsgCreateClaimResponse;
+                encode(_: _666.MsgCreateClaimResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgCreateClaimResponse;
+                fromJSON(_: any): _666.MsgCreateClaimResponse;
+                toJSON(_: _666.MsgCreateClaimResponse): unknown;
+                fromPartial(_: {}): _666.MsgCreateClaimResponse;
             };
             MsgRunDistributionResponse: {
-                encode(_: _647.MsgRunDistributionResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _647.MsgRunDistributionResponse;
-                fromJSON(_: any): _647.MsgRunDistributionResponse;
-                toJSON(_: _647.MsgRunDistributionResponse): unknown;
-                fromPartial(_: {}): _647.MsgRunDistributionResponse;
+                encode(_: _666.MsgRunDistributionResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgRunDistributionResponse;
+                fromJSON(_: any): _666.MsgRunDistributionResponse;
+                toJSON(_: _666.MsgRunDistributionResponse): unknown;
+                fromPartial(_: {}): _666.MsgRunDistributionResponse;
             };
             MsgCreateUserClaim: {
-                encode(message: _647.MsgCreateUserClaim, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _647.MsgCreateUserClaim;
-                fromJSON(object: any): _647.MsgCreateUserClaim;
-                toJSON(message: _647.MsgCreateUserClaim): unknown;
+                encode(message: _666.MsgCreateUserClaim, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgCreateUserClaim;
+                fromJSON(object: any): _666.MsgCreateUserClaim;
+                toJSON(message: _666.MsgCreateUserClaim): unknown;
                 fromPartial(object: {
                     userClaimAddress?: string;
-                    userClaimType?: _648.DistributionType;
-                }): _647.MsgCreateUserClaim;
+                    userClaimType?: _667.DistributionType;
+                }): _666.MsgCreateUserClaim;
             };
             MsgRunDistribution: {
-                encode(message: _647.MsgRunDistribution, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _647.MsgRunDistribution;
-                fromJSON(object: any): _647.MsgRunDistribution;
-                toJSON(message: _647.MsgRunDistribution): unknown;
+                encode(message: _666.MsgRunDistribution, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgRunDistribution;
+                fromJSON(object: any): _666.MsgRunDistribution;
+                toJSON(message: _666.MsgRunDistribution): unknown;
                 fromPartial(object: {
                     authorizedRunner?: string;
                     distributionName?: string;
-                    distributionType?: _648.DistributionType;
+                    distributionType?: _667.DistributionType;
                     distributionCount?: any;
-                }): _647.MsgRunDistribution;
+                }): _666.MsgRunDistribution;
             };
             QueryAllDistributionsRequest: {
-                encode(_: _646.QueryAllDistributionsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _646.QueryAllDistributionsRequest;
-                fromJSON(_: any): _646.QueryAllDistributionsRequest;
-                toJSON(_: _646.QueryAllDistributionsRequest): unknown;
-                fromPartial(_: {}): _646.QueryAllDistributionsRequest;
+                encode(_: _665.QueryAllDistributionsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryAllDistributionsRequest;
+                fromJSON(_: any): _665.QueryAllDistributionsRequest;
+                toJSON(_: _665.QueryAllDistributionsRequest): unknown;
+                fromPartial(_: {}): _665.QueryAllDistributionsRequest;
             };
             QueryAllDistributionsResponse: {
-                encode(message: _646.QueryAllDistributionsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _646.QueryAllDistributionsResponse;
-                fromJSON(object: any): _646.QueryAllDistributionsResponse;
-                toJSON(message: _646.QueryAllDistributionsResponse): unknown;
+                encode(message: _665.QueryAllDistributionsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryAllDistributionsResponse;
+                fromJSON(object: any): _665.QueryAllDistributionsResponse;
+                toJSON(message: _665.QueryAllDistributionsResponse): unknown;
                 fromPartial(object: {
                     distributions?: {
-                        distributionType?: _648.DistributionType;
+                        distributionType?: _667.DistributionType;
                         distributionName?: string;
                         runner?: string;
                     }[];
                     height?: any;
-                }): _646.QueryAllDistributionsResponse;
+                }): _665.QueryAllDistributionsResponse;
             };
             QueryRecordsByDistributionNameRequest: {
-                encode(message: _646.QueryRecordsByDistributionNameRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _646.QueryRecordsByDistributionNameRequest;
-                fromJSON(object: any): _646.QueryRecordsByDistributionNameRequest;
-                toJSON(message: _646.QueryRecordsByDistributionNameRequest): unknown;
+                encode(message: _665.QueryRecordsByDistributionNameRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryRecordsByDistributionNameRequest;
+                fromJSON(object: any): _665.QueryRecordsByDistributionNameRequest;
+                toJSON(message: _665.QueryRecordsByDistributionNameRequest): unknown;
                 fromPartial(object: {
                     distributionName?: string;
-                    status?: _648.DistributionStatus;
-                }): _646.QueryRecordsByDistributionNameRequest;
+                    status?: _667.DistributionStatus;
+                }): _665.QueryRecordsByDistributionNameRequest;
             };
             QueryRecordsByDistributionNameResponse: {
-                encode(message: _646.QueryRecordsByDistributionNameResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _646.QueryRecordsByDistributionNameResponse;
-                fromJSON(object: any): _646.QueryRecordsByDistributionNameResponse;
-                toJSON(message: _646.QueryRecordsByDistributionNameResponse): unknown;
+                encode(message: _665.QueryRecordsByDistributionNameResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryRecordsByDistributionNameResponse;
+                fromJSON(object: any): _665.QueryRecordsByDistributionNameResponse;
+                toJSON(message: _665.QueryRecordsByDistributionNameResponse): unknown;
                 fromPartial(object: {
                     distributionRecords?: {
                         distributionRecords?: {
-                            distributionStatus?: _648.DistributionStatus;
-                            distributionType?: _648.DistributionType;
+                            distributionStatus?: _667.DistributionStatus;
+                            distributionType?: _667.DistributionType;
                             distributionName?: string;
                             recipientAddress?: string;
                             coins?: {
@@ -2296,27 +2296,27 @@ export declare namespace sifnode {
                         }[];
                     };
                     height?: any;
-                }): _646.QueryRecordsByDistributionNameResponse;
+                }): _665.QueryRecordsByDistributionNameResponse;
             };
             QueryRecordsByRecipientAddrRequest: {
-                encode(message: _646.QueryRecordsByRecipientAddrRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _646.QueryRecordsByRecipientAddrRequest;
-                fromJSON(object: any): _646.QueryRecordsByRecipientAddrRequest;
-                toJSON(message: _646.QueryRecordsByRecipientAddrRequest): unknown;
+                encode(message: _665.QueryRecordsByRecipientAddrRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryRecordsByRecipientAddrRequest;
+                fromJSON(object: any): _665.QueryRecordsByRecipientAddrRequest;
+                toJSON(message: _665.QueryRecordsByRecipientAddrRequest): unknown;
                 fromPartial(object: {
                     address?: string;
-                }): _646.QueryRecordsByRecipientAddrRequest;
+                }): _665.QueryRecordsByRecipientAddrRequest;
             };
             QueryRecordsByRecipientAddrResponse: {
-                encode(message: _646.QueryRecordsByRecipientAddrResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _646.QueryRecordsByRecipientAddrResponse;
-                fromJSON(object: any): _646.QueryRecordsByRecipientAddrResponse;
-                toJSON(message: _646.QueryRecordsByRecipientAddrResponse): unknown;
+                encode(message: _665.QueryRecordsByRecipientAddrResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryRecordsByRecipientAddrResponse;
+                fromJSON(object: any): _665.QueryRecordsByRecipientAddrResponse;
+                toJSON(message: _665.QueryRecordsByRecipientAddrResponse): unknown;
                 fromPartial(object: {
                     distributionRecords?: {
                         distributionRecords?: {
-                            distributionStatus?: _648.DistributionStatus;
-                            distributionType?: _648.DistributionType;
+                            distributionStatus?: _667.DistributionStatus;
+                            distributionType?: _667.DistributionType;
                             distributionName?: string;
                             recipientAddress?: string;
                             coins?: {
@@ -2329,30 +2329,30 @@ export declare namespace sifnode {
                         }[];
                     };
                     height?: any;
-                }): _646.QueryRecordsByRecipientAddrResponse;
+                }): _665.QueryRecordsByRecipientAddrResponse;
             };
             QueryClaimsByTypeRequest: {
-                encode(message: _646.QueryClaimsByTypeRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _646.QueryClaimsByTypeRequest;
-                fromJSON(object: any): _646.QueryClaimsByTypeRequest;
-                toJSON(message: _646.QueryClaimsByTypeRequest): unknown;
+                encode(message: _665.QueryClaimsByTypeRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryClaimsByTypeRequest;
+                fromJSON(object: any): _665.QueryClaimsByTypeRequest;
+                toJSON(message: _665.QueryClaimsByTypeRequest): unknown;
                 fromPartial(object: {
-                    userClaimType?: _648.DistributionType;
-                }): _646.QueryClaimsByTypeRequest;
+                    userClaimType?: _667.DistributionType;
+                }): _665.QueryClaimsByTypeRequest;
             };
             QueryClaimsResponse: {
-                encode(message: _646.QueryClaimsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _646.QueryClaimsResponse;
-                fromJSON(object: any): _646.QueryClaimsResponse;
-                toJSON(message: _646.QueryClaimsResponse): unknown;
+                encode(message: _665.QueryClaimsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryClaimsResponse;
+                fromJSON(object: any): _665.QueryClaimsResponse;
+                toJSON(message: _665.QueryClaimsResponse): unknown;
                 fromPartial(object: {
                     claims?: {
                         userAddress?: string;
-                        userClaimType?: _648.DistributionType;
+                        userClaimType?: _667.DistributionType;
                         userClaimTime?: string;
                     }[];
                     height?: any;
-                }): _646.QueryClaimsResponse;
+                }): _665.QueryClaimsResponse;
             };
         };
     }
@@ -2362,91 +2362,91 @@ export declare namespace sifnode {
             load: (protoRegistry: import("@cosmjs/proto-signing").Registry) => void;
             MessageComposer: {
                 encoded: {
-                    lock(value: _650.MsgLock): {
+                    lock(value: _669.MsgLock): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    burn(value: _650.MsgBurn): {
+                    burn(value: _669.MsgBurn): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    createEthBridgeClaim(value: _650.MsgCreateEthBridgeClaim): {
+                    createEthBridgeClaim(value: _669.MsgCreateEthBridgeClaim): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updateWhiteListValidator(value: _650.MsgUpdateWhiteListValidator): {
+                    updateWhiteListValidator(value: _669.MsgUpdateWhiteListValidator): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updateCethReceiverAccount(value: _650.MsgUpdateCethReceiverAccount): {
+                    updateCethReceiverAccount(value: _669.MsgUpdateCethReceiverAccount): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    rescueCeth(value: _650.MsgRescueCeth): {
+                    rescueCeth(value: _669.MsgRescueCeth): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    setBlacklist(value: _650.MsgSetBlacklist): {
+                    setBlacklist(value: _669.MsgSetBlacklist): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
                 };
                 withTypeUrl: {
-                    lock(value: _650.MsgLock): {
+                    lock(value: _669.MsgLock): {
                         typeUrl: string;
-                        value: _650.MsgLock;
+                        value: _669.MsgLock;
                     };
-                    burn(value: _650.MsgBurn): {
+                    burn(value: _669.MsgBurn): {
                         typeUrl: string;
-                        value: _650.MsgBurn;
+                        value: _669.MsgBurn;
                     };
-                    createEthBridgeClaim(value: _650.MsgCreateEthBridgeClaim): {
+                    createEthBridgeClaim(value: _669.MsgCreateEthBridgeClaim): {
                         typeUrl: string;
-                        value: _650.MsgCreateEthBridgeClaim;
+                        value: _669.MsgCreateEthBridgeClaim;
                     };
-                    updateWhiteListValidator(value: _650.MsgUpdateWhiteListValidator): {
+                    updateWhiteListValidator(value: _669.MsgUpdateWhiteListValidator): {
                         typeUrl: string;
-                        value: _650.MsgUpdateWhiteListValidator;
+                        value: _669.MsgUpdateWhiteListValidator;
                     };
-                    updateCethReceiverAccount(value: _650.MsgUpdateCethReceiverAccount): {
+                    updateCethReceiverAccount(value: _669.MsgUpdateCethReceiverAccount): {
                         typeUrl: string;
-                        value: _650.MsgUpdateCethReceiverAccount;
+                        value: _669.MsgUpdateCethReceiverAccount;
                     };
-                    rescueCeth(value: _650.MsgRescueCeth): {
+                    rescueCeth(value: _669.MsgRescueCeth): {
                         typeUrl: string;
-                        value: _650.MsgRescueCeth;
+                        value: _669.MsgRescueCeth;
                     };
-                    setBlacklist(value: _650.MsgSetBlacklist): {
+                    setBlacklist(value: _669.MsgSetBlacklist): {
                         typeUrl: string;
-                        value: _650.MsgSetBlacklist;
+                        value: _669.MsgSetBlacklist;
                     };
                 };
                 toJSON: {
-                    lock(value: _650.MsgLock): {
+                    lock(value: _669.MsgLock): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    burn(value: _650.MsgBurn): {
+                    burn(value: _669.MsgBurn): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    createEthBridgeClaim(value: _650.MsgCreateEthBridgeClaim): {
+                    createEthBridgeClaim(value: _669.MsgCreateEthBridgeClaim): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updateWhiteListValidator(value: _650.MsgUpdateWhiteListValidator): {
+                    updateWhiteListValidator(value: _669.MsgUpdateWhiteListValidator): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updateCethReceiverAccount(value: _650.MsgUpdateCethReceiverAccount): {
+                    updateCethReceiverAccount(value: _669.MsgUpdateCethReceiverAccount): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    rescueCeth(value: _650.MsgRescueCeth): {
+                    rescueCeth(value: _669.MsgRescueCeth): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    setBlacklist(value: _650.MsgSetBlacklist): {
+                    setBlacklist(value: _669.MsgSetBlacklist): {
                         typeUrl: string;
                         value: unknown;
                     };
@@ -2454,68 +2454,68 @@ export declare namespace sifnode {
                 fromJSON: {
                     lock(value: any): {
                         typeUrl: string;
-                        value: _650.MsgLock;
+                        value: _669.MsgLock;
                     };
                     burn(value: any): {
                         typeUrl: string;
-                        value: _650.MsgBurn;
+                        value: _669.MsgBurn;
                     };
                     createEthBridgeClaim(value: any): {
                         typeUrl: string;
-                        value: _650.MsgCreateEthBridgeClaim;
+                        value: _669.MsgCreateEthBridgeClaim;
                     };
                     updateWhiteListValidator(value: any): {
                         typeUrl: string;
-                        value: _650.MsgUpdateWhiteListValidator;
+                        value: _669.MsgUpdateWhiteListValidator;
                     };
                     updateCethReceiverAccount(value: any): {
                         typeUrl: string;
-                        value: _650.MsgUpdateCethReceiverAccount;
+                        value: _669.MsgUpdateCethReceiverAccount;
                     };
                     rescueCeth(value: any): {
                         typeUrl: string;
-                        value: _650.MsgRescueCeth;
+                        value: _669.MsgRescueCeth;
                     };
                     setBlacklist(value: any): {
                         typeUrl: string;
-                        value: _650.MsgSetBlacklist;
+                        value: _669.MsgSetBlacklist;
                     };
                 };
                 fromPartial: {
-                    lock(value: _650.MsgLock): {
+                    lock(value: _669.MsgLock): {
                         typeUrl: string;
-                        value: _650.MsgLock;
+                        value: _669.MsgLock;
                     };
-                    burn(value: _650.MsgBurn): {
+                    burn(value: _669.MsgBurn): {
                         typeUrl: string;
-                        value: _650.MsgBurn;
+                        value: _669.MsgBurn;
                     };
-                    createEthBridgeClaim(value: _650.MsgCreateEthBridgeClaim): {
+                    createEthBridgeClaim(value: _669.MsgCreateEthBridgeClaim): {
                         typeUrl: string;
-                        value: _650.MsgCreateEthBridgeClaim;
+                        value: _669.MsgCreateEthBridgeClaim;
                     };
-                    updateWhiteListValidator(value: _650.MsgUpdateWhiteListValidator): {
+                    updateWhiteListValidator(value: _669.MsgUpdateWhiteListValidator): {
                         typeUrl: string;
-                        value: _650.MsgUpdateWhiteListValidator;
+                        value: _669.MsgUpdateWhiteListValidator;
                     };
-                    updateCethReceiverAccount(value: _650.MsgUpdateCethReceiverAccount): {
+                    updateCethReceiverAccount(value: _669.MsgUpdateCethReceiverAccount): {
                         typeUrl: string;
-                        value: _650.MsgUpdateCethReceiverAccount;
+                        value: _669.MsgUpdateCethReceiverAccount;
                     };
-                    rescueCeth(value: _650.MsgRescueCeth): {
+                    rescueCeth(value: _669.MsgRescueCeth): {
                         typeUrl: string;
-                        value: _650.MsgRescueCeth;
+                        value: _669.MsgRescueCeth;
                     };
-                    setBlacklist(value: _650.MsgSetBlacklist): {
+                    setBlacklist(value: _669.MsgSetBlacklist): {
                         typeUrl: string;
-                        value: _650.MsgSetBlacklist;
+                        value: _669.MsgSetBlacklist;
                     };
                 };
             };
             AminoConverter: {
                 "/sifnode.ethbridge.v1.MsgLock": {
                     aminoType: string;
-                    toAmino: ({ cosmosSender, amount, symbol, ethereumChainId, ethereumReceiver, cethAmount }: _650.MsgLock) => {
+                    toAmino: ({ cosmosSender, amount, symbol, ethereumChainId, ethereumReceiver, cethAmount }: _669.MsgLock) => {
                         cosmos_sender: string;
                         amount: string;
                         symbol: string;
@@ -2530,11 +2530,11 @@ export declare namespace sifnode {
                         ethereum_chain_id: string;
                         ethereum_receiver: string;
                         ceth_amount: string;
-                    }) => _650.MsgLock;
+                    }) => _669.MsgLock;
                 };
                 "/sifnode.ethbridge.v1.MsgBurn": {
                     aminoType: string;
-                    toAmino: ({ cosmosSender, amount, symbol, ethereumChainId, ethereumReceiver, cethAmount }: _650.MsgBurn) => {
+                    toAmino: ({ cosmosSender, amount, symbol, ethereumChainId, ethereumReceiver, cethAmount }: _669.MsgBurn) => {
                         cosmos_sender: string;
                         amount: string;
                         symbol: string;
@@ -2549,11 +2549,11 @@ export declare namespace sifnode {
                         ethereum_chain_id: string;
                         ethereum_receiver: string;
                         ceth_amount: string;
-                    }) => _650.MsgBurn;
+                    }) => _669.MsgBurn;
                 };
                 "/sifnode.ethbridge.v1.MsgCreateEthBridgeClaim": {
                     aminoType: string;
-                    toAmino: ({ ethBridgeClaim }: _650.MsgCreateEthBridgeClaim) => {
+                    toAmino: ({ ethBridgeClaim }: _669.MsgCreateEthBridgeClaim) => {
                         eth_bridge_claim: {
                             ethereum_chain_id: string;
                             bridge_contract_address: string;
@@ -2580,11 +2580,11 @@ export declare namespace sifnode {
                             amount: string;
                             claim_type: number;
                         };
-                    }) => _650.MsgCreateEthBridgeClaim;
+                    }) => _669.MsgCreateEthBridgeClaim;
                 };
                 "/sifnode.ethbridge.v1.MsgUpdateWhiteListValidator": {
                     aminoType: string;
-                    toAmino: ({ cosmosSender, validator, operationType }: _650.MsgUpdateWhiteListValidator) => {
+                    toAmino: ({ cosmosSender, validator, operationType }: _669.MsgUpdateWhiteListValidator) => {
                         cosmos_sender: string;
                         validator: string;
                         operation_type: string;
@@ -2593,22 +2593,22 @@ export declare namespace sifnode {
                         cosmos_sender: string;
                         validator: string;
                         operation_type: string;
-                    }) => _650.MsgUpdateWhiteListValidator;
+                    }) => _669.MsgUpdateWhiteListValidator;
                 };
                 "/sifnode.ethbridge.v1.MsgUpdateCethReceiverAccount": {
                     aminoType: string;
-                    toAmino: ({ cosmosSender, cethReceiverAccount }: _650.MsgUpdateCethReceiverAccount) => {
+                    toAmino: ({ cosmosSender, cethReceiverAccount }: _669.MsgUpdateCethReceiverAccount) => {
                         cosmos_sender: string;
                         ceth_receiver_account: string;
                     };
                     fromAmino: ({ cosmos_sender, ceth_receiver_account }: {
                         cosmos_sender: string;
                         ceth_receiver_account: string;
-                    }) => _650.MsgUpdateCethReceiverAccount;
+                    }) => _669.MsgUpdateCethReceiverAccount;
                 };
                 "/sifnode.ethbridge.v1.MsgRescueCeth": {
                     aminoType: string;
-                    toAmino: ({ cosmosSender, cosmosReceiver, cethAmount }: _650.MsgRescueCeth) => {
+                    toAmino: ({ cosmosSender, cosmosReceiver, cethAmount }: _669.MsgRescueCeth) => {
                         cosmos_sender: string;
                         cosmos_receiver: string;
                         ceth_amount: string;
@@ -2617,28 +2617,28 @@ export declare namespace sifnode {
                         cosmos_sender: string;
                         cosmos_receiver: string;
                         ceth_amount: string;
-                    }) => _650.MsgRescueCeth;
+                    }) => _669.MsgRescueCeth;
                 };
                 "/sifnode.ethbridge.v1.MsgSetBlacklist": {
                     aminoType: string;
-                    toAmino: ({ from, addresses }: _650.MsgSetBlacklist) => {
+                    toAmino: ({ from, addresses }: _669.MsgSetBlacklist) => {
                         from: string;
                         addresses: string[];
                     };
                     fromAmino: ({ from, addresses }: {
                         from: string;
                         addresses: string[];
-                    }) => _650.MsgSetBlacklist;
+                    }) => _669.MsgSetBlacklist;
                 };
             };
-            claimTypeFromJSON(object: any): _651.ClaimType;
-            claimTypeToJSON(object: _651.ClaimType): string;
-            ClaimType: typeof _651.ClaimType;
+            claimTypeFromJSON(object: any): _670.ClaimType;
+            claimTypeToJSON(object: _670.ClaimType): string;
+            ClaimType: typeof _670.ClaimType;
             EthBridgeClaim: {
-                encode(message: _651.EthBridgeClaim, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _651.EthBridgeClaim;
-                fromJSON(object: any): _651.EthBridgeClaim;
-                toJSON(message: _651.EthBridgeClaim): unknown;
+                encode(message: _670.EthBridgeClaim, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _670.EthBridgeClaim;
+                fromJSON(object: any): _670.EthBridgeClaim;
+                toJSON(message: _670.EthBridgeClaim): unknown;
                 fromPartial(object: {
                     ethereumChainId?: any;
                     bridgeContractAddress?: string;
@@ -2649,33 +2649,33 @@ export declare namespace sifnode {
                     cosmosReceiver?: string;
                     validatorAddress?: string;
                     amount?: string;
-                    claimType?: _651.ClaimType;
-                }): _651.EthBridgeClaim;
+                    claimType?: _670.ClaimType;
+                }): _670.EthBridgeClaim;
             };
             PeggyTokens: {
-                encode(message: _651.PeggyTokens, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _651.PeggyTokens;
-                fromJSON(object: any): _651.PeggyTokens;
-                toJSON(message: _651.PeggyTokens): unknown;
+                encode(message: _670.PeggyTokens, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _670.PeggyTokens;
+                fromJSON(object: any): _670.PeggyTokens;
+                toJSON(message: _670.PeggyTokens): unknown;
                 fromPartial(object: {
                     tokens?: string[];
-                }): _651.PeggyTokens;
+                }): _670.PeggyTokens;
             };
             GenesisState: {
-                encode(message: _651.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _651.GenesisState;
-                fromJSON(object: any): _651.GenesisState;
-                toJSON(message: _651.GenesisState): unknown;
+                encode(message: _670.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _670.GenesisState;
+                fromJSON(object: any): _670.GenesisState;
+                toJSON(message: _670.GenesisState): unknown;
                 fromPartial(object: {
                     cethReceiveAccount?: string;
                     peggyTokens?: string[];
-                }): _651.GenesisState;
+                }): _670.GenesisState;
             };
             MsgLock: {
-                encode(message: _650.MsgLock, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _650.MsgLock;
-                fromJSON(object: any): _650.MsgLock;
-                toJSON(message: _650.MsgLock): unknown;
+                encode(message: _669.MsgLock, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _669.MsgLock;
+                fromJSON(object: any): _669.MsgLock;
+                toJSON(message: _669.MsgLock): unknown;
                 fromPartial(object: {
                     cosmosSender?: string;
                     amount?: string;
@@ -2683,20 +2683,20 @@ export declare namespace sifnode {
                     ethereumChainId?: any;
                     ethereumReceiver?: string;
                     cethAmount?: string;
-                }): _650.MsgLock;
+                }): _669.MsgLock;
             };
             MsgLockResponse: {
-                encode(_: _650.MsgLockResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _650.MsgLockResponse;
-                fromJSON(_: any): _650.MsgLockResponse;
-                toJSON(_: _650.MsgLockResponse): unknown;
-                fromPartial(_: {}): _650.MsgLockResponse;
+                encode(_: _669.MsgLockResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _669.MsgLockResponse;
+                fromJSON(_: any): _669.MsgLockResponse;
+                toJSON(_: _669.MsgLockResponse): unknown;
+                fromPartial(_: {}): _669.MsgLockResponse;
             };
             MsgBurn: {
-                encode(message: _650.MsgBurn, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _650.MsgBurn;
-                fromJSON(object: any): _650.MsgBurn;
-                toJSON(message: _650.MsgBurn): unknown;
+                encode(message: _669.MsgBurn, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _669.MsgBurn;
+                fromJSON(object: any): _669.MsgBurn;
+                toJSON(message: _669.MsgBurn): unknown;
                 fromPartial(object: {
                     cosmosSender?: string;
                     amount?: string;
@@ -2704,20 +2704,20 @@ export declare namespace sifnode {
                     ethereumChainId?: any;
                     ethereumReceiver?: string;
                     cethAmount?: string;
-                }): _650.MsgBurn;
+                }): _669.MsgBurn;
             };
             MsgBurnResponse: {
-                encode(_: _650.MsgBurnResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _650.MsgBurnResponse;
-                fromJSON(_: any): _650.MsgBurnResponse;
-                toJSON(_: _650.MsgBurnResponse): unknown;
-                fromPartial(_: {}): _650.MsgBurnResponse;
+                encode(_: _669.MsgBurnResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _669.MsgBurnResponse;
+                fromJSON(_: any): _669.MsgBurnResponse;
+                toJSON(_: _669.MsgBurnResponse): unknown;
+                fromPartial(_: {}): _669.MsgBurnResponse;
             };
             MsgCreateEthBridgeClaim: {
-                encode(message: _650.MsgCreateEthBridgeClaim, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _650.MsgCreateEthBridgeClaim;
-                fromJSON(object: any): _650.MsgCreateEthBridgeClaim;
-                toJSON(message: _650.MsgCreateEthBridgeClaim): unknown;
+                encode(message: _669.MsgCreateEthBridgeClaim, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _669.MsgCreateEthBridgeClaim;
+                fromJSON(object: any): _669.MsgCreateEthBridgeClaim;
+                toJSON(message: _669.MsgCreateEthBridgeClaim): unknown;
                 fromPartial(object: {
                     ethBridgeClaim?: {
                         ethereumChainId?: any;
@@ -2729,92 +2729,92 @@ export declare namespace sifnode {
                         cosmosReceiver?: string;
                         validatorAddress?: string;
                         amount?: string;
-                        claimType?: _651.ClaimType;
+                        claimType?: _670.ClaimType;
                     };
-                }): _650.MsgCreateEthBridgeClaim;
+                }): _669.MsgCreateEthBridgeClaim;
             };
             MsgCreateEthBridgeClaimResponse: {
-                encode(_: _650.MsgCreateEthBridgeClaimResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _650.MsgCreateEthBridgeClaimResponse;
-                fromJSON(_: any): _650.MsgCreateEthBridgeClaimResponse;
-                toJSON(_: _650.MsgCreateEthBridgeClaimResponse): unknown;
-                fromPartial(_: {}): _650.MsgCreateEthBridgeClaimResponse;
+                encode(_: _669.MsgCreateEthBridgeClaimResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _669.MsgCreateEthBridgeClaimResponse;
+                fromJSON(_: any): _669.MsgCreateEthBridgeClaimResponse;
+                toJSON(_: _669.MsgCreateEthBridgeClaimResponse): unknown;
+                fromPartial(_: {}): _669.MsgCreateEthBridgeClaimResponse;
             };
             MsgUpdateWhiteListValidator: {
-                encode(message: _650.MsgUpdateWhiteListValidator, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _650.MsgUpdateWhiteListValidator;
-                fromJSON(object: any): _650.MsgUpdateWhiteListValidator;
-                toJSON(message: _650.MsgUpdateWhiteListValidator): unknown;
+                encode(message: _669.MsgUpdateWhiteListValidator, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _669.MsgUpdateWhiteListValidator;
+                fromJSON(object: any): _669.MsgUpdateWhiteListValidator;
+                toJSON(message: _669.MsgUpdateWhiteListValidator): unknown;
                 fromPartial(object: {
                     cosmosSender?: string;
                     validator?: string;
                     operationType?: string;
-                }): _650.MsgUpdateWhiteListValidator;
+                }): _669.MsgUpdateWhiteListValidator;
             };
             MsgUpdateWhiteListValidatorResponse: {
-                encode(_: _650.MsgUpdateWhiteListValidatorResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _650.MsgUpdateWhiteListValidatorResponse;
-                fromJSON(_: any): _650.MsgUpdateWhiteListValidatorResponse;
-                toJSON(_: _650.MsgUpdateWhiteListValidatorResponse): unknown;
-                fromPartial(_: {}): _650.MsgUpdateWhiteListValidatorResponse;
+                encode(_: _669.MsgUpdateWhiteListValidatorResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _669.MsgUpdateWhiteListValidatorResponse;
+                fromJSON(_: any): _669.MsgUpdateWhiteListValidatorResponse;
+                toJSON(_: _669.MsgUpdateWhiteListValidatorResponse): unknown;
+                fromPartial(_: {}): _669.MsgUpdateWhiteListValidatorResponse;
             };
             MsgUpdateCethReceiverAccount: {
-                encode(message: _650.MsgUpdateCethReceiverAccount, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _650.MsgUpdateCethReceiverAccount;
-                fromJSON(object: any): _650.MsgUpdateCethReceiverAccount;
-                toJSON(message: _650.MsgUpdateCethReceiverAccount): unknown;
+                encode(message: _669.MsgUpdateCethReceiverAccount, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _669.MsgUpdateCethReceiverAccount;
+                fromJSON(object: any): _669.MsgUpdateCethReceiverAccount;
+                toJSON(message: _669.MsgUpdateCethReceiverAccount): unknown;
                 fromPartial(object: {
                     cosmosSender?: string;
                     cethReceiverAccount?: string;
-                }): _650.MsgUpdateCethReceiverAccount;
+                }): _669.MsgUpdateCethReceiverAccount;
             };
             MsgUpdateCethReceiverAccountResponse: {
-                encode(_: _650.MsgUpdateCethReceiverAccountResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _650.MsgUpdateCethReceiverAccountResponse;
-                fromJSON(_: any): _650.MsgUpdateCethReceiverAccountResponse;
-                toJSON(_: _650.MsgUpdateCethReceiverAccountResponse): unknown;
-                fromPartial(_: {}): _650.MsgUpdateCethReceiverAccountResponse;
+                encode(_: _669.MsgUpdateCethReceiverAccountResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _669.MsgUpdateCethReceiverAccountResponse;
+                fromJSON(_: any): _669.MsgUpdateCethReceiverAccountResponse;
+                toJSON(_: _669.MsgUpdateCethReceiverAccountResponse): unknown;
+                fromPartial(_: {}): _669.MsgUpdateCethReceiverAccountResponse;
             };
             MsgRescueCeth: {
-                encode(message: _650.MsgRescueCeth, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _650.MsgRescueCeth;
-                fromJSON(object: any): _650.MsgRescueCeth;
-                toJSON(message: _650.MsgRescueCeth): unknown;
+                encode(message: _669.MsgRescueCeth, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _669.MsgRescueCeth;
+                fromJSON(object: any): _669.MsgRescueCeth;
+                toJSON(message: _669.MsgRescueCeth): unknown;
                 fromPartial(object: {
                     cosmosSender?: string;
                     cosmosReceiver?: string;
                     cethAmount?: string;
-                }): _650.MsgRescueCeth;
+                }): _669.MsgRescueCeth;
             };
             MsgRescueCethResponse: {
-                encode(_: _650.MsgRescueCethResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _650.MsgRescueCethResponse;
-                fromJSON(_: any): _650.MsgRescueCethResponse;
-                toJSON(_: _650.MsgRescueCethResponse): unknown;
-                fromPartial(_: {}): _650.MsgRescueCethResponse;
+                encode(_: _669.MsgRescueCethResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _669.MsgRescueCethResponse;
+                fromJSON(_: any): _669.MsgRescueCethResponse;
+                toJSON(_: _669.MsgRescueCethResponse): unknown;
+                fromPartial(_: {}): _669.MsgRescueCethResponse;
             };
             MsgSetBlacklist: {
-                encode(message: _650.MsgSetBlacklist, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _650.MsgSetBlacklist;
-                fromJSON(object: any): _650.MsgSetBlacklist;
-                toJSON(message: _650.MsgSetBlacklist): unknown;
+                encode(message: _669.MsgSetBlacklist, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _669.MsgSetBlacklist;
+                fromJSON(object: any): _669.MsgSetBlacklist;
+                toJSON(message: _669.MsgSetBlacklist): unknown;
                 fromPartial(object: {
                     from?: string;
                     addresses?: string[];
-                }): _650.MsgSetBlacklist;
+                }): _669.MsgSetBlacklist;
             };
             MsgSetBlacklistResponse: {
-                encode(_: _650.MsgSetBlacklistResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _650.MsgSetBlacklistResponse;
-                fromJSON(_: any): _650.MsgSetBlacklistResponse;
-                toJSON(_: _650.MsgSetBlacklistResponse): unknown;
-                fromPartial(_: {}): _650.MsgSetBlacklistResponse;
+                encode(_: _669.MsgSetBlacklistResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _669.MsgSetBlacklistResponse;
+                fromJSON(_: any): _669.MsgSetBlacklistResponse;
+                toJSON(_: _669.MsgSetBlacklistResponse): unknown;
+                fromPartial(_: {}): _669.MsgSetBlacklistResponse;
             };
             QueryEthProphecyRequest: {
-                encode(message: _649.QueryEthProphecyRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _649.QueryEthProphecyRequest;
-                fromJSON(object: any): _649.QueryEthProphecyRequest;
-                toJSON(message: _649.QueryEthProphecyRequest): unknown;
+                encode(message: _668.QueryEthProphecyRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _668.QueryEthProphecyRequest;
+                fromJSON(object: any): _668.QueryEthProphecyRequest;
+                toJSON(message: _668.QueryEthProphecyRequest): unknown;
                 fromPartial(object: {
                     ethereumChainId?: any;
                     bridgeContractAddress?: string;
@@ -2822,17 +2822,17 @@ export declare namespace sifnode {
                     symbol?: string;
                     tokenContractAddress?: string;
                     ethereumSender?: string;
-                }): _649.QueryEthProphecyRequest;
+                }): _668.QueryEthProphecyRequest;
             };
             QueryEthProphecyResponse: {
-                encode(message: _649.QueryEthProphecyResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _649.QueryEthProphecyResponse;
-                fromJSON(object: any): _649.QueryEthProphecyResponse;
-                toJSON(message: _649.QueryEthProphecyResponse): unknown;
+                encode(message: _668.QueryEthProphecyResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _668.QueryEthProphecyResponse;
+                fromJSON(object: any): _668.QueryEthProphecyResponse;
+                toJSON(message: _668.QueryEthProphecyResponse): unknown;
                 fromPartial(object: {
                     id?: string;
                     status?: {
-                        text?: _655.StatusText;
+                        text?: _674.StatusText;
                         finalClaim?: string;
                     };
                     claims?: {
@@ -2845,25 +2845,25 @@ export declare namespace sifnode {
                         cosmosReceiver?: string;
                         validatorAddress?: string;
                         amount?: string;
-                        claimType?: _651.ClaimType;
+                        claimType?: _670.ClaimType;
                     }[];
-                }): _649.QueryEthProphecyResponse;
+                }): _668.QueryEthProphecyResponse;
             };
             QueryBlacklistRequest: {
-                encode(_: _649.QueryBlacklistRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _649.QueryBlacklistRequest;
-                fromJSON(_: any): _649.QueryBlacklistRequest;
-                toJSON(_: _649.QueryBlacklistRequest): unknown;
-                fromPartial(_: {}): _649.QueryBlacklistRequest;
+                encode(_: _668.QueryBlacklistRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _668.QueryBlacklistRequest;
+                fromJSON(_: any): _668.QueryBlacklistRequest;
+                toJSON(_: _668.QueryBlacklistRequest): unknown;
+                fromPartial(_: {}): _668.QueryBlacklistRequest;
             };
             QueryBlacklistResponse: {
-                encode(message: _649.QueryBlacklistResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _649.QueryBlacklistResponse;
-                fromJSON(object: any): _649.QueryBlacklistResponse;
-                toJSON(message: _649.QueryBlacklistResponse): unknown;
+                encode(message: _668.QueryBlacklistResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _668.QueryBlacklistResponse;
+                fromJSON(object: any): _668.QueryBlacklistResponse;
+                toJSON(message: _668.QueryBlacklistResponse): unknown;
                 fromPartial(object: {
                     addresses?: string[];
-                }): _649.QueryBlacklistResponse;
+                }): _668.QueryBlacklistResponse;
             };
         };
     }
@@ -2873,91 +2873,91 @@ export declare namespace sifnode {
             load: (protoRegistry: import("@cosmjs/proto-signing").Registry) => void;
             MessageComposer: {
                 encoded: {
-                    open(value: _653.MsgOpen): {
+                    open(value: _672.MsgOpen): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    close(value: _653.MsgClose): {
+                    close(value: _672.MsgClose): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    forceClose(value: _653.MsgForceClose): {
+                    forceClose(value: _672.MsgForceClose): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updateParams(value: _653.MsgUpdateParams): {
+                    updateParams(value: _672.MsgUpdateParams): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updatePools(value: _653.MsgUpdatePools): {
+                    updatePools(value: _672.MsgUpdatePools): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    whitelist(value: _653.MsgWhitelist): {
+                    whitelist(value: _672.MsgWhitelist): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    dewhitelist(value: _653.MsgDewhitelist): {
+                    dewhitelist(value: _672.MsgDewhitelist): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
                 };
                 withTypeUrl: {
-                    open(value: _653.MsgOpen): {
+                    open(value: _672.MsgOpen): {
                         typeUrl: string;
-                        value: _653.MsgOpen;
+                        value: _672.MsgOpen;
                     };
-                    close(value: _653.MsgClose): {
+                    close(value: _672.MsgClose): {
                         typeUrl: string;
-                        value: _653.MsgClose;
+                        value: _672.MsgClose;
                     };
-                    forceClose(value: _653.MsgForceClose): {
+                    forceClose(value: _672.MsgForceClose): {
                         typeUrl: string;
-                        value: _653.MsgForceClose;
+                        value: _672.MsgForceClose;
                     };
-                    updateParams(value: _653.MsgUpdateParams): {
+                    updateParams(value: _672.MsgUpdateParams): {
                         typeUrl: string;
-                        value: _653.MsgUpdateParams;
+                        value: _672.MsgUpdateParams;
                     };
-                    updatePools(value: _653.MsgUpdatePools): {
+                    updatePools(value: _672.MsgUpdatePools): {
                         typeUrl: string;
-                        value: _653.MsgUpdatePools;
+                        value: _672.MsgUpdatePools;
                     };
-                    whitelist(value: _653.MsgWhitelist): {
+                    whitelist(value: _672.MsgWhitelist): {
                         typeUrl: string;
-                        value: _653.MsgWhitelist;
+                        value: _672.MsgWhitelist;
                     };
-                    dewhitelist(value: _653.MsgDewhitelist): {
+                    dewhitelist(value: _672.MsgDewhitelist): {
                         typeUrl: string;
-                        value: _653.MsgDewhitelist;
+                        value: _672.MsgDewhitelist;
                     };
                 };
                 toJSON: {
-                    open(value: _653.MsgOpen): {
+                    open(value: _672.MsgOpen): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    close(value: _653.MsgClose): {
+                    close(value: _672.MsgClose): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    forceClose(value: _653.MsgForceClose): {
+                    forceClose(value: _672.MsgForceClose): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updateParams(value: _653.MsgUpdateParams): {
+                    updateParams(value: _672.MsgUpdateParams): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updatePools(value: _653.MsgUpdatePools): {
+                    updatePools(value: _672.MsgUpdatePools): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    whitelist(value: _653.MsgWhitelist): {
+                    whitelist(value: _672.MsgWhitelist): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    dewhitelist(value: _653.MsgDewhitelist): {
+                    dewhitelist(value: _672.MsgDewhitelist): {
                         typeUrl: string;
                         value: unknown;
                     };
@@ -2965,68 +2965,68 @@ export declare namespace sifnode {
                 fromJSON: {
                     open(value: any): {
                         typeUrl: string;
-                        value: _653.MsgOpen;
+                        value: _672.MsgOpen;
                     };
                     close(value: any): {
                         typeUrl: string;
-                        value: _653.MsgClose;
+                        value: _672.MsgClose;
                     };
                     forceClose(value: any): {
                         typeUrl: string;
-                        value: _653.MsgForceClose;
+                        value: _672.MsgForceClose;
                     };
                     updateParams(value: any): {
                         typeUrl: string;
-                        value: _653.MsgUpdateParams;
+                        value: _672.MsgUpdateParams;
                     };
                     updatePools(value: any): {
                         typeUrl: string;
-                        value: _653.MsgUpdatePools;
+                        value: _672.MsgUpdatePools;
                     };
                     whitelist(value: any): {
                         typeUrl: string;
-                        value: _653.MsgWhitelist;
+                        value: _672.MsgWhitelist;
                     };
                     dewhitelist(value: any): {
                         typeUrl: string;
-                        value: _653.MsgDewhitelist;
+                        value: _672.MsgDewhitelist;
                     };
                 };
                 fromPartial: {
-                    open(value: _653.MsgOpen): {
+                    open(value: _672.MsgOpen): {
                         typeUrl: string;
-                        value: _653.MsgOpen;
+                        value: _672.MsgOpen;
                     };
-                    close(value: _653.MsgClose): {
+                    close(value: _672.MsgClose): {
                         typeUrl: string;
-                        value: _653.MsgClose;
+                        value: _672.MsgClose;
                     };
-                    forceClose(value: _653.MsgForceClose): {
+                    forceClose(value: _672.MsgForceClose): {
                         typeUrl: string;
-                        value: _653.MsgForceClose;
+                        value: _672.MsgForceClose;
                     };
-                    updateParams(value: _653.MsgUpdateParams): {
+                    updateParams(value: _672.MsgUpdateParams): {
                         typeUrl: string;
-                        value: _653.MsgUpdateParams;
+                        value: _672.MsgUpdateParams;
                     };
-                    updatePools(value: _653.MsgUpdatePools): {
+                    updatePools(value: _672.MsgUpdatePools): {
                         typeUrl: string;
-                        value: _653.MsgUpdatePools;
+                        value: _672.MsgUpdatePools;
                     };
-                    whitelist(value: _653.MsgWhitelist): {
+                    whitelist(value: _672.MsgWhitelist): {
                         typeUrl: string;
-                        value: _653.MsgWhitelist;
+                        value: _672.MsgWhitelist;
                     };
-                    dewhitelist(value: _653.MsgDewhitelist): {
+                    dewhitelist(value: _672.MsgDewhitelist): {
                         typeUrl: string;
-                        value: _653.MsgDewhitelist;
+                        value: _672.MsgDewhitelist;
                     };
                 };
             };
             AminoConverter: {
                 "/sifnode.margin.v1.MsgOpen": {
                     aminoType: string;
-                    toAmino: ({ signer, collateralAsset, collateralAmount, borrowAsset, position, leverage }: _653.MsgOpen) => {
+                    toAmino: ({ signer, collateralAsset, collateralAmount, borrowAsset, position, leverage }: _672.MsgOpen) => {
                         signer: string;
                         collateral_asset: string;
                         collateral_amount: string;
@@ -3041,22 +3041,22 @@ export declare namespace sifnode {
                         borrow_asset: string;
                         position: number;
                         leverage: string;
-                    }) => _653.MsgOpen;
+                    }) => _672.MsgOpen;
                 };
                 "/sifnode.margin.v1.MsgClose": {
                     aminoType: string;
-                    toAmino: ({ signer, id }: _653.MsgClose) => {
+                    toAmino: ({ signer, id }: _672.MsgClose) => {
                         signer: string;
                         id: string;
                     };
                     fromAmino: ({ signer, id }: {
                         signer: string;
                         id: string;
-                    }) => _653.MsgClose;
+                    }) => _672.MsgClose;
                 };
                 "/sifnode.margin.v1.MsgForceClose": {
                     aminoType: string;
-                    toAmino: ({ signer, mtpAddress, id }: _653.MsgForceClose) => {
+                    toAmino: ({ signer, mtpAddress, id }: _672.MsgForceClose) => {
                         signer: string;
                         mtp_address: string;
                         id: string;
@@ -3065,11 +3065,11 @@ export declare namespace sifnode {
                         signer: string;
                         mtp_address: string;
                         id: string;
-                    }) => _653.MsgForceClose;
+                    }) => _672.MsgForceClose;
                 };
                 "/sifnode.margin.v1.MsgUpdateParams": {
                     aminoType: string;
-                    toAmino: ({ signer, params }: _653.MsgUpdateParams) => {
+                    toAmino: ({ signer, params }: _672.MsgUpdateParams) => {
                         signer: string;
                         params: {
                             leverage_max: string;
@@ -3120,11 +3120,11 @@ export declare namespace sifnode {
                             incremental_interest_payment_enabled: boolean;
                             whitelisting_enabled: boolean;
                         };
-                    }) => _653.MsgUpdateParams;
+                    }) => _672.MsgUpdateParams;
                 };
                 "/sifnode.margin.v1.MsgUpdatePools": {
                     aminoType: string;
-                    toAmino: ({ signer, pools, closedPools }: _653.MsgUpdatePools) => {
+                    toAmino: ({ signer, pools, closedPools }: _672.MsgUpdatePools) => {
                         signer: string;
                         pools: string[];
                         closed_pools: string[];
@@ -3133,39 +3133,39 @@ export declare namespace sifnode {
                         signer: string;
                         pools: string[];
                         closed_pools: string[];
-                    }) => _653.MsgUpdatePools;
+                    }) => _672.MsgUpdatePools;
                 };
                 "/sifnode.margin.v1.MsgWhitelist": {
                     aminoType: string;
-                    toAmino: ({ signer, whitelistedAddress }: _653.MsgWhitelist) => {
+                    toAmino: ({ signer, whitelistedAddress }: _672.MsgWhitelist) => {
                         signer: string;
                         whitelisted_address: string;
                     };
                     fromAmino: ({ signer, whitelisted_address }: {
                         signer: string;
                         whitelisted_address: string;
-                    }) => _653.MsgWhitelist;
+                    }) => _672.MsgWhitelist;
                 };
                 "/sifnode.margin.v1.MsgDewhitelist": {
                     aminoType: string;
-                    toAmino: ({ signer, whitelistedAddress }: _653.MsgDewhitelist) => {
+                    toAmino: ({ signer, whitelistedAddress }: _672.MsgDewhitelist) => {
                         signer: string;
                         whitelisted_address: string;
                     };
                     fromAmino: ({ signer, whitelisted_address }: {
                         signer: string;
                         whitelisted_address: string;
-                    }) => _653.MsgDewhitelist;
+                    }) => _672.MsgDewhitelist;
                 };
             };
-            positionFromJSON(object: any): _654.Position;
-            positionToJSON(object: _654.Position): string;
-            Position: typeof _654.Position;
+            positionFromJSON(object: any): _673.Position;
+            positionToJSON(object: _673.Position): string;
+            Position: typeof _673.Position;
             GenesisState: {
-                encode(message: _654.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.GenesisState;
-                fromJSON(object: any): _654.GenesisState;
-                toJSON(message: _654.GenesisState): unknown;
+                encode(message: _673.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _673.GenesisState;
+                fromJSON(object: any): _673.GenesisState;
+                toJSON(message: _673.GenesisState): unknown;
                 fromPartial(object: {
                     params?: {
                         leverageMax?: string;
@@ -3190,13 +3190,13 @@ export declare namespace sifnode {
                         incrementalInterestPaymentEnabled?: boolean;
                         whitelistingEnabled?: boolean;
                     };
-                }): _654.GenesisState;
+                }): _673.GenesisState;
             };
             Params: {
-                encode(message: _654.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.Params;
-                fromJSON(object: any): _654.Params;
-                toJSON(message: _654.Params): unknown;
+                encode(message: _673.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _673.Params;
+                fromJSON(object: any): _673.Params;
+                toJSON(message: _673.Params): unknown;
                 fromPartial(object: {
                     leverageMax?: string;
                     interestRateMax?: string;
@@ -3219,13 +3219,13 @@ export declare namespace sifnode {
                     closedPools?: string[];
                     incrementalInterestPaymentEnabled?: boolean;
                     whitelistingEnabled?: boolean;
-                }): _654.Params;
+                }): _673.Params;
             };
             MTP: {
-                encode(message: _654.MTP, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.MTP;
-                fromJSON(object: any): _654.MTP;
-                toJSON(message: _654.MTP): unknown;
+                encode(message: _673.MTP, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _673.MTP;
+                fromJSON(object: any): _673.MTP;
+                toJSON(message: _673.MTP): unknown;
                 fromPartial(object: {
                     address?: string;
                     collateralAsset?: string;
@@ -3237,71 +3237,71 @@ export declare namespace sifnode {
                     custodyAmount?: string;
                     leverage?: string;
                     mtpHealth?: string;
-                    position?: _654.Position;
+                    position?: _673.Position;
                     id?: any;
-                }): _654.MTP;
+                }): _673.MTP;
             };
             MsgOpen: {
-                encode(message: _653.MsgOpen, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.MsgOpen;
-                fromJSON(object: any): _653.MsgOpen;
-                toJSON(message: _653.MsgOpen): unknown;
+                encode(message: _672.MsgOpen, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _672.MsgOpen;
+                fromJSON(object: any): _672.MsgOpen;
+                toJSON(message: _672.MsgOpen): unknown;
                 fromPartial(object: {
                     signer?: string;
                     collateralAsset?: string;
                     collateralAmount?: string;
                     borrowAsset?: string;
-                    position?: _654.Position;
+                    position?: _673.Position;
                     leverage?: string;
-                }): _653.MsgOpen;
+                }): _672.MsgOpen;
             };
             MsgOpenResponse: {
-                encode(_: _653.MsgOpenResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.MsgOpenResponse;
-                fromJSON(_: any): _653.MsgOpenResponse;
-                toJSON(_: _653.MsgOpenResponse): unknown;
-                fromPartial(_: {}): _653.MsgOpenResponse;
+                encode(_: _672.MsgOpenResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _672.MsgOpenResponse;
+                fromJSON(_: any): _672.MsgOpenResponse;
+                toJSON(_: _672.MsgOpenResponse): unknown;
+                fromPartial(_: {}): _672.MsgOpenResponse;
             };
             MsgClose: {
-                encode(message: _653.MsgClose, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.MsgClose;
-                fromJSON(object: any): _653.MsgClose;
-                toJSON(message: _653.MsgClose): unknown;
+                encode(message: _672.MsgClose, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _672.MsgClose;
+                fromJSON(object: any): _672.MsgClose;
+                toJSON(message: _672.MsgClose): unknown;
                 fromPartial(object: {
                     signer?: string;
                     id?: any;
-                }): _653.MsgClose;
+                }): _672.MsgClose;
             };
             MsgCloseResponse: {
-                encode(_: _653.MsgCloseResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.MsgCloseResponse;
-                fromJSON(_: any): _653.MsgCloseResponse;
-                toJSON(_: _653.MsgCloseResponse): unknown;
-                fromPartial(_: {}): _653.MsgCloseResponse;
+                encode(_: _672.MsgCloseResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _672.MsgCloseResponse;
+                fromJSON(_: any): _672.MsgCloseResponse;
+                toJSON(_: _672.MsgCloseResponse): unknown;
+                fromPartial(_: {}): _672.MsgCloseResponse;
             };
             MsgForceClose: {
-                encode(message: _653.MsgForceClose, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.MsgForceClose;
-                fromJSON(object: any): _653.MsgForceClose;
-                toJSON(message: _653.MsgForceClose): unknown;
+                encode(message: _672.MsgForceClose, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _672.MsgForceClose;
+                fromJSON(object: any): _672.MsgForceClose;
+                toJSON(message: _672.MsgForceClose): unknown;
                 fromPartial(object: {
                     signer?: string;
                     mtpAddress?: string;
                     id?: any;
-                }): _653.MsgForceClose;
+                }): _672.MsgForceClose;
             };
             MsgForceCloseResponse: {
-                encode(_: _653.MsgForceCloseResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.MsgForceCloseResponse;
-                fromJSON(_: any): _653.MsgForceCloseResponse;
-                toJSON(_: _653.MsgForceCloseResponse): unknown;
-                fromPartial(_: {}): _653.MsgForceCloseResponse;
+                encode(_: _672.MsgForceCloseResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _672.MsgForceCloseResponse;
+                fromJSON(_: any): _672.MsgForceCloseResponse;
+                toJSON(_: _672.MsgForceCloseResponse): unknown;
+                fromPartial(_: {}): _672.MsgForceCloseResponse;
             };
             MsgUpdateParams: {
-                encode(message: _653.MsgUpdateParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.MsgUpdateParams;
-                fromJSON(object: any): _653.MsgUpdateParams;
-                toJSON(message: _653.MsgUpdateParams): unknown;
+                encode(message: _672.MsgUpdateParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _672.MsgUpdateParams;
+                fromJSON(object: any): _672.MsgUpdateParams;
+                toJSON(message: _672.MsgUpdateParams): unknown;
                 fromPartial(object: {
                     signer?: string;
                     params?: {
@@ -3327,82 +3327,82 @@ export declare namespace sifnode {
                         incrementalInterestPaymentEnabled?: boolean;
                         whitelistingEnabled?: boolean;
                     };
-                }): _653.MsgUpdateParams;
+                }): _672.MsgUpdateParams;
             };
             MsgUpdateParamsResponse: {
-                encode(_: _653.MsgUpdateParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.MsgUpdateParamsResponse;
-                fromJSON(_: any): _653.MsgUpdateParamsResponse;
-                toJSON(_: _653.MsgUpdateParamsResponse): unknown;
-                fromPartial(_: {}): _653.MsgUpdateParamsResponse;
+                encode(_: _672.MsgUpdateParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _672.MsgUpdateParamsResponse;
+                fromJSON(_: any): _672.MsgUpdateParamsResponse;
+                toJSON(_: _672.MsgUpdateParamsResponse): unknown;
+                fromPartial(_: {}): _672.MsgUpdateParamsResponse;
             };
             MsgUpdatePools: {
-                encode(message: _653.MsgUpdatePools, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.MsgUpdatePools;
-                fromJSON(object: any): _653.MsgUpdatePools;
-                toJSON(message: _653.MsgUpdatePools): unknown;
+                encode(message: _672.MsgUpdatePools, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _672.MsgUpdatePools;
+                fromJSON(object: any): _672.MsgUpdatePools;
+                toJSON(message: _672.MsgUpdatePools): unknown;
                 fromPartial(object: {
                     signer?: string;
                     pools?: string[];
                     closedPools?: string[];
-                }): _653.MsgUpdatePools;
+                }): _672.MsgUpdatePools;
             };
             MsgUpdatePoolsResponse: {
-                encode(_: _653.MsgUpdatePoolsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.MsgUpdatePoolsResponse;
-                fromJSON(_: any): _653.MsgUpdatePoolsResponse;
-                toJSON(_: _653.MsgUpdatePoolsResponse): unknown;
-                fromPartial(_: {}): _653.MsgUpdatePoolsResponse;
+                encode(_: _672.MsgUpdatePoolsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _672.MsgUpdatePoolsResponse;
+                fromJSON(_: any): _672.MsgUpdatePoolsResponse;
+                toJSON(_: _672.MsgUpdatePoolsResponse): unknown;
+                fromPartial(_: {}): _672.MsgUpdatePoolsResponse;
             };
             MsgWhitelist: {
-                encode(message: _653.MsgWhitelist, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.MsgWhitelist;
-                fromJSON(object: any): _653.MsgWhitelist;
-                toJSON(message: _653.MsgWhitelist): unknown;
+                encode(message: _672.MsgWhitelist, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _672.MsgWhitelist;
+                fromJSON(object: any): _672.MsgWhitelist;
+                toJSON(message: _672.MsgWhitelist): unknown;
                 fromPartial(object: {
                     signer?: string;
                     whitelistedAddress?: string;
-                }): _653.MsgWhitelist;
+                }): _672.MsgWhitelist;
             };
             MsgWhitelistResponse: {
-                encode(_: _653.MsgWhitelistResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.MsgWhitelistResponse;
-                fromJSON(_: any): _653.MsgWhitelistResponse;
-                toJSON(_: _653.MsgWhitelistResponse): unknown;
-                fromPartial(_: {}): _653.MsgWhitelistResponse;
+                encode(_: _672.MsgWhitelistResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _672.MsgWhitelistResponse;
+                fromJSON(_: any): _672.MsgWhitelistResponse;
+                toJSON(_: _672.MsgWhitelistResponse): unknown;
+                fromPartial(_: {}): _672.MsgWhitelistResponse;
             };
             MsgDewhitelist: {
-                encode(message: _653.MsgDewhitelist, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.MsgDewhitelist;
-                fromJSON(object: any): _653.MsgDewhitelist;
-                toJSON(message: _653.MsgDewhitelist): unknown;
+                encode(message: _672.MsgDewhitelist, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _672.MsgDewhitelist;
+                fromJSON(object: any): _672.MsgDewhitelist;
+                toJSON(message: _672.MsgDewhitelist): unknown;
                 fromPartial(object: {
                     signer?: string;
                     whitelistedAddress?: string;
-                }): _653.MsgDewhitelist;
+                }): _672.MsgDewhitelist;
             };
             MsgDewhitelistResponse: {
-                encode(_: _653.MsgDewhitelistResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.MsgDewhitelistResponse;
-                fromJSON(_: any): _653.MsgDewhitelistResponse;
-                toJSON(_: _653.MsgDewhitelistResponse): unknown;
-                fromPartial(_: {}): _653.MsgDewhitelistResponse;
+                encode(_: _672.MsgDewhitelistResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _672.MsgDewhitelistResponse;
+                fromJSON(_: any): _672.MsgDewhitelistResponse;
+                toJSON(_: _672.MsgDewhitelistResponse): unknown;
+                fromPartial(_: {}): _672.MsgDewhitelistResponse;
             };
             MTPRequest: {
-                encode(message: _652.MTPRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _652.MTPRequest;
-                fromJSON(object: any): _652.MTPRequest;
-                toJSON(message: _652.MTPRequest): unknown;
+                encode(message: _671.MTPRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _671.MTPRequest;
+                fromJSON(object: any): _671.MTPRequest;
+                toJSON(message: _671.MTPRequest): unknown;
                 fromPartial(object: {
                     address?: string;
                     id?: any;
-                }): _652.MTPRequest;
+                }): _671.MTPRequest;
             };
             MTPResponse: {
-                encode(message: _652.MTPResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _652.MTPResponse;
-                fromJSON(object: any): _652.MTPResponse;
-                toJSON(message: _652.MTPResponse): unknown;
+                encode(message: _671.MTPResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _671.MTPResponse;
+                fromJSON(object: any): _671.MTPResponse;
+                toJSON(message: _671.MTPResponse): unknown;
                 fromPartial(object: {
                     mtp?: {
                         address?: string;
@@ -3415,16 +3415,16 @@ export declare namespace sifnode {
                         custodyAmount?: string;
                         leverage?: string;
                         mtpHealth?: string;
-                        position?: _654.Position;
+                        position?: _673.Position;
                         id?: any;
                     };
-                }): _652.MTPResponse;
+                }): _671.MTPResponse;
             };
             PositionsForAddressRequest: {
-                encode(message: _652.PositionsForAddressRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _652.PositionsForAddressRequest;
-                fromJSON(object: any): _652.PositionsForAddressRequest;
-                toJSON(message: _652.PositionsForAddressRequest): unknown;
+                encode(message: _671.PositionsForAddressRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _671.PositionsForAddressRequest;
+                fromJSON(object: any): _671.PositionsForAddressRequest;
+                toJSON(message: _671.PositionsForAddressRequest): unknown;
                 fromPartial(object: {
                     address?: string;
                     pagination?: {
@@ -3434,13 +3434,13 @@ export declare namespace sifnode {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _652.PositionsForAddressRequest;
+                }): _671.PositionsForAddressRequest;
             };
             PositionsForAddressResponse: {
-                encode(message: _652.PositionsForAddressResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _652.PositionsForAddressResponse;
-                fromJSON(object: any): _652.PositionsForAddressResponse;
-                toJSON(message: _652.PositionsForAddressResponse): unknown;
+                encode(message: _671.PositionsForAddressResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _671.PositionsForAddressResponse;
+                fromJSON(object: any): _671.PositionsForAddressResponse;
+                toJSON(message: _671.PositionsForAddressResponse): unknown;
                 fromPartial(object: {
                     mtps?: {
                         address?: string;
@@ -3453,20 +3453,20 @@ export declare namespace sifnode {
                         custodyAmount?: string;
                         leverage?: string;
                         mtpHealth?: string;
-                        position?: _654.Position;
+                        position?: _673.Position;
                         id?: any;
                     }[];
                     pagination?: {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _652.PositionsForAddressResponse;
+                }): _671.PositionsForAddressResponse;
             };
             PositionsByPoolRequest: {
-                encode(message: _652.PositionsByPoolRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _652.PositionsByPoolRequest;
-                fromJSON(object: any): _652.PositionsByPoolRequest;
-                toJSON(message: _652.PositionsByPoolRequest): unknown;
+                encode(message: _671.PositionsByPoolRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _671.PositionsByPoolRequest;
+                fromJSON(object: any): _671.PositionsByPoolRequest;
+                toJSON(message: _671.PositionsByPoolRequest): unknown;
                 fromPartial(object: {
                     asset?: string;
                     pagination?: {
@@ -3476,13 +3476,13 @@ export declare namespace sifnode {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _652.PositionsByPoolRequest;
+                }): _671.PositionsByPoolRequest;
             };
             PositionsByPoolResponse: {
-                encode(message: _652.PositionsByPoolResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _652.PositionsByPoolResponse;
-                fromJSON(object: any): _652.PositionsByPoolResponse;
-                toJSON(message: _652.PositionsByPoolResponse): unknown;
+                encode(message: _671.PositionsByPoolResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _671.PositionsByPoolResponse;
+                fromJSON(object: any): _671.PositionsByPoolResponse;
+                toJSON(message: _671.PositionsByPoolResponse): unknown;
                 fromPartial(object: {
                     mtps?: {
                         address?: string;
@@ -3495,20 +3495,20 @@ export declare namespace sifnode {
                         custodyAmount?: string;
                         leverage?: string;
                         mtpHealth?: string;
-                        position?: _654.Position;
+                        position?: _673.Position;
                         id?: any;
                     }[];
                     pagination?: {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _652.PositionsByPoolResponse;
+                }): _671.PositionsByPoolResponse;
             };
             PositionsRequest: {
-                encode(message: _652.PositionsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _652.PositionsRequest;
-                fromJSON(object: any): _652.PositionsRequest;
-                toJSON(message: _652.PositionsRequest): unknown;
+                encode(message: _671.PositionsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _671.PositionsRequest;
+                fromJSON(object: any): _671.PositionsRequest;
+                toJSON(message: _671.PositionsRequest): unknown;
                 fromPartial(object: {
                     pagination?: {
                         key?: Uint8Array;
@@ -3517,13 +3517,13 @@ export declare namespace sifnode {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _652.PositionsRequest;
+                }): _671.PositionsRequest;
             };
             PositionsResponse: {
-                encode(message: _652.PositionsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _652.PositionsResponse;
-                fromJSON(object: any): _652.PositionsResponse;
-                toJSON(message: _652.PositionsResponse): unknown;
+                encode(message: _671.PositionsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _671.PositionsResponse;
+                fromJSON(object: any): _671.PositionsResponse;
+                toJSON(message: _671.PositionsResponse): unknown;
                 fromPartial(object: {
                     mtps?: {
                         address?: string;
@@ -3536,27 +3536,27 @@ export declare namespace sifnode {
                         custodyAmount?: string;
                         leverage?: string;
                         mtpHealth?: string;
-                        position?: _654.Position;
+                        position?: _673.Position;
                         id?: any;
                     }[];
                     pagination?: {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _652.PositionsResponse;
+                }): _671.PositionsResponse;
             };
             ParamsRequest: {
-                encode(_: _652.ParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _652.ParamsRequest;
-                fromJSON(_: any): _652.ParamsRequest;
-                toJSON(_: _652.ParamsRequest): unknown;
-                fromPartial(_: {}): _652.ParamsRequest;
+                encode(_: _671.ParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _671.ParamsRequest;
+                fromJSON(_: any): _671.ParamsRequest;
+                toJSON(_: _671.ParamsRequest): unknown;
+                fromPartial(_: {}): _671.ParamsRequest;
             };
             ParamsResponse: {
-                encode(message: _652.ParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _652.ParamsResponse;
-                fromJSON(object: any): _652.ParamsResponse;
-                toJSON(message: _652.ParamsResponse): unknown;
+                encode(message: _671.ParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _671.ParamsResponse;
+                fromJSON(object: any): _671.ParamsResponse;
+                toJSON(message: _671.ParamsResponse): unknown;
                 fromPartial(object: {
                     params?: {
                         leverageMax?: string;
@@ -3581,30 +3581,30 @@ export declare namespace sifnode {
                         incrementalInterestPaymentEnabled?: boolean;
                         whitelistingEnabled?: boolean;
                     };
-                }): _652.ParamsResponse;
+                }): _671.ParamsResponse;
             };
             StatusRequest: {
-                encode(_: _652.StatusRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _652.StatusRequest;
-                fromJSON(_: any): _652.StatusRequest;
-                toJSON(_: _652.StatusRequest): unknown;
-                fromPartial(_: {}): _652.StatusRequest;
+                encode(_: _671.StatusRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _671.StatusRequest;
+                fromJSON(_: any): _671.StatusRequest;
+                toJSON(_: _671.StatusRequest): unknown;
+                fromPartial(_: {}): _671.StatusRequest;
             };
             StatusResponse: {
-                encode(message: _652.StatusResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _652.StatusResponse;
-                fromJSON(object: any): _652.StatusResponse;
-                toJSON(message: _652.StatusResponse): unknown;
+                encode(message: _671.StatusResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _671.StatusResponse;
+                fromJSON(object: any): _671.StatusResponse;
+                toJSON(message: _671.StatusResponse): unknown;
                 fromPartial(object: {
                     openMtpCount?: any;
                     lifetimeMtpCount?: any;
-                }): _652.StatusResponse;
+                }): _671.StatusResponse;
             };
             WhitelistRequest: {
-                encode(message: _652.WhitelistRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _652.WhitelistRequest;
-                fromJSON(object: any): _652.WhitelistRequest;
-                toJSON(message: _652.WhitelistRequest): unknown;
+                encode(message: _671.WhitelistRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _671.WhitelistRequest;
+                fromJSON(object: any): _671.WhitelistRequest;
+                toJSON(message: _671.WhitelistRequest): unknown;
                 fromPartial(object: {
                     pagination?: {
                         key?: Uint8Array;
@@ -3613,119 +3613,119 @@ export declare namespace sifnode {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _652.WhitelistRequest;
+                }): _671.WhitelistRequest;
             };
             WhitelistResponse: {
-                encode(message: _652.WhitelistResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _652.WhitelistResponse;
-                fromJSON(object: any): _652.WhitelistResponse;
-                toJSON(message: _652.WhitelistResponse): unknown;
+                encode(message: _671.WhitelistResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _671.WhitelistResponse;
+                fromJSON(object: any): _671.WhitelistResponse;
+                toJSON(message: _671.WhitelistResponse): unknown;
                 fromPartial(object: {
                     whitelist?: string[];
                     pagination?: {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _652.WhitelistResponse;
+                }): _671.WhitelistResponse;
             };
             GetSQParamsRequest: {
-                encode(message: _652.GetSQParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _652.GetSQParamsRequest;
-                fromJSON(object: any): _652.GetSQParamsRequest;
-                toJSON(message: _652.GetSQParamsRequest): unknown;
+                encode(message: _671.GetSQParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _671.GetSQParamsRequest;
+                fromJSON(object: any): _671.GetSQParamsRequest;
+                toJSON(message: _671.GetSQParamsRequest): unknown;
                 fromPartial(object: {
                     pool?: string;
-                }): _652.GetSQParamsRequest;
+                }): _671.GetSQParamsRequest;
             };
             GetSQParamsResponse: {
-                encode(message: _652.GetSQParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _652.GetSQParamsResponse;
-                fromJSON(object: any): _652.GetSQParamsResponse;
-                toJSON(message: _652.GetSQParamsResponse): unknown;
+                encode(message: _671.GetSQParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _671.GetSQParamsResponse;
+                fromJSON(object: any): _671.GetSQParamsResponse;
+                toJSON(message: _671.GetSQParamsResponse): unknown;
                 fromPartial(object: {
                     beginBlock?: any;
-                }): _652.GetSQParamsResponse;
+                }): _671.GetSQParamsResponse;
             };
             IsWhitelistedRequest: {
-                encode(message: _652.IsWhitelistedRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _652.IsWhitelistedRequest;
-                fromJSON(object: any): _652.IsWhitelistedRequest;
-                toJSON(message: _652.IsWhitelistedRequest): unknown;
+                encode(message: _671.IsWhitelistedRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _671.IsWhitelistedRequest;
+                fromJSON(object: any): _671.IsWhitelistedRequest;
+                toJSON(message: _671.IsWhitelistedRequest): unknown;
                 fromPartial(object: {
                     address?: string;
-                }): _652.IsWhitelistedRequest;
+                }): _671.IsWhitelistedRequest;
             };
             IsWhitelistedResponse: {
-                encode(message: _652.IsWhitelistedResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _652.IsWhitelistedResponse;
-                fromJSON(object: any): _652.IsWhitelistedResponse;
-                toJSON(message: _652.IsWhitelistedResponse): unknown;
+                encode(message: _671.IsWhitelistedResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _671.IsWhitelistedResponse;
+                fromJSON(object: any): _671.IsWhitelistedResponse;
+                toJSON(message: _671.IsWhitelistedResponse): unknown;
                 fromPartial(object: {
                     address?: string;
                     isWhitelisted?: boolean;
-                }): _652.IsWhitelistedResponse;
+                }): _671.IsWhitelistedResponse;
             };
         };
     }
     namespace oracle {
         const v1: {
-            statusTextFromJSON(object: any): _655.StatusText;
-            statusTextToJSON(object: _655.StatusText): string;
-            StatusText: typeof _655.StatusText;
+            statusTextFromJSON(object: any): _674.StatusText;
+            statusTextToJSON(object: _674.StatusText): string;
+            StatusText: typeof _674.StatusText;
             GenesisState: {
-                encode(message: _655.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _655.GenesisState;
-                fromJSON(object: any): _655.GenesisState;
-                toJSON(message: _655.GenesisState): unknown;
+                encode(message: _674.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _674.GenesisState;
+                fromJSON(object: any): _674.GenesisState;
+                toJSON(message: _674.GenesisState): unknown;
                 fromPartial(object: {
                     addressWhitelist?: string[];
                     adminAddress?: string;
                     prophecies?: {
                         id?: string;
                         status?: {
-                            text?: _655.StatusText;
+                            text?: _674.StatusText;
                             finalClaim?: string;
                         };
                         claimValidators?: Uint8Array;
                         validatorClaims?: Uint8Array;
                     }[];
-                }): _655.GenesisState;
+                }): _674.GenesisState;
             };
             Claim: {
-                encode(message: _655.Claim, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _655.Claim;
-                fromJSON(object: any): _655.Claim;
-                toJSON(message: _655.Claim): unknown;
+                encode(message: _674.Claim, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _674.Claim;
+                fromJSON(object: any): _674.Claim;
+                toJSON(message: _674.Claim): unknown;
                 fromPartial(object: {
                     id?: string;
                     validatorAddress?: string;
                     content?: string;
-                }): _655.Claim;
+                }): _674.Claim;
             };
             DBProphecy: {
-                encode(message: _655.DBProphecy, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _655.DBProphecy;
-                fromJSON(object: any): _655.DBProphecy;
-                toJSON(message: _655.DBProphecy): unknown;
+                encode(message: _674.DBProphecy, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _674.DBProphecy;
+                fromJSON(object: any): _674.DBProphecy;
+                toJSON(message: _674.DBProphecy): unknown;
                 fromPartial(object: {
                     id?: string;
                     status?: {
-                        text?: _655.StatusText;
+                        text?: _674.StatusText;
                         finalClaim?: string;
                     };
                     claimValidators?: Uint8Array;
                     validatorClaims?: Uint8Array;
-                }): _655.DBProphecy;
+                }): _674.DBProphecy;
             };
             Status: {
-                encode(message: _655.Status, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _655.Status;
-                fromJSON(object: any): _655.Status;
-                toJSON(message: _655.Status): unknown;
+                encode(message: _674.Status, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _674.Status;
+                fromJSON(object: any): _674.Status;
+                toJSON(message: _674.Status): unknown;
                 fromPartial(object: {
-                    text?: _655.StatusText;
+                    text?: _674.StatusText;
                     finalClaim?: string;
-                }): _655.Status;
+                }): _674.Status;
             };
         };
     }
@@ -3735,43 +3735,43 @@ export declare namespace sifnode {
             load: (protoRegistry: import("@cosmjs/proto-signing").Registry) => void;
             MessageComposer: {
                 encoded: {
-                    register(value: _657.MsgRegister): {
+                    register(value: _676.MsgRegister): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    deregister(value: _657.MsgDeregister): {
+                    deregister(value: _676.MsgDeregister): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    setRegistry(value: _657.MsgSetRegistry): {
+                    setRegistry(value: _676.MsgSetRegistry): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
                 };
                 withTypeUrl: {
-                    register(value: _657.MsgRegister): {
+                    register(value: _676.MsgRegister): {
                         typeUrl: string;
-                        value: _657.MsgRegister;
+                        value: _676.MsgRegister;
                     };
-                    deregister(value: _657.MsgDeregister): {
+                    deregister(value: _676.MsgDeregister): {
                         typeUrl: string;
-                        value: _657.MsgDeregister;
+                        value: _676.MsgDeregister;
                     };
-                    setRegistry(value: _657.MsgSetRegistry): {
+                    setRegistry(value: _676.MsgSetRegistry): {
                         typeUrl: string;
-                        value: _657.MsgSetRegistry;
+                        value: _676.MsgSetRegistry;
                     };
                 };
                 toJSON: {
-                    register(value: _657.MsgRegister): {
+                    register(value: _676.MsgRegister): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    deregister(value: _657.MsgDeregister): {
+                    deregister(value: _676.MsgDeregister): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    setRegistry(value: _657.MsgSetRegistry): {
+                    setRegistry(value: _676.MsgSetRegistry): {
                         typeUrl: string;
                         value: unknown;
                     };
@@ -3779,36 +3779,36 @@ export declare namespace sifnode {
                 fromJSON: {
                     register(value: any): {
                         typeUrl: string;
-                        value: _657.MsgRegister;
+                        value: _676.MsgRegister;
                     };
                     deregister(value: any): {
                         typeUrl: string;
-                        value: _657.MsgDeregister;
+                        value: _676.MsgDeregister;
                     };
                     setRegistry(value: any): {
                         typeUrl: string;
-                        value: _657.MsgSetRegistry;
+                        value: _676.MsgSetRegistry;
                     };
                 };
                 fromPartial: {
-                    register(value: _657.MsgRegister): {
+                    register(value: _676.MsgRegister): {
                         typeUrl: string;
-                        value: _657.MsgRegister;
+                        value: _676.MsgRegister;
                     };
-                    deregister(value: _657.MsgDeregister): {
+                    deregister(value: _676.MsgDeregister): {
                         typeUrl: string;
-                        value: _657.MsgDeregister;
+                        value: _676.MsgDeregister;
                     };
-                    setRegistry(value: _657.MsgSetRegistry): {
+                    setRegistry(value: _676.MsgSetRegistry): {
                         typeUrl: string;
-                        value: _657.MsgSetRegistry;
+                        value: _676.MsgSetRegistry;
                     };
                 };
             };
             AminoConverter: {
                 "/sifnode.tokenregistry.v1.MsgRegister": {
                     aminoType: string;
-                    toAmino: ({ from, entry }: _657.MsgRegister) => {
+                    toAmino: ({ from, entry }: _676.MsgRegister) => {
                         from: string;
                         entry: {
                             decimals: string;
@@ -3849,22 +3849,22 @@ export declare namespace sifnode {
                             ibc_counterparty_denom: string;
                             ibc_counterparty_chain_id: string;
                         };
-                    }) => _657.MsgRegister;
+                    }) => _676.MsgRegister;
                 };
                 "/sifnode.tokenregistry.v1.MsgDeregister": {
                     aminoType: string;
-                    toAmino: ({ from, denom }: _657.MsgDeregister) => {
+                    toAmino: ({ from, denom }: _676.MsgDeregister) => {
                         from: string;
                         denom: string;
                     };
                     fromAmino: ({ from, denom }: {
                         from: string;
                         denom: string;
-                    }) => _657.MsgDeregister;
+                    }) => _676.MsgDeregister;
                 };
                 "/sifnode.tokenregistry.v1.MsgSetRegistry": {
                     aminoType: string;
-                    toAmino: ({ from, registry }: _657.MsgSetRegistry) => {
+                    toAmino: ({ from, registry }: _676.MsgSetRegistry) => {
                         from: string;
                         registry: {
                             entries: {
@@ -3909,17 +3909,17 @@ export declare namespace sifnode {
                                 ibc_counterparty_chain_id: string;
                             }[];
                         };
-                    }) => _657.MsgSetRegistry;
+                    }) => _676.MsgSetRegistry;
                 };
             };
-            permissionFromJSON(object: any): _658.Permission;
-            permissionToJSON(object: _658.Permission): string;
-            Permission: typeof _658.Permission;
+            permissionFromJSON(object: any): _677.Permission;
+            permissionToJSON(object: _677.Permission): string;
+            Permission: typeof _677.Permission;
             GenesisState: {
-                encode(message: _658.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _658.GenesisState;
-                fromJSON(object: any): _658.GenesisState;
-                toJSON(message: _658.GenesisState): unknown;
+                encode(message: _677.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _677.GenesisState;
+                fromJSON(object: any): _677.GenesisState;
+                toJSON(message: _677.GenesisState): unknown;
                 fromPartial(object: {
                     registry?: {
                         entries?: {
@@ -3935,19 +3935,19 @@ export declare namespace sifnode {
                             address?: string;
                             externalSymbol?: string;
                             transferLimit?: string;
-                            permissions?: _658.Permission[];
+                            permissions?: _677.Permission[];
                             unitDenom?: string;
                             ibcCounterpartyDenom?: string;
                             ibcCounterpartyChainId?: string;
                         }[];
                     };
-                }): _658.GenesisState;
+                }): _677.GenesisState;
             };
             Registry: {
-                encode(message: _658.Registry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _658.Registry;
-                fromJSON(object: any): _658.Registry;
-                toJSON(message: _658.Registry): unknown;
+                encode(message: _677.Registry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _677.Registry;
+                fromJSON(object: any): _677.Registry;
+                toJSON(message: _677.Registry): unknown;
                 fromPartial(object: {
                     entries?: {
                         decimals?: any;
@@ -3962,18 +3962,18 @@ export declare namespace sifnode {
                         address?: string;
                         externalSymbol?: string;
                         transferLimit?: string;
-                        permissions?: _658.Permission[];
+                        permissions?: _677.Permission[];
                         unitDenom?: string;
                         ibcCounterpartyDenom?: string;
                         ibcCounterpartyChainId?: string;
                     }[];
-                }): _658.Registry;
+                }): _677.Registry;
             };
             RegistryEntry: {
-                encode(message: _658.RegistryEntry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _658.RegistryEntry;
-                fromJSON(object: any): _658.RegistryEntry;
-                toJSON(message: _658.RegistryEntry): unknown;
+                encode(message: _677.RegistryEntry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _677.RegistryEntry;
+                fromJSON(object: any): _677.RegistryEntry;
+                toJSON(message: _677.RegistryEntry): unknown;
                 fromPartial(object: {
                     decimals?: any;
                     denom?: string;
@@ -3987,17 +3987,17 @@ export declare namespace sifnode {
                     address?: string;
                     externalSymbol?: string;
                     transferLimit?: string;
-                    permissions?: _658.Permission[];
+                    permissions?: _677.Permission[];
                     unitDenom?: string;
                     ibcCounterpartyDenom?: string;
                     ibcCounterpartyChainId?: string;
-                }): _658.RegistryEntry;
+                }): _677.RegistryEntry;
             };
             MsgRegister: {
-                encode(message: _657.MsgRegister, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _657.MsgRegister;
-                fromJSON(object: any): _657.MsgRegister;
-                toJSON(message: _657.MsgRegister): unknown;
+                encode(message: _676.MsgRegister, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _676.MsgRegister;
+                fromJSON(object: any): _676.MsgRegister;
+                toJSON(message: _676.MsgRegister): unknown;
                 fromPartial(object: {
                     from?: string;
                     entry?: {
@@ -4013,25 +4013,25 @@ export declare namespace sifnode {
                         address?: string;
                         externalSymbol?: string;
                         transferLimit?: string;
-                        permissions?: _658.Permission[];
+                        permissions?: _677.Permission[];
                         unitDenom?: string;
                         ibcCounterpartyDenom?: string;
                         ibcCounterpartyChainId?: string;
                     };
-                }): _657.MsgRegister;
+                }): _676.MsgRegister;
             };
             MsgRegisterResponse: {
-                encode(_: _657.MsgRegisterResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _657.MsgRegisterResponse;
-                fromJSON(_: any): _657.MsgRegisterResponse;
-                toJSON(_: _657.MsgRegisterResponse): unknown;
-                fromPartial(_: {}): _657.MsgRegisterResponse;
+                encode(_: _676.MsgRegisterResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _676.MsgRegisterResponse;
+                fromJSON(_: any): _676.MsgRegisterResponse;
+                toJSON(_: _676.MsgRegisterResponse): unknown;
+                fromPartial(_: {}): _676.MsgRegisterResponse;
             };
             MsgSetRegistry: {
-                encode(message: _657.MsgSetRegistry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _657.MsgSetRegistry;
-                fromJSON(object: any): _657.MsgSetRegistry;
-                toJSON(message: _657.MsgSetRegistry): unknown;
+                encode(message: _676.MsgSetRegistry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _676.MsgSetRegistry;
+                fromJSON(object: any): _676.MsgSetRegistry;
+                toJSON(message: _676.MsgSetRegistry): unknown;
                 fromPartial(object: {
                     from?: string;
                     registry?: {
@@ -4048,43 +4048,43 @@ export declare namespace sifnode {
                             address?: string;
                             externalSymbol?: string;
                             transferLimit?: string;
-                            permissions?: _658.Permission[];
+                            permissions?: _677.Permission[];
                             unitDenom?: string;
                             ibcCounterpartyDenom?: string;
                             ibcCounterpartyChainId?: string;
                         }[];
                     };
-                }): _657.MsgSetRegistry;
+                }): _676.MsgSetRegistry;
             };
             MsgSetRegistryResponse: {
-                encode(_: _657.MsgSetRegistryResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _657.MsgSetRegistryResponse;
-                fromJSON(_: any): _657.MsgSetRegistryResponse;
-                toJSON(_: _657.MsgSetRegistryResponse): unknown;
-                fromPartial(_: {}): _657.MsgSetRegistryResponse;
+                encode(_: _676.MsgSetRegistryResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _676.MsgSetRegistryResponse;
+                fromJSON(_: any): _676.MsgSetRegistryResponse;
+                toJSON(_: _676.MsgSetRegistryResponse): unknown;
+                fromPartial(_: {}): _676.MsgSetRegistryResponse;
             };
             MsgDeregister: {
-                encode(message: _657.MsgDeregister, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _657.MsgDeregister;
-                fromJSON(object: any): _657.MsgDeregister;
-                toJSON(message: _657.MsgDeregister): unknown;
+                encode(message: _676.MsgDeregister, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _676.MsgDeregister;
+                fromJSON(object: any): _676.MsgDeregister;
+                toJSON(message: _676.MsgDeregister): unknown;
                 fromPartial(object: {
                     from?: string;
                     denom?: string;
-                }): _657.MsgDeregister;
+                }): _676.MsgDeregister;
             };
             MsgDeregisterResponse: {
-                encode(_: _657.MsgDeregisterResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _657.MsgDeregisterResponse;
-                fromJSON(_: any): _657.MsgDeregisterResponse;
-                toJSON(_: _657.MsgDeregisterResponse): unknown;
-                fromPartial(_: {}): _657.MsgDeregisterResponse;
+                encode(_: _676.MsgDeregisterResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _676.MsgDeregisterResponse;
+                fromJSON(_: any): _676.MsgDeregisterResponse;
+                toJSON(_: _676.MsgDeregisterResponse): unknown;
+                fromPartial(_: {}): _676.MsgDeregisterResponse;
             };
             QueryEntriesResponse: {
-                encode(message: _656.QueryEntriesResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.QueryEntriesResponse;
-                fromJSON(object: any): _656.QueryEntriesResponse;
-                toJSON(message: _656.QueryEntriesResponse): unknown;
+                encode(message: _675.QueryEntriesResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _675.QueryEntriesResponse;
+                fromJSON(object: any): _675.QueryEntriesResponse;
+                toJSON(message: _675.QueryEntriesResponse): unknown;
                 fromPartial(object: {
                     registry?: {
                         entries?: {
@@ -4100,20 +4100,20 @@ export declare namespace sifnode {
                             address?: string;
                             externalSymbol?: string;
                             transferLimit?: string;
-                            permissions?: _658.Permission[];
+                            permissions?: _677.Permission[];
                             unitDenom?: string;
                             ibcCounterpartyDenom?: string;
                             ibcCounterpartyChainId?: string;
                         }[];
                     };
-                }): _656.QueryEntriesResponse;
+                }): _675.QueryEntriesResponse;
             };
             QueryEntriesRequest: {
-                encode(_: _656.QueryEntriesRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.QueryEntriesRequest;
-                fromJSON(_: any): _656.QueryEntriesRequest;
-                toJSON(_: _656.QueryEntriesRequest): unknown;
-                fromPartial(_: {}): _656.QueryEntriesRequest;
+                encode(_: _675.QueryEntriesRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _675.QueryEntriesRequest;
+                fromJSON(_: any): _675.QueryEntriesRequest;
+                toJSON(_: _675.QueryEntriesRequest): unknown;
+                fromPartial(_: {}): _675.QueryEntriesRequest;
             };
         };
     }

@@ -20,12 +20,12 @@ import * as _292 from "./vrf/v1/query";
 import * as _293 from "./vrf/v1/randomval";
 import * as _294 from "./vrf/v1/tx";
 import * as _295 from "./vrf/v1/userval";
-import * as _779 from "./erc20/v1/tx.amino";
-import * as _780 from "./vesting/v1/tx.amino";
-import * as _781 from "./vrf/v1/tx.amino";
-import * as _782 from "./erc20/v1/tx.registry";
-import * as _783 from "./vesting/v1/tx.registry";
-import * as _784 from "./vrf/v1/tx.registry";
+import * as _798 from "./erc20/v1/tx.amino";
+import * as _799 from "./vesting/v1/tx.amino";
+import * as _800 from "./vrf/v1/tx.amino";
+import * as _801 from "./erc20/v1/tx.registry";
+import * as _802 from "./vesting/v1/tx.registry";
+import * as _803 from "./vrf/v1/tx.registry";
 export namespace echelon {
   export namespace epochs {
     export const v1 = { ..._274,
@@ -37,8 +37,8 @@ export namespace echelon {
       ..._277,
       ..._278,
       ..._279,
-      ..._779,
-      ..._782
+      ..._798,
+      ..._801
     };
   }
   export namespace incentives {
@@ -62,8 +62,8 @@ export namespace echelon {
     export const v1 = { ..._288,
       ..._289,
       ..._290,
-      ..._780,
-      ..._783
+      ..._799,
+      ..._802
     };
   }
   export namespace vrf {
@@ -72,8 +72,8 @@ export namespace echelon {
       ..._293,
       ..._294,
       ..._295,
-      ..._781,
-      ..._784
+      ..._800,
+      ..._803
     };
   }
 }

@@ -2,7 +2,7 @@ import { Params, PoEContractType, poEContractTypeFromJSON, poEContractTypeToJSON
 import { Duration } from "../../../../google/protobuf/duration";
 import { Coin } from "../../../../cosmos/base/v1beta1/coin";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, bytesFromBase64, base64FromBytes, Long, toDuration, fromDuration } from "@osmonauts/helpers";
+import { isSet, DeepPartial, bytesFromBase64, base64FromBytes, Long } from "@osmonauts/helpers";
 
 /** GenesisState - initial state of module */
 export interface GenesisState {
@@ -80,7 +80,7 @@ export interface MixerContractConfig_Sigmoid {
 export interface StakeContractConfig {
   minBond: Long;
   tokensPerPoint: Long;
-  unbondingPeriod: string;
+  unbondingPeriod: Duration;
   claimAutoreturnLimit: number;
 }
 
@@ -99,7 +99,7 @@ export interface ValsetContractConfig {
    * Epoch # is env.block.time/epoch_length (round down). The first block with a
    * new epoch number will trigger a new validator calculation.
    */
-  epochLength: string;
+  epochLength: Duration;
   epochReward: Coin;
 
   /**
@@ -152,12 +152,12 @@ export interface ValsetContractConfig {
    * sign their first epoch boundary block. After the period, they have to pass
    * verification again, ad infinitum.
    */
-  offlineJailDuration: string;
+  offlineJailDuration: Duration;
 }
 
 /** EngagementContractConfig initial setup config */
 export interface EngagementContractConfig {
-  halflife: string;
+  halflife: Duration;
 }
 
 /** OversightCommitteeContractConfig initial setup config for the trusted circle */
@@ -244,7 +244,7 @@ export interface ArbiterPoolContractConfig {
 
   /** DisputeCost The required dispute amount, in the default denom (utgd) */
   disputeCost: Coin;
-  waitingPeriod: string;
+  waitingPeriod: Duration;
 }
 
 function createBaseGenesisState(): GenesisState {
@@ -785,7 +785,7 @@ export const StakeContractConfig = {
     }
 
     if (message.unbondingPeriod !== undefined) {
-      Duration.encode(toDuration(message.unbondingPeriod), writer.uint32(26).fork()).ldelim();
+      Duration.encode(message.unbondingPeriod, writer.uint32(26).fork()).ldelim();
     }
 
     if (message.claimAutoreturnLimit !== 0) {
@@ -813,7 +813,7 @@ export const StakeContractConfig = {
           break;
 
         case 3:
-          message.unbondingPeriod = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.unbondingPeriod = Duration.decode(reader, reader.uint32());
           break;
 
         case 4:
@@ -833,7 +833,7 @@ export const StakeContractConfig = {
     return {
       minBond: isSet(object.minBond) ? Long.fromString(object.minBond) : Long.UZERO,
       tokensPerPoint: isSet(object.tokensPerPoint) ? Long.fromString(object.tokensPerPoint) : Long.UZERO,
-      unbondingPeriod: isSet(object.unbondingPeriod) ? String(object.unbondingPeriod) : undefined,
+      unbondingPeriod: isSet(object.unbondingPeriod) ? Duration.fromJSON(object.unbondingPeriod) : undefined,
       claimAutoreturnLimit: isSet(object.claimAutoreturnLimit) ? Number(object.claimAutoreturnLimit) : 0
     };
   },
@@ -887,7 +887,7 @@ export const ValsetContractConfig = {
     }
 
     if (message.epochLength !== undefined) {
-      Duration.encode(toDuration(message.epochLength), writer.uint32(26).fork()).ldelim();
+      Duration.encode(message.epochLength, writer.uint32(26).fork()).ldelim();
     }
 
     if (message.epochReward !== undefined) {
@@ -927,7 +927,7 @@ export const ValsetContractConfig = {
     }
 
     if (message.offlineJailDuration !== undefined) {
-      Duration.encode(toDuration(message.offlineJailDuration), writer.uint32(106).fork()).ldelim();
+      Duration.encode(message.offlineJailDuration, writer.uint32(106).fork()).ldelim();
     }
 
     return writer;
@@ -951,7 +951,7 @@ export const ValsetContractConfig = {
           break;
 
         case 3:
-          message.epochLength = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.epochLength = Duration.decode(reader, reader.uint32());
           break;
 
         case 4:
@@ -991,7 +991,7 @@ export const ValsetContractConfig = {
           break;
 
         case 13:
-          message.offlineJailDuration = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.offlineJailDuration = Duration.decode(reader, reader.uint32());
           break;
 
         default:
@@ -1007,7 +1007,7 @@ export const ValsetContractConfig = {
     return {
       minPoints: isSet(object.minPoints) ? Long.fromString(object.minPoints) : Long.UZERO,
       maxValidators: isSet(object.maxValidators) ? Number(object.maxValidators) : 0,
-      epochLength: isSet(object.epochLength) ? String(object.epochLength) : undefined,
+      epochLength: isSet(object.epochLength) ? Duration.fromJSON(object.epochLength) : undefined,
       epochReward: isSet(object.epochReward) ? Coin.fromJSON(object.epochReward) : undefined,
       scaling: isSet(object.scaling) ? Number(object.scaling) : 0,
       feePercentage: isSet(object.feePercentage) ? String(object.feePercentage) : "",
@@ -1017,7 +1017,7 @@ export const ValsetContractConfig = {
       autoUnjail: isSet(object.autoUnjail) ? Boolean(object.autoUnjail) : false,
       doubleSignSlashRatio: isSet(object.doubleSignSlashRatio) ? String(object.doubleSignSlashRatio) : "",
       verifyValidators: isSet(object.verifyValidators) ? Boolean(object.verifyValidators) : false,
-      offlineJailDuration: isSet(object.offlineJailDuration) ? String(object.offlineJailDuration) : undefined
+      offlineJailDuration: isSet(object.offlineJailDuration) ? Duration.fromJSON(object.offlineJailDuration) : undefined
     };
   },
 
@@ -1068,7 +1068,7 @@ function createBaseEngagementContractConfig(): EngagementContractConfig {
 export const EngagementContractConfig = {
   encode(message: EngagementContractConfig, writer: _m0.Writer = _m0.Writer.create()): _m0.Writer {
     if (message.halflife !== undefined) {
-      Duration.encode(toDuration(message.halflife), writer.uint32(10).fork()).ldelim();
+      Duration.encode(message.halflife, writer.uint32(10).fork()).ldelim();
     }
 
     return writer;
@@ -1084,7 +1084,7 @@ export const EngagementContractConfig = {
 
       switch (tag >>> 3) {
         case 1:
-          message.halflife = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.halflife = Duration.decode(reader, reader.uint32());
           break;
 
         default:
@@ -1098,7 +1098,7 @@ export const EngagementContractConfig = {
 
   fromJSON(object: any): EngagementContractConfig {
     return {
-      halflife: isSet(object.halflife) ? String(object.halflife) : undefined
+      halflife: isSet(object.halflife) ? Duration.fromJSON(object.halflife) : undefined
     };
   },
 
@@ -1588,7 +1588,7 @@ export const ArbiterPoolContractConfig = {
     }
 
     if (message.waitingPeriod !== undefined) {
-      Duration.encode(toDuration(message.waitingPeriod), writer.uint32(50).fork()).ldelim();
+      Duration.encode(message.waitingPeriod, writer.uint32(50).fork()).ldelim();
     }
 
     return writer;
@@ -1624,7 +1624,7 @@ export const ArbiterPoolContractConfig = {
           break;
 
         case 6:
-          message.waitingPeriod = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.waitingPeriod = Duration.decode(reader, reader.uint32());
           break;
 
         default:
@@ -1643,7 +1643,7 @@ export const ArbiterPoolContractConfig = {
       votingRules: isSet(object.votingRules) ? VotingRules.fromJSON(object.votingRules) : undefined,
       denyListContractAddress: isSet(object.denyListContractAddress) ? String(object.denyListContractAddress) : "",
       disputeCost: isSet(object.disputeCost) ? Coin.fromJSON(object.disputeCost) : undefined,
-      waitingPeriod: isSet(object.waitingPeriod) ? String(object.waitingPeriod) : undefined
+      waitingPeriod: isSet(object.waitingPeriod) ? Duration.fromJSON(object.waitingPeriod) : undefined
     };
   },
 

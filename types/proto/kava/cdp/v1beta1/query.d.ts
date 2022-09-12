@@ -3,6 +3,7 @@ import { Params } from "./genesis";
 import { ModuleAccount } from "../../../cosmos/auth/v1beta1/auth";
 import { Deposit, TotalPrincipal, TotalCollateral } from "./cdp";
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial, Long } from "@osmonauts/helpers";
 /** QueryParamsRequest defines the request type for the Query/Params RPC method. */
@@ -75,7 +76,7 @@ export interface CDPResponse {
     collateral: Coin;
     principal: Coin;
     accumulatedFees: Coin;
-    feesUpdated: Date;
+    feesUpdated: Timestamp;
     interestFactor: string;
     collateralValue: Coin;
     collateralizationRatio: string;

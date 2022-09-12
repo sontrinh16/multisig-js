@@ -1,3 +1,4 @@
+import { Duration } from "../../../google/protobuf/duration";
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
@@ -24,7 +25,7 @@ export interface Asset {
 export interface RateLimit {
     active: boolean;
     limit: Uint8Array;
-    timePeriod: string;
+    timePeriod: Duration;
 }
 /**
  * AssetSupply contains information about an asset's rate-limited supply (the
@@ -32,7 +33,7 @@ export interface RateLimit {
  */
 export interface AssetSupply {
     currentSupply: Coin;
-    timeElapsed: string;
+    timeElapsed: Duration;
 }
 export declare const GenesisState: {
     encode(message: GenesisState, writer?: _m0.Writer): _m0.Writer;

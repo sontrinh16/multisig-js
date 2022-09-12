@@ -2,7 +2,7 @@ import { PageRequest, PageResponse } from "../../../../cosmos/base/query/v1beta1
 import { AllowedDenom } from "./state";
 import { Timestamp } from "../../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { Long, isSet, DeepPartial, toTimestamp, fromTimestamp, fromJsonTimestamp } from "@osmonauts/helpers";
+import { Long, isSet, DeepPartial, fromJsonTimestamp, fromTimestamp } from "@osmonauts/helpers";
 
 /** QuerySellOrderRequest is the Query/SellOrder request type. */
 export interface QuerySellOrderRequest {
@@ -126,7 +126,7 @@ export interface SellOrderInfo {
    * expiration is an optional timestamp when the sell order expires. When the
    * expiration time is reached, the sell order is removed from state.
    */
-  expiration: Date;
+  expiration: Timestamp;
 }
 
 function createBaseQuerySellOrderRequest(): QuerySellOrderRequest {
@@ -839,7 +839,7 @@ export const SellOrderInfo = {
     }
 
     if (message.expiration !== undefined) {
-      Timestamp.encode(toTimestamp(message.expiration), writer.uint32(74).fork()).ldelim();
+      Timestamp.encode(message.expiration, writer.uint32(74).fork()).ldelim();
     }
 
     return writer;
@@ -883,7 +883,7 @@ export const SellOrderInfo = {
           break;
 
         case 9:
-          message.expiration = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.expiration = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -917,7 +917,7 @@ export const SellOrderInfo = {
     message.askDenom !== undefined && (obj.askDenom = message.askDenom);
     message.askPrice !== undefined && (obj.askPrice = message.askPrice);
     message.disableAutoRetire !== undefined && (obj.disableAutoRetire = message.disableAutoRetire);
-    message.expiration !== undefined && (obj.expiration = message.expiration.toISOString());
+    message.expiration !== undefined && (obj.expiration = fromTimestamp(message.expiration).toISOString());
     return obj;
   },
 
@@ -930,7 +930,7 @@ export const SellOrderInfo = {
     message.askDenom = object.askDenom ?? "";
     message.askPrice = object.askPrice ?? "";
     message.disableAutoRetire = object.disableAutoRetire ?? false;
-    message.expiration = object.expiration ?? undefined;
+    message.expiration = object.expiration !== undefined && object.expiration !== null ? Timestamp.fromPartial(object.expiration) : undefined;
     return message;
   }
 

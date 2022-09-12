@@ -1,4 +1,5 @@
 import { ContentHash, ContentHash_Graph, ContentHash_Raw } from "./types";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
 /** MsgAnchorData is the Msg/AnchorData request type. */
@@ -15,7 +16,7 @@ export interface MsgAnchorData {
 /** MsgAnchorData is the Msg/AnchorData response type. */
 export interface MsgAnchorDataResponse {
     /** timestamp is the timestamp of the block at which the data was anchored. */
-    timestamp: Date;
+    timestamp: Timestamp;
 }
 /** MsgSignData is the Msg/SignData request type. */
 export interface MsgSignData {

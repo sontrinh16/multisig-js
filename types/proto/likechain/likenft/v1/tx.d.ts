@@ -1,5 +1,6 @@
 import { ClassParentInput, ClassInput } from "./class_input";
 import { NFTInput } from "./nft_input";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import { RoyaltyConfigInput, RoyaltyConfig } from "./royalty_config";
 import { Class, NFT } from "../../../cosmos/nft/v1beta1/nft";
 import { BlindBoxContent } from "./blind_box_content";
@@ -69,7 +70,7 @@ export interface MsgCreateOffer {
     classId: string;
     nftId: string;
     price: Long;
-    expiration: Date;
+    expiration: Timestamp;
 }
 export interface MsgCreateOfferResponse {
     offer: Offer;
@@ -79,7 +80,7 @@ export interface MsgUpdateOffer {
     classId: string;
     nftId: string;
     price: Long;
-    expiration: Date;
+    expiration: Timestamp;
 }
 export interface MsgUpdateOfferResponse {
     offer: Offer;
@@ -96,7 +97,7 @@ export interface MsgCreateListing {
     classId: string;
     nftId: string;
     price: Long;
-    expiration: Date;
+    expiration: Timestamp;
 }
 export interface MsgCreateListingResponse {
     listing: Listing;
@@ -106,7 +107,7 @@ export interface MsgUpdateListing {
     classId: string;
     nftId: string;
     price: Long;
-    expiration: Date;
+    expiration: Timestamp;
 }
 export interface MsgUpdateListingResponse {
     listing: Listing;

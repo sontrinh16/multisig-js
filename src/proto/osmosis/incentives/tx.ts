@@ -2,7 +2,7 @@ import { QueryCondition } from "../lockup/lock";
 import { Coin } from "../../cosmos/base/v1beta1/coin";
 import { Timestamp } from "../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { toTimestamp, fromTimestamp, Long, isSet, fromJsonTimestamp, DeepPartial } from "@osmonauts/helpers";
+import { Long, isSet, fromJsonTimestamp, fromTimestamp, DeepPartial } from "@osmonauts/helpers";
 export interface MsgCreateGauge {
   /**
    * flag to show if it's perpetual or multi-epoch
@@ -18,7 +18,7 @@ export interface MsgCreateGauge {
   coins: Coin[];
 
   /** distribution start time */
-  startTime: Date;
+  startTime: Timestamp;
 
   /** number of epochs distribution will be done */
   numEpochsPaidOver: Long;
@@ -61,7 +61,7 @@ export const MsgCreateGauge = {
     }
 
     if (message.startTime !== undefined) {
-      Timestamp.encode(toTimestamp(message.startTime), writer.uint32(42).fork()).ldelim();
+      Timestamp.encode(message.startTime, writer.uint32(42).fork()).ldelim();
     }
 
     if (!message.numEpochsPaidOver.isZero()) {
@@ -97,7 +97,7 @@ export const MsgCreateGauge = {
           break;
 
         case 5:
-          message.startTime = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.startTime = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 6:
@@ -136,7 +136,7 @@ export const MsgCreateGauge = {
       obj.coins = [];
     }
 
-    message.startTime !== undefined && (obj.startTime = message.startTime.toISOString());
+    message.startTime !== undefined && (obj.startTime = fromTimestamp(message.startTime).toISOString());
     message.numEpochsPaidOver !== undefined && (obj.numEpochsPaidOver = (message.numEpochsPaidOver || Long.UZERO).toString());
     return obj;
   },
@@ -147,7 +147,7 @@ export const MsgCreateGauge = {
     message.owner = object.owner ?? "";
     message.distributeTo = object.distributeTo !== undefined && object.distributeTo !== null ? QueryCondition.fromPartial(object.distributeTo) : undefined;
     message.coins = object.coins?.map(e => Coin.fromPartial(e)) || [];
-    message.startTime = object.startTime ?? undefined;
+    message.startTime = object.startTime !== undefined && object.startTime !== null ? Timestamp.fromPartial(object.startTime) : undefined;
     message.numEpochsPaidOver = object.numEpochsPaidOver !== undefined && object.numEpochsPaidOver !== null ? Long.fromValue(object.numEpochsPaidOver) : Long.UZERO;
     return message;
   }

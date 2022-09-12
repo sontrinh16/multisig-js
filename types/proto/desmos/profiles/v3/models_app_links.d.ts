@@ -1,3 +1,4 @@
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial, Long } from "@osmonauts/helpers";
 /**
@@ -35,9 +36,9 @@ export interface ApplicationLink {
      */
     result: Result;
     /** CreationTime represents the time in which the link was created */
-    creationTime: Date;
+    creationTime: Timestamp;
     /** ExpirationTime represents the time in which the link will expire */
-    expirationTime: Date;
+    expirationTime: Timestamp;
 }
 /**
  * Data contains the data associated to a specific user of a

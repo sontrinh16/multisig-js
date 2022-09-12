@@ -1,3 +1,4 @@
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial, Long } from "@osmonauts/helpers";
@@ -5,16 +6,16 @@ import { DeepPartial, Long } from "@osmonauts/helpers";
 export interface RewardPeriod {
     active: boolean;
     collateralType: string;
-    start: Date;
-    end: Date;
+    start: Timestamp;
+    end: Timestamp;
     rewardsPerSecond: Coin;
 }
 /** MultiRewardPeriod supports multiple reward types */
 export interface MultiRewardPeriod {
     active: boolean;
     collateralType: string;
-    start: Date;
-    end: Date;
+    start: Timestamp;
+    end: Timestamp;
     rewardsPerSecond: Coin[];
 }
 /** Multiplier amount the claim rewards get increased by, along with how long the claim rewards are locked */
@@ -36,7 +37,7 @@ export interface Params {
     delegatorRewardPeriods: MultiRewardPeriod[];
     swapRewardPeriods: MultiRewardPeriod[];
     claimMultipliers: MultipliersPerDenom[];
-    claimEnd: Date;
+    claimEnd: Timestamp;
     savingsRewardPeriods: MultiRewardPeriod[];
 }
 export declare const RewardPeriod: {

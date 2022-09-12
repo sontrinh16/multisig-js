@@ -1,4 +1,5 @@
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
+import { Duration } from "../../../google/protobuf/duration";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial, Long } from "@osmonauts/helpers";
 /** Params contains the parameters for the profiles module */
@@ -61,7 +62,7 @@ export interface OracleParams {
 /** AppLinksParams define the parameters related to the app links */
 export interface AppLinksParams {
     /** Default validity duration before an application link expires */
-    validityDuration: string;
+    validityDuration: Duration;
 }
 export declare const Params: {
     encode(message: Params, writer?: _m0.Writer): _m0.Writer;

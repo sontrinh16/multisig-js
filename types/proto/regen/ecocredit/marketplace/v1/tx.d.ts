@@ -1,4 +1,5 @@
 import { Coin } from "../../../../cosmos/base/v1beta1/coin";
+import { Timestamp } from "../../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial, Long } from "@osmonauts/helpers";
 /** MsgSell is the Msg/Sell request type. */
@@ -36,7 +37,7 @@ export interface MsgSell_Order {
      * expiration is an optional timestamp when the sell order expires. When the
      * expiration time is reached, the sell order is removed from state.
      */
-    expiration: Date;
+    expiration: Timestamp;
 }
 /** MsgSellResponse is the Msg/Sell response type. */
 export interface MsgSellResponse {
@@ -70,7 +71,7 @@ export interface MsgUpdateSellOrders_Update {
      * new_expiration is an optional timestamp when the sell order expires. When
      * the expiration time is reached, the sell order is removed from state.
      */
-    newExpiration: Date;
+    newExpiration: Timestamp;
 }
 /** MsgUpdateSellOrdersResponse is the Msg/UpdateSellOrders response type. */
 export interface MsgUpdateSellOrdersResponse {

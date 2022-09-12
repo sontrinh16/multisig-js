@@ -38,20 +38,20 @@ import * as _533 from "./txfees/v1beta1/feetoken";
 import * as _534 from "./txfees/v1beta1/genesis";
 import * as _535 from "./txfees/v1beta1/gov";
 import * as _536 from "./txfees/v1beta1/query";
-import * as _837 from "./gamm/pool-models/balancer/tx.amino";
-import * as _838 from "./gamm/pool-models/stableswap/tx.amino";
-import * as _839 from "./gamm/v1beta1/tx.amino";
-import * as _840 from "./incentives/tx.amino";
-import * as _841 from "./lockup/tx.amino";
-import * as _842 from "./superfluid/tx.amino";
-import * as _843 from "./tokenfactory/v1beta1/tx.amino";
-import * as _844 from "./gamm/pool-models/balancer/tx.registry";
-import * as _845 from "./gamm/pool-models/stableswap/tx.registry";
-import * as _846 from "./gamm/v1beta1/tx.registry";
-import * as _847 from "./incentives/tx.registry";
-import * as _848 from "./lockup/tx.registry";
-import * as _849 from "./superfluid/tx.registry";
-import * as _850 from "./tokenfactory/v1beta1/tx.registry";
+import * as _856 from "./gamm/pool-models/balancer/tx.amino";
+import * as _857 from "./gamm/pool-models/stableswap/tx.amino";
+import * as _858 from "./gamm/v1beta1/tx.amino";
+import * as _859 from "./incentives/tx.amino";
+import * as _860 from "./lockup/tx.amino";
+import * as _861 from "./superfluid/tx.amino";
+import * as _862 from "./tokenfactory/v1beta1/tx.amino";
+import * as _863 from "./gamm/pool-models/balancer/tx.registry";
+import * as _864 from "./gamm/pool-models/stableswap/tx.registry";
+import * as _865 from "./gamm/v1beta1/tx.registry";
+import * as _866 from "./incentives/tx.registry";
+import * as _867 from "./lockup/tx.registry";
+import * as _868 from "./superfluid/tx.registry";
+import * as _869 from "./tokenfactory/v1beta1/tx.registry";
 export namespace osmosis {
   export namespace epochs {
     export const v1beta1 = { ..._497,
@@ -63,21 +63,21 @@ export namespace osmosis {
       ..._500,
       ..._501,
       ..._502,
-      ..._839,
-      ..._846
+      ..._858,
+      ..._865
     };
     export namespace poolmodels {
       export namespace balancer {
         export const v1beta1 = { ..._503,
-          ..._837,
-          ..._844
+          ..._856,
+          ..._863
         };
       }
       export namespace stableswap {
         export const v1beta1 = { ..._504,
           ..._505,
-          ..._838,
-          ..._845
+          ..._857,
+          ..._864
         };
       }
     }
@@ -87,15 +87,15 @@ export namespace osmosis {
     ..._508,
     ..._509,
     ..._510,
-    ..._840,
-    ..._847
+    ..._859,
+    ..._866
   };
   export const lockup = { ..._511,
     ..._512,
     ..._513,
     ..._514,
-    ..._841,
-    ..._848
+    ..._860,
+    ..._867
   };
   export namespace mint {
     export const v1beta1 = { ..._515,
@@ -119,8 +119,8 @@ export namespace osmosis {
     ..._525,
     ..._526,
     ..._527,
-    ..._842,
-    ..._849
+    ..._861,
+    ..._868
   };
   export namespace tokenfactory {
     export const v1beta1 = { ..._528,
@@ -128,8 +128,8 @@ export namespace osmosis {
       ..._530,
       ..._531,
       ..._532,
-      ..._843,
-      ..._850
+      ..._862,
+      ..._869
     };
   }
   export namespace txfees {

@@ -4,7 +4,7 @@ import { Duration } from "../../../../google/protobuf/duration";
 import { Coin, DecCoin } from "../../../../cosmos/base/v1beta1/coin";
 import { UnbondingDelegationEntry } from "../../../../cosmos/staking/v1beta1/staking";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, toDuration, fromDuration } from "@osmonauts/helpers";
+import { isSet, DeepPartial } from "@osmonauts/helpers";
 
 /**
  * QueryContractAddressRequest is the request type for the Query/ContractAddress
@@ -39,7 +39,7 @@ export interface QueryUnbondingPeriodRequest {}
  */
 export interface QueryUnbondingPeriodResponse {
   /** Time is the time that must pass */
-  time: string;
+  time: Duration;
 }
 
 /**
@@ -282,7 +282,7 @@ function createBaseQueryUnbondingPeriodResponse(): QueryUnbondingPeriodResponse 
 export const QueryUnbondingPeriodResponse = {
   encode(message: QueryUnbondingPeriodResponse, writer: _m0.Writer = _m0.Writer.create()): _m0.Writer {
     if (message.time !== undefined) {
-      Duration.encode(toDuration(message.time), writer.uint32(10).fork()).ldelim();
+      Duration.encode(message.time, writer.uint32(10).fork()).ldelim();
     }
 
     return writer;
@@ -298,7 +298,7 @@ export const QueryUnbondingPeriodResponse = {
 
       switch (tag >>> 3) {
         case 1:
-          message.time = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.time = Duration.decode(reader, reader.uint32());
           break;
 
         default:
@@ -312,7 +312,7 @@ export const QueryUnbondingPeriodResponse = {
 
   fromJSON(object: any): QueryUnbondingPeriodResponse {
     return {
-      time: isSet(object.time) ? String(object.time) : undefined
+      time: isSet(object.time) ? Duration.fromJSON(object.time) : undefined
     };
   },
 

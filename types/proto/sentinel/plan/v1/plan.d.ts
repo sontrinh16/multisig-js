@@ -1,15 +1,17 @@
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
+import { Duration } from "../../../google/protobuf/duration";
 import { Status } from "../../types/v1/status";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { Long, DeepPartial } from "@osmonauts/helpers";
 export interface Plan {
     id: Long;
     provider: string;
     price: Coin[];
-    validity: string;
+    validity: Duration;
     bytes: string;
     status: Status;
-    statusAt: Date;
+    statusAt: Timestamp;
 }
 export declare const Plan: {
     encode(message: Plan, writer?: _m0.Writer): _m0.Writer;

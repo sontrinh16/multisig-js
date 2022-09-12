@@ -1,7 +1,7 @@
 import { ContentHash, ContentHash_Graph, ContentHash_Raw } from "./types";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, toTimestamp, fromTimestamp, fromJsonTimestamp, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
+import { isSet, DeepPartial, fromJsonTimestamp, fromTimestamp, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
 
 /** MsgAnchorData is the Msg/AnchorData request type. */
 export interface MsgAnchorData {
@@ -19,7 +19,7 @@ export interface MsgAnchorData {
 /** MsgAnchorData is the Msg/AnchorData response type. */
 export interface MsgAnchorDataResponse {
   /** timestamp is the timestamp of the block at which the data was anchored. */
-  timestamp: Date;
+  timestamp: Timestamp;
 }
 
 /** MsgSignData is the Msg/SignData request type. */
@@ -143,7 +143,7 @@ function createBaseMsgAnchorDataResponse(): MsgAnchorDataResponse {
 export const MsgAnchorDataResponse = {
   encode(message: MsgAnchorDataResponse, writer: _m0.Writer = _m0.Writer.create()): _m0.Writer {
     if (message.timestamp !== undefined) {
-      Timestamp.encode(toTimestamp(message.timestamp), writer.uint32(10).fork()).ldelim();
+      Timestamp.encode(message.timestamp, writer.uint32(10).fork()).ldelim();
     }
 
     return writer;
@@ -159,7 +159,7 @@ export const MsgAnchorDataResponse = {
 
       switch (tag >>> 3) {
         case 1:
-          message.timestamp = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.timestamp = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -179,13 +179,13 @@ export const MsgAnchorDataResponse = {
 
   toJSON(message: MsgAnchorDataResponse): unknown {
     const obj: any = {};
-    message.timestamp !== undefined && (obj.timestamp = message.timestamp.toISOString());
+    message.timestamp !== undefined && (obj.timestamp = fromTimestamp(message.timestamp).toISOString());
     return obj;
   },
 
   fromPartial(object: DeepPartial<MsgAnchorDataResponse>): MsgAnchorDataResponse {
     const message = createBaseMsgAnchorDataResponse();
-    message.timestamp = object.timestamp ?? undefined;
+    message.timestamp = object.timestamp !== undefined && object.timestamp !== null ? Timestamp.fromPartial(object.timestamp) : undefined;
     return message;
   }
 

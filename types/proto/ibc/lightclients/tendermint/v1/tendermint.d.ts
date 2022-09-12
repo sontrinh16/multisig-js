@@ -1,5 +1,7 @@
+import { Duration } from "../../../../google/protobuf/duration";
 import { Height } from "../../../core/client/v1/client";
 import { ProofSpec } from "../../../../confio/proofs";
+import { Timestamp } from "../../../../google/protobuf/timestamp";
 import { MerkleRoot } from "../../../core/commitment/v1/commitment";
 import { SignedHeader } from "../../../../tendermint/types/types";
 import { ValidatorSet } from "../../../../tendermint/types/validator";
@@ -16,11 +18,11 @@ export interface ClientState {
      * duration of the period since the LastestTimestamp during which the
      * submitted headers are valid for upgrade
      */
-    trustingPeriod: string;
+    trustingPeriod: Duration;
     /** duration of the staking unbonding period */
-    unbondingPeriod: string;
+    unbondingPeriod: Duration;
     /** defines how much new (untrusted) header's Time can drift into the future. */
-    maxClockDrift: string;
+    maxClockDrift: Duration;
     /** Block height when the client was frozen due to a misbehaviour */
     frozenHeight: Height;
     /** Latest height the client was updated to */
@@ -54,7 +56,7 @@ export interface ConsensusState {
      * timestamp that corresponds to the block height in which the ConsensusState
      * was stored.
      */
-    timestamp: Date;
+    timestamp: Timestamp;
     /** commitment root (i.e app hash) */
     root: MerkleRoot;
     nextValidatorsHash: Uint8Array;

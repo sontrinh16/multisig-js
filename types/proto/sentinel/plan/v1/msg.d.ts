@@ -1,4 +1,5 @@
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
+import { Duration } from "../../../google/protobuf/duration";
 import { Status } from "../../types/v1/status";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial, Long } from "@osmonauts/helpers";
@@ -6,7 +7,7 @@ import { DeepPartial, Long } from "@osmonauts/helpers";
 export interface MsgAddRequest {
     from: string;
     price: Coin[];
-    validity: string;
+    validity: Duration;
     bytes: string;
 }
 /**

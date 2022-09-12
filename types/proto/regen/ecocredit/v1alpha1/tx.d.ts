@@ -1,3 +1,4 @@
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
 /** MsgCreateClass is the Msg/CreateClass request type. */
@@ -33,12 +34,12 @@ export interface MsgCreateBatch {
      * start_date is the beginning of the period during which this credit batch
      * was quantified and verified.
      */
-    startDate: Date;
+    startDate: Timestamp;
     /**
      * end_date is the end of the period during which this credit batch was
      * quantified and verified.
      */
-    endDate: Date;
+    endDate: Timestamp;
     /**
      * project_location is the location of the project backing the credits in this
      * batch. It is a string of the form

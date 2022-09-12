@@ -1,4 +1,5 @@
 import { BaseVestingAccount, Period } from "../../../cosmos/vesting/v1beta1/vesting";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
 /**
@@ -16,7 +17,7 @@ export interface ClawbackVestingAccount {
     /** funder_address specifies the account which can perform clawback */
     funderAddress: string;
     /** start_time defines the time at which the vesting period begins */
-    startTime: Date;
+    startTime: Timestamp;
     /** lockup_periods defines the unlocking schedule relative to the start_time */
     lockupPeriods: Period[];
     /** vesting_periods defines the vesting schedule relative to the start_time */

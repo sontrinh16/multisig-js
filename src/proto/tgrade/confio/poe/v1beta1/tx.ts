@@ -3,7 +3,7 @@ import { Any } from "../../../../google/protobuf/any";
 import { Coin } from "../../../../cosmos/base/v1beta1/coin";
 import { Timestamp } from "../../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, toTimestamp, fromTimestamp, fromJsonTimestamp } from "@osmonauts/helpers";
+import { isSet, DeepPartial, fromJsonTimestamp, fromTimestamp } from "@osmonauts/helpers";
 
 /**
  * MsgCreateValidator defines a PoE message for creating a new validator.
@@ -71,7 +71,7 @@ export interface MsgUndelegate {
 
 /** MsgUndelegateResponse defines the Msg/Undelegate response type. */
 export interface MsgUndelegateResponse {
-  completionTime: Date;
+  completionTime: Timestamp;
 }
 
 function createBaseMsgCreateValidator(): MsgCreateValidator {
@@ -536,7 +536,7 @@ function createBaseMsgUndelegateResponse(): MsgUndelegateResponse {
 export const MsgUndelegateResponse = {
   encode(message: MsgUndelegateResponse, writer: _m0.Writer = _m0.Writer.create()): _m0.Writer {
     if (message.completionTime !== undefined) {
-      Timestamp.encode(toTimestamp(message.completionTime), writer.uint32(10).fork()).ldelim();
+      Timestamp.encode(message.completionTime, writer.uint32(10).fork()).ldelim();
     }
 
     return writer;
@@ -552,7 +552,7 @@ export const MsgUndelegateResponse = {
 
       switch (tag >>> 3) {
         case 1:
-          message.completionTime = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.completionTime = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -572,13 +572,13 @@ export const MsgUndelegateResponse = {
 
   toJSON(message: MsgUndelegateResponse): unknown {
     const obj: any = {};
-    message.completionTime !== undefined && (obj.completionTime = message.completionTime.toISOString());
+    message.completionTime !== undefined && (obj.completionTime = fromTimestamp(message.completionTime).toISOString());
     return obj;
   },
 
   fromPartial(object: DeepPartial<MsgUndelegateResponse>): MsgUndelegateResponse {
     const message = createBaseMsgUndelegateResponse();
-    message.completionTime = object.completionTime ?? undefined;
+    message.completionTime = object.completionTime !== undefined && object.completionTime !== null ? Timestamp.fromPartial(object.completionTime) : undefined;
     return message;
   }
 

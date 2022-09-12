@@ -1,7 +1,7 @@
 import { Any } from "../../../google/protobuf/any";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { Long, isSet, DeepPartial, toTimestamp, fromTimestamp, fromJsonTimestamp, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
+import { Long, isSet, DeepPartial, fromJsonTimestamp, fromTimestamp, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
 
 /** VoteType enumerates the valid types of a vote. */
 export enum VoteType {
@@ -74,7 +74,7 @@ export interface Proposal {
   content: Any;
   id: Long;
   committeeId: Long;
-  deadline: Date;
+  deadline: Timestamp;
 }
 
 /** Vote is an internal record of a single governance vote. */
@@ -217,7 +217,7 @@ export const Proposal = {
     }
 
     if (message.deadline !== undefined) {
-      Timestamp.encode(toTimestamp(message.deadline), writer.uint32(34).fork()).ldelim();
+      Timestamp.encode(message.deadline, writer.uint32(34).fork()).ldelim();
     }
 
     return writer;
@@ -245,7 +245,7 @@ export const Proposal = {
           break;
 
         case 4:
-          message.deadline = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.deadline = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -271,7 +271,7 @@ export const Proposal = {
     message.content !== undefined && (obj.content = message.content ? Any.toJSON(message.content) : undefined);
     message.id !== undefined && (obj.id = (message.id || Long.UZERO).toString());
     message.committeeId !== undefined && (obj.committeeId = (message.committeeId || Long.UZERO).toString());
-    message.deadline !== undefined && (obj.deadline = message.deadline.toISOString());
+    message.deadline !== undefined && (obj.deadline = fromTimestamp(message.deadline).toISOString());
     return obj;
   },
 
@@ -280,7 +280,7 @@ export const Proposal = {
     message.content = object.content !== undefined && object.content !== null ? Any.fromPartial(object.content) : undefined;
     message.id = object.id !== undefined && object.id !== null ? Long.fromValue(object.id) : Long.UZERO;
     message.committeeId = object.committeeId !== undefined && object.committeeId !== null ? Long.fromValue(object.committeeId) : Long.UZERO;
-    message.deadline = object.deadline ?? undefined;
+    message.deadline = object.deadline !== undefined && object.deadline !== null ? Timestamp.fromPartial(object.deadline) : undefined;
     return message;
   }
 

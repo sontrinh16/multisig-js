@@ -46,10 +46,19 @@ export declare namespace echelon {
                 fromPartial(object: {
                     epochs?: {
                         identifier?: string;
-                        startTime?: Date;
-                        duration?: string;
+                        startTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        duration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         currentEpoch?: any;
-                        currentEpochStartTime?: Date;
+                        currentEpochStartTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         epochCountingStarted?: boolean;
                         currentEpochStartHeight?: any;
                     }[];
@@ -84,10 +93,19 @@ export declare namespace echelon {
                 toJSON(message: _274.EpochInfo): unknown;
                 fromPartial(object: {
                     identifier?: string;
-                    startTime?: Date;
-                    duration?: string;
+                    startTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
+                    duration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     currentEpoch?: any;
-                    currentEpochStartTime?: Date;
+                    currentEpochStartTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     epochCountingStarted?: boolean;
                     currentEpochStartHeight?: any;
                 }): _274.EpochInfo;
@@ -100,10 +118,19 @@ export declare namespace echelon {
                 fromPartial(object: {
                     epochs?: {
                         identifier?: string;
-                        startTime?: Date;
-                        duration?: string;
+                        startTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
+                        duration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         currentEpoch?: any;
-                        currentEpochStartTime?: Date;
+                        currentEpochStartTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         epochCountingStarted?: boolean;
                         currentEpochStartHeight?: any;
                     }[];
@@ -451,7 +478,10 @@ export declare namespace echelon {
                             amount?: string;
                         }[];
                         epochs?: number;
-                        startTime?: Date;
+                        startTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         totalGas?: any;
                     }[];
                     pagination?: {
@@ -482,7 +512,10 @@ export declare namespace echelon {
                             amount?: string;
                         }[];
                         epochs?: number;
-                        startTime?: Date;
+                        startTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         totalGas?: any;
                     };
                 }): _282.QueryIncentiveResponse;
@@ -624,7 +657,10 @@ export declare namespace echelon {
                         amount?: string;
                     }[];
                     epochs?: number;
-                    startTime?: Date;
+                    startTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     totalGas?: any;
                 }): _281.Incentive;
             };
@@ -685,7 +721,10 @@ export declare namespace echelon {
                             amount?: string;
                         }[];
                         epochs?: number;
-                        startTime?: Date;
+                        startTime?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                         totalGas?: any;
                     }[];
                     gasMeters?: {
@@ -921,7 +960,10 @@ export declare namespace echelon {
                 fromPartial(object: {
                     params?: {
                         enableRecovery?: boolean;
-                        packetTimeoutDuration?: string;
+                        packetTimeoutDuration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                 }): _287.QueryParamsResponse;
             };
@@ -933,7 +975,10 @@ export declare namespace echelon {
                 fromPartial(object: {
                     params?: {
                         enableRecovery?: boolean;
-                        packetTimeoutDuration?: string;
+                        packetTimeoutDuration?: {
+                            seconds?: any;
+                            nanos?: number;
+                        };
                     };
                 }): _286.GenesisState;
             };
@@ -944,7 +989,10 @@ export declare namespace echelon {
                 toJSON(message: _286.Params): unknown;
                 fromPartial(object: {
                     enableRecovery?: boolean;
-                    packetTimeoutDuration?: string;
+                    packetTimeoutDuration?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                 }): _286.Params;
             };
         };
@@ -1100,7 +1148,10 @@ export declare namespace echelon {
                         endTime?: any;
                     };
                     funderAddress?: string;
-                    startTime?: Date;
+                    startTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     lockupPeriods?: {
                         length?: any;
                         amount?: {
@@ -1125,7 +1176,10 @@ export declare namespace echelon {
                 fromPartial(object: {
                     fromAddress?: string;
                     toAddress?: string;
-                    startTime?: Date;
+                    startTime?: {
+                        seconds?: any;
+                        nanos?: number;
+                    };
                     lockupPeriods?: {
                         length?: any;
                         amount?: {

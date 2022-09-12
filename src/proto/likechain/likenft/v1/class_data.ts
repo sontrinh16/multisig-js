@@ -1,6 +1,6 @@
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, bytesFromBase64, base64FromBytes, DeepPartial, Long, toTimestamp, fromTimestamp, fromJsonTimestamp } from "@osmonauts/helpers";
+import { isSet, bytesFromBase64, base64FromBytes, DeepPartial, Long, fromJsonTimestamp, fromTimestamp } from "@osmonauts/helpers";
 export enum ClassParentType {
   UNKNOWN = 0,
   ISCN = 1,
@@ -55,7 +55,7 @@ export interface ClassParent {
   account?: string;
 }
 export interface MintPeriod {
-  startTime: Date;
+  startTime: Timestamp;
   allowedAddresses: string[];
   mintPrice: Long;
 }
@@ -66,7 +66,7 @@ export interface ClassConfig {
 }
 export interface BlindBoxConfig {
   mintPeriods: MintPeriod[];
-  revealTime: Date;
+  revealTime: Timestamp;
 }
 export interface BlindBoxState {
   contentCount: Long;
@@ -270,7 +270,7 @@ function createBaseMintPeriod(): MintPeriod {
 export const MintPeriod = {
   encode(message: MintPeriod, writer: _m0.Writer = _m0.Writer.create()): _m0.Writer {
     if (message.startTime !== undefined) {
-      Timestamp.encode(toTimestamp(message.startTime), writer.uint32(10).fork()).ldelim();
+      Timestamp.encode(message.startTime, writer.uint32(10).fork()).ldelim();
     }
 
     for (const v of message.allowedAddresses) {
@@ -294,7 +294,7 @@ export const MintPeriod = {
 
       switch (tag >>> 3) {
         case 1:
-          message.startTime = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.startTime = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 2:
@@ -324,7 +324,7 @@ export const MintPeriod = {
 
   toJSON(message: MintPeriod): unknown {
     const obj: any = {};
-    message.startTime !== undefined && (obj.startTime = message.startTime.toISOString());
+    message.startTime !== undefined && (obj.startTime = fromTimestamp(message.startTime).toISOString());
 
     if (message.allowedAddresses) {
       obj.allowedAddresses = message.allowedAddresses.map(e => e);
@@ -338,7 +338,7 @@ export const MintPeriod = {
 
   fromPartial(object: DeepPartial<MintPeriod>): MintPeriod {
     const message = createBaseMintPeriod();
-    message.startTime = object.startTime ?? undefined;
+    message.startTime = object.startTime !== undefined && object.startTime !== null ? Timestamp.fromPartial(object.startTime) : undefined;
     message.allowedAddresses = object.allowedAddresses?.map(e => e) || [];
     message.mintPrice = object.mintPrice !== undefined && object.mintPrice !== null ? Long.fromValue(object.mintPrice) : Long.UZERO;
     return message;
@@ -441,7 +441,7 @@ export const BlindBoxConfig = {
     }
 
     if (message.revealTime !== undefined) {
-      Timestamp.encode(toTimestamp(message.revealTime), writer.uint32(18).fork()).ldelim();
+      Timestamp.encode(message.revealTime, writer.uint32(18).fork()).ldelim();
     }
 
     return writer;
@@ -461,7 +461,7 @@ export const BlindBoxConfig = {
           break;
 
         case 2:
-          message.revealTime = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.revealTime = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -489,14 +489,14 @@ export const BlindBoxConfig = {
       obj.mintPeriods = [];
     }
 
-    message.revealTime !== undefined && (obj.revealTime = message.revealTime.toISOString());
+    message.revealTime !== undefined && (obj.revealTime = fromTimestamp(message.revealTime).toISOString());
     return obj;
   },
 
   fromPartial(object: DeepPartial<BlindBoxConfig>): BlindBoxConfig {
     const message = createBaseBlindBoxConfig();
     message.mintPeriods = object.mintPeriods?.map(e => MintPeriod.fromPartial(e)) || [];
-    message.revealTime = object.revealTime ?? undefined;
+    message.revealTime = object.revealTime !== undefined && object.revealTime !== null ? Timestamp.fromPartial(object.revealTime) : undefined;
     return message;
   }
 

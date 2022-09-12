@@ -3,6 +3,7 @@ import { Coin } from "../../cosmos/base/v1beta1/coin";
 import { Timestamp } from "../../google/protobuf/timestamp";
 import { AminoMsg } from "@cosmjs/amino";
 import { Long } from "@osmonauts/helpers";
+import { Duration } from "../../google/protobuf/duration";
 import { MsgCreateGauge, MsgAddToGauge } from "./tx";
 export interface AminoMsgCreateGauge extends AminoMsg {
   type: "osmosis/incentives/create-gauge";
@@ -12,7 +13,10 @@ export interface AminoMsgCreateGauge extends AminoMsg {
     distribute_to: {
       lock_query_type: number;
       denom: string;
-      duration: string;
+      duration: {
+        seconds: string;
+        nanos: number;
+      };
       timestamp: {
         seconds: string;
         nanos: number;

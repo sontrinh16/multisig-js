@@ -1,12 +1,12 @@
 import { Params } from "./params";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { toTimestamp, fromTimestamp, isSet, fromJsonTimestamp, DeepPartial } from "@osmonauts/helpers";
+import { isSet, fromJsonTimestamp, fromTimestamp, DeepPartial } from "@osmonauts/helpers";
 
 /** GenesisState defines the kavadist module's genesis state. */
 export interface GenesisState {
   params: Params;
-  previousBlockTime: Date;
+  previousBlockTime: Timestamp;
 }
 
 function createBaseGenesisState(): GenesisState {
@@ -23,7 +23,7 @@ export const GenesisState = {
     }
 
     if (message.previousBlockTime !== undefined) {
-      Timestamp.encode(toTimestamp(message.previousBlockTime), writer.uint32(18).fork()).ldelim();
+      Timestamp.encode(message.previousBlockTime, writer.uint32(18).fork()).ldelim();
     }
 
     return writer;
@@ -43,7 +43,7 @@ export const GenesisState = {
           break;
 
         case 2:
-          message.previousBlockTime = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.previousBlockTime = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -65,14 +65,14 @@ export const GenesisState = {
   toJSON(message: GenesisState): unknown {
     const obj: any = {};
     message.params !== undefined && (obj.params = message.params ? Params.toJSON(message.params) : undefined);
-    message.previousBlockTime !== undefined && (obj.previousBlockTime = message.previousBlockTime.toISOString());
+    message.previousBlockTime !== undefined && (obj.previousBlockTime = fromTimestamp(message.previousBlockTime).toISOString());
     return obj;
   },
 
   fromPartial(object: DeepPartial<GenesisState>): GenesisState {
     const message = createBaseGenesisState();
     message.params = object.params !== undefined && object.params !== null ? Params.fromPartial(object.params) : undefined;
-    message.previousBlockTime = object.previousBlockTime ?? undefined;
+    message.previousBlockTime = object.previousBlockTime !== undefined && object.previousBlockTime !== null ? Timestamp.fromPartial(object.previousBlockTime) : undefined;
     return message;
   }
 

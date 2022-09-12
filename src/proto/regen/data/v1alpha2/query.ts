@@ -2,7 +2,7 @@ import { ContentHash, SignerEntry, Content } from "./types";
 import { PageRequest, PageResponse } from "../../../cosmos/base/query/v1beta1/pagination";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, toTimestamp, fromTimestamp, fromJsonTimestamp } from "@osmonauts/helpers";
+import { isSet, DeepPartial, fromJsonTimestamp, fromTimestamp } from "@osmonauts/helpers";
 
 /** QueryByContentHashRequest is the Query/ByContentHash request type. */
 export interface QueryByHashRequest {
@@ -43,7 +43,7 @@ export interface ContentEntry {
   iri: string;
 
   /** timestamp is the anchor Timestamp */
-  timestamp: Date;
+  timestamp: Timestamp;
 
   /** signers are the signers, if any */
   signers: SignerEntry[];
@@ -331,7 +331,7 @@ export const ContentEntry = {
     }
 
     if (message.timestamp !== undefined) {
-      Timestamp.encode(toTimestamp(message.timestamp), writer.uint32(26).fork()).ldelim();
+      Timestamp.encode(message.timestamp, writer.uint32(26).fork()).ldelim();
     }
 
     for (const v of message.signers) {
@@ -363,7 +363,7 @@ export const ContentEntry = {
           break;
 
         case 3:
-          message.timestamp = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.timestamp = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 4:
@@ -397,7 +397,7 @@ export const ContentEntry = {
     const obj: any = {};
     message.hash !== undefined && (obj.hash = message.hash ? ContentHash.toJSON(message.hash) : undefined);
     message.iri !== undefined && (obj.iri = message.iri);
-    message.timestamp !== undefined && (obj.timestamp = message.timestamp.toISOString());
+    message.timestamp !== undefined && (obj.timestamp = fromTimestamp(message.timestamp).toISOString());
 
     if (message.signers) {
       obj.signers = message.signers.map(e => e ? SignerEntry.toJSON(e) : undefined);
@@ -413,7 +413,7 @@ export const ContentEntry = {
     const message = createBaseContentEntry();
     message.hash = object.hash !== undefined && object.hash !== null ? ContentHash.fromPartial(object.hash) : undefined;
     message.iri = object.iri ?? "";
-    message.timestamp = object.timestamp ?? undefined;
+    message.timestamp = object.timestamp !== undefined && object.timestamp !== null ? Timestamp.fromPartial(object.timestamp) : undefined;
     message.signers = object.signers?.map(e => SignerEntry.fromPartial(e)) || [];
     message.content = object.content !== undefined && object.content !== null ? Content.fromPartial(object.content) : undefined;
     return message;

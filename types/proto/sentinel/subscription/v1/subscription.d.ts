@@ -1,4 +1,5 @@
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import { Status } from "../../types/v1/status";
 import * as _m0 from "protobufjs/minimal";
 import { Long, DeepPartial } from "@osmonauts/helpers";
@@ -10,10 +11,10 @@ export interface Subscription {
     deposit: Coin;
     plan: Long;
     denom: string;
-    expiry: Date;
+    expiry: Timestamp;
     free: string;
     status: Status;
-    statusAt: Date;
+    statusAt: Timestamp;
 }
 export declare const Subscription: {
     encode(message: Subscription, writer?: _m0.Writer): _m0.Writer;

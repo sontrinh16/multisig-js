@@ -1,6 +1,6 @@
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { toTimestamp, Long, fromTimestamp, isSet, fromJsonTimestamp, DeepPartial } from "@osmonauts/helpers";
+import { Long, isSet, fromJsonTimestamp, fromTimestamp, DeepPartial } from "@osmonauts/helpers";
 
 /** Subspace contains all the data of a Desmos subspace */
 export interface Subspace {
@@ -26,7 +26,7 @@ export interface Subspace {
   creator: string;
 
   /** the creation time of the subspace */
-  creationTime: Date;
+  creationTime: Timestamp;
 }
 
 /** Section contains the data of a single subspace section */
@@ -115,7 +115,7 @@ export const Subspace = {
     }
 
     if (message.creationTime !== undefined) {
-      Timestamp.encode(toTimestamp(message.creationTime), writer.uint32(58).fork()).ldelim();
+      Timestamp.encode(message.creationTime, writer.uint32(58).fork()).ldelim();
     }
 
     return writer;
@@ -155,7 +155,7 @@ export const Subspace = {
           break;
 
         case 7:
-          message.creationTime = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.creationTime = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -187,7 +187,7 @@ export const Subspace = {
     message.treasury !== undefined && (obj.treasury = message.treasury);
     message.owner !== undefined && (obj.owner = message.owner);
     message.creator !== undefined && (obj.creator = message.creator);
-    message.creationTime !== undefined && (obj.creationTime = message.creationTime.toISOString());
+    message.creationTime !== undefined && (obj.creationTime = fromTimestamp(message.creationTime).toISOString());
     return obj;
   },
 
@@ -199,7 +199,7 @@ export const Subspace = {
     message.treasury = object.treasury ?? "";
     message.owner = object.owner ?? "";
     message.creator = object.creator ?? "";
-    message.creationTime = object.creationTime ?? undefined;
+    message.creationTime = object.creationTime !== undefined && object.creationTime !== null ? Timestamp.fromPartial(object.creationTime) : undefined;
     return message;
   }
 

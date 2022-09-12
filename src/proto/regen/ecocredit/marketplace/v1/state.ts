@@ -1,6 +1,6 @@
 import { Timestamp } from "../../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { toTimestamp, Long, fromTimestamp, isSet, bytesFromBase64, fromJsonTimestamp, base64FromBytes, DeepPartial } from "@osmonauts/helpers";
+import { Long, isSet, bytesFromBase64, fromJsonTimestamp, base64FromBytes, fromTimestamp, DeepPartial } from "@osmonauts/helpers";
 
 /** SellOrder represents the information for a sell order. */
 export interface SellOrder {
@@ -40,7 +40,7 @@ export interface SellOrder {
    * expiration is an optional timestamp when the sell order expires. When the
    * expiration time is reached, the sell order is removed from state.
    */
-  expiration: Date;
+  expiration: Timestamp;
 
   /**
    * maker indicates that this is a maker order, meaning that when it hit
@@ -164,7 +164,7 @@ export const SellOrder = {
     }
 
     if (message.expiration !== undefined) {
-      Timestamp.encode(toTimestamp(message.expiration), writer.uint32(74).fork()).ldelim();
+      Timestamp.encode(message.expiration, writer.uint32(74).fork()).ldelim();
     }
 
     if (message.maker === true) {
@@ -212,7 +212,7 @@ export const SellOrder = {
           break;
 
         case 9:
-          message.expiration = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.expiration = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 10:
@@ -251,7 +251,7 @@ export const SellOrder = {
     message.marketId !== undefined && (obj.marketId = (message.marketId || Long.UZERO).toString());
     message.askPrice !== undefined && (obj.askPrice = message.askPrice);
     message.disableAutoRetire !== undefined && (obj.disableAutoRetire = message.disableAutoRetire);
-    message.expiration !== undefined && (obj.expiration = message.expiration.toISOString());
+    message.expiration !== undefined && (obj.expiration = fromTimestamp(message.expiration).toISOString());
     message.maker !== undefined && (obj.maker = message.maker);
     return obj;
   },
@@ -265,7 +265,7 @@ export const SellOrder = {
     message.marketId = object.marketId !== undefined && object.marketId !== null ? Long.fromValue(object.marketId) : Long.UZERO;
     message.askPrice = object.askPrice ?? "";
     message.disableAutoRetire = object.disableAutoRetire ?? false;
-    message.expiration = object.expiration ?? undefined;
+    message.expiration = object.expiration !== undefined && object.expiration !== null ? Timestamp.fromPartial(object.expiration) : undefined;
     message.maker = object.maker ?? false;
     return message;
   }

@@ -1,11 +1,13 @@
+import { Timestamp } from "../../google/protobuf/timestamp";
+import { Duration } from "../../google/protobuf/duration";
 import * as _m0 from "protobufjs/minimal";
 import { Long, DeepPartial } from "@osmonauts/helpers";
 export interface EpochInfo {
     identifier: string;
-    startTime: Date;
-    duration: string;
+    startTime: Timestamp;
+    duration: Duration;
     currentEpoch: Long;
-    currentEpochStartTime: Date;
+    currentEpochStartTime: Timestamp;
     epochCountingStarted: boolean;
     currentEpochStartHeight: Long;
 }

@@ -1,7 +1,7 @@
 import { ContentHash, SignerEntry, Content } from "./types";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial, toTimestamp, fromTimestamp, isSet, fromJsonTimestamp } from "@osmonauts/helpers";
+import { DeepPartial, isSet, fromJsonTimestamp, fromTimestamp } from "@osmonauts/helpers";
 
 /** GenesisState is the genesis state */
 export interface GenesisState {
@@ -15,7 +15,7 @@ export interface GenesisContentEntry {
   hash: ContentHash;
 
   /** timestamp is the anchor Timestamp */
-  timestamp: Date;
+  timestamp: Timestamp;
 
   /** signers are the signers, if any */
   signers: SignerEntry[];
@@ -103,7 +103,7 @@ export const GenesisContentEntry = {
     }
 
     if (message.timestamp !== undefined) {
-      Timestamp.encode(toTimestamp(message.timestamp), writer.uint32(18).fork()).ldelim();
+      Timestamp.encode(message.timestamp, writer.uint32(18).fork()).ldelim();
     }
 
     for (const v of message.signers) {
@@ -131,7 +131,7 @@ export const GenesisContentEntry = {
           break;
 
         case 2:
-          message.timestamp = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.timestamp = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 3:
@@ -163,7 +163,7 @@ export const GenesisContentEntry = {
   toJSON(message: GenesisContentEntry): unknown {
     const obj: any = {};
     message.hash !== undefined && (obj.hash = message.hash ? ContentHash.toJSON(message.hash) : undefined);
-    message.timestamp !== undefined && (obj.timestamp = message.timestamp.toISOString());
+    message.timestamp !== undefined && (obj.timestamp = fromTimestamp(message.timestamp).toISOString());
 
     if (message.signers) {
       obj.signers = message.signers.map(e => e ? SignerEntry.toJSON(e) : undefined);
@@ -178,7 +178,7 @@ export const GenesisContentEntry = {
   fromPartial(object: DeepPartial<GenesisContentEntry>): GenesisContentEntry {
     const message = createBaseGenesisContentEntry();
     message.hash = object.hash !== undefined && object.hash !== null ? ContentHash.fromPartial(object.hash) : undefined;
-    message.timestamp = object.timestamp ?? undefined;
+    message.timestamp = object.timestamp !== undefined && object.timestamp !== null ? Timestamp.fromPartial(object.timestamp) : undefined;
     message.signers = object.signers?.map(e => SignerEntry.fromPartial(e)) || [];
     message.content = object.content !== undefined && object.content !== null ? Content.fromPartial(object.content) : undefined;
     return message;

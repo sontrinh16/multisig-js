@@ -22,10 +22,10 @@ import * as _462 from "./likenft/v1/params";
 import * as _463 from "./likenft/v1/query";
 import * as _464 from "./likenft/v1/royalty_config";
 import * as _465 from "./likenft/v1/tx";
-import * as _833 from "./iscn/tx.amino";
-import * as _834 from "./likenft/v1/tx.amino";
-import * as _835 from "./iscn/tx.registry";
-import * as _836 from "./likenft/v1/tx.registry";
+import * as _852 from "./iscn/tx.amino";
+import * as _853 from "./likenft/v1/tx.amino";
+import * as _854 from "./iscn/tx.registry";
+import * as _855 from "./likenft/v1/tx.registry";
 export namespace likechain {
   export const iscn = { ..._442,
     ..._443,
@@ -33,8 +33,8 @@ export namespace likechain {
     ..._445,
     ..._446,
     ..._447,
-    ..._833,
-    ..._835
+    ..._852,
+    ..._854
   };
   export namespace likenft {
     export const v1 = { ..._448,
@@ -55,8 +55,8 @@ export namespace likechain {
       ..._463,
       ..._464,
       ..._465,
-      ..._834,
-      ..._836
+      ..._853,
+      ..._855
     };
   }
 }

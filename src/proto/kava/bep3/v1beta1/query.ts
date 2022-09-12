@@ -3,7 +3,7 @@ import { PageRequest, PageResponse } from "../../../cosmos/base/query/v1beta1/pa
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import { Duration } from "../../../google/protobuf/duration";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial, isSet, toDuration, fromDuration, Long } from "@osmonauts/helpers";
+import { DeepPartial, isSet, Long } from "@osmonauts/helpers";
 
 /** QueryParamsRequest defines the request type for querying x/bep3 parameters. */
 export interface QueryParamsRequest {}
@@ -35,7 +35,7 @@ export interface AssetSupplyResponse {
   timeLimitedCurrentSupply: Coin;
 
   /** time_elapsed represents the time elapsed */
-  timeElapsed: string;
+  timeElapsed: Duration;
 }
 
 /** QueryAssetSupplyResponse is the response type for the Query/AssetSupply RPC method. */
@@ -315,7 +315,7 @@ export const AssetSupplyResponse = {
     }
 
     if (message.timeElapsed !== undefined) {
-      Duration.encode(toDuration(message.timeElapsed), writer.uint32(42).fork()).ldelim();
+      Duration.encode(message.timeElapsed, writer.uint32(42).fork()).ldelim();
     }
 
     return writer;
@@ -347,7 +347,7 @@ export const AssetSupplyResponse = {
           break;
 
         case 5:
-          message.timeElapsed = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.timeElapsed = Duration.decode(reader, reader.uint32());
           break;
 
         default:
@@ -365,7 +365,7 @@ export const AssetSupplyResponse = {
       outgoingSupply: isSet(object.outgoingSupply) ? Coin.fromJSON(object.outgoingSupply) : undefined,
       currentSupply: isSet(object.currentSupply) ? Coin.fromJSON(object.currentSupply) : undefined,
       timeLimitedCurrentSupply: isSet(object.timeLimitedCurrentSupply) ? Coin.fromJSON(object.timeLimitedCurrentSupply) : undefined,
-      timeElapsed: isSet(object.timeElapsed) ? String(object.timeElapsed) : undefined
+      timeElapsed: isSet(object.timeElapsed) ? Duration.fromJSON(object.timeElapsed) : undefined
     };
   },
 

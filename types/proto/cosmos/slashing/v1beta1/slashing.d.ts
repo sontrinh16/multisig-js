@@ -1,3 +1,5 @@
+import { Timestamp } from "../../../google/protobuf/timestamp";
+import { Duration } from "../../../google/protobuf/duration";
 import * as _m0 from "protobufjs/minimal";
 import { Long, DeepPartial } from "@osmonauts/helpers";
 /**
@@ -15,7 +17,7 @@ export interface ValidatorSigningInfo {
      */
     indexOffset: Long;
     /** Timestamp until which the validator is jailed due to liveness downtime. */
-    jailedUntil: Date;
+    jailedUntil: Timestamp;
     /**
      * Whether or not a validator has been tombstoned (killed out of validator set). It is set
      * once the validator commits an equivocation or for any other configured misbehiavor.
@@ -31,7 +33,7 @@ export interface ValidatorSigningInfo {
 export interface Params {
     signedBlocksWindow: Long;
     minSignedPerWindow: Uint8Array;
-    downtimeJailDuration: string;
+    downtimeJailDuration: Duration;
     slashFractionDoubleSign: Uint8Array;
     slashFractionDowntime: Uint8Array;
 }

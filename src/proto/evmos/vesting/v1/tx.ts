@@ -1,7 +1,7 @@
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import { Period } from "../../../cosmos/vesting/v1beta1/vesting";
 import * as _m0 from "protobufjs/minimal";
-import { toTimestamp, fromTimestamp, isSet, fromJsonTimestamp, DeepPartial } from "@osmonauts/helpers";
+import { isSet, fromJsonTimestamp, fromTimestamp, DeepPartial } from "@osmonauts/helpers";
 
 /**
  * MsgCreateClawbackVestingAccount defines a message that enables creating a
@@ -18,7 +18,7 @@ export interface MsgCreateClawbackVestingAccount {
   toAddress: string;
 
   /** start_time defines the time at which the vesting period begins */
-  startTime: Date;
+  startTime: Timestamp;
 
   /** lockup_periods defines the unlocking schedule relative to the start_time */
   lockupPeriods: Period[];
@@ -89,7 +89,7 @@ export const MsgCreateClawbackVestingAccount = {
     }
 
     if (message.startTime !== undefined) {
-      Timestamp.encode(toTimestamp(message.startTime), writer.uint32(26).fork()).ldelim();
+      Timestamp.encode(message.startTime, writer.uint32(26).fork()).ldelim();
     }
 
     for (const v of message.lockupPeriods) {
@@ -125,7 +125,7 @@ export const MsgCreateClawbackVestingAccount = {
           break;
 
         case 3:
-          message.startTime = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.startTime = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 4:
@@ -164,7 +164,7 @@ export const MsgCreateClawbackVestingAccount = {
     const obj: any = {};
     message.fromAddress !== undefined && (obj.fromAddress = message.fromAddress);
     message.toAddress !== undefined && (obj.toAddress = message.toAddress);
-    message.startTime !== undefined && (obj.startTime = message.startTime.toISOString());
+    message.startTime !== undefined && (obj.startTime = fromTimestamp(message.startTime).toISOString());
 
     if (message.lockupPeriods) {
       obj.lockupPeriods = message.lockupPeriods.map(e => e ? Period.toJSON(e) : undefined);
@@ -186,7 +186,7 @@ export const MsgCreateClawbackVestingAccount = {
     const message = createBaseMsgCreateClawbackVestingAccount();
     message.fromAddress = object.fromAddress ?? "";
     message.toAddress = object.toAddress ?? "";
-    message.startTime = object.startTime ?? undefined;
+    message.startTime = object.startTime !== undefined && object.startTime !== null ? Timestamp.fromPartial(object.startTime) : undefined;
     message.lockupPeriods = object.lockupPeriods?.map(e => Period.fromPartial(e)) || [];
     message.vestingPeriods = object.vestingPeriods?.map(e => Period.fromPartial(e)) || [];
     message.merge = object.merge ?? false;

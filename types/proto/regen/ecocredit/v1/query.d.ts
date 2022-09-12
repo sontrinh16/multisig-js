@@ -1,6 +1,7 @@
 import { PageRequest, PageResponse } from "../../../cosmos/base/query/v1beta1/pagination";
 import { CreditType } from "./state";
 import { Params } from "./types";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
 /** QueryClassesRequest is the Query/Classes request type. */
@@ -275,14 +276,14 @@ export interface BatchInfo {
      * start_date is the beginning of the period during which this credit batch
      * was quantified and verified.
      */
-    startDate: Date;
+    startDate: Timestamp;
     /**
      * end_date is the end of the period during which this credit batch was
      * quantified and verified.
      */
-    endDate: Date;
+    endDate: Timestamp;
     /** issuance_date is the timestamp when the credit batch was issued. */
-    issuanceDate: Date;
+    issuanceDate: Timestamp;
     /**
      * open determines whether or not the credit batch is open, i.e. whether or
      * not new credits can be minted to the credit batch.

@@ -1,5 +1,6 @@
 import { PageRequest, PageResponse } from "../../../../cosmos/base/query/v1beta1/pagination";
 import { AllowedDenom } from "./state";
+import { Timestamp } from "../../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { Long, DeepPartial } from "@osmonauts/helpers";
 /** QuerySellOrderRequest is the Query/SellOrder request type. */
@@ -101,7 +102,7 @@ export interface SellOrderInfo {
      * expiration is an optional timestamp when the sell order expires. When the
      * expiration time is reached, the sell order is removed from state.
      */
-    expiration: Date;
+    expiration: Timestamp;
 }
 export declare const QuerySellOrderRequest: {
     encode(message: QuerySellOrderRequest, writer?: _m0.Writer): _m0.Writer;

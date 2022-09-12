@@ -1,6 +1,6 @@
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, Long, bytesFromBase64, base64FromBytes, toTimestamp, fromTimestamp, fromJsonTimestamp } from "@osmonauts/helpers";
+import { isSet, DeepPartial, Long, bytesFromBase64, base64FromBytes, fromJsonTimestamp, fromTimestamp } from "@osmonauts/helpers";
 
 /**
  * CreditType defines the measurement unit/precision of a certain credit type
@@ -132,16 +132,16 @@ export interface Batch {
    * start_date is the beginning of the period during which this credit batch
    * was quantified and verified.
    */
-  startDate: Date;
+  startDate: Timestamp;
 
   /**
    * end_date is the end of the period during which this credit batch was
    * quantified and verified.
    */
-  endDate: Date;
+  endDate: Timestamp;
 
   /** issuance_date is the timestamp when the credit batch was issued. */
-  issuanceDate: Date;
+  issuanceDate: Timestamp;
 
   /**
    * open tells if it's possible to mint new credits in the future.
@@ -710,15 +710,15 @@ export const Batch = {
     }
 
     if (message.startDate !== undefined) {
-      Timestamp.encode(toTimestamp(message.startDate), writer.uint32(50).fork()).ldelim();
+      Timestamp.encode(message.startDate, writer.uint32(50).fork()).ldelim();
     }
 
     if (message.endDate !== undefined) {
-      Timestamp.encode(toTimestamp(message.endDate), writer.uint32(58).fork()).ldelim();
+      Timestamp.encode(message.endDate, writer.uint32(58).fork()).ldelim();
     }
 
     if (message.issuanceDate !== undefined) {
-      Timestamp.encode(toTimestamp(message.issuanceDate), writer.uint32(66).fork()).ldelim();
+      Timestamp.encode(message.issuanceDate, writer.uint32(66).fork()).ldelim();
     }
 
     if (message.open === true) {
@@ -758,15 +758,15 @@ export const Batch = {
           break;
 
         case 6:
-          message.startDate = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.startDate = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 7:
-          message.endDate = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.endDate = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 8:
-          message.issuanceDate = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.issuanceDate = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 9:
@@ -803,9 +803,9 @@ export const Batch = {
     message.projectKey !== undefined && (obj.projectKey = (message.projectKey || Long.UZERO).toString());
     message.denom !== undefined && (obj.denom = message.denom);
     message.metadata !== undefined && (obj.metadata = message.metadata);
-    message.startDate !== undefined && (obj.startDate = message.startDate.toISOString());
-    message.endDate !== undefined && (obj.endDate = message.endDate.toISOString());
-    message.issuanceDate !== undefined && (obj.issuanceDate = message.issuanceDate.toISOString());
+    message.startDate !== undefined && (obj.startDate = fromTimestamp(message.startDate).toISOString());
+    message.endDate !== undefined && (obj.endDate = fromTimestamp(message.endDate).toISOString());
+    message.issuanceDate !== undefined && (obj.issuanceDate = fromTimestamp(message.issuanceDate).toISOString());
     message.open !== undefined && (obj.open = message.open);
     return obj;
   },
@@ -817,9 +817,9 @@ export const Batch = {
     message.projectKey = object.projectKey !== undefined && object.projectKey !== null ? Long.fromValue(object.projectKey) : Long.UZERO;
     message.denom = object.denom ?? "";
     message.metadata = object.metadata ?? "";
-    message.startDate = object.startDate ?? undefined;
-    message.endDate = object.endDate ?? undefined;
-    message.issuanceDate = object.issuanceDate ?? undefined;
+    message.startDate = object.startDate !== undefined && object.startDate !== null ? Timestamp.fromPartial(object.startDate) : undefined;
+    message.endDate = object.endDate !== undefined && object.endDate !== null ? Timestamp.fromPartial(object.endDate) : undefined;
+    message.issuanceDate = object.issuanceDate !== undefined && object.issuanceDate !== null ? Timestamp.fromPartial(object.issuanceDate) : undefined;
     message.open = object.open ?? false;
     return message;
   }

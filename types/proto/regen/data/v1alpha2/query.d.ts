@@ -1,5 +1,6 @@
 import { ContentHash, SignerEntry, Content } from "./types";
 import { PageRequest, PageResponse } from "../../../cosmos/base/query/v1beta1/pagination";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
 /** QueryByContentHashRequest is the Query/ByContentHash request type. */
@@ -33,7 +34,7 @@ export interface ContentEntry {
     /** iri is the content IRI */
     iri: string;
     /** timestamp is the anchor Timestamp */
-    timestamp: Date;
+    timestamp: Timestamp;
     /** signers are the signers, if any */
     signers: SignerEntry[];
     /** content is the actual content if stored on-chain */

@@ -3,16 +3,16 @@ import { Bandwidth } from "../../types/v1/bandwidth";
 import { Status, statusFromJSON, statusToJSON } from "../../types/v1/status";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { toDuration, toTimestamp, Long, fromDuration, fromTimestamp, isSet, fromJsonTimestamp, DeepPartial } from "@osmonauts/helpers";
+import { Long, isSet, fromJsonTimestamp, fromTimestamp, DeepPartial } from "@osmonauts/helpers";
 export interface Session {
   id: Long;
   subscription: Long;
   node: string;
   address: string;
-  duration: string;
+  duration: Duration;
   bandwidth: Bandwidth;
   status: Status;
-  statusAt: Date;
+  statusAt: Timestamp;
 }
 
 function createBaseSession(): Session {
@@ -47,7 +47,7 @@ export const Session = {
     }
 
     if (message.duration !== undefined) {
-      Duration.encode(toDuration(message.duration), writer.uint32(42).fork()).ldelim();
+      Duration.encode(message.duration, writer.uint32(42).fork()).ldelim();
     }
 
     if (message.bandwidth !== undefined) {
@@ -59,7 +59,7 @@ export const Session = {
     }
 
     if (message.statusAt !== undefined) {
-      Timestamp.encode(toTimestamp(message.statusAt), writer.uint32(66).fork()).ldelim();
+      Timestamp.encode(message.statusAt, writer.uint32(66).fork()).ldelim();
     }
 
     return writer;
@@ -91,7 +91,7 @@ export const Session = {
           break;
 
         case 5:
-          message.duration = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.duration = Duration.decode(reader, reader.uint32());
           break;
 
         case 6:
@@ -103,7 +103,7 @@ export const Session = {
           break;
 
         case 8:
-          message.statusAt = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.statusAt = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -121,7 +121,7 @@ export const Session = {
       subscription: isSet(object.subscription) ? Long.fromString(object.subscription) : Long.UZERO,
       node: isSet(object.node) ? String(object.node) : "",
       address: isSet(object.address) ? String(object.address) : "",
-      duration: isSet(object.duration) ? String(object.duration) : undefined,
+      duration: isSet(object.duration) ? Duration.fromJSON(object.duration) : undefined,
       bandwidth: isSet(object.bandwidth) ? Bandwidth.fromJSON(object.bandwidth) : undefined,
       status: isSet(object.status) ? statusFromJSON(object.status) : 0,
       statusAt: isSet(object.statusAt) ? fromJsonTimestamp(object.statusAt) : undefined
@@ -137,7 +137,7 @@ export const Session = {
     message.duration !== undefined && (obj.duration = message.duration);
     message.bandwidth !== undefined && (obj.bandwidth = message.bandwidth ? Bandwidth.toJSON(message.bandwidth) : undefined);
     message.status !== undefined && (obj.status = statusToJSON(message.status));
-    message.statusAt !== undefined && (obj.statusAt = message.statusAt.toISOString());
+    message.statusAt !== undefined && (obj.statusAt = fromTimestamp(message.statusAt).toISOString());
     return obj;
   },
 
@@ -150,7 +150,7 @@ export const Session = {
     message.duration = object.duration ?? undefined;
     message.bandwidth = object.bandwidth !== undefined && object.bandwidth !== null ? Bandwidth.fromPartial(object.bandwidth) : undefined;
     message.status = object.status ?? 0;
-    message.statusAt = object.statusAt ?? undefined;
+    message.statusAt = object.statusAt !== undefined && object.statusAt !== null ? Timestamp.fromPartial(object.statusAt) : undefined;
     return message;
   }
 

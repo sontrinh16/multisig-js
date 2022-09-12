@@ -1,7 +1,7 @@
 import { Any } from "../../../google/protobuf/any";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { Long, isSet, DeepPartial, toTimestamp, fromTimestamp, fromJsonTimestamp } from "@osmonauts/helpers";
+import { Long, isSet, DeepPartial, fromJsonTimestamp, fromTimestamp } from "@osmonauts/helpers";
 
 /** MsgCreateReport represents the message to be used to create a report */
 export interface MsgCreateReport {
@@ -27,7 +27,7 @@ export interface MsgCreateReportResponse {
   reportId: Long;
 
   /** Time in which the report was created */
-  creationDate: Date;
+  creationDate: Timestamp;
 }
 
 /** MsgDeleteReport represents the message to be used when deleting a report */
@@ -249,7 +249,7 @@ export const MsgCreateReportResponse = {
     }
 
     if (message.creationDate !== undefined) {
-      Timestamp.encode(toTimestamp(message.creationDate), writer.uint32(18).fork()).ldelim();
+      Timestamp.encode(message.creationDate, writer.uint32(18).fork()).ldelim();
     }
 
     return writer;
@@ -269,7 +269,7 @@ export const MsgCreateReportResponse = {
           break;
 
         case 2:
-          message.creationDate = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.creationDate = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -291,14 +291,14 @@ export const MsgCreateReportResponse = {
   toJSON(message: MsgCreateReportResponse): unknown {
     const obj: any = {};
     message.reportId !== undefined && (obj.reportId = (message.reportId || Long.UZERO).toString());
-    message.creationDate !== undefined && (obj.creationDate = message.creationDate.toISOString());
+    message.creationDate !== undefined && (obj.creationDate = fromTimestamp(message.creationDate).toISOString());
     return obj;
   },
 
   fromPartial(object: DeepPartial<MsgCreateReportResponse>): MsgCreateReportResponse {
     const message = createBaseMsgCreateReportResponse();
     message.reportId = object.reportId !== undefined && object.reportId !== null ? Long.fromValue(object.reportId) : Long.UZERO;
-    message.creationDate = object.creationDate ?? undefined;
+    message.creationDate = object.creationDate !== undefined && object.creationDate !== null ? Timestamp.fromPartial(object.creationDate) : undefined;
     return message;
   }
 

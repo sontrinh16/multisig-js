@@ -3,7 +3,7 @@ import { Duration } from "../../google/protobuf/duration";
 import { Coin } from "../../cosmos/base/v1beta1/coin";
 import { PeriodLock, SyntheticLock } from "./lock";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial, isSet, toTimestamp, fromTimestamp, fromJsonTimestamp, toDuration, fromDuration, Long } from "@osmonauts/helpers";
+import { DeepPartial, isSet, fromJsonTimestamp, fromTimestamp, Long } from "@osmonauts/helpers";
 export interface ModuleBalanceRequest {}
 export interface ModuleBalanceResponse {
   coins: Coin[];
@@ -32,28 +32,28 @@ export interface AccountLockedCoinsResponse {
 }
 export interface AccountLockedPastTimeRequest {
   owner: string;
-  timestamp: Date;
+  timestamp: Timestamp;
 }
 export interface AccountLockedPastTimeResponse {
   locks: PeriodLock[];
 }
 export interface AccountLockedPastTimeNotUnlockingOnlyRequest {
   owner: string;
-  timestamp: Date;
+  timestamp: Timestamp;
 }
 export interface AccountLockedPastTimeNotUnlockingOnlyResponse {
   locks: PeriodLock[];
 }
 export interface AccountUnlockedBeforeTimeRequest {
   owner: string;
-  timestamp: Date;
+  timestamp: Timestamp;
 }
 export interface AccountUnlockedBeforeTimeResponse {
   locks: PeriodLock[];
 }
 export interface AccountLockedPastTimeDenomRequest {
   owner: string;
-  timestamp: Date;
+  timestamp: Timestamp;
   denom: string;
 }
 export interface AccountLockedPastTimeDenomResponse {
@@ -61,7 +61,7 @@ export interface AccountLockedPastTimeDenomResponse {
 }
 export interface LockedDenomRequest {
   denom: string;
-  duration: string;
+  duration: Duration;
 }
 export interface LockedDenomResponse {
   amount: string;
@@ -80,28 +80,28 @@ export interface SyntheticLockupsByLockupIDResponse {
 }
 export interface AccountLockedLongerDurationRequest {
   owner: string;
-  duration: string;
+  duration: Duration;
 }
 export interface AccountLockedLongerDurationResponse {
   locks: PeriodLock[];
 }
 export interface AccountLockedDurationRequest {
   owner: string;
-  duration: string;
+  duration: Duration;
 }
 export interface AccountLockedDurationResponse {
   locks: PeriodLock[];
 }
 export interface AccountLockedLongerDurationNotUnlockingOnlyRequest {
   owner: string;
-  duration: string;
+  duration: Duration;
 }
 export interface AccountLockedLongerDurationNotUnlockingOnlyResponse {
   locks: PeriodLock[];
 }
 export interface AccountLockedLongerDurationDenomRequest {
   owner: string;
-  duration: string;
+  duration: Duration;
   denom: string;
 }
 export interface AccountLockedLongerDurationDenomResponse {
@@ -694,7 +694,7 @@ export const AccountLockedPastTimeRequest = {
     }
 
     if (message.timestamp !== undefined) {
-      Timestamp.encode(toTimestamp(message.timestamp), writer.uint32(18).fork()).ldelim();
+      Timestamp.encode(message.timestamp, writer.uint32(18).fork()).ldelim();
     }
 
     return writer;
@@ -714,7 +714,7 @@ export const AccountLockedPastTimeRequest = {
           break;
 
         case 2:
-          message.timestamp = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.timestamp = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -736,14 +736,14 @@ export const AccountLockedPastTimeRequest = {
   toJSON(message: AccountLockedPastTimeRequest): unknown {
     const obj: any = {};
     message.owner !== undefined && (obj.owner = message.owner);
-    message.timestamp !== undefined && (obj.timestamp = message.timestamp.toISOString());
+    message.timestamp !== undefined && (obj.timestamp = fromTimestamp(message.timestamp).toISOString());
     return obj;
   },
 
   fromPartial(object: DeepPartial<AccountLockedPastTimeRequest>): AccountLockedPastTimeRequest {
     const message = createBaseAccountLockedPastTimeRequest();
     message.owner = object.owner ?? "";
-    message.timestamp = object.timestamp ?? undefined;
+    message.timestamp = object.timestamp !== undefined && object.timestamp !== null ? Timestamp.fromPartial(object.timestamp) : undefined;
     return message;
   }
 
@@ -826,7 +826,7 @@ export const AccountLockedPastTimeNotUnlockingOnlyRequest = {
     }
 
     if (message.timestamp !== undefined) {
-      Timestamp.encode(toTimestamp(message.timestamp), writer.uint32(18).fork()).ldelim();
+      Timestamp.encode(message.timestamp, writer.uint32(18).fork()).ldelim();
     }
 
     return writer;
@@ -846,7 +846,7 @@ export const AccountLockedPastTimeNotUnlockingOnlyRequest = {
           break;
 
         case 2:
-          message.timestamp = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.timestamp = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -868,14 +868,14 @@ export const AccountLockedPastTimeNotUnlockingOnlyRequest = {
   toJSON(message: AccountLockedPastTimeNotUnlockingOnlyRequest): unknown {
     const obj: any = {};
     message.owner !== undefined && (obj.owner = message.owner);
-    message.timestamp !== undefined && (obj.timestamp = message.timestamp.toISOString());
+    message.timestamp !== undefined && (obj.timestamp = fromTimestamp(message.timestamp).toISOString());
     return obj;
   },
 
   fromPartial(object: DeepPartial<AccountLockedPastTimeNotUnlockingOnlyRequest>): AccountLockedPastTimeNotUnlockingOnlyRequest {
     const message = createBaseAccountLockedPastTimeNotUnlockingOnlyRequest();
     message.owner = object.owner ?? "";
-    message.timestamp = object.timestamp ?? undefined;
+    message.timestamp = object.timestamp !== undefined && object.timestamp !== null ? Timestamp.fromPartial(object.timestamp) : undefined;
     return message;
   }
 
@@ -958,7 +958,7 @@ export const AccountUnlockedBeforeTimeRequest = {
     }
 
     if (message.timestamp !== undefined) {
-      Timestamp.encode(toTimestamp(message.timestamp), writer.uint32(18).fork()).ldelim();
+      Timestamp.encode(message.timestamp, writer.uint32(18).fork()).ldelim();
     }
 
     return writer;
@@ -978,7 +978,7 @@ export const AccountUnlockedBeforeTimeRequest = {
           break;
 
         case 2:
-          message.timestamp = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.timestamp = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -1000,14 +1000,14 @@ export const AccountUnlockedBeforeTimeRequest = {
   toJSON(message: AccountUnlockedBeforeTimeRequest): unknown {
     const obj: any = {};
     message.owner !== undefined && (obj.owner = message.owner);
-    message.timestamp !== undefined && (obj.timestamp = message.timestamp.toISOString());
+    message.timestamp !== undefined && (obj.timestamp = fromTimestamp(message.timestamp).toISOString());
     return obj;
   },
 
   fromPartial(object: DeepPartial<AccountUnlockedBeforeTimeRequest>): AccountUnlockedBeforeTimeRequest {
     const message = createBaseAccountUnlockedBeforeTimeRequest();
     message.owner = object.owner ?? "";
-    message.timestamp = object.timestamp ?? undefined;
+    message.timestamp = object.timestamp !== undefined && object.timestamp !== null ? Timestamp.fromPartial(object.timestamp) : undefined;
     return message;
   }
 
@@ -1091,7 +1091,7 @@ export const AccountLockedPastTimeDenomRequest = {
     }
 
     if (message.timestamp !== undefined) {
-      Timestamp.encode(toTimestamp(message.timestamp), writer.uint32(18).fork()).ldelim();
+      Timestamp.encode(message.timestamp, writer.uint32(18).fork()).ldelim();
     }
 
     if (message.denom !== "") {
@@ -1115,7 +1115,7 @@ export const AccountLockedPastTimeDenomRequest = {
           break;
 
         case 2:
-          message.timestamp = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.timestamp = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 3:
@@ -1142,7 +1142,7 @@ export const AccountLockedPastTimeDenomRequest = {
   toJSON(message: AccountLockedPastTimeDenomRequest): unknown {
     const obj: any = {};
     message.owner !== undefined && (obj.owner = message.owner);
-    message.timestamp !== undefined && (obj.timestamp = message.timestamp.toISOString());
+    message.timestamp !== undefined && (obj.timestamp = fromTimestamp(message.timestamp).toISOString());
     message.denom !== undefined && (obj.denom = message.denom);
     return obj;
   },
@@ -1150,7 +1150,7 @@ export const AccountLockedPastTimeDenomRequest = {
   fromPartial(object: DeepPartial<AccountLockedPastTimeDenomRequest>): AccountLockedPastTimeDenomRequest {
     const message = createBaseAccountLockedPastTimeDenomRequest();
     message.owner = object.owner ?? "";
-    message.timestamp = object.timestamp ?? undefined;
+    message.timestamp = object.timestamp !== undefined && object.timestamp !== null ? Timestamp.fromPartial(object.timestamp) : undefined;
     message.denom = object.denom ?? "";
     return message;
   }
@@ -1234,7 +1234,7 @@ export const LockedDenomRequest = {
     }
 
     if (message.duration !== undefined) {
-      Duration.encode(toDuration(message.duration), writer.uint32(18).fork()).ldelim();
+      Duration.encode(message.duration, writer.uint32(18).fork()).ldelim();
     }
 
     return writer;
@@ -1254,7 +1254,7 @@ export const LockedDenomRequest = {
           break;
 
         case 2:
-          message.duration = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.duration = Duration.decode(reader, reader.uint32());
           break;
 
         default:
@@ -1269,7 +1269,7 @@ export const LockedDenomRequest = {
   fromJSON(object: any): LockedDenomRequest {
     return {
       denom: isSet(object.denom) ? String(object.denom) : "",
-      duration: isSet(object.duration) ? String(object.duration) : undefined
+      duration: isSet(object.duration) ? Duration.fromJSON(object.duration) : undefined
     };
   },
 
@@ -1594,7 +1594,7 @@ export const AccountLockedLongerDurationRequest = {
     }
 
     if (message.duration !== undefined) {
-      Duration.encode(toDuration(message.duration), writer.uint32(18).fork()).ldelim();
+      Duration.encode(message.duration, writer.uint32(18).fork()).ldelim();
     }
 
     return writer;
@@ -1614,7 +1614,7 @@ export const AccountLockedLongerDurationRequest = {
           break;
 
         case 2:
-          message.duration = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.duration = Duration.decode(reader, reader.uint32());
           break;
 
         default:
@@ -1629,7 +1629,7 @@ export const AccountLockedLongerDurationRequest = {
   fromJSON(object: any): AccountLockedLongerDurationRequest {
     return {
       owner: isSet(object.owner) ? String(object.owner) : "",
-      duration: isSet(object.duration) ? String(object.duration) : undefined
+      duration: isSet(object.duration) ? Duration.fromJSON(object.duration) : undefined
     };
   },
 
@@ -1726,7 +1726,7 @@ export const AccountLockedDurationRequest = {
     }
 
     if (message.duration !== undefined) {
-      Duration.encode(toDuration(message.duration), writer.uint32(18).fork()).ldelim();
+      Duration.encode(message.duration, writer.uint32(18).fork()).ldelim();
     }
 
     return writer;
@@ -1746,7 +1746,7 @@ export const AccountLockedDurationRequest = {
           break;
 
         case 2:
-          message.duration = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.duration = Duration.decode(reader, reader.uint32());
           break;
 
         default:
@@ -1761,7 +1761,7 @@ export const AccountLockedDurationRequest = {
   fromJSON(object: any): AccountLockedDurationRequest {
     return {
       owner: isSet(object.owner) ? String(object.owner) : "",
-      duration: isSet(object.duration) ? String(object.duration) : undefined
+      duration: isSet(object.duration) ? Duration.fromJSON(object.duration) : undefined
     };
   },
 
@@ -1858,7 +1858,7 @@ export const AccountLockedLongerDurationNotUnlockingOnlyRequest = {
     }
 
     if (message.duration !== undefined) {
-      Duration.encode(toDuration(message.duration), writer.uint32(18).fork()).ldelim();
+      Duration.encode(message.duration, writer.uint32(18).fork()).ldelim();
     }
 
     return writer;
@@ -1878,7 +1878,7 @@ export const AccountLockedLongerDurationNotUnlockingOnlyRequest = {
           break;
 
         case 2:
-          message.duration = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.duration = Duration.decode(reader, reader.uint32());
           break;
 
         default:
@@ -1893,7 +1893,7 @@ export const AccountLockedLongerDurationNotUnlockingOnlyRequest = {
   fromJSON(object: any): AccountLockedLongerDurationNotUnlockingOnlyRequest {
     return {
       owner: isSet(object.owner) ? String(object.owner) : "",
-      duration: isSet(object.duration) ? String(object.duration) : undefined
+      duration: isSet(object.duration) ? Duration.fromJSON(object.duration) : undefined
     };
   },
 
@@ -1991,7 +1991,7 @@ export const AccountLockedLongerDurationDenomRequest = {
     }
 
     if (message.duration !== undefined) {
-      Duration.encode(toDuration(message.duration), writer.uint32(18).fork()).ldelim();
+      Duration.encode(message.duration, writer.uint32(18).fork()).ldelim();
     }
 
     if (message.denom !== "") {
@@ -2015,7 +2015,7 @@ export const AccountLockedLongerDurationDenomRequest = {
           break;
 
         case 2:
-          message.duration = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.duration = Duration.decode(reader, reader.uint32());
           break;
 
         case 3:
@@ -2034,7 +2034,7 @@ export const AccountLockedLongerDurationDenomRequest = {
   fromJSON(object: any): AccountLockedLongerDurationDenomRequest {
     return {
       owner: isSet(object.owner) ? String(object.owner) : "",
-      duration: isSet(object.duration) ? String(object.duration) : undefined,
+      duration: isSet(object.duration) ? Duration.fromJSON(object.duration) : undefined,
       denom: isSet(object.denom) ? String(object.denom) : ""
     };
   },

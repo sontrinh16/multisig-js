@@ -1,5 +1,6 @@
 import { Params, Deposit, Borrow } from "./hard";
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
 /** GenesisState defines the hard module's genesis state. */
@@ -15,7 +16,7 @@ export interface GenesisState {
 /** GenesisAccumulationTime stores the previous distribution time and its corresponding denom. */
 export interface GenesisAccumulationTime {
     collateralType: string;
-    previousAccumulationTime: Date;
+    previousAccumulationTime: Timestamp;
     supplyInterestFactor: string;
     borrowInterestFactor: string;
 }

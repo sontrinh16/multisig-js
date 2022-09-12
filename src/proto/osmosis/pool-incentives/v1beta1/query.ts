@@ -2,7 +2,7 @@ import { Duration } from "../../../google/protobuf/duration";
 import { DistrInfo, Params } from "./incentives";
 import { Gauge } from "../../incentives/gauge";
 import * as _m0 from "protobufjs/minimal";
-import { Long, isSet, DeepPartial, toDuration, fromDuration } from "@osmonauts/helpers";
+import { Long, isSet, DeepPartial } from "@osmonauts/helpers";
 export interface QueryGaugeIdsRequest {
   poolId: Long;
 }
@@ -11,7 +11,7 @@ export interface QueryGaugeIdsResponse {
 }
 export interface QueryGaugeIdsResponse_GaugeIdWithDuration {
   gaugeId: Long;
-  duration: string;
+  duration: Duration;
 }
 export interface QueryDistrInfoRequest {}
 export interface QueryDistrInfoResponse {
@@ -23,12 +23,12 @@ export interface QueryParamsResponse {
 }
 export interface QueryLockableDurationsRequest {}
 export interface QueryLockableDurationsResponse {
-  lockableDurations: string[];
+  lockableDurations: Duration[];
 }
 export interface QueryIncentivizedPoolsRequest {}
 export interface IncentivizedPool {
   poolId: Long;
-  lockableDuration: string;
+  lockableDuration: Duration;
   gaugeId: Long;
 }
 export interface QueryIncentivizedPoolsResponse {
@@ -173,7 +173,7 @@ export const QueryGaugeIdsResponse_GaugeIdWithDuration = {
     }
 
     if (message.duration !== undefined) {
-      Duration.encode(toDuration(message.duration), writer.uint32(18).fork()).ldelim();
+      Duration.encode(message.duration, writer.uint32(18).fork()).ldelim();
     }
 
     return writer;
@@ -193,7 +193,7 @@ export const QueryGaugeIdsResponse_GaugeIdWithDuration = {
           break;
 
         case 2:
-          message.duration = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.duration = Duration.decode(reader, reader.uint32());
           break;
 
         default:
@@ -208,7 +208,7 @@ export const QueryGaugeIdsResponse_GaugeIdWithDuration = {
   fromJSON(object: any): QueryGaugeIdsResponse_GaugeIdWithDuration {
     return {
       gaugeId: isSet(object.gaugeId) ? Long.fromString(object.gaugeId) : Long.UZERO,
-      duration: isSet(object.duration) ? String(object.duration) : undefined
+      duration: isSet(object.duration) ? Duration.fromJSON(object.duration) : undefined
     };
   },
 
@@ -592,7 +592,7 @@ export const IncentivizedPool = {
     }
 
     if (message.lockableDuration !== undefined) {
-      Duration.encode(toDuration(message.lockableDuration), writer.uint32(18).fork()).ldelim();
+      Duration.encode(message.lockableDuration, writer.uint32(18).fork()).ldelim();
     }
 
     if (!message.gaugeId.isZero()) {
@@ -616,7 +616,7 @@ export const IncentivizedPool = {
           break;
 
         case 2:
-          message.lockableDuration = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.lockableDuration = Duration.decode(reader, reader.uint32());
           break;
 
         case 3:
@@ -635,7 +635,7 @@ export const IncentivizedPool = {
   fromJSON(object: any): IncentivizedPool {
     return {
       poolId: isSet(object.poolId) ? Long.fromString(object.poolId) : Long.UZERO,
-      lockableDuration: isSet(object.lockableDuration) ? String(object.lockableDuration) : undefined,
+      lockableDuration: isSet(object.lockableDuration) ? Duration.fromJSON(object.lockableDuration) : undefined,
       gaugeId: isSet(object.gaugeId) ? Long.fromString(object.gaugeId) : Long.UZERO
     };
   },

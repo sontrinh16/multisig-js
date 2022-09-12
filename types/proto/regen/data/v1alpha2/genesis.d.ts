@@ -1,4 +1,5 @@
 import { ContentHash, SignerEntry, Content } from "./types";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
 /** GenesisState is the genesis state */
@@ -11,7 +12,7 @@ export interface GenesisContentEntry {
     /** hash is the ContentHash */
     hash: ContentHash;
     /** timestamp is the anchor Timestamp */
-    timestamp: Date;
+    timestamp: Timestamp;
     /** signers are the signers, if any */
     signers: SignerEntry[];
     /** content is the actual content if stored on-chain */

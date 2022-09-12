@@ -1,9 +1,10 @@
+import { Duration } from "../../../google/protobuf/duration";
 import { Bandwidth } from "../../types/v1/bandwidth";
 import * as _m0 from "protobufjs/minimal";
 import { Long, DeepPartial } from "@osmonauts/helpers";
 export interface Proof {
     id: Long;
-    duration: string;
+    duration: Duration;
     bandwidth: Bandwidth;
 }
 export declare const Proof: {

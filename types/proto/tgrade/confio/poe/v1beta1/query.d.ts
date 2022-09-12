@@ -1,5 +1,6 @@
 import { PoEContractType } from "./poe";
 import { PageRequest, PageResponse } from "../../../../cosmos/base/query/v1beta1/pagination";
+import { Duration } from "../../../../google/protobuf/duration";
 import { Coin, DecCoin } from "../../../../cosmos/base/v1beta1/coin";
 import { UnbondingDelegationEntry } from "../../../../cosmos/staking/v1beta1/staking";
 import * as _m0 from "protobufjs/minimal";
@@ -35,7 +36,7 @@ export interface QueryUnbondingPeriodRequest {
  */
 export interface QueryUnbondingPeriodResponse {
     /** Time is the time that must pass */
-    time: string;
+    time: Duration;
 }
 /**
  * QueryValidatorDelegationRequest is request type for the

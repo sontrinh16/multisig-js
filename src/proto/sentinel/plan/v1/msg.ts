@@ -2,13 +2,13 @@ import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import { Duration } from "../../../google/protobuf/duration";
 import { Status, statusFromJSON, statusToJSON } from "../../types/v1/status";
 import * as _m0 from "protobufjs/minimal";
-import { toDuration, fromDuration, isSet, DeepPartial, Long } from "@osmonauts/helpers";
+import { isSet, DeepPartial, Long } from "@osmonauts/helpers";
 
 /** MsgAddRequest defines the SDK message for adding a plan */
 export interface MsgAddRequest {
   from: string;
   price: Coin[];
-  validity: string;
+  validity: Duration;
   bytes: string;
 }
 
@@ -68,7 +68,7 @@ export const MsgAddRequest = {
     }
 
     if (message.validity !== undefined) {
-      Duration.encode(toDuration(message.validity), writer.uint32(26).fork()).ldelim();
+      Duration.encode(message.validity, writer.uint32(26).fork()).ldelim();
     }
 
     if (message.bytes !== "") {
@@ -96,7 +96,7 @@ export const MsgAddRequest = {
           break;
 
         case 3:
-          message.validity = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.validity = Duration.decode(reader, reader.uint32());
           break;
 
         case 4:
@@ -116,7 +116,7 @@ export const MsgAddRequest = {
     return {
       from: isSet(object.from) ? String(object.from) : "",
       price: Array.isArray(object?.price) ? object.price.map((e: any) => Coin.fromJSON(e)) : [],
-      validity: isSet(object.validity) ? String(object.validity) : undefined,
+      validity: isSet(object.validity) ? Duration.fromJSON(object.validity) : undefined,
       bytes: isSet(object.bytes) ? String(object.bytes) : ""
     };
   },

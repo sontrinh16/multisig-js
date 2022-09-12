@@ -1,3 +1,4 @@
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial, Long } from "@osmonauts/helpers";
 /**
@@ -107,14 +108,14 @@ export interface Batch {
      * start_date is the beginning of the period during which this credit batch
      * was quantified and verified.
      */
-    startDate: Date;
+    startDate: Timestamp;
     /**
      * end_date is the end of the period during which this credit batch was
      * quantified and verified.
      */
-    endDate: Date;
+    endDate: Timestamp;
     /** issuance_date is the timestamp when the credit batch was issued. */
-    issuanceDate: Date;
+    issuanceDate: Timestamp;
     /**
      * open tells if it's possible to mint new credits in the future.
      * Once `open` is set to false, it can't be toggled any more.

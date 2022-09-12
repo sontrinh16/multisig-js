@@ -1,9 +1,10 @@
+import { Timestamp } from "../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
 /** Minter represents the minting state */
 export interface Minter {
     /** time which the last update was made to the minter */
-    lastUpdate: Date;
+    lastUpdate: Timestamp;
     /** base inflation */
     inflationBase: string;
 }

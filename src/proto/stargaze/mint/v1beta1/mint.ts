@@ -1,6 +1,6 @@
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, toTimestamp, fromTimestamp, Long, fromJsonTimestamp } from "@osmonauts/helpers";
+import { isSet, DeepPartial, Long, fromJsonTimestamp, fromTimestamp } from "@osmonauts/helpers";
 
 /** Minter represents the minting state. */
 export interface Minter {
@@ -14,7 +14,7 @@ export interface Params {
   mintDenom: string;
 
   /** the time the chain starts */
-  startTime: Date;
+  startTime: Timestamp;
 
   /** initial annual provisions */
   initialAnnualProvisions: string;
@@ -100,7 +100,7 @@ export const Params = {
     }
 
     if (message.startTime !== undefined) {
-      Timestamp.encode(toTimestamp(message.startTime), writer.uint32(18).fork()).ldelim();
+      Timestamp.encode(message.startTime, writer.uint32(18).fork()).ldelim();
     }
 
     if (message.initialAnnualProvisions !== "") {
@@ -132,7 +132,7 @@ export const Params = {
           break;
 
         case 2:
-          message.startTime = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.startTime = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 3:
@@ -169,7 +169,7 @@ export const Params = {
   toJSON(message: Params): unknown {
     const obj: any = {};
     message.mintDenom !== undefined && (obj.mintDenom = message.mintDenom);
-    message.startTime !== undefined && (obj.startTime = message.startTime.toISOString());
+    message.startTime !== undefined && (obj.startTime = fromTimestamp(message.startTime).toISOString());
     message.initialAnnualProvisions !== undefined && (obj.initialAnnualProvisions = message.initialAnnualProvisions);
     message.reductionFactor !== undefined && (obj.reductionFactor = message.reductionFactor);
     message.blocksPerYear !== undefined && (obj.blocksPerYear = (message.blocksPerYear || Long.UZERO).toString());
@@ -179,7 +179,7 @@ export const Params = {
   fromPartial(object: DeepPartial<Params>): Params {
     const message = createBaseParams();
     message.mintDenom = object.mintDenom ?? "";
-    message.startTime = object.startTime ?? undefined;
+    message.startTime = object.startTime !== undefined && object.startTime !== null ? Timestamp.fromPartial(object.startTime) : undefined;
     message.initialAnnualProvisions = object.initialAnnualProvisions ?? "";
     message.reductionFactor = object.reductionFactor ?? "";
     message.blocksPerYear = object.blocksPerYear !== undefined && object.blocksPerYear !== null ? Long.fromValue(object.blocksPerYear) : Long.UZERO;

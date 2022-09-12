@@ -1,4 +1,5 @@
 import { DecCoin } from "../../../cosmos/base/v1beta1/coin";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { Long, DeepPartial } from "@osmonauts/helpers";
 /**
@@ -13,7 +14,7 @@ export interface Incentive {
     /** number of remaining epochs */
     epochs: number;
     /** distribution start time */
-    startTime: Date;
+    startTime: Timestamp;
     /** cumulative gas spent by all gasmeters of the incentive during the epoch */
     totalGas: Long;
 }

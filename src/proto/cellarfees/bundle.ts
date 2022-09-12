@@ -1,9 +1,9 @@
-import * as _659 from "../sommelier/cellarfees/v1/genesis";
-import * as _660 from "../sommelier/cellarfees/v1/params";
-import * as _661 from "../sommelier/cellarfees/v1/query";
+import * as _678 from "../sommelier/cellarfees/v1/genesis";
+import * as _679 from "../sommelier/cellarfees/v1/params";
+import * as _680 from "../sommelier/cellarfees/v1/query";
 export namespace cellarfees {
-  export const v1 = { ..._659,
-    ..._660,
-    ..._661
+  export const v1 = { ..._678,
+    ..._679,
+    ..._680
   };
 }

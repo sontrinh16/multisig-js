@@ -1,12 +1,14 @@
+import { Timestamp } from "../../../google/protobuf/timestamp";
+import { Duration } from "../../../google/protobuf/duration";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
 /** Params defines the claim module's parameters. */
 export interface Params {
     airdropEnabled: boolean;
     /** airdrop starting time */
-    airdropStartTime: Date;
-    durationUntilDecay: string;
-    durationOfDecay: string;
+    airdropStartTime: Timestamp;
+    durationUntilDecay: Duration;
+    durationOfDecay: Duration;
     /** denom of claimable asset */
     claimDenom: string;
 }

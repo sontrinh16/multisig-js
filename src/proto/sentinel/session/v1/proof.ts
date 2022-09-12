@@ -1,10 +1,10 @@
 import { Duration } from "../../../google/protobuf/duration";
 import { Bandwidth } from "../../types/v1/bandwidth";
 import * as _m0 from "protobufjs/minimal";
-import { toDuration, Long, fromDuration, isSet, DeepPartial } from "@osmonauts/helpers";
+import { Long, isSet, DeepPartial } from "@osmonauts/helpers";
 export interface Proof {
   id: Long;
-  duration: string;
+  duration: Duration;
   bandwidth: Bandwidth;
 }
 
@@ -23,7 +23,7 @@ export const Proof = {
     }
 
     if (message.duration !== undefined) {
-      Duration.encode(toDuration(message.duration), writer.uint32(18).fork()).ldelim();
+      Duration.encode(message.duration, writer.uint32(18).fork()).ldelim();
     }
 
     if (message.bandwidth !== undefined) {
@@ -47,7 +47,7 @@ export const Proof = {
           break;
 
         case 2:
-          message.duration = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.duration = Duration.decode(reader, reader.uint32());
           break;
 
         case 3:
@@ -66,7 +66,7 @@ export const Proof = {
   fromJSON(object: any): Proof {
     return {
       id: isSet(object.id) ? Long.fromString(object.id) : Long.UZERO,
-      duration: isSet(object.duration) ? String(object.duration) : undefined,
+      duration: isSet(object.duration) ? Duration.fromJSON(object.duration) : undefined,
       bandwidth: isSet(object.bandwidth) ? Bandwidth.fromJSON(object.bandwidth) : undefined
     };
   },

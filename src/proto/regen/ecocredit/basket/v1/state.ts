@@ -1,7 +1,7 @@
 import { DateCriteria } from "./types";
 import { Timestamp } from "../../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { Long, isSet, bytesFromBase64, base64FromBytes, DeepPartial, toTimestamp, fromTimestamp, fromJsonTimestamp } from "@osmonauts/helpers";
+import { Long, isSet, bytesFromBase64, base64FromBytes, DeepPartial, fromJsonTimestamp, fromTimestamp } from "@osmonauts/helpers";
 
 /** Basket represents a basket in state. */
 export interface Basket {
@@ -75,7 +75,7 @@ export interface BasketBalance {
    * batch_start_date is the start date of the batch. This field is used
    * to create an index which is used to remove the oldest credits first.
    */
-  batchStartDate: Date;
+  batchStartDate: Timestamp;
 }
 
 function createBaseBasket(): Basket {
@@ -312,7 +312,7 @@ export const BasketBalance = {
     }
 
     if (message.batchStartDate !== undefined) {
-      Timestamp.encode(toTimestamp(message.batchStartDate), writer.uint32(34).fork()).ldelim();
+      Timestamp.encode(message.batchStartDate, writer.uint32(34).fork()).ldelim();
     }
 
     return writer;
@@ -340,7 +340,7 @@ export const BasketBalance = {
           break;
 
         case 4:
-          message.batchStartDate = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.batchStartDate = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -366,7 +366,7 @@ export const BasketBalance = {
     message.basketId !== undefined && (obj.basketId = (message.basketId || Long.UZERO).toString());
     message.batchDenom !== undefined && (obj.batchDenom = message.batchDenom);
     message.balance !== undefined && (obj.balance = message.balance);
-    message.batchStartDate !== undefined && (obj.batchStartDate = message.batchStartDate.toISOString());
+    message.batchStartDate !== undefined && (obj.batchStartDate = fromTimestamp(message.batchStartDate).toISOString());
     return obj;
   },
 
@@ -375,7 +375,7 @@ export const BasketBalance = {
     message.basketId = object.basketId !== undefined && object.basketId !== null ? Long.fromValue(object.basketId) : Long.UZERO;
     message.batchDenom = object.batchDenom ?? "";
     message.balance = object.balance ?? "";
-    message.batchStartDate = object.batchStartDate ?? undefined;
+    message.batchStartDate = object.batchStartDate !== undefined && object.batchStartDate !== null ? Timestamp.fromPartial(object.batchStartDate) : undefined;
     return message;
   }
 

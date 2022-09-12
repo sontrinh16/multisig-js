@@ -1,3 +1,4 @@
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial, Long } from "@osmonauts/helpers";
 /** Minter represents the minting state. */
@@ -10,7 +11,7 @@ export interface Params {
     /** type of coin to mint */
     mintDenom: string;
     /** the time the chain starts */
-    startTime: Date;
+    startTime: Timestamp;
     /** initial annual provisions */
     initialAnnualProvisions: string;
     /** factor to reduce inflation by each year */

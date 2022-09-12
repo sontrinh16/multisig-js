@@ -1,4 +1,5 @@
 import { Any } from "../../../google/protobuf/any";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
 /**
@@ -18,7 +19,7 @@ export interface ChainLink {
     /** ChainConfig contains the configuration of the external chain */
     chainConfig: ChainConfig;
     /** CreationTime represents the time in which the link has been created */
-    creationTime: Date;
+    creationTime: Timestamp;
 }
 /** ChainConfig contains the data of the chain with which the link is made. */
 export interface ChainConfig {

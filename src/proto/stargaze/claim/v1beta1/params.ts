@@ -2,7 +2,7 @@ import { Action, actionFromJSON, actionToJSON } from "./claim_record";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import { Duration } from "../../../google/protobuf/duration";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, toTimestamp, toDuration, fromTimestamp, fromDuration, fromJsonTimestamp } from "@osmonauts/helpers";
+import { isSet, DeepPartial, fromJsonTimestamp, fromTimestamp } from "@osmonauts/helpers";
 export interface ClaimAuthorization {
   contractAddress: string;
   action: Action;
@@ -11,9 +11,9 @@ export interface ClaimAuthorization {
 /** Params defines the claim module's parameters. */
 export interface Params {
   airdropEnabled: boolean;
-  airdropStartTime: Date;
-  durationUntilDecay: string;
-  durationOfDecay: string;
+  airdropStartTime: Timestamp;
+  durationUntilDecay: Duration;
+  durationOfDecay: Duration;
 
   /** denom of claimable asset */
   claimDenom: string;
@@ -109,15 +109,15 @@ export const Params = {
     }
 
     if (message.airdropStartTime !== undefined) {
-      Timestamp.encode(toTimestamp(message.airdropStartTime), writer.uint32(18).fork()).ldelim();
+      Timestamp.encode(message.airdropStartTime, writer.uint32(18).fork()).ldelim();
     }
 
     if (message.durationUntilDecay !== undefined) {
-      Duration.encode(toDuration(message.durationUntilDecay), writer.uint32(26).fork()).ldelim();
+      Duration.encode(message.durationUntilDecay, writer.uint32(26).fork()).ldelim();
     }
 
     if (message.durationOfDecay !== undefined) {
-      Duration.encode(toDuration(message.durationOfDecay), writer.uint32(34).fork()).ldelim();
+      Duration.encode(message.durationOfDecay, writer.uint32(34).fork()).ldelim();
     }
 
     if (message.claimDenom !== "") {
@@ -145,15 +145,15 @@ export const Params = {
           break;
 
         case 2:
-          message.airdropStartTime = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.airdropStartTime = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 3:
-          message.durationUntilDecay = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.durationUntilDecay = Duration.decode(reader, reader.uint32());
           break;
 
         case 4:
-          message.durationOfDecay = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.durationOfDecay = Duration.decode(reader, reader.uint32());
           break;
 
         case 5:
@@ -177,8 +177,8 @@ export const Params = {
     return {
       airdropEnabled: isSet(object.airdropEnabled) ? Boolean(object.airdropEnabled) : false,
       airdropStartTime: isSet(object.airdropStartTime) ? fromJsonTimestamp(object.airdropStartTime) : undefined,
-      durationUntilDecay: isSet(object.durationUntilDecay) ? String(object.durationUntilDecay) : undefined,
-      durationOfDecay: isSet(object.durationOfDecay) ? String(object.durationOfDecay) : undefined,
+      durationUntilDecay: isSet(object.durationUntilDecay) ? Duration.fromJSON(object.durationUntilDecay) : undefined,
+      durationOfDecay: isSet(object.durationOfDecay) ? Duration.fromJSON(object.durationOfDecay) : undefined,
       claimDenom: isSet(object.claimDenom) ? String(object.claimDenom) : "",
       allowedClaimers: Array.isArray(object?.allowedClaimers) ? object.allowedClaimers.map((e: any) => ClaimAuthorization.fromJSON(e)) : []
     };
@@ -187,7 +187,7 @@ export const Params = {
   toJSON(message: Params): unknown {
     const obj: any = {};
     message.airdropEnabled !== undefined && (obj.airdropEnabled = message.airdropEnabled);
-    message.airdropStartTime !== undefined && (obj.airdropStartTime = message.airdropStartTime.toISOString());
+    message.airdropStartTime !== undefined && (obj.airdropStartTime = fromTimestamp(message.airdropStartTime).toISOString());
     message.durationUntilDecay !== undefined && (obj.durationUntilDecay = message.durationUntilDecay);
     message.durationOfDecay !== undefined && (obj.durationOfDecay = message.durationOfDecay);
     message.claimDenom !== undefined && (obj.claimDenom = message.claimDenom);
@@ -204,7 +204,7 @@ export const Params = {
   fromPartial(object: DeepPartial<Params>): Params {
     const message = createBaseParams();
     message.airdropEnabled = object.airdropEnabled ?? false;
-    message.airdropStartTime = object.airdropStartTime ?? undefined;
+    message.airdropStartTime = object.airdropStartTime !== undefined && object.airdropStartTime !== null ? Timestamp.fromPartial(object.airdropStartTime) : undefined;
     message.durationUntilDecay = object.durationUntilDecay ?? undefined;
     message.durationOfDecay = object.durationOfDecay ?? undefined;
     message.claimDenom = object.claimDenom ?? "";

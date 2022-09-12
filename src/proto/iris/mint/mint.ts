@@ -1,11 +1,11 @@
 import { Timestamp } from "../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { toTimestamp, fromTimestamp, isSet, fromJsonTimestamp, DeepPartial } from "@osmonauts/helpers";
+import { isSet, fromJsonTimestamp, fromTimestamp, DeepPartial } from "@osmonauts/helpers";
 
 /** Minter represents the minting state */
 export interface Minter {
   /** time which the last update was made to the minter */
-  lastUpdate: Date;
+  lastUpdate: Timestamp;
 
   /** base inflation */
   inflationBase: string;
@@ -30,7 +30,7 @@ function createBaseMinter(): Minter {
 export const Minter = {
   encode(message: Minter, writer: _m0.Writer = _m0.Writer.create()): _m0.Writer {
     if (message.lastUpdate !== undefined) {
-      Timestamp.encode(toTimestamp(message.lastUpdate), writer.uint32(10).fork()).ldelim();
+      Timestamp.encode(message.lastUpdate, writer.uint32(10).fork()).ldelim();
     }
 
     if (message.inflationBase !== "") {
@@ -50,7 +50,7 @@ export const Minter = {
 
       switch (tag >>> 3) {
         case 1:
-          message.lastUpdate = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.lastUpdate = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 2:
@@ -75,14 +75,14 @@ export const Minter = {
 
   toJSON(message: Minter): unknown {
     const obj: any = {};
-    message.lastUpdate !== undefined && (obj.lastUpdate = message.lastUpdate.toISOString());
+    message.lastUpdate !== undefined && (obj.lastUpdate = fromTimestamp(message.lastUpdate).toISOString());
     message.inflationBase !== undefined && (obj.inflationBase = message.inflationBase);
     return obj;
   },
 
   fromPartial(object: DeepPartial<Minter>): Minter {
     const message = createBaseMinter();
-    message.lastUpdate = object.lastUpdate ?? undefined;
+    message.lastUpdate = object.lastUpdate !== undefined && object.lastUpdate !== null ? Timestamp.fromPartial(object.lastUpdate) : undefined;
     message.inflationBase = object.inflationBase ?? "";
     return message;
   }

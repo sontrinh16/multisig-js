@@ -1,5 +1,7 @@
 import { Coin } from "../../cosmos/base/v1beta1/coin";
 import { Any } from "../../google/protobuf/any";
+import { Duration } from "../../google/protobuf/duration";
+import { Timestamp } from "../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial, Long } from "@osmonauts/helpers";
 /** PaymentTemplate contains details about a payment, with no info about the payer or payee. */
@@ -55,8 +57,8 @@ export interface BlockPeriod {
 }
 /** TimePeriod implements the Period interface and specifies a period in terms of time. */
 export interface TimePeriod {
-    periodDurationNs: string;
-    periodStartTime: Date;
+    periodDurationNs: Duration;
+    periodStartTime: Timestamp;
 }
 /**
  * TestPeriod implements the Period interface and is identical to BlockPeriod, except it

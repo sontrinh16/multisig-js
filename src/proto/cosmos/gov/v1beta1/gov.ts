@@ -3,7 +3,7 @@ import { Any } from "../../../google/protobuf/any";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import { Duration } from "../../../google/protobuf/duration";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, Long, toTimestamp, fromTimestamp, fromJsonTimestamp, toDuration, fromDuration, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
+import { isSet, DeepPartial, Long, fromJsonTimestamp, fromTimestamp, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
 
 /** VoteOption enumerates the valid vote options for a given governance proposal. */
 export enum VoteOption {
@@ -207,11 +207,11 @@ export interface Proposal {
    * proposal's voting period has ended.
    */
   finalTallyResult: TallyResult;
-  submitTime: Date;
-  depositEndTime: Date;
+  submitTime: Timestamp;
+  depositEndTime: Timestamp;
   totalDeposit: Coin[];
-  votingStartTime: Date;
-  votingEndTime: Date;
+  votingStartTime: Timestamp;
+  votingEndTime: Timestamp;
 }
 
 /** TallyResult defines a standard tally for a governance proposal. */
@@ -252,13 +252,13 @@ export interface DepositParams {
    * Maximum period for Atom holders to deposit on a proposal. Initial value: 2
    * months.
    */
-  maxDepositPeriod: string;
+  maxDepositPeriod: Duration;
 }
 
 /** VotingParams defines the params for voting on governance proposals. */
 export interface VotingParams {
   /** Length of the voting period. */
-  votingPeriod: string;
+  votingPeriod: Duration;
 }
 
 /** TallyParams defines the params for tallying votes on governance proposals. */
@@ -537,11 +537,11 @@ export const Proposal = {
     }
 
     if (message.submitTime !== undefined) {
-      Timestamp.encode(toTimestamp(message.submitTime), writer.uint32(42).fork()).ldelim();
+      Timestamp.encode(message.submitTime, writer.uint32(42).fork()).ldelim();
     }
 
     if (message.depositEndTime !== undefined) {
-      Timestamp.encode(toTimestamp(message.depositEndTime), writer.uint32(50).fork()).ldelim();
+      Timestamp.encode(message.depositEndTime, writer.uint32(50).fork()).ldelim();
     }
 
     for (const v of message.totalDeposit) {
@@ -549,11 +549,11 @@ export const Proposal = {
     }
 
     if (message.votingStartTime !== undefined) {
-      Timestamp.encode(toTimestamp(message.votingStartTime), writer.uint32(66).fork()).ldelim();
+      Timestamp.encode(message.votingStartTime, writer.uint32(66).fork()).ldelim();
     }
 
     if (message.votingEndTime !== undefined) {
-      Timestamp.encode(toTimestamp(message.votingEndTime), writer.uint32(74).fork()).ldelim();
+      Timestamp.encode(message.votingEndTime, writer.uint32(74).fork()).ldelim();
     }
 
     return writer;
@@ -585,11 +585,11 @@ export const Proposal = {
           break;
 
         case 5:
-          message.submitTime = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.submitTime = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 6:
-          message.depositEndTime = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.depositEndTime = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 7:
@@ -597,11 +597,11 @@ export const Proposal = {
           break;
 
         case 8:
-          message.votingStartTime = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.votingStartTime = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 9:
-          message.votingEndTime = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.votingEndTime = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -633,8 +633,8 @@ export const Proposal = {
     message.content !== undefined && (obj.content = message.content ? Any.toJSON(message.content) : undefined);
     message.status !== undefined && (obj.status = proposalStatusToJSON(message.status));
     message.finalTallyResult !== undefined && (obj.finalTallyResult = message.finalTallyResult ? TallyResult.toJSON(message.finalTallyResult) : undefined);
-    message.submitTime !== undefined && (obj.submitTime = message.submitTime.toISOString());
-    message.depositEndTime !== undefined && (obj.depositEndTime = message.depositEndTime.toISOString());
+    message.submitTime !== undefined && (obj.submitTime = fromTimestamp(message.submitTime).toISOString());
+    message.depositEndTime !== undefined && (obj.depositEndTime = fromTimestamp(message.depositEndTime).toISOString());
 
     if (message.totalDeposit) {
       obj.totalDeposit = message.totalDeposit.map(e => e ? Coin.toJSON(e) : undefined);
@@ -642,8 +642,8 @@ export const Proposal = {
       obj.totalDeposit = [];
     }
 
-    message.votingStartTime !== undefined && (obj.votingStartTime = message.votingStartTime.toISOString());
-    message.votingEndTime !== undefined && (obj.votingEndTime = message.votingEndTime.toISOString());
+    message.votingStartTime !== undefined && (obj.votingStartTime = fromTimestamp(message.votingStartTime).toISOString());
+    message.votingEndTime !== undefined && (obj.votingEndTime = fromTimestamp(message.votingEndTime).toISOString());
     return obj;
   },
 
@@ -653,11 +653,11 @@ export const Proposal = {
     message.content = object.content !== undefined && object.content !== null ? Any.fromPartial(object.content) : undefined;
     message.status = object.status ?? 0;
     message.finalTallyResult = object.finalTallyResult !== undefined && object.finalTallyResult !== null ? TallyResult.fromPartial(object.finalTallyResult) : undefined;
-    message.submitTime = object.submitTime ?? undefined;
-    message.depositEndTime = object.depositEndTime ?? undefined;
+    message.submitTime = object.submitTime !== undefined && object.submitTime !== null ? Timestamp.fromPartial(object.submitTime) : undefined;
+    message.depositEndTime = object.depositEndTime !== undefined && object.depositEndTime !== null ? Timestamp.fromPartial(object.depositEndTime) : undefined;
     message.totalDeposit = object.totalDeposit?.map(e => Coin.fromPartial(e)) || [];
-    message.votingStartTime = object.votingStartTime ?? undefined;
-    message.votingEndTime = object.votingEndTime ?? undefined;
+    message.votingStartTime = object.votingStartTime !== undefined && object.votingStartTime !== null ? Timestamp.fromPartial(object.votingStartTime) : undefined;
+    message.votingEndTime = object.votingEndTime !== undefined && object.votingEndTime !== null ? Timestamp.fromPartial(object.votingEndTime) : undefined;
     return message;
   }
 
@@ -869,7 +869,7 @@ export const DepositParams = {
     }
 
     if (message.maxDepositPeriod !== undefined) {
-      Duration.encode(toDuration(message.maxDepositPeriod), writer.uint32(18).fork()).ldelim();
+      Duration.encode(message.maxDepositPeriod, writer.uint32(18).fork()).ldelim();
     }
 
     return writer;
@@ -889,7 +889,7 @@ export const DepositParams = {
           break;
 
         case 2:
-          message.maxDepositPeriod = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.maxDepositPeriod = Duration.decode(reader, reader.uint32());
           break;
 
         default:
@@ -904,7 +904,7 @@ export const DepositParams = {
   fromJSON(object: any): DepositParams {
     return {
       minDeposit: Array.isArray(object?.minDeposit) ? object.minDeposit.map((e: any) => Coin.fromJSON(e)) : [],
-      maxDepositPeriod: isSet(object.maxDepositPeriod) ? String(object.maxDepositPeriod) : undefined
+      maxDepositPeriod: isSet(object.maxDepositPeriod) ? Duration.fromJSON(object.maxDepositPeriod) : undefined
     };
   },
 
@@ -939,7 +939,7 @@ function createBaseVotingParams(): VotingParams {
 export const VotingParams = {
   encode(message: VotingParams, writer: _m0.Writer = _m0.Writer.create()): _m0.Writer {
     if (message.votingPeriod !== undefined) {
-      Duration.encode(toDuration(message.votingPeriod), writer.uint32(10).fork()).ldelim();
+      Duration.encode(message.votingPeriod, writer.uint32(10).fork()).ldelim();
     }
 
     return writer;
@@ -955,7 +955,7 @@ export const VotingParams = {
 
       switch (tag >>> 3) {
         case 1:
-          message.votingPeriod = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.votingPeriod = Duration.decode(reader, reader.uint32());
           break;
 
         default:
@@ -969,7 +969,7 @@ export const VotingParams = {
 
   fromJSON(object: any): VotingParams {
     return {
-      votingPeriod: isSet(object.votingPeriod) ? String(object.votingPeriod) : undefined
+      votingPeriod: isSet(object.votingPeriod) ? Duration.fromJSON(object.votingPeriod) : undefined
     };
   },
 

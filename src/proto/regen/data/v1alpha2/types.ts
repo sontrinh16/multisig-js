@@ -1,6 +1,6 @@
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, bytesFromBase64, base64FromBytes, toTimestamp, fromTimestamp, fromJsonTimestamp } from "@osmonauts/helpers";
+import { isSet, DeepPartial, bytesFromBase64, base64FromBytes, fromJsonTimestamp, fromTimestamp } from "@osmonauts/helpers";
 
 /** MediaType defines MIME media types to be used with a ContentHash.Raw hash. */
 export enum MediaType {
@@ -373,7 +373,7 @@ export interface SignerEntry {
   signer: string;
 
   /** timestamp is the time at which the data was signed */
-  timestamp: Date;
+  timestamp: Timestamp;
 }
 
 function createBaseContentHash(): ContentHash {
@@ -690,7 +690,7 @@ export const SignerEntry = {
     }
 
     if (message.timestamp !== undefined) {
-      Timestamp.encode(toTimestamp(message.timestamp), writer.uint32(18).fork()).ldelim();
+      Timestamp.encode(message.timestamp, writer.uint32(18).fork()).ldelim();
     }
 
     return writer;
@@ -710,7 +710,7 @@ export const SignerEntry = {
           break;
 
         case 2:
-          message.timestamp = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.timestamp = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -732,14 +732,14 @@ export const SignerEntry = {
   toJSON(message: SignerEntry): unknown {
     const obj: any = {};
     message.signer !== undefined && (obj.signer = message.signer);
-    message.timestamp !== undefined && (obj.timestamp = message.timestamp.toISOString());
+    message.timestamp !== undefined && (obj.timestamp = fromTimestamp(message.timestamp).toISOString());
     return obj;
   },
 
   fromPartial(object: DeepPartial<SignerEntry>): SignerEntry {
     const message = createBaseSignerEntry();
     message.signer = object.signer ?? "";
-    message.timestamp = object.timestamp ?? undefined;
+    message.timestamp = object.timestamp !== undefined && object.timestamp !== null ? Timestamp.fromPartial(object.timestamp) : undefined;
     return message;
   }
 

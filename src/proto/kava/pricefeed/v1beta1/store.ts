@@ -1,6 +1,6 @@
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { DeepPartial, isSet, bytesFromBase64, base64FromBytes, toTimestamp, fromTimestamp, fromJsonTimestamp } from "@osmonauts/helpers";
+import { DeepPartial, isSet, bytesFromBase64, base64FromBytes, fromJsonTimestamp, fromTimestamp } from "@osmonauts/helpers";
 
 /** Params defines the parameters for the pricefeed module. */
 export interface Params {
@@ -21,7 +21,7 @@ export interface PostedPrice {
   marketId: string;
   oracleAddress: Uint8Array;
   price: string;
-  expiry: Date;
+  expiry: Timestamp;
 }
 
 /**
@@ -231,7 +231,7 @@ export const PostedPrice = {
     }
 
     if (message.expiry !== undefined) {
-      Timestamp.encode(toTimestamp(message.expiry), writer.uint32(34).fork()).ldelim();
+      Timestamp.encode(message.expiry, writer.uint32(34).fork()).ldelim();
     }
 
     return writer;
@@ -259,7 +259,7 @@ export const PostedPrice = {
           break;
 
         case 4:
-          message.expiry = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.expiry = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -285,7 +285,7 @@ export const PostedPrice = {
     message.marketId !== undefined && (obj.marketId = message.marketId);
     message.oracleAddress !== undefined && (obj.oracleAddress = base64FromBytes(message.oracleAddress !== undefined ? message.oracleAddress : new Uint8Array()));
     message.price !== undefined && (obj.price = message.price);
-    message.expiry !== undefined && (obj.expiry = message.expiry.toISOString());
+    message.expiry !== undefined && (obj.expiry = fromTimestamp(message.expiry).toISOString());
     return obj;
   },
 
@@ -294,7 +294,7 @@ export const PostedPrice = {
     message.marketId = object.marketId ?? "";
     message.oracleAddress = object.oracleAddress ?? new Uint8Array();
     message.price = object.price ?? "";
-    message.expiry = object.expiry ?? undefined;
+    message.expiry = object.expiry !== undefined && object.expiry !== null ? Timestamp.fromPartial(object.expiry) : undefined;
     return message;
   }
 

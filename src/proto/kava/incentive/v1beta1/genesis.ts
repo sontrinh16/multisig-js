@@ -2,12 +2,12 @@ import { Timestamp } from "../../../google/protobuf/timestamp";
 import { MultiRewardIndex, USDXMintingClaim, HardLiquidityProviderClaim, DelegatorClaim, SwapClaim, SavingsClaim } from "./claims";
 import { Params } from "./params";
 import * as _m0 from "protobufjs/minimal";
-import { toTimestamp, fromTimestamp, isSet, fromJsonTimestamp, DeepPartial } from "@osmonauts/helpers";
+import { isSet, fromJsonTimestamp, fromTimestamp, DeepPartial } from "@osmonauts/helpers";
 
 /** AccumulationTime stores the previous reward distribution time and its corresponding collateral type */
 export interface AccumulationTime {
   collateralType: string;
-  previousAccumulationTime: Date;
+  previousAccumulationTime: Timestamp;
 }
 
 /** GenesisRewardState groups together the global state for a particular reward so it can be exported in genesis. */
@@ -46,7 +46,7 @@ export const AccumulationTime = {
     }
 
     if (message.previousAccumulationTime !== undefined) {
-      Timestamp.encode(toTimestamp(message.previousAccumulationTime), writer.uint32(18).fork()).ldelim();
+      Timestamp.encode(message.previousAccumulationTime, writer.uint32(18).fork()).ldelim();
     }
 
     return writer;
@@ -66,7 +66,7 @@ export const AccumulationTime = {
           break;
 
         case 2:
-          message.previousAccumulationTime = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.previousAccumulationTime = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -88,14 +88,14 @@ export const AccumulationTime = {
   toJSON(message: AccumulationTime): unknown {
     const obj: any = {};
     message.collateralType !== undefined && (obj.collateralType = message.collateralType);
-    message.previousAccumulationTime !== undefined && (obj.previousAccumulationTime = message.previousAccumulationTime.toISOString());
+    message.previousAccumulationTime !== undefined && (obj.previousAccumulationTime = fromTimestamp(message.previousAccumulationTime).toISOString());
     return obj;
   },
 
   fromPartial(object: DeepPartial<AccumulationTime>): AccumulationTime {
     const message = createBaseAccumulationTime();
     message.collateralType = object.collateralType ?? "";
-    message.previousAccumulationTime = object.previousAccumulationTime ?? undefined;
+    message.previousAccumulationTime = object.previousAccumulationTime !== undefined && object.previousAccumulationTime !== null ? Timestamp.fromPartial(object.previousAccumulationTime) : undefined;
     return message;
   }
 

@@ -1,7 +1,8 @@
+import { Duration } from "../../../google/protobuf/duration";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
 export interface Params {
-    inactiveDuration: string;
+    inactiveDuration: Duration;
     proofVerificationEnabled: boolean;
 }
 export declare const Params: {

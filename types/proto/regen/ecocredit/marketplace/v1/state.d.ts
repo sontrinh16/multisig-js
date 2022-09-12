@@ -1,3 +1,4 @@
+import { Timestamp } from "../../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { Long, DeepPartial } from "@osmonauts/helpers";
 /** SellOrder represents the information for a sell order. */
@@ -31,7 +32,7 @@ export interface SellOrder {
      * expiration is an optional timestamp when the sell order expires. When the
      * expiration time is reached, the sell order is removed from state.
      */
-    expiration: Date;
+    expiration: Timestamp;
     /**
      * maker indicates that this is a maker order, meaning that when it hit
      * the order book, there were no matching buy orders.

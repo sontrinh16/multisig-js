@@ -1,6 +1,6 @@
 import { Duration } from "../../../google/protobuf/duration";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, toDuration, fromDuration } from "@osmonauts/helpers";
+import { isSet, DeepPartial } from "@osmonauts/helpers";
 
 /** GenesisState defines the recovery module's genesis state. */
 export interface GenesisState {
@@ -14,7 +14,7 @@ export interface Params {
   enableRecovery: boolean;
 
   /** duration added to timeout timestamp for balances recovered via IBC packets */
-  packetTimeoutDuration: string;
+  packetTimeoutDuration: Duration;
 }
 
 function createBaseGenesisState(): GenesisState {
@@ -88,7 +88,7 @@ export const Params = {
     }
 
     if (message.packetTimeoutDuration !== undefined) {
-      Duration.encode(toDuration(message.packetTimeoutDuration), writer.uint32(18).fork()).ldelim();
+      Duration.encode(message.packetTimeoutDuration, writer.uint32(18).fork()).ldelim();
     }
 
     return writer;
@@ -108,7 +108,7 @@ export const Params = {
           break;
 
         case 2:
-          message.packetTimeoutDuration = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.packetTimeoutDuration = Duration.decode(reader, reader.uint32());
           break;
 
         default:
@@ -123,7 +123,7 @@ export const Params = {
   fromJSON(object: any): Params {
     return {
       enableRecovery: isSet(object.enableRecovery) ? Boolean(object.enableRecovery) : false,
-      packetTimeoutDuration: isSet(object.packetTimeoutDuration) ? String(object.packetTimeoutDuration) : undefined
+      packetTimeoutDuration: isSet(object.packetTimeoutDuration) ? Duration.fromJSON(object.packetTimeoutDuration) : undefined
     };
   },
 

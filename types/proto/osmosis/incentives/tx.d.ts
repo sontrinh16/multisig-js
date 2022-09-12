@@ -1,5 +1,6 @@
 import { QueryCondition } from "../lockup/lock";
 import { Coin } from "../../cosmos/base/v1beta1/coin";
+import { Timestamp } from "../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { Long, DeepPartial } from "@osmonauts/helpers";
 export interface MsgCreateGauge {
@@ -14,7 +15,7 @@ export interface MsgCreateGauge {
     /** can distribute multiple coins */
     coins: Coin[];
     /** distribution start time */
-    startTime: Date;
+    startTime: Timestamp;
     /** number of epochs distribution will be done */
     numEpochsPaidOver: Long;
 }

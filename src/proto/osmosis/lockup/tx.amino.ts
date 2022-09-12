@@ -8,7 +8,10 @@ export interface AminoMsgLockTokens extends AminoMsg {
   type: "osmosis/lockup/lock-tokens";
   value: {
     owner: string;
-    duration: string;
+    duration: {
+      seconds: string;
+      nanos: number;
+    };
     coins: {
       denom: string;
       amount: string;
@@ -37,7 +40,10 @@ export interface AminoMsgExtendLockup extends AminoMsg {
   value: {
     owner: string;
     ID: string;
-    duration: string;
+    duration: {
+      seconds: string;
+      nanos: number;
+    };
   };
 }
 export const AminoConverter = {

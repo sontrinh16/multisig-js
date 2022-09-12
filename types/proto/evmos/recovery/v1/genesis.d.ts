@@ -1,3 +1,4 @@
+import { Duration } from "../../../google/protobuf/duration";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
 /** GenesisState defines the recovery module's genesis state. */
@@ -10,7 +11,7 @@ export interface Params {
     /** enable recovery IBC middleware */
     enableRecovery: boolean;
     /** duration added to timeout timestamp for balances recovered via IBC packets */
-    packetTimeoutDuration: string;
+    packetTimeoutDuration: Duration;
 }
 export declare const GenesisState: {
     encode(message: GenesisState, writer?: _m0.Writer): _m0.Writer;

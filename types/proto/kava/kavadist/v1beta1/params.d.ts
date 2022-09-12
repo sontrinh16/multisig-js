@@ -1,3 +1,4 @@
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
 /** Params governance parameters for kavadist module */
@@ -11,9 +12,9 @@ export interface Params {
  */
 export interface Period {
     /** example "2020-03-01T15:20:00Z" */
-    start: Date;
+    start: Timestamp;
     /** example "2020-06-01T15:20:00Z" */
-    end: Date;
+    end: Timestamp;
     /** example "1.000000003022265980"  - 10% inflation */
     inflation: Uint8Array;
 }

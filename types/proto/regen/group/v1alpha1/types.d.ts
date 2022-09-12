@@ -1,4 +1,6 @@
+import { Duration } from "../../../google/protobuf/duration";
 import { Any } from "../../../google/protobuf/any";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial, Long } from "@osmonauts/helpers";
 /** Choice defines available types of choices for voting. */
@@ -90,7 +92,7 @@ export interface ThresholdDecisionPolicy {
      * timeout is the duration from submission of a proposal to the end of voting
      * period Within this times votes and exec messages can be submitted.
      */
-    timeout: string;
+    timeout: Duration;
 }
 /** GroupInfo represents the high-level on-chain information for a group. */
 export interface GroupInfo {
@@ -159,7 +161,7 @@ export interface Proposal {
     /** proposers are the account addresses of the proposers. */
     proposers: string[];
     /** submitted_at is a timestamp specifying when a proposal was submitted. */
-    submittedAt: Date;
+    submittedAt: Timestamp;
     /**
      * group_version tracks the version of the group that this proposal
      * corresponds to. When group membership is changed, existing proposals from
@@ -192,7 +194,7 @@ export interface Proposal {
      * proposal can not be executed anymore and should be considered pending
      * delete.
      */
-    timeout: Date;
+    timeout: Timestamp;
     /**
      * executor_result is the final result based on the votes and election rule.
      * Initial value is NotRun.
@@ -223,7 +225,7 @@ export interface Vote {
     /** metadata is any arbitrary metadata to attached to the vote. */
     metadata: Uint8Array;
     /** submitted_at is the timestamp when the vote was submitted. */
-    submittedAt: Date;
+    submittedAt: Timestamp;
 }
 export declare const Member: {
     encode(message: Member, writer?: _m0.Writer): _m0.Writer;

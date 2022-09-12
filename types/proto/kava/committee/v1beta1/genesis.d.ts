@@ -1,4 +1,5 @@
 import { Any } from "../../../google/protobuf/any";
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { Long, DeepPartial } from "@osmonauts/helpers";
 /** VoteType enumerates the valid types of a vote. */
@@ -27,7 +28,7 @@ export interface Proposal {
     content: Any;
     id: Long;
     committeeId: Long;
-    deadline: Date;
+    deadline: Timestamp;
 }
 /** Vote is an internal record of a single governance vote. */
 export interface Vote {

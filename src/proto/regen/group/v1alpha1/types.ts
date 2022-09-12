@@ -2,7 +2,7 @@ import { Duration } from "../../../google/protobuf/duration";
 import { Any } from "../../../google/protobuf/any";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, bytesFromBase64, base64FromBytes, DeepPartial, toDuration, fromDuration, Long, toTimestamp, fromTimestamp, fromJsonTimestamp } from "@osmonauts/helpers";
+import { isSet, bytesFromBase64, base64FromBytes, DeepPartial, Long, fromJsonTimestamp, fromTimestamp } from "@osmonauts/helpers";
 
 /** Choice defines available types of choices for voting. */
 export enum Choice {
@@ -282,7 +282,7 @@ export interface ThresholdDecisionPolicy {
    * timeout is the duration from submission of a proposal to the end of voting
    * period Within this times votes and exec messages can be submitted.
    */
-  timeout: string;
+  timeout: Duration;
 }
 
 /** GroupInfo represents the high-level on-chain information for a group. */
@@ -370,7 +370,7 @@ export interface Proposal {
   proposers: string[];
 
   /** submitted_at is a timestamp specifying when a proposal was submitted. */
-  submittedAt: Date;
+  submittedAt: Timestamp;
 
   /**
    * group_version tracks the version of the group that this proposal
@@ -409,7 +409,7 @@ export interface Proposal {
    * proposal can not be executed anymore and should be considered pending
    * delete.
    */
-  timeout: Date;
+  timeout: Timestamp;
 
   /**
    * executor_result is the final result based on the votes and election rule.
@@ -451,7 +451,7 @@ export interface Vote {
   metadata: Uint8Array;
 
   /** submitted_at is the timestamp when the vote was submitted. */
-  submittedAt: Date;
+  submittedAt: Timestamp;
 }
 
 function createBaseMember(): Member {
@@ -612,7 +612,7 @@ export const ThresholdDecisionPolicy = {
     }
 
     if (message.timeout !== undefined) {
-      Duration.encode(toDuration(message.timeout), writer.uint32(18).fork()).ldelim();
+      Duration.encode(message.timeout, writer.uint32(18).fork()).ldelim();
     }
 
     return writer;
@@ -632,7 +632,7 @@ export const ThresholdDecisionPolicy = {
           break;
 
         case 2:
-          message.timeout = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.timeout = Duration.decode(reader, reader.uint32());
           break;
 
         default:
@@ -647,7 +647,7 @@ export const ThresholdDecisionPolicy = {
   fromJSON(object: any): ThresholdDecisionPolicy {
     return {
       threshold: isSet(object.threshold) ? String(object.threshold) : "",
-      timeout: isSet(object.timeout) ? String(object.timeout) : undefined
+      timeout: isSet(object.timeout) ? Duration.fromJSON(object.timeout) : undefined
     };
   },
 
@@ -1007,7 +1007,7 @@ export const Proposal = {
     }
 
     if (message.submittedAt !== undefined) {
-      Timestamp.encode(toTimestamp(message.submittedAt), writer.uint32(42).fork()).ldelim();
+      Timestamp.encode(message.submittedAt, writer.uint32(42).fork()).ldelim();
     }
 
     if (!message.groupVersion.isZero()) {
@@ -1031,7 +1031,7 @@ export const Proposal = {
     }
 
     if (message.timeout !== undefined) {
-      Timestamp.encode(toTimestamp(message.timeout), writer.uint32(90).fork()).ldelim();
+      Timestamp.encode(message.timeout, writer.uint32(90).fork()).ldelim();
     }
 
     if (message.executorResult !== 0) {
@@ -1071,7 +1071,7 @@ export const Proposal = {
           break;
 
         case 5:
-          message.submittedAt = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.submittedAt = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 6:
@@ -1095,7 +1095,7 @@ export const Proposal = {
           break;
 
         case 11:
-          message.timeout = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.timeout = Timestamp.decode(reader, reader.uint32());
           break;
 
         case 12:
@@ -1145,13 +1145,13 @@ export const Proposal = {
       obj.proposers = [];
     }
 
-    message.submittedAt !== undefined && (obj.submittedAt = message.submittedAt.toISOString());
+    message.submittedAt !== undefined && (obj.submittedAt = fromTimestamp(message.submittedAt).toISOString());
     message.groupVersion !== undefined && (obj.groupVersion = (message.groupVersion || Long.UZERO).toString());
     message.groupAccountVersion !== undefined && (obj.groupAccountVersion = (message.groupAccountVersion || Long.UZERO).toString());
     message.status !== undefined && (obj.status = proposal_StatusToJSON(message.status));
     message.result !== undefined && (obj.result = proposal_ResultToJSON(message.result));
     message.voteState !== undefined && (obj.voteState = message.voteState ? Tally.toJSON(message.voteState) : undefined);
-    message.timeout !== undefined && (obj.timeout = message.timeout.toISOString());
+    message.timeout !== undefined && (obj.timeout = fromTimestamp(message.timeout).toISOString());
     message.executorResult !== undefined && (obj.executorResult = proposal_ExecutorResultToJSON(message.executorResult));
 
     if (message.msgs) {
@@ -1169,13 +1169,13 @@ export const Proposal = {
     message.address = object.address ?? "";
     message.metadata = object.metadata ?? new Uint8Array();
     message.proposers = object.proposers?.map(e => e) || [];
-    message.submittedAt = object.submittedAt ?? undefined;
+    message.submittedAt = object.submittedAt !== undefined && object.submittedAt !== null ? Timestamp.fromPartial(object.submittedAt) : undefined;
     message.groupVersion = object.groupVersion !== undefined && object.groupVersion !== null ? Long.fromValue(object.groupVersion) : Long.UZERO;
     message.groupAccountVersion = object.groupAccountVersion !== undefined && object.groupAccountVersion !== null ? Long.fromValue(object.groupAccountVersion) : Long.UZERO;
     message.status = object.status ?? 0;
     message.result = object.result ?? 0;
     message.voteState = object.voteState !== undefined && object.voteState !== null ? Tally.fromPartial(object.voteState) : undefined;
-    message.timeout = object.timeout ?? undefined;
+    message.timeout = object.timeout !== undefined && object.timeout !== null ? Timestamp.fromPartial(object.timeout) : undefined;
     message.executorResult = object.executorResult ?? 0;
     message.msgs = object.msgs?.map(e => Any.fromPartial(e)) || [];
     return message;
@@ -1305,7 +1305,7 @@ export const Vote = {
     }
 
     if (message.submittedAt !== undefined) {
-      Timestamp.encode(toTimestamp(message.submittedAt), writer.uint32(42).fork()).ldelim();
+      Timestamp.encode(message.submittedAt, writer.uint32(42).fork()).ldelim();
     }
 
     return writer;
@@ -1337,7 +1337,7 @@ export const Vote = {
           break;
 
         case 5:
-          message.submittedAt = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.submittedAt = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -1365,7 +1365,7 @@ export const Vote = {
     message.voter !== undefined && (obj.voter = message.voter);
     message.choice !== undefined && (obj.choice = choiceToJSON(message.choice));
     message.metadata !== undefined && (obj.metadata = base64FromBytes(message.metadata !== undefined ? message.metadata : new Uint8Array()));
-    message.submittedAt !== undefined && (obj.submittedAt = message.submittedAt.toISOString());
+    message.submittedAt !== undefined && (obj.submittedAt = fromTimestamp(message.submittedAt).toISOString());
     return obj;
   },
 
@@ -1375,7 +1375,7 @@ export const Vote = {
     message.voter = object.voter ?? "";
     message.choice = object.choice ?? 0;
     message.metadata = object.metadata ?? new Uint8Array();
-    message.submittedAt = object.submittedAt ?? undefined;
+    message.submittedAt = object.submittedAt !== undefined && object.submittedAt !== null ? Timestamp.fromPartial(object.submittedAt) : undefined;
     return message;
   }
 

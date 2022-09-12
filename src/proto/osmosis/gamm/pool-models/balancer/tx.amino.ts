@@ -2,6 +2,7 @@ import { PoolParams, PoolAsset, SmoothWeightChangeParams } from "./balancerPool"
 import { AminoMsg } from "@cosmjs/amino";
 import { Long } from "@osmonauts/helpers";
 import { Timestamp } from "../../../../google/protobuf/timestamp";
+import { Duration } from "../../../../google/protobuf/duration";
 import { Coin } from "../../../../cosmos/base/v1beta1/coin";
 import { MsgCreateBalancerPool } from "./tx";
 export interface AminoMsgCreateBalancerPool extends AminoMsg {
@@ -16,7 +17,10 @@ export interface AminoMsgCreateBalancerPool extends AminoMsg {
           seconds: string;
           nanos: number;
         };
-        duration: string;
+        duration: {
+          seconds: string;
+          nanos: number;
+        };
         initialPoolWeights: {
           token: {
             denom: string;

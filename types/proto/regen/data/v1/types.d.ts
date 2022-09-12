@@ -1,3 +1,4 @@
+import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial } from "@osmonauts/helpers";
 /** DigestAlgorithm is the hash digest algorithm */
@@ -125,7 +126,7 @@ export interface ContentEntry {
     /** iri is the IRI of the anchored data. */
     iri: string;
     /** timestamp is the timestamp of the anchored data. */
-    timestamp: Date;
+    timestamp: Timestamp;
 }
 /**
  * AttestorEntry is an attestor entry including the attestor, the IRI, and the
@@ -140,7 +141,7 @@ export interface AttestorEntry {
      */
     attestor: string;
     /** timestamp is the timestamp at which the data was attested to. */
-    timestamp: Date;
+    timestamp: Timestamp;
 }
 /** ContentHashes contains list of content ContentHash. */
 export interface ContentHashes {

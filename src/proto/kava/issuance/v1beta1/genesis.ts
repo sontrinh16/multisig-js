@@ -1,7 +1,7 @@
 import { Duration } from "../../../google/protobuf/duration";
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, toDuration, fromDuration, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
+import { isSet, DeepPartial, bytesFromBase64, base64FromBytes } from "@osmonauts/helpers";
 
 /** GenesisState defines the issuance module's genesis state. */
 export interface GenesisState {
@@ -29,7 +29,7 @@ export interface Asset {
 export interface RateLimit {
   active: boolean;
   limit: Uint8Array;
-  timePeriod: string;
+  timePeriod: Duration;
 }
 
 /**
@@ -38,7 +38,7 @@ export interface RateLimit {
  */
 export interface AssetSupply {
   currentSupply: Coin;
-  timeElapsed: string;
+  timeElapsed: Duration;
 }
 
 function createBaseGenesisState(): GenesisState {
@@ -321,7 +321,7 @@ export const RateLimit = {
     }
 
     if (message.timePeriod !== undefined) {
-      Duration.encode(toDuration(message.timePeriod), writer.uint32(26).fork()).ldelim();
+      Duration.encode(message.timePeriod, writer.uint32(26).fork()).ldelim();
     }
 
     return writer;
@@ -345,7 +345,7 @@ export const RateLimit = {
           break;
 
         case 3:
-          message.timePeriod = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.timePeriod = Duration.decode(reader, reader.uint32());
           break;
 
         default:
@@ -361,7 +361,7 @@ export const RateLimit = {
     return {
       active: isSet(object.active) ? Boolean(object.active) : false,
       limit: isSet(object.limit) ? bytesFromBase64(object.limit) : new Uint8Array(),
-      timePeriod: isSet(object.timePeriod) ? String(object.timePeriod) : undefined
+      timePeriod: isSet(object.timePeriod) ? Duration.fromJSON(object.timePeriod) : undefined
     };
   },
 
@@ -397,7 +397,7 @@ export const AssetSupply = {
     }
 
     if (message.timeElapsed !== undefined) {
-      Duration.encode(toDuration(message.timeElapsed), writer.uint32(18).fork()).ldelim();
+      Duration.encode(message.timeElapsed, writer.uint32(18).fork()).ldelim();
     }
 
     return writer;
@@ -417,7 +417,7 @@ export const AssetSupply = {
           break;
 
         case 2:
-          message.timeElapsed = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.timeElapsed = Duration.decode(reader, reader.uint32());
           break;
 
         default:
@@ -432,7 +432,7 @@ export const AssetSupply = {
   fromJSON(object: any): AssetSupply {
     return {
       currentSupply: isSet(object.currentSupply) ? Coin.fromJSON(object.currentSupply) : undefined,
-      timeElapsed: isSet(object.timeElapsed) ? String(object.timeElapsed) : undefined
+      timeElapsed: isSet(object.timeElapsed) ? Duration.fromJSON(object.timeElapsed) : undefined
     };
   },
 

@@ -1,7 +1,7 @@
 import { Any } from "../../../google/protobuf/any";
 import { Duration } from "../../../google/protobuf/duration";
 import * as _m0 from "protobufjs/minimal";
-import { toDuration, Long, fromDuration, isSet, bytesFromBase64, base64FromBytes, DeepPartial } from "@osmonauts/helpers";
+import { Long, isSet, bytesFromBase64, base64FromBytes, DeepPartial } from "@osmonauts/helpers";
 
 /** TallyOption enumerates the valid types of a tally. */
 export enum TallyOption {
@@ -62,7 +62,7 @@ export interface BaseCommittee {
   voteThreshold: string;
 
   /** The length of time a proposal remains active for. Proposals will close earlier if they get enough votes. */
-  proposalDuration: string;
+  proposalDuration: Duration;
   tallyOption: TallyOption;
 }
 
@@ -113,7 +113,7 @@ export const BaseCommittee = {
     }
 
     if (message.proposalDuration !== undefined) {
-      Duration.encode(toDuration(message.proposalDuration), writer.uint32(50).fork()).ldelim();
+      Duration.encode(message.proposalDuration, writer.uint32(50).fork()).ldelim();
     }
 
     if (message.tallyOption !== 0) {
@@ -153,7 +153,7 @@ export const BaseCommittee = {
           break;
 
         case 6:
-          message.proposalDuration = fromDuration(Duration.decode(reader, reader.uint32()));
+          message.proposalDuration = Duration.decode(reader, reader.uint32());
           break;
 
         case 7:
@@ -176,7 +176,7 @@ export const BaseCommittee = {
       members: Array.isArray(object?.members) ? object.members.map((e: any) => bytesFromBase64(e)) : [],
       permissions: Array.isArray(object?.permissions) ? object.permissions.map((e: any) => Any.fromJSON(e)) : [],
       voteThreshold: isSet(object.voteThreshold) ? String(object.voteThreshold) : "",
-      proposalDuration: isSet(object.proposalDuration) ? String(object.proposalDuration) : undefined,
+      proposalDuration: isSet(object.proposalDuration) ? Duration.fromJSON(object.proposalDuration) : undefined,
       tallyOption: isSet(object.tallyOption) ? tallyOptionFromJSON(object.tallyOption) : 0
     };
   },

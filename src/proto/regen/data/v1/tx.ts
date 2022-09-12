@@ -1,7 +1,7 @@
 import { ContentHash, ContentHash_Graph, AttestorEntry } from "./types";
 import { Timestamp } from "../../../google/protobuf/timestamp";
 import * as _m0 from "protobufjs/minimal";
-import { isSet, DeepPartial, toTimestamp, fromTimestamp, fromJsonTimestamp, Long } from "@osmonauts/helpers";
+import { isSet, DeepPartial, fromJsonTimestamp, fromTimestamp, Long } from "@osmonauts/helpers";
 
 /** MsgAnchor is the Msg/Anchor request type. */
 export interface MsgAnchor {
@@ -22,7 +22,7 @@ export interface MsgAnchorResponse {
   iri: string;
 
   /** timestamp is the timestamp at which the data was anchored. */
-  timestamp: Date;
+  timestamp: Timestamp;
 }
 
 /** MsgAttest is the Msg/Attest request type. */
@@ -186,7 +186,7 @@ export const MsgAnchorResponse = {
     }
 
     if (message.timestamp !== undefined) {
-      Timestamp.encode(toTimestamp(message.timestamp), writer.uint32(18).fork()).ldelim();
+      Timestamp.encode(message.timestamp, writer.uint32(18).fork()).ldelim();
     }
 
     return writer;
@@ -206,7 +206,7 @@ export const MsgAnchorResponse = {
           break;
 
         case 2:
-          message.timestamp = fromTimestamp(Timestamp.decode(reader, reader.uint32()));
+          message.timestamp = Timestamp.decode(reader, reader.uint32());
           break;
 
         default:
@@ -228,14 +228,14 @@ export const MsgAnchorResponse = {
   toJSON(message: MsgAnchorResponse): unknown {
     const obj: any = {};
     message.iri !== undefined && (obj.iri = message.iri);
-    message.timestamp !== undefined && (obj.timestamp = message.timestamp.toISOString());
+    message.timestamp !== undefined && (obj.timestamp = fromTimestamp(message.timestamp).toISOString());
     return obj;
   },
 
   fromPartial(object: DeepPartial<MsgAnchorResponse>): MsgAnchorResponse {
     const message = createBaseMsgAnchorResponse();
     message.iri = object.iri ?? "";
-    message.timestamp = object.timestamp ?? undefined;
+    message.timestamp = object.timestamp !== undefined && object.timestamp !== null ? Timestamp.fromPartial(object.timestamp) : undefined;
     return message;
   }
 

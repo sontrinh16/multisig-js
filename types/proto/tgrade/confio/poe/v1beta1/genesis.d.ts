@@ -1,4 +1,5 @@
 import { Params, PoEContractType } from "./poe";
+import { Duration } from "../../../../google/protobuf/duration";
 import { Coin } from "../../../../cosmos/base/v1beta1/coin";
 import * as _m0 from "protobufjs/minimal";
 import { DeepPartial, Long } from "@osmonauts/helpers";
@@ -69,7 +70,7 @@ export interface MixerContractConfig_Sigmoid {
 export interface StakeContractConfig {
     minBond: Long;
     tokensPerPoint: Long;
-    unbondingPeriod: string;
+    unbondingPeriod: Duration;
     claimAutoreturnLimit: number;
 }
 /** ValsetContractConfig initial setup config */
@@ -85,7 +86,7 @@ export interface ValsetContractConfig {
      * Epoch # is env.block.time/epoch_length (round down). The first block with a
      * new epoch number will trigger a new validator calculation.
      */
-    epochLength: string;
+    epochLength: Duration;
     epochReward: Coin;
     /**
      * Scaling is the factor to multiply cw4-group weights to produce the
@@ -129,11 +130,11 @@ export interface ValsetContractConfig {
      * sign their first epoch boundary block. After the period, they have to pass
      * verification again, ad infinitum.
      */
-    offlineJailDuration: string;
+    offlineJailDuration: Duration;
 }
 /** EngagementContractConfig initial setup config */
 export interface EngagementContractConfig {
-    halflife: string;
+    halflife: Duration;
 }
 /** OversightCommitteeContractConfig initial setup config for the trusted circle */
 export interface OversightCommitteeContractConfig {
@@ -202,7 +203,7 @@ export interface ArbiterPoolContractConfig {
     denyListContractAddress: string;
     /** DisputeCost The required dispute amount, in the default denom (utgd) */
     disputeCost: Coin;
-    waitingPeriod: string;
+    waitingPeriod: Duration;
 }
 export declare const GenesisState: {
     encode(message: GenesisState, writer?: _m0.Writer): _m0.Writer;
