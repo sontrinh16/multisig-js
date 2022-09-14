@@ -1,39 +1,39 @@
-import * as _564 from "./data/v1/events";
-import * as _565 from "./data/v1/query";
-import * as _566 from "./data/v1/state";
-import * as _567 from "./data/v1/tx";
-import * as _568 from "./data/v1/types";
-import * as _569 from "./data/v1alpha2/events";
-import * as _570 from "./data/v1alpha2/genesis";
-import * as _571 from "./data/v1alpha2/query";
-import * as _572 from "./data/v1alpha2/tx";
-import * as _573 from "./data/v1alpha2/types";
-import * as _574 from "./ecocredit/basket/v1/events";
-import * as _575 from "./ecocredit/basket/v1/query";
-import * as _576 from "./ecocredit/basket/v1/state";
-import * as _577 from "./ecocredit/basket/v1/tx";
-import * as _578 from "./ecocredit/basket/v1/types";
-import * as _579 from "./ecocredit/marketplace/v1/events";
-import * as _580 from "./ecocredit/marketplace/v1/query";
-import * as _581 from "./ecocredit/marketplace/v1/state";
-import * as _582 from "./ecocredit/marketplace/v1/tx";
-import * as _583 from "./ecocredit/marketplace/v1/types";
-import * as _584 from "./ecocredit/orderbook/v1alpha1/memory";
-import * as _585 from "./ecocredit/v1/events";
-import * as _586 from "./ecocredit/v1/query";
-import * as _587 from "./ecocredit/v1/state";
-import * as _588 from "./ecocredit/v1/tx";
-import * as _589 from "./ecocredit/v1/types";
-import * as _590 from "./ecocredit/v1alpha1/events";
-import * as _591 from "./ecocredit/v1alpha1/genesis";
-import * as _592 from "./ecocredit/v1alpha1/query";
-import * as _593 from "./ecocredit/v1alpha1/tx";
-import * as _594 from "./ecocredit/v1alpha1/types";
-import * as _595 from "./group/v1alpha1/events";
-import * as _596 from "./group/v1alpha1/genesis";
-import * as _597 from "./group/v1alpha1/query";
-import * as _598 from "./group/v1alpha1/tx";
-import * as _599 from "./group/v1alpha1/types";
+import * as _632 from "./data/v1/events";
+import * as _633 from "./data/v1/query";
+import * as _634 from "./data/v1/state";
+import * as _635 from "./data/v1/tx";
+import * as _636 from "./data/v1/types";
+import * as _637 from "./data/v1alpha2/events";
+import * as _638 from "./data/v1alpha2/genesis";
+import * as _639 from "./data/v1alpha2/query";
+import * as _640 from "./data/v1alpha2/tx";
+import * as _641 from "./data/v1alpha2/types";
+import * as _642 from "./ecocredit/basket/v1/events";
+import * as _643 from "./ecocredit/basket/v1/query";
+import * as _644 from "./ecocredit/basket/v1/state";
+import * as _645 from "./ecocredit/basket/v1/tx";
+import * as _646 from "./ecocredit/basket/v1/types";
+import * as _647 from "./ecocredit/marketplace/v1/events";
+import * as _648 from "./ecocredit/marketplace/v1/query";
+import * as _649 from "./ecocredit/marketplace/v1/state";
+import * as _650 from "./ecocredit/marketplace/v1/tx";
+import * as _651 from "./ecocredit/marketplace/v1/types";
+import * as _652 from "./ecocredit/orderbook/v1alpha1/memory";
+import * as _653 from "./ecocredit/v1/events";
+import * as _654 from "./ecocredit/v1/query";
+import * as _655 from "./ecocredit/v1/state";
+import * as _656 from "./ecocredit/v1/tx";
+import * as _657 from "./ecocredit/v1/types";
+import * as _658 from "./ecocredit/v1alpha1/events";
+import * as _659 from "./ecocredit/v1alpha1/genesis";
+import * as _660 from "./ecocredit/v1alpha1/query";
+import * as _661 from "./ecocredit/v1alpha1/tx";
+import * as _662 from "./ecocredit/v1alpha1/types";
+import * as _663 from "./group/v1alpha1/events";
+import * as _664 from "./group/v1alpha1/genesis";
+import * as _665 from "./group/v1alpha1/query";
+import * as _666 from "./group/v1alpha1/tx";
+import * as _667 from "./group/v1alpha1/types";
 export declare namespace regen {
     namespace data {
         const v1: {
@@ -41,55 +41,55 @@ export declare namespace regen {
             load: (protoRegistry: import("@cosmjs/proto-signing").Registry) => void;
             MessageComposer: {
                 encoded: {
-                    anchor(value: _567.MsgAnchor): {
+                    anchor(value: _635.MsgAnchor): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    attest(value: _567.MsgAttest): {
+                    attest(value: _635.MsgAttest): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    defineResolver(value: _567.MsgDefineResolver): {
+                    defineResolver(value: _635.MsgDefineResolver): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    registerResolver(value: _567.MsgRegisterResolver): {
+                    registerResolver(value: _635.MsgRegisterResolver): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
                 };
                 withTypeUrl: {
-                    anchor(value: _567.MsgAnchor): {
+                    anchor(value: _635.MsgAnchor): {
                         typeUrl: string;
-                        value: _567.MsgAnchor;
+                        value: _635.MsgAnchor;
                     };
-                    attest(value: _567.MsgAttest): {
+                    attest(value: _635.MsgAttest): {
                         typeUrl: string;
-                        value: _567.MsgAttest;
+                        value: _635.MsgAttest;
                     };
-                    defineResolver(value: _567.MsgDefineResolver): {
+                    defineResolver(value: _635.MsgDefineResolver): {
                         typeUrl: string;
-                        value: _567.MsgDefineResolver;
+                        value: _635.MsgDefineResolver;
                     };
-                    registerResolver(value: _567.MsgRegisterResolver): {
+                    registerResolver(value: _635.MsgRegisterResolver): {
                         typeUrl: string;
-                        value: _567.MsgRegisterResolver;
+                        value: _635.MsgRegisterResolver;
                     };
                 };
                 toJSON: {
-                    anchor(value: _567.MsgAnchor): {
+                    anchor(value: _635.MsgAnchor): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    attest(value: _567.MsgAttest): {
+                    attest(value: _635.MsgAttest): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    defineResolver(value: _567.MsgDefineResolver): {
+                    defineResolver(value: _635.MsgDefineResolver): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    registerResolver(value: _567.MsgRegisterResolver): {
+                    registerResolver(value: _635.MsgRegisterResolver): {
                         typeUrl: string;
                         value: unknown;
                     };
@@ -97,44 +97,44 @@ export declare namespace regen {
                 fromJSON: {
                     anchor(value: any): {
                         typeUrl: string;
-                        value: _567.MsgAnchor;
+                        value: _635.MsgAnchor;
                     };
                     attest(value: any): {
                         typeUrl: string;
-                        value: _567.MsgAttest;
+                        value: _635.MsgAttest;
                     };
                     defineResolver(value: any): {
                         typeUrl: string;
-                        value: _567.MsgDefineResolver;
+                        value: _635.MsgDefineResolver;
                     };
                     registerResolver(value: any): {
                         typeUrl: string;
-                        value: _567.MsgRegisterResolver;
+                        value: _635.MsgRegisterResolver;
                     };
                 };
                 fromPartial: {
-                    anchor(value: _567.MsgAnchor): {
+                    anchor(value: _635.MsgAnchor): {
                         typeUrl: string;
-                        value: _567.MsgAnchor;
+                        value: _635.MsgAnchor;
                     };
-                    attest(value: _567.MsgAttest): {
+                    attest(value: _635.MsgAttest): {
                         typeUrl: string;
-                        value: _567.MsgAttest;
+                        value: _635.MsgAttest;
                     };
-                    defineResolver(value: _567.MsgDefineResolver): {
+                    defineResolver(value: _635.MsgDefineResolver): {
                         typeUrl: string;
-                        value: _567.MsgDefineResolver;
+                        value: _635.MsgDefineResolver;
                     };
-                    registerResolver(value: _567.MsgRegisterResolver): {
+                    registerResolver(value: _635.MsgRegisterResolver): {
                         typeUrl: string;
-                        value: _567.MsgRegisterResolver;
+                        value: _635.MsgRegisterResolver;
                     };
                 };
             };
             AminoConverter: {
                 "/regen.data.v1.MsgAnchor": {
                     aminoType: string;
-                    toAmino: ({ sender, contentHash }: _567.MsgAnchor) => {
+                    toAmino: ({ sender, contentHash }: _635.MsgAnchor) => {
                         sender: string;
                         content_hash: {
                             raw: {
@@ -165,11 +165,11 @@ export declare namespace regen {
                                 merkle_tree: number;
                             };
                         };
-                    }) => _567.MsgAnchor;
+                    }) => _635.MsgAnchor;
                 };
                 "/regen.data.v1.MsgAttest": {
                     aminoType: string;
-                    toAmino: ({ attestor, contentHashes }: _567.MsgAttest) => {
+                    toAmino: ({ attestor, contentHashes }: _635.MsgAttest) => {
                         attestor: string;
                         content_hashes: {
                             hash: Uint8Array;
@@ -186,22 +186,22 @@ export declare namespace regen {
                             canonicalization_algorithm: number;
                             merkle_tree: number;
                         }[];
-                    }) => _567.MsgAttest;
+                    }) => _635.MsgAttest;
                 };
                 "/regen.data.v1.MsgDefineResolver": {
                     aminoType: string;
-                    toAmino: ({ manager, resolverUrl }: _567.MsgDefineResolver) => {
+                    toAmino: ({ manager, resolverUrl }: _635.MsgDefineResolver) => {
                         manager: string;
                         resolver_url: string;
                     };
                     fromAmino: ({ manager, resolver_url }: {
                         manager: string;
                         resolver_url: string;
-                    }) => _567.MsgDefineResolver;
+                    }) => _635.MsgDefineResolver;
                 };
                 "/regen.data.v1.MsgRegisterResolver": {
                     aminoType: string;
-                    toAmino: ({ manager, resolverId, contentHashes }: _567.MsgRegisterResolver) => {
+                    toAmino: ({ manager, resolverId, contentHashes }: _635.MsgRegisterResolver) => {
                         manager: string;
                         resolver_id: string;
                         content_hashes: {
@@ -234,80 +234,80 @@ export declare namespace regen {
                                 merkle_tree: number;
                             };
                         }[];
-                    }) => _567.MsgRegisterResolver;
+                    }) => _635.MsgRegisterResolver;
                 };
             };
-            digestAlgorithmFromJSON(object: any): _568.DigestAlgorithm;
-            digestAlgorithmToJSON(object: _568.DigestAlgorithm): string;
-            rawMediaTypeFromJSON(object: any): _568.RawMediaType;
-            rawMediaTypeToJSON(object: _568.RawMediaType): string;
-            graphCanonicalizationAlgorithmFromJSON(object: any): _568.GraphCanonicalizationAlgorithm;
-            graphCanonicalizationAlgorithmToJSON(object: _568.GraphCanonicalizationAlgorithm): string;
-            graphMerkleTreeFromJSON(object: any): _568.GraphMerkleTree;
-            graphMerkleTreeToJSON(object: _568.GraphMerkleTree): string;
-            DigestAlgorithm: typeof _568.DigestAlgorithm;
-            RawMediaType: typeof _568.RawMediaType;
-            GraphCanonicalizationAlgorithm: typeof _568.GraphCanonicalizationAlgorithm;
-            GraphMerkleTree: typeof _568.GraphMerkleTree;
+            digestAlgorithmFromJSON(object: any): _636.DigestAlgorithm;
+            digestAlgorithmToJSON(object: _636.DigestAlgorithm): string;
+            rawMediaTypeFromJSON(object: any): _636.RawMediaType;
+            rawMediaTypeToJSON(object: _636.RawMediaType): string;
+            graphCanonicalizationAlgorithmFromJSON(object: any): _636.GraphCanonicalizationAlgorithm;
+            graphCanonicalizationAlgorithmToJSON(object: _636.GraphCanonicalizationAlgorithm): string;
+            graphMerkleTreeFromJSON(object: any): _636.GraphMerkleTree;
+            graphMerkleTreeToJSON(object: _636.GraphMerkleTree): string;
+            DigestAlgorithm: typeof _636.DigestAlgorithm;
+            RawMediaType: typeof _636.RawMediaType;
+            GraphCanonicalizationAlgorithm: typeof _636.GraphCanonicalizationAlgorithm;
+            GraphMerkleTree: typeof _636.GraphMerkleTree;
             ContentHash: {
-                encode(message: _568.ContentHash, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _568.ContentHash;
-                fromJSON(object: any): _568.ContentHash;
-                toJSON(message: _568.ContentHash): unknown;
+                encode(message: _636.ContentHash, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _636.ContentHash;
+                fromJSON(object: any): _636.ContentHash;
+                toJSON(message: _636.ContentHash): unknown;
                 fromPartial(object: {
                     raw?: {
                         hash?: Uint8Array;
-                        digestAlgorithm?: _568.DigestAlgorithm;
-                        mediaType?: _568.RawMediaType;
+                        digestAlgorithm?: _636.DigestAlgorithm;
+                        mediaType?: _636.RawMediaType;
                     };
                     graph?: {
                         hash?: Uint8Array;
-                        digestAlgorithm?: _568.DigestAlgorithm;
-                        canonicalizationAlgorithm?: _568.GraphCanonicalizationAlgorithm;
-                        merkleTree?: _568.GraphMerkleTree;
+                        digestAlgorithm?: _636.DigestAlgorithm;
+                        canonicalizationAlgorithm?: _636.GraphCanonicalizationAlgorithm;
+                        merkleTree?: _636.GraphMerkleTree;
                     };
-                }): _568.ContentHash;
+                }): _636.ContentHash;
             };
             ContentHash_Raw: {
-                encode(message: _568.ContentHash_Raw, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _568.ContentHash_Raw;
-                fromJSON(object: any): _568.ContentHash_Raw;
-                toJSON(message: _568.ContentHash_Raw): unknown;
+                encode(message: _636.ContentHash_Raw, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _636.ContentHash_Raw;
+                fromJSON(object: any): _636.ContentHash_Raw;
+                toJSON(message: _636.ContentHash_Raw): unknown;
                 fromPartial(object: {
                     hash?: Uint8Array;
-                    digestAlgorithm?: _568.DigestAlgorithm;
-                    mediaType?: _568.RawMediaType;
-                }): _568.ContentHash_Raw;
+                    digestAlgorithm?: _636.DigestAlgorithm;
+                    mediaType?: _636.RawMediaType;
+                }): _636.ContentHash_Raw;
             };
             ContentHash_Graph: {
-                encode(message: _568.ContentHash_Graph, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _568.ContentHash_Graph;
-                fromJSON(object: any): _568.ContentHash_Graph;
-                toJSON(message: _568.ContentHash_Graph): unknown;
+                encode(message: _636.ContentHash_Graph, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _636.ContentHash_Graph;
+                fromJSON(object: any): _636.ContentHash_Graph;
+                toJSON(message: _636.ContentHash_Graph): unknown;
                 fromPartial(object: {
                     hash?: Uint8Array;
-                    digestAlgorithm?: _568.DigestAlgorithm;
-                    canonicalizationAlgorithm?: _568.GraphCanonicalizationAlgorithm;
-                    merkleTree?: _568.GraphMerkleTree;
-                }): _568.ContentHash_Graph;
+                    digestAlgorithm?: _636.DigestAlgorithm;
+                    canonicalizationAlgorithm?: _636.GraphCanonicalizationAlgorithm;
+                    merkleTree?: _636.GraphMerkleTree;
+                }): _636.ContentHash_Graph;
             };
             ContentEntry: {
-                encode(message: _568.ContentEntry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _568.ContentEntry;
-                fromJSON(object: any): _568.ContentEntry;
-                toJSON(message: _568.ContentEntry): unknown;
+                encode(message: _636.ContentEntry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _636.ContentEntry;
+                fromJSON(object: any): _636.ContentEntry;
+                toJSON(message: _636.ContentEntry): unknown;
                 fromPartial(object: {
                     contentHash?: {
                         raw?: {
                             hash?: Uint8Array;
-                            digestAlgorithm?: _568.DigestAlgorithm;
-                            mediaType?: _568.RawMediaType;
+                            digestAlgorithm?: _636.DigestAlgorithm;
+                            mediaType?: _636.RawMediaType;
                         };
                         graph?: {
                             hash?: Uint8Array;
-                            digestAlgorithm?: _568.DigestAlgorithm;
-                            canonicalizationAlgorithm?: _568.GraphCanonicalizationAlgorithm;
-                            merkleTree?: _568.GraphMerkleTree;
+                            digestAlgorithm?: _636.DigestAlgorithm;
+                            canonicalizationAlgorithm?: _636.GraphCanonicalizationAlgorithm;
+                            merkleTree?: _636.GraphMerkleTree;
                         };
                     };
                     iri?: string;
@@ -315,13 +315,13 @@ export declare namespace regen {
                         seconds?: any;
                         nanos?: number;
                     };
-                }): _568.ContentEntry;
+                }): _636.ContentEntry;
             };
             AttestorEntry: {
-                encode(message: _568.AttestorEntry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _568.AttestorEntry;
-                fromJSON(object: any): _568.AttestorEntry;
-                toJSON(message: _568.AttestorEntry): unknown;
+                encode(message: _636.AttestorEntry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _636.AttestorEntry;
+                fromJSON(object: any): _636.AttestorEntry;
+                toJSON(message: _636.AttestorEntry): unknown;
                 fromPartial(object: {
                     iri?: string;
                     attestor?: string;
@@ -329,84 +329,84 @@ export declare namespace regen {
                         seconds?: any;
                         nanos?: number;
                     };
-                }): _568.AttestorEntry;
+                }): _636.AttestorEntry;
             };
             ContentHashes: {
-                encode(message: _568.ContentHashes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _568.ContentHashes;
-                fromJSON(object: any): _568.ContentHashes;
-                toJSON(message: _568.ContentHashes): unknown;
+                encode(message: _636.ContentHashes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _636.ContentHashes;
+                fromJSON(object: any): _636.ContentHashes;
+                toJSON(message: _636.ContentHashes): unknown;
                 fromPartial(object: {
                     contentHashes?: {
                         raw?: {
                             hash?: Uint8Array;
-                            digestAlgorithm?: _568.DigestAlgorithm;
-                            mediaType?: _568.RawMediaType;
+                            digestAlgorithm?: _636.DigestAlgorithm;
+                            mediaType?: _636.RawMediaType;
                         };
                         graph?: {
                             hash?: Uint8Array;
-                            digestAlgorithm?: _568.DigestAlgorithm;
-                            canonicalizationAlgorithm?: _568.GraphCanonicalizationAlgorithm;
-                            merkleTree?: _568.GraphMerkleTree;
+                            digestAlgorithm?: _636.DigestAlgorithm;
+                            canonicalizationAlgorithm?: _636.GraphCanonicalizationAlgorithm;
+                            merkleTree?: _636.GraphMerkleTree;
                         };
                     }[];
-                }): _568.ContentHashes;
+                }): _636.ContentHashes;
             };
             MsgAnchor: {
-                encode(message: _567.MsgAnchor, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _567.MsgAnchor;
-                fromJSON(object: any): _567.MsgAnchor;
-                toJSON(message: _567.MsgAnchor): unknown;
+                encode(message: _635.MsgAnchor, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _635.MsgAnchor;
+                fromJSON(object: any): _635.MsgAnchor;
+                toJSON(message: _635.MsgAnchor): unknown;
                 fromPartial(object: {
                     sender?: string;
                     contentHash?: {
                         raw?: {
                             hash?: Uint8Array;
-                            digestAlgorithm?: _568.DigestAlgorithm;
-                            mediaType?: _568.RawMediaType;
+                            digestAlgorithm?: _636.DigestAlgorithm;
+                            mediaType?: _636.RawMediaType;
                         };
                         graph?: {
                             hash?: Uint8Array;
-                            digestAlgorithm?: _568.DigestAlgorithm;
-                            canonicalizationAlgorithm?: _568.GraphCanonicalizationAlgorithm;
-                            merkleTree?: _568.GraphMerkleTree;
+                            digestAlgorithm?: _636.DigestAlgorithm;
+                            canonicalizationAlgorithm?: _636.GraphCanonicalizationAlgorithm;
+                            merkleTree?: _636.GraphMerkleTree;
                         };
                     };
-                }): _567.MsgAnchor;
+                }): _635.MsgAnchor;
             };
             MsgAnchorResponse: {
-                encode(message: _567.MsgAnchorResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _567.MsgAnchorResponse;
-                fromJSON(object: any): _567.MsgAnchorResponse;
-                toJSON(message: _567.MsgAnchorResponse): unknown;
+                encode(message: _635.MsgAnchorResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _635.MsgAnchorResponse;
+                fromJSON(object: any): _635.MsgAnchorResponse;
+                toJSON(message: _635.MsgAnchorResponse): unknown;
                 fromPartial(object: {
                     iri?: string;
                     timestamp?: {
                         seconds?: any;
                         nanos?: number;
                     };
-                }): _567.MsgAnchorResponse;
+                }): _635.MsgAnchorResponse;
             };
             MsgAttest: {
-                encode(message: _567.MsgAttest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _567.MsgAttest;
-                fromJSON(object: any): _567.MsgAttest;
-                toJSON(message: _567.MsgAttest): unknown;
+                encode(message: _635.MsgAttest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _635.MsgAttest;
+                fromJSON(object: any): _635.MsgAttest;
+                toJSON(message: _635.MsgAttest): unknown;
                 fromPartial(object: {
                     attestor?: string;
                     contentHashes?: {
                         hash?: Uint8Array;
-                        digestAlgorithm?: _568.DigestAlgorithm;
-                        canonicalizationAlgorithm?: _568.GraphCanonicalizationAlgorithm;
-                        merkleTree?: _568.GraphMerkleTree;
+                        digestAlgorithm?: _636.DigestAlgorithm;
+                        canonicalizationAlgorithm?: _636.GraphCanonicalizationAlgorithm;
+                        merkleTree?: _636.GraphMerkleTree;
                     }[];
-                }): _567.MsgAttest;
+                }): _635.MsgAttest;
             };
             MsgAttestResponse: {
-                encode(message: _567.MsgAttestResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _567.MsgAttestResponse;
-                fromJSON(object: any): _567.MsgAttestResponse;
-                toJSON(message: _567.MsgAttestResponse): unknown;
+                encode(message: _635.MsgAttestResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _635.MsgAttestResponse;
+                fromJSON(object: any): _635.MsgAttestResponse;
+                toJSON(message: _635.MsgAttestResponse): unknown;
                 fromPartial(object: {
                     newEntries?: {
                         iri?: string;
@@ -416,85 +416,85 @@ export declare namespace regen {
                             nanos?: number;
                         };
                     }[];
-                }): _567.MsgAttestResponse;
+                }): _635.MsgAttestResponse;
             };
             MsgDefineResolver: {
-                encode(message: _567.MsgDefineResolver, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _567.MsgDefineResolver;
-                fromJSON(object: any): _567.MsgDefineResolver;
-                toJSON(message: _567.MsgDefineResolver): unknown;
+                encode(message: _635.MsgDefineResolver, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _635.MsgDefineResolver;
+                fromJSON(object: any): _635.MsgDefineResolver;
+                toJSON(message: _635.MsgDefineResolver): unknown;
                 fromPartial(object: {
                     manager?: string;
                     resolverUrl?: string;
-                }): _567.MsgDefineResolver;
+                }): _635.MsgDefineResolver;
             };
             MsgDefineResolverResponse: {
-                encode(message: _567.MsgDefineResolverResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _567.MsgDefineResolverResponse;
-                fromJSON(object: any): _567.MsgDefineResolverResponse;
-                toJSON(message: _567.MsgDefineResolverResponse): unknown;
+                encode(message: _635.MsgDefineResolverResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _635.MsgDefineResolverResponse;
+                fromJSON(object: any): _635.MsgDefineResolverResponse;
+                toJSON(message: _635.MsgDefineResolverResponse): unknown;
                 fromPartial(object: {
                     resolverId?: any;
-                }): _567.MsgDefineResolverResponse;
+                }): _635.MsgDefineResolverResponse;
             };
             MsgRegisterResolver: {
-                encode(message: _567.MsgRegisterResolver, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _567.MsgRegisterResolver;
-                fromJSON(object: any): _567.MsgRegisterResolver;
-                toJSON(message: _567.MsgRegisterResolver): unknown;
+                encode(message: _635.MsgRegisterResolver, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _635.MsgRegisterResolver;
+                fromJSON(object: any): _635.MsgRegisterResolver;
+                toJSON(message: _635.MsgRegisterResolver): unknown;
                 fromPartial(object: {
                     manager?: string;
                     resolverId?: any;
                     contentHashes?: {
                         raw?: {
                             hash?: Uint8Array;
-                            digestAlgorithm?: _568.DigestAlgorithm;
-                            mediaType?: _568.RawMediaType;
+                            digestAlgorithm?: _636.DigestAlgorithm;
+                            mediaType?: _636.RawMediaType;
                         };
                         graph?: {
                             hash?: Uint8Array;
-                            digestAlgorithm?: _568.DigestAlgorithm;
-                            canonicalizationAlgorithm?: _568.GraphCanonicalizationAlgorithm;
-                            merkleTree?: _568.GraphMerkleTree;
+                            digestAlgorithm?: _636.DigestAlgorithm;
+                            canonicalizationAlgorithm?: _636.GraphCanonicalizationAlgorithm;
+                            merkleTree?: _636.GraphMerkleTree;
                         };
                     }[];
-                }): _567.MsgRegisterResolver;
+                }): _635.MsgRegisterResolver;
             };
             MsgRegisterResolverResponse: {
-                encode(_: _567.MsgRegisterResolverResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _567.MsgRegisterResolverResponse;
-                fromJSON(_: any): _567.MsgRegisterResolverResponse;
-                toJSON(_: _567.MsgRegisterResolverResponse): unknown;
-                fromPartial(_: {}): _567.MsgRegisterResolverResponse;
+                encode(_: _635.MsgRegisterResolverResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _635.MsgRegisterResolverResponse;
+                fromJSON(_: any): _635.MsgRegisterResolverResponse;
+                toJSON(_: _635.MsgRegisterResolverResponse): unknown;
+                fromPartial(_: {}): _635.MsgRegisterResolverResponse;
             };
             DataID: {
-                encode(message: _566.DataID, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _566.DataID;
-                fromJSON(object: any): _566.DataID;
-                toJSON(message: _566.DataID): unknown;
+                encode(message: _634.DataID, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _634.DataID;
+                fromJSON(object: any): _634.DataID;
+                toJSON(message: _634.DataID): unknown;
                 fromPartial(object: {
                     id?: Uint8Array;
                     iri?: string;
-                }): _566.DataID;
+                }): _634.DataID;
             };
             DataAnchor: {
-                encode(message: _566.DataAnchor, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _566.DataAnchor;
-                fromJSON(object: any): _566.DataAnchor;
-                toJSON(message: _566.DataAnchor): unknown;
+                encode(message: _634.DataAnchor, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _634.DataAnchor;
+                fromJSON(object: any): _634.DataAnchor;
+                toJSON(message: _634.DataAnchor): unknown;
                 fromPartial(object: {
                     id?: Uint8Array;
                     timestamp?: {
                         seconds?: any;
                         nanos?: number;
                     };
-                }): _566.DataAnchor;
+                }): _634.DataAnchor;
             };
             DataAttestor: {
-                encode(message: _566.DataAttestor, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _566.DataAttestor;
-                fromJSON(object: any): _566.DataAttestor;
-                toJSON(message: _566.DataAttestor): unknown;
+                encode(message: _634.DataAttestor, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _634.DataAttestor;
+                fromJSON(object: any): _634.DataAttestor;
+                toJSON(message: _634.DataAttestor): unknown;
                 fromPartial(object: {
                     id?: Uint8Array;
                     attestor?: Uint8Array;
@@ -502,56 +502,56 @@ export declare namespace regen {
                         seconds?: any;
                         nanos?: number;
                     };
-                }): _566.DataAttestor;
+                }): _634.DataAttestor;
             };
             ResolverInfo: {
-                encode(message: _566.ResolverInfo, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _566.ResolverInfo;
-                fromJSON(object: any): _566.ResolverInfo;
-                toJSON(message: _566.ResolverInfo): unknown;
+                encode(message: _634.ResolverInfo, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _634.ResolverInfo;
+                fromJSON(object: any): _634.ResolverInfo;
+                toJSON(message: _634.ResolverInfo): unknown;
                 fromPartial(object: {
                     id?: any;
                     url?: string;
                     manager?: Uint8Array;
-                }): _566.ResolverInfo;
+                }): _634.ResolverInfo;
             };
             DataResolver: {
-                encode(message: _566.DataResolver, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _566.DataResolver;
-                fromJSON(object: any): _566.DataResolver;
-                toJSON(message: _566.DataResolver): unknown;
+                encode(message: _634.DataResolver, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _634.DataResolver;
+                fromJSON(object: any): _634.DataResolver;
+                toJSON(message: _634.DataResolver): unknown;
                 fromPartial(object: {
                     id?: Uint8Array;
                     resolverId?: any;
-                }): _566.DataResolver;
+                }): _634.DataResolver;
             };
             QueryByIRIRequest: {
-                encode(message: _565.QueryByIRIRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _565.QueryByIRIRequest;
-                fromJSON(object: any): _565.QueryByIRIRequest;
-                toJSON(message: _565.QueryByIRIRequest): unknown;
+                encode(message: _633.QueryByIRIRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _633.QueryByIRIRequest;
+                fromJSON(object: any): _633.QueryByIRIRequest;
+                toJSON(message: _633.QueryByIRIRequest): unknown;
                 fromPartial(object: {
                     iri?: string;
-                }): _565.QueryByIRIRequest;
+                }): _633.QueryByIRIRequest;
             };
             QueryByIRIResponse: {
-                encode(message: _565.QueryByIRIResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _565.QueryByIRIResponse;
-                fromJSON(object: any): _565.QueryByIRIResponse;
-                toJSON(message: _565.QueryByIRIResponse): unknown;
+                encode(message: _633.QueryByIRIResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _633.QueryByIRIResponse;
+                fromJSON(object: any): _633.QueryByIRIResponse;
+                toJSON(message: _633.QueryByIRIResponse): unknown;
                 fromPartial(object: {
                     entry?: {
                         contentHash?: {
                             raw?: {
                                 hash?: Uint8Array;
-                                digestAlgorithm?: _568.DigestAlgorithm;
-                                mediaType?: _568.RawMediaType;
+                                digestAlgorithm?: _636.DigestAlgorithm;
+                                mediaType?: _636.RawMediaType;
                             };
                             graph?: {
                                 hash?: Uint8Array;
-                                digestAlgorithm?: _568.DigestAlgorithm;
-                                canonicalizationAlgorithm?: _568.GraphCanonicalizationAlgorithm;
-                                merkleTree?: _568.GraphMerkleTree;
+                                digestAlgorithm?: _636.DigestAlgorithm;
+                                canonicalizationAlgorithm?: _636.GraphCanonicalizationAlgorithm;
+                                merkleTree?: _636.GraphMerkleTree;
                             };
                         };
                         iri?: string;
@@ -560,47 +560,47 @@ export declare namespace regen {
                             nanos?: number;
                         };
                     };
-                }): _565.QueryByIRIResponse;
+                }): _633.QueryByIRIResponse;
             };
             QueryByHashRequest: {
-                encode(message: _565.QueryByHashRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _565.QueryByHashRequest;
-                fromJSON(object: any): _565.QueryByHashRequest;
-                toJSON(message: _565.QueryByHashRequest): unknown;
+                encode(message: _633.QueryByHashRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _633.QueryByHashRequest;
+                fromJSON(object: any): _633.QueryByHashRequest;
+                toJSON(message: _633.QueryByHashRequest): unknown;
                 fromPartial(object: {
                     contentHash?: {
                         raw?: {
                             hash?: Uint8Array;
-                            digestAlgorithm?: _568.DigestAlgorithm;
-                            mediaType?: _568.RawMediaType;
+                            digestAlgorithm?: _636.DigestAlgorithm;
+                            mediaType?: _636.RawMediaType;
                         };
                         graph?: {
                             hash?: Uint8Array;
-                            digestAlgorithm?: _568.DigestAlgorithm;
-                            canonicalizationAlgorithm?: _568.GraphCanonicalizationAlgorithm;
-                            merkleTree?: _568.GraphMerkleTree;
+                            digestAlgorithm?: _636.DigestAlgorithm;
+                            canonicalizationAlgorithm?: _636.GraphCanonicalizationAlgorithm;
+                            merkleTree?: _636.GraphMerkleTree;
                         };
                     };
-                }): _565.QueryByHashRequest;
+                }): _633.QueryByHashRequest;
             };
             QueryByHashResponse: {
-                encode(message: _565.QueryByHashResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _565.QueryByHashResponse;
-                fromJSON(object: any): _565.QueryByHashResponse;
-                toJSON(message: _565.QueryByHashResponse): unknown;
+                encode(message: _633.QueryByHashResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _633.QueryByHashResponse;
+                fromJSON(object: any): _633.QueryByHashResponse;
+                toJSON(message: _633.QueryByHashResponse): unknown;
                 fromPartial(object: {
                     entry?: {
                         contentHash?: {
                             raw?: {
                                 hash?: Uint8Array;
-                                digestAlgorithm?: _568.DigestAlgorithm;
-                                mediaType?: _568.RawMediaType;
+                                digestAlgorithm?: _636.DigestAlgorithm;
+                                mediaType?: _636.RawMediaType;
                             };
                             graph?: {
                                 hash?: Uint8Array;
-                                digestAlgorithm?: _568.DigestAlgorithm;
-                                canonicalizationAlgorithm?: _568.GraphCanonicalizationAlgorithm;
-                                merkleTree?: _568.GraphMerkleTree;
+                                digestAlgorithm?: _636.DigestAlgorithm;
+                                canonicalizationAlgorithm?: _636.GraphCanonicalizationAlgorithm;
+                                merkleTree?: _636.GraphMerkleTree;
                             };
                         };
                         iri?: string;
@@ -609,13 +609,13 @@ export declare namespace regen {
                             nanos?: number;
                         };
                     };
-                }): _565.QueryByHashResponse;
+                }): _633.QueryByHashResponse;
             };
             QueryByAttestorRequest: {
-                encode(message: _565.QueryByAttestorRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _565.QueryByAttestorRequest;
-                fromJSON(object: any): _565.QueryByAttestorRequest;
-                toJSON(message: _565.QueryByAttestorRequest): unknown;
+                encode(message: _633.QueryByAttestorRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _633.QueryByAttestorRequest;
+                fromJSON(object: any): _633.QueryByAttestorRequest;
+                toJSON(message: _633.QueryByAttestorRequest): unknown;
                 fromPartial(object: {
                     attestor?: string;
                     pagination?: {
@@ -625,26 +625,26 @@ export declare namespace regen {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _565.QueryByAttestorRequest;
+                }): _633.QueryByAttestorRequest;
             };
             QueryByAttestorResponse: {
-                encode(message: _565.QueryByAttestorResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _565.QueryByAttestorResponse;
-                fromJSON(object: any): _565.QueryByAttestorResponse;
-                toJSON(message: _565.QueryByAttestorResponse): unknown;
+                encode(message: _633.QueryByAttestorResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _633.QueryByAttestorResponse;
+                fromJSON(object: any): _633.QueryByAttestorResponse;
+                toJSON(message: _633.QueryByAttestorResponse): unknown;
                 fromPartial(object: {
                     entries?: {
                         contentHash?: {
                             raw?: {
                                 hash?: Uint8Array;
-                                digestAlgorithm?: _568.DigestAlgorithm;
-                                mediaType?: _568.RawMediaType;
+                                digestAlgorithm?: _636.DigestAlgorithm;
+                                mediaType?: _636.RawMediaType;
                             };
                             graph?: {
                                 hash?: Uint8Array;
-                                digestAlgorithm?: _568.DigestAlgorithm;
-                                canonicalizationAlgorithm?: _568.GraphCanonicalizationAlgorithm;
-                                merkleTree?: _568.GraphMerkleTree;
+                                digestAlgorithm?: _636.DigestAlgorithm;
+                                canonicalizationAlgorithm?: _636.GraphCanonicalizationAlgorithm;
+                                merkleTree?: _636.GraphMerkleTree;
                             };
                         };
                         iri?: string;
@@ -657,114 +657,114 @@ export declare namespace regen {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _565.QueryByAttestorResponse;
+                }): _633.QueryByAttestorResponse;
             };
             QueryIRIByHashRequest: {
-                encode(message: _565.QueryIRIByHashRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _565.QueryIRIByHashRequest;
-                fromJSON(object: any): _565.QueryIRIByHashRequest;
-                toJSON(message: _565.QueryIRIByHashRequest): unknown;
+                encode(message: _633.QueryIRIByHashRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _633.QueryIRIByHashRequest;
+                fromJSON(object: any): _633.QueryIRIByHashRequest;
+                toJSON(message: _633.QueryIRIByHashRequest): unknown;
                 fromPartial(object: {
                     contentHash?: {
                         raw?: {
                             hash?: Uint8Array;
-                            digestAlgorithm?: _568.DigestAlgorithm;
-                            mediaType?: _568.RawMediaType;
+                            digestAlgorithm?: _636.DigestAlgorithm;
+                            mediaType?: _636.RawMediaType;
                         };
                         graph?: {
                             hash?: Uint8Array;
-                            digestAlgorithm?: _568.DigestAlgorithm;
-                            canonicalizationAlgorithm?: _568.GraphCanonicalizationAlgorithm;
-                            merkleTree?: _568.GraphMerkleTree;
+                            digestAlgorithm?: _636.DigestAlgorithm;
+                            canonicalizationAlgorithm?: _636.GraphCanonicalizationAlgorithm;
+                            merkleTree?: _636.GraphMerkleTree;
                         };
                     };
-                }): _565.QueryIRIByHashRequest;
+                }): _633.QueryIRIByHashRequest;
             };
             QueryIRIByHashResponse: {
-                encode(message: _565.QueryIRIByHashResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _565.QueryIRIByHashResponse;
-                fromJSON(object: any): _565.QueryIRIByHashResponse;
-                toJSON(message: _565.QueryIRIByHashResponse): unknown;
+                encode(message: _633.QueryIRIByHashResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _633.QueryIRIByHashResponse;
+                fromJSON(object: any): _633.QueryIRIByHashResponse;
+                toJSON(message: _633.QueryIRIByHashResponse): unknown;
                 fromPartial(object: {
                     iri?: string;
-                }): _565.QueryIRIByHashResponse;
+                }): _633.QueryIRIByHashResponse;
             };
             QueryIRIByRawHashRequest: {
-                encode(message: _565.QueryIRIByRawHashRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _565.QueryIRIByRawHashRequest;
-                fromJSON(object: any): _565.QueryIRIByRawHashRequest;
-                toJSON(message: _565.QueryIRIByRawHashRequest): unknown;
+                encode(message: _633.QueryIRIByRawHashRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _633.QueryIRIByRawHashRequest;
+                fromJSON(object: any): _633.QueryIRIByRawHashRequest;
+                toJSON(message: _633.QueryIRIByRawHashRequest): unknown;
                 fromPartial(object: {
                     hash?: string;
-                    digestAlgorithm?: _568.DigestAlgorithm;
-                    mediaType?: _568.RawMediaType;
-                }): _565.QueryIRIByRawHashRequest;
+                    digestAlgorithm?: _636.DigestAlgorithm;
+                    mediaType?: _636.RawMediaType;
+                }): _633.QueryIRIByRawHashRequest;
             };
             QueryIRIByRawHashResponse: {
-                encode(message: _565.QueryIRIByRawHashResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _565.QueryIRIByRawHashResponse;
-                fromJSON(object: any): _565.QueryIRIByRawHashResponse;
-                toJSON(message: _565.QueryIRIByRawHashResponse): unknown;
+                encode(message: _633.QueryIRIByRawHashResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _633.QueryIRIByRawHashResponse;
+                fromJSON(object: any): _633.QueryIRIByRawHashResponse;
+                toJSON(message: _633.QueryIRIByRawHashResponse): unknown;
                 fromPartial(object: {
                     iri?: string;
-                }): _565.QueryIRIByRawHashResponse;
+                }): _633.QueryIRIByRawHashResponse;
             };
             QueryIRIByGraphHashRequest: {
-                encode(message: _565.QueryIRIByGraphHashRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _565.QueryIRIByGraphHashRequest;
-                fromJSON(object: any): _565.QueryIRIByGraphHashRequest;
-                toJSON(message: _565.QueryIRIByGraphHashRequest): unknown;
+                encode(message: _633.QueryIRIByGraphHashRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _633.QueryIRIByGraphHashRequest;
+                fromJSON(object: any): _633.QueryIRIByGraphHashRequest;
+                toJSON(message: _633.QueryIRIByGraphHashRequest): unknown;
                 fromPartial(object: {
                     hash?: string;
-                    digestAlgorithm?: _568.DigestAlgorithm;
-                    canonicalizationAlgorithm?: _568.GraphCanonicalizationAlgorithm;
-                    merkleTree?: _568.GraphMerkleTree;
-                }): _565.QueryIRIByGraphHashRequest;
+                    digestAlgorithm?: _636.DigestAlgorithm;
+                    canonicalizationAlgorithm?: _636.GraphCanonicalizationAlgorithm;
+                    merkleTree?: _636.GraphMerkleTree;
+                }): _633.QueryIRIByGraphHashRequest;
             };
             QueryIRIByGraphHashResponse: {
-                encode(message: _565.QueryIRIByGraphHashResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _565.QueryIRIByGraphHashResponse;
-                fromJSON(object: any): _565.QueryIRIByGraphHashResponse;
-                toJSON(message: _565.QueryIRIByGraphHashResponse): unknown;
+                encode(message: _633.QueryIRIByGraphHashResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _633.QueryIRIByGraphHashResponse;
+                fromJSON(object: any): _633.QueryIRIByGraphHashResponse;
+                toJSON(message: _633.QueryIRIByGraphHashResponse): unknown;
                 fromPartial(object: {
                     iri?: string;
-                }): _565.QueryIRIByGraphHashResponse;
+                }): _633.QueryIRIByGraphHashResponse;
             };
             QueryHashByIRIRequest: {
-                encode(message: _565.QueryHashByIRIRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _565.QueryHashByIRIRequest;
-                fromJSON(object: any): _565.QueryHashByIRIRequest;
-                toJSON(message: _565.QueryHashByIRIRequest): unknown;
+                encode(message: _633.QueryHashByIRIRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _633.QueryHashByIRIRequest;
+                fromJSON(object: any): _633.QueryHashByIRIRequest;
+                toJSON(message: _633.QueryHashByIRIRequest): unknown;
                 fromPartial(object: {
                     iri?: string;
-                }): _565.QueryHashByIRIRequest;
+                }): _633.QueryHashByIRIRequest;
             };
             QueryHashByIRIResponse: {
-                encode(message: _565.QueryHashByIRIResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _565.QueryHashByIRIResponse;
-                fromJSON(object: any): _565.QueryHashByIRIResponse;
-                toJSON(message: _565.QueryHashByIRIResponse): unknown;
+                encode(message: _633.QueryHashByIRIResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _633.QueryHashByIRIResponse;
+                fromJSON(object: any): _633.QueryHashByIRIResponse;
+                toJSON(message: _633.QueryHashByIRIResponse): unknown;
                 fromPartial(object: {
                     contentHash?: {
                         raw?: {
                             hash?: Uint8Array;
-                            digestAlgorithm?: _568.DigestAlgorithm;
-                            mediaType?: _568.RawMediaType;
+                            digestAlgorithm?: _636.DigestAlgorithm;
+                            mediaType?: _636.RawMediaType;
                         };
                         graph?: {
                             hash?: Uint8Array;
-                            digestAlgorithm?: _568.DigestAlgorithm;
-                            canonicalizationAlgorithm?: _568.GraphCanonicalizationAlgorithm;
-                            merkleTree?: _568.GraphMerkleTree;
+                            digestAlgorithm?: _636.DigestAlgorithm;
+                            canonicalizationAlgorithm?: _636.GraphCanonicalizationAlgorithm;
+                            merkleTree?: _636.GraphMerkleTree;
                         };
                     };
-                }): _565.QueryHashByIRIResponse;
+                }): _633.QueryHashByIRIResponse;
             };
             QueryAttestorsByIRIRequest: {
-                encode(message: _565.QueryAttestorsByIRIRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _565.QueryAttestorsByIRIRequest;
-                fromJSON(object: any): _565.QueryAttestorsByIRIRequest;
-                toJSON(message: _565.QueryAttestorsByIRIRequest): unknown;
+                encode(message: _633.QueryAttestorsByIRIRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _633.QueryAttestorsByIRIRequest;
+                fromJSON(object: any): _633.QueryAttestorsByIRIRequest;
+                toJSON(message: _633.QueryAttestorsByIRIRequest): unknown;
                 fromPartial(object: {
                     iri?: string;
                     pagination?: {
@@ -774,38 +774,38 @@ export declare namespace regen {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _565.QueryAttestorsByIRIRequest;
+                }): _633.QueryAttestorsByIRIRequest;
             };
             QueryAttestorsByIRIResponse: {
-                encode(message: _565.QueryAttestorsByIRIResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _565.QueryAttestorsByIRIResponse;
-                fromJSON(object: any): _565.QueryAttestorsByIRIResponse;
-                toJSON(message: _565.QueryAttestorsByIRIResponse): unknown;
+                encode(message: _633.QueryAttestorsByIRIResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _633.QueryAttestorsByIRIResponse;
+                fromJSON(object: any): _633.QueryAttestorsByIRIResponse;
+                toJSON(message: _633.QueryAttestorsByIRIResponse): unknown;
                 fromPartial(object: {
                     attestors?: string[];
                     pagination?: {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _565.QueryAttestorsByIRIResponse;
+                }): _633.QueryAttestorsByIRIResponse;
             };
             QueryAttestorsByHashRequest: {
-                encode(message: _565.QueryAttestorsByHashRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _565.QueryAttestorsByHashRequest;
-                fromJSON(object: any): _565.QueryAttestorsByHashRequest;
-                toJSON(message: _565.QueryAttestorsByHashRequest): unknown;
+                encode(message: _633.QueryAttestorsByHashRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _633.QueryAttestorsByHashRequest;
+                fromJSON(object: any): _633.QueryAttestorsByHashRequest;
+                toJSON(message: _633.QueryAttestorsByHashRequest): unknown;
                 fromPartial(object: {
                     contentHash?: {
                         raw?: {
                             hash?: Uint8Array;
-                            digestAlgorithm?: _568.DigestAlgorithm;
-                            mediaType?: _568.RawMediaType;
+                            digestAlgorithm?: _636.DigestAlgorithm;
+                            mediaType?: _636.RawMediaType;
                         };
                         graph?: {
                             hash?: Uint8Array;
-                            digestAlgorithm?: _568.DigestAlgorithm;
-                            canonicalizationAlgorithm?: _568.GraphCanonicalizationAlgorithm;
-                            merkleTree?: _568.GraphMerkleTree;
+                            digestAlgorithm?: _636.DigestAlgorithm;
+                            canonicalizationAlgorithm?: _636.GraphCanonicalizationAlgorithm;
+                            merkleTree?: _636.GraphMerkleTree;
                         };
                     };
                     pagination?: {
@@ -815,26 +815,26 @@ export declare namespace regen {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _565.QueryAttestorsByHashRequest;
+                }): _633.QueryAttestorsByHashRequest;
             };
             QueryAttestorsByHashResponse: {
-                encode(message: _565.QueryAttestorsByHashResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _565.QueryAttestorsByHashResponse;
-                fromJSON(object: any): _565.QueryAttestorsByHashResponse;
-                toJSON(message: _565.QueryAttestorsByHashResponse): unknown;
+                encode(message: _633.QueryAttestorsByHashResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _633.QueryAttestorsByHashResponse;
+                fromJSON(object: any): _633.QueryAttestorsByHashResponse;
+                toJSON(message: _633.QueryAttestorsByHashResponse): unknown;
                 fromPartial(object: {
                     attestors?: string[];
                     pagination?: {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _565.QueryAttestorsByHashResponse;
+                }): _633.QueryAttestorsByHashResponse;
             };
             QueryResolversByIRIRequest: {
-                encode(message: _565.QueryResolversByIRIRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _565.QueryResolversByIRIRequest;
-                fromJSON(object: any): _565.QueryResolversByIRIRequest;
-                toJSON(message: _565.QueryResolversByIRIRequest): unknown;
+                encode(message: _633.QueryResolversByIRIRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _633.QueryResolversByIRIRequest;
+                fromJSON(object: any): _633.QueryResolversByIRIRequest;
+                toJSON(message: _633.QueryResolversByIRIRequest): unknown;
                 fromPartial(object: {
                     iri?: string;
                     pagination?: {
@@ -844,38 +844,38 @@ export declare namespace regen {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _565.QueryResolversByIRIRequest;
+                }): _633.QueryResolversByIRIRequest;
             };
             QueryResolversByIRIResponse: {
-                encode(message: _565.QueryResolversByIRIResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _565.QueryResolversByIRIResponse;
-                fromJSON(object: any): _565.QueryResolversByIRIResponse;
-                toJSON(message: _565.QueryResolversByIRIResponse): unknown;
+                encode(message: _633.QueryResolversByIRIResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _633.QueryResolversByIRIResponse;
+                fromJSON(object: any): _633.QueryResolversByIRIResponse;
+                toJSON(message: _633.QueryResolversByIRIResponse): unknown;
                 fromPartial(object: {
                     resolverUrls?: string[];
                     pagination?: {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _565.QueryResolversByIRIResponse;
+                }): _633.QueryResolversByIRIResponse;
             };
             QueryResolversByHashRequest: {
-                encode(message: _565.QueryResolversByHashRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _565.QueryResolversByHashRequest;
-                fromJSON(object: any): _565.QueryResolversByHashRequest;
-                toJSON(message: _565.QueryResolversByHashRequest): unknown;
+                encode(message: _633.QueryResolversByHashRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _633.QueryResolversByHashRequest;
+                fromJSON(object: any): _633.QueryResolversByHashRequest;
+                toJSON(message: _633.QueryResolversByHashRequest): unknown;
                 fromPartial(object: {
                     contentHash?: {
                         raw?: {
                             hash?: Uint8Array;
-                            digestAlgorithm?: _568.DigestAlgorithm;
-                            mediaType?: _568.RawMediaType;
+                            digestAlgorithm?: _636.DigestAlgorithm;
+                            mediaType?: _636.RawMediaType;
                         };
                         graph?: {
                             hash?: Uint8Array;
-                            digestAlgorithm?: _568.DigestAlgorithm;
-                            canonicalizationAlgorithm?: _568.GraphCanonicalizationAlgorithm;
-                            merkleTree?: _568.GraphMerkleTree;
+                            digestAlgorithm?: _636.DigestAlgorithm;
+                            canonicalizationAlgorithm?: _636.GraphCanonicalizationAlgorithm;
+                            merkleTree?: _636.GraphMerkleTree;
                         };
                     };
                     pagination?: {
@@ -885,77 +885,77 @@ export declare namespace regen {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _565.QueryResolversByHashRequest;
+                }): _633.QueryResolversByHashRequest;
             };
             QueryResolversByHashResponse: {
-                encode(message: _565.QueryResolversByHashResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _565.QueryResolversByHashResponse;
-                fromJSON(object: any): _565.QueryResolversByHashResponse;
-                toJSON(message: _565.QueryResolversByHashResponse): unknown;
+                encode(message: _633.QueryResolversByHashResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _633.QueryResolversByHashResponse;
+                fromJSON(object: any): _633.QueryResolversByHashResponse;
+                toJSON(message: _633.QueryResolversByHashResponse): unknown;
                 fromPartial(object: {
                     resolverUrls?: string[];
                     pagination?: {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _565.QueryResolversByHashResponse;
+                }): _633.QueryResolversByHashResponse;
             };
             QueryResolverInfoRequest: {
-                encode(message: _565.QueryResolverInfoRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _565.QueryResolverInfoRequest;
-                fromJSON(object: any): _565.QueryResolverInfoRequest;
-                toJSON(message: _565.QueryResolverInfoRequest): unknown;
+                encode(message: _633.QueryResolverInfoRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _633.QueryResolverInfoRequest;
+                fromJSON(object: any): _633.QueryResolverInfoRequest;
+                toJSON(message: _633.QueryResolverInfoRequest): unknown;
                 fromPartial(object: {
                     url?: string;
-                }): _565.QueryResolverInfoRequest;
+                }): _633.QueryResolverInfoRequest;
             };
             QueryResolverInfoResponse: {
-                encode(message: _565.QueryResolverInfoResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _565.QueryResolverInfoResponse;
-                fromJSON(object: any): _565.QueryResolverInfoResponse;
-                toJSON(message: _565.QueryResolverInfoResponse): unknown;
+                encode(message: _633.QueryResolverInfoResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _633.QueryResolverInfoResponse;
+                fromJSON(object: any): _633.QueryResolverInfoResponse;
+                toJSON(message: _633.QueryResolverInfoResponse): unknown;
                 fromPartial(object: {
                     id?: any;
                     manager?: string;
-                }): _565.QueryResolverInfoResponse;
+                }): _633.QueryResolverInfoResponse;
             };
             EventAnchor: {
-                encode(message: _564.EventAnchor, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _564.EventAnchor;
-                fromJSON(object: any): _564.EventAnchor;
-                toJSON(message: _564.EventAnchor): unknown;
+                encode(message: _632.EventAnchor, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _632.EventAnchor;
+                fromJSON(object: any): _632.EventAnchor;
+                toJSON(message: _632.EventAnchor): unknown;
                 fromPartial(object: {
                     iri?: string;
-                }): _564.EventAnchor;
+                }): _632.EventAnchor;
             };
             EventAttest: {
-                encode(message: _564.EventAttest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _564.EventAttest;
-                fromJSON(object: any): _564.EventAttest;
-                toJSON(message: _564.EventAttest): unknown;
+                encode(message: _632.EventAttest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _632.EventAttest;
+                fromJSON(object: any): _632.EventAttest;
+                toJSON(message: _632.EventAttest): unknown;
                 fromPartial(object: {
                     iri?: string;
                     attestor?: string;
-                }): _564.EventAttest;
+                }): _632.EventAttest;
             };
             EventDefineResolver: {
-                encode(message: _564.EventDefineResolver, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _564.EventDefineResolver;
-                fromJSON(object: any): _564.EventDefineResolver;
-                toJSON(message: _564.EventDefineResolver): unknown;
+                encode(message: _632.EventDefineResolver, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _632.EventDefineResolver;
+                fromJSON(object: any): _632.EventDefineResolver;
+                toJSON(message: _632.EventDefineResolver): unknown;
                 fromPartial(object: {
                     id?: any;
-                }): _564.EventDefineResolver;
+                }): _632.EventDefineResolver;
             };
             EventRegisterResolver: {
-                encode(message: _564.EventRegisterResolver, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _564.EventRegisterResolver;
-                fromJSON(object: any): _564.EventRegisterResolver;
-                toJSON(message: _564.EventRegisterResolver): unknown;
+                encode(message: _632.EventRegisterResolver, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _632.EventRegisterResolver;
+                fromJSON(object: any): _632.EventRegisterResolver;
+                toJSON(message: _632.EventRegisterResolver): unknown;
                 fromPartial(object: {
                     id?: any;
                     iri?: string;
-                }): _564.EventRegisterResolver;
+                }): _632.EventRegisterResolver;
             };
         };
         const v1alpha2: {
@@ -963,43 +963,43 @@ export declare namespace regen {
             load: (protoRegistry: import("@cosmjs/proto-signing").Registry) => void;
             MessageComposer: {
                 encoded: {
-                    anchorData(value: _572.MsgAnchorData): {
+                    anchorData(value: _640.MsgAnchorData): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    signData(value: _572.MsgSignData): {
+                    signData(value: _640.MsgSignData): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    storeRawData(value: _572.MsgStoreRawData): {
+                    storeRawData(value: _640.MsgStoreRawData): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
                 };
                 withTypeUrl: {
-                    anchorData(value: _572.MsgAnchorData): {
+                    anchorData(value: _640.MsgAnchorData): {
                         typeUrl: string;
-                        value: _572.MsgAnchorData;
+                        value: _640.MsgAnchorData;
                     };
-                    signData(value: _572.MsgSignData): {
+                    signData(value: _640.MsgSignData): {
                         typeUrl: string;
-                        value: _572.MsgSignData;
+                        value: _640.MsgSignData;
                     };
-                    storeRawData(value: _572.MsgStoreRawData): {
+                    storeRawData(value: _640.MsgStoreRawData): {
                         typeUrl: string;
-                        value: _572.MsgStoreRawData;
+                        value: _640.MsgStoreRawData;
                     };
                 };
                 toJSON: {
-                    anchorData(value: _572.MsgAnchorData): {
+                    anchorData(value: _640.MsgAnchorData): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    signData(value: _572.MsgSignData): {
+                    signData(value: _640.MsgSignData): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    storeRawData(value: _572.MsgStoreRawData): {
+                    storeRawData(value: _640.MsgStoreRawData): {
                         typeUrl: string;
                         value: unknown;
                     };
@@ -1007,36 +1007,36 @@ export declare namespace regen {
                 fromJSON: {
                     anchorData(value: any): {
                         typeUrl: string;
-                        value: _572.MsgAnchorData;
+                        value: _640.MsgAnchorData;
                     };
                     signData(value: any): {
                         typeUrl: string;
-                        value: _572.MsgSignData;
+                        value: _640.MsgSignData;
                     };
                     storeRawData(value: any): {
                         typeUrl: string;
-                        value: _572.MsgStoreRawData;
+                        value: _640.MsgStoreRawData;
                     };
                 };
                 fromPartial: {
-                    anchorData(value: _572.MsgAnchorData): {
+                    anchorData(value: _640.MsgAnchorData): {
                         typeUrl: string;
-                        value: _572.MsgAnchorData;
+                        value: _640.MsgAnchorData;
                     };
-                    signData(value: _572.MsgSignData): {
+                    signData(value: _640.MsgSignData): {
                         typeUrl: string;
-                        value: _572.MsgSignData;
+                        value: _640.MsgSignData;
                     };
-                    storeRawData(value: _572.MsgStoreRawData): {
+                    storeRawData(value: _640.MsgStoreRawData): {
                         typeUrl: string;
-                        value: _572.MsgStoreRawData;
+                        value: _640.MsgStoreRawData;
                     };
                 };
             };
             AminoConverter: {
                 "/regen.data.v1alpha2.MsgAnchorData": {
                     aminoType: string;
-                    toAmino: ({ sender, hash }: _572.MsgAnchorData) => {
+                    toAmino: ({ sender, hash }: _640.MsgAnchorData) => {
                         sender: string;
                         hash: {
                             raw: {
@@ -1067,11 +1067,11 @@ export declare namespace regen {
                                 merkle_tree: number;
                             };
                         };
-                    }) => _572.MsgAnchorData;
+                    }) => _640.MsgAnchorData;
                 };
                 "/regen.data.v1alpha2.MsgSignData": {
                     aminoType: string;
-                    toAmino: ({ signers, hash }: _572.MsgSignData) => {
+                    toAmino: ({ signers, hash }: _640.MsgSignData) => {
                         signers: string[];
                         hash: {
                             hash: Uint8Array;
@@ -1088,11 +1088,11 @@ export declare namespace regen {
                             canonicalization_algorithm: number;
                             merkle_tree: number;
                         };
-                    }) => _572.MsgSignData;
+                    }) => _640.MsgSignData;
                 };
                 "/regen.data.v1alpha2.MsgStoreRawData": {
                     aminoType: string;
-                    toAmino: ({ sender, contentHash, content }: _572.MsgStoreRawData) => {
+                    toAmino: ({ sender, contentHash, content }: _640.MsgStoreRawData) => {
                         sender: string;
                         content_hash: {
                             hash: Uint8Array;
@@ -1109,202 +1109,202 @@ export declare namespace regen {
                             media_type: number;
                         };
                         content: Uint8Array;
-                    }) => _572.MsgStoreRawData;
+                    }) => _640.MsgStoreRawData;
                 };
             };
-            mediaTypeFromJSON(object: any): _573.MediaType;
-            mediaTypeToJSON(object: _573.MediaType): string;
-            graphCanonicalizationAlgorithmFromJSON(object: any): _573.GraphCanonicalizationAlgorithm;
-            graphCanonicalizationAlgorithmToJSON(object: _573.GraphCanonicalizationAlgorithm): string;
-            graphMerkleTreeFromJSON(object: any): _573.GraphMerkleTree;
-            graphMerkleTreeToJSON(object: _573.GraphMerkleTree): string;
-            digestAlgorithmFromJSON(object: any): _573.DigestAlgorithm;
-            digestAlgorithmToJSON(object: _573.DigestAlgorithm): string;
-            MediaType: typeof _573.MediaType;
-            GraphCanonicalizationAlgorithm: typeof _573.GraphCanonicalizationAlgorithm;
-            GraphMerkleTree: typeof _573.GraphMerkleTree;
-            DigestAlgorithm: typeof _573.DigestAlgorithm;
+            mediaTypeFromJSON(object: any): _641.MediaType;
+            mediaTypeToJSON(object: _641.MediaType): string;
+            graphCanonicalizationAlgorithmFromJSON(object: any): _641.GraphCanonicalizationAlgorithm;
+            graphCanonicalizationAlgorithmToJSON(object: _641.GraphCanonicalizationAlgorithm): string;
+            graphMerkleTreeFromJSON(object: any): _641.GraphMerkleTree;
+            graphMerkleTreeToJSON(object: _641.GraphMerkleTree): string;
+            digestAlgorithmFromJSON(object: any): _641.DigestAlgorithm;
+            digestAlgorithmToJSON(object: _641.DigestAlgorithm): string;
+            MediaType: typeof _641.MediaType;
+            GraphCanonicalizationAlgorithm: typeof _641.GraphCanonicalizationAlgorithm;
+            GraphMerkleTree: typeof _641.GraphMerkleTree;
+            DigestAlgorithm: typeof _641.DigestAlgorithm;
             ContentHash: {
-                encode(message: _573.ContentHash, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _573.ContentHash;
-                fromJSON(object: any): _573.ContentHash;
-                toJSON(message: _573.ContentHash): unknown;
+                encode(message: _641.ContentHash, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _641.ContentHash;
+                fromJSON(object: any): _641.ContentHash;
+                toJSON(message: _641.ContentHash): unknown;
                 fromPartial(object: {
                     raw?: {
                         hash?: Uint8Array;
-                        digestAlgorithm?: _573.DigestAlgorithm;
-                        mediaType?: _573.MediaType;
+                        digestAlgorithm?: _641.DigestAlgorithm;
+                        mediaType?: _641.MediaType;
                     };
                     graph?: {
                         hash?: Uint8Array;
-                        digestAlgorithm?: _573.DigestAlgorithm;
-                        canonicalizationAlgorithm?: _573.GraphCanonicalizationAlgorithm;
-                        merkleTree?: _573.GraphMerkleTree;
+                        digestAlgorithm?: _641.DigestAlgorithm;
+                        canonicalizationAlgorithm?: _641.GraphCanonicalizationAlgorithm;
+                        merkleTree?: _641.GraphMerkleTree;
                     };
-                }): _573.ContentHash;
+                }): _641.ContentHash;
             };
             ContentHash_Raw: {
-                encode(message: _573.ContentHash_Raw, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _573.ContentHash_Raw;
-                fromJSON(object: any): _573.ContentHash_Raw;
-                toJSON(message: _573.ContentHash_Raw): unknown;
+                encode(message: _641.ContentHash_Raw, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _641.ContentHash_Raw;
+                fromJSON(object: any): _641.ContentHash_Raw;
+                toJSON(message: _641.ContentHash_Raw): unknown;
                 fromPartial(object: {
                     hash?: Uint8Array;
-                    digestAlgorithm?: _573.DigestAlgorithm;
-                    mediaType?: _573.MediaType;
-                }): _573.ContentHash_Raw;
+                    digestAlgorithm?: _641.DigestAlgorithm;
+                    mediaType?: _641.MediaType;
+                }): _641.ContentHash_Raw;
             };
             ContentHash_Graph: {
-                encode(message: _573.ContentHash_Graph, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _573.ContentHash_Graph;
-                fromJSON(object: any): _573.ContentHash_Graph;
-                toJSON(message: _573.ContentHash_Graph): unknown;
+                encode(message: _641.ContentHash_Graph, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _641.ContentHash_Graph;
+                fromJSON(object: any): _641.ContentHash_Graph;
+                toJSON(message: _641.ContentHash_Graph): unknown;
                 fromPartial(object: {
                     hash?: Uint8Array;
-                    digestAlgorithm?: _573.DigestAlgorithm;
-                    canonicalizationAlgorithm?: _573.GraphCanonicalizationAlgorithm;
-                    merkleTree?: _573.GraphMerkleTree;
-                }): _573.ContentHash_Graph;
+                    digestAlgorithm?: _641.DigestAlgorithm;
+                    canonicalizationAlgorithm?: _641.GraphCanonicalizationAlgorithm;
+                    merkleTree?: _641.GraphMerkleTree;
+                }): _641.ContentHash_Graph;
             };
             Content: {
-                encode(message: _573.Content, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _573.Content;
-                fromJSON(object: any): _573.Content;
-                toJSON(message: _573.Content): unknown;
+                encode(message: _641.Content, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _641.Content;
+                fromJSON(object: any): _641.Content;
+                toJSON(message: _641.Content): unknown;
                 fromPartial(object: {
                     rawData?: Uint8Array;
-                }): _573.Content;
+                }): _641.Content;
             };
             SignerEntry: {
-                encode(message: _573.SignerEntry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _573.SignerEntry;
-                fromJSON(object: any): _573.SignerEntry;
-                toJSON(message: _573.SignerEntry): unknown;
+                encode(message: _641.SignerEntry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _641.SignerEntry;
+                fromJSON(object: any): _641.SignerEntry;
+                toJSON(message: _641.SignerEntry): unknown;
                 fromPartial(object: {
                     signer?: string;
                     timestamp?: {
                         seconds?: any;
                         nanos?: number;
                     };
-                }): _573.SignerEntry;
+                }): _641.SignerEntry;
             };
             MsgAnchorData: {
-                encode(message: _572.MsgAnchorData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _572.MsgAnchorData;
-                fromJSON(object: any): _572.MsgAnchorData;
-                toJSON(message: _572.MsgAnchorData): unknown;
+                encode(message: _640.MsgAnchorData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _640.MsgAnchorData;
+                fromJSON(object: any): _640.MsgAnchorData;
+                toJSON(message: _640.MsgAnchorData): unknown;
                 fromPartial(object: {
                     sender?: string;
                     hash?: {
                         raw?: {
                             hash?: Uint8Array;
-                            digestAlgorithm?: _573.DigestAlgorithm;
-                            mediaType?: _573.MediaType;
+                            digestAlgorithm?: _641.DigestAlgorithm;
+                            mediaType?: _641.MediaType;
                         };
                         graph?: {
                             hash?: Uint8Array;
-                            digestAlgorithm?: _573.DigestAlgorithm;
-                            canonicalizationAlgorithm?: _573.GraphCanonicalizationAlgorithm;
-                            merkleTree?: _573.GraphMerkleTree;
+                            digestAlgorithm?: _641.DigestAlgorithm;
+                            canonicalizationAlgorithm?: _641.GraphCanonicalizationAlgorithm;
+                            merkleTree?: _641.GraphMerkleTree;
                         };
                     };
-                }): _572.MsgAnchorData;
+                }): _640.MsgAnchorData;
             };
             MsgAnchorDataResponse: {
-                encode(message: _572.MsgAnchorDataResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _572.MsgAnchorDataResponse;
-                fromJSON(object: any): _572.MsgAnchorDataResponse;
-                toJSON(message: _572.MsgAnchorDataResponse): unknown;
+                encode(message: _640.MsgAnchorDataResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _640.MsgAnchorDataResponse;
+                fromJSON(object: any): _640.MsgAnchorDataResponse;
+                toJSON(message: _640.MsgAnchorDataResponse): unknown;
                 fromPartial(object: {
                     timestamp?: {
                         seconds?: any;
                         nanos?: number;
                     };
-                }): _572.MsgAnchorDataResponse;
+                }): _640.MsgAnchorDataResponse;
             };
             MsgSignData: {
-                encode(message: _572.MsgSignData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _572.MsgSignData;
-                fromJSON(object: any): _572.MsgSignData;
-                toJSON(message: _572.MsgSignData): unknown;
+                encode(message: _640.MsgSignData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _640.MsgSignData;
+                fromJSON(object: any): _640.MsgSignData;
+                toJSON(message: _640.MsgSignData): unknown;
                 fromPartial(object: {
                     signers?: string[];
                     hash?: {
                         hash?: Uint8Array;
-                        digestAlgorithm?: _573.DigestAlgorithm;
-                        canonicalizationAlgorithm?: _573.GraphCanonicalizationAlgorithm;
-                        merkleTree?: _573.GraphMerkleTree;
+                        digestAlgorithm?: _641.DigestAlgorithm;
+                        canonicalizationAlgorithm?: _641.GraphCanonicalizationAlgorithm;
+                        merkleTree?: _641.GraphMerkleTree;
                     };
-                }): _572.MsgSignData;
+                }): _640.MsgSignData;
             };
             MsgSignDataResponse: {
-                encode(_: _572.MsgSignDataResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _572.MsgSignDataResponse;
-                fromJSON(_: any): _572.MsgSignDataResponse;
-                toJSON(_: _572.MsgSignDataResponse): unknown;
-                fromPartial(_: {}): _572.MsgSignDataResponse;
+                encode(_: _640.MsgSignDataResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _640.MsgSignDataResponse;
+                fromJSON(_: any): _640.MsgSignDataResponse;
+                toJSON(_: _640.MsgSignDataResponse): unknown;
+                fromPartial(_: {}): _640.MsgSignDataResponse;
             };
             MsgStoreRawData: {
-                encode(message: _572.MsgStoreRawData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _572.MsgStoreRawData;
-                fromJSON(object: any): _572.MsgStoreRawData;
-                toJSON(message: _572.MsgStoreRawData): unknown;
+                encode(message: _640.MsgStoreRawData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _640.MsgStoreRawData;
+                fromJSON(object: any): _640.MsgStoreRawData;
+                toJSON(message: _640.MsgStoreRawData): unknown;
                 fromPartial(object: {
                     sender?: string;
                     contentHash?: {
                         hash?: Uint8Array;
-                        digestAlgorithm?: _573.DigestAlgorithm;
-                        mediaType?: _573.MediaType;
+                        digestAlgorithm?: _641.DigestAlgorithm;
+                        mediaType?: _641.MediaType;
                     };
                     content?: Uint8Array;
-                }): _572.MsgStoreRawData;
+                }): _640.MsgStoreRawData;
             };
             MsgStoreRawDataResponse: {
-                encode(_: _572.MsgStoreRawDataResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _572.MsgStoreRawDataResponse;
-                fromJSON(_: any): _572.MsgStoreRawDataResponse;
-                toJSON(_: _572.MsgStoreRawDataResponse): unknown;
-                fromPartial(_: {}): _572.MsgStoreRawDataResponse;
+                encode(_: _640.MsgStoreRawDataResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _640.MsgStoreRawDataResponse;
+                fromJSON(_: any): _640.MsgStoreRawDataResponse;
+                toJSON(_: _640.MsgStoreRawDataResponse): unknown;
+                fromPartial(_: {}): _640.MsgStoreRawDataResponse;
             };
             QueryByHashRequest: {
-                encode(message: _571.QueryByHashRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _571.QueryByHashRequest;
-                fromJSON(object: any): _571.QueryByHashRequest;
-                toJSON(message: _571.QueryByHashRequest): unknown;
+                encode(message: _639.QueryByHashRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _639.QueryByHashRequest;
+                fromJSON(object: any): _639.QueryByHashRequest;
+                toJSON(message: _639.QueryByHashRequest): unknown;
                 fromPartial(object: {
                     hash?: {
                         raw?: {
                             hash?: Uint8Array;
-                            digestAlgorithm?: _573.DigestAlgorithm;
-                            mediaType?: _573.MediaType;
+                            digestAlgorithm?: _641.DigestAlgorithm;
+                            mediaType?: _641.MediaType;
                         };
                         graph?: {
                             hash?: Uint8Array;
-                            digestAlgorithm?: _573.DigestAlgorithm;
-                            canonicalizationAlgorithm?: _573.GraphCanonicalizationAlgorithm;
-                            merkleTree?: _573.GraphMerkleTree;
+                            digestAlgorithm?: _641.DigestAlgorithm;
+                            canonicalizationAlgorithm?: _641.GraphCanonicalizationAlgorithm;
+                            merkleTree?: _641.GraphMerkleTree;
                         };
                     };
-                }): _571.QueryByHashRequest;
+                }): _639.QueryByHashRequest;
             };
             QueryByHashResponse: {
-                encode(message: _571.QueryByHashResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _571.QueryByHashResponse;
-                fromJSON(object: any): _571.QueryByHashResponse;
-                toJSON(message: _571.QueryByHashResponse): unknown;
+                encode(message: _639.QueryByHashResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _639.QueryByHashResponse;
+                fromJSON(object: any): _639.QueryByHashResponse;
+                toJSON(message: _639.QueryByHashResponse): unknown;
                 fromPartial(object: {
                     entry?: {
                         hash?: {
                             raw?: {
                                 hash?: Uint8Array;
-                                digestAlgorithm?: _573.DigestAlgorithm;
-                                mediaType?: _573.MediaType;
+                                digestAlgorithm?: _641.DigestAlgorithm;
+                                mediaType?: _641.MediaType;
                             };
                             graph?: {
                                 hash?: Uint8Array;
-                                digestAlgorithm?: _573.DigestAlgorithm;
-                                canonicalizationAlgorithm?: _573.GraphCanonicalizationAlgorithm;
-                                merkleTree?: _573.GraphMerkleTree;
+                                digestAlgorithm?: _641.DigestAlgorithm;
+                                canonicalizationAlgorithm?: _641.GraphCanonicalizationAlgorithm;
+                                merkleTree?: _641.GraphMerkleTree;
                             };
                         };
                         iri?: string;
@@ -1323,13 +1323,13 @@ export declare namespace regen {
                             rawData?: Uint8Array;
                         };
                     };
-                }): _571.QueryByHashResponse;
+                }): _639.QueryByHashResponse;
             };
             QueryBySignerRequest: {
-                encode(message: _571.QueryBySignerRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _571.QueryBySignerRequest;
-                fromJSON(object: any): _571.QueryBySignerRequest;
-                toJSON(message: _571.QueryBySignerRequest): unknown;
+                encode(message: _639.QueryBySignerRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _639.QueryBySignerRequest;
+                fromJSON(object: any): _639.QueryBySignerRequest;
+                toJSON(message: _639.QueryBySignerRequest): unknown;
                 fromPartial(object: {
                     signer?: string;
                     pagination?: {
@@ -1339,26 +1339,26 @@ export declare namespace regen {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _571.QueryBySignerRequest;
+                }): _639.QueryBySignerRequest;
             };
             QueryBySignerResponse: {
-                encode(message: _571.QueryBySignerResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _571.QueryBySignerResponse;
-                fromJSON(object: any): _571.QueryBySignerResponse;
-                toJSON(message: _571.QueryBySignerResponse): unknown;
+                encode(message: _639.QueryBySignerResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _639.QueryBySignerResponse;
+                fromJSON(object: any): _639.QueryBySignerResponse;
+                toJSON(message: _639.QueryBySignerResponse): unknown;
                 fromPartial(object: {
                     entries?: {
                         hash?: {
                             raw?: {
                                 hash?: Uint8Array;
-                                digestAlgorithm?: _573.DigestAlgorithm;
-                                mediaType?: _573.MediaType;
+                                digestAlgorithm?: _641.DigestAlgorithm;
+                                mediaType?: _641.MediaType;
                             };
                             graph?: {
                                 hash?: Uint8Array;
-                                digestAlgorithm?: _573.DigestAlgorithm;
-                                canonicalizationAlgorithm?: _573.GraphCanonicalizationAlgorithm;
-                                merkleTree?: _573.GraphMerkleTree;
+                                digestAlgorithm?: _641.DigestAlgorithm;
+                                canonicalizationAlgorithm?: _641.GraphCanonicalizationAlgorithm;
+                                merkleTree?: _641.GraphMerkleTree;
                             };
                         };
                         iri?: string;
@@ -1381,25 +1381,25 @@ export declare namespace regen {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _571.QueryBySignerResponse;
+                }): _639.QueryBySignerResponse;
             };
             ContentEntry: {
-                encode(message: _571.ContentEntry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _571.ContentEntry;
-                fromJSON(object: any): _571.ContentEntry;
-                toJSON(message: _571.ContentEntry): unknown;
+                encode(message: _639.ContentEntry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _639.ContentEntry;
+                fromJSON(object: any): _639.ContentEntry;
+                toJSON(message: _639.ContentEntry): unknown;
                 fromPartial(object: {
                     hash?: {
                         raw?: {
                             hash?: Uint8Array;
-                            digestAlgorithm?: _573.DigestAlgorithm;
-                            mediaType?: _573.MediaType;
+                            digestAlgorithm?: _641.DigestAlgorithm;
+                            mediaType?: _641.MediaType;
                         };
                         graph?: {
                             hash?: Uint8Array;
-                            digestAlgorithm?: _573.DigestAlgorithm;
-                            canonicalizationAlgorithm?: _573.GraphCanonicalizationAlgorithm;
-                            merkleTree?: _573.GraphMerkleTree;
+                            digestAlgorithm?: _641.DigestAlgorithm;
+                            canonicalizationAlgorithm?: _641.GraphCanonicalizationAlgorithm;
+                            merkleTree?: _641.GraphMerkleTree;
                         };
                     };
                     iri?: string;
@@ -1417,26 +1417,26 @@ export declare namespace regen {
                     content?: {
                         rawData?: Uint8Array;
                     };
-                }): _571.ContentEntry;
+                }): _639.ContentEntry;
             };
             GenesisState: {
-                encode(message: _570.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _570.GenesisState;
-                fromJSON(object: any): _570.GenesisState;
-                toJSON(message: _570.GenesisState): unknown;
+                encode(message: _638.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _638.GenesisState;
+                fromJSON(object: any): _638.GenesisState;
+                toJSON(message: _638.GenesisState): unknown;
                 fromPartial(object: {
                     entries?: {
                         hash?: {
                             raw?: {
                                 hash?: Uint8Array;
-                                digestAlgorithm?: _573.DigestAlgorithm;
-                                mediaType?: _573.MediaType;
+                                digestAlgorithm?: _641.DigestAlgorithm;
+                                mediaType?: _641.MediaType;
                             };
                             graph?: {
                                 hash?: Uint8Array;
-                                digestAlgorithm?: _573.DigestAlgorithm;
-                                canonicalizationAlgorithm?: _573.GraphCanonicalizationAlgorithm;
-                                merkleTree?: _573.GraphMerkleTree;
+                                digestAlgorithm?: _641.DigestAlgorithm;
+                                canonicalizationAlgorithm?: _641.GraphCanonicalizationAlgorithm;
+                                merkleTree?: _641.GraphMerkleTree;
                             };
                         };
                         timestamp?: {
@@ -1454,25 +1454,25 @@ export declare namespace regen {
                             rawData?: Uint8Array;
                         };
                     }[];
-                }): _570.GenesisState;
+                }): _638.GenesisState;
             };
             GenesisContentEntry: {
-                encode(message: _570.GenesisContentEntry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _570.GenesisContentEntry;
-                fromJSON(object: any): _570.GenesisContentEntry;
-                toJSON(message: _570.GenesisContentEntry): unknown;
+                encode(message: _638.GenesisContentEntry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _638.GenesisContentEntry;
+                fromJSON(object: any): _638.GenesisContentEntry;
+                toJSON(message: _638.GenesisContentEntry): unknown;
                 fromPartial(object: {
                     hash?: {
                         raw?: {
                             hash?: Uint8Array;
-                            digestAlgorithm?: _573.DigestAlgorithm;
-                            mediaType?: _573.MediaType;
+                            digestAlgorithm?: _641.DigestAlgorithm;
+                            mediaType?: _641.MediaType;
                         };
                         graph?: {
                             hash?: Uint8Array;
-                            digestAlgorithm?: _573.DigestAlgorithm;
-                            canonicalizationAlgorithm?: _573.GraphCanonicalizationAlgorithm;
-                            merkleTree?: _573.GraphMerkleTree;
+                            digestAlgorithm?: _641.DigestAlgorithm;
+                            canonicalizationAlgorithm?: _641.GraphCanonicalizationAlgorithm;
+                            merkleTree?: _641.GraphMerkleTree;
                         };
                     };
                     timestamp?: {
@@ -1489,35 +1489,35 @@ export declare namespace regen {
                     content?: {
                         rawData?: Uint8Array;
                     };
-                }): _570.GenesisContentEntry;
+                }): _638.GenesisContentEntry;
             };
             EventAnchorData: {
-                encode(message: _569.EventAnchorData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _569.EventAnchorData;
-                fromJSON(object: any): _569.EventAnchorData;
-                toJSON(message: _569.EventAnchorData): unknown;
+                encode(message: _637.EventAnchorData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _637.EventAnchorData;
+                fromJSON(object: any): _637.EventAnchorData;
+                toJSON(message: _637.EventAnchorData): unknown;
                 fromPartial(object: {
                     iri?: string;
-                }): _569.EventAnchorData;
+                }): _637.EventAnchorData;
             };
             EventSignData: {
-                encode(message: _569.EventSignData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _569.EventSignData;
-                fromJSON(object: any): _569.EventSignData;
-                toJSON(message: _569.EventSignData): unknown;
+                encode(message: _637.EventSignData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _637.EventSignData;
+                fromJSON(object: any): _637.EventSignData;
+                toJSON(message: _637.EventSignData): unknown;
                 fromPartial(object: {
                     iri?: string;
                     signers?: string[];
-                }): _569.EventSignData;
+                }): _637.EventSignData;
             };
             EventStoreRawData: {
-                encode(message: _569.EventStoreRawData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _569.EventStoreRawData;
-                fromJSON(object: any): _569.EventStoreRawData;
-                toJSON(message: _569.EventStoreRawData): unknown;
+                encode(message: _637.EventStoreRawData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _637.EventStoreRawData;
+                fromJSON(object: any): _637.EventStoreRawData;
+                toJSON(message: _637.EventStoreRawData): unknown;
                 fromPartial(object: {
                     iri?: string;
-                }): _569.EventStoreRawData;
+                }): _637.EventStoreRawData;
             };
         };
     }
@@ -1528,43 +1528,43 @@ export declare namespace regen {
                 load: (protoRegistry: import("@cosmjs/proto-signing").Registry) => void;
                 MessageComposer: {
                     encoded: {
-                        create(value: _577.MsgCreate): {
+                        create(value: _645.MsgCreate): {
                             typeUrl: string;
                             value: Uint8Array;
                         };
-                        put(value: _577.MsgPut): {
+                        put(value: _645.MsgPut): {
                             typeUrl: string;
                             value: Uint8Array;
                         };
-                        take(value: _577.MsgTake): {
+                        take(value: _645.MsgTake): {
                             typeUrl: string;
                             value: Uint8Array;
                         };
                     };
                     withTypeUrl: {
-                        create(value: _577.MsgCreate): {
+                        create(value: _645.MsgCreate): {
                             typeUrl: string;
-                            value: _577.MsgCreate;
+                            value: _645.MsgCreate;
                         };
-                        put(value: _577.MsgPut): {
+                        put(value: _645.MsgPut): {
                             typeUrl: string;
-                            value: _577.MsgPut;
+                            value: _645.MsgPut;
                         };
-                        take(value: _577.MsgTake): {
+                        take(value: _645.MsgTake): {
                             typeUrl: string;
-                            value: _577.MsgTake;
+                            value: _645.MsgTake;
                         };
                     };
                     toJSON: {
-                        create(value: _577.MsgCreate): {
+                        create(value: _645.MsgCreate): {
                             typeUrl: string;
                             value: unknown;
                         };
-                        put(value: _577.MsgPut): {
+                        put(value: _645.MsgPut): {
                             typeUrl: string;
                             value: unknown;
                         };
-                        take(value: _577.MsgTake): {
+                        take(value: _645.MsgTake): {
                             typeUrl: string;
                             value: unknown;
                         };
@@ -1572,36 +1572,36 @@ export declare namespace regen {
                     fromJSON: {
                         create(value: any): {
                             typeUrl: string;
-                            value: _577.MsgCreate;
+                            value: _645.MsgCreate;
                         };
                         put(value: any): {
                             typeUrl: string;
-                            value: _577.MsgPut;
+                            value: _645.MsgPut;
                         };
                         take(value: any): {
                             typeUrl: string;
-                            value: _577.MsgTake;
+                            value: _645.MsgTake;
                         };
                     };
                     fromPartial: {
-                        create(value: _577.MsgCreate): {
+                        create(value: _645.MsgCreate): {
                             typeUrl: string;
-                            value: _577.MsgCreate;
+                            value: _645.MsgCreate;
                         };
-                        put(value: _577.MsgPut): {
+                        put(value: _645.MsgPut): {
                             typeUrl: string;
-                            value: _577.MsgPut;
+                            value: _645.MsgPut;
                         };
-                        take(value: _577.MsgTake): {
+                        take(value: _645.MsgTake): {
                             typeUrl: string;
-                            value: _577.MsgTake;
+                            value: _645.MsgTake;
                         };
                     };
                 };
                 AminoConverter: {
                     "/regen.ecocredit.basket.v1.MsgCreate": {
                         aminoType: string;
-                        toAmino: ({ curator, name, description, exponent, disableAutoRetire, creditTypeAbbrev, allowedClasses, dateCriteria, fee }: _577.MsgCreate) => {
+                        toAmino: ({ curator, name, description, exponent, disableAutoRetire, creditTypeAbbrev, allowedClasses, dateCriteria, fee }: _645.MsgCreate) => {
                             curator: string;
                             name: string;
                             description: string;
@@ -1648,11 +1648,11 @@ export declare namespace regen {
                                 denom: string;
                                 amount: string;
                             }[];
-                        }) => _577.MsgCreate;
+                        }) => _645.MsgCreate;
                     };
                     "/regen.ecocredit.basket.v1.MsgPut": {
                         aminoType: string;
-                        toAmino: ({ owner, basketDenom, credits }: _577.MsgPut) => {
+                        toAmino: ({ owner, basketDenom, credits }: _645.MsgPut) => {
                             owner: string;
                             basket_denom: string;
                             credits: {
@@ -1667,11 +1667,11 @@ export declare namespace regen {
                                 batch_denom: string;
                                 amount: string;
                             }[];
-                        }) => _577.MsgPut;
+                        }) => _645.MsgPut;
                     };
                     "/regen.ecocredit.basket.v1.MsgTake": {
                         aminoType: string;
-                        toAmino: ({ owner, basketDenom, amount, retirementJurisdiction, retireOnTake }: _577.MsgTake) => {
+                        toAmino: ({ owner, basketDenom, amount, retirementJurisdiction, retireOnTake }: _645.MsgTake) => {
                             owner: string;
                             basket_denom: string;
                             amount: string;
@@ -1684,24 +1684,24 @@ export declare namespace regen {
                             amount: string;
                             retirement_jurisdiction: string;
                             retire_on_take: boolean;
-                        }) => _577.MsgTake;
+                        }) => _645.MsgTake;
                     };
                 };
                 BasketCredit: {
-                    encode(message: _578.BasketCredit, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _578.BasketCredit;
-                    fromJSON(object: any): _578.BasketCredit;
-                    toJSON(message: _578.BasketCredit): unknown;
+                    encode(message: _646.BasketCredit, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _646.BasketCredit;
+                    fromJSON(object: any): _646.BasketCredit;
+                    toJSON(message: _646.BasketCredit): unknown;
                     fromPartial(object: {
                         batchDenom?: string;
                         amount?: string;
-                    }): _578.BasketCredit;
+                    }): _646.BasketCredit;
                 };
                 DateCriteria: {
-                    encode(message: _578.DateCriteria, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _578.DateCriteria;
-                    fromJSON(object: any): _578.DateCriteria;
-                    toJSON(message: _578.DateCriteria): unknown;
+                    encode(message: _646.DateCriteria, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _646.DateCriteria;
+                    fromJSON(object: any): _646.DateCriteria;
+                    toJSON(message: _646.DateCriteria): unknown;
                     fromPartial(object: {
                         minStartDate?: {
                             seconds?: any;
@@ -1712,13 +1712,13 @@ export declare namespace regen {
                             nanos?: number;
                         };
                         yearsInThePast?: number;
-                    }): _578.DateCriteria;
+                    }): _646.DateCriteria;
                 };
                 MsgCreate: {
-                    encode(message: _577.MsgCreate, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _577.MsgCreate;
-                    fromJSON(object: any): _577.MsgCreate;
-                    toJSON(message: _577.MsgCreate): unknown;
+                    encode(message: _645.MsgCreate, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _645.MsgCreate;
+                    fromJSON(object: any): _645.MsgCreate;
+                    toJSON(message: _645.MsgCreate): unknown;
                     fromPartial(object: {
                         curator?: string;
                         name?: string;
@@ -1742,22 +1742,22 @@ export declare namespace regen {
                             denom?: string;
                             amount?: string;
                         }[];
-                    }): _577.MsgCreate;
+                    }): _645.MsgCreate;
                 };
                 MsgCreateResponse: {
-                    encode(message: _577.MsgCreateResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _577.MsgCreateResponse;
-                    fromJSON(object: any): _577.MsgCreateResponse;
-                    toJSON(message: _577.MsgCreateResponse): unknown;
+                    encode(message: _645.MsgCreateResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _645.MsgCreateResponse;
+                    fromJSON(object: any): _645.MsgCreateResponse;
+                    toJSON(message: _645.MsgCreateResponse): unknown;
                     fromPartial(object: {
                         basketDenom?: string;
-                    }): _577.MsgCreateResponse;
+                    }): _645.MsgCreateResponse;
                 };
                 MsgPut: {
-                    encode(message: _577.MsgPut, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _577.MsgPut;
-                    fromJSON(object: any): _577.MsgPut;
-                    toJSON(message: _577.MsgPut): unknown;
+                    encode(message: _645.MsgPut, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _645.MsgPut;
+                    fromJSON(object: any): _645.MsgPut;
+                    toJSON(message: _645.MsgPut): unknown;
                     fromPartial(object: {
                         owner?: string;
                         basketDenom?: string;
@@ -1765,47 +1765,47 @@ export declare namespace regen {
                             batchDenom?: string;
                             amount?: string;
                         }[];
-                    }): _577.MsgPut;
+                    }): _645.MsgPut;
                 };
                 MsgPutResponse: {
-                    encode(message: _577.MsgPutResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _577.MsgPutResponse;
-                    fromJSON(object: any): _577.MsgPutResponse;
-                    toJSON(message: _577.MsgPutResponse): unknown;
+                    encode(message: _645.MsgPutResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _645.MsgPutResponse;
+                    fromJSON(object: any): _645.MsgPutResponse;
+                    toJSON(message: _645.MsgPutResponse): unknown;
                     fromPartial(object: {
                         amountReceived?: string;
-                    }): _577.MsgPutResponse;
+                    }): _645.MsgPutResponse;
                 };
                 MsgTake: {
-                    encode(message: _577.MsgTake, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _577.MsgTake;
-                    fromJSON(object: any): _577.MsgTake;
-                    toJSON(message: _577.MsgTake): unknown;
+                    encode(message: _645.MsgTake, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _645.MsgTake;
+                    fromJSON(object: any): _645.MsgTake;
+                    toJSON(message: _645.MsgTake): unknown;
                     fromPartial(object: {
                         owner?: string;
                         basketDenom?: string;
                         amount?: string;
                         retirementJurisdiction?: string;
                         retireOnTake?: boolean;
-                    }): _577.MsgTake;
+                    }): _645.MsgTake;
                 };
                 MsgTakeResponse: {
-                    encode(message: _577.MsgTakeResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _577.MsgTakeResponse;
-                    fromJSON(object: any): _577.MsgTakeResponse;
-                    toJSON(message: _577.MsgTakeResponse): unknown;
+                    encode(message: _645.MsgTakeResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _645.MsgTakeResponse;
+                    fromJSON(object: any): _645.MsgTakeResponse;
+                    toJSON(message: _645.MsgTakeResponse): unknown;
                     fromPartial(object: {
                         credits?: {
                             batchDenom?: string;
                             amount?: string;
                         }[];
-                    }): _577.MsgTakeResponse;
+                    }): _645.MsgTakeResponse;
                 };
                 Basket: {
-                    encode(message: _576.Basket, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _576.Basket;
-                    fromJSON(object: any): _576.Basket;
-                    toJSON(message: _576.Basket): unknown;
+                    encode(message: _644.Basket, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.Basket;
+                    fromJSON(object: any): _644.Basket;
+                    toJSON(message: _644.Basket): unknown;
                     fromPartial(object: {
                         id?: any;
                         basketDenom?: string;
@@ -1825,23 +1825,23 @@ export declare namespace regen {
                         };
                         exponent?: number;
                         curator?: Uint8Array;
-                    }): _576.Basket;
+                    }): _644.Basket;
                 };
                 BasketClass: {
-                    encode(message: _576.BasketClass, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _576.BasketClass;
-                    fromJSON(object: any): _576.BasketClass;
-                    toJSON(message: _576.BasketClass): unknown;
+                    encode(message: _644.BasketClass, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.BasketClass;
+                    fromJSON(object: any): _644.BasketClass;
+                    toJSON(message: _644.BasketClass): unknown;
                     fromPartial(object: {
                         basketId?: any;
                         classId?: string;
-                    }): _576.BasketClass;
+                    }): _644.BasketClass;
                 };
                 BasketBalance: {
-                    encode(message: _576.BasketBalance, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _576.BasketBalance;
-                    fromJSON(object: any): _576.BasketBalance;
-                    toJSON(message: _576.BasketBalance): unknown;
+                    encode(message: _644.BasketBalance, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _644.BasketBalance;
+                    fromJSON(object: any): _644.BasketBalance;
+                    toJSON(message: _644.BasketBalance): unknown;
                     fromPartial(object: {
                         basketId?: any;
                         batchDenom?: string;
@@ -1850,22 +1850,22 @@ export declare namespace regen {
                             seconds?: any;
                             nanos?: number;
                         };
-                    }): _576.BasketBalance;
+                    }): _644.BasketBalance;
                 };
                 QueryBasketRequest: {
-                    encode(message: _575.QueryBasketRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _575.QueryBasketRequest;
-                    fromJSON(object: any): _575.QueryBasketRequest;
-                    toJSON(message: _575.QueryBasketRequest): unknown;
+                    encode(message: _643.QueryBasketRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.QueryBasketRequest;
+                    fromJSON(object: any): _643.QueryBasketRequest;
+                    toJSON(message: _643.QueryBasketRequest): unknown;
                     fromPartial(object: {
                         basketDenom?: string;
-                    }): _575.QueryBasketRequest;
+                    }): _643.QueryBasketRequest;
                 };
                 QueryBasketResponse: {
-                    encode(message: _575.QueryBasketResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _575.QueryBasketResponse;
-                    fromJSON(object: any): _575.QueryBasketResponse;
-                    toJSON(message: _575.QueryBasketResponse): unknown;
+                    encode(message: _643.QueryBasketResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.QueryBasketResponse;
+                    fromJSON(object: any): _643.QueryBasketResponse;
+                    toJSON(message: _643.QueryBasketResponse): unknown;
                     fromPartial(object: {
                         basket?: {
                             id?: any;
@@ -1907,13 +1907,13 @@ export declare namespace regen {
                             exponent?: number;
                             curator?: string;
                         };
-                    }): _575.QueryBasketResponse;
+                    }): _643.QueryBasketResponse;
                 };
                 QueryBasketsRequest: {
-                    encode(message: _575.QueryBasketsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _575.QueryBasketsRequest;
-                    fromJSON(object: any): _575.QueryBasketsRequest;
-                    toJSON(message: _575.QueryBasketsRequest): unknown;
+                    encode(message: _643.QueryBasketsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.QueryBasketsRequest;
+                    fromJSON(object: any): _643.QueryBasketsRequest;
+                    toJSON(message: _643.QueryBasketsRequest): unknown;
                     fromPartial(object: {
                         pagination?: {
                             key?: Uint8Array;
@@ -1922,13 +1922,13 @@ export declare namespace regen {
                             countTotal?: boolean;
                             reverse?: boolean;
                         };
-                    }): _575.QueryBasketsRequest;
+                    }): _643.QueryBasketsRequest;
                 };
                 QueryBasketsResponse: {
-                    encode(message: _575.QueryBasketsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _575.QueryBasketsResponse;
-                    fromJSON(object: any): _575.QueryBasketsResponse;
-                    toJSON(message: _575.QueryBasketsResponse): unknown;
+                    encode(message: _643.QueryBasketsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.QueryBasketsResponse;
+                    fromJSON(object: any): _643.QueryBasketsResponse;
+                    toJSON(message: _643.QueryBasketsResponse): unknown;
                     fromPartial(object: {
                         baskets?: {
                             id?: any;
@@ -1973,13 +1973,13 @@ export declare namespace regen {
                             exponent?: number;
                             curator?: string;
                         }[];
-                    }): _575.QueryBasketsResponse;
+                    }): _643.QueryBasketsResponse;
                 };
                 QueryBasketBalancesRequest: {
-                    encode(message: _575.QueryBasketBalancesRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _575.QueryBasketBalancesRequest;
-                    fromJSON(object: any): _575.QueryBasketBalancesRequest;
-                    toJSON(message: _575.QueryBasketBalancesRequest): unknown;
+                    encode(message: _643.QueryBasketBalancesRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.QueryBasketBalancesRequest;
+                    fromJSON(object: any): _643.QueryBasketBalancesRequest;
+                    toJSON(message: _643.QueryBasketBalancesRequest): unknown;
                     fromPartial(object: {
                         basketDenom?: string;
                         pagination?: {
@@ -1989,13 +1989,13 @@ export declare namespace regen {
                             countTotal?: boolean;
                             reverse?: boolean;
                         };
-                    }): _575.QueryBasketBalancesRequest;
+                    }): _643.QueryBasketBalancesRequest;
                 };
                 QueryBasketBalancesResponse: {
-                    encode(message: _575.QueryBasketBalancesResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _575.QueryBasketBalancesResponse;
-                    fromJSON(object: any): _575.QueryBasketBalancesResponse;
-                    toJSON(message: _575.QueryBasketBalancesResponse): unknown;
+                    encode(message: _643.QueryBasketBalancesResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.QueryBasketBalancesResponse;
+                    fromJSON(object: any): _643.QueryBasketBalancesResponse;
+                    toJSON(message: _643.QueryBasketBalancesResponse): unknown;
                     fromPartial(object: {
                         balances?: {
                             basketId?: any;
@@ -2014,32 +2014,32 @@ export declare namespace regen {
                             batchDenom?: string;
                             balance?: string;
                         }[];
-                    }): _575.QueryBasketBalancesResponse;
+                    }): _643.QueryBasketBalancesResponse;
                 };
                 QueryBasketBalanceRequest: {
-                    encode(message: _575.QueryBasketBalanceRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _575.QueryBasketBalanceRequest;
-                    fromJSON(object: any): _575.QueryBasketBalanceRequest;
-                    toJSON(message: _575.QueryBasketBalanceRequest): unknown;
+                    encode(message: _643.QueryBasketBalanceRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.QueryBasketBalanceRequest;
+                    fromJSON(object: any): _643.QueryBasketBalanceRequest;
+                    toJSON(message: _643.QueryBasketBalanceRequest): unknown;
                     fromPartial(object: {
                         basketDenom?: string;
                         batchDenom?: string;
-                    }): _575.QueryBasketBalanceRequest;
+                    }): _643.QueryBasketBalanceRequest;
                 };
                 QueryBasketBalanceResponse: {
-                    encode(message: _575.QueryBasketBalanceResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _575.QueryBasketBalanceResponse;
-                    fromJSON(object: any): _575.QueryBasketBalanceResponse;
-                    toJSON(message: _575.QueryBasketBalanceResponse): unknown;
+                    encode(message: _643.QueryBasketBalanceResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.QueryBasketBalanceResponse;
+                    fromJSON(object: any): _643.QueryBasketBalanceResponse;
+                    toJSON(message: _643.QueryBasketBalanceResponse): unknown;
                     fromPartial(object: {
                         balance?: string;
-                    }): _575.QueryBasketBalanceResponse;
+                    }): _643.QueryBasketBalanceResponse;
                 };
                 BasketInfo: {
-                    encode(message: _575.BasketInfo, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _575.BasketInfo;
-                    fromJSON(object: any): _575.BasketInfo;
-                    toJSON(message: _575.BasketInfo): unknown;
+                    encode(message: _643.BasketInfo, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.BasketInfo;
+                    fromJSON(object: any): _643.BasketInfo;
+                    toJSON(message: _643.BasketInfo): unknown;
                     fromPartial(object: {
                         basketDenom?: string;
                         name?: string;
@@ -2058,33 +2058,33 @@ export declare namespace regen {
                         };
                         exponent?: number;
                         curator?: string;
-                    }): _575.BasketInfo;
+                    }): _643.BasketInfo;
                 };
                 BasketBalanceInfo: {
-                    encode(message: _575.BasketBalanceInfo, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _575.BasketBalanceInfo;
-                    fromJSON(object: any): _575.BasketBalanceInfo;
-                    toJSON(message: _575.BasketBalanceInfo): unknown;
+                    encode(message: _643.BasketBalanceInfo, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _643.BasketBalanceInfo;
+                    fromJSON(object: any): _643.BasketBalanceInfo;
+                    toJSON(message: _643.BasketBalanceInfo): unknown;
                     fromPartial(object: {
                         batchDenom?: string;
                         balance?: string;
-                    }): _575.BasketBalanceInfo;
+                    }): _643.BasketBalanceInfo;
                 };
                 EventCreate: {
-                    encode(message: _574.EventCreate, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _574.EventCreate;
-                    fromJSON(object: any): _574.EventCreate;
-                    toJSON(message: _574.EventCreate): unknown;
+                    encode(message: _642.EventCreate, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _642.EventCreate;
+                    fromJSON(object: any): _642.EventCreate;
+                    toJSON(message: _642.EventCreate): unknown;
                     fromPartial(object: {
                         basketDenom?: string;
                         curator?: string;
-                    }): _574.EventCreate;
+                    }): _642.EventCreate;
                 };
                 EventPut: {
-                    encode(message: _574.EventPut, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _574.EventPut;
-                    fromJSON(object: any): _574.EventPut;
-                    toJSON(message: _574.EventPut): unknown;
+                    encode(message: _642.EventPut, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _642.EventPut;
+                    fromJSON(object: any): _642.EventPut;
+                    toJSON(message: _642.EventPut): unknown;
                     fromPartial(object: {
                         owner?: string;
                         basketDenom?: string;
@@ -2093,13 +2093,13 @@ export declare namespace regen {
                             amount?: string;
                         }[];
                         amount?: string;
-                    }): _574.EventPut;
+                    }): _642.EventPut;
                 };
                 EventTake: {
-                    encode(message: _574.EventTake, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _574.EventTake;
-                    fromJSON(object: any): _574.EventTake;
-                    toJSON(message: _574.EventTake): unknown;
+                    encode(message: _642.EventTake, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _642.EventTake;
+                    fromJSON(object: any): _642.EventTake;
+                    toJSON(message: _642.EventTake): unknown;
                     fromPartial(object: {
                         owner?: string;
                         basketDenom?: string;
@@ -2108,7 +2108,7 @@ export declare namespace regen {
                             amount?: string;
                         }[];
                         amount?: string;
-                    }): _574.EventTake;
+                    }): _642.EventTake;
                 };
             };
         }
@@ -2118,55 +2118,55 @@ export declare namespace regen {
                 load: (protoRegistry: import("@cosmjs/proto-signing").Registry) => void;
                 MessageComposer: {
                     encoded: {
-                        sell(value: _582.MsgSell): {
+                        sell(value: _650.MsgSell): {
                             typeUrl: string;
                             value: Uint8Array;
                         };
-                        updateSellOrders(value: _582.MsgUpdateSellOrders): {
+                        updateSellOrders(value: _650.MsgUpdateSellOrders): {
                             typeUrl: string;
                             value: Uint8Array;
                         };
-                        cancelSellOrder(value: _582.MsgCancelSellOrder): {
+                        cancelSellOrder(value: _650.MsgCancelSellOrder): {
                             typeUrl: string;
                             value: Uint8Array;
                         };
-                        buyDirect(value: _582.MsgBuyDirect): {
+                        buyDirect(value: _650.MsgBuyDirect): {
                             typeUrl: string;
                             value: Uint8Array;
                         };
                     };
                     withTypeUrl: {
-                        sell(value: _582.MsgSell): {
+                        sell(value: _650.MsgSell): {
                             typeUrl: string;
-                            value: _582.MsgSell;
+                            value: _650.MsgSell;
                         };
-                        updateSellOrders(value: _582.MsgUpdateSellOrders): {
+                        updateSellOrders(value: _650.MsgUpdateSellOrders): {
                             typeUrl: string;
-                            value: _582.MsgUpdateSellOrders;
+                            value: _650.MsgUpdateSellOrders;
                         };
-                        cancelSellOrder(value: _582.MsgCancelSellOrder): {
+                        cancelSellOrder(value: _650.MsgCancelSellOrder): {
                             typeUrl: string;
-                            value: _582.MsgCancelSellOrder;
+                            value: _650.MsgCancelSellOrder;
                         };
-                        buyDirect(value: _582.MsgBuyDirect): {
+                        buyDirect(value: _650.MsgBuyDirect): {
                             typeUrl: string;
-                            value: _582.MsgBuyDirect;
+                            value: _650.MsgBuyDirect;
                         };
                     };
                     toJSON: {
-                        sell(value: _582.MsgSell): {
+                        sell(value: _650.MsgSell): {
                             typeUrl: string;
                             value: unknown;
                         };
-                        updateSellOrders(value: _582.MsgUpdateSellOrders): {
+                        updateSellOrders(value: _650.MsgUpdateSellOrders): {
                             typeUrl: string;
                             value: unknown;
                         };
-                        cancelSellOrder(value: _582.MsgCancelSellOrder): {
+                        cancelSellOrder(value: _650.MsgCancelSellOrder): {
                             typeUrl: string;
                             value: unknown;
                         };
-                        buyDirect(value: _582.MsgBuyDirect): {
+                        buyDirect(value: _650.MsgBuyDirect): {
                             typeUrl: string;
                             value: unknown;
                         };
@@ -2174,44 +2174,44 @@ export declare namespace regen {
                     fromJSON: {
                         sell(value: any): {
                             typeUrl: string;
-                            value: _582.MsgSell;
+                            value: _650.MsgSell;
                         };
                         updateSellOrders(value: any): {
                             typeUrl: string;
-                            value: _582.MsgUpdateSellOrders;
+                            value: _650.MsgUpdateSellOrders;
                         };
                         cancelSellOrder(value: any): {
                             typeUrl: string;
-                            value: _582.MsgCancelSellOrder;
+                            value: _650.MsgCancelSellOrder;
                         };
                         buyDirect(value: any): {
                             typeUrl: string;
-                            value: _582.MsgBuyDirect;
+                            value: _650.MsgBuyDirect;
                         };
                     };
                     fromPartial: {
-                        sell(value: _582.MsgSell): {
+                        sell(value: _650.MsgSell): {
                             typeUrl: string;
-                            value: _582.MsgSell;
+                            value: _650.MsgSell;
                         };
-                        updateSellOrders(value: _582.MsgUpdateSellOrders): {
+                        updateSellOrders(value: _650.MsgUpdateSellOrders): {
                             typeUrl: string;
-                            value: _582.MsgUpdateSellOrders;
+                            value: _650.MsgUpdateSellOrders;
                         };
-                        cancelSellOrder(value: _582.MsgCancelSellOrder): {
+                        cancelSellOrder(value: _650.MsgCancelSellOrder): {
                             typeUrl: string;
-                            value: _582.MsgCancelSellOrder;
+                            value: _650.MsgCancelSellOrder;
                         };
-                        buyDirect(value: _582.MsgBuyDirect): {
+                        buyDirect(value: _650.MsgBuyDirect): {
                             typeUrl: string;
-                            value: _582.MsgBuyDirect;
+                            value: _650.MsgBuyDirect;
                         };
                     };
                 };
                 AminoConverter: {
                     "/regen.ecocredit.marketplace.v1.MsgSell": {
                         aminoType: string;
-                        toAmino: ({ owner, orders }: _582.MsgSell) => {
+                        toAmino: ({ owner, orders }: _650.MsgSell) => {
                             owner: string;
                             orders: {
                                 batch_denom: string;
@@ -2242,11 +2242,11 @@ export declare namespace regen {
                                     nanos: number;
                                 };
                             }[];
-                        }) => _582.MsgSell;
+                        }) => _650.MsgSell;
                     };
                     "/regen.ecocredit.marketplace.v1.MsgUpdateSellOrders": {
                         aminoType: string;
-                        toAmino: ({ owner, updates }: _582.MsgUpdateSellOrders) => {
+                        toAmino: ({ owner, updates }: _650.MsgUpdateSellOrders) => {
                             owner: string;
                             updates: {
                                 sell_order_id: string;
@@ -2277,22 +2277,22 @@ export declare namespace regen {
                                     nanos: number;
                                 };
                             }[];
-                        }) => _582.MsgUpdateSellOrders;
+                        }) => _650.MsgUpdateSellOrders;
                     };
                     "/regen.ecocredit.marketplace.v1.MsgCancelSellOrder": {
                         aminoType: string;
-                        toAmino: ({ seller, sellOrderId }: _582.MsgCancelSellOrder) => {
+                        toAmino: ({ seller, sellOrderId }: _650.MsgCancelSellOrder) => {
                             seller: string;
                             sell_order_id: string;
                         };
                         fromAmino: ({ seller, sell_order_id }: {
                             seller: string;
                             sell_order_id: string;
-                        }) => _582.MsgCancelSellOrder;
+                        }) => _650.MsgCancelSellOrder;
                     };
                     "/regen.ecocredit.marketplace.v1.MsgBuyDirect": {
                         aminoType: string;
-                        toAmino: ({ buyer, orders }: _582.MsgBuyDirect) => {
+                        toAmino: ({ buyer, orders }: _650.MsgBuyDirect) => {
                             buyer: string;
                             orders: {
                                 batch_denom: string;
@@ -2323,14 +2323,14 @@ export declare namespace regen {
                                     nanos: number;
                                 };
                             }[];
-                        }) => _582.MsgBuyDirect;
+                        }) => _650.MsgBuyDirect;
                     };
                 };
                 AllowDenomProposal: {
-                    encode(message: _583.AllowDenomProposal, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _583.AllowDenomProposal;
-                    fromJSON(object: any): _583.AllowDenomProposal;
-                    toJSON(message: _583.AllowDenomProposal): unknown;
+                    encode(message: _651.AllowDenomProposal, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _651.AllowDenomProposal;
+                    fromJSON(object: any): _651.AllowDenomProposal;
+                    toJSON(message: _651.AllowDenomProposal): unknown;
                     fromPartial(object: {
                         title?: string;
                         description?: string;
@@ -2339,13 +2339,13 @@ export declare namespace regen {
                             displayDenom?: string;
                             exponent?: number;
                         };
-                    }): _583.AllowDenomProposal;
+                    }): _651.AllowDenomProposal;
                 };
                 MsgSell: {
-                    encode(message: _582.MsgSell, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _582.MsgSell;
-                    fromJSON(object: any): _582.MsgSell;
-                    toJSON(message: _582.MsgSell): unknown;
+                    encode(message: _650.MsgSell, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _650.MsgSell;
+                    fromJSON(object: any): _650.MsgSell;
+                    toJSON(message: _650.MsgSell): unknown;
                     fromPartial(object: {
                         owner?: string;
                         orders?: {
@@ -2361,13 +2361,13 @@ export declare namespace regen {
                                 nanos?: number;
                             };
                         }[];
-                    }): _582.MsgSell;
+                    }): _650.MsgSell;
                 };
                 MsgSell_Order: {
-                    encode(message: _582.MsgSell_Order, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _582.MsgSell_Order;
-                    fromJSON(object: any): _582.MsgSell_Order;
-                    toJSON(message: _582.MsgSell_Order): unknown;
+                    encode(message: _650.MsgSell_Order, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _650.MsgSell_Order;
+                    fromJSON(object: any): _650.MsgSell_Order;
+                    toJSON(message: _650.MsgSell_Order): unknown;
                     fromPartial(object: {
                         batchDenom?: string;
                         quantity?: string;
@@ -2380,22 +2380,22 @@ export declare namespace regen {
                             seconds?: any;
                             nanos?: number;
                         };
-                    }): _582.MsgSell_Order;
+                    }): _650.MsgSell_Order;
                 };
                 MsgSellResponse: {
-                    encode(message: _582.MsgSellResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _582.MsgSellResponse;
-                    fromJSON(object: any): _582.MsgSellResponse;
-                    toJSON(message: _582.MsgSellResponse): unknown;
+                    encode(message: _650.MsgSellResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _650.MsgSellResponse;
+                    fromJSON(object: any): _650.MsgSellResponse;
+                    toJSON(message: _650.MsgSellResponse): unknown;
                     fromPartial(object: {
                         sellOrderIds?: any[];
-                    }): _582.MsgSellResponse;
+                    }): _650.MsgSellResponse;
                 };
                 MsgUpdateSellOrders: {
-                    encode(message: _582.MsgUpdateSellOrders, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _582.MsgUpdateSellOrders;
-                    fromJSON(object: any): _582.MsgUpdateSellOrders;
-                    toJSON(message: _582.MsgUpdateSellOrders): unknown;
+                    encode(message: _650.MsgUpdateSellOrders, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _650.MsgUpdateSellOrders;
+                    fromJSON(object: any): _650.MsgUpdateSellOrders;
+                    toJSON(message: _650.MsgUpdateSellOrders): unknown;
                     fromPartial(object: {
                         owner?: string;
                         updates?: {
@@ -2411,13 +2411,13 @@ export declare namespace regen {
                                 nanos?: number;
                             };
                         }[];
-                    }): _582.MsgUpdateSellOrders;
+                    }): _650.MsgUpdateSellOrders;
                 };
                 MsgUpdateSellOrders_Update: {
-                    encode(message: _582.MsgUpdateSellOrders_Update, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _582.MsgUpdateSellOrders_Update;
-                    fromJSON(object: any): _582.MsgUpdateSellOrders_Update;
-                    toJSON(message: _582.MsgUpdateSellOrders_Update): unknown;
+                    encode(message: _650.MsgUpdateSellOrders_Update, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _650.MsgUpdateSellOrders_Update;
+                    fromJSON(object: any): _650.MsgUpdateSellOrders_Update;
+                    toJSON(message: _650.MsgUpdateSellOrders_Update): unknown;
                     fromPartial(object: {
                         sellOrderId?: any;
                         newQuantity?: string;
@@ -2430,37 +2430,37 @@ export declare namespace regen {
                             seconds?: any;
                             nanos?: number;
                         };
-                    }): _582.MsgUpdateSellOrders_Update;
+                    }): _650.MsgUpdateSellOrders_Update;
                 };
                 MsgUpdateSellOrdersResponse: {
-                    encode(_: _582.MsgUpdateSellOrdersResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _582.MsgUpdateSellOrdersResponse;
-                    fromJSON(_: any): _582.MsgUpdateSellOrdersResponse;
-                    toJSON(_: _582.MsgUpdateSellOrdersResponse): unknown;
-                    fromPartial(_: {}): _582.MsgUpdateSellOrdersResponse;
+                    encode(_: _650.MsgUpdateSellOrdersResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _650.MsgUpdateSellOrdersResponse;
+                    fromJSON(_: any): _650.MsgUpdateSellOrdersResponse;
+                    toJSON(_: _650.MsgUpdateSellOrdersResponse): unknown;
+                    fromPartial(_: {}): _650.MsgUpdateSellOrdersResponse;
                 };
                 MsgCancelSellOrder: {
-                    encode(message: _582.MsgCancelSellOrder, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _582.MsgCancelSellOrder;
-                    fromJSON(object: any): _582.MsgCancelSellOrder;
-                    toJSON(message: _582.MsgCancelSellOrder): unknown;
+                    encode(message: _650.MsgCancelSellOrder, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _650.MsgCancelSellOrder;
+                    fromJSON(object: any): _650.MsgCancelSellOrder;
+                    toJSON(message: _650.MsgCancelSellOrder): unknown;
                     fromPartial(object: {
                         seller?: string;
                         sellOrderId?: any;
-                    }): _582.MsgCancelSellOrder;
+                    }): _650.MsgCancelSellOrder;
                 };
                 MsgCancelSellOrderResponse: {
-                    encode(_: _582.MsgCancelSellOrderResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _582.MsgCancelSellOrderResponse;
-                    fromJSON(_: any): _582.MsgCancelSellOrderResponse;
-                    toJSON(_: _582.MsgCancelSellOrderResponse): unknown;
-                    fromPartial(_: {}): _582.MsgCancelSellOrderResponse;
+                    encode(_: _650.MsgCancelSellOrderResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _650.MsgCancelSellOrderResponse;
+                    fromJSON(_: any): _650.MsgCancelSellOrderResponse;
+                    toJSON(_: _650.MsgCancelSellOrderResponse): unknown;
+                    fromPartial(_: {}): _650.MsgCancelSellOrderResponse;
                 };
                 MsgBuyDirect: {
-                    encode(message: _582.MsgBuyDirect, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _582.MsgBuyDirect;
-                    fromJSON(object: any): _582.MsgBuyDirect;
-                    toJSON(message: _582.MsgBuyDirect): unknown;
+                    encode(message: _650.MsgBuyDirect, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _650.MsgBuyDirect;
+                    fromJSON(object: any): _650.MsgBuyDirect;
+                    toJSON(message: _650.MsgBuyDirect): unknown;
                     fromPartial(object: {
                         buyer?: string;
                         orders?: {
@@ -2473,13 +2473,13 @@ export declare namespace regen {
                             disableAutoRetire?: boolean;
                             retirementJurisdiction?: string;
                         }[];
-                    }): _582.MsgBuyDirect;
+                    }): _650.MsgBuyDirect;
                 };
                 MsgBuyDirect_Order: {
-                    encode(message: _582.MsgBuyDirect_Order, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _582.MsgBuyDirect_Order;
-                    fromJSON(object: any): _582.MsgBuyDirect_Order;
-                    toJSON(message: _582.MsgBuyDirect_Order): unknown;
+                    encode(message: _650.MsgBuyDirect_Order, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _650.MsgBuyDirect_Order;
+                    fromJSON(object: any): _650.MsgBuyDirect_Order;
+                    toJSON(message: _650.MsgBuyDirect_Order): unknown;
                     fromPartial(object: {
                         sellOrderId?: any;
                         quantity?: string;
@@ -2489,20 +2489,20 @@ export declare namespace regen {
                         };
                         disableAutoRetire?: boolean;
                         retirementJurisdiction?: string;
-                    }): _582.MsgBuyDirect_Order;
+                    }): _650.MsgBuyDirect_Order;
                 };
                 MsgBuyDirectResponse: {
-                    encode(_: _582.MsgBuyDirectResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _582.MsgBuyDirectResponse;
-                    fromJSON(_: any): _582.MsgBuyDirectResponse;
-                    toJSON(_: _582.MsgBuyDirectResponse): unknown;
-                    fromPartial(_: {}): _582.MsgBuyDirectResponse;
+                    encode(_: _650.MsgBuyDirectResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _650.MsgBuyDirectResponse;
+                    fromJSON(_: any): _650.MsgBuyDirectResponse;
+                    toJSON(_: _650.MsgBuyDirectResponse): unknown;
+                    fromPartial(_: {}): _650.MsgBuyDirectResponse;
                 };
                 SellOrder: {
-                    encode(message: _581.SellOrder, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _581.SellOrder;
-                    fromJSON(object: any): _581.SellOrder;
-                    toJSON(message: _581.SellOrder): unknown;
+                    encode(message: _649.SellOrder, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _649.SellOrder;
+                    fromJSON(object: any): _649.SellOrder;
+                    toJSON(message: _649.SellOrder): unknown;
                     fromPartial(object: {
                         id?: any;
                         seller?: Uint8Array;
@@ -2516,45 +2516,45 @@ export declare namespace regen {
                             nanos?: number;
                         };
                         maker?: boolean;
-                    }): _581.SellOrder;
+                    }): _649.SellOrder;
                 };
                 AllowedDenom: {
-                    encode(message: _581.AllowedDenom, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _581.AllowedDenom;
-                    fromJSON(object: any): _581.AllowedDenom;
-                    toJSON(message: _581.AllowedDenom): unknown;
+                    encode(message: _649.AllowedDenom, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _649.AllowedDenom;
+                    fromJSON(object: any): _649.AllowedDenom;
+                    toJSON(message: _649.AllowedDenom): unknown;
                     fromPartial(object: {
                         bankDenom?: string;
                         displayDenom?: string;
                         exponent?: number;
-                    }): _581.AllowedDenom;
+                    }): _649.AllowedDenom;
                 };
                 Market: {
-                    encode(message: _581.Market, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _581.Market;
-                    fromJSON(object: any): _581.Market;
-                    toJSON(message: _581.Market): unknown;
+                    encode(message: _649.Market, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _649.Market;
+                    fromJSON(object: any): _649.Market;
+                    toJSON(message: _649.Market): unknown;
                     fromPartial(object: {
                         id?: any;
                         creditType?: string;
                         bankDenom?: string;
                         precisionModifier?: number;
-                    }): _581.Market;
+                    }): _649.Market;
                 };
                 QuerySellOrderRequest: {
-                    encode(message: _580.QuerySellOrderRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _580.QuerySellOrderRequest;
-                    fromJSON(object: any): _580.QuerySellOrderRequest;
-                    toJSON(message: _580.QuerySellOrderRequest): unknown;
+                    encode(message: _648.QuerySellOrderRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _648.QuerySellOrderRequest;
+                    fromJSON(object: any): _648.QuerySellOrderRequest;
+                    toJSON(message: _648.QuerySellOrderRequest): unknown;
                     fromPartial(object: {
                         sellOrderId?: any;
-                    }): _580.QuerySellOrderRequest;
+                    }): _648.QuerySellOrderRequest;
                 };
                 QuerySellOrderResponse: {
-                    encode(message: _580.QuerySellOrderResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _580.QuerySellOrderResponse;
-                    fromJSON(object: any): _580.QuerySellOrderResponse;
-                    toJSON(message: _580.QuerySellOrderResponse): unknown;
+                    encode(message: _648.QuerySellOrderResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _648.QuerySellOrderResponse;
+                    fromJSON(object: any): _648.QuerySellOrderResponse;
+                    toJSON(message: _648.QuerySellOrderResponse): unknown;
                     fromPartial(object: {
                         sellOrder?: {
                             id?: any;
@@ -2569,13 +2569,13 @@ export declare namespace regen {
                                 nanos?: number;
                             };
                         };
-                    }): _580.QuerySellOrderResponse;
+                    }): _648.QuerySellOrderResponse;
                 };
                 QuerySellOrdersRequest: {
-                    encode(message: _580.QuerySellOrdersRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _580.QuerySellOrdersRequest;
-                    fromJSON(object: any): _580.QuerySellOrdersRequest;
-                    toJSON(message: _580.QuerySellOrdersRequest): unknown;
+                    encode(message: _648.QuerySellOrdersRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _648.QuerySellOrdersRequest;
+                    fromJSON(object: any): _648.QuerySellOrdersRequest;
+                    toJSON(message: _648.QuerySellOrdersRequest): unknown;
                     fromPartial(object: {
                         pagination?: {
                             key?: Uint8Array;
@@ -2584,13 +2584,13 @@ export declare namespace regen {
                             countTotal?: boolean;
                             reverse?: boolean;
                         };
-                    }): _580.QuerySellOrdersRequest;
+                    }): _648.QuerySellOrdersRequest;
                 };
                 QuerySellOrdersResponse: {
-                    encode(message: _580.QuerySellOrdersResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _580.QuerySellOrdersResponse;
-                    fromJSON(object: any): _580.QuerySellOrdersResponse;
-                    toJSON(message: _580.QuerySellOrdersResponse): unknown;
+                    encode(message: _648.QuerySellOrdersResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _648.QuerySellOrdersResponse;
+                    fromJSON(object: any): _648.QuerySellOrdersResponse;
+                    toJSON(message: _648.QuerySellOrdersResponse): unknown;
                     fromPartial(object: {
                         sellOrders?: {
                             id?: any;
@@ -2609,13 +2609,13 @@ export declare namespace regen {
                             nextKey?: Uint8Array;
                             total?: any;
                         };
-                    }): _580.QuerySellOrdersResponse;
+                    }): _648.QuerySellOrdersResponse;
                 };
                 QuerySellOrdersByBatchDenomRequest: {
-                    encode(message: _580.QuerySellOrdersByBatchDenomRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _580.QuerySellOrdersByBatchDenomRequest;
-                    fromJSON(object: any): _580.QuerySellOrdersByBatchDenomRequest;
-                    toJSON(message: _580.QuerySellOrdersByBatchDenomRequest): unknown;
+                    encode(message: _648.QuerySellOrdersByBatchDenomRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _648.QuerySellOrdersByBatchDenomRequest;
+                    fromJSON(object: any): _648.QuerySellOrdersByBatchDenomRequest;
+                    toJSON(message: _648.QuerySellOrdersByBatchDenomRequest): unknown;
                     fromPartial(object: {
                         batchDenom?: string;
                         pagination?: {
@@ -2625,13 +2625,13 @@ export declare namespace regen {
                             countTotal?: boolean;
                             reverse?: boolean;
                         };
-                    }): _580.QuerySellOrdersByBatchDenomRequest;
+                    }): _648.QuerySellOrdersByBatchDenomRequest;
                 };
                 QuerySellOrdersByBatchDenomResponse: {
-                    encode(message: _580.QuerySellOrdersByBatchDenomResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _580.QuerySellOrdersByBatchDenomResponse;
-                    fromJSON(object: any): _580.QuerySellOrdersByBatchDenomResponse;
-                    toJSON(message: _580.QuerySellOrdersByBatchDenomResponse): unknown;
+                    encode(message: _648.QuerySellOrdersByBatchDenomResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _648.QuerySellOrdersByBatchDenomResponse;
+                    fromJSON(object: any): _648.QuerySellOrdersByBatchDenomResponse;
+                    toJSON(message: _648.QuerySellOrdersByBatchDenomResponse): unknown;
                     fromPartial(object: {
                         sellOrders?: {
                             id?: any;
@@ -2650,13 +2650,13 @@ export declare namespace regen {
                             nextKey?: Uint8Array;
                             total?: any;
                         };
-                    }): _580.QuerySellOrdersByBatchDenomResponse;
+                    }): _648.QuerySellOrdersByBatchDenomResponse;
                 };
                 QuerySellOrdersByAddressRequest: {
-                    encode(message: _580.QuerySellOrdersByAddressRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _580.QuerySellOrdersByAddressRequest;
-                    fromJSON(object: any): _580.QuerySellOrdersByAddressRequest;
-                    toJSON(message: _580.QuerySellOrdersByAddressRequest): unknown;
+                    encode(message: _648.QuerySellOrdersByAddressRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _648.QuerySellOrdersByAddressRequest;
+                    fromJSON(object: any): _648.QuerySellOrdersByAddressRequest;
+                    toJSON(message: _648.QuerySellOrdersByAddressRequest): unknown;
                     fromPartial(object: {
                         address?: string;
                         pagination?: {
@@ -2666,13 +2666,13 @@ export declare namespace regen {
                             countTotal?: boolean;
                             reverse?: boolean;
                         };
-                    }): _580.QuerySellOrdersByAddressRequest;
+                    }): _648.QuerySellOrdersByAddressRequest;
                 };
                 QuerySellOrdersByAddressResponse: {
-                    encode(message: _580.QuerySellOrdersByAddressResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _580.QuerySellOrdersByAddressResponse;
-                    fromJSON(object: any): _580.QuerySellOrdersByAddressResponse;
-                    toJSON(message: _580.QuerySellOrdersByAddressResponse): unknown;
+                    encode(message: _648.QuerySellOrdersByAddressResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _648.QuerySellOrdersByAddressResponse;
+                    fromJSON(object: any): _648.QuerySellOrdersByAddressResponse;
+                    toJSON(message: _648.QuerySellOrdersByAddressResponse): unknown;
                     fromPartial(object: {
                         sellOrders?: {
                             id?: any;
@@ -2691,13 +2691,13 @@ export declare namespace regen {
                             nextKey?: Uint8Array;
                             total?: any;
                         };
-                    }): _580.QuerySellOrdersByAddressResponse;
+                    }): _648.QuerySellOrdersByAddressResponse;
                 };
                 QueryAllowedDenomsRequest: {
-                    encode(message: _580.QueryAllowedDenomsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _580.QueryAllowedDenomsRequest;
-                    fromJSON(object: any): _580.QueryAllowedDenomsRequest;
-                    toJSON(message: _580.QueryAllowedDenomsRequest): unknown;
+                    encode(message: _648.QueryAllowedDenomsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _648.QueryAllowedDenomsRequest;
+                    fromJSON(object: any): _648.QueryAllowedDenomsRequest;
+                    toJSON(message: _648.QueryAllowedDenomsRequest): unknown;
                     fromPartial(object: {
                         pagination?: {
                             key?: Uint8Array;
@@ -2706,13 +2706,13 @@ export declare namespace regen {
                             countTotal?: boolean;
                             reverse?: boolean;
                         };
-                    }): _580.QueryAllowedDenomsRequest;
+                    }): _648.QueryAllowedDenomsRequest;
                 };
                 QueryAllowedDenomsResponse: {
-                    encode(message: _580.QueryAllowedDenomsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _580.QueryAllowedDenomsResponse;
-                    fromJSON(object: any): _580.QueryAllowedDenomsResponse;
-                    toJSON(message: _580.QueryAllowedDenomsResponse): unknown;
+                    encode(message: _648.QueryAllowedDenomsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _648.QueryAllowedDenomsResponse;
+                    fromJSON(object: any): _648.QueryAllowedDenomsResponse;
+                    toJSON(message: _648.QueryAllowedDenomsResponse): unknown;
                     fromPartial(object: {
                         allowedDenoms?: {
                             bankDenom?: string;
@@ -2723,13 +2723,13 @@ export declare namespace regen {
                             nextKey?: Uint8Array;
                             total?: any;
                         };
-                    }): _580.QueryAllowedDenomsResponse;
+                    }): _648.QueryAllowedDenomsResponse;
                 };
                 SellOrderInfo: {
-                    encode(message: _580.SellOrderInfo, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _580.SellOrderInfo;
-                    fromJSON(object: any): _580.SellOrderInfo;
-                    toJSON(message: _580.SellOrderInfo): unknown;
+                    encode(message: _648.SellOrderInfo, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _648.SellOrderInfo;
+                    fromJSON(object: any): _648.SellOrderInfo;
+                    toJSON(message: _648.SellOrderInfo): unknown;
                     fromPartial(object: {
                         id?: any;
                         seller?: string;
@@ -2742,57 +2742,57 @@ export declare namespace regen {
                             seconds?: any;
                             nanos?: number;
                         };
-                    }): _580.SellOrderInfo;
+                    }): _648.SellOrderInfo;
                 };
                 EventSell: {
-                    encode(message: _579.EventSell, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _579.EventSell;
-                    fromJSON(object: any): _579.EventSell;
-                    toJSON(message: _579.EventSell): unknown;
+                    encode(message: _647.EventSell, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _647.EventSell;
+                    fromJSON(object: any): _647.EventSell;
+                    toJSON(message: _647.EventSell): unknown;
                     fromPartial(object: {
                         orderId?: any;
-                    }): _579.EventSell;
+                    }): _647.EventSell;
                 };
                 EventUpdateSellOrder: {
-                    encode(message: _579.EventUpdateSellOrder, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _579.EventUpdateSellOrder;
-                    fromJSON(object: any): _579.EventUpdateSellOrder;
-                    toJSON(message: _579.EventUpdateSellOrder): unknown;
+                    encode(message: _647.EventUpdateSellOrder, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _647.EventUpdateSellOrder;
+                    fromJSON(object: any): _647.EventUpdateSellOrder;
+                    toJSON(message: _647.EventUpdateSellOrder): unknown;
                     fromPartial(object: {
                         orderId?: any;
-                    }): _579.EventUpdateSellOrder;
+                    }): _647.EventUpdateSellOrder;
                 };
                 EventAllowDenom: {
-                    encode(message: _579.EventAllowDenom, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _579.EventAllowDenom;
-                    fromJSON(object: any): _579.EventAllowDenom;
-                    toJSON(message: _579.EventAllowDenom): unknown;
+                    encode(message: _647.EventAllowDenom, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _647.EventAllowDenom;
+                    fromJSON(object: any): _647.EventAllowDenom;
+                    toJSON(message: _647.EventAllowDenom): unknown;
                     fromPartial(object: {
                         denom?: string;
-                    }): _579.EventAllowDenom;
+                    }): _647.EventAllowDenom;
                 };
             };
         }
         namespace orderbook {
             const v1alpha1: {
                 BuyOrderSellOrderMatch: {
-                    encode(message: _584.BuyOrderSellOrderMatch, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _584.BuyOrderSellOrderMatch;
-                    fromJSON(object: any): _584.BuyOrderSellOrderMatch;
-                    toJSON(message: _584.BuyOrderSellOrderMatch): unknown;
+                    encode(message: _652.BuyOrderSellOrderMatch, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _652.BuyOrderSellOrderMatch;
+                    fromJSON(object: any): _652.BuyOrderSellOrderMatch;
+                    toJSON(message: _652.BuyOrderSellOrderMatch): unknown;
                     fromPartial(object: {
                         marketId?: any;
                         buyOrderId?: any;
                         sellOrderId?: any;
                         bidPriceComplement?: number;
                         askPrice?: number;
-                    }): _584.BuyOrderSellOrderMatch;
+                    }): _652.BuyOrderSellOrderMatch;
                 };
                 BuyOrderClassSelector: {
-                    encode(message: _584.BuyOrderClassSelector, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _584.BuyOrderClassSelector;
-                    fromJSON(object: any): _584.BuyOrderClassSelector;
-                    toJSON(message: _584.BuyOrderClassSelector): unknown;
+                    encode(message: _652.BuyOrderClassSelector, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _652.BuyOrderClassSelector;
+                    fromJSON(object: any): _652.BuyOrderClassSelector;
+                    toJSON(message: _652.BuyOrderClassSelector): unknown;
                     fromPartial(object: {
                         buyOrderId?: any;
                         classId?: any;
@@ -2805,13 +2805,13 @@ export declare namespace regen {
                             seconds?: any;
                             nanos?: number;
                         };
-                    }): _584.BuyOrderClassSelector;
+                    }): _652.BuyOrderClassSelector;
                 };
                 BuyOrderProjectSelector: {
-                    encode(message: _584.BuyOrderProjectSelector, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _584.BuyOrderProjectSelector;
-                    fromJSON(object: any): _584.BuyOrderProjectSelector;
-                    toJSON(message: _584.BuyOrderProjectSelector): unknown;
+                    encode(message: _652.BuyOrderProjectSelector, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _652.BuyOrderProjectSelector;
+                    fromJSON(object: any): _652.BuyOrderProjectSelector;
+                    toJSON(message: _652.BuyOrderProjectSelector): unknown;
                     fromPartial(object: {
                         buyOrderId?: any;
                         projectId?: any;
@@ -2823,17 +2823,17 @@ export declare namespace regen {
                             seconds?: any;
                             nanos?: number;
                         };
-                    }): _584.BuyOrderProjectSelector;
+                    }): _652.BuyOrderProjectSelector;
                 };
                 BuyOrderBatchSelector: {
-                    encode(message: _584.BuyOrderBatchSelector, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _584.BuyOrderBatchSelector;
-                    fromJSON(object: any): _584.BuyOrderBatchSelector;
-                    toJSON(message: _584.BuyOrderBatchSelector): unknown;
+                    encode(message: _652.BuyOrderBatchSelector, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                    decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _652.BuyOrderBatchSelector;
+                    fromJSON(object: any): _652.BuyOrderBatchSelector;
+                    toJSON(message: _652.BuyOrderBatchSelector): unknown;
                     fromPartial(object: {
                         buyOrderId?: any;
                         batchId?: any;
-                    }): _584.BuyOrderBatchSelector;
+                    }): _652.BuyOrderBatchSelector;
                 };
             };
         }
@@ -2842,163 +2842,163 @@ export declare namespace regen {
             load: (protoRegistry: import("@cosmjs/proto-signing").Registry) => void;
             MessageComposer: {
                 encoded: {
-                    createClass(value: _588.MsgCreateClass): {
+                    createClass(value: _656.MsgCreateClass): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    createProject(value: _588.MsgCreateProject): {
+                    createProject(value: _656.MsgCreateProject): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    createBatch(value: _588.MsgCreateBatch): {
+                    createBatch(value: _656.MsgCreateBatch): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    mintBatchCredits(value: _588.MsgMintBatchCredits): {
+                    mintBatchCredits(value: _656.MsgMintBatchCredits): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    sealBatch(value: _588.MsgSealBatch): {
+                    sealBatch(value: _656.MsgSealBatch): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    send(value: _588.MsgSend): {
+                    send(value: _656.MsgSend): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    retire(value: _588.MsgRetire): {
+                    retire(value: _656.MsgRetire): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    cancel(value: _588.MsgCancel): {
+                    cancel(value: _656.MsgCancel): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updateClassAdmin(value: _588.MsgUpdateClassAdmin): {
+                    updateClassAdmin(value: _656.MsgUpdateClassAdmin): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updateClassIssuers(value: _588.MsgUpdateClassIssuers): {
+                    updateClassIssuers(value: _656.MsgUpdateClassIssuers): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updateClassMetadata(value: _588.MsgUpdateClassMetadata): {
+                    updateClassMetadata(value: _656.MsgUpdateClassMetadata): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updateProjectAdmin(value: _588.MsgUpdateProjectAdmin): {
+                    updateProjectAdmin(value: _656.MsgUpdateProjectAdmin): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updateProjectMetadata(value: _588.MsgUpdateProjectMetadata): {
+                    updateProjectMetadata(value: _656.MsgUpdateProjectMetadata): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
                 };
                 withTypeUrl: {
-                    createClass(value: _588.MsgCreateClass): {
+                    createClass(value: _656.MsgCreateClass): {
                         typeUrl: string;
-                        value: _588.MsgCreateClass;
+                        value: _656.MsgCreateClass;
                     };
-                    createProject(value: _588.MsgCreateProject): {
+                    createProject(value: _656.MsgCreateProject): {
                         typeUrl: string;
-                        value: _588.MsgCreateProject;
+                        value: _656.MsgCreateProject;
                     };
-                    createBatch(value: _588.MsgCreateBatch): {
+                    createBatch(value: _656.MsgCreateBatch): {
                         typeUrl: string;
-                        value: _588.MsgCreateBatch;
+                        value: _656.MsgCreateBatch;
                     };
-                    mintBatchCredits(value: _588.MsgMintBatchCredits): {
+                    mintBatchCredits(value: _656.MsgMintBatchCredits): {
                         typeUrl: string;
-                        value: _588.MsgMintBatchCredits;
+                        value: _656.MsgMintBatchCredits;
                     };
-                    sealBatch(value: _588.MsgSealBatch): {
+                    sealBatch(value: _656.MsgSealBatch): {
                         typeUrl: string;
-                        value: _588.MsgSealBatch;
+                        value: _656.MsgSealBatch;
                     };
-                    send(value: _588.MsgSend): {
+                    send(value: _656.MsgSend): {
                         typeUrl: string;
-                        value: _588.MsgSend;
+                        value: _656.MsgSend;
                     };
-                    retire(value: _588.MsgRetire): {
+                    retire(value: _656.MsgRetire): {
                         typeUrl: string;
-                        value: _588.MsgRetire;
+                        value: _656.MsgRetire;
                     };
-                    cancel(value: _588.MsgCancel): {
+                    cancel(value: _656.MsgCancel): {
                         typeUrl: string;
-                        value: _588.MsgCancel;
+                        value: _656.MsgCancel;
                     };
-                    updateClassAdmin(value: _588.MsgUpdateClassAdmin): {
+                    updateClassAdmin(value: _656.MsgUpdateClassAdmin): {
                         typeUrl: string;
-                        value: _588.MsgUpdateClassAdmin;
+                        value: _656.MsgUpdateClassAdmin;
                     };
-                    updateClassIssuers(value: _588.MsgUpdateClassIssuers): {
+                    updateClassIssuers(value: _656.MsgUpdateClassIssuers): {
                         typeUrl: string;
-                        value: _588.MsgUpdateClassIssuers;
+                        value: _656.MsgUpdateClassIssuers;
                     };
-                    updateClassMetadata(value: _588.MsgUpdateClassMetadata): {
+                    updateClassMetadata(value: _656.MsgUpdateClassMetadata): {
                         typeUrl: string;
-                        value: _588.MsgUpdateClassMetadata;
+                        value: _656.MsgUpdateClassMetadata;
                     };
-                    updateProjectAdmin(value: _588.MsgUpdateProjectAdmin): {
+                    updateProjectAdmin(value: _656.MsgUpdateProjectAdmin): {
                         typeUrl: string;
-                        value: _588.MsgUpdateProjectAdmin;
+                        value: _656.MsgUpdateProjectAdmin;
                     };
-                    updateProjectMetadata(value: _588.MsgUpdateProjectMetadata): {
+                    updateProjectMetadata(value: _656.MsgUpdateProjectMetadata): {
                         typeUrl: string;
-                        value: _588.MsgUpdateProjectMetadata;
+                        value: _656.MsgUpdateProjectMetadata;
                     };
                 };
                 toJSON: {
-                    createClass(value: _588.MsgCreateClass): {
+                    createClass(value: _656.MsgCreateClass): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    createProject(value: _588.MsgCreateProject): {
+                    createProject(value: _656.MsgCreateProject): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    createBatch(value: _588.MsgCreateBatch): {
+                    createBatch(value: _656.MsgCreateBatch): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    mintBatchCredits(value: _588.MsgMintBatchCredits): {
+                    mintBatchCredits(value: _656.MsgMintBatchCredits): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    sealBatch(value: _588.MsgSealBatch): {
+                    sealBatch(value: _656.MsgSealBatch): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    send(value: _588.MsgSend): {
+                    send(value: _656.MsgSend): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    retire(value: _588.MsgRetire): {
+                    retire(value: _656.MsgRetire): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    cancel(value: _588.MsgCancel): {
+                    cancel(value: _656.MsgCancel): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updateClassAdmin(value: _588.MsgUpdateClassAdmin): {
+                    updateClassAdmin(value: _656.MsgUpdateClassAdmin): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updateClassIssuers(value: _588.MsgUpdateClassIssuers): {
+                    updateClassIssuers(value: _656.MsgUpdateClassIssuers): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updateClassMetadata(value: _588.MsgUpdateClassMetadata): {
+                    updateClassMetadata(value: _656.MsgUpdateClassMetadata): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updateProjectAdmin(value: _588.MsgUpdateProjectAdmin): {
+                    updateProjectAdmin(value: _656.MsgUpdateProjectAdmin): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updateProjectMetadata(value: _588.MsgUpdateProjectMetadata): {
+                    updateProjectMetadata(value: _656.MsgUpdateProjectMetadata): {
                         typeUrl: string;
                         value: unknown;
                     };
@@ -3006,116 +3006,116 @@ export declare namespace regen {
                 fromJSON: {
                     createClass(value: any): {
                         typeUrl: string;
-                        value: _588.MsgCreateClass;
+                        value: _656.MsgCreateClass;
                     };
                     createProject(value: any): {
                         typeUrl: string;
-                        value: _588.MsgCreateProject;
+                        value: _656.MsgCreateProject;
                     };
                     createBatch(value: any): {
                         typeUrl: string;
-                        value: _588.MsgCreateBatch;
+                        value: _656.MsgCreateBatch;
                     };
                     mintBatchCredits(value: any): {
                         typeUrl: string;
-                        value: _588.MsgMintBatchCredits;
+                        value: _656.MsgMintBatchCredits;
                     };
                     sealBatch(value: any): {
                         typeUrl: string;
-                        value: _588.MsgSealBatch;
+                        value: _656.MsgSealBatch;
                     };
                     send(value: any): {
                         typeUrl: string;
-                        value: _588.MsgSend;
+                        value: _656.MsgSend;
                     };
                     retire(value: any): {
                         typeUrl: string;
-                        value: _588.MsgRetire;
+                        value: _656.MsgRetire;
                     };
                     cancel(value: any): {
                         typeUrl: string;
-                        value: _588.MsgCancel;
+                        value: _656.MsgCancel;
                     };
                     updateClassAdmin(value: any): {
                         typeUrl: string;
-                        value: _588.MsgUpdateClassAdmin;
+                        value: _656.MsgUpdateClassAdmin;
                     };
                     updateClassIssuers(value: any): {
                         typeUrl: string;
-                        value: _588.MsgUpdateClassIssuers;
+                        value: _656.MsgUpdateClassIssuers;
                     };
                     updateClassMetadata(value: any): {
                         typeUrl: string;
-                        value: _588.MsgUpdateClassMetadata;
+                        value: _656.MsgUpdateClassMetadata;
                     };
                     updateProjectAdmin(value: any): {
                         typeUrl: string;
-                        value: _588.MsgUpdateProjectAdmin;
+                        value: _656.MsgUpdateProjectAdmin;
                     };
                     updateProjectMetadata(value: any): {
                         typeUrl: string;
-                        value: _588.MsgUpdateProjectMetadata;
+                        value: _656.MsgUpdateProjectMetadata;
                     };
                 };
                 fromPartial: {
-                    createClass(value: _588.MsgCreateClass): {
+                    createClass(value: _656.MsgCreateClass): {
                         typeUrl: string;
-                        value: _588.MsgCreateClass;
+                        value: _656.MsgCreateClass;
                     };
-                    createProject(value: _588.MsgCreateProject): {
+                    createProject(value: _656.MsgCreateProject): {
                         typeUrl: string;
-                        value: _588.MsgCreateProject;
+                        value: _656.MsgCreateProject;
                     };
-                    createBatch(value: _588.MsgCreateBatch): {
+                    createBatch(value: _656.MsgCreateBatch): {
                         typeUrl: string;
-                        value: _588.MsgCreateBatch;
+                        value: _656.MsgCreateBatch;
                     };
-                    mintBatchCredits(value: _588.MsgMintBatchCredits): {
+                    mintBatchCredits(value: _656.MsgMintBatchCredits): {
                         typeUrl: string;
-                        value: _588.MsgMintBatchCredits;
+                        value: _656.MsgMintBatchCredits;
                     };
-                    sealBatch(value: _588.MsgSealBatch): {
+                    sealBatch(value: _656.MsgSealBatch): {
                         typeUrl: string;
-                        value: _588.MsgSealBatch;
+                        value: _656.MsgSealBatch;
                     };
-                    send(value: _588.MsgSend): {
+                    send(value: _656.MsgSend): {
                         typeUrl: string;
-                        value: _588.MsgSend;
+                        value: _656.MsgSend;
                     };
-                    retire(value: _588.MsgRetire): {
+                    retire(value: _656.MsgRetire): {
                         typeUrl: string;
-                        value: _588.MsgRetire;
+                        value: _656.MsgRetire;
                     };
-                    cancel(value: _588.MsgCancel): {
+                    cancel(value: _656.MsgCancel): {
                         typeUrl: string;
-                        value: _588.MsgCancel;
+                        value: _656.MsgCancel;
                     };
-                    updateClassAdmin(value: _588.MsgUpdateClassAdmin): {
+                    updateClassAdmin(value: _656.MsgUpdateClassAdmin): {
                         typeUrl: string;
-                        value: _588.MsgUpdateClassAdmin;
+                        value: _656.MsgUpdateClassAdmin;
                     };
-                    updateClassIssuers(value: _588.MsgUpdateClassIssuers): {
+                    updateClassIssuers(value: _656.MsgUpdateClassIssuers): {
                         typeUrl: string;
-                        value: _588.MsgUpdateClassIssuers;
+                        value: _656.MsgUpdateClassIssuers;
                     };
-                    updateClassMetadata(value: _588.MsgUpdateClassMetadata): {
+                    updateClassMetadata(value: _656.MsgUpdateClassMetadata): {
                         typeUrl: string;
-                        value: _588.MsgUpdateClassMetadata;
+                        value: _656.MsgUpdateClassMetadata;
                     };
-                    updateProjectAdmin(value: _588.MsgUpdateProjectAdmin): {
+                    updateProjectAdmin(value: _656.MsgUpdateProjectAdmin): {
                         typeUrl: string;
-                        value: _588.MsgUpdateProjectAdmin;
+                        value: _656.MsgUpdateProjectAdmin;
                     };
-                    updateProjectMetadata(value: _588.MsgUpdateProjectMetadata): {
+                    updateProjectMetadata(value: _656.MsgUpdateProjectMetadata): {
                         typeUrl: string;
-                        value: _588.MsgUpdateProjectMetadata;
+                        value: _656.MsgUpdateProjectMetadata;
                     };
                 };
             };
             AminoConverter: {
                 "/regen.ecocredit.v1.MsgCreateClass": {
                     aminoType: string;
-                    toAmino: ({ admin, issuers, metadata, creditTypeAbbrev, fee }: _588.MsgCreateClass) => {
+                    toAmino: ({ admin, issuers, metadata, creditTypeAbbrev, fee }: _656.MsgCreateClass) => {
                         admin: string;
                         issuers: string[];
                         metadata: string;
@@ -3134,11 +3134,11 @@ export declare namespace regen {
                             denom: string;
                             amount: string;
                         };
-                    }) => _588.MsgCreateClass;
+                    }) => _656.MsgCreateClass;
                 };
                 "/regen.ecocredit.v1.MsgCreateProject": {
                     aminoType: string;
-                    toAmino: ({ issuer, classId, metadata, jurisdiction, referenceId }: _588.MsgCreateProject) => {
+                    toAmino: ({ issuer, classId, metadata, jurisdiction, referenceId }: _656.MsgCreateProject) => {
                         issuer: string;
                         class_id: string;
                         metadata: string;
@@ -3151,11 +3151,11 @@ export declare namespace regen {
                         metadata: string;
                         jurisdiction: string;
                         reference_id: string;
-                    }) => _588.MsgCreateProject;
+                    }) => _656.MsgCreateProject;
                 };
                 "/regen.ecocredit.v1.MsgCreateBatch": {
                     aminoType: string;
-                    toAmino: ({ issuer, projectId, issuance, metadata, startDate, endDate, open, originTx, note }: _588.MsgCreateBatch) => {
+                    toAmino: ({ issuer, projectId, issuance, metadata, startDate, endDate, open, originTx, note }: _656.MsgCreateBatch) => {
                         issuer: string;
                         project_id: string;
                         issuance: {
@@ -3204,11 +3204,11 @@ export declare namespace regen {
                             id: string;
                         };
                         note: string;
-                    }) => _588.MsgCreateBatch;
+                    }) => _656.MsgCreateBatch;
                 };
                 "/regen.ecocredit.v1.MsgMintBatchCredits": {
                     aminoType: string;
-                    toAmino: ({ issuer, batchDenom, issuance, originTx, note }: _588.MsgMintBatchCredits) => {
+                    toAmino: ({ issuer, batchDenom, issuance, originTx, note }: _656.MsgMintBatchCredits) => {
                         issuer: string;
                         batch_denom: string;
                         issuance: {
@@ -3237,22 +3237,22 @@ export declare namespace regen {
                             id: string;
                         };
                         note: string;
-                    }) => _588.MsgMintBatchCredits;
+                    }) => _656.MsgMintBatchCredits;
                 };
                 "/regen.ecocredit.v1.MsgSealBatch": {
                     aminoType: string;
-                    toAmino: ({ issuer, batchDenom }: _588.MsgSealBatch) => {
+                    toAmino: ({ issuer, batchDenom }: _656.MsgSealBatch) => {
                         issuer: string;
                         batch_denom: string;
                     };
                     fromAmino: ({ issuer, batch_denom }: {
                         issuer: string;
                         batch_denom: string;
-                    }) => _588.MsgSealBatch;
+                    }) => _656.MsgSealBatch;
                 };
                 "/regen.ecocredit.v1.MsgSend": {
                     aminoType: string;
-                    toAmino: ({ sender, recipient, credits }: _588.MsgSend) => {
+                    toAmino: ({ sender, recipient, credits }: _656.MsgSend) => {
                         sender: string;
                         recipient: string;
                         credits: {
@@ -3271,11 +3271,11 @@ export declare namespace regen {
                             retired_amount: string;
                             retirement_jurisdiction: string;
                         }[];
-                    }) => _588.MsgSend;
+                    }) => _656.MsgSend;
                 };
                 "/regen.ecocredit.v1.MsgRetire": {
                     aminoType: string;
-                    toAmino: ({ holder, credits, jurisdiction }: _588.MsgRetire) => {
+                    toAmino: ({ holder, credits, jurisdiction }: _656.MsgRetire) => {
                         holder: string;
                         credits: {
                             batch_denom: string;
@@ -3290,11 +3290,11 @@ export declare namespace regen {
                             amount: string;
                         }[];
                         jurisdiction: string;
-                    }) => _588.MsgRetire;
+                    }) => _656.MsgRetire;
                 };
                 "/regen.ecocredit.v1.MsgCancel": {
                     aminoType: string;
-                    toAmino: ({ holder, credits }: _588.MsgCancel) => {
+                    toAmino: ({ holder, credits }: _656.MsgCancel) => {
                         holder: string;
                         credits: {
                             batch_denom: string;
@@ -3307,11 +3307,11 @@ export declare namespace regen {
                             batch_denom: string;
                             amount: string;
                         }[];
-                    }) => _588.MsgCancel;
+                    }) => _656.MsgCancel;
                 };
                 "/regen.ecocredit.v1.MsgUpdateClassAdmin": {
                     aminoType: string;
-                    toAmino: ({ admin, classId, newAdmin }: _588.MsgUpdateClassAdmin) => {
+                    toAmino: ({ admin, classId, newAdmin }: _656.MsgUpdateClassAdmin) => {
                         admin: string;
                         class_id: string;
                         new_admin: string;
@@ -3320,11 +3320,11 @@ export declare namespace regen {
                         admin: string;
                         class_id: string;
                         new_admin: string;
-                    }) => _588.MsgUpdateClassAdmin;
+                    }) => _656.MsgUpdateClassAdmin;
                 };
                 "/regen.ecocredit.v1.MsgUpdateClassIssuers": {
                     aminoType: string;
-                    toAmino: ({ admin, classId, addIssuers, removeIssuers }: _588.MsgUpdateClassIssuers) => {
+                    toAmino: ({ admin, classId, addIssuers, removeIssuers }: _656.MsgUpdateClassIssuers) => {
                         admin: string;
                         class_id: string;
                         add_issuers: string[];
@@ -3335,11 +3335,11 @@ export declare namespace regen {
                         class_id: string;
                         add_issuers: string[];
                         remove_issuers: string[];
-                    }) => _588.MsgUpdateClassIssuers;
+                    }) => _656.MsgUpdateClassIssuers;
                 };
                 "/regen.ecocredit.v1.MsgUpdateClassMetadata": {
                     aminoType: string;
-                    toAmino: ({ admin, classId, metadata }: _588.MsgUpdateClassMetadata) => {
+                    toAmino: ({ admin, classId, metadata }: _656.MsgUpdateClassMetadata) => {
                         admin: string;
                         class_id: string;
                         metadata: string;
@@ -3348,11 +3348,11 @@ export declare namespace regen {
                         admin: string;
                         class_id: string;
                         metadata: string;
-                    }) => _588.MsgUpdateClassMetadata;
+                    }) => _656.MsgUpdateClassMetadata;
                 };
                 "/regen.ecocredit.v1.MsgUpdateProjectAdmin": {
                     aminoType: string;
-                    toAmino: ({ admin, newAdmin, projectId }: _588.MsgUpdateProjectAdmin) => {
+                    toAmino: ({ admin, newAdmin, projectId }: _656.MsgUpdateProjectAdmin) => {
                         admin: string;
                         new_admin: string;
                         project_id: string;
@@ -3361,11 +3361,11 @@ export declare namespace regen {
                         admin: string;
                         new_admin: string;
                         project_id: string;
-                    }) => _588.MsgUpdateProjectAdmin;
+                    }) => _656.MsgUpdateProjectAdmin;
                 };
                 "/regen.ecocredit.v1.MsgUpdateProjectMetadata": {
                     aminoType: string;
-                    toAmino: ({ admin, newMetadata, projectId }: _588.MsgUpdateProjectMetadata) => {
+                    toAmino: ({ admin, newMetadata, projectId }: _656.MsgUpdateProjectMetadata) => {
                         admin: string;
                         new_metadata: string;
                         project_id: string;
@@ -3374,14 +3374,14 @@ export declare namespace regen {
                         admin: string;
                         new_metadata: string;
                         project_id: string;
-                    }) => _588.MsgUpdateProjectMetadata;
+                    }) => _656.MsgUpdateProjectMetadata;
                 };
             };
             Params: {
-                encode(message: _589.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _589.Params;
-                fromJSON(object: any): _589.Params;
-                toJSON(message: _589.Params): unknown;
+                encode(message: _657.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _657.Params;
+                fromJSON(object: any): _657.Params;
+                toJSON(message: _657.Params): unknown;
                 fromPartial(object: {
                     creditClassFee?: {
                         denom?: string;
@@ -3393,23 +3393,23 @@ export declare namespace regen {
                     }[];
                     allowedClassCreators?: string[];
                     allowlistEnabled?: boolean;
-                }): _589.Params;
+                }): _657.Params;
             };
             OriginTx: {
-                encode(message: _589.OriginTx, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _589.OriginTx;
-                fromJSON(object: any): _589.OriginTx;
-                toJSON(message: _589.OriginTx): unknown;
+                encode(message: _657.OriginTx, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _657.OriginTx;
+                fromJSON(object: any): _657.OriginTx;
+                toJSON(message: _657.OriginTx): unknown;
                 fromPartial(object: {
                     typ?: string;
                     id?: string;
-                }): _589.OriginTx;
+                }): _657.OriginTx;
             };
             CreditTypeProposal: {
-                encode(message: _589.CreditTypeProposal, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _589.CreditTypeProposal;
-                fromJSON(object: any): _589.CreditTypeProposal;
-                toJSON(message: _589.CreditTypeProposal): unknown;
+                encode(message: _657.CreditTypeProposal, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _657.CreditTypeProposal;
+                fromJSON(object: any): _657.CreditTypeProposal;
+                toJSON(message: _657.CreditTypeProposal): unknown;
                 fromPartial(object: {
                     title?: string;
                     description?: string;
@@ -3419,13 +3419,13 @@ export declare namespace regen {
                         unit?: string;
                         precision?: number;
                     };
-                }): _589.CreditTypeProposal;
+                }): _657.CreditTypeProposal;
             };
             MsgCreateClass: {
-                encode(message: _588.MsgCreateClass, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgCreateClass;
-                fromJSON(object: any): _588.MsgCreateClass;
-                toJSON(message: _588.MsgCreateClass): unknown;
+                encode(message: _656.MsgCreateClass, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgCreateClass;
+                fromJSON(object: any): _656.MsgCreateClass;
+                toJSON(message: _656.MsgCreateClass): unknown;
                 fromPartial(object: {
                     admin?: string;
                     issuers?: string[];
@@ -3435,44 +3435,44 @@ export declare namespace regen {
                         denom?: string;
                         amount?: string;
                     };
-                }): _588.MsgCreateClass;
+                }): _656.MsgCreateClass;
             };
             MsgCreateClassResponse: {
-                encode(message: _588.MsgCreateClassResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgCreateClassResponse;
-                fromJSON(object: any): _588.MsgCreateClassResponse;
-                toJSON(message: _588.MsgCreateClassResponse): unknown;
+                encode(message: _656.MsgCreateClassResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgCreateClassResponse;
+                fromJSON(object: any): _656.MsgCreateClassResponse;
+                toJSON(message: _656.MsgCreateClassResponse): unknown;
                 fromPartial(object: {
                     classId?: string;
-                }): _588.MsgCreateClassResponse;
+                }): _656.MsgCreateClassResponse;
             };
             MsgCreateProject: {
-                encode(message: _588.MsgCreateProject, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgCreateProject;
-                fromJSON(object: any): _588.MsgCreateProject;
-                toJSON(message: _588.MsgCreateProject): unknown;
+                encode(message: _656.MsgCreateProject, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgCreateProject;
+                fromJSON(object: any): _656.MsgCreateProject;
+                toJSON(message: _656.MsgCreateProject): unknown;
                 fromPartial(object: {
                     issuer?: string;
                     classId?: string;
                     metadata?: string;
                     jurisdiction?: string;
                     referenceId?: string;
-                }): _588.MsgCreateProject;
+                }): _656.MsgCreateProject;
             };
             MsgCreateProjectResponse: {
-                encode(message: _588.MsgCreateProjectResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgCreateProjectResponse;
-                fromJSON(object: any): _588.MsgCreateProjectResponse;
-                toJSON(message: _588.MsgCreateProjectResponse): unknown;
+                encode(message: _656.MsgCreateProjectResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgCreateProjectResponse;
+                fromJSON(object: any): _656.MsgCreateProjectResponse;
+                toJSON(message: _656.MsgCreateProjectResponse): unknown;
                 fromPartial(object: {
                     projectId?: string;
-                }): _588.MsgCreateProjectResponse;
+                }): _656.MsgCreateProjectResponse;
             };
             MsgCreateBatch: {
-                encode(message: _588.MsgCreateBatch, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgCreateBatch;
-                fromJSON(object: any): _588.MsgCreateBatch;
-                toJSON(message: _588.MsgCreateBatch): unknown;
+                encode(message: _656.MsgCreateBatch, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgCreateBatch;
+                fromJSON(object: any): _656.MsgCreateBatch;
+                toJSON(message: _656.MsgCreateBatch): unknown;
                 fromPartial(object: {
                     issuer?: string;
                     projectId?: string;
@@ -3497,34 +3497,34 @@ export declare namespace regen {
                         id?: string;
                     };
                     note?: string;
-                }): _588.MsgCreateBatch;
+                }): _656.MsgCreateBatch;
             };
             BatchIssuance: {
-                encode(message: _588.BatchIssuance, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.BatchIssuance;
-                fromJSON(object: any): _588.BatchIssuance;
-                toJSON(message: _588.BatchIssuance): unknown;
+                encode(message: _656.BatchIssuance, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.BatchIssuance;
+                fromJSON(object: any): _656.BatchIssuance;
+                toJSON(message: _656.BatchIssuance): unknown;
                 fromPartial(object: {
                     recipient?: string;
                     tradableAmount?: string;
                     retiredAmount?: string;
                     retirementJurisdiction?: string;
-                }): _588.BatchIssuance;
+                }): _656.BatchIssuance;
             };
             MsgCreateBatchResponse: {
-                encode(message: _588.MsgCreateBatchResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgCreateBatchResponse;
-                fromJSON(object: any): _588.MsgCreateBatchResponse;
-                toJSON(message: _588.MsgCreateBatchResponse): unknown;
+                encode(message: _656.MsgCreateBatchResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgCreateBatchResponse;
+                fromJSON(object: any): _656.MsgCreateBatchResponse;
+                toJSON(message: _656.MsgCreateBatchResponse): unknown;
                 fromPartial(object: {
                     batchDenom?: string;
-                }): _588.MsgCreateBatchResponse;
+                }): _656.MsgCreateBatchResponse;
             };
             MsgMintBatchCredits: {
-                encode(message: _588.MsgMintBatchCredits, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgMintBatchCredits;
-                fromJSON(object: any): _588.MsgMintBatchCredits;
-                toJSON(message: _588.MsgMintBatchCredits): unknown;
+                encode(message: _656.MsgMintBatchCredits, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgMintBatchCredits;
+                fromJSON(object: any): _656.MsgMintBatchCredits;
+                toJSON(message: _656.MsgMintBatchCredits): unknown;
                 fromPartial(object: {
                     issuer?: string;
                     batchDenom?: string;
@@ -3539,37 +3539,37 @@ export declare namespace regen {
                         id?: string;
                     };
                     note?: string;
-                }): _588.MsgMintBatchCredits;
+                }): _656.MsgMintBatchCredits;
             };
             MsgSealBatch: {
-                encode(message: _588.MsgSealBatch, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgSealBatch;
-                fromJSON(object: any): _588.MsgSealBatch;
-                toJSON(message: _588.MsgSealBatch): unknown;
+                encode(message: _656.MsgSealBatch, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgSealBatch;
+                fromJSON(object: any): _656.MsgSealBatch;
+                toJSON(message: _656.MsgSealBatch): unknown;
                 fromPartial(object: {
                     issuer?: string;
                     batchDenom?: string;
-                }): _588.MsgSealBatch;
+                }): _656.MsgSealBatch;
             };
             MsgMintBatchCreditsResponse: {
-                encode(_: _588.MsgMintBatchCreditsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgMintBatchCreditsResponse;
-                fromJSON(_: any): _588.MsgMintBatchCreditsResponse;
-                toJSON(_: _588.MsgMintBatchCreditsResponse): unknown;
-                fromPartial(_: {}): _588.MsgMintBatchCreditsResponse;
+                encode(_: _656.MsgMintBatchCreditsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgMintBatchCreditsResponse;
+                fromJSON(_: any): _656.MsgMintBatchCreditsResponse;
+                toJSON(_: _656.MsgMintBatchCreditsResponse): unknown;
+                fromPartial(_: {}): _656.MsgMintBatchCreditsResponse;
             };
             MsgSealBatchResponse: {
-                encode(_: _588.MsgSealBatchResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgSealBatchResponse;
-                fromJSON(_: any): _588.MsgSealBatchResponse;
-                toJSON(_: _588.MsgSealBatchResponse): unknown;
-                fromPartial(_: {}): _588.MsgSealBatchResponse;
+                encode(_: _656.MsgSealBatchResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgSealBatchResponse;
+                fromJSON(_: any): _656.MsgSealBatchResponse;
+                toJSON(_: _656.MsgSealBatchResponse): unknown;
+                fromPartial(_: {}): _656.MsgSealBatchResponse;
             };
             MsgSend: {
-                encode(message: _588.MsgSend, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgSend;
-                fromJSON(object: any): _588.MsgSend;
-                toJSON(message: _588.MsgSend): unknown;
+                encode(message: _656.MsgSend, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgSend;
+                fromJSON(object: any): _656.MsgSend;
+                toJSON(message: _656.MsgSend): unknown;
                 fromPartial(object: {
                     sender?: string;
                     recipient?: string;
@@ -3579,32 +3579,32 @@ export declare namespace regen {
                         retiredAmount?: string;
                         retirementJurisdiction?: string;
                     }[];
-                }): _588.MsgSend;
+                }): _656.MsgSend;
             };
             MsgSend_SendCredits: {
-                encode(message: _588.MsgSend_SendCredits, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgSend_SendCredits;
-                fromJSON(object: any): _588.MsgSend_SendCredits;
-                toJSON(message: _588.MsgSend_SendCredits): unknown;
+                encode(message: _656.MsgSend_SendCredits, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgSend_SendCredits;
+                fromJSON(object: any): _656.MsgSend_SendCredits;
+                toJSON(message: _656.MsgSend_SendCredits): unknown;
                 fromPartial(object: {
                     batchDenom?: string;
                     tradableAmount?: string;
                     retiredAmount?: string;
                     retirementJurisdiction?: string;
-                }): _588.MsgSend_SendCredits;
+                }): _656.MsgSend_SendCredits;
             };
             MsgSendResponse: {
-                encode(_: _588.MsgSendResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgSendResponse;
-                fromJSON(_: any): _588.MsgSendResponse;
-                toJSON(_: _588.MsgSendResponse): unknown;
-                fromPartial(_: {}): _588.MsgSendResponse;
+                encode(_: _656.MsgSendResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgSendResponse;
+                fromJSON(_: any): _656.MsgSendResponse;
+                toJSON(_: _656.MsgSendResponse): unknown;
+                fromPartial(_: {}): _656.MsgSendResponse;
             };
             MsgRetire: {
-                encode(message: _588.MsgRetire, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgRetire;
-                fromJSON(object: any): _588.MsgRetire;
-                toJSON(message: _588.MsgRetire): unknown;
+                encode(message: _656.MsgRetire, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgRetire;
+                fromJSON(object: any): _656.MsgRetire;
+                toJSON(message: _656.MsgRetire): unknown;
                 fromPartial(object: {
                     holder?: string;
                     credits?: {
@@ -3612,186 +3612,186 @@ export declare namespace regen {
                         amount?: string;
                     }[];
                     jurisdiction?: string;
-                }): _588.MsgRetire;
+                }): _656.MsgRetire;
             };
             MsgRetire_RetireCredits: {
-                encode(message: _588.MsgRetire_RetireCredits, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgRetire_RetireCredits;
-                fromJSON(object: any): _588.MsgRetire_RetireCredits;
-                toJSON(message: _588.MsgRetire_RetireCredits): unknown;
+                encode(message: _656.MsgRetire_RetireCredits, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgRetire_RetireCredits;
+                fromJSON(object: any): _656.MsgRetire_RetireCredits;
+                toJSON(message: _656.MsgRetire_RetireCredits): unknown;
                 fromPartial(object: {
                     batchDenom?: string;
                     amount?: string;
-                }): _588.MsgRetire_RetireCredits;
+                }): _656.MsgRetire_RetireCredits;
             };
             MsgRetireResponse: {
-                encode(_: _588.MsgRetireResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgRetireResponse;
-                fromJSON(_: any): _588.MsgRetireResponse;
-                toJSON(_: _588.MsgRetireResponse): unknown;
-                fromPartial(_: {}): _588.MsgRetireResponse;
+                encode(_: _656.MsgRetireResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgRetireResponse;
+                fromJSON(_: any): _656.MsgRetireResponse;
+                toJSON(_: _656.MsgRetireResponse): unknown;
+                fromPartial(_: {}): _656.MsgRetireResponse;
             };
             MsgCancel: {
-                encode(message: _588.MsgCancel, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgCancel;
-                fromJSON(object: any): _588.MsgCancel;
-                toJSON(message: _588.MsgCancel): unknown;
+                encode(message: _656.MsgCancel, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgCancel;
+                fromJSON(object: any): _656.MsgCancel;
+                toJSON(message: _656.MsgCancel): unknown;
                 fromPartial(object: {
                     holder?: string;
                     credits?: {
                         batchDenom?: string;
                         amount?: string;
                     }[];
-                }): _588.MsgCancel;
+                }): _656.MsgCancel;
             };
             MsgCancel_CancelCredits: {
-                encode(message: _588.MsgCancel_CancelCredits, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgCancel_CancelCredits;
-                fromJSON(object: any): _588.MsgCancel_CancelCredits;
-                toJSON(message: _588.MsgCancel_CancelCredits): unknown;
+                encode(message: _656.MsgCancel_CancelCredits, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgCancel_CancelCredits;
+                fromJSON(object: any): _656.MsgCancel_CancelCredits;
+                toJSON(message: _656.MsgCancel_CancelCredits): unknown;
                 fromPartial(object: {
                     batchDenom?: string;
                     amount?: string;
-                }): _588.MsgCancel_CancelCredits;
+                }): _656.MsgCancel_CancelCredits;
             };
             MsgCancelResponse: {
-                encode(_: _588.MsgCancelResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgCancelResponse;
-                fromJSON(_: any): _588.MsgCancelResponse;
-                toJSON(_: _588.MsgCancelResponse): unknown;
-                fromPartial(_: {}): _588.MsgCancelResponse;
+                encode(_: _656.MsgCancelResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgCancelResponse;
+                fromJSON(_: any): _656.MsgCancelResponse;
+                toJSON(_: _656.MsgCancelResponse): unknown;
+                fromPartial(_: {}): _656.MsgCancelResponse;
             };
             MsgUpdateClassAdmin: {
-                encode(message: _588.MsgUpdateClassAdmin, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgUpdateClassAdmin;
-                fromJSON(object: any): _588.MsgUpdateClassAdmin;
-                toJSON(message: _588.MsgUpdateClassAdmin): unknown;
+                encode(message: _656.MsgUpdateClassAdmin, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgUpdateClassAdmin;
+                fromJSON(object: any): _656.MsgUpdateClassAdmin;
+                toJSON(message: _656.MsgUpdateClassAdmin): unknown;
                 fromPartial(object: {
                     admin?: string;
                     classId?: string;
                     newAdmin?: string;
-                }): _588.MsgUpdateClassAdmin;
+                }): _656.MsgUpdateClassAdmin;
             };
             MsgUpdateClassAdminResponse: {
-                encode(_: _588.MsgUpdateClassAdminResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgUpdateClassAdminResponse;
-                fromJSON(_: any): _588.MsgUpdateClassAdminResponse;
-                toJSON(_: _588.MsgUpdateClassAdminResponse): unknown;
-                fromPartial(_: {}): _588.MsgUpdateClassAdminResponse;
+                encode(_: _656.MsgUpdateClassAdminResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgUpdateClassAdminResponse;
+                fromJSON(_: any): _656.MsgUpdateClassAdminResponse;
+                toJSON(_: _656.MsgUpdateClassAdminResponse): unknown;
+                fromPartial(_: {}): _656.MsgUpdateClassAdminResponse;
             };
             MsgUpdateClassIssuers: {
-                encode(message: _588.MsgUpdateClassIssuers, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgUpdateClassIssuers;
-                fromJSON(object: any): _588.MsgUpdateClassIssuers;
-                toJSON(message: _588.MsgUpdateClassIssuers): unknown;
+                encode(message: _656.MsgUpdateClassIssuers, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgUpdateClassIssuers;
+                fromJSON(object: any): _656.MsgUpdateClassIssuers;
+                toJSON(message: _656.MsgUpdateClassIssuers): unknown;
                 fromPartial(object: {
                     admin?: string;
                     classId?: string;
                     addIssuers?: string[];
                     removeIssuers?: string[];
-                }): _588.MsgUpdateClassIssuers;
+                }): _656.MsgUpdateClassIssuers;
             };
             MsgUpdateClassIssuersResponse: {
-                encode(_: _588.MsgUpdateClassIssuersResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgUpdateClassIssuersResponse;
-                fromJSON(_: any): _588.MsgUpdateClassIssuersResponse;
-                toJSON(_: _588.MsgUpdateClassIssuersResponse): unknown;
-                fromPartial(_: {}): _588.MsgUpdateClassIssuersResponse;
+                encode(_: _656.MsgUpdateClassIssuersResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgUpdateClassIssuersResponse;
+                fromJSON(_: any): _656.MsgUpdateClassIssuersResponse;
+                toJSON(_: _656.MsgUpdateClassIssuersResponse): unknown;
+                fromPartial(_: {}): _656.MsgUpdateClassIssuersResponse;
             };
             MsgUpdateClassMetadata: {
-                encode(message: _588.MsgUpdateClassMetadata, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgUpdateClassMetadata;
-                fromJSON(object: any): _588.MsgUpdateClassMetadata;
-                toJSON(message: _588.MsgUpdateClassMetadata): unknown;
+                encode(message: _656.MsgUpdateClassMetadata, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgUpdateClassMetadata;
+                fromJSON(object: any): _656.MsgUpdateClassMetadata;
+                toJSON(message: _656.MsgUpdateClassMetadata): unknown;
                 fromPartial(object: {
                     admin?: string;
                     classId?: string;
                     metadata?: string;
-                }): _588.MsgUpdateClassMetadata;
+                }): _656.MsgUpdateClassMetadata;
             };
             MsgUpdateClassMetadataResponse: {
-                encode(_: _588.MsgUpdateClassMetadataResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgUpdateClassMetadataResponse;
-                fromJSON(_: any): _588.MsgUpdateClassMetadataResponse;
-                toJSON(_: _588.MsgUpdateClassMetadataResponse): unknown;
-                fromPartial(_: {}): _588.MsgUpdateClassMetadataResponse;
+                encode(_: _656.MsgUpdateClassMetadataResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgUpdateClassMetadataResponse;
+                fromJSON(_: any): _656.MsgUpdateClassMetadataResponse;
+                toJSON(_: _656.MsgUpdateClassMetadataResponse): unknown;
+                fromPartial(_: {}): _656.MsgUpdateClassMetadataResponse;
             };
             MsgUpdateProjectAdmin: {
-                encode(message: _588.MsgUpdateProjectAdmin, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgUpdateProjectAdmin;
-                fromJSON(object: any): _588.MsgUpdateProjectAdmin;
-                toJSON(message: _588.MsgUpdateProjectAdmin): unknown;
+                encode(message: _656.MsgUpdateProjectAdmin, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgUpdateProjectAdmin;
+                fromJSON(object: any): _656.MsgUpdateProjectAdmin;
+                toJSON(message: _656.MsgUpdateProjectAdmin): unknown;
                 fromPartial(object: {
                     admin?: string;
                     newAdmin?: string;
                     projectId?: string;
-                }): _588.MsgUpdateProjectAdmin;
+                }): _656.MsgUpdateProjectAdmin;
             };
             MsgUpdateProjectAdminResponse: {
-                encode(_: _588.MsgUpdateProjectAdminResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgUpdateProjectAdminResponse;
-                fromJSON(_: any): _588.MsgUpdateProjectAdminResponse;
-                toJSON(_: _588.MsgUpdateProjectAdminResponse): unknown;
-                fromPartial(_: {}): _588.MsgUpdateProjectAdminResponse;
+                encode(_: _656.MsgUpdateProjectAdminResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgUpdateProjectAdminResponse;
+                fromJSON(_: any): _656.MsgUpdateProjectAdminResponse;
+                toJSON(_: _656.MsgUpdateProjectAdminResponse): unknown;
+                fromPartial(_: {}): _656.MsgUpdateProjectAdminResponse;
             };
             MsgUpdateProjectMetadata: {
-                encode(message: _588.MsgUpdateProjectMetadata, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgUpdateProjectMetadata;
-                fromJSON(object: any): _588.MsgUpdateProjectMetadata;
-                toJSON(message: _588.MsgUpdateProjectMetadata): unknown;
+                encode(message: _656.MsgUpdateProjectMetadata, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgUpdateProjectMetadata;
+                fromJSON(object: any): _656.MsgUpdateProjectMetadata;
+                toJSON(message: _656.MsgUpdateProjectMetadata): unknown;
                 fromPartial(object: {
                     admin?: string;
                     newMetadata?: string;
                     projectId?: string;
-                }): _588.MsgUpdateProjectMetadata;
+                }): _656.MsgUpdateProjectMetadata;
             };
             MsgUpdateProjectMetadataResponse: {
-                encode(_: _588.MsgUpdateProjectMetadataResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _588.MsgUpdateProjectMetadataResponse;
-                fromJSON(_: any): _588.MsgUpdateProjectMetadataResponse;
-                toJSON(_: _588.MsgUpdateProjectMetadataResponse): unknown;
-                fromPartial(_: {}): _588.MsgUpdateProjectMetadataResponse;
+                encode(_: _656.MsgUpdateProjectMetadataResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _656.MsgUpdateProjectMetadataResponse;
+                fromJSON(_: any): _656.MsgUpdateProjectMetadataResponse;
+                toJSON(_: _656.MsgUpdateProjectMetadataResponse): unknown;
+                fromPartial(_: {}): _656.MsgUpdateProjectMetadataResponse;
             };
             CreditType: {
-                encode(message: _587.CreditType, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _587.CreditType;
-                fromJSON(object: any): _587.CreditType;
-                toJSON(message: _587.CreditType): unknown;
+                encode(message: _655.CreditType, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _655.CreditType;
+                fromJSON(object: any): _655.CreditType;
+                toJSON(message: _655.CreditType): unknown;
                 fromPartial(object: {
                     abbreviation?: string;
                     name?: string;
                     unit?: string;
                     precision?: number;
-                }): _587.CreditType;
+                }): _655.CreditType;
             };
             Class: {
-                encode(message: _587.Class, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _587.Class;
-                fromJSON(object: any): _587.Class;
-                toJSON(message: _587.Class): unknown;
+                encode(message: _655.Class, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _655.Class;
+                fromJSON(object: any): _655.Class;
+                toJSON(message: _655.Class): unknown;
                 fromPartial(object: {
                     key?: any;
                     id?: string;
                     admin?: Uint8Array;
                     metadata?: string;
                     creditTypeAbbrev?: string;
-                }): _587.Class;
+                }): _655.Class;
             };
             ClassIssuer: {
-                encode(message: _587.ClassIssuer, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _587.ClassIssuer;
-                fromJSON(object: any): _587.ClassIssuer;
-                toJSON(message: _587.ClassIssuer): unknown;
+                encode(message: _655.ClassIssuer, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _655.ClassIssuer;
+                fromJSON(object: any): _655.ClassIssuer;
+                toJSON(message: _655.ClassIssuer): unknown;
                 fromPartial(object: {
                     classKey?: any;
                     issuer?: Uint8Array;
-                }): _587.ClassIssuer;
+                }): _655.ClassIssuer;
             };
             Project: {
-                encode(message: _587.Project, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _587.Project;
-                fromJSON(object: any): _587.Project;
-                toJSON(message: _587.Project): unknown;
+                encode(message: _655.Project, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _655.Project;
+                fromJSON(object: any): _655.Project;
+                toJSON(message: _655.Project): unknown;
                 fromPartial(object: {
                     key?: any;
                     id?: string;
@@ -3800,13 +3800,13 @@ export declare namespace regen {
                     jurisdiction?: string;
                     metadata?: string;
                     referenceId?: string;
-                }): _587.Project;
+                }): _655.Project;
             };
             Batch: {
-                encode(message: _587.Batch, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _587.Batch;
-                fromJSON(object: any): _587.Batch;
-                toJSON(message: _587.Batch): unknown;
+                encode(message: _655.Batch, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _655.Batch;
+                fromJSON(object: any): _655.Batch;
+                toJSON(message: _655.Batch): unknown;
                 fromPartial(object: {
                     key?: any;
                     issuer?: Uint8Array;
@@ -3826,80 +3826,80 @@ export declare namespace regen {
                         nanos?: number;
                     };
                     open?: boolean;
-                }): _587.Batch;
+                }): _655.Batch;
             };
             ClassSequence: {
-                encode(message: _587.ClassSequence, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _587.ClassSequence;
-                fromJSON(object: any): _587.ClassSequence;
-                toJSON(message: _587.ClassSequence): unknown;
+                encode(message: _655.ClassSequence, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _655.ClassSequence;
+                fromJSON(object: any): _655.ClassSequence;
+                toJSON(message: _655.ClassSequence): unknown;
                 fromPartial(object: {
                     creditTypeAbbrev?: string;
                     nextSequence?: any;
-                }): _587.ClassSequence;
+                }): _655.ClassSequence;
             };
             ProjectSequence: {
-                encode(message: _587.ProjectSequence, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _587.ProjectSequence;
-                fromJSON(object: any): _587.ProjectSequence;
-                toJSON(message: _587.ProjectSequence): unknown;
+                encode(message: _655.ProjectSequence, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _655.ProjectSequence;
+                fromJSON(object: any): _655.ProjectSequence;
+                toJSON(message: _655.ProjectSequence): unknown;
                 fromPartial(object: {
                     classKey?: any;
                     nextSequence?: any;
-                }): _587.ProjectSequence;
+                }): _655.ProjectSequence;
             };
             BatchSequence: {
-                encode(message: _587.BatchSequence, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _587.BatchSequence;
-                fromJSON(object: any): _587.BatchSequence;
-                toJSON(message: _587.BatchSequence): unknown;
+                encode(message: _655.BatchSequence, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _655.BatchSequence;
+                fromJSON(object: any): _655.BatchSequence;
+                toJSON(message: _655.BatchSequence): unknown;
                 fromPartial(object: {
                     projectKey?: any;
                     nextSequence?: any;
-                }): _587.BatchSequence;
+                }): _655.BatchSequence;
             };
             BatchBalance: {
-                encode(message: _587.BatchBalance, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _587.BatchBalance;
-                fromJSON(object: any): _587.BatchBalance;
-                toJSON(message: _587.BatchBalance): unknown;
+                encode(message: _655.BatchBalance, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _655.BatchBalance;
+                fromJSON(object: any): _655.BatchBalance;
+                toJSON(message: _655.BatchBalance): unknown;
                 fromPartial(object: {
                     batchKey?: any;
                     address?: Uint8Array;
                     tradable?: string;
                     retired?: string;
                     escrowed?: string;
-                }): _587.BatchBalance;
+                }): _655.BatchBalance;
             };
             BatchSupply: {
-                encode(message: _587.BatchSupply, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _587.BatchSupply;
-                fromJSON(object: any): _587.BatchSupply;
-                toJSON(message: _587.BatchSupply): unknown;
+                encode(message: _655.BatchSupply, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _655.BatchSupply;
+                fromJSON(object: any): _655.BatchSupply;
+                toJSON(message: _655.BatchSupply): unknown;
                 fromPartial(object: {
                     batchKey?: any;
                     tradableAmount?: string;
                     retiredAmount?: string;
                     cancelledAmount?: string;
-                }): _587.BatchSupply;
+                }): _655.BatchSupply;
             };
             BatchOrigTx: {
-                encode(message: _587.BatchOrigTx, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _587.BatchOrigTx;
-                fromJSON(object: any): _587.BatchOrigTx;
-                toJSON(message: _587.BatchOrigTx): unknown;
+                encode(message: _655.BatchOrigTx, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _655.BatchOrigTx;
+                fromJSON(object: any): _655.BatchOrigTx;
+                toJSON(message: _655.BatchOrigTx): unknown;
                 fromPartial(object: {
                     txId?: string;
                     typ?: string;
                     note?: string;
                     batchDenom?: string;
-                }): _587.BatchOrigTx;
+                }): _655.BatchOrigTx;
             };
             QueryClassesRequest: {
-                encode(message: _586.QueryClassesRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryClassesRequest;
-                fromJSON(object: any): _586.QueryClassesRequest;
-                toJSON(message: _586.QueryClassesRequest): unknown;
+                encode(message: _654.QueryClassesRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryClassesRequest;
+                fromJSON(object: any): _654.QueryClassesRequest;
+                toJSON(message: _654.QueryClassesRequest): unknown;
                 fromPartial(object: {
                     pagination?: {
                         key?: Uint8Array;
@@ -3908,13 +3908,13 @@ export declare namespace regen {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _586.QueryClassesRequest;
+                }): _654.QueryClassesRequest;
             };
             QueryClassesResponse: {
-                encode(message: _586.QueryClassesResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryClassesResponse;
-                fromJSON(object: any): _586.QueryClassesResponse;
-                toJSON(message: _586.QueryClassesResponse): unknown;
+                encode(message: _654.QueryClassesResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryClassesResponse;
+                fromJSON(object: any): _654.QueryClassesResponse;
+                toJSON(message: _654.QueryClassesResponse): unknown;
                 fromPartial(object: {
                     classes?: {
                         id?: string;
@@ -3926,13 +3926,13 @@ export declare namespace regen {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _586.QueryClassesResponse;
+                }): _654.QueryClassesResponse;
             };
             QueryClassesByAdminRequest: {
-                encode(message: _586.QueryClassesByAdminRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryClassesByAdminRequest;
-                fromJSON(object: any): _586.QueryClassesByAdminRequest;
-                toJSON(message: _586.QueryClassesByAdminRequest): unknown;
+                encode(message: _654.QueryClassesByAdminRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryClassesByAdminRequest;
+                fromJSON(object: any): _654.QueryClassesByAdminRequest;
+                toJSON(message: _654.QueryClassesByAdminRequest): unknown;
                 fromPartial(object: {
                     admin?: string;
                     pagination?: {
@@ -3942,13 +3942,13 @@ export declare namespace regen {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _586.QueryClassesByAdminRequest;
+                }): _654.QueryClassesByAdminRequest;
             };
             QueryClassesByAdminResponse: {
-                encode(message: _586.QueryClassesByAdminResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryClassesByAdminResponse;
-                fromJSON(object: any): _586.QueryClassesByAdminResponse;
-                toJSON(message: _586.QueryClassesByAdminResponse): unknown;
+                encode(message: _654.QueryClassesByAdminResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryClassesByAdminResponse;
+                fromJSON(object: any): _654.QueryClassesByAdminResponse;
+                toJSON(message: _654.QueryClassesByAdminResponse): unknown;
                 fromPartial(object: {
                     classes?: {
                         id?: string;
@@ -3960,22 +3960,22 @@ export declare namespace regen {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _586.QueryClassesByAdminResponse;
+                }): _654.QueryClassesByAdminResponse;
             };
             QueryClassRequest: {
-                encode(message: _586.QueryClassRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryClassRequest;
-                fromJSON(object: any): _586.QueryClassRequest;
-                toJSON(message: _586.QueryClassRequest): unknown;
+                encode(message: _654.QueryClassRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryClassRequest;
+                fromJSON(object: any): _654.QueryClassRequest;
+                toJSON(message: _654.QueryClassRequest): unknown;
                 fromPartial(object: {
                     classId?: string;
-                }): _586.QueryClassRequest;
+                }): _654.QueryClassRequest;
             };
             QueryClassResponse: {
-                encode(message: _586.QueryClassResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryClassResponse;
-                fromJSON(object: any): _586.QueryClassResponse;
-                toJSON(message: _586.QueryClassResponse): unknown;
+                encode(message: _654.QueryClassResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryClassResponse;
+                fromJSON(object: any): _654.QueryClassResponse;
+                toJSON(message: _654.QueryClassResponse): unknown;
                 fromPartial(object: {
                     class?: {
                         id?: string;
@@ -3983,13 +3983,13 @@ export declare namespace regen {
                         metadata?: string;
                         creditTypeAbbrev?: string;
                     };
-                }): _586.QueryClassResponse;
+                }): _654.QueryClassResponse;
             };
             QueryClassIssuersRequest: {
-                encode(message: _586.QueryClassIssuersRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryClassIssuersRequest;
-                fromJSON(object: any): _586.QueryClassIssuersRequest;
-                toJSON(message: _586.QueryClassIssuersRequest): unknown;
+                encode(message: _654.QueryClassIssuersRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryClassIssuersRequest;
+                fromJSON(object: any): _654.QueryClassIssuersRequest;
+                toJSON(message: _654.QueryClassIssuersRequest): unknown;
                 fromPartial(object: {
                     classId?: string;
                     pagination?: {
@@ -3999,26 +3999,26 @@ export declare namespace regen {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _586.QueryClassIssuersRequest;
+                }): _654.QueryClassIssuersRequest;
             };
             QueryClassIssuersResponse: {
-                encode(message: _586.QueryClassIssuersResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryClassIssuersResponse;
-                fromJSON(object: any): _586.QueryClassIssuersResponse;
-                toJSON(message: _586.QueryClassIssuersResponse): unknown;
+                encode(message: _654.QueryClassIssuersResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryClassIssuersResponse;
+                fromJSON(object: any): _654.QueryClassIssuersResponse;
+                toJSON(message: _654.QueryClassIssuersResponse): unknown;
                 fromPartial(object: {
                     issuers?: string[];
                     pagination?: {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _586.QueryClassIssuersResponse;
+                }): _654.QueryClassIssuersResponse;
             };
             QueryProjectsRequest: {
-                encode(message: _586.QueryProjectsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryProjectsRequest;
-                fromJSON(object: any): _586.QueryProjectsRequest;
-                toJSON(message: _586.QueryProjectsRequest): unknown;
+                encode(message: _654.QueryProjectsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryProjectsRequest;
+                fromJSON(object: any): _654.QueryProjectsRequest;
+                toJSON(message: _654.QueryProjectsRequest): unknown;
                 fromPartial(object: {
                     classId?: string;
                     pagination?: {
@@ -4028,13 +4028,13 @@ export declare namespace regen {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _586.QueryProjectsRequest;
+                }): _654.QueryProjectsRequest;
             };
             QueryProjectsResponse: {
-                encode(message: _586.QueryProjectsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryProjectsResponse;
-                fromJSON(object: any): _586.QueryProjectsResponse;
-                toJSON(message: _586.QueryProjectsResponse): unknown;
+                encode(message: _654.QueryProjectsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryProjectsResponse;
+                fromJSON(object: any): _654.QueryProjectsResponse;
+                toJSON(message: _654.QueryProjectsResponse): unknown;
                 fromPartial(object: {
                     projects?: {
                         id?: string;
@@ -4048,13 +4048,13 @@ export declare namespace regen {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _586.QueryProjectsResponse;
+                }): _654.QueryProjectsResponse;
             };
             QueryProjectsByReferenceIdRequest: {
-                encode(message: _586.QueryProjectsByReferenceIdRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryProjectsByReferenceIdRequest;
-                fromJSON(object: any): _586.QueryProjectsByReferenceIdRequest;
-                toJSON(message: _586.QueryProjectsByReferenceIdRequest): unknown;
+                encode(message: _654.QueryProjectsByReferenceIdRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryProjectsByReferenceIdRequest;
+                fromJSON(object: any): _654.QueryProjectsByReferenceIdRequest;
+                toJSON(message: _654.QueryProjectsByReferenceIdRequest): unknown;
                 fromPartial(object: {
                     referenceId?: string;
                     pagination?: {
@@ -4064,13 +4064,13 @@ export declare namespace regen {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _586.QueryProjectsByReferenceIdRequest;
+                }): _654.QueryProjectsByReferenceIdRequest;
             };
             QueryProjectsByReferenceIdResponse: {
-                encode(message: _586.QueryProjectsByReferenceIdResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryProjectsByReferenceIdResponse;
-                fromJSON(object: any): _586.QueryProjectsByReferenceIdResponse;
-                toJSON(message: _586.QueryProjectsByReferenceIdResponse): unknown;
+                encode(message: _654.QueryProjectsByReferenceIdResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryProjectsByReferenceIdResponse;
+                fromJSON(object: any): _654.QueryProjectsByReferenceIdResponse;
+                toJSON(message: _654.QueryProjectsByReferenceIdResponse): unknown;
                 fromPartial(object: {
                     projects?: {
                         id?: string;
@@ -4084,22 +4084,22 @@ export declare namespace regen {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _586.QueryProjectsByReferenceIdResponse;
+                }): _654.QueryProjectsByReferenceIdResponse;
             };
             QueryProjectRequest: {
-                encode(message: _586.QueryProjectRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryProjectRequest;
-                fromJSON(object: any): _586.QueryProjectRequest;
-                toJSON(message: _586.QueryProjectRequest): unknown;
+                encode(message: _654.QueryProjectRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryProjectRequest;
+                fromJSON(object: any): _654.QueryProjectRequest;
+                toJSON(message: _654.QueryProjectRequest): unknown;
                 fromPartial(object: {
                     projectId?: string;
-                }): _586.QueryProjectRequest;
+                }): _654.QueryProjectRequest;
             };
             QueryProjectResponse: {
-                encode(message: _586.QueryProjectResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryProjectResponse;
-                fromJSON(object: any): _586.QueryProjectResponse;
-                toJSON(message: _586.QueryProjectResponse): unknown;
+                encode(message: _654.QueryProjectResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryProjectResponse;
+                fromJSON(object: any): _654.QueryProjectResponse;
+                toJSON(message: _654.QueryProjectResponse): unknown;
                 fromPartial(object: {
                     project?: {
                         id?: string;
@@ -4109,13 +4109,13 @@ export declare namespace regen {
                         metadata?: string;
                         referenceId?: string;
                     };
-                }): _586.QueryProjectResponse;
+                }): _654.QueryProjectResponse;
             };
             QueryBatchesRequest: {
-                encode(message: _586.QueryBatchesRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryBatchesRequest;
-                fromJSON(object: any): _586.QueryBatchesRequest;
-                toJSON(message: _586.QueryBatchesRequest): unknown;
+                encode(message: _654.QueryBatchesRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryBatchesRequest;
+                fromJSON(object: any): _654.QueryBatchesRequest;
+                toJSON(message: _654.QueryBatchesRequest): unknown;
                 fromPartial(object: {
                     projectId?: string;
                     pagination?: {
@@ -4125,13 +4125,13 @@ export declare namespace regen {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _586.QueryBatchesRequest;
+                }): _654.QueryBatchesRequest;
             };
             QueryBatchesResponse: {
-                encode(message: _586.QueryBatchesResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryBatchesResponse;
-                fromJSON(object: any): _586.QueryBatchesResponse;
-                toJSON(message: _586.QueryBatchesResponse): unknown;
+                encode(message: _654.QueryBatchesResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryBatchesResponse;
+                fromJSON(object: any): _654.QueryBatchesResponse;
+                toJSON(message: _654.QueryBatchesResponse): unknown;
                 fromPartial(object: {
                     batches?: {
                         issuer?: string;
@@ -4156,13 +4156,13 @@ export declare namespace regen {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _586.QueryBatchesResponse;
+                }): _654.QueryBatchesResponse;
             };
             QueryBatchesByIssuerRequest: {
-                encode(message: _586.QueryBatchesByIssuerRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryBatchesByIssuerRequest;
-                fromJSON(object: any): _586.QueryBatchesByIssuerRequest;
-                toJSON(message: _586.QueryBatchesByIssuerRequest): unknown;
+                encode(message: _654.QueryBatchesByIssuerRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryBatchesByIssuerRequest;
+                fromJSON(object: any): _654.QueryBatchesByIssuerRequest;
+                toJSON(message: _654.QueryBatchesByIssuerRequest): unknown;
                 fromPartial(object: {
                     issuer?: string;
                     pagination?: {
@@ -4172,13 +4172,13 @@ export declare namespace regen {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _586.QueryBatchesByIssuerRequest;
+                }): _654.QueryBatchesByIssuerRequest;
             };
             QueryBatchesByIssuerResponse: {
-                encode(message: _586.QueryBatchesByIssuerResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryBatchesByIssuerResponse;
-                fromJSON(object: any): _586.QueryBatchesByIssuerResponse;
-                toJSON(message: _586.QueryBatchesByIssuerResponse): unknown;
+                encode(message: _654.QueryBatchesByIssuerResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryBatchesByIssuerResponse;
+                fromJSON(object: any): _654.QueryBatchesByIssuerResponse;
+                toJSON(message: _654.QueryBatchesByIssuerResponse): unknown;
                 fromPartial(object: {
                     batches?: {
                         issuer?: string;
@@ -4203,13 +4203,13 @@ export declare namespace regen {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _586.QueryBatchesByIssuerResponse;
+                }): _654.QueryBatchesByIssuerResponse;
             };
             QueryBatchesByClassRequest: {
-                encode(message: _586.QueryBatchesByClassRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryBatchesByClassRequest;
-                fromJSON(object: any): _586.QueryBatchesByClassRequest;
-                toJSON(message: _586.QueryBatchesByClassRequest): unknown;
+                encode(message: _654.QueryBatchesByClassRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryBatchesByClassRequest;
+                fromJSON(object: any): _654.QueryBatchesByClassRequest;
+                toJSON(message: _654.QueryBatchesByClassRequest): unknown;
                 fromPartial(object: {
                     classId?: string;
                     pagination?: {
@@ -4219,13 +4219,13 @@ export declare namespace regen {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _586.QueryBatchesByClassRequest;
+                }): _654.QueryBatchesByClassRequest;
             };
             QueryBatchesByClassResponse: {
-                encode(message: _586.QueryBatchesByClassResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryBatchesByClassResponse;
-                fromJSON(object: any): _586.QueryBatchesByClassResponse;
-                toJSON(message: _586.QueryBatchesByClassResponse): unknown;
+                encode(message: _654.QueryBatchesByClassResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryBatchesByClassResponse;
+                fromJSON(object: any): _654.QueryBatchesByClassResponse;
+                toJSON(message: _654.QueryBatchesByClassResponse): unknown;
                 fromPartial(object: {
                     batches?: {
                         issuer?: string;
@@ -4250,22 +4250,22 @@ export declare namespace regen {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _586.QueryBatchesByClassResponse;
+                }): _654.QueryBatchesByClassResponse;
             };
             QueryBatchRequest: {
-                encode(message: _586.QueryBatchRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryBatchRequest;
-                fromJSON(object: any): _586.QueryBatchRequest;
-                toJSON(message: _586.QueryBatchRequest): unknown;
+                encode(message: _654.QueryBatchRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryBatchRequest;
+                fromJSON(object: any): _654.QueryBatchRequest;
+                toJSON(message: _654.QueryBatchRequest): unknown;
                 fromPartial(object: {
                     batchDenom?: string;
-                }): _586.QueryBatchRequest;
+                }): _654.QueryBatchRequest;
             };
             QueryBatchResponse: {
-                encode(message: _586.QueryBatchResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryBatchResponse;
-                fromJSON(object: any): _586.QueryBatchResponse;
-                toJSON(message: _586.QueryBatchResponse): unknown;
+                encode(message: _654.QueryBatchResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryBatchResponse;
+                fromJSON(object: any): _654.QueryBatchResponse;
+                toJSON(message: _654.QueryBatchResponse): unknown;
                 fromPartial(object: {
                     batch?: {
                         issuer?: string;
@@ -4286,23 +4286,23 @@ export declare namespace regen {
                         };
                         open?: boolean;
                     };
-                }): _586.QueryBatchResponse;
+                }): _654.QueryBatchResponse;
             };
             QueryBalanceRequest: {
-                encode(message: _586.QueryBalanceRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryBalanceRequest;
-                fromJSON(object: any): _586.QueryBalanceRequest;
-                toJSON(message: _586.QueryBalanceRequest): unknown;
+                encode(message: _654.QueryBalanceRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryBalanceRequest;
+                fromJSON(object: any): _654.QueryBalanceRequest;
+                toJSON(message: _654.QueryBalanceRequest): unknown;
                 fromPartial(object: {
                     account?: string;
                     batchDenom?: string;
-                }): _586.QueryBalanceRequest;
+                }): _654.QueryBalanceRequest;
             };
             QueryBalanceResponse: {
-                encode(message: _586.QueryBalanceResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryBalanceResponse;
-                fromJSON(object: any): _586.QueryBalanceResponse;
-                toJSON(message: _586.QueryBalanceResponse): unknown;
+                encode(message: _654.QueryBalanceResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryBalanceResponse;
+                fromJSON(object: any): _654.QueryBalanceResponse;
+                toJSON(message: _654.QueryBalanceResponse): unknown;
                 fromPartial(object: {
                     balance?: {
                         address?: string;
@@ -4311,13 +4311,13 @@ export declare namespace regen {
                         retired?: string;
                         escrowed?: string;
                     };
-                }): _586.QueryBalanceResponse;
+                }): _654.QueryBalanceResponse;
             };
             QueryBalancesRequest: {
-                encode(message: _586.QueryBalancesRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryBalancesRequest;
-                fromJSON(object: any): _586.QueryBalancesRequest;
-                toJSON(message: _586.QueryBalancesRequest): unknown;
+                encode(message: _654.QueryBalancesRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryBalancesRequest;
+                fromJSON(object: any): _654.QueryBalancesRequest;
+                toJSON(message: _654.QueryBalancesRequest): unknown;
                 fromPartial(object: {
                     account?: string;
                     pagination?: {
@@ -4327,13 +4327,13 @@ export declare namespace regen {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _586.QueryBalancesRequest;
+                }): _654.QueryBalancesRequest;
             };
             QueryBalancesResponse: {
-                encode(message: _586.QueryBalancesResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryBalancesResponse;
-                fromJSON(object: any): _586.QueryBalancesResponse;
-                toJSON(message: _586.QueryBalancesResponse): unknown;
+                encode(message: _654.QueryBalancesResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryBalancesResponse;
+                fromJSON(object: any): _654.QueryBalancesResponse;
+                toJSON(message: _654.QueryBalancesResponse): unknown;
                 fromPartial(object: {
                     balances?: {
                         address?: string;
@@ -4346,40 +4346,40 @@ export declare namespace regen {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _586.QueryBalancesResponse;
+                }): _654.QueryBalancesResponse;
             };
             QuerySupplyRequest: {
-                encode(message: _586.QuerySupplyRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QuerySupplyRequest;
-                fromJSON(object: any): _586.QuerySupplyRequest;
-                toJSON(message: _586.QuerySupplyRequest): unknown;
+                encode(message: _654.QuerySupplyRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QuerySupplyRequest;
+                fromJSON(object: any): _654.QuerySupplyRequest;
+                toJSON(message: _654.QuerySupplyRequest): unknown;
                 fromPartial(object: {
                     batchDenom?: string;
-                }): _586.QuerySupplyRequest;
+                }): _654.QuerySupplyRequest;
             };
             QuerySupplyResponse: {
-                encode(message: _586.QuerySupplyResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QuerySupplyResponse;
-                fromJSON(object: any): _586.QuerySupplyResponse;
-                toJSON(message: _586.QuerySupplyResponse): unknown;
+                encode(message: _654.QuerySupplyResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QuerySupplyResponse;
+                fromJSON(object: any): _654.QuerySupplyResponse;
+                toJSON(message: _654.QuerySupplyResponse): unknown;
                 fromPartial(object: {
                     tradableSupply?: string;
                     retiredSupply?: string;
                     cancelledAmount?: string;
-                }): _586.QuerySupplyResponse;
+                }): _654.QuerySupplyResponse;
             };
             QueryCreditTypesRequest: {
-                encode(_: _586.QueryCreditTypesRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryCreditTypesRequest;
-                fromJSON(_: any): _586.QueryCreditTypesRequest;
-                toJSON(_: _586.QueryCreditTypesRequest): unknown;
-                fromPartial(_: {}): _586.QueryCreditTypesRequest;
+                encode(_: _654.QueryCreditTypesRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryCreditTypesRequest;
+                fromJSON(_: any): _654.QueryCreditTypesRequest;
+                toJSON(_: _654.QueryCreditTypesRequest): unknown;
+                fromPartial(_: {}): _654.QueryCreditTypesRequest;
             };
             QueryCreditTypesResponse: {
-                encode(message: _586.QueryCreditTypesResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryCreditTypesResponse;
-                fromJSON(object: any): _586.QueryCreditTypesResponse;
-                toJSON(message: _586.QueryCreditTypesResponse): unknown;
+                encode(message: _654.QueryCreditTypesResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryCreditTypesResponse;
+                fromJSON(object: any): _654.QueryCreditTypesResponse;
+                toJSON(message: _654.QueryCreditTypesResponse): unknown;
                 fromPartial(object: {
                     creditTypes?: {
                         abbreviation?: string;
@@ -4387,20 +4387,20 @@ export declare namespace regen {
                         unit?: string;
                         precision?: number;
                     }[];
-                }): _586.QueryCreditTypesResponse;
+                }): _654.QueryCreditTypesResponse;
             };
             QueryParamsRequest: {
-                encode(_: _586.QueryParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryParamsRequest;
-                fromJSON(_: any): _586.QueryParamsRequest;
-                toJSON(_: _586.QueryParamsRequest): unknown;
-                fromPartial(_: {}): _586.QueryParamsRequest;
+                encode(_: _654.QueryParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryParamsRequest;
+                fromJSON(_: any): _654.QueryParamsRequest;
+                toJSON(_: _654.QueryParamsRequest): unknown;
+                fromPartial(_: {}): _654.QueryParamsRequest;
             };
             QueryParamsResponse: {
-                encode(message: _586.QueryParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.QueryParamsResponse;
-                fromJSON(object: any): _586.QueryParamsResponse;
-                toJSON(message: _586.QueryParamsResponse): unknown;
+                encode(message: _654.QueryParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.QueryParamsResponse;
+                fromJSON(object: any): _654.QueryParamsResponse;
+                toJSON(message: _654.QueryParamsResponse): unknown;
                 fromPartial(object: {
                     params?: {
                         creditClassFee?: {
@@ -4414,25 +4414,25 @@ export declare namespace regen {
                         allowedClassCreators?: string[];
                         allowlistEnabled?: boolean;
                     };
-                }): _586.QueryParamsResponse;
+                }): _654.QueryParamsResponse;
             };
             ClassInfo: {
-                encode(message: _586.ClassInfo, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.ClassInfo;
-                fromJSON(object: any): _586.ClassInfo;
-                toJSON(message: _586.ClassInfo): unknown;
+                encode(message: _654.ClassInfo, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.ClassInfo;
+                fromJSON(object: any): _654.ClassInfo;
+                toJSON(message: _654.ClassInfo): unknown;
                 fromPartial(object: {
                     id?: string;
                     admin?: string;
                     metadata?: string;
                     creditTypeAbbrev?: string;
-                }): _586.ClassInfo;
+                }): _654.ClassInfo;
             };
             ProjectInfo: {
-                encode(message: _586.ProjectInfo, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.ProjectInfo;
-                fromJSON(object: any): _586.ProjectInfo;
-                toJSON(message: _586.ProjectInfo): unknown;
+                encode(message: _654.ProjectInfo, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.ProjectInfo;
+                fromJSON(object: any): _654.ProjectInfo;
+                toJSON(message: _654.ProjectInfo): unknown;
                 fromPartial(object: {
                     id?: string;
                     admin?: string;
@@ -4440,13 +4440,13 @@ export declare namespace regen {
                     jurisdiction?: string;
                     metadata?: string;
                     referenceId?: string;
-                }): _586.ProjectInfo;
+                }): _654.ProjectInfo;
             };
             BatchInfo: {
-                encode(message: _586.BatchInfo, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.BatchInfo;
-                fromJSON(object: any): _586.BatchInfo;
-                toJSON(message: _586.BatchInfo): unknown;
+                encode(message: _654.BatchInfo, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.BatchInfo;
+                fromJSON(object: any): _654.BatchInfo;
+                toJSON(message: _654.BatchInfo): unknown;
                 fromPartial(object: {
                     issuer?: string;
                     projectId?: string;
@@ -4465,159 +4465,159 @@ export declare namespace regen {
                         nanos?: number;
                     };
                     open?: boolean;
-                }): _586.BatchInfo;
+                }): _654.BatchInfo;
             };
             BatchBalanceInfo: {
-                encode(message: _586.BatchBalanceInfo, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _586.BatchBalanceInfo;
-                fromJSON(object: any): _586.BatchBalanceInfo;
-                toJSON(message: _586.BatchBalanceInfo): unknown;
+                encode(message: _654.BatchBalanceInfo, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _654.BatchBalanceInfo;
+                fromJSON(object: any): _654.BatchBalanceInfo;
+                toJSON(message: _654.BatchBalanceInfo): unknown;
                 fromPartial(object: {
                     address?: string;
                     batchDenom?: string;
                     tradable?: string;
                     retired?: string;
                     escrowed?: string;
-                }): _586.BatchBalanceInfo;
+                }): _654.BatchBalanceInfo;
             };
             EventCreateClass: {
-                encode(message: _585.EventCreateClass, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _585.EventCreateClass;
-                fromJSON(object: any): _585.EventCreateClass;
-                toJSON(message: _585.EventCreateClass): unknown;
+                encode(message: _653.EventCreateClass, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.EventCreateClass;
+                fromJSON(object: any): _653.EventCreateClass;
+                toJSON(message: _653.EventCreateClass): unknown;
                 fromPartial(object: {
                     classId?: string;
-                }): _585.EventCreateClass;
+                }): _653.EventCreateClass;
             };
             EventCreateProject: {
-                encode(message: _585.EventCreateProject, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _585.EventCreateProject;
-                fromJSON(object: any): _585.EventCreateProject;
-                toJSON(message: _585.EventCreateProject): unknown;
+                encode(message: _653.EventCreateProject, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.EventCreateProject;
+                fromJSON(object: any): _653.EventCreateProject;
+                toJSON(message: _653.EventCreateProject): unknown;
                 fromPartial(object: {
                     projectId?: string;
-                }): _585.EventCreateProject;
+                }): _653.EventCreateProject;
             };
             EventCreateBatch: {
-                encode(message: _585.EventCreateBatch, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _585.EventCreateBatch;
-                fromJSON(object: any): _585.EventCreateBatch;
-                toJSON(message: _585.EventCreateBatch): unknown;
+                encode(message: _653.EventCreateBatch, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.EventCreateBatch;
+                fromJSON(object: any): _653.EventCreateBatch;
+                toJSON(message: _653.EventCreateBatch): unknown;
                 fromPartial(object: {
                     batchDenom?: string;
-                }): _585.EventCreateBatch;
+                }): _653.EventCreateBatch;
             };
             EventMint: {
-                encode(message: _585.EventMint, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _585.EventMint;
-                fromJSON(object: any): _585.EventMint;
-                toJSON(message: _585.EventMint): unknown;
+                encode(message: _653.EventMint, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.EventMint;
+                fromJSON(object: any): _653.EventMint;
+                toJSON(message: _653.EventMint): unknown;
                 fromPartial(object: {
                     batchDenom?: string;
                     originTx?: {
                         typ?: string;
                         id?: string;
                     };
-                }): _585.EventMint;
+                }): _653.EventMint;
             };
             EventTransfer: {
-                encode(message: _585.EventTransfer, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _585.EventTransfer;
-                fromJSON(object: any): _585.EventTransfer;
-                toJSON(message: _585.EventTransfer): unknown;
+                encode(message: _653.EventTransfer, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.EventTransfer;
+                fromJSON(object: any): _653.EventTransfer;
+                toJSON(message: _653.EventTransfer): unknown;
                 fromPartial(object: {
                     sender?: string;
                     recipient?: string;
                     batchDenom?: string;
                     tradableAmount?: string;
                     retiredAmount?: string;
-                }): _585.EventTransfer;
+                }): _653.EventTransfer;
             };
             EventRetire: {
-                encode(message: _585.EventRetire, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _585.EventRetire;
-                fromJSON(object: any): _585.EventRetire;
-                toJSON(message: _585.EventRetire): unknown;
+                encode(message: _653.EventRetire, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.EventRetire;
+                fromJSON(object: any): _653.EventRetire;
+                toJSON(message: _653.EventRetire): unknown;
                 fromPartial(object: {
                     owner?: string;
                     batchDenom?: string;
                     amount?: string;
                     jurisdiction?: string;
-                }): _585.EventRetire;
+                }): _653.EventRetire;
             };
             EventCancel: {
-                encode(message: _585.EventCancel, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _585.EventCancel;
-                fromJSON(object: any): _585.EventCancel;
-                toJSON(message: _585.EventCancel): unknown;
+                encode(message: _653.EventCancel, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.EventCancel;
+                fromJSON(object: any): _653.EventCancel;
+                toJSON(message: _653.EventCancel): unknown;
                 fromPartial(object: {
                     owner?: string;
                     batchDenom?: string;
                     amount?: string;
-                }): _585.EventCancel;
+                }): _653.EventCancel;
             };
             EventUpdateClassAdmin: {
-                encode(message: _585.EventUpdateClassAdmin, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _585.EventUpdateClassAdmin;
-                fromJSON(object: any): _585.EventUpdateClassAdmin;
-                toJSON(message: _585.EventUpdateClassAdmin): unknown;
+                encode(message: _653.EventUpdateClassAdmin, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.EventUpdateClassAdmin;
+                fromJSON(object: any): _653.EventUpdateClassAdmin;
+                toJSON(message: _653.EventUpdateClassAdmin): unknown;
                 fromPartial(object: {
                     classId?: string;
-                }): _585.EventUpdateClassAdmin;
+                }): _653.EventUpdateClassAdmin;
             };
             EventUpdateClassIssuers: {
-                encode(message: _585.EventUpdateClassIssuers, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _585.EventUpdateClassIssuers;
-                fromJSON(object: any): _585.EventUpdateClassIssuers;
-                toJSON(message: _585.EventUpdateClassIssuers): unknown;
+                encode(message: _653.EventUpdateClassIssuers, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.EventUpdateClassIssuers;
+                fromJSON(object: any): _653.EventUpdateClassIssuers;
+                toJSON(message: _653.EventUpdateClassIssuers): unknown;
                 fromPartial(object: {
                     classId?: string;
-                }): _585.EventUpdateClassIssuers;
+                }): _653.EventUpdateClassIssuers;
             };
             EventUpdateClassMetadata: {
-                encode(message: _585.EventUpdateClassMetadata, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _585.EventUpdateClassMetadata;
-                fromJSON(object: any): _585.EventUpdateClassMetadata;
-                toJSON(message: _585.EventUpdateClassMetadata): unknown;
+                encode(message: _653.EventUpdateClassMetadata, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.EventUpdateClassMetadata;
+                fromJSON(object: any): _653.EventUpdateClassMetadata;
+                toJSON(message: _653.EventUpdateClassMetadata): unknown;
                 fromPartial(object: {
                     classId?: string;
-                }): _585.EventUpdateClassMetadata;
+                }): _653.EventUpdateClassMetadata;
             };
             EventUpdateProjectAdmin: {
-                encode(message: _585.EventUpdateProjectAdmin, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _585.EventUpdateProjectAdmin;
-                fromJSON(object: any): _585.EventUpdateProjectAdmin;
-                toJSON(message: _585.EventUpdateProjectAdmin): unknown;
+                encode(message: _653.EventUpdateProjectAdmin, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.EventUpdateProjectAdmin;
+                fromJSON(object: any): _653.EventUpdateProjectAdmin;
+                toJSON(message: _653.EventUpdateProjectAdmin): unknown;
                 fromPartial(object: {
                     projectId?: string;
-                }): _585.EventUpdateProjectAdmin;
+                }): _653.EventUpdateProjectAdmin;
             };
             EventUpdateProjectMetadata: {
-                encode(message: _585.EventUpdateProjectMetadata, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _585.EventUpdateProjectMetadata;
-                fromJSON(object: any): _585.EventUpdateProjectMetadata;
-                toJSON(message: _585.EventUpdateProjectMetadata): unknown;
+                encode(message: _653.EventUpdateProjectMetadata, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.EventUpdateProjectMetadata;
+                fromJSON(object: any): _653.EventUpdateProjectMetadata;
+                toJSON(message: _653.EventUpdateProjectMetadata): unknown;
                 fromPartial(object: {
                     projectId?: string;
-                }): _585.EventUpdateProjectMetadata;
+                }): _653.EventUpdateProjectMetadata;
             };
             EventSealBatch: {
-                encode(message: _585.EventSealBatch, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _585.EventSealBatch;
-                fromJSON(object: any): _585.EventSealBatch;
-                toJSON(message: _585.EventSealBatch): unknown;
+                encode(message: _653.EventSealBatch, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.EventSealBatch;
+                fromJSON(object: any): _653.EventSealBatch;
+                toJSON(message: _653.EventSealBatch): unknown;
                 fromPartial(object: {
                     batchDenom?: string;
-                }): _585.EventSealBatch;
+                }): _653.EventSealBatch;
             };
             EventAddCreditType: {
-                encode(message: _585.EventAddCreditType, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _585.EventAddCreditType;
-                fromJSON(object: any): _585.EventAddCreditType;
-                toJSON(message: _585.EventAddCreditType): unknown;
+                encode(message: _653.EventAddCreditType, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _653.EventAddCreditType;
+                fromJSON(object: any): _653.EventAddCreditType;
+                toJSON(message: _653.EventAddCreditType): unknown;
                 fromPartial(object: {
                     abbreviation?: string;
-                }): _585.EventAddCreditType;
+                }): _653.EventAddCreditType;
             };
         };
         const v1alpha1: {
@@ -4625,103 +4625,103 @@ export declare namespace regen {
             load: (protoRegistry: import("@cosmjs/proto-signing").Registry) => void;
             MessageComposer: {
                 encoded: {
-                    createClass(value: _593.MsgCreateClass): {
+                    createClass(value: _661.MsgCreateClass): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    createBatch(value: _593.MsgCreateBatch): {
+                    createBatch(value: _661.MsgCreateBatch): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    send(value: _593.MsgSend): {
+                    send(value: _661.MsgSend): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    retire(value: _593.MsgRetire): {
+                    retire(value: _661.MsgRetire): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    cancel(value: _593.MsgCancel): {
+                    cancel(value: _661.MsgCancel): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updateClassAdmin(value: _593.MsgUpdateClassAdmin): {
+                    updateClassAdmin(value: _661.MsgUpdateClassAdmin): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updateClassIssuers(value: _593.MsgUpdateClassIssuers): {
+                    updateClassIssuers(value: _661.MsgUpdateClassIssuers): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updateClassMetadata(value: _593.MsgUpdateClassMetadata): {
+                    updateClassMetadata(value: _661.MsgUpdateClassMetadata): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
                 };
                 withTypeUrl: {
-                    createClass(value: _593.MsgCreateClass): {
+                    createClass(value: _661.MsgCreateClass): {
                         typeUrl: string;
-                        value: _593.MsgCreateClass;
+                        value: _661.MsgCreateClass;
                     };
-                    createBatch(value: _593.MsgCreateBatch): {
+                    createBatch(value: _661.MsgCreateBatch): {
                         typeUrl: string;
-                        value: _593.MsgCreateBatch;
+                        value: _661.MsgCreateBatch;
                     };
-                    send(value: _593.MsgSend): {
+                    send(value: _661.MsgSend): {
                         typeUrl: string;
-                        value: _593.MsgSend;
+                        value: _661.MsgSend;
                     };
-                    retire(value: _593.MsgRetire): {
+                    retire(value: _661.MsgRetire): {
                         typeUrl: string;
-                        value: _593.MsgRetire;
+                        value: _661.MsgRetire;
                     };
-                    cancel(value: _593.MsgCancel): {
+                    cancel(value: _661.MsgCancel): {
                         typeUrl: string;
-                        value: _593.MsgCancel;
+                        value: _661.MsgCancel;
                     };
-                    updateClassAdmin(value: _593.MsgUpdateClassAdmin): {
+                    updateClassAdmin(value: _661.MsgUpdateClassAdmin): {
                         typeUrl: string;
-                        value: _593.MsgUpdateClassAdmin;
+                        value: _661.MsgUpdateClassAdmin;
                     };
-                    updateClassIssuers(value: _593.MsgUpdateClassIssuers): {
+                    updateClassIssuers(value: _661.MsgUpdateClassIssuers): {
                         typeUrl: string;
-                        value: _593.MsgUpdateClassIssuers;
+                        value: _661.MsgUpdateClassIssuers;
                     };
-                    updateClassMetadata(value: _593.MsgUpdateClassMetadata): {
+                    updateClassMetadata(value: _661.MsgUpdateClassMetadata): {
                         typeUrl: string;
-                        value: _593.MsgUpdateClassMetadata;
+                        value: _661.MsgUpdateClassMetadata;
                     };
                 };
                 toJSON: {
-                    createClass(value: _593.MsgCreateClass): {
+                    createClass(value: _661.MsgCreateClass): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    createBatch(value: _593.MsgCreateBatch): {
+                    createBatch(value: _661.MsgCreateBatch): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    send(value: _593.MsgSend): {
+                    send(value: _661.MsgSend): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    retire(value: _593.MsgRetire): {
+                    retire(value: _661.MsgRetire): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    cancel(value: _593.MsgCancel): {
+                    cancel(value: _661.MsgCancel): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updateClassAdmin(value: _593.MsgUpdateClassAdmin): {
+                    updateClassAdmin(value: _661.MsgUpdateClassAdmin): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updateClassIssuers(value: _593.MsgUpdateClassIssuers): {
+                    updateClassIssuers(value: _661.MsgUpdateClassIssuers): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updateClassMetadata(value: _593.MsgUpdateClassMetadata): {
+                    updateClassMetadata(value: _661.MsgUpdateClassMetadata): {
                         typeUrl: string;
                         value: unknown;
                     };
@@ -4729,76 +4729,76 @@ export declare namespace regen {
                 fromJSON: {
                     createClass(value: any): {
                         typeUrl: string;
-                        value: _593.MsgCreateClass;
+                        value: _661.MsgCreateClass;
                     };
                     createBatch(value: any): {
                         typeUrl: string;
-                        value: _593.MsgCreateBatch;
+                        value: _661.MsgCreateBatch;
                     };
                     send(value: any): {
                         typeUrl: string;
-                        value: _593.MsgSend;
+                        value: _661.MsgSend;
                     };
                     retire(value: any): {
                         typeUrl: string;
-                        value: _593.MsgRetire;
+                        value: _661.MsgRetire;
                     };
                     cancel(value: any): {
                         typeUrl: string;
-                        value: _593.MsgCancel;
+                        value: _661.MsgCancel;
                     };
                     updateClassAdmin(value: any): {
                         typeUrl: string;
-                        value: _593.MsgUpdateClassAdmin;
+                        value: _661.MsgUpdateClassAdmin;
                     };
                     updateClassIssuers(value: any): {
                         typeUrl: string;
-                        value: _593.MsgUpdateClassIssuers;
+                        value: _661.MsgUpdateClassIssuers;
                     };
                     updateClassMetadata(value: any): {
                         typeUrl: string;
-                        value: _593.MsgUpdateClassMetadata;
+                        value: _661.MsgUpdateClassMetadata;
                     };
                 };
                 fromPartial: {
-                    createClass(value: _593.MsgCreateClass): {
+                    createClass(value: _661.MsgCreateClass): {
                         typeUrl: string;
-                        value: _593.MsgCreateClass;
+                        value: _661.MsgCreateClass;
                     };
-                    createBatch(value: _593.MsgCreateBatch): {
+                    createBatch(value: _661.MsgCreateBatch): {
                         typeUrl: string;
-                        value: _593.MsgCreateBatch;
+                        value: _661.MsgCreateBatch;
                     };
-                    send(value: _593.MsgSend): {
+                    send(value: _661.MsgSend): {
                         typeUrl: string;
-                        value: _593.MsgSend;
+                        value: _661.MsgSend;
                     };
-                    retire(value: _593.MsgRetire): {
+                    retire(value: _661.MsgRetire): {
                         typeUrl: string;
-                        value: _593.MsgRetire;
+                        value: _661.MsgRetire;
                     };
-                    cancel(value: _593.MsgCancel): {
+                    cancel(value: _661.MsgCancel): {
                         typeUrl: string;
-                        value: _593.MsgCancel;
+                        value: _661.MsgCancel;
                     };
-                    updateClassAdmin(value: _593.MsgUpdateClassAdmin): {
+                    updateClassAdmin(value: _661.MsgUpdateClassAdmin): {
                         typeUrl: string;
-                        value: _593.MsgUpdateClassAdmin;
+                        value: _661.MsgUpdateClassAdmin;
                     };
-                    updateClassIssuers(value: _593.MsgUpdateClassIssuers): {
+                    updateClassIssuers(value: _661.MsgUpdateClassIssuers): {
                         typeUrl: string;
-                        value: _593.MsgUpdateClassIssuers;
+                        value: _661.MsgUpdateClassIssuers;
                     };
-                    updateClassMetadata(value: _593.MsgUpdateClassMetadata): {
+                    updateClassMetadata(value: _661.MsgUpdateClassMetadata): {
                         typeUrl: string;
-                        value: _593.MsgUpdateClassMetadata;
+                        value: _661.MsgUpdateClassMetadata;
                     };
                 };
             };
             AminoConverter: {
                 "/regen.ecocredit.v1alpha1.MsgCreateClass": {
                     aminoType: string;
-                    toAmino: ({ admin, issuers, metadata, creditTypeName }: _593.MsgCreateClass) => {
+                    toAmino: ({ admin, issuers, metadata, creditTypeName }: _661.MsgCreateClass) => {
                         admin: string;
                         issuers: string[];
                         metadata: Uint8Array;
@@ -4809,11 +4809,11 @@ export declare namespace regen {
                         issuers: string[];
                         metadata: Uint8Array;
                         credit_type_name: string;
-                    }) => _593.MsgCreateClass;
+                    }) => _661.MsgCreateClass;
                 };
                 "/regen.ecocredit.v1alpha1.MsgCreateBatch": {
                     aminoType: string;
-                    toAmino: ({ issuer, classId, issuance, metadata, startDate, endDate, projectLocation }: _593.MsgCreateBatch) => {
+                    toAmino: ({ issuer, classId, issuance, metadata, startDate, endDate, projectLocation }: _661.MsgCreateBatch) => {
                         issuer: string;
                         class_id: string;
                         issuance: {
@@ -4852,11 +4852,11 @@ export declare namespace regen {
                             nanos: number;
                         };
                         project_location: string;
-                    }) => _593.MsgCreateBatch;
+                    }) => _661.MsgCreateBatch;
                 };
                 "/regen.ecocredit.v1alpha1.MsgSend": {
                     aminoType: string;
-                    toAmino: ({ sender, recipient, credits }: _593.MsgSend) => {
+                    toAmino: ({ sender, recipient, credits }: _661.MsgSend) => {
                         sender: string;
                         recipient: string;
                         credits: {
@@ -4875,11 +4875,11 @@ export declare namespace regen {
                             retired_amount: string;
                             retirement_location: string;
                         }[];
-                    }) => _593.MsgSend;
+                    }) => _661.MsgSend;
                 };
                 "/regen.ecocredit.v1alpha1.MsgRetire": {
                     aminoType: string;
-                    toAmino: ({ holder, credits, location }: _593.MsgRetire) => {
+                    toAmino: ({ holder, credits, location }: _661.MsgRetire) => {
                         holder: string;
                         credits: {
                             batch_denom: string;
@@ -4894,11 +4894,11 @@ export declare namespace regen {
                             amount: string;
                         }[];
                         location: string;
-                    }) => _593.MsgRetire;
+                    }) => _661.MsgRetire;
                 };
                 "/regen.ecocredit.v1alpha1.MsgCancel": {
                     aminoType: string;
-                    toAmino: ({ holder, credits }: _593.MsgCancel) => {
+                    toAmino: ({ holder, credits }: _661.MsgCancel) => {
                         holder: string;
                         credits: {
                             batch_denom: string;
@@ -4911,11 +4911,11 @@ export declare namespace regen {
                             batch_denom: string;
                             amount: string;
                         }[];
-                    }) => _593.MsgCancel;
+                    }) => _661.MsgCancel;
                 };
                 "/regen.ecocredit.v1alpha1.MsgUpdateClassAdmin": {
                     aminoType: string;
-                    toAmino: ({ admin, classId, newAdmin }: _593.MsgUpdateClassAdmin) => {
+                    toAmino: ({ admin, classId, newAdmin }: _661.MsgUpdateClassAdmin) => {
                         admin: string;
                         class_id: string;
                         new_admin: string;
@@ -4924,11 +4924,11 @@ export declare namespace regen {
                         admin: string;
                         class_id: string;
                         new_admin: string;
-                    }) => _593.MsgUpdateClassAdmin;
+                    }) => _661.MsgUpdateClassAdmin;
                 };
                 "/regen.ecocredit.v1alpha1.MsgUpdateClassIssuers": {
                     aminoType: string;
-                    toAmino: ({ admin, classId, issuers }: _593.MsgUpdateClassIssuers) => {
+                    toAmino: ({ admin, classId, issuers }: _661.MsgUpdateClassIssuers) => {
                         admin: string;
                         class_id: string;
                         issuers: string[];
@@ -4937,11 +4937,11 @@ export declare namespace regen {
                         admin: string;
                         class_id: string;
                         issuers: string[];
-                    }) => _593.MsgUpdateClassIssuers;
+                    }) => _661.MsgUpdateClassIssuers;
                 };
                 "/regen.ecocredit.v1alpha1.MsgUpdateClassMetadata": {
                     aminoType: string;
-                    toAmino: ({ admin, classId, metadata }: _593.MsgUpdateClassMetadata) => {
+                    toAmino: ({ admin, classId, metadata }: _661.MsgUpdateClassMetadata) => {
                         admin: string;
                         class_id: string;
                         metadata: Uint8Array;
@@ -4950,14 +4950,14 @@ export declare namespace regen {
                         admin: string;
                         class_id: string;
                         metadata: Uint8Array;
-                    }) => _593.MsgUpdateClassMetadata;
+                    }) => _661.MsgUpdateClassMetadata;
                 };
             };
             ClassInfo: {
-                encode(message: _594.ClassInfo, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _594.ClassInfo;
-                fromJSON(object: any): _594.ClassInfo;
-                toJSON(message: _594.ClassInfo): unknown;
+                encode(message: _662.ClassInfo, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.ClassInfo;
+                fromJSON(object: any): _662.ClassInfo;
+                toJSON(message: _662.ClassInfo): unknown;
                 fromPartial(object: {
                     classId?: string;
                     admin?: string;
@@ -4970,13 +4970,13 @@ export declare namespace regen {
                         precision?: number;
                     };
                     numBatches?: any;
-                }): _594.ClassInfo;
+                }): _662.ClassInfo;
             };
             BatchInfo: {
-                encode(message: _594.BatchInfo, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _594.BatchInfo;
-                fromJSON(object: any): _594.BatchInfo;
-                toJSON(message: _594.BatchInfo): unknown;
+                encode(message: _662.BatchInfo, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.BatchInfo;
+                fromJSON(object: any): _662.BatchInfo;
+                toJSON(message: _662.BatchInfo): unknown;
                 fromPartial(object: {
                     classId?: string;
                     batchDenom?: string;
@@ -4993,13 +4993,13 @@ export declare namespace regen {
                         nanos?: number;
                     };
                     projectLocation?: string;
-                }): _594.BatchInfo;
+                }): _662.BatchInfo;
             };
             Params: {
-                encode(message: _594.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _594.Params;
-                fromJSON(object: any): _594.Params;
-                toJSON(message: _594.Params): unknown;
+                encode(message: _662.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.Params;
+                fromJSON(object: any): _662.Params;
+                toJSON(message: _662.Params): unknown;
                 fromPartial(object: {
                     creditClassFee?: {
                         denom?: string;
@@ -5017,56 +5017,56 @@ export declare namespace regen {
                         denom?: string;
                         amount?: string;
                     }[];
-                }): _594.Params;
+                }): _662.Params;
             };
             CreditType: {
-                encode(message: _594.CreditType, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _594.CreditType;
-                fromJSON(object: any): _594.CreditType;
-                toJSON(message: _594.CreditType): unknown;
+                encode(message: _662.CreditType, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.CreditType;
+                fromJSON(object: any): _662.CreditType;
+                toJSON(message: _662.CreditType): unknown;
                 fromPartial(object: {
                     name?: string;
                     abbreviation?: string;
                     unit?: string;
                     precision?: number;
-                }): _594.CreditType;
+                }): _662.CreditType;
             };
             CreditTypeSeq: {
-                encode(message: _594.CreditTypeSeq, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _594.CreditTypeSeq;
-                fromJSON(object: any): _594.CreditTypeSeq;
-                toJSON(message: _594.CreditTypeSeq): unknown;
+                encode(message: _662.CreditTypeSeq, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _662.CreditTypeSeq;
+                fromJSON(object: any): _662.CreditTypeSeq;
+                toJSON(message: _662.CreditTypeSeq): unknown;
                 fromPartial(object: {
                     abbreviation?: string;
                     seqNumber?: any;
-                }): _594.CreditTypeSeq;
+                }): _662.CreditTypeSeq;
             };
             MsgCreateClass: {
-                encode(message: _593.MsgCreateClass, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _593.MsgCreateClass;
-                fromJSON(object: any): _593.MsgCreateClass;
-                toJSON(message: _593.MsgCreateClass): unknown;
+                encode(message: _661.MsgCreateClass, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _661.MsgCreateClass;
+                fromJSON(object: any): _661.MsgCreateClass;
+                toJSON(message: _661.MsgCreateClass): unknown;
                 fromPartial(object: {
                     admin?: string;
                     issuers?: string[];
                     metadata?: Uint8Array;
                     creditTypeName?: string;
-                }): _593.MsgCreateClass;
+                }): _661.MsgCreateClass;
             };
             MsgCreateClassResponse: {
-                encode(message: _593.MsgCreateClassResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _593.MsgCreateClassResponse;
-                fromJSON(object: any): _593.MsgCreateClassResponse;
-                toJSON(message: _593.MsgCreateClassResponse): unknown;
+                encode(message: _661.MsgCreateClassResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _661.MsgCreateClassResponse;
+                fromJSON(object: any): _661.MsgCreateClassResponse;
+                toJSON(message: _661.MsgCreateClassResponse): unknown;
                 fromPartial(object: {
                     classId?: string;
-                }): _593.MsgCreateClassResponse;
+                }): _661.MsgCreateClassResponse;
             };
             MsgCreateBatch: {
-                encode(message: _593.MsgCreateBatch, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _593.MsgCreateBatch;
-                fromJSON(object: any): _593.MsgCreateBatch;
-                toJSON(message: _593.MsgCreateBatch): unknown;
+                encode(message: _661.MsgCreateBatch, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _661.MsgCreateBatch;
+                fromJSON(object: any): _661.MsgCreateBatch;
+                toJSON(message: _661.MsgCreateBatch): unknown;
                 fromPartial(object: {
                     issuer?: string;
                     classId?: string;
@@ -5086,34 +5086,34 @@ export declare namespace regen {
                         nanos?: number;
                     };
                     projectLocation?: string;
-                }): _593.MsgCreateBatch;
+                }): _661.MsgCreateBatch;
             };
             MsgCreateBatch_BatchIssuance: {
-                encode(message: _593.MsgCreateBatch_BatchIssuance, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _593.MsgCreateBatch_BatchIssuance;
-                fromJSON(object: any): _593.MsgCreateBatch_BatchIssuance;
-                toJSON(message: _593.MsgCreateBatch_BatchIssuance): unknown;
+                encode(message: _661.MsgCreateBatch_BatchIssuance, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _661.MsgCreateBatch_BatchIssuance;
+                fromJSON(object: any): _661.MsgCreateBatch_BatchIssuance;
+                toJSON(message: _661.MsgCreateBatch_BatchIssuance): unknown;
                 fromPartial(object: {
                     recipient?: string;
                     tradableAmount?: string;
                     retiredAmount?: string;
                     retirementLocation?: string;
-                }): _593.MsgCreateBatch_BatchIssuance;
+                }): _661.MsgCreateBatch_BatchIssuance;
             };
             MsgCreateBatchResponse: {
-                encode(message: _593.MsgCreateBatchResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _593.MsgCreateBatchResponse;
-                fromJSON(object: any): _593.MsgCreateBatchResponse;
-                toJSON(message: _593.MsgCreateBatchResponse): unknown;
+                encode(message: _661.MsgCreateBatchResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _661.MsgCreateBatchResponse;
+                fromJSON(object: any): _661.MsgCreateBatchResponse;
+                toJSON(message: _661.MsgCreateBatchResponse): unknown;
                 fromPartial(object: {
                     batchDenom?: string;
-                }): _593.MsgCreateBatchResponse;
+                }): _661.MsgCreateBatchResponse;
             };
             MsgSend: {
-                encode(message: _593.MsgSend, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _593.MsgSend;
-                fromJSON(object: any): _593.MsgSend;
-                toJSON(message: _593.MsgSend): unknown;
+                encode(message: _661.MsgSend, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _661.MsgSend;
+                fromJSON(object: any): _661.MsgSend;
+                toJSON(message: _661.MsgSend): unknown;
                 fromPartial(object: {
                     sender?: string;
                     recipient?: string;
@@ -5123,32 +5123,32 @@ export declare namespace regen {
                         retiredAmount?: string;
                         retirementLocation?: string;
                     }[];
-                }): _593.MsgSend;
+                }): _661.MsgSend;
             };
             MsgSend_SendCredits: {
-                encode(message: _593.MsgSend_SendCredits, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _593.MsgSend_SendCredits;
-                fromJSON(object: any): _593.MsgSend_SendCredits;
-                toJSON(message: _593.MsgSend_SendCredits): unknown;
+                encode(message: _661.MsgSend_SendCredits, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _661.MsgSend_SendCredits;
+                fromJSON(object: any): _661.MsgSend_SendCredits;
+                toJSON(message: _661.MsgSend_SendCredits): unknown;
                 fromPartial(object: {
                     batchDenom?: string;
                     tradableAmount?: string;
                     retiredAmount?: string;
                     retirementLocation?: string;
-                }): _593.MsgSend_SendCredits;
+                }): _661.MsgSend_SendCredits;
             };
             MsgSendResponse: {
-                encode(_: _593.MsgSendResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _593.MsgSendResponse;
-                fromJSON(_: any): _593.MsgSendResponse;
-                toJSON(_: _593.MsgSendResponse): unknown;
-                fromPartial(_: {}): _593.MsgSendResponse;
+                encode(_: _661.MsgSendResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _661.MsgSendResponse;
+                fromJSON(_: any): _661.MsgSendResponse;
+                toJSON(_: _661.MsgSendResponse): unknown;
+                fromPartial(_: {}): _661.MsgSendResponse;
             };
             MsgRetire: {
-                encode(message: _593.MsgRetire, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _593.MsgRetire;
-                fromJSON(object: any): _593.MsgRetire;
-                toJSON(message: _593.MsgRetire): unknown;
+                encode(message: _661.MsgRetire, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _661.MsgRetire;
+                fromJSON(object: any): _661.MsgRetire;
+                toJSON(message: _661.MsgRetire): unknown;
                 fromPartial(object: {
                     holder?: string;
                     credits?: {
@@ -5156,121 +5156,121 @@ export declare namespace regen {
                         amount?: string;
                     }[];
                     location?: string;
-                }): _593.MsgRetire;
+                }): _661.MsgRetire;
             };
             MsgRetire_RetireCredits: {
-                encode(message: _593.MsgRetire_RetireCredits, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _593.MsgRetire_RetireCredits;
-                fromJSON(object: any): _593.MsgRetire_RetireCredits;
-                toJSON(message: _593.MsgRetire_RetireCredits): unknown;
+                encode(message: _661.MsgRetire_RetireCredits, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _661.MsgRetire_RetireCredits;
+                fromJSON(object: any): _661.MsgRetire_RetireCredits;
+                toJSON(message: _661.MsgRetire_RetireCredits): unknown;
                 fromPartial(object: {
                     batchDenom?: string;
                     amount?: string;
-                }): _593.MsgRetire_RetireCredits;
+                }): _661.MsgRetire_RetireCredits;
             };
             MsgRetireResponse: {
-                encode(_: _593.MsgRetireResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _593.MsgRetireResponse;
-                fromJSON(_: any): _593.MsgRetireResponse;
-                toJSON(_: _593.MsgRetireResponse): unknown;
-                fromPartial(_: {}): _593.MsgRetireResponse;
+                encode(_: _661.MsgRetireResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _661.MsgRetireResponse;
+                fromJSON(_: any): _661.MsgRetireResponse;
+                toJSON(_: _661.MsgRetireResponse): unknown;
+                fromPartial(_: {}): _661.MsgRetireResponse;
             };
             MsgCancel: {
-                encode(message: _593.MsgCancel, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _593.MsgCancel;
-                fromJSON(object: any): _593.MsgCancel;
-                toJSON(message: _593.MsgCancel): unknown;
+                encode(message: _661.MsgCancel, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _661.MsgCancel;
+                fromJSON(object: any): _661.MsgCancel;
+                toJSON(message: _661.MsgCancel): unknown;
                 fromPartial(object: {
                     holder?: string;
                     credits?: {
                         batchDenom?: string;
                         amount?: string;
                     }[];
-                }): _593.MsgCancel;
+                }): _661.MsgCancel;
             };
             MsgCancel_CancelCredits: {
-                encode(message: _593.MsgCancel_CancelCredits, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _593.MsgCancel_CancelCredits;
-                fromJSON(object: any): _593.MsgCancel_CancelCredits;
-                toJSON(message: _593.MsgCancel_CancelCredits): unknown;
+                encode(message: _661.MsgCancel_CancelCredits, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _661.MsgCancel_CancelCredits;
+                fromJSON(object: any): _661.MsgCancel_CancelCredits;
+                toJSON(message: _661.MsgCancel_CancelCredits): unknown;
                 fromPartial(object: {
                     batchDenom?: string;
                     amount?: string;
-                }): _593.MsgCancel_CancelCredits;
+                }): _661.MsgCancel_CancelCredits;
             };
             MsgCancelResponse: {
-                encode(_: _593.MsgCancelResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _593.MsgCancelResponse;
-                fromJSON(_: any): _593.MsgCancelResponse;
-                toJSON(_: _593.MsgCancelResponse): unknown;
-                fromPartial(_: {}): _593.MsgCancelResponse;
+                encode(_: _661.MsgCancelResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _661.MsgCancelResponse;
+                fromJSON(_: any): _661.MsgCancelResponse;
+                toJSON(_: _661.MsgCancelResponse): unknown;
+                fromPartial(_: {}): _661.MsgCancelResponse;
             };
             MsgUpdateClassAdmin: {
-                encode(message: _593.MsgUpdateClassAdmin, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _593.MsgUpdateClassAdmin;
-                fromJSON(object: any): _593.MsgUpdateClassAdmin;
-                toJSON(message: _593.MsgUpdateClassAdmin): unknown;
+                encode(message: _661.MsgUpdateClassAdmin, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _661.MsgUpdateClassAdmin;
+                fromJSON(object: any): _661.MsgUpdateClassAdmin;
+                toJSON(message: _661.MsgUpdateClassAdmin): unknown;
                 fromPartial(object: {
                     admin?: string;
                     classId?: string;
                     newAdmin?: string;
-                }): _593.MsgUpdateClassAdmin;
+                }): _661.MsgUpdateClassAdmin;
             };
             MsgUpdateClassAdminResponse: {
-                encode(_: _593.MsgUpdateClassAdminResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _593.MsgUpdateClassAdminResponse;
-                fromJSON(_: any): _593.MsgUpdateClassAdminResponse;
-                toJSON(_: _593.MsgUpdateClassAdminResponse): unknown;
-                fromPartial(_: {}): _593.MsgUpdateClassAdminResponse;
+                encode(_: _661.MsgUpdateClassAdminResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _661.MsgUpdateClassAdminResponse;
+                fromJSON(_: any): _661.MsgUpdateClassAdminResponse;
+                toJSON(_: _661.MsgUpdateClassAdminResponse): unknown;
+                fromPartial(_: {}): _661.MsgUpdateClassAdminResponse;
             };
             MsgUpdateClassIssuers: {
-                encode(message: _593.MsgUpdateClassIssuers, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _593.MsgUpdateClassIssuers;
-                fromJSON(object: any): _593.MsgUpdateClassIssuers;
-                toJSON(message: _593.MsgUpdateClassIssuers): unknown;
+                encode(message: _661.MsgUpdateClassIssuers, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _661.MsgUpdateClassIssuers;
+                fromJSON(object: any): _661.MsgUpdateClassIssuers;
+                toJSON(message: _661.MsgUpdateClassIssuers): unknown;
                 fromPartial(object: {
                     admin?: string;
                     classId?: string;
                     issuers?: string[];
-                }): _593.MsgUpdateClassIssuers;
+                }): _661.MsgUpdateClassIssuers;
             };
             MsgUpdateClassIssuersResponse: {
-                encode(_: _593.MsgUpdateClassIssuersResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _593.MsgUpdateClassIssuersResponse;
-                fromJSON(_: any): _593.MsgUpdateClassIssuersResponse;
-                toJSON(_: _593.MsgUpdateClassIssuersResponse): unknown;
-                fromPartial(_: {}): _593.MsgUpdateClassIssuersResponse;
+                encode(_: _661.MsgUpdateClassIssuersResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _661.MsgUpdateClassIssuersResponse;
+                fromJSON(_: any): _661.MsgUpdateClassIssuersResponse;
+                toJSON(_: _661.MsgUpdateClassIssuersResponse): unknown;
+                fromPartial(_: {}): _661.MsgUpdateClassIssuersResponse;
             };
             MsgUpdateClassMetadata: {
-                encode(message: _593.MsgUpdateClassMetadata, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _593.MsgUpdateClassMetadata;
-                fromJSON(object: any): _593.MsgUpdateClassMetadata;
-                toJSON(message: _593.MsgUpdateClassMetadata): unknown;
+                encode(message: _661.MsgUpdateClassMetadata, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _661.MsgUpdateClassMetadata;
+                fromJSON(object: any): _661.MsgUpdateClassMetadata;
+                toJSON(message: _661.MsgUpdateClassMetadata): unknown;
                 fromPartial(object: {
                     admin?: string;
                     classId?: string;
                     metadata?: Uint8Array;
-                }): _593.MsgUpdateClassMetadata;
+                }): _661.MsgUpdateClassMetadata;
             };
             MsgUpdateClassMetadataResponse: {
-                encode(_: _593.MsgUpdateClassMetadataResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _593.MsgUpdateClassMetadataResponse;
-                fromJSON(_: any): _593.MsgUpdateClassMetadataResponse;
-                toJSON(_: _593.MsgUpdateClassMetadataResponse): unknown;
-                fromPartial(_: {}): _593.MsgUpdateClassMetadataResponse;
+                encode(_: _661.MsgUpdateClassMetadataResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _661.MsgUpdateClassMetadataResponse;
+                fromJSON(_: any): _661.MsgUpdateClassMetadataResponse;
+                toJSON(_: _661.MsgUpdateClassMetadataResponse): unknown;
+                fromPartial(_: {}): _661.MsgUpdateClassMetadataResponse;
             };
             QueryParamsRequest: {
-                encode(_: _592.QueryParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _592.QueryParamsRequest;
-                fromJSON(_: any): _592.QueryParamsRequest;
-                toJSON(_: _592.QueryParamsRequest): unknown;
-                fromPartial(_: {}): _592.QueryParamsRequest;
+                encode(_: _660.QueryParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _660.QueryParamsRequest;
+                fromJSON(_: any): _660.QueryParamsRequest;
+                toJSON(_: _660.QueryParamsRequest): unknown;
+                fromPartial(_: {}): _660.QueryParamsRequest;
             };
             QueryParamsResponse: {
-                encode(message: _592.QueryParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _592.QueryParamsResponse;
-                fromJSON(object: any): _592.QueryParamsResponse;
-                toJSON(message: _592.QueryParamsResponse): unknown;
+                encode(message: _660.QueryParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _660.QueryParamsResponse;
+                fromJSON(object: any): _660.QueryParamsResponse;
+                toJSON(message: _660.QueryParamsResponse): unknown;
                 fromPartial(object: {
                     params?: {
                         creditClassFee?: {
@@ -5290,13 +5290,13 @@ export declare namespace regen {
                             amount?: string;
                         }[];
                     };
-                }): _592.QueryParamsResponse;
+                }): _660.QueryParamsResponse;
             };
             QueryClassesRequest: {
-                encode(message: _592.QueryClassesRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _592.QueryClassesRequest;
-                fromJSON(object: any): _592.QueryClassesRequest;
-                toJSON(message: _592.QueryClassesRequest): unknown;
+                encode(message: _660.QueryClassesRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _660.QueryClassesRequest;
+                fromJSON(object: any): _660.QueryClassesRequest;
+                toJSON(message: _660.QueryClassesRequest): unknown;
                 fromPartial(object: {
                     pagination?: {
                         key?: Uint8Array;
@@ -5305,13 +5305,13 @@ export declare namespace regen {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _592.QueryClassesRequest;
+                }): _660.QueryClassesRequest;
             };
             QueryClassesResponse: {
-                encode(message: _592.QueryClassesResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _592.QueryClassesResponse;
-                fromJSON(object: any): _592.QueryClassesResponse;
-                toJSON(message: _592.QueryClassesResponse): unknown;
+                encode(message: _660.QueryClassesResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _660.QueryClassesResponse;
+                fromJSON(object: any): _660.QueryClassesResponse;
+                toJSON(message: _660.QueryClassesResponse): unknown;
                 fromPartial(object: {
                     classes?: {
                         classId?: string;
@@ -5330,22 +5330,22 @@ export declare namespace regen {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _592.QueryClassesResponse;
+                }): _660.QueryClassesResponse;
             };
             QueryClassInfoRequest: {
-                encode(message: _592.QueryClassInfoRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _592.QueryClassInfoRequest;
-                fromJSON(object: any): _592.QueryClassInfoRequest;
-                toJSON(message: _592.QueryClassInfoRequest): unknown;
+                encode(message: _660.QueryClassInfoRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _660.QueryClassInfoRequest;
+                fromJSON(object: any): _660.QueryClassInfoRequest;
+                toJSON(message: _660.QueryClassInfoRequest): unknown;
                 fromPartial(object: {
                     classId?: string;
-                }): _592.QueryClassInfoRequest;
+                }): _660.QueryClassInfoRequest;
             };
             QueryClassInfoResponse: {
-                encode(message: _592.QueryClassInfoResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _592.QueryClassInfoResponse;
-                fromJSON(object: any): _592.QueryClassInfoResponse;
-                toJSON(message: _592.QueryClassInfoResponse): unknown;
+                encode(message: _660.QueryClassInfoResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _660.QueryClassInfoResponse;
+                fromJSON(object: any): _660.QueryClassInfoResponse;
+                toJSON(message: _660.QueryClassInfoResponse): unknown;
                 fromPartial(object: {
                     info?: {
                         classId?: string;
@@ -5360,13 +5360,13 @@ export declare namespace regen {
                         };
                         numBatches?: any;
                     };
-                }): _592.QueryClassInfoResponse;
+                }): _660.QueryClassInfoResponse;
             };
             QueryBatchesRequest: {
-                encode(message: _592.QueryBatchesRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _592.QueryBatchesRequest;
-                fromJSON(object: any): _592.QueryBatchesRequest;
-                toJSON(message: _592.QueryBatchesRequest): unknown;
+                encode(message: _660.QueryBatchesRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _660.QueryBatchesRequest;
+                fromJSON(object: any): _660.QueryBatchesRequest;
+                toJSON(message: _660.QueryBatchesRequest): unknown;
                 fromPartial(object: {
                     classId?: string;
                     pagination?: {
@@ -5376,13 +5376,13 @@ export declare namespace regen {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _592.QueryBatchesRequest;
+                }): _660.QueryBatchesRequest;
             };
             QueryBatchesResponse: {
-                encode(message: _592.QueryBatchesResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _592.QueryBatchesResponse;
-                fromJSON(object: any): _592.QueryBatchesResponse;
-                toJSON(message: _592.QueryBatchesResponse): unknown;
+                encode(message: _660.QueryBatchesResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _660.QueryBatchesResponse;
+                fromJSON(object: any): _660.QueryBatchesResponse;
+                toJSON(message: _660.QueryBatchesResponse): unknown;
                 fromPartial(object: {
                     batches?: {
                         classId?: string;
@@ -5405,22 +5405,22 @@ export declare namespace regen {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _592.QueryBatchesResponse;
+                }): _660.QueryBatchesResponse;
             };
             QueryBatchInfoRequest: {
-                encode(message: _592.QueryBatchInfoRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _592.QueryBatchInfoRequest;
-                fromJSON(object: any): _592.QueryBatchInfoRequest;
-                toJSON(message: _592.QueryBatchInfoRequest): unknown;
+                encode(message: _660.QueryBatchInfoRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _660.QueryBatchInfoRequest;
+                fromJSON(object: any): _660.QueryBatchInfoRequest;
+                toJSON(message: _660.QueryBatchInfoRequest): unknown;
                 fromPartial(object: {
                     batchDenom?: string;
-                }): _592.QueryBatchInfoRequest;
+                }): _660.QueryBatchInfoRequest;
             };
             QueryBatchInfoResponse: {
-                encode(message: _592.QueryBatchInfoResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _592.QueryBatchInfoResponse;
-                fromJSON(object: any): _592.QueryBatchInfoResponse;
-                toJSON(message: _592.QueryBatchInfoResponse): unknown;
+                encode(message: _660.QueryBatchInfoResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _660.QueryBatchInfoResponse;
+                fromJSON(object: any): _660.QueryBatchInfoResponse;
+                toJSON(message: _660.QueryBatchInfoResponse): unknown;
                 fromPartial(object: {
                     info?: {
                         classId?: string;
@@ -5439,59 +5439,59 @@ export declare namespace regen {
                         };
                         projectLocation?: string;
                     };
-                }): _592.QueryBatchInfoResponse;
+                }): _660.QueryBatchInfoResponse;
             };
             QueryBalanceRequest: {
-                encode(message: _592.QueryBalanceRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _592.QueryBalanceRequest;
-                fromJSON(object: any): _592.QueryBalanceRequest;
-                toJSON(message: _592.QueryBalanceRequest): unknown;
+                encode(message: _660.QueryBalanceRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _660.QueryBalanceRequest;
+                fromJSON(object: any): _660.QueryBalanceRequest;
+                toJSON(message: _660.QueryBalanceRequest): unknown;
                 fromPartial(object: {
                     account?: string;
                     batchDenom?: string;
-                }): _592.QueryBalanceRequest;
+                }): _660.QueryBalanceRequest;
             };
             QueryBalanceResponse: {
-                encode(message: _592.QueryBalanceResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _592.QueryBalanceResponse;
-                fromJSON(object: any): _592.QueryBalanceResponse;
-                toJSON(message: _592.QueryBalanceResponse): unknown;
+                encode(message: _660.QueryBalanceResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _660.QueryBalanceResponse;
+                fromJSON(object: any): _660.QueryBalanceResponse;
+                toJSON(message: _660.QueryBalanceResponse): unknown;
                 fromPartial(object: {
                     tradableAmount?: string;
                     retiredAmount?: string;
-                }): _592.QueryBalanceResponse;
+                }): _660.QueryBalanceResponse;
             };
             QuerySupplyRequest: {
-                encode(message: _592.QuerySupplyRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _592.QuerySupplyRequest;
-                fromJSON(object: any): _592.QuerySupplyRequest;
-                toJSON(message: _592.QuerySupplyRequest): unknown;
+                encode(message: _660.QuerySupplyRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _660.QuerySupplyRequest;
+                fromJSON(object: any): _660.QuerySupplyRequest;
+                toJSON(message: _660.QuerySupplyRequest): unknown;
                 fromPartial(object: {
                     batchDenom?: string;
-                }): _592.QuerySupplyRequest;
+                }): _660.QuerySupplyRequest;
             };
             QuerySupplyResponse: {
-                encode(message: _592.QuerySupplyResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _592.QuerySupplyResponse;
-                fromJSON(object: any): _592.QuerySupplyResponse;
-                toJSON(message: _592.QuerySupplyResponse): unknown;
+                encode(message: _660.QuerySupplyResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _660.QuerySupplyResponse;
+                fromJSON(object: any): _660.QuerySupplyResponse;
+                toJSON(message: _660.QuerySupplyResponse): unknown;
                 fromPartial(object: {
                     tradableSupply?: string;
                     retiredSupply?: string;
-                }): _592.QuerySupplyResponse;
+                }): _660.QuerySupplyResponse;
             };
             QueryCreditTypesRequest: {
-                encode(_: _592.QueryCreditTypesRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _592.QueryCreditTypesRequest;
-                fromJSON(_: any): _592.QueryCreditTypesRequest;
-                toJSON(_: _592.QueryCreditTypesRequest): unknown;
-                fromPartial(_: {}): _592.QueryCreditTypesRequest;
+                encode(_: _660.QueryCreditTypesRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _660.QueryCreditTypesRequest;
+                fromJSON(_: any): _660.QueryCreditTypesRequest;
+                toJSON(_: _660.QueryCreditTypesRequest): unknown;
+                fromPartial(_: {}): _660.QueryCreditTypesRequest;
             };
             QueryCreditTypesResponse: {
-                encode(message: _592.QueryCreditTypesResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _592.QueryCreditTypesResponse;
-                fromJSON(object: any): _592.QueryCreditTypesResponse;
-                toJSON(message: _592.QueryCreditTypesResponse): unknown;
+                encode(message: _660.QueryCreditTypesResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _660.QueryCreditTypesResponse;
+                fromJSON(object: any): _660.QueryCreditTypesResponse;
+                toJSON(message: _660.QueryCreditTypesResponse): unknown;
                 fromPartial(object: {
                     creditTypes?: {
                         name?: string;
@@ -5499,13 +5499,13 @@ export declare namespace regen {
                         unit?: string;
                         precision?: number;
                     }[];
-                }): _592.QueryCreditTypesResponse;
+                }): _660.QueryCreditTypesResponse;
             };
             GenesisState: {
-                encode(message: _591.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _591.GenesisState;
-                fromJSON(object: any): _591.GenesisState;
-                toJSON(message: _591.GenesisState): unknown;
+                encode(message: _659.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _659.GenesisState;
+                fromJSON(object: any): _659.GenesisState;
+                toJSON(message: _659.GenesisState): unknown;
                 fromPartial(object: {
                     params?: {
                         creditClassFee?: {
@@ -5570,46 +5570,46 @@ export declare namespace regen {
                         tradableSupply?: string;
                         retiredSupply?: string;
                     }[];
-                }): _591.GenesisState;
+                }): _659.GenesisState;
             };
             Balance: {
-                encode(message: _591.Balance, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _591.Balance;
-                fromJSON(object: any): _591.Balance;
-                toJSON(message: _591.Balance): unknown;
+                encode(message: _659.Balance, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _659.Balance;
+                fromJSON(object: any): _659.Balance;
+                toJSON(message: _659.Balance): unknown;
                 fromPartial(object: {
                     address?: string;
                     batchDenom?: string;
                     tradableBalance?: string;
                     retiredBalance?: string;
-                }): _591.Balance;
+                }): _659.Balance;
             };
             Supply: {
-                encode(message: _591.Supply, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _591.Supply;
-                fromJSON(object: any): _591.Supply;
-                toJSON(message: _591.Supply): unknown;
+                encode(message: _659.Supply, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _659.Supply;
+                fromJSON(object: any): _659.Supply;
+                toJSON(message: _659.Supply): unknown;
                 fromPartial(object: {
                     batchDenom?: string;
                     tradableSupply?: string;
                     retiredSupply?: string;
-                }): _591.Supply;
+                }): _659.Supply;
             };
             EventCreateClass: {
-                encode(message: _590.EventCreateClass, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _590.EventCreateClass;
-                fromJSON(object: any): _590.EventCreateClass;
-                toJSON(message: _590.EventCreateClass): unknown;
+                encode(message: _658.EventCreateClass, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _658.EventCreateClass;
+                fromJSON(object: any): _658.EventCreateClass;
+                toJSON(message: _658.EventCreateClass): unknown;
                 fromPartial(object: {
                     classId?: string;
                     admin?: string;
-                }): _590.EventCreateClass;
+                }): _658.EventCreateClass;
             };
             EventCreateBatch: {
-                encode(message: _590.EventCreateBatch, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _590.EventCreateBatch;
-                fromJSON(object: any): _590.EventCreateBatch;
-                toJSON(message: _590.EventCreateBatch): unknown;
+                encode(message: _658.EventCreateBatch, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _658.EventCreateBatch;
+                fromJSON(object: any): _658.EventCreateBatch;
+                toJSON(message: _658.EventCreateBatch): unknown;
                 fromPartial(object: {
                     classId?: string;
                     batchDenom?: string;
@@ -5618,13 +5618,13 @@ export declare namespace regen {
                     startDate?: string;
                     endDate?: string;
                     projectLocation?: string;
-                }): _590.EventCreateBatch;
+                }): _658.EventCreateBatch;
             };
             EventReceive: {
-                encode(message: _590.EventReceive, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _590.EventReceive;
-                fromJSON(object: any): _590.EventReceive;
-                toJSON(message: _590.EventReceive): unknown;
+                encode(message: _658.EventReceive, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _658.EventReceive;
+                fromJSON(object: any): _658.EventReceive;
+                toJSON(message: _658.EventReceive): unknown;
                 fromPartial(object: {
                     sender?: string;
                     recipient?: string;
@@ -5632,30 +5632,30 @@ export declare namespace regen {
                     tradableAmount?: string;
                     retiredAmount?: string;
                     basketDenom?: string;
-                }): _590.EventReceive;
+                }): _658.EventReceive;
             };
             EventRetire: {
-                encode(message: _590.EventRetire, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _590.EventRetire;
-                fromJSON(object: any): _590.EventRetire;
-                toJSON(message: _590.EventRetire): unknown;
+                encode(message: _658.EventRetire, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _658.EventRetire;
+                fromJSON(object: any): _658.EventRetire;
+                toJSON(message: _658.EventRetire): unknown;
                 fromPartial(object: {
                     retirer?: string;
                     batchDenom?: string;
                     amount?: string;
                     location?: string;
-                }): _590.EventRetire;
+                }): _658.EventRetire;
             };
             EventCancel: {
-                encode(message: _590.EventCancel, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _590.EventCancel;
-                fromJSON(object: any): _590.EventCancel;
-                toJSON(message: _590.EventCancel): unknown;
+                encode(message: _658.EventCancel, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _658.EventCancel;
+                fromJSON(object: any): _658.EventCancel;
+                toJSON(message: _658.EventCancel): unknown;
                 fromPartial(object: {
                     canceller?: string;
                     batchDenom?: string;
                     amount?: string;
-                }): _590.EventCancel;
+                }): _658.EventCancel;
             };
         };
     }
@@ -5665,139 +5665,139 @@ export declare namespace regen {
             load: (protoRegistry: import("@cosmjs/proto-signing").Registry) => void;
             MessageComposer: {
                 encoded: {
-                    createGroup(value: _598.MsgCreateGroup): {
+                    createGroup(value: _666.MsgCreateGroup): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updateGroupMembers(value: _598.MsgUpdateGroupMembers): {
+                    updateGroupMembers(value: _666.MsgUpdateGroupMembers): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updateGroupAdmin(value: _598.MsgUpdateGroupAdmin): {
+                    updateGroupAdmin(value: _666.MsgUpdateGroupAdmin): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updateGroupMetadata(value: _598.MsgUpdateGroupMetadata): {
+                    updateGroupMetadata(value: _666.MsgUpdateGroupMetadata): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    createGroupAccount(value: _598.MsgCreateGroupAccount): {
+                    createGroupAccount(value: _666.MsgCreateGroupAccount): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updateGroupAccountAdmin(value: _598.MsgUpdateGroupAccountAdmin): {
+                    updateGroupAccountAdmin(value: _666.MsgUpdateGroupAccountAdmin): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updateGroupAccountDecisionPolicy(value: _598.MsgUpdateGroupAccountDecisionPolicy): {
+                    updateGroupAccountDecisionPolicy(value: _666.MsgUpdateGroupAccountDecisionPolicy): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updateGroupAccountMetadata(value: _598.MsgUpdateGroupAccountMetadata): {
+                    updateGroupAccountMetadata(value: _666.MsgUpdateGroupAccountMetadata): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    createProposal(value: _598.MsgCreateProposal): {
+                    createProposal(value: _666.MsgCreateProposal): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    vote(value: _598.MsgVote): {
+                    vote(value: _666.MsgVote): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    exec(value: _598.MsgExec): {
+                    exec(value: _666.MsgExec): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
                 };
                 withTypeUrl: {
-                    createGroup(value: _598.MsgCreateGroup): {
+                    createGroup(value: _666.MsgCreateGroup): {
                         typeUrl: string;
-                        value: _598.MsgCreateGroup;
+                        value: _666.MsgCreateGroup;
                     };
-                    updateGroupMembers(value: _598.MsgUpdateGroupMembers): {
+                    updateGroupMembers(value: _666.MsgUpdateGroupMembers): {
                         typeUrl: string;
-                        value: _598.MsgUpdateGroupMembers;
+                        value: _666.MsgUpdateGroupMembers;
                     };
-                    updateGroupAdmin(value: _598.MsgUpdateGroupAdmin): {
+                    updateGroupAdmin(value: _666.MsgUpdateGroupAdmin): {
                         typeUrl: string;
-                        value: _598.MsgUpdateGroupAdmin;
+                        value: _666.MsgUpdateGroupAdmin;
                     };
-                    updateGroupMetadata(value: _598.MsgUpdateGroupMetadata): {
+                    updateGroupMetadata(value: _666.MsgUpdateGroupMetadata): {
                         typeUrl: string;
-                        value: _598.MsgUpdateGroupMetadata;
+                        value: _666.MsgUpdateGroupMetadata;
                     };
-                    createGroupAccount(value: _598.MsgCreateGroupAccount): {
+                    createGroupAccount(value: _666.MsgCreateGroupAccount): {
                         typeUrl: string;
-                        value: _598.MsgCreateGroupAccount;
+                        value: _666.MsgCreateGroupAccount;
                     };
-                    updateGroupAccountAdmin(value: _598.MsgUpdateGroupAccountAdmin): {
+                    updateGroupAccountAdmin(value: _666.MsgUpdateGroupAccountAdmin): {
                         typeUrl: string;
-                        value: _598.MsgUpdateGroupAccountAdmin;
+                        value: _666.MsgUpdateGroupAccountAdmin;
                     };
-                    updateGroupAccountDecisionPolicy(value: _598.MsgUpdateGroupAccountDecisionPolicy): {
+                    updateGroupAccountDecisionPolicy(value: _666.MsgUpdateGroupAccountDecisionPolicy): {
                         typeUrl: string;
-                        value: _598.MsgUpdateGroupAccountDecisionPolicy;
+                        value: _666.MsgUpdateGroupAccountDecisionPolicy;
                     };
-                    updateGroupAccountMetadata(value: _598.MsgUpdateGroupAccountMetadata): {
+                    updateGroupAccountMetadata(value: _666.MsgUpdateGroupAccountMetadata): {
                         typeUrl: string;
-                        value: _598.MsgUpdateGroupAccountMetadata;
+                        value: _666.MsgUpdateGroupAccountMetadata;
                     };
-                    createProposal(value: _598.MsgCreateProposal): {
+                    createProposal(value: _666.MsgCreateProposal): {
                         typeUrl: string;
-                        value: _598.MsgCreateProposal;
+                        value: _666.MsgCreateProposal;
                     };
-                    vote(value: _598.MsgVote): {
+                    vote(value: _666.MsgVote): {
                         typeUrl: string;
-                        value: _598.MsgVote;
+                        value: _666.MsgVote;
                     };
-                    exec(value: _598.MsgExec): {
+                    exec(value: _666.MsgExec): {
                         typeUrl: string;
-                        value: _598.MsgExec;
+                        value: _666.MsgExec;
                     };
                 };
                 toJSON: {
-                    createGroup(value: _598.MsgCreateGroup): {
+                    createGroup(value: _666.MsgCreateGroup): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updateGroupMembers(value: _598.MsgUpdateGroupMembers): {
+                    updateGroupMembers(value: _666.MsgUpdateGroupMembers): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updateGroupAdmin(value: _598.MsgUpdateGroupAdmin): {
+                    updateGroupAdmin(value: _666.MsgUpdateGroupAdmin): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updateGroupMetadata(value: _598.MsgUpdateGroupMetadata): {
+                    updateGroupMetadata(value: _666.MsgUpdateGroupMetadata): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    createGroupAccount(value: _598.MsgCreateGroupAccount): {
+                    createGroupAccount(value: _666.MsgCreateGroupAccount): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updateGroupAccountAdmin(value: _598.MsgUpdateGroupAccountAdmin): {
+                    updateGroupAccountAdmin(value: _666.MsgUpdateGroupAccountAdmin): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updateGroupAccountDecisionPolicy(value: _598.MsgUpdateGroupAccountDecisionPolicy): {
+                    updateGroupAccountDecisionPolicy(value: _666.MsgUpdateGroupAccountDecisionPolicy): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updateGroupAccountMetadata(value: _598.MsgUpdateGroupAccountMetadata): {
+                    updateGroupAccountMetadata(value: _666.MsgUpdateGroupAccountMetadata): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    createProposal(value: _598.MsgCreateProposal): {
+                    createProposal(value: _666.MsgCreateProposal): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    vote(value: _598.MsgVote): {
+                    vote(value: _666.MsgVote): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    exec(value: _598.MsgExec): {
+                    exec(value: _666.MsgExec): {
                         typeUrl: string;
                         value: unknown;
                     };
@@ -5805,100 +5805,100 @@ export declare namespace regen {
                 fromJSON: {
                     createGroup(value: any): {
                         typeUrl: string;
-                        value: _598.MsgCreateGroup;
+                        value: _666.MsgCreateGroup;
                     };
                     updateGroupMembers(value: any): {
                         typeUrl: string;
-                        value: _598.MsgUpdateGroupMembers;
+                        value: _666.MsgUpdateGroupMembers;
                     };
                     updateGroupAdmin(value: any): {
                         typeUrl: string;
-                        value: _598.MsgUpdateGroupAdmin;
+                        value: _666.MsgUpdateGroupAdmin;
                     };
                     updateGroupMetadata(value: any): {
                         typeUrl: string;
-                        value: _598.MsgUpdateGroupMetadata;
+                        value: _666.MsgUpdateGroupMetadata;
                     };
                     createGroupAccount(value: any): {
                         typeUrl: string;
-                        value: _598.MsgCreateGroupAccount;
+                        value: _666.MsgCreateGroupAccount;
                     };
                     updateGroupAccountAdmin(value: any): {
                         typeUrl: string;
-                        value: _598.MsgUpdateGroupAccountAdmin;
+                        value: _666.MsgUpdateGroupAccountAdmin;
                     };
                     updateGroupAccountDecisionPolicy(value: any): {
                         typeUrl: string;
-                        value: _598.MsgUpdateGroupAccountDecisionPolicy;
+                        value: _666.MsgUpdateGroupAccountDecisionPolicy;
                     };
                     updateGroupAccountMetadata(value: any): {
                         typeUrl: string;
-                        value: _598.MsgUpdateGroupAccountMetadata;
+                        value: _666.MsgUpdateGroupAccountMetadata;
                     };
                     createProposal(value: any): {
                         typeUrl: string;
-                        value: _598.MsgCreateProposal;
+                        value: _666.MsgCreateProposal;
                     };
                     vote(value: any): {
                         typeUrl: string;
-                        value: _598.MsgVote;
+                        value: _666.MsgVote;
                     };
                     exec(value: any): {
                         typeUrl: string;
-                        value: _598.MsgExec;
+                        value: _666.MsgExec;
                     };
                 };
                 fromPartial: {
-                    createGroup(value: _598.MsgCreateGroup): {
+                    createGroup(value: _666.MsgCreateGroup): {
                         typeUrl: string;
-                        value: _598.MsgCreateGroup;
+                        value: _666.MsgCreateGroup;
                     };
-                    updateGroupMembers(value: _598.MsgUpdateGroupMembers): {
+                    updateGroupMembers(value: _666.MsgUpdateGroupMembers): {
                         typeUrl: string;
-                        value: _598.MsgUpdateGroupMembers;
+                        value: _666.MsgUpdateGroupMembers;
                     };
-                    updateGroupAdmin(value: _598.MsgUpdateGroupAdmin): {
+                    updateGroupAdmin(value: _666.MsgUpdateGroupAdmin): {
                         typeUrl: string;
-                        value: _598.MsgUpdateGroupAdmin;
+                        value: _666.MsgUpdateGroupAdmin;
                     };
-                    updateGroupMetadata(value: _598.MsgUpdateGroupMetadata): {
+                    updateGroupMetadata(value: _666.MsgUpdateGroupMetadata): {
                         typeUrl: string;
-                        value: _598.MsgUpdateGroupMetadata;
+                        value: _666.MsgUpdateGroupMetadata;
                     };
-                    createGroupAccount(value: _598.MsgCreateGroupAccount): {
+                    createGroupAccount(value: _666.MsgCreateGroupAccount): {
                         typeUrl: string;
-                        value: _598.MsgCreateGroupAccount;
+                        value: _666.MsgCreateGroupAccount;
                     };
-                    updateGroupAccountAdmin(value: _598.MsgUpdateGroupAccountAdmin): {
+                    updateGroupAccountAdmin(value: _666.MsgUpdateGroupAccountAdmin): {
                         typeUrl: string;
-                        value: _598.MsgUpdateGroupAccountAdmin;
+                        value: _666.MsgUpdateGroupAccountAdmin;
                     };
-                    updateGroupAccountDecisionPolicy(value: _598.MsgUpdateGroupAccountDecisionPolicy): {
+                    updateGroupAccountDecisionPolicy(value: _666.MsgUpdateGroupAccountDecisionPolicy): {
                         typeUrl: string;
-                        value: _598.MsgUpdateGroupAccountDecisionPolicy;
+                        value: _666.MsgUpdateGroupAccountDecisionPolicy;
                     };
-                    updateGroupAccountMetadata(value: _598.MsgUpdateGroupAccountMetadata): {
+                    updateGroupAccountMetadata(value: _666.MsgUpdateGroupAccountMetadata): {
                         typeUrl: string;
-                        value: _598.MsgUpdateGroupAccountMetadata;
+                        value: _666.MsgUpdateGroupAccountMetadata;
                     };
-                    createProposal(value: _598.MsgCreateProposal): {
+                    createProposal(value: _666.MsgCreateProposal): {
                         typeUrl: string;
-                        value: _598.MsgCreateProposal;
+                        value: _666.MsgCreateProposal;
                     };
-                    vote(value: _598.MsgVote): {
+                    vote(value: _666.MsgVote): {
                         typeUrl: string;
-                        value: _598.MsgVote;
+                        value: _666.MsgVote;
                     };
-                    exec(value: _598.MsgExec): {
+                    exec(value: _666.MsgExec): {
                         typeUrl: string;
-                        value: _598.MsgExec;
+                        value: _666.MsgExec;
                     };
                 };
             };
             AminoConverter: {
                 "/regen.group.v1alpha1.MsgCreateGroup": {
                     aminoType: string;
-                    toAmino: ({ admin, members, metadata }: _598.MsgCreateGroup) => {
+                    toAmino: ({ admin, members, metadata }: _666.MsgCreateGroup) => {
                         admin: string;
                         members: {
                             address: string;
@@ -5915,11 +5915,11 @@ export declare namespace regen {
                             metadata: Uint8Array;
                         }[];
                         metadata: Uint8Array;
-                    }) => _598.MsgCreateGroup;
+                    }) => _666.MsgCreateGroup;
                 };
                 "/regen.group.v1alpha1.MsgUpdateGroupMembers": {
                     aminoType: string;
-                    toAmino: ({ admin, groupId, memberUpdates }: _598.MsgUpdateGroupMembers) => {
+                    toAmino: ({ admin, groupId, memberUpdates }: _666.MsgUpdateGroupMembers) => {
                         admin: string;
                         group_id: string;
                         member_updates: {
@@ -5936,11 +5936,11 @@ export declare namespace regen {
                             weight: string;
                             metadata: Uint8Array;
                         }[];
-                    }) => _598.MsgUpdateGroupMembers;
+                    }) => _666.MsgUpdateGroupMembers;
                 };
                 "/regen.group.v1alpha1.MsgUpdateGroupAdmin": {
                     aminoType: string;
-                    toAmino: ({ admin, groupId, newAdmin }: _598.MsgUpdateGroupAdmin) => {
+                    toAmino: ({ admin, groupId, newAdmin }: _666.MsgUpdateGroupAdmin) => {
                         admin: string;
                         group_id: string;
                         new_admin: string;
@@ -5949,11 +5949,11 @@ export declare namespace regen {
                         admin: string;
                         group_id: string;
                         new_admin: string;
-                    }) => _598.MsgUpdateGroupAdmin;
+                    }) => _666.MsgUpdateGroupAdmin;
                 };
                 "/regen.group.v1alpha1.MsgUpdateGroupMetadata": {
                     aminoType: string;
-                    toAmino: ({ admin, groupId, metadata }: _598.MsgUpdateGroupMetadata) => {
+                    toAmino: ({ admin, groupId, metadata }: _666.MsgUpdateGroupMetadata) => {
                         admin: string;
                         group_id: string;
                         metadata: Uint8Array;
@@ -5962,11 +5962,11 @@ export declare namespace regen {
                         admin: string;
                         group_id: string;
                         metadata: Uint8Array;
-                    }) => _598.MsgUpdateGroupMetadata;
+                    }) => _666.MsgUpdateGroupMetadata;
                 };
                 "/regen.group.v1alpha1.MsgCreateGroupAccount": {
                     aminoType: string;
-                    toAmino: ({ admin, groupId, metadata, decisionPolicy }: _598.MsgCreateGroupAccount) => {
+                    toAmino: ({ admin, groupId, metadata, decisionPolicy }: _666.MsgCreateGroupAccount) => {
                         admin: string;
                         group_id: string;
                         metadata: Uint8Array;
@@ -5983,11 +5983,11 @@ export declare namespace regen {
                             type_url: string;
                             value: Uint8Array;
                         };
-                    }) => _598.MsgCreateGroupAccount;
+                    }) => _666.MsgCreateGroupAccount;
                 };
                 "/regen.group.v1alpha1.MsgUpdateGroupAccountAdmin": {
                     aminoType: string;
-                    toAmino: ({ admin, address, newAdmin }: _598.MsgUpdateGroupAccountAdmin) => {
+                    toAmino: ({ admin, address, newAdmin }: _666.MsgUpdateGroupAccountAdmin) => {
                         admin: string;
                         address: string;
                         new_admin: string;
@@ -5996,11 +5996,11 @@ export declare namespace regen {
                         admin: string;
                         address: string;
                         new_admin: string;
-                    }) => _598.MsgUpdateGroupAccountAdmin;
+                    }) => _666.MsgUpdateGroupAccountAdmin;
                 };
                 "/regen.group.v1alpha1.MsgUpdateGroupAccountDecisionPolicy": {
                     aminoType: string;
-                    toAmino: ({ admin, address, decisionPolicy }: _598.MsgUpdateGroupAccountDecisionPolicy) => {
+                    toAmino: ({ admin, address, decisionPolicy }: _666.MsgUpdateGroupAccountDecisionPolicy) => {
                         admin: string;
                         address: string;
                         decision_policy: {
@@ -6015,11 +6015,11 @@ export declare namespace regen {
                             type_url: string;
                             value: Uint8Array;
                         };
-                    }) => _598.MsgUpdateGroupAccountDecisionPolicy;
+                    }) => _666.MsgUpdateGroupAccountDecisionPolicy;
                 };
                 "/regen.group.v1alpha1.MsgUpdateGroupAccountMetadata": {
                     aminoType: string;
-                    toAmino: ({ admin, address, metadata }: _598.MsgUpdateGroupAccountMetadata) => {
+                    toAmino: ({ admin, address, metadata }: _666.MsgUpdateGroupAccountMetadata) => {
                         admin: string;
                         address: string;
                         metadata: Uint8Array;
@@ -6028,11 +6028,11 @@ export declare namespace regen {
                         admin: string;
                         address: string;
                         metadata: Uint8Array;
-                    }) => _598.MsgUpdateGroupAccountMetadata;
+                    }) => _666.MsgUpdateGroupAccountMetadata;
                 };
                 "/regen.group.v1alpha1.MsgCreateProposal": {
                     aminoType: string;
-                    toAmino: ({ address, proposers, metadata, msgs, exec }: _598.MsgCreateProposal) => {
+                    toAmino: ({ address, proposers, metadata, msgs, exec }: _666.MsgCreateProposal) => {
                         address: string;
                         proposers: string[];
                         metadata: Uint8Array;
@@ -6051,11 +6051,11 @@ export declare namespace regen {
                             value: Uint8Array;
                         }[];
                         exec: number;
-                    }) => _598.MsgCreateProposal;
+                    }) => _666.MsgCreateProposal;
                 };
                 "/regen.group.v1alpha1.MsgVote": {
                     aminoType: string;
-                    toAmino: ({ proposalId, voter, choice, metadata, exec }: _598.MsgVote) => {
+                    toAmino: ({ proposalId, voter, choice, metadata, exec }: _666.MsgVote) => {
                         proposal_id: string;
                         voter: string;
                         choice: number;
@@ -6068,87 +6068,87 @@ export declare namespace regen {
                         choice: number;
                         metadata: Uint8Array;
                         exec: number;
-                    }) => _598.MsgVote;
+                    }) => _666.MsgVote;
                 };
                 "/regen.group.v1alpha1.MsgExec": {
                     aminoType: string;
-                    toAmino: ({ proposalId, signer }: _598.MsgExec) => {
+                    toAmino: ({ proposalId, signer }: _666.MsgExec) => {
                         proposal_id: string;
                         signer: string;
                     };
                     fromAmino: ({ proposal_id, signer }: {
                         proposal_id: string;
                         signer: string;
-                    }) => _598.MsgExec;
+                    }) => _666.MsgExec;
                 };
             };
-            choiceFromJSON(object: any): _599.Choice;
-            choiceToJSON(object: _599.Choice): string;
-            proposal_StatusFromJSON(object: any): _599.Proposal_Status;
-            proposal_StatusToJSON(object: _599.Proposal_Status): string;
-            proposal_ResultFromJSON(object: any): _599.Proposal_Result;
-            proposal_ResultToJSON(object: _599.Proposal_Result): string;
-            proposal_ExecutorResultFromJSON(object: any): _599.Proposal_ExecutorResult;
-            proposal_ExecutorResultToJSON(object: _599.Proposal_ExecutorResult): string;
-            Choice: typeof _599.Choice;
-            Proposal_Status: typeof _599.Proposal_Status;
-            Proposal_Result: typeof _599.Proposal_Result;
-            Proposal_ExecutorResult: typeof _599.Proposal_ExecutorResult;
+            choiceFromJSON(object: any): _667.Choice;
+            choiceToJSON(object: _667.Choice): string;
+            proposal_StatusFromJSON(object: any): _667.Proposal_Status;
+            proposal_StatusToJSON(object: _667.Proposal_Status): string;
+            proposal_ResultFromJSON(object: any): _667.Proposal_Result;
+            proposal_ResultToJSON(object: _667.Proposal_Result): string;
+            proposal_ExecutorResultFromJSON(object: any): _667.Proposal_ExecutorResult;
+            proposal_ExecutorResultToJSON(object: _667.Proposal_ExecutorResult): string;
+            Choice: typeof _667.Choice;
+            Proposal_Status: typeof _667.Proposal_Status;
+            Proposal_Result: typeof _667.Proposal_Result;
+            Proposal_ExecutorResult: typeof _667.Proposal_ExecutorResult;
             Member: {
-                encode(message: _599.Member, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _599.Member;
-                fromJSON(object: any): _599.Member;
-                toJSON(message: _599.Member): unknown;
+                encode(message: _667.Member, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _667.Member;
+                fromJSON(object: any): _667.Member;
+                toJSON(message: _667.Member): unknown;
                 fromPartial(object: {
                     address?: string;
                     weight?: string;
                     metadata?: Uint8Array;
-                }): _599.Member;
+                }): _667.Member;
             };
             Members: {
-                encode(message: _599.Members, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _599.Members;
-                fromJSON(object: any): _599.Members;
-                toJSON(message: _599.Members): unknown;
+                encode(message: _667.Members, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _667.Members;
+                fromJSON(object: any): _667.Members;
+                toJSON(message: _667.Members): unknown;
                 fromPartial(object: {
                     members?: {
                         address?: string;
                         weight?: string;
                         metadata?: Uint8Array;
                     }[];
-                }): _599.Members;
+                }): _667.Members;
             };
             ThresholdDecisionPolicy: {
-                encode(message: _599.ThresholdDecisionPolicy, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _599.ThresholdDecisionPolicy;
-                fromJSON(object: any): _599.ThresholdDecisionPolicy;
-                toJSON(message: _599.ThresholdDecisionPolicy): unknown;
+                encode(message: _667.ThresholdDecisionPolicy, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _667.ThresholdDecisionPolicy;
+                fromJSON(object: any): _667.ThresholdDecisionPolicy;
+                toJSON(message: _667.ThresholdDecisionPolicy): unknown;
                 fromPartial(object: {
                     threshold?: string;
                     timeout?: {
                         seconds?: any;
                         nanos?: number;
                     };
-                }): _599.ThresholdDecisionPolicy;
+                }): _667.ThresholdDecisionPolicy;
             };
             GroupInfo: {
-                encode(message: _599.GroupInfo, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _599.GroupInfo;
-                fromJSON(object: any): _599.GroupInfo;
-                toJSON(message: _599.GroupInfo): unknown;
+                encode(message: _667.GroupInfo, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _667.GroupInfo;
+                fromJSON(object: any): _667.GroupInfo;
+                toJSON(message: _667.GroupInfo): unknown;
                 fromPartial(object: {
                     groupId?: any;
                     admin?: string;
                     metadata?: Uint8Array;
                     version?: any;
                     totalWeight?: string;
-                }): _599.GroupInfo;
+                }): _667.GroupInfo;
             };
             GroupMember: {
-                encode(message: _599.GroupMember, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _599.GroupMember;
-                fromJSON(object: any): _599.GroupMember;
-                toJSON(message: _599.GroupMember): unknown;
+                encode(message: _667.GroupMember, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _667.GroupMember;
+                fromJSON(object: any): _667.GroupMember;
+                toJSON(message: _667.GroupMember): unknown;
                 fromPartial(object: {
                     groupId?: any;
                     member?: {
@@ -6156,13 +6156,13 @@ export declare namespace regen {
                         weight?: string;
                         metadata?: Uint8Array;
                     };
-                }): _599.GroupMember;
+                }): _667.GroupMember;
             };
             GroupAccountInfo: {
-                encode(message: _599.GroupAccountInfo, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _599.GroupAccountInfo;
-                fromJSON(object: any): _599.GroupAccountInfo;
-                toJSON(message: _599.GroupAccountInfo): unknown;
+                encode(message: _667.GroupAccountInfo, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _667.GroupAccountInfo;
+                fromJSON(object: any): _667.GroupAccountInfo;
+                toJSON(message: _667.GroupAccountInfo): unknown;
                 fromPartial(object: {
                     address?: string;
                     groupId?: any;
@@ -6174,13 +6174,13 @@ export declare namespace regen {
                         value?: Uint8Array;
                     };
                     derivationKey?: Uint8Array;
-                }): _599.GroupAccountInfo;
+                }): _667.GroupAccountInfo;
             };
             Proposal: {
-                encode(message: _599.Proposal, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _599.Proposal;
-                fromJSON(object: any): _599.Proposal;
-                toJSON(message: _599.Proposal): unknown;
+                encode(message: _667.Proposal, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _667.Proposal;
+                fromJSON(object: any): _667.Proposal;
+                toJSON(message: _667.Proposal): unknown;
                 fromPartial(object: {
                     proposalId?: any;
                     address?: string;
@@ -6192,8 +6192,8 @@ export declare namespace regen {
                     };
                     groupVersion?: any;
                     groupAccountVersion?: any;
-                    status?: _599.Proposal_Status;
-                    result?: _599.Proposal_Result;
+                    status?: _667.Proposal_Status;
+                    result?: _667.Proposal_Result;
                     voteState?: {
                         yesCount?: string;
                         noCount?: string;
@@ -6204,49 +6204,49 @@ export declare namespace regen {
                         seconds?: any;
                         nanos?: number;
                     };
-                    executorResult?: _599.Proposal_ExecutorResult;
+                    executorResult?: _667.Proposal_ExecutorResult;
                     msgs?: {
                         typeUrl?: string;
                         value?: Uint8Array;
                     }[];
-                }): _599.Proposal;
+                }): _667.Proposal;
             };
             Tally: {
-                encode(message: _599.Tally, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _599.Tally;
-                fromJSON(object: any): _599.Tally;
-                toJSON(message: _599.Tally): unknown;
+                encode(message: _667.Tally, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _667.Tally;
+                fromJSON(object: any): _667.Tally;
+                toJSON(message: _667.Tally): unknown;
                 fromPartial(object: {
                     yesCount?: string;
                     noCount?: string;
                     abstainCount?: string;
                     vetoCount?: string;
-                }): _599.Tally;
+                }): _667.Tally;
             };
             Vote: {
-                encode(message: _599.Vote, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _599.Vote;
-                fromJSON(object: any): _599.Vote;
-                toJSON(message: _599.Vote): unknown;
+                encode(message: _667.Vote, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _667.Vote;
+                fromJSON(object: any): _667.Vote;
+                toJSON(message: _667.Vote): unknown;
                 fromPartial(object: {
                     proposalId?: any;
                     voter?: string;
-                    choice?: _599.Choice;
+                    choice?: _667.Choice;
                     metadata?: Uint8Array;
                     submittedAt?: {
                         seconds?: any;
                         nanos?: number;
                     };
-                }): _599.Vote;
+                }): _667.Vote;
             };
-            execFromJSON(object: any): _598.Exec;
-            execToJSON(object: _598.Exec): string;
-            Exec: typeof _598.Exec;
+            execFromJSON(object: any): _666.Exec;
+            execToJSON(object: _666.Exec): string;
+            Exec: typeof _666.Exec;
             MsgCreateGroup: {
-                encode(message: _598.MsgCreateGroup, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _598.MsgCreateGroup;
-                fromJSON(object: any): _598.MsgCreateGroup;
-                toJSON(message: _598.MsgCreateGroup): unknown;
+                encode(message: _666.MsgCreateGroup, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgCreateGroup;
+                fromJSON(object: any): _666.MsgCreateGroup;
+                toJSON(message: _666.MsgCreateGroup): unknown;
                 fromPartial(object: {
                     admin?: string;
                     members?: {
@@ -6255,22 +6255,22 @@ export declare namespace regen {
                         metadata?: Uint8Array;
                     }[];
                     metadata?: Uint8Array;
-                }): _598.MsgCreateGroup;
+                }): _666.MsgCreateGroup;
             };
             MsgCreateGroupResponse: {
-                encode(message: _598.MsgCreateGroupResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _598.MsgCreateGroupResponse;
-                fromJSON(object: any): _598.MsgCreateGroupResponse;
-                toJSON(message: _598.MsgCreateGroupResponse): unknown;
+                encode(message: _666.MsgCreateGroupResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgCreateGroupResponse;
+                fromJSON(object: any): _666.MsgCreateGroupResponse;
+                toJSON(message: _666.MsgCreateGroupResponse): unknown;
                 fromPartial(object: {
                     groupId?: any;
-                }): _598.MsgCreateGroupResponse;
+                }): _666.MsgCreateGroupResponse;
             };
             MsgUpdateGroupMembers: {
-                encode(message: _598.MsgUpdateGroupMembers, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _598.MsgUpdateGroupMembers;
-                fromJSON(object: any): _598.MsgUpdateGroupMembers;
-                toJSON(message: _598.MsgUpdateGroupMembers): unknown;
+                encode(message: _666.MsgUpdateGroupMembers, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgUpdateGroupMembers;
+                fromJSON(object: any): _666.MsgUpdateGroupMembers;
+                toJSON(message: _666.MsgUpdateGroupMembers): unknown;
                 fromPartial(object: {
                     admin?: string;
                     groupId?: any;
@@ -6279,56 +6279,56 @@ export declare namespace regen {
                         weight?: string;
                         metadata?: Uint8Array;
                     }[];
-                }): _598.MsgUpdateGroupMembers;
+                }): _666.MsgUpdateGroupMembers;
             };
             MsgUpdateGroupMembersResponse: {
-                encode(_: _598.MsgUpdateGroupMembersResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _598.MsgUpdateGroupMembersResponse;
-                fromJSON(_: any): _598.MsgUpdateGroupMembersResponse;
-                toJSON(_: _598.MsgUpdateGroupMembersResponse): unknown;
-                fromPartial(_: {}): _598.MsgUpdateGroupMembersResponse;
+                encode(_: _666.MsgUpdateGroupMembersResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgUpdateGroupMembersResponse;
+                fromJSON(_: any): _666.MsgUpdateGroupMembersResponse;
+                toJSON(_: _666.MsgUpdateGroupMembersResponse): unknown;
+                fromPartial(_: {}): _666.MsgUpdateGroupMembersResponse;
             };
             MsgUpdateGroupAdmin: {
-                encode(message: _598.MsgUpdateGroupAdmin, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _598.MsgUpdateGroupAdmin;
-                fromJSON(object: any): _598.MsgUpdateGroupAdmin;
-                toJSON(message: _598.MsgUpdateGroupAdmin): unknown;
+                encode(message: _666.MsgUpdateGroupAdmin, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgUpdateGroupAdmin;
+                fromJSON(object: any): _666.MsgUpdateGroupAdmin;
+                toJSON(message: _666.MsgUpdateGroupAdmin): unknown;
                 fromPartial(object: {
                     admin?: string;
                     groupId?: any;
                     newAdmin?: string;
-                }): _598.MsgUpdateGroupAdmin;
+                }): _666.MsgUpdateGroupAdmin;
             };
             MsgUpdateGroupAdminResponse: {
-                encode(_: _598.MsgUpdateGroupAdminResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _598.MsgUpdateGroupAdminResponse;
-                fromJSON(_: any): _598.MsgUpdateGroupAdminResponse;
-                toJSON(_: _598.MsgUpdateGroupAdminResponse): unknown;
-                fromPartial(_: {}): _598.MsgUpdateGroupAdminResponse;
+                encode(_: _666.MsgUpdateGroupAdminResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgUpdateGroupAdminResponse;
+                fromJSON(_: any): _666.MsgUpdateGroupAdminResponse;
+                toJSON(_: _666.MsgUpdateGroupAdminResponse): unknown;
+                fromPartial(_: {}): _666.MsgUpdateGroupAdminResponse;
             };
             MsgUpdateGroupMetadata: {
-                encode(message: _598.MsgUpdateGroupMetadata, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _598.MsgUpdateGroupMetadata;
-                fromJSON(object: any): _598.MsgUpdateGroupMetadata;
-                toJSON(message: _598.MsgUpdateGroupMetadata): unknown;
+                encode(message: _666.MsgUpdateGroupMetadata, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgUpdateGroupMetadata;
+                fromJSON(object: any): _666.MsgUpdateGroupMetadata;
+                toJSON(message: _666.MsgUpdateGroupMetadata): unknown;
                 fromPartial(object: {
                     admin?: string;
                     groupId?: any;
                     metadata?: Uint8Array;
-                }): _598.MsgUpdateGroupMetadata;
+                }): _666.MsgUpdateGroupMetadata;
             };
             MsgUpdateGroupMetadataResponse: {
-                encode(_: _598.MsgUpdateGroupMetadataResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _598.MsgUpdateGroupMetadataResponse;
-                fromJSON(_: any): _598.MsgUpdateGroupMetadataResponse;
-                toJSON(_: _598.MsgUpdateGroupMetadataResponse): unknown;
-                fromPartial(_: {}): _598.MsgUpdateGroupMetadataResponse;
+                encode(_: _666.MsgUpdateGroupMetadataResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgUpdateGroupMetadataResponse;
+                fromJSON(_: any): _666.MsgUpdateGroupMetadataResponse;
+                toJSON(_: _666.MsgUpdateGroupMetadataResponse): unknown;
+                fromPartial(_: {}): _666.MsgUpdateGroupMetadataResponse;
             };
             MsgCreateGroupAccount: {
-                encode(message: _598.MsgCreateGroupAccount, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _598.MsgCreateGroupAccount;
-                fromJSON(object: any): _598.MsgCreateGroupAccount;
-                toJSON(message: _598.MsgCreateGroupAccount): unknown;
+                encode(message: _666.MsgCreateGroupAccount, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgCreateGroupAccount;
+                fromJSON(object: any): _666.MsgCreateGroupAccount;
+                toJSON(message: _666.MsgCreateGroupAccount): unknown;
                 fromPartial(object: {
                     admin?: string;
                     groupId?: any;
@@ -6337,40 +6337,40 @@ export declare namespace regen {
                         typeUrl?: string;
                         value?: Uint8Array;
                     };
-                }): _598.MsgCreateGroupAccount;
+                }): _666.MsgCreateGroupAccount;
             };
             MsgCreateGroupAccountResponse: {
-                encode(message: _598.MsgCreateGroupAccountResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _598.MsgCreateGroupAccountResponse;
-                fromJSON(object: any): _598.MsgCreateGroupAccountResponse;
-                toJSON(message: _598.MsgCreateGroupAccountResponse): unknown;
+                encode(message: _666.MsgCreateGroupAccountResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgCreateGroupAccountResponse;
+                fromJSON(object: any): _666.MsgCreateGroupAccountResponse;
+                toJSON(message: _666.MsgCreateGroupAccountResponse): unknown;
                 fromPartial(object: {
                     address?: string;
-                }): _598.MsgCreateGroupAccountResponse;
+                }): _666.MsgCreateGroupAccountResponse;
             };
             MsgUpdateGroupAccountAdmin: {
-                encode(message: _598.MsgUpdateGroupAccountAdmin, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _598.MsgUpdateGroupAccountAdmin;
-                fromJSON(object: any): _598.MsgUpdateGroupAccountAdmin;
-                toJSON(message: _598.MsgUpdateGroupAccountAdmin): unknown;
+                encode(message: _666.MsgUpdateGroupAccountAdmin, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgUpdateGroupAccountAdmin;
+                fromJSON(object: any): _666.MsgUpdateGroupAccountAdmin;
+                toJSON(message: _666.MsgUpdateGroupAccountAdmin): unknown;
                 fromPartial(object: {
                     admin?: string;
                     address?: string;
                     newAdmin?: string;
-                }): _598.MsgUpdateGroupAccountAdmin;
+                }): _666.MsgUpdateGroupAccountAdmin;
             };
             MsgUpdateGroupAccountAdminResponse: {
-                encode(_: _598.MsgUpdateGroupAccountAdminResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _598.MsgUpdateGroupAccountAdminResponse;
-                fromJSON(_: any): _598.MsgUpdateGroupAccountAdminResponse;
-                toJSON(_: _598.MsgUpdateGroupAccountAdminResponse): unknown;
-                fromPartial(_: {}): _598.MsgUpdateGroupAccountAdminResponse;
+                encode(_: _666.MsgUpdateGroupAccountAdminResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgUpdateGroupAccountAdminResponse;
+                fromJSON(_: any): _666.MsgUpdateGroupAccountAdminResponse;
+                toJSON(_: _666.MsgUpdateGroupAccountAdminResponse): unknown;
+                fromPartial(_: {}): _666.MsgUpdateGroupAccountAdminResponse;
             };
             MsgUpdateGroupAccountDecisionPolicy: {
-                encode(message: _598.MsgUpdateGroupAccountDecisionPolicy, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _598.MsgUpdateGroupAccountDecisionPolicy;
-                fromJSON(object: any): _598.MsgUpdateGroupAccountDecisionPolicy;
-                toJSON(message: _598.MsgUpdateGroupAccountDecisionPolicy): unknown;
+                encode(message: _666.MsgUpdateGroupAccountDecisionPolicy, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgUpdateGroupAccountDecisionPolicy;
+                fromJSON(object: any): _666.MsgUpdateGroupAccountDecisionPolicy;
+                toJSON(message: _666.MsgUpdateGroupAccountDecisionPolicy): unknown;
                 fromPartial(object: {
                     admin?: string;
                     address?: string;
@@ -6378,38 +6378,38 @@ export declare namespace regen {
                         typeUrl?: string;
                         value?: Uint8Array;
                     };
-                }): _598.MsgUpdateGroupAccountDecisionPolicy;
+                }): _666.MsgUpdateGroupAccountDecisionPolicy;
             };
             MsgUpdateGroupAccountDecisionPolicyResponse: {
-                encode(_: _598.MsgUpdateGroupAccountDecisionPolicyResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _598.MsgUpdateGroupAccountDecisionPolicyResponse;
-                fromJSON(_: any): _598.MsgUpdateGroupAccountDecisionPolicyResponse;
-                toJSON(_: _598.MsgUpdateGroupAccountDecisionPolicyResponse): unknown;
-                fromPartial(_: {}): _598.MsgUpdateGroupAccountDecisionPolicyResponse;
+                encode(_: _666.MsgUpdateGroupAccountDecisionPolicyResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgUpdateGroupAccountDecisionPolicyResponse;
+                fromJSON(_: any): _666.MsgUpdateGroupAccountDecisionPolicyResponse;
+                toJSON(_: _666.MsgUpdateGroupAccountDecisionPolicyResponse): unknown;
+                fromPartial(_: {}): _666.MsgUpdateGroupAccountDecisionPolicyResponse;
             };
             MsgUpdateGroupAccountMetadata: {
-                encode(message: _598.MsgUpdateGroupAccountMetadata, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _598.MsgUpdateGroupAccountMetadata;
-                fromJSON(object: any): _598.MsgUpdateGroupAccountMetadata;
-                toJSON(message: _598.MsgUpdateGroupAccountMetadata): unknown;
+                encode(message: _666.MsgUpdateGroupAccountMetadata, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgUpdateGroupAccountMetadata;
+                fromJSON(object: any): _666.MsgUpdateGroupAccountMetadata;
+                toJSON(message: _666.MsgUpdateGroupAccountMetadata): unknown;
                 fromPartial(object: {
                     admin?: string;
                     address?: string;
                     metadata?: Uint8Array;
-                }): _598.MsgUpdateGroupAccountMetadata;
+                }): _666.MsgUpdateGroupAccountMetadata;
             };
             MsgUpdateGroupAccountMetadataResponse: {
-                encode(_: _598.MsgUpdateGroupAccountMetadataResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _598.MsgUpdateGroupAccountMetadataResponse;
-                fromJSON(_: any): _598.MsgUpdateGroupAccountMetadataResponse;
-                toJSON(_: _598.MsgUpdateGroupAccountMetadataResponse): unknown;
-                fromPartial(_: {}): _598.MsgUpdateGroupAccountMetadataResponse;
+                encode(_: _666.MsgUpdateGroupAccountMetadataResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgUpdateGroupAccountMetadataResponse;
+                fromJSON(_: any): _666.MsgUpdateGroupAccountMetadataResponse;
+                toJSON(_: _666.MsgUpdateGroupAccountMetadataResponse): unknown;
+                fromPartial(_: {}): _666.MsgUpdateGroupAccountMetadataResponse;
             };
             MsgCreateProposal: {
-                encode(message: _598.MsgCreateProposal, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _598.MsgCreateProposal;
-                fromJSON(object: any): _598.MsgCreateProposal;
-                toJSON(message: _598.MsgCreateProposal): unknown;
+                encode(message: _666.MsgCreateProposal, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgCreateProposal;
+                fromJSON(object: any): _666.MsgCreateProposal;
+                toJSON(message: _666.MsgCreateProposal): unknown;
                 fromPartial(object: {
                     address?: string;
                     proposers?: string[];
@@ -6418,69 +6418,69 @@ export declare namespace regen {
                         typeUrl?: string;
                         value?: Uint8Array;
                     }[];
-                    exec?: _598.Exec;
-                }): _598.MsgCreateProposal;
+                    exec?: _666.Exec;
+                }): _666.MsgCreateProposal;
             };
             MsgCreateProposalResponse: {
-                encode(message: _598.MsgCreateProposalResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _598.MsgCreateProposalResponse;
-                fromJSON(object: any): _598.MsgCreateProposalResponse;
-                toJSON(message: _598.MsgCreateProposalResponse): unknown;
+                encode(message: _666.MsgCreateProposalResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgCreateProposalResponse;
+                fromJSON(object: any): _666.MsgCreateProposalResponse;
+                toJSON(message: _666.MsgCreateProposalResponse): unknown;
                 fromPartial(object: {
                     proposalId?: any;
-                }): _598.MsgCreateProposalResponse;
+                }): _666.MsgCreateProposalResponse;
             };
             MsgVote: {
-                encode(message: _598.MsgVote, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _598.MsgVote;
-                fromJSON(object: any): _598.MsgVote;
-                toJSON(message: _598.MsgVote): unknown;
+                encode(message: _666.MsgVote, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgVote;
+                fromJSON(object: any): _666.MsgVote;
+                toJSON(message: _666.MsgVote): unknown;
                 fromPartial(object: {
                     proposalId?: any;
                     voter?: string;
-                    choice?: _599.Choice;
+                    choice?: _667.Choice;
                     metadata?: Uint8Array;
-                    exec?: _598.Exec;
-                }): _598.MsgVote;
+                    exec?: _666.Exec;
+                }): _666.MsgVote;
             };
             MsgVoteResponse: {
-                encode(_: _598.MsgVoteResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _598.MsgVoteResponse;
-                fromJSON(_: any): _598.MsgVoteResponse;
-                toJSON(_: _598.MsgVoteResponse): unknown;
-                fromPartial(_: {}): _598.MsgVoteResponse;
+                encode(_: _666.MsgVoteResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgVoteResponse;
+                fromJSON(_: any): _666.MsgVoteResponse;
+                toJSON(_: _666.MsgVoteResponse): unknown;
+                fromPartial(_: {}): _666.MsgVoteResponse;
             };
             MsgExec: {
-                encode(message: _598.MsgExec, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _598.MsgExec;
-                fromJSON(object: any): _598.MsgExec;
-                toJSON(message: _598.MsgExec): unknown;
+                encode(message: _666.MsgExec, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgExec;
+                fromJSON(object: any): _666.MsgExec;
+                toJSON(message: _666.MsgExec): unknown;
                 fromPartial(object: {
                     proposalId?: any;
                     signer?: string;
-                }): _598.MsgExec;
+                }): _666.MsgExec;
             };
             MsgExecResponse: {
-                encode(_: _598.MsgExecResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _598.MsgExecResponse;
-                fromJSON(_: any): _598.MsgExecResponse;
-                toJSON(_: _598.MsgExecResponse): unknown;
-                fromPartial(_: {}): _598.MsgExecResponse;
+                encode(_: _666.MsgExecResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _666.MsgExecResponse;
+                fromJSON(_: any): _666.MsgExecResponse;
+                toJSON(_: _666.MsgExecResponse): unknown;
+                fromPartial(_: {}): _666.MsgExecResponse;
             };
             QueryGroupInfoRequest: {
-                encode(message: _597.QueryGroupInfoRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _597.QueryGroupInfoRequest;
-                fromJSON(object: any): _597.QueryGroupInfoRequest;
-                toJSON(message: _597.QueryGroupInfoRequest): unknown;
+                encode(message: _665.QueryGroupInfoRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryGroupInfoRequest;
+                fromJSON(object: any): _665.QueryGroupInfoRequest;
+                toJSON(message: _665.QueryGroupInfoRequest): unknown;
                 fromPartial(object: {
                     groupId?: any;
-                }): _597.QueryGroupInfoRequest;
+                }): _665.QueryGroupInfoRequest;
             };
             QueryGroupInfoResponse: {
-                encode(message: _597.QueryGroupInfoResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _597.QueryGroupInfoResponse;
-                fromJSON(object: any): _597.QueryGroupInfoResponse;
-                toJSON(message: _597.QueryGroupInfoResponse): unknown;
+                encode(message: _665.QueryGroupInfoResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryGroupInfoResponse;
+                fromJSON(object: any): _665.QueryGroupInfoResponse;
+                toJSON(message: _665.QueryGroupInfoResponse): unknown;
                 fromPartial(object: {
                     info?: {
                         groupId?: any;
@@ -6489,22 +6489,22 @@ export declare namespace regen {
                         version?: any;
                         totalWeight?: string;
                     };
-                }): _597.QueryGroupInfoResponse;
+                }): _665.QueryGroupInfoResponse;
             };
             QueryGroupAccountInfoRequest: {
-                encode(message: _597.QueryGroupAccountInfoRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _597.QueryGroupAccountInfoRequest;
-                fromJSON(object: any): _597.QueryGroupAccountInfoRequest;
-                toJSON(message: _597.QueryGroupAccountInfoRequest): unknown;
+                encode(message: _665.QueryGroupAccountInfoRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryGroupAccountInfoRequest;
+                fromJSON(object: any): _665.QueryGroupAccountInfoRequest;
+                toJSON(message: _665.QueryGroupAccountInfoRequest): unknown;
                 fromPartial(object: {
                     address?: string;
-                }): _597.QueryGroupAccountInfoRequest;
+                }): _665.QueryGroupAccountInfoRequest;
             };
             QueryGroupAccountInfoResponse: {
-                encode(message: _597.QueryGroupAccountInfoResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _597.QueryGroupAccountInfoResponse;
-                fromJSON(object: any): _597.QueryGroupAccountInfoResponse;
-                toJSON(message: _597.QueryGroupAccountInfoResponse): unknown;
+                encode(message: _665.QueryGroupAccountInfoResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryGroupAccountInfoResponse;
+                fromJSON(object: any): _665.QueryGroupAccountInfoResponse;
+                toJSON(message: _665.QueryGroupAccountInfoResponse): unknown;
                 fromPartial(object: {
                     info?: {
                         address?: string;
@@ -6518,13 +6518,13 @@ export declare namespace regen {
                         };
                         derivationKey?: Uint8Array;
                     };
-                }): _597.QueryGroupAccountInfoResponse;
+                }): _665.QueryGroupAccountInfoResponse;
             };
             QueryGroupMembersRequest: {
-                encode(message: _597.QueryGroupMembersRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _597.QueryGroupMembersRequest;
-                fromJSON(object: any): _597.QueryGroupMembersRequest;
-                toJSON(message: _597.QueryGroupMembersRequest): unknown;
+                encode(message: _665.QueryGroupMembersRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryGroupMembersRequest;
+                fromJSON(object: any): _665.QueryGroupMembersRequest;
+                toJSON(message: _665.QueryGroupMembersRequest): unknown;
                 fromPartial(object: {
                     groupId?: any;
                     pagination?: {
@@ -6534,13 +6534,13 @@ export declare namespace regen {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _597.QueryGroupMembersRequest;
+                }): _665.QueryGroupMembersRequest;
             };
             QueryGroupMembersResponse: {
-                encode(message: _597.QueryGroupMembersResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _597.QueryGroupMembersResponse;
-                fromJSON(object: any): _597.QueryGroupMembersResponse;
-                toJSON(message: _597.QueryGroupMembersResponse): unknown;
+                encode(message: _665.QueryGroupMembersResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryGroupMembersResponse;
+                fromJSON(object: any): _665.QueryGroupMembersResponse;
+                toJSON(message: _665.QueryGroupMembersResponse): unknown;
                 fromPartial(object: {
                     members?: {
                         groupId?: any;
@@ -6554,13 +6554,13 @@ export declare namespace regen {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _597.QueryGroupMembersResponse;
+                }): _665.QueryGroupMembersResponse;
             };
             QueryGroupsByAdminRequest: {
-                encode(message: _597.QueryGroupsByAdminRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _597.QueryGroupsByAdminRequest;
-                fromJSON(object: any): _597.QueryGroupsByAdminRequest;
-                toJSON(message: _597.QueryGroupsByAdminRequest): unknown;
+                encode(message: _665.QueryGroupsByAdminRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryGroupsByAdminRequest;
+                fromJSON(object: any): _665.QueryGroupsByAdminRequest;
+                toJSON(message: _665.QueryGroupsByAdminRequest): unknown;
                 fromPartial(object: {
                     admin?: string;
                     pagination?: {
@@ -6570,13 +6570,13 @@ export declare namespace regen {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _597.QueryGroupsByAdminRequest;
+                }): _665.QueryGroupsByAdminRequest;
             };
             QueryGroupsByAdminResponse: {
-                encode(message: _597.QueryGroupsByAdminResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _597.QueryGroupsByAdminResponse;
-                fromJSON(object: any): _597.QueryGroupsByAdminResponse;
-                toJSON(message: _597.QueryGroupsByAdminResponse): unknown;
+                encode(message: _665.QueryGroupsByAdminResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryGroupsByAdminResponse;
+                fromJSON(object: any): _665.QueryGroupsByAdminResponse;
+                toJSON(message: _665.QueryGroupsByAdminResponse): unknown;
                 fromPartial(object: {
                     groups?: {
                         groupId?: any;
@@ -6589,13 +6589,13 @@ export declare namespace regen {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _597.QueryGroupsByAdminResponse;
+                }): _665.QueryGroupsByAdminResponse;
             };
             QueryGroupAccountsByGroupRequest: {
-                encode(message: _597.QueryGroupAccountsByGroupRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _597.QueryGroupAccountsByGroupRequest;
-                fromJSON(object: any): _597.QueryGroupAccountsByGroupRequest;
-                toJSON(message: _597.QueryGroupAccountsByGroupRequest): unknown;
+                encode(message: _665.QueryGroupAccountsByGroupRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryGroupAccountsByGroupRequest;
+                fromJSON(object: any): _665.QueryGroupAccountsByGroupRequest;
+                toJSON(message: _665.QueryGroupAccountsByGroupRequest): unknown;
                 fromPartial(object: {
                     groupId?: any;
                     pagination?: {
@@ -6605,13 +6605,13 @@ export declare namespace regen {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _597.QueryGroupAccountsByGroupRequest;
+                }): _665.QueryGroupAccountsByGroupRequest;
             };
             QueryGroupAccountsByGroupResponse: {
-                encode(message: _597.QueryGroupAccountsByGroupResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _597.QueryGroupAccountsByGroupResponse;
-                fromJSON(object: any): _597.QueryGroupAccountsByGroupResponse;
-                toJSON(message: _597.QueryGroupAccountsByGroupResponse): unknown;
+                encode(message: _665.QueryGroupAccountsByGroupResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryGroupAccountsByGroupResponse;
+                fromJSON(object: any): _665.QueryGroupAccountsByGroupResponse;
+                toJSON(message: _665.QueryGroupAccountsByGroupResponse): unknown;
                 fromPartial(object: {
                     groupAccounts?: {
                         address?: string;
@@ -6629,13 +6629,13 @@ export declare namespace regen {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _597.QueryGroupAccountsByGroupResponse;
+                }): _665.QueryGroupAccountsByGroupResponse;
             };
             QueryGroupAccountsByAdminRequest: {
-                encode(message: _597.QueryGroupAccountsByAdminRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _597.QueryGroupAccountsByAdminRequest;
-                fromJSON(object: any): _597.QueryGroupAccountsByAdminRequest;
-                toJSON(message: _597.QueryGroupAccountsByAdminRequest): unknown;
+                encode(message: _665.QueryGroupAccountsByAdminRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryGroupAccountsByAdminRequest;
+                fromJSON(object: any): _665.QueryGroupAccountsByAdminRequest;
+                toJSON(message: _665.QueryGroupAccountsByAdminRequest): unknown;
                 fromPartial(object: {
                     admin?: string;
                     pagination?: {
@@ -6645,13 +6645,13 @@ export declare namespace regen {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _597.QueryGroupAccountsByAdminRequest;
+                }): _665.QueryGroupAccountsByAdminRequest;
             };
             QueryGroupAccountsByAdminResponse: {
-                encode(message: _597.QueryGroupAccountsByAdminResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _597.QueryGroupAccountsByAdminResponse;
-                fromJSON(object: any): _597.QueryGroupAccountsByAdminResponse;
-                toJSON(message: _597.QueryGroupAccountsByAdminResponse): unknown;
+                encode(message: _665.QueryGroupAccountsByAdminResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryGroupAccountsByAdminResponse;
+                fromJSON(object: any): _665.QueryGroupAccountsByAdminResponse;
+                toJSON(message: _665.QueryGroupAccountsByAdminResponse): unknown;
                 fromPartial(object: {
                     groupAccounts?: {
                         address?: string;
@@ -6669,22 +6669,22 @@ export declare namespace regen {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _597.QueryGroupAccountsByAdminResponse;
+                }): _665.QueryGroupAccountsByAdminResponse;
             };
             QueryProposalRequest: {
-                encode(message: _597.QueryProposalRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _597.QueryProposalRequest;
-                fromJSON(object: any): _597.QueryProposalRequest;
-                toJSON(message: _597.QueryProposalRequest): unknown;
+                encode(message: _665.QueryProposalRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryProposalRequest;
+                fromJSON(object: any): _665.QueryProposalRequest;
+                toJSON(message: _665.QueryProposalRequest): unknown;
                 fromPartial(object: {
                     proposalId?: any;
-                }): _597.QueryProposalRequest;
+                }): _665.QueryProposalRequest;
             };
             QueryProposalResponse: {
-                encode(message: _597.QueryProposalResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _597.QueryProposalResponse;
-                fromJSON(object: any): _597.QueryProposalResponse;
-                toJSON(message: _597.QueryProposalResponse): unknown;
+                encode(message: _665.QueryProposalResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryProposalResponse;
+                fromJSON(object: any): _665.QueryProposalResponse;
+                toJSON(message: _665.QueryProposalResponse): unknown;
                 fromPartial(object: {
                     proposal?: {
                         proposalId?: any;
@@ -6697,8 +6697,8 @@ export declare namespace regen {
                         };
                         groupVersion?: any;
                         groupAccountVersion?: any;
-                        status?: _599.Proposal_Status;
-                        result?: _599.Proposal_Result;
+                        status?: _667.Proposal_Status;
+                        result?: _667.Proposal_Result;
                         voteState?: {
                             yesCount?: string;
                             noCount?: string;
@@ -6709,19 +6709,19 @@ export declare namespace regen {
                             seconds?: any;
                             nanos?: number;
                         };
-                        executorResult?: _599.Proposal_ExecutorResult;
+                        executorResult?: _667.Proposal_ExecutorResult;
                         msgs?: {
                             typeUrl?: string;
                             value?: Uint8Array;
                         }[];
                     };
-                }): _597.QueryProposalResponse;
+                }): _665.QueryProposalResponse;
             };
             QueryProposalsByGroupAccountRequest: {
-                encode(message: _597.QueryProposalsByGroupAccountRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _597.QueryProposalsByGroupAccountRequest;
-                fromJSON(object: any): _597.QueryProposalsByGroupAccountRequest;
-                toJSON(message: _597.QueryProposalsByGroupAccountRequest): unknown;
+                encode(message: _665.QueryProposalsByGroupAccountRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryProposalsByGroupAccountRequest;
+                fromJSON(object: any): _665.QueryProposalsByGroupAccountRequest;
+                toJSON(message: _665.QueryProposalsByGroupAccountRequest): unknown;
                 fromPartial(object: {
                     address?: string;
                     pagination?: {
@@ -6731,13 +6731,13 @@ export declare namespace regen {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _597.QueryProposalsByGroupAccountRequest;
+                }): _665.QueryProposalsByGroupAccountRequest;
             };
             QueryProposalsByGroupAccountResponse: {
-                encode(message: _597.QueryProposalsByGroupAccountResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _597.QueryProposalsByGroupAccountResponse;
-                fromJSON(object: any): _597.QueryProposalsByGroupAccountResponse;
-                toJSON(message: _597.QueryProposalsByGroupAccountResponse): unknown;
+                encode(message: _665.QueryProposalsByGroupAccountResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryProposalsByGroupAccountResponse;
+                fromJSON(object: any): _665.QueryProposalsByGroupAccountResponse;
+                toJSON(message: _665.QueryProposalsByGroupAccountResponse): unknown;
                 fromPartial(object: {
                     proposals?: {
                         proposalId?: any;
@@ -6750,8 +6750,8 @@ export declare namespace regen {
                         };
                         groupVersion?: any;
                         groupAccountVersion?: any;
-                        status?: _599.Proposal_Status;
-                        result?: _599.Proposal_Result;
+                        status?: _667.Proposal_Status;
+                        result?: _667.Proposal_Result;
                         voteState?: {
                             yesCount?: string;
                             noCount?: string;
@@ -6762,7 +6762,7 @@ export declare namespace regen {
                             seconds?: any;
                             nanos?: number;
                         };
-                        executorResult?: _599.Proposal_ExecutorResult;
+                        executorResult?: _667.Proposal_ExecutorResult;
                         msgs?: {
                             typeUrl?: string;
                             value?: Uint8Array;
@@ -6772,41 +6772,41 @@ export declare namespace regen {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _597.QueryProposalsByGroupAccountResponse;
+                }): _665.QueryProposalsByGroupAccountResponse;
             };
             QueryVoteByProposalVoterRequest: {
-                encode(message: _597.QueryVoteByProposalVoterRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _597.QueryVoteByProposalVoterRequest;
-                fromJSON(object: any): _597.QueryVoteByProposalVoterRequest;
-                toJSON(message: _597.QueryVoteByProposalVoterRequest): unknown;
+                encode(message: _665.QueryVoteByProposalVoterRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryVoteByProposalVoterRequest;
+                fromJSON(object: any): _665.QueryVoteByProposalVoterRequest;
+                toJSON(message: _665.QueryVoteByProposalVoterRequest): unknown;
                 fromPartial(object: {
                     proposalId?: any;
                     voter?: string;
-                }): _597.QueryVoteByProposalVoterRequest;
+                }): _665.QueryVoteByProposalVoterRequest;
             };
             QueryVoteByProposalVoterResponse: {
-                encode(message: _597.QueryVoteByProposalVoterResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _597.QueryVoteByProposalVoterResponse;
-                fromJSON(object: any): _597.QueryVoteByProposalVoterResponse;
-                toJSON(message: _597.QueryVoteByProposalVoterResponse): unknown;
+                encode(message: _665.QueryVoteByProposalVoterResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryVoteByProposalVoterResponse;
+                fromJSON(object: any): _665.QueryVoteByProposalVoterResponse;
+                toJSON(message: _665.QueryVoteByProposalVoterResponse): unknown;
                 fromPartial(object: {
                     vote?: {
                         proposalId?: any;
                         voter?: string;
-                        choice?: _599.Choice;
+                        choice?: _667.Choice;
                         metadata?: Uint8Array;
                         submittedAt?: {
                             seconds?: any;
                             nanos?: number;
                         };
                     };
-                }): _597.QueryVoteByProposalVoterResponse;
+                }): _665.QueryVoteByProposalVoterResponse;
             };
             QueryVotesByProposalRequest: {
-                encode(message: _597.QueryVotesByProposalRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _597.QueryVotesByProposalRequest;
-                fromJSON(object: any): _597.QueryVotesByProposalRequest;
-                toJSON(message: _597.QueryVotesByProposalRequest): unknown;
+                encode(message: _665.QueryVotesByProposalRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryVotesByProposalRequest;
+                fromJSON(object: any): _665.QueryVotesByProposalRequest;
+                toJSON(message: _665.QueryVotesByProposalRequest): unknown;
                 fromPartial(object: {
                     proposalId?: any;
                     pagination?: {
@@ -6816,18 +6816,18 @@ export declare namespace regen {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _597.QueryVotesByProposalRequest;
+                }): _665.QueryVotesByProposalRequest;
             };
             QueryVotesByProposalResponse: {
-                encode(message: _597.QueryVotesByProposalResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _597.QueryVotesByProposalResponse;
-                fromJSON(object: any): _597.QueryVotesByProposalResponse;
-                toJSON(message: _597.QueryVotesByProposalResponse): unknown;
+                encode(message: _665.QueryVotesByProposalResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryVotesByProposalResponse;
+                fromJSON(object: any): _665.QueryVotesByProposalResponse;
+                toJSON(message: _665.QueryVotesByProposalResponse): unknown;
                 fromPartial(object: {
                     votes?: {
                         proposalId?: any;
                         voter?: string;
-                        choice?: _599.Choice;
+                        choice?: _667.Choice;
                         metadata?: Uint8Array;
                         submittedAt?: {
                             seconds?: any;
@@ -6838,13 +6838,13 @@ export declare namespace regen {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _597.QueryVotesByProposalResponse;
+                }): _665.QueryVotesByProposalResponse;
             };
             QueryVotesByVoterRequest: {
-                encode(message: _597.QueryVotesByVoterRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _597.QueryVotesByVoterRequest;
-                fromJSON(object: any): _597.QueryVotesByVoterRequest;
-                toJSON(message: _597.QueryVotesByVoterRequest): unknown;
+                encode(message: _665.QueryVotesByVoterRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryVotesByVoterRequest;
+                fromJSON(object: any): _665.QueryVotesByVoterRequest;
+                toJSON(message: _665.QueryVotesByVoterRequest): unknown;
                 fromPartial(object: {
                     voter?: string;
                     pagination?: {
@@ -6854,18 +6854,18 @@ export declare namespace regen {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _597.QueryVotesByVoterRequest;
+                }): _665.QueryVotesByVoterRequest;
             };
             QueryVotesByVoterResponse: {
-                encode(message: _597.QueryVotesByVoterResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _597.QueryVotesByVoterResponse;
-                fromJSON(object: any): _597.QueryVotesByVoterResponse;
-                toJSON(message: _597.QueryVotesByVoterResponse): unknown;
+                encode(message: _665.QueryVotesByVoterResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _665.QueryVotesByVoterResponse;
+                fromJSON(object: any): _665.QueryVotesByVoterResponse;
+                toJSON(message: _665.QueryVotesByVoterResponse): unknown;
                 fromPartial(object: {
                     votes?: {
                         proposalId?: any;
                         voter?: string;
-                        choice?: _599.Choice;
+                        choice?: _667.Choice;
                         metadata?: Uint8Array;
                         submittedAt?: {
                             seconds?: any;
@@ -6876,13 +6876,13 @@ export declare namespace regen {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _597.QueryVotesByVoterResponse;
+                }): _665.QueryVotesByVoterResponse;
             };
             GenesisState: {
-                encode(message: _596.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _596.GenesisState;
-                fromJSON(object: any): _596.GenesisState;
-                toJSON(message: _596.GenesisState): unknown;
+                encode(message: _664.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _664.GenesisState;
+                fromJSON(object: any): _664.GenesisState;
+                toJSON(message: _664.GenesisState): unknown;
                 fromPartial(object: {
                     groupSeq?: any;
                     groups?: {
@@ -6925,8 +6925,8 @@ export declare namespace regen {
                         };
                         groupVersion?: any;
                         groupAccountVersion?: any;
-                        status?: _599.Proposal_Status;
-                        result?: _599.Proposal_Result;
+                        status?: _667.Proposal_Status;
+                        result?: _667.Proposal_Result;
                         voteState?: {
                             yesCount?: string;
                             noCount?: string;
@@ -6937,7 +6937,7 @@ export declare namespace regen {
                             seconds?: any;
                             nanos?: number;
                         };
-                        executorResult?: _599.Proposal_ExecutorResult;
+                        executorResult?: _667.Proposal_ExecutorResult;
                         msgs?: {
                             typeUrl?: string;
                             value?: Uint8Array;
@@ -6946,77 +6946,77 @@ export declare namespace regen {
                     votes?: {
                         proposalId?: any;
                         voter?: string;
-                        choice?: _599.Choice;
+                        choice?: _667.Choice;
                         metadata?: Uint8Array;
                         submittedAt?: {
                             seconds?: any;
                             nanos?: number;
                         };
                     }[];
-                }): _596.GenesisState;
+                }): _664.GenesisState;
             };
             EventCreateGroup: {
-                encode(message: _595.EventCreateGroup, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _595.EventCreateGroup;
-                fromJSON(object: any): _595.EventCreateGroup;
-                toJSON(message: _595.EventCreateGroup): unknown;
+                encode(message: _663.EventCreateGroup, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.EventCreateGroup;
+                fromJSON(object: any): _663.EventCreateGroup;
+                toJSON(message: _663.EventCreateGroup): unknown;
                 fromPartial(object: {
                     groupId?: any;
-                }): _595.EventCreateGroup;
+                }): _663.EventCreateGroup;
             };
             EventUpdateGroup: {
-                encode(message: _595.EventUpdateGroup, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _595.EventUpdateGroup;
-                fromJSON(object: any): _595.EventUpdateGroup;
-                toJSON(message: _595.EventUpdateGroup): unknown;
+                encode(message: _663.EventUpdateGroup, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.EventUpdateGroup;
+                fromJSON(object: any): _663.EventUpdateGroup;
+                toJSON(message: _663.EventUpdateGroup): unknown;
                 fromPartial(object: {
                     groupId?: any;
-                }): _595.EventUpdateGroup;
+                }): _663.EventUpdateGroup;
             };
             EventCreateGroupAccount: {
-                encode(message: _595.EventCreateGroupAccount, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _595.EventCreateGroupAccount;
-                fromJSON(object: any): _595.EventCreateGroupAccount;
-                toJSON(message: _595.EventCreateGroupAccount): unknown;
+                encode(message: _663.EventCreateGroupAccount, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.EventCreateGroupAccount;
+                fromJSON(object: any): _663.EventCreateGroupAccount;
+                toJSON(message: _663.EventCreateGroupAccount): unknown;
                 fromPartial(object: {
                     address?: string;
-                }): _595.EventCreateGroupAccount;
+                }): _663.EventCreateGroupAccount;
             };
             EventUpdateGroupAccount: {
-                encode(message: _595.EventUpdateGroupAccount, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _595.EventUpdateGroupAccount;
-                fromJSON(object: any): _595.EventUpdateGroupAccount;
-                toJSON(message: _595.EventUpdateGroupAccount): unknown;
+                encode(message: _663.EventUpdateGroupAccount, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.EventUpdateGroupAccount;
+                fromJSON(object: any): _663.EventUpdateGroupAccount;
+                toJSON(message: _663.EventUpdateGroupAccount): unknown;
                 fromPartial(object: {
                     address?: string;
-                }): _595.EventUpdateGroupAccount;
+                }): _663.EventUpdateGroupAccount;
             };
             EventCreateProposal: {
-                encode(message: _595.EventCreateProposal, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _595.EventCreateProposal;
-                fromJSON(object: any): _595.EventCreateProposal;
-                toJSON(message: _595.EventCreateProposal): unknown;
+                encode(message: _663.EventCreateProposal, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.EventCreateProposal;
+                fromJSON(object: any): _663.EventCreateProposal;
+                toJSON(message: _663.EventCreateProposal): unknown;
                 fromPartial(object: {
                     proposalId?: any;
-                }): _595.EventCreateProposal;
+                }): _663.EventCreateProposal;
             };
             EventVote: {
-                encode(message: _595.EventVote, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _595.EventVote;
-                fromJSON(object: any): _595.EventVote;
-                toJSON(message: _595.EventVote): unknown;
+                encode(message: _663.EventVote, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.EventVote;
+                fromJSON(object: any): _663.EventVote;
+                toJSON(message: _663.EventVote): unknown;
                 fromPartial(object: {
                     proposalId?: any;
-                }): _595.EventVote;
+                }): _663.EventVote;
             };
             EventExec: {
-                encode(message: _595.EventExec, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _595.EventExec;
-                fromJSON(object: any): _595.EventExec;
-                toJSON(message: _595.EventExec): unknown;
+                encode(message: _663.EventExec, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _663.EventExec;
+                fromJSON(object: any): _663.EventExec;
+                toJSON(message: _663.EventExec): unknown;
                 fromPartial(object: {
                     proposalId?: any;
-                }): _595.EventExec;
+                }): _663.EventExec;
             };
         };
     }

@@ -1,39 +1,39 @@
-import * as _681 from "../sommelier/cork/v1/cork";
-import * as _682 from "../sommelier/cork/v1/genesis";
-import * as _683 from "../sommelier/cork/v1/proposal";
-import * as _684 from "../sommelier/cork/v1/query";
-import * as _685 from "../sommelier/cork/v1/tx";
+import * as _749 from "../sommelier/cork/v1/cork";
+import * as _750 from "../sommelier/cork/v1/genesis";
+import * as _751 from "../sommelier/cork/v1/proposal";
+import * as _752 from "../sommelier/cork/v1/query";
+import * as _753 from "../sommelier/cork/v1/tx";
 export declare namespace cork {
     const v1: {
         registry: readonly [string, import("@cosmjs/proto-signing").GeneratedType][];
         load: (protoRegistry: import("@cosmjs/proto-signing").Registry) => void;
         MessageComposer: {
             encoded: {
-                submitCork(value: _685.MsgSubmitCorkRequest): {
+                submitCork(value: _753.MsgSubmitCorkRequest): {
                     typeUrl: string;
                     value: Uint8Array;
                 };
-                scheduleCork(value: _685.MsgScheduleCorkRequest): {
+                scheduleCork(value: _753.MsgScheduleCorkRequest): {
                     typeUrl: string;
                     value: Uint8Array;
                 };
             };
             withTypeUrl: {
-                submitCork(value: _685.MsgSubmitCorkRequest): {
+                submitCork(value: _753.MsgSubmitCorkRequest): {
                     typeUrl: string;
-                    value: _685.MsgSubmitCorkRequest;
+                    value: _753.MsgSubmitCorkRequest;
                 };
-                scheduleCork(value: _685.MsgScheduleCorkRequest): {
+                scheduleCork(value: _753.MsgScheduleCorkRequest): {
                     typeUrl: string;
-                    value: _685.MsgScheduleCorkRequest;
+                    value: _753.MsgScheduleCorkRequest;
                 };
             };
             toJSON: {
-                submitCork(value: _685.MsgSubmitCorkRequest): {
+                submitCork(value: _753.MsgSubmitCorkRequest): {
                     typeUrl: string;
                     value: unknown;
                 };
-                scheduleCork(value: _685.MsgScheduleCorkRequest): {
+                scheduleCork(value: _753.MsgScheduleCorkRequest): {
                     typeUrl: string;
                     value: unknown;
                 };
@@ -41,28 +41,28 @@ export declare namespace cork {
             fromJSON: {
                 submitCork(value: any): {
                     typeUrl: string;
-                    value: _685.MsgSubmitCorkRequest;
+                    value: _753.MsgSubmitCorkRequest;
                 };
                 scheduleCork(value: any): {
                     typeUrl: string;
-                    value: _685.MsgScheduleCorkRequest;
+                    value: _753.MsgScheduleCorkRequest;
                 };
             };
             fromPartial: {
-                submitCork(value: _685.MsgSubmitCorkRequest): {
+                submitCork(value: _753.MsgSubmitCorkRequest): {
                     typeUrl: string;
-                    value: _685.MsgSubmitCorkRequest;
+                    value: _753.MsgSubmitCorkRequest;
                 };
-                scheduleCork(value: _685.MsgScheduleCorkRequest): {
+                scheduleCork(value: _753.MsgScheduleCorkRequest): {
                     typeUrl: string;
-                    value: _685.MsgScheduleCorkRequest;
+                    value: _753.MsgScheduleCorkRequest;
                 };
             };
         };
         AminoConverter: {
             "/cork.v1.MsgSubmitCorkRequest": {
                 aminoType: string;
-                toAmino: ({ cork, signer }: _685.MsgSubmitCorkRequest) => {
+                toAmino: ({ cork, signer }: _753.MsgSubmitCorkRequest) => {
                     cork: {
                         encoded_contract_call: Uint8Array;
                         target_contract_address: string;
@@ -75,11 +75,11 @@ export declare namespace cork {
                         target_contract_address: string;
                     };
                     signer: string;
-                }) => _685.MsgSubmitCorkRequest;
+                }) => _753.MsgSubmitCorkRequest;
             };
             "/cork.v1.MsgScheduleCorkRequest": {
                 aminoType: string;
-                toAmino: ({ cork, blockHeight, signer }: _685.MsgScheduleCorkRequest) => {
+                toAmino: ({ cork, blockHeight, signer }: _753.MsgScheduleCorkRequest) => {
                     cork: {
                         encoded_contract_call: Uint8Array;
                         target_contract_address: string;
@@ -94,34 +94,34 @@ export declare namespace cork {
                     };
                     block_height: string;
                     signer: string;
-                }) => _685.MsgScheduleCorkRequest;
+                }) => _753.MsgScheduleCorkRequest;
             };
         };
         MsgSubmitCorkRequest: {
-            encode(message: _685.MsgSubmitCorkRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _685.MsgSubmitCorkRequest;
-            fromJSON(object: any): _685.MsgSubmitCorkRequest;
-            toJSON(message: _685.MsgSubmitCorkRequest): unknown;
+            encode(message: _753.MsgSubmitCorkRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _753.MsgSubmitCorkRequest;
+            fromJSON(object: any): _753.MsgSubmitCorkRequest;
+            toJSON(message: _753.MsgSubmitCorkRequest): unknown;
             fromPartial(object: {
                 cork?: {
                     encodedContractCall?: Uint8Array;
                     targetContractAddress?: string;
                 };
                 signer?: string;
-            }): _685.MsgSubmitCorkRequest;
+            }): _753.MsgSubmitCorkRequest;
         };
         MsgSubmitCorkResponse: {
-            encode(_: _685.MsgSubmitCorkResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _685.MsgSubmitCorkResponse;
-            fromJSON(_: any): _685.MsgSubmitCorkResponse;
-            toJSON(_: _685.MsgSubmitCorkResponse): unknown;
-            fromPartial(_: {}): _685.MsgSubmitCorkResponse;
+            encode(_: _753.MsgSubmitCorkResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _753.MsgSubmitCorkResponse;
+            fromJSON(_: any): _753.MsgSubmitCorkResponse;
+            toJSON(_: _753.MsgSubmitCorkResponse): unknown;
+            fromPartial(_: {}): _753.MsgSubmitCorkResponse;
         };
         MsgScheduleCorkRequest: {
-            encode(message: _685.MsgScheduleCorkRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _685.MsgScheduleCorkRequest;
-            fromJSON(object: any): _685.MsgScheduleCorkRequest;
-            toJSON(message: _685.MsgScheduleCorkRequest): unknown;
+            encode(message: _753.MsgScheduleCorkRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _753.MsgScheduleCorkRequest;
+            fromJSON(object: any): _753.MsgScheduleCorkRequest;
+            toJSON(message: _753.MsgScheduleCorkRequest): unknown;
             fromPartial(object: {
                 cork?: {
                     encodedContractCall?: Uint8Array;
@@ -129,99 +129,99 @@ export declare namespace cork {
                 };
                 blockHeight?: any;
                 signer?: string;
-            }): _685.MsgScheduleCorkRequest;
+            }): _753.MsgScheduleCorkRequest;
         };
         MsgScheduleCorkResponse: {
-            encode(_: _685.MsgScheduleCorkResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _685.MsgScheduleCorkResponse;
-            fromJSON(_: any): _685.MsgScheduleCorkResponse;
-            toJSON(_: _685.MsgScheduleCorkResponse): unknown;
-            fromPartial(_: {}): _685.MsgScheduleCorkResponse;
+            encode(_: _753.MsgScheduleCorkResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _753.MsgScheduleCorkResponse;
+            fromJSON(_: any): _753.MsgScheduleCorkResponse;
+            toJSON(_: _753.MsgScheduleCorkResponse): unknown;
+            fromPartial(_: {}): _753.MsgScheduleCorkResponse;
         };
         QueryParamsRequest: {
-            encode(_: _684.QueryParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _684.QueryParamsRequest;
-            fromJSON(_: any): _684.QueryParamsRequest;
-            toJSON(_: _684.QueryParamsRequest): unknown;
-            fromPartial(_: {}): _684.QueryParamsRequest;
+            encode(_: _752.QueryParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _752.QueryParamsRequest;
+            fromJSON(_: any): _752.QueryParamsRequest;
+            toJSON(_: _752.QueryParamsRequest): unknown;
+            fromPartial(_: {}): _752.QueryParamsRequest;
         };
         QueryParamsResponse: {
-            encode(message: _684.QueryParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _684.QueryParamsResponse;
-            fromJSON(object: any): _684.QueryParamsResponse;
-            toJSON(message: _684.QueryParamsResponse): unknown;
+            encode(message: _752.QueryParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _752.QueryParamsResponse;
+            fromJSON(object: any): _752.QueryParamsResponse;
+            toJSON(message: _752.QueryParamsResponse): unknown;
             fromPartial(object: {
                 params?: {
                     votePeriod?: any;
                     voteThreshold?: string;
                 };
-            }): _684.QueryParamsResponse;
+            }): _752.QueryParamsResponse;
         };
         QuerySubmittedCorksRequest: {
-            encode(_: _684.QuerySubmittedCorksRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _684.QuerySubmittedCorksRequest;
-            fromJSON(_: any): _684.QuerySubmittedCorksRequest;
-            toJSON(_: _684.QuerySubmittedCorksRequest): unknown;
-            fromPartial(_: {}): _684.QuerySubmittedCorksRequest;
+            encode(_: _752.QuerySubmittedCorksRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _752.QuerySubmittedCorksRequest;
+            fromJSON(_: any): _752.QuerySubmittedCorksRequest;
+            toJSON(_: _752.QuerySubmittedCorksRequest): unknown;
+            fromPartial(_: {}): _752.QuerySubmittedCorksRequest;
         };
         QuerySubmittedCorksResponse: {
-            encode(message: _684.QuerySubmittedCorksResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _684.QuerySubmittedCorksResponse;
-            fromJSON(object: any): _684.QuerySubmittedCorksResponse;
-            toJSON(message: _684.QuerySubmittedCorksResponse): unknown;
+            encode(message: _752.QuerySubmittedCorksResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _752.QuerySubmittedCorksResponse;
+            fromJSON(object: any): _752.QuerySubmittedCorksResponse;
+            toJSON(message: _752.QuerySubmittedCorksResponse): unknown;
             fromPartial(object: {
                 corks?: {
                     encodedContractCall?: Uint8Array;
                     targetContractAddress?: string;
                 }[];
-            }): _684.QuerySubmittedCorksResponse;
+            }): _752.QuerySubmittedCorksResponse;
         };
         QueryCommitPeriodRequest: {
-            encode(_: _684.QueryCommitPeriodRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _684.QueryCommitPeriodRequest;
-            fromJSON(_: any): _684.QueryCommitPeriodRequest;
-            toJSON(_: _684.QueryCommitPeriodRequest): unknown;
-            fromPartial(_: {}): _684.QueryCommitPeriodRequest;
+            encode(_: _752.QueryCommitPeriodRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _752.QueryCommitPeriodRequest;
+            fromJSON(_: any): _752.QueryCommitPeriodRequest;
+            toJSON(_: _752.QueryCommitPeriodRequest): unknown;
+            fromPartial(_: {}): _752.QueryCommitPeriodRequest;
         };
         QueryCommitPeriodResponse: {
-            encode(message: _684.QueryCommitPeriodResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _684.QueryCommitPeriodResponse;
-            fromJSON(object: any): _684.QueryCommitPeriodResponse;
-            toJSON(message: _684.QueryCommitPeriodResponse): unknown;
+            encode(message: _752.QueryCommitPeriodResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _752.QueryCommitPeriodResponse;
+            fromJSON(object: any): _752.QueryCommitPeriodResponse;
+            toJSON(message: _752.QueryCommitPeriodResponse): unknown;
             fromPartial(object: {
                 currentHeight?: any;
                 votePeriodStart?: any;
                 votePeriodEnd?: any;
-            }): _684.QueryCommitPeriodResponse;
+            }): _752.QueryCommitPeriodResponse;
         };
         QueryCellarIDsRequest: {
-            encode(_: _684.QueryCellarIDsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _684.QueryCellarIDsRequest;
-            fromJSON(_: any): _684.QueryCellarIDsRequest;
-            toJSON(_: _684.QueryCellarIDsRequest): unknown;
-            fromPartial(_: {}): _684.QueryCellarIDsRequest;
+            encode(_: _752.QueryCellarIDsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _752.QueryCellarIDsRequest;
+            fromJSON(_: any): _752.QueryCellarIDsRequest;
+            toJSON(_: _752.QueryCellarIDsRequest): unknown;
+            fromPartial(_: {}): _752.QueryCellarIDsRequest;
         };
         QueryCellarIDsResponse: {
-            encode(message: _684.QueryCellarIDsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _684.QueryCellarIDsResponse;
-            fromJSON(object: any): _684.QueryCellarIDsResponse;
-            toJSON(message: _684.QueryCellarIDsResponse): unknown;
+            encode(message: _752.QueryCellarIDsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _752.QueryCellarIDsResponse;
+            fromJSON(object: any): _752.QueryCellarIDsResponse;
+            toJSON(message: _752.QueryCellarIDsResponse): unknown;
             fromPartial(object: {
                 cellarIds?: string[];
-            }): _684.QueryCellarIDsResponse;
+            }): _752.QueryCellarIDsResponse;
         };
         QueryScheduledCorksRequest: {
-            encode(_: _684.QueryScheduledCorksRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _684.QueryScheduledCorksRequest;
-            fromJSON(_: any): _684.QueryScheduledCorksRequest;
-            toJSON(_: _684.QueryScheduledCorksRequest): unknown;
-            fromPartial(_: {}): _684.QueryScheduledCorksRequest;
+            encode(_: _752.QueryScheduledCorksRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _752.QueryScheduledCorksRequest;
+            fromJSON(_: any): _752.QueryScheduledCorksRequest;
+            toJSON(_: _752.QueryScheduledCorksRequest): unknown;
+            fromPartial(_: {}): _752.QueryScheduledCorksRequest;
         };
         QueryScheduledCorksResponse: {
-            encode(message: _684.QueryScheduledCorksResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _684.QueryScheduledCorksResponse;
-            fromJSON(object: any): _684.QueryScheduledCorksResponse;
-            toJSON(message: _684.QueryScheduledCorksResponse): unknown;
+            encode(message: _752.QueryScheduledCorksResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _752.QueryScheduledCorksResponse;
+            fromJSON(object: any): _752.QueryScheduledCorksResponse;
+            toJSON(message: _752.QueryScheduledCorksResponse): unknown;
             fromPartial(object: {
                 corks?: {
                     cork?: {
@@ -231,38 +231,38 @@ export declare namespace cork {
                     blockHeight?: any;
                     validator?: string;
                 }[];
-            }): _684.QueryScheduledCorksResponse;
+            }): _752.QueryScheduledCorksResponse;
         };
         QueryScheduledBlockHeightsRequest: {
-            encode(_: _684.QueryScheduledBlockHeightsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _684.QueryScheduledBlockHeightsRequest;
-            fromJSON(_: any): _684.QueryScheduledBlockHeightsRequest;
-            toJSON(_: _684.QueryScheduledBlockHeightsRequest): unknown;
-            fromPartial(_: {}): _684.QueryScheduledBlockHeightsRequest;
+            encode(_: _752.QueryScheduledBlockHeightsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _752.QueryScheduledBlockHeightsRequest;
+            fromJSON(_: any): _752.QueryScheduledBlockHeightsRequest;
+            toJSON(_: _752.QueryScheduledBlockHeightsRequest): unknown;
+            fromPartial(_: {}): _752.QueryScheduledBlockHeightsRequest;
         };
         QueryScheduledBlockHeightsResponse: {
-            encode(message: _684.QueryScheduledBlockHeightsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _684.QueryScheduledBlockHeightsResponse;
-            fromJSON(object: any): _684.QueryScheduledBlockHeightsResponse;
-            toJSON(message: _684.QueryScheduledBlockHeightsResponse): unknown;
+            encode(message: _752.QueryScheduledBlockHeightsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _752.QueryScheduledBlockHeightsResponse;
+            fromJSON(object: any): _752.QueryScheduledBlockHeightsResponse;
+            toJSON(message: _752.QueryScheduledBlockHeightsResponse): unknown;
             fromPartial(object: {
                 blockHeights?: any[];
-            }): _684.QueryScheduledBlockHeightsResponse;
+            }): _752.QueryScheduledBlockHeightsResponse;
         };
         QueryScheduledCorksByBlockHeightRequest: {
-            encode(message: _684.QueryScheduledCorksByBlockHeightRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _684.QueryScheduledCorksByBlockHeightRequest;
-            fromJSON(object: any): _684.QueryScheduledCorksByBlockHeightRequest;
-            toJSON(message: _684.QueryScheduledCorksByBlockHeightRequest): unknown;
+            encode(message: _752.QueryScheduledCorksByBlockHeightRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _752.QueryScheduledCorksByBlockHeightRequest;
+            fromJSON(object: any): _752.QueryScheduledCorksByBlockHeightRequest;
+            toJSON(message: _752.QueryScheduledCorksByBlockHeightRequest): unknown;
             fromPartial(object: {
                 blockHeight?: any;
-            }): _684.QueryScheduledCorksByBlockHeightRequest;
+            }): _752.QueryScheduledCorksByBlockHeightRequest;
         };
         QueryScheduledCorksByBlockHeightResponse: {
-            encode(message: _684.QueryScheduledCorksByBlockHeightResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _684.QueryScheduledCorksByBlockHeightResponse;
-            fromJSON(object: any): _684.QueryScheduledCorksByBlockHeightResponse;
-            toJSON(message: _684.QueryScheduledCorksByBlockHeightResponse): unknown;
+            encode(message: _752.QueryScheduledCorksByBlockHeightResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _752.QueryScheduledCorksByBlockHeightResponse;
+            fromJSON(object: any): _752.QueryScheduledCorksByBlockHeightResponse;
+            toJSON(message: _752.QueryScheduledCorksByBlockHeightResponse): unknown;
             fromPartial(object: {
                 corks?: {
                     cork?: {
@@ -272,63 +272,63 @@ export declare namespace cork {
                     blockHeight?: any;
                     validator?: string;
                 }[];
-            }): _684.QueryScheduledCorksByBlockHeightResponse;
+            }): _752.QueryScheduledCorksByBlockHeightResponse;
         };
         AddManagedCellarIDsProposal: {
-            encode(message: _683.AddManagedCellarIDsProposal, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _683.AddManagedCellarIDsProposal;
-            fromJSON(object: any): _683.AddManagedCellarIDsProposal;
-            toJSON(message: _683.AddManagedCellarIDsProposal): unknown;
+            encode(message: _751.AddManagedCellarIDsProposal, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _751.AddManagedCellarIDsProposal;
+            fromJSON(object: any): _751.AddManagedCellarIDsProposal;
+            toJSON(message: _751.AddManagedCellarIDsProposal): unknown;
             fromPartial(object: {
                 title?: string;
                 description?: string;
                 cellarIds?: {
                     ids?: string[];
                 };
-            }): _683.AddManagedCellarIDsProposal;
+            }): _751.AddManagedCellarIDsProposal;
         };
         AddManagedCellarIDsProposalWithDeposit: {
-            encode(message: _683.AddManagedCellarIDsProposalWithDeposit, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _683.AddManagedCellarIDsProposalWithDeposit;
-            fromJSON(object: any): _683.AddManagedCellarIDsProposalWithDeposit;
-            toJSON(message: _683.AddManagedCellarIDsProposalWithDeposit): unknown;
+            encode(message: _751.AddManagedCellarIDsProposalWithDeposit, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _751.AddManagedCellarIDsProposalWithDeposit;
+            fromJSON(object: any): _751.AddManagedCellarIDsProposalWithDeposit;
+            toJSON(message: _751.AddManagedCellarIDsProposalWithDeposit): unknown;
             fromPartial(object: {
                 title?: string;
                 description?: string;
                 cellarIds?: string[];
                 deposit?: string;
-            }): _683.AddManagedCellarIDsProposalWithDeposit;
+            }): _751.AddManagedCellarIDsProposalWithDeposit;
         };
         RemoveManagedCellarIDsProposal: {
-            encode(message: _683.RemoveManagedCellarIDsProposal, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _683.RemoveManagedCellarIDsProposal;
-            fromJSON(object: any): _683.RemoveManagedCellarIDsProposal;
-            toJSON(message: _683.RemoveManagedCellarIDsProposal): unknown;
+            encode(message: _751.RemoveManagedCellarIDsProposal, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _751.RemoveManagedCellarIDsProposal;
+            fromJSON(object: any): _751.RemoveManagedCellarIDsProposal;
+            toJSON(message: _751.RemoveManagedCellarIDsProposal): unknown;
             fromPartial(object: {
                 title?: string;
                 description?: string;
                 cellarIds?: {
                     ids?: string[];
                 };
-            }): _683.RemoveManagedCellarIDsProposal;
+            }): _751.RemoveManagedCellarIDsProposal;
         };
         RemoveManagedCellarIDsProposalWithDeposit: {
-            encode(message: _683.RemoveManagedCellarIDsProposalWithDeposit, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _683.RemoveManagedCellarIDsProposalWithDeposit;
-            fromJSON(object: any): _683.RemoveManagedCellarIDsProposalWithDeposit;
-            toJSON(message: _683.RemoveManagedCellarIDsProposalWithDeposit): unknown;
+            encode(message: _751.RemoveManagedCellarIDsProposalWithDeposit, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _751.RemoveManagedCellarIDsProposalWithDeposit;
+            fromJSON(object: any): _751.RemoveManagedCellarIDsProposalWithDeposit;
+            toJSON(message: _751.RemoveManagedCellarIDsProposalWithDeposit): unknown;
             fromPartial(object: {
                 title?: string;
                 description?: string;
                 cellarIds?: string[];
                 deposit?: string;
-            }): _683.RemoveManagedCellarIDsProposalWithDeposit;
+            }): _751.RemoveManagedCellarIDsProposalWithDeposit;
         };
         GenesisState: {
-            encode(message: _682.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _682.GenesisState;
-            fromJSON(object: any): _682.GenesisState;
-            toJSON(message: _682.GenesisState): unknown;
+            encode(message: _750.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _750.GenesisState;
+            fromJSON(object: any): _750.GenesisState;
+            toJSON(message: _750.GenesisState): unknown;
             fromPartial(object: {
                 params?: {
                     votePeriod?: any;
@@ -353,46 +353,46 @@ export declare namespace cork {
                     blockHeight?: any;
                     validator?: string;
                 }[];
-            }): _682.GenesisState;
+            }): _750.GenesisState;
         };
         Params: {
-            encode(message: _682.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _682.Params;
-            fromJSON(object: any): _682.Params;
-            toJSON(message: _682.Params): unknown;
+            encode(message: _750.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _750.Params;
+            fromJSON(object: any): _750.Params;
+            toJSON(message: _750.Params): unknown;
             fromPartial(object: {
                 votePeriod?: any;
                 voteThreshold?: string;
-            }): _682.Params;
+            }): _750.Params;
         };
         Cork: {
-            encode(message: _681.Cork, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _681.Cork;
-            fromJSON(object: any): _681.Cork;
-            toJSON(message: _681.Cork): unknown;
+            encode(message: _749.Cork, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _749.Cork;
+            fromJSON(object: any): _749.Cork;
+            toJSON(message: _749.Cork): unknown;
             fromPartial(object: {
                 encodedContractCall?: Uint8Array;
                 targetContractAddress?: string;
-            }): _681.Cork;
+            }): _749.Cork;
         };
         ValidatorCork: {
-            encode(message: _681.ValidatorCork, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _681.ValidatorCork;
-            fromJSON(object: any): _681.ValidatorCork;
-            toJSON(message: _681.ValidatorCork): unknown;
+            encode(message: _749.ValidatorCork, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _749.ValidatorCork;
+            fromJSON(object: any): _749.ValidatorCork;
+            toJSON(message: _749.ValidatorCork): unknown;
             fromPartial(object: {
                 cork?: {
                     encodedContractCall?: Uint8Array;
                     targetContractAddress?: string;
                 };
                 validator?: string;
-            }): _681.ValidatorCork;
+            }): _749.ValidatorCork;
         };
         ScheduledCork: {
-            encode(message: _681.ScheduledCork, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _681.ScheduledCork;
-            fromJSON(object: any): _681.ScheduledCork;
-            toJSON(message: _681.ScheduledCork): unknown;
+            encode(message: _749.ScheduledCork, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _749.ScheduledCork;
+            fromJSON(object: any): _749.ScheduledCork;
+            toJSON(message: _749.ScheduledCork): unknown;
             fromPartial(object: {
                 cork?: {
                     encodedContractCall?: Uint8Array;
@@ -400,16 +400,16 @@ export declare namespace cork {
                 };
                 blockHeight?: any;
                 validator?: string;
-            }): _681.ScheduledCork;
+            }): _749.ScheduledCork;
         };
         CellarIDSet: {
-            encode(message: _681.CellarIDSet, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _681.CellarIDSet;
-            fromJSON(object: any): _681.CellarIDSet;
-            toJSON(message: _681.CellarIDSet): unknown;
+            encode(message: _749.CellarIDSet, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _749.CellarIDSet;
+            fromJSON(object: any): _749.CellarIDSet;
+            toJSON(message: _749.CellarIDSet): unknown;
             fromPartial(object: {
                 ids?: string[];
-            }): _681.CellarIDSet;
+            }): _749.CellarIDSet;
         };
     };
 }

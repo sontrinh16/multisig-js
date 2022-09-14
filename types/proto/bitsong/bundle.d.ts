@@ -1,102 +1,102 @@
-import * as _59 from "./fantoken/v1beta1/tx";
-import * as _60 from "./merkledrop/v1beta1/events";
-import * as _61 from "./merkledrop/v1beta1/genesis";
-import * as _62 from "./merkledrop/v1beta1/gov";
-import * as _63 from "./merkledrop/v1beta1/merkledrop";
-import * as _64 from "./merkledrop/v1beta1/params";
-import * as _65 from "./merkledrop/v1beta1/query";
-import * as _66 from "./merkledrop/v1beta1/tx";
+import * as _127 from "./fantoken/v1beta1/tx";
+import * as _128 from "./merkledrop/v1beta1/events";
+import * as _129 from "./merkledrop/v1beta1/genesis";
+import * as _130 from "./merkledrop/v1beta1/gov";
+import * as _131 from "./merkledrop/v1beta1/merkledrop";
+import * as _132 from "./merkledrop/v1beta1/params";
+import * as _133 from "./merkledrop/v1beta1/query";
+import * as _134 from "./merkledrop/v1beta1/tx";
 export declare namespace bitsong {
     const fantoken: {
         registry: readonly [string, import("@cosmjs/proto-signing").GeneratedType][];
         load: (protoRegistry: import("@cosmjs/proto-signing").Registry) => void;
         MessageComposer: {
             encoded: {
-                issue(value: _59.MsgIssue): {
+                issue(value: _127.MsgIssue): {
                     typeUrl: string;
                     value: Uint8Array;
                 };
-                mint(value: _59.MsgMint): {
+                mint(value: _127.MsgMint): {
                     typeUrl: string;
                     value: Uint8Array;
                 };
-                burn(value: _59.MsgBurn): {
+                burn(value: _127.MsgBurn): {
                     typeUrl: string;
                     value: Uint8Array;
                 };
-                disableMint(value: _59.MsgDisableMint): {
+                disableMint(value: _127.MsgDisableMint): {
                     typeUrl: string;
                     value: Uint8Array;
                 };
-                setMinter(value: _59.MsgSetMinter): {
+                setMinter(value: _127.MsgSetMinter): {
                     typeUrl: string;
                     value: Uint8Array;
                 };
-                setAuthority(value: _59.MsgSetAuthority): {
+                setAuthority(value: _127.MsgSetAuthority): {
                     typeUrl: string;
                     value: Uint8Array;
                 };
-                setUri(value: _59.MsgSetUri): {
+                setUri(value: _127.MsgSetUri): {
                     typeUrl: string;
                     value: Uint8Array;
                 };
             };
             withTypeUrl: {
-                issue(value: _59.MsgIssue): {
+                issue(value: _127.MsgIssue): {
                     typeUrl: string;
-                    value: _59.MsgIssue;
+                    value: _127.MsgIssue;
                 };
-                mint(value: _59.MsgMint): {
+                mint(value: _127.MsgMint): {
                     typeUrl: string;
-                    value: _59.MsgMint;
+                    value: _127.MsgMint;
                 };
-                burn(value: _59.MsgBurn): {
+                burn(value: _127.MsgBurn): {
                     typeUrl: string;
-                    value: _59.MsgBurn;
+                    value: _127.MsgBurn;
                 };
-                disableMint(value: _59.MsgDisableMint): {
+                disableMint(value: _127.MsgDisableMint): {
                     typeUrl: string;
-                    value: _59.MsgDisableMint;
+                    value: _127.MsgDisableMint;
                 };
-                setMinter(value: _59.MsgSetMinter): {
+                setMinter(value: _127.MsgSetMinter): {
                     typeUrl: string;
-                    value: _59.MsgSetMinter;
+                    value: _127.MsgSetMinter;
                 };
-                setAuthority(value: _59.MsgSetAuthority): {
+                setAuthority(value: _127.MsgSetAuthority): {
                     typeUrl: string;
-                    value: _59.MsgSetAuthority;
+                    value: _127.MsgSetAuthority;
                 };
-                setUri(value: _59.MsgSetUri): {
+                setUri(value: _127.MsgSetUri): {
                     typeUrl: string;
-                    value: _59.MsgSetUri;
+                    value: _127.MsgSetUri;
                 };
             };
             toJSON: {
-                issue(value: _59.MsgIssue): {
+                issue(value: _127.MsgIssue): {
                     typeUrl: string;
                     value: unknown;
                 };
-                mint(value: _59.MsgMint): {
+                mint(value: _127.MsgMint): {
                     typeUrl: string;
                     value: unknown;
                 };
-                burn(value: _59.MsgBurn): {
+                burn(value: _127.MsgBurn): {
                     typeUrl: string;
                     value: unknown;
                 };
-                disableMint(value: _59.MsgDisableMint): {
+                disableMint(value: _127.MsgDisableMint): {
                     typeUrl: string;
                     value: unknown;
                 };
-                setMinter(value: _59.MsgSetMinter): {
+                setMinter(value: _127.MsgSetMinter): {
                     typeUrl: string;
                     value: unknown;
                 };
-                setAuthority(value: _59.MsgSetAuthority): {
+                setAuthority(value: _127.MsgSetAuthority): {
                     typeUrl: string;
                     value: unknown;
                 };
-                setUri(value: _59.MsgSetUri): {
+                setUri(value: _127.MsgSetUri): {
                     typeUrl: string;
                     value: unknown;
                 };
@@ -104,68 +104,68 @@ export declare namespace bitsong {
             fromJSON: {
                 issue(value: any): {
                     typeUrl: string;
-                    value: _59.MsgIssue;
+                    value: _127.MsgIssue;
                 };
                 mint(value: any): {
                     typeUrl: string;
-                    value: _59.MsgMint;
+                    value: _127.MsgMint;
                 };
                 burn(value: any): {
                     typeUrl: string;
-                    value: _59.MsgBurn;
+                    value: _127.MsgBurn;
                 };
                 disableMint(value: any): {
                     typeUrl: string;
-                    value: _59.MsgDisableMint;
+                    value: _127.MsgDisableMint;
                 };
                 setMinter(value: any): {
                     typeUrl: string;
-                    value: _59.MsgSetMinter;
+                    value: _127.MsgSetMinter;
                 };
                 setAuthority(value: any): {
                     typeUrl: string;
-                    value: _59.MsgSetAuthority;
+                    value: _127.MsgSetAuthority;
                 };
                 setUri(value: any): {
                     typeUrl: string;
-                    value: _59.MsgSetUri;
+                    value: _127.MsgSetUri;
                 };
             };
             fromPartial: {
-                issue(value: _59.MsgIssue): {
+                issue(value: _127.MsgIssue): {
                     typeUrl: string;
-                    value: _59.MsgIssue;
+                    value: _127.MsgIssue;
                 };
-                mint(value: _59.MsgMint): {
+                mint(value: _127.MsgMint): {
                     typeUrl: string;
-                    value: _59.MsgMint;
+                    value: _127.MsgMint;
                 };
-                burn(value: _59.MsgBurn): {
+                burn(value: _127.MsgBurn): {
                     typeUrl: string;
-                    value: _59.MsgBurn;
+                    value: _127.MsgBurn;
                 };
-                disableMint(value: _59.MsgDisableMint): {
+                disableMint(value: _127.MsgDisableMint): {
                     typeUrl: string;
-                    value: _59.MsgDisableMint;
+                    value: _127.MsgDisableMint;
                 };
-                setMinter(value: _59.MsgSetMinter): {
+                setMinter(value: _127.MsgSetMinter): {
                     typeUrl: string;
-                    value: _59.MsgSetMinter;
+                    value: _127.MsgSetMinter;
                 };
-                setAuthority(value: _59.MsgSetAuthority): {
+                setAuthority(value: _127.MsgSetAuthority): {
                     typeUrl: string;
-                    value: _59.MsgSetAuthority;
+                    value: _127.MsgSetAuthority;
                 };
-                setUri(value: _59.MsgSetUri): {
+                setUri(value: _127.MsgSetUri): {
                     typeUrl: string;
-                    value: _59.MsgSetUri;
+                    value: _127.MsgSetUri;
                 };
             };
         };
         AminoConverter: {
             "/bitsong.fantoken.MsgIssue": {
                 aminoType: string;
-                toAmino: ({ symbol, name, maxSupply, authority, minter, uri }: _59.MsgIssue) => {
+                toAmino: ({ symbol, name, maxSupply, authority, minter, uri }: _127.MsgIssue) => {
                     symbol: string;
                     name: string;
                     max_supply: string;
@@ -180,11 +180,11 @@ export declare namespace bitsong {
                     authority: string;
                     minter: string;
                     uri: string;
-                }) => _59.MsgIssue;
+                }) => _127.MsgIssue;
             };
             "/bitsong.fantoken.MsgMint": {
                 aminoType: string;
-                toAmino: ({ recipient, coin, minter }: _59.MsgMint) => {
+                toAmino: ({ recipient, coin, minter }: _127.MsgMint) => {
                     recipient: string;
                     coin: {
                         denom: string;
@@ -199,11 +199,11 @@ export declare namespace bitsong {
                         amount: string;
                     };
                     minter: string;
-                }) => _59.MsgMint;
+                }) => _127.MsgMint;
             };
             "/bitsong.fantoken.MsgBurn": {
                 aminoType: string;
-                toAmino: ({ coin, sender }: _59.MsgBurn) => {
+                toAmino: ({ coin, sender }: _127.MsgBurn) => {
                     coin: {
                         denom: string;
                         amount: string;
@@ -216,22 +216,22 @@ export declare namespace bitsong {
                         amount: string;
                     };
                     sender: string;
-                }) => _59.MsgBurn;
+                }) => _127.MsgBurn;
             };
             "/bitsong.fantoken.MsgDisableMint": {
                 aminoType: string;
-                toAmino: ({ denom, minter }: _59.MsgDisableMint) => {
+                toAmino: ({ denom, minter }: _127.MsgDisableMint) => {
                     denom: string;
                     minter: string;
                 };
                 fromAmino: ({ denom, minter }: {
                     denom: string;
                     minter: string;
-                }) => _59.MsgDisableMint;
+                }) => _127.MsgDisableMint;
             };
             "/bitsong.fantoken.MsgSetMinter": {
                 aminoType: string;
-                toAmino: ({ denom, oldMinter, newMinter }: _59.MsgSetMinter) => {
+                toAmino: ({ denom, oldMinter, newMinter }: _127.MsgSetMinter) => {
                     denom: string;
                     old_minter: string;
                     new_minter: string;
@@ -240,11 +240,11 @@ export declare namespace bitsong {
                     denom: string;
                     old_minter: string;
                     new_minter: string;
-                }) => _59.MsgSetMinter;
+                }) => _127.MsgSetMinter;
             };
             "/bitsong.fantoken.MsgSetAuthority": {
                 aminoType: string;
-                toAmino: ({ denom, oldAuthority, newAuthority }: _59.MsgSetAuthority) => {
+                toAmino: ({ denom, oldAuthority, newAuthority }: _127.MsgSetAuthority) => {
                     denom: string;
                     old_authority: string;
                     new_authority: string;
@@ -253,11 +253,11 @@ export declare namespace bitsong {
                     denom: string;
                     old_authority: string;
                     new_authority: string;
-                }) => _59.MsgSetAuthority;
+                }) => _127.MsgSetAuthority;
             };
             "/bitsong.fantoken.MsgSetUri": {
                 aminoType: string;
-                toAmino: ({ authority, denom, uri }: _59.MsgSetUri) => {
+                toAmino: ({ authority, denom, uri }: _127.MsgSetUri) => {
                     authority: string;
                     denom: string;
                     uri: string;
@@ -266,14 +266,14 @@ export declare namespace bitsong {
                     authority: string;
                     denom: string;
                     uri: string;
-                }) => _59.MsgSetUri;
+                }) => _127.MsgSetUri;
             };
         };
         MsgIssue: {
-            encode(message: _59.MsgIssue, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _59.MsgIssue;
-            fromJSON(object: any): _59.MsgIssue;
-            toJSON(message: _59.MsgIssue): unknown;
+            encode(message: _127.MsgIssue, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _127.MsgIssue;
+            fromJSON(object: any): _127.MsgIssue;
+            toJSON(message: _127.MsgIssue): unknown;
             fromPartial(object: {
                 symbol?: string;
                 name?: string;
@@ -281,37 +281,37 @@ export declare namespace bitsong {
                 authority?: string;
                 minter?: string;
                 uri?: string;
-            }): _59.MsgIssue;
+            }): _127.MsgIssue;
         };
         MsgIssueResponse: {
-            encode(_: _59.MsgIssueResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _59.MsgIssueResponse;
-            fromJSON(_: any): _59.MsgIssueResponse;
-            toJSON(_: _59.MsgIssueResponse): unknown;
-            fromPartial(_: {}): _59.MsgIssueResponse;
+            encode(_: _127.MsgIssueResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _127.MsgIssueResponse;
+            fromJSON(_: any): _127.MsgIssueResponse;
+            toJSON(_: _127.MsgIssueResponse): unknown;
+            fromPartial(_: {}): _127.MsgIssueResponse;
         };
         MsgDisableMint: {
-            encode(message: _59.MsgDisableMint, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _59.MsgDisableMint;
-            fromJSON(object: any): _59.MsgDisableMint;
-            toJSON(message: _59.MsgDisableMint): unknown;
+            encode(message: _127.MsgDisableMint, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _127.MsgDisableMint;
+            fromJSON(object: any): _127.MsgDisableMint;
+            toJSON(message: _127.MsgDisableMint): unknown;
             fromPartial(object: {
                 denom?: string;
                 minter?: string;
-            }): _59.MsgDisableMint;
+            }): _127.MsgDisableMint;
         };
         MsgDisableMintResponse: {
-            encode(_: _59.MsgDisableMintResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _59.MsgDisableMintResponse;
-            fromJSON(_: any): _59.MsgDisableMintResponse;
-            toJSON(_: _59.MsgDisableMintResponse): unknown;
-            fromPartial(_: {}): _59.MsgDisableMintResponse;
+            encode(_: _127.MsgDisableMintResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _127.MsgDisableMintResponse;
+            fromJSON(_: any): _127.MsgDisableMintResponse;
+            toJSON(_: _127.MsgDisableMintResponse): unknown;
+            fromPartial(_: {}): _127.MsgDisableMintResponse;
         };
         MsgMint: {
-            encode(message: _59.MsgMint, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _59.MsgMint;
-            fromJSON(object: any): _59.MsgMint;
-            toJSON(message: _59.MsgMint): unknown;
+            encode(message: _127.MsgMint, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _127.MsgMint;
+            fromJSON(object: any): _127.MsgMint;
+            toJSON(message: _127.MsgMint): unknown;
             fromPartial(object: {
                 recipient?: string;
                 coin?: {
@@ -319,88 +319,88 @@ export declare namespace bitsong {
                     amount?: string;
                 };
                 minter?: string;
-            }): _59.MsgMint;
+            }): _127.MsgMint;
         };
         MsgMintResponse: {
-            encode(_: _59.MsgMintResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _59.MsgMintResponse;
-            fromJSON(_: any): _59.MsgMintResponse;
-            toJSON(_: _59.MsgMintResponse): unknown;
-            fromPartial(_: {}): _59.MsgMintResponse;
+            encode(_: _127.MsgMintResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _127.MsgMintResponse;
+            fromJSON(_: any): _127.MsgMintResponse;
+            toJSON(_: _127.MsgMintResponse): unknown;
+            fromPartial(_: {}): _127.MsgMintResponse;
         };
         MsgBurn: {
-            encode(message: _59.MsgBurn, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _59.MsgBurn;
-            fromJSON(object: any): _59.MsgBurn;
-            toJSON(message: _59.MsgBurn): unknown;
+            encode(message: _127.MsgBurn, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _127.MsgBurn;
+            fromJSON(object: any): _127.MsgBurn;
+            toJSON(message: _127.MsgBurn): unknown;
             fromPartial(object: {
                 coin?: {
                     denom?: string;
                     amount?: string;
                 };
                 sender?: string;
-            }): _59.MsgBurn;
+            }): _127.MsgBurn;
         };
         MsgBurnResponse: {
-            encode(_: _59.MsgBurnResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _59.MsgBurnResponse;
-            fromJSON(_: any): _59.MsgBurnResponse;
-            toJSON(_: _59.MsgBurnResponse): unknown;
-            fromPartial(_: {}): _59.MsgBurnResponse;
+            encode(_: _127.MsgBurnResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _127.MsgBurnResponse;
+            fromJSON(_: any): _127.MsgBurnResponse;
+            toJSON(_: _127.MsgBurnResponse): unknown;
+            fromPartial(_: {}): _127.MsgBurnResponse;
         };
         MsgSetMinter: {
-            encode(message: _59.MsgSetMinter, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _59.MsgSetMinter;
-            fromJSON(object: any): _59.MsgSetMinter;
-            toJSON(message: _59.MsgSetMinter): unknown;
+            encode(message: _127.MsgSetMinter, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _127.MsgSetMinter;
+            fromJSON(object: any): _127.MsgSetMinter;
+            toJSON(message: _127.MsgSetMinter): unknown;
             fromPartial(object: {
                 denom?: string;
                 oldMinter?: string;
                 newMinter?: string;
-            }): _59.MsgSetMinter;
+            }): _127.MsgSetMinter;
         };
         MsgSetMinterResponse: {
-            encode(_: _59.MsgSetMinterResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _59.MsgSetMinterResponse;
-            fromJSON(_: any): _59.MsgSetMinterResponse;
-            toJSON(_: _59.MsgSetMinterResponse): unknown;
-            fromPartial(_: {}): _59.MsgSetMinterResponse;
+            encode(_: _127.MsgSetMinterResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _127.MsgSetMinterResponse;
+            fromJSON(_: any): _127.MsgSetMinterResponse;
+            toJSON(_: _127.MsgSetMinterResponse): unknown;
+            fromPartial(_: {}): _127.MsgSetMinterResponse;
         };
         MsgSetAuthority: {
-            encode(message: _59.MsgSetAuthority, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _59.MsgSetAuthority;
-            fromJSON(object: any): _59.MsgSetAuthority;
-            toJSON(message: _59.MsgSetAuthority): unknown;
+            encode(message: _127.MsgSetAuthority, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _127.MsgSetAuthority;
+            fromJSON(object: any): _127.MsgSetAuthority;
+            toJSON(message: _127.MsgSetAuthority): unknown;
             fromPartial(object: {
                 denom?: string;
                 oldAuthority?: string;
                 newAuthority?: string;
-            }): _59.MsgSetAuthority;
+            }): _127.MsgSetAuthority;
         };
         MsgSetAuthorityResponse: {
-            encode(_: _59.MsgSetAuthorityResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _59.MsgSetAuthorityResponse;
-            fromJSON(_: any): _59.MsgSetAuthorityResponse;
-            toJSON(_: _59.MsgSetAuthorityResponse): unknown;
-            fromPartial(_: {}): _59.MsgSetAuthorityResponse;
+            encode(_: _127.MsgSetAuthorityResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _127.MsgSetAuthorityResponse;
+            fromJSON(_: any): _127.MsgSetAuthorityResponse;
+            toJSON(_: _127.MsgSetAuthorityResponse): unknown;
+            fromPartial(_: {}): _127.MsgSetAuthorityResponse;
         };
         MsgSetUri: {
-            encode(message: _59.MsgSetUri, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _59.MsgSetUri;
-            fromJSON(object: any): _59.MsgSetUri;
-            toJSON(message: _59.MsgSetUri): unknown;
+            encode(message: _127.MsgSetUri, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _127.MsgSetUri;
+            fromJSON(object: any): _127.MsgSetUri;
+            toJSON(message: _127.MsgSetUri): unknown;
             fromPartial(object: {
                 authority?: string;
                 denom?: string;
                 uri?: string;
-            }): _59.MsgSetUri;
+            }): _127.MsgSetUri;
         };
         MsgSetUriResponse: {
-            encode(_: _59.MsgSetUriResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _59.MsgSetUriResponse;
-            fromJSON(_: any): _59.MsgSetUriResponse;
-            toJSON(_: _59.MsgSetUriResponse): unknown;
-            fromPartial(_: {}): _59.MsgSetUriResponse;
+            encode(_: _127.MsgSetUriResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _127.MsgSetUriResponse;
+            fromJSON(_: any): _127.MsgSetUriResponse;
+            toJSON(_: _127.MsgSetUriResponse): unknown;
+            fromPartial(_: {}): _127.MsgSetUriResponse;
         };
     };
     namespace merkledrop {
@@ -409,31 +409,31 @@ export declare namespace bitsong {
             load: (protoRegistry: import("@cosmjs/proto-signing").Registry) => void;
             MessageComposer: {
                 encoded: {
-                    create(value: _66.MsgCreate): {
+                    create(value: _134.MsgCreate): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    claim(value: _66.MsgClaim): {
+                    claim(value: _134.MsgClaim): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
                 };
                 withTypeUrl: {
-                    create(value: _66.MsgCreate): {
+                    create(value: _134.MsgCreate): {
                         typeUrl: string;
-                        value: _66.MsgCreate;
+                        value: _134.MsgCreate;
                     };
-                    claim(value: _66.MsgClaim): {
+                    claim(value: _134.MsgClaim): {
                         typeUrl: string;
-                        value: _66.MsgClaim;
+                        value: _134.MsgClaim;
                     };
                 };
                 toJSON: {
-                    create(value: _66.MsgCreate): {
+                    create(value: _134.MsgCreate): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    claim(value: _66.MsgClaim): {
+                    claim(value: _134.MsgClaim): {
                         typeUrl: string;
                         value: unknown;
                     };
@@ -441,28 +441,28 @@ export declare namespace bitsong {
                 fromJSON: {
                     create(value: any): {
                         typeUrl: string;
-                        value: _66.MsgCreate;
+                        value: _134.MsgCreate;
                     };
                     claim(value: any): {
                         typeUrl: string;
-                        value: _66.MsgClaim;
+                        value: _134.MsgClaim;
                     };
                 };
                 fromPartial: {
-                    create(value: _66.MsgCreate): {
+                    create(value: _134.MsgCreate): {
                         typeUrl: string;
-                        value: _66.MsgCreate;
+                        value: _134.MsgCreate;
                     };
-                    claim(value: _66.MsgClaim): {
+                    claim(value: _134.MsgClaim): {
                         typeUrl: string;
-                        value: _66.MsgClaim;
+                        value: _134.MsgClaim;
                     };
                 };
             };
             AminoConverter: {
                 "/bitsong.merkledrop.v1beta1.MsgCreate": {
                     aminoType: string;
-                    toAmino: ({ owner, merkleRoot, startHeight, endHeight, coin }: _66.MsgCreate) => {
+                    toAmino: ({ owner, merkleRoot, startHeight, endHeight, coin }: _134.MsgCreate) => {
                         owner: string;
                         merkle_root: string;
                         start_height: string;
@@ -481,11 +481,11 @@ export declare namespace bitsong {
                             denom: string;
                             amount: string;
                         };
-                    }) => _66.MsgCreate;
+                    }) => _134.MsgCreate;
                 };
                 "/bitsong.merkledrop.v1beta1.MsgClaim": {
                     aminoType: string;
-                    toAmino: ({ sender, merkledropId, index, amount, proofs }: _66.MsgClaim) => {
+                    toAmino: ({ sender, merkledropId, index, amount, proofs }: _134.MsgClaim) => {
                         sender: string;
                         merkledrop_id: string;
                         index: string;
@@ -498,14 +498,14 @@ export declare namespace bitsong {
                         index: string;
                         amount: string;
                         proofs: string[];
-                    }) => _66.MsgClaim;
+                    }) => _134.MsgClaim;
                 };
             };
             MsgCreate: {
-                encode(message: _66.MsgCreate, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _66.MsgCreate;
-                fromJSON(object: any): _66.MsgCreate;
-                toJSON(message: _66.MsgCreate): unknown;
+                encode(message: _134.MsgCreate, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _134.MsgCreate;
+                fromJSON(object: any): _134.MsgCreate;
+                toJSON(message: _134.MsgCreate): unknown;
                 fromPartial(object: {
                     owner?: string;
                     merkleRoot?: string;
@@ -515,56 +515,56 @@ export declare namespace bitsong {
                         denom?: string;
                         amount?: string;
                     };
-                }): _66.MsgCreate;
+                }): _134.MsgCreate;
             };
             MsgCreateResponse: {
-                encode(message: _66.MsgCreateResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _66.MsgCreateResponse;
-                fromJSON(object: any): _66.MsgCreateResponse;
-                toJSON(message: _66.MsgCreateResponse): unknown;
+                encode(message: _134.MsgCreateResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _134.MsgCreateResponse;
+                fromJSON(object: any): _134.MsgCreateResponse;
+                toJSON(message: _134.MsgCreateResponse): unknown;
                 fromPartial(object: {
                     owner?: string;
                     id?: any;
-                }): _66.MsgCreateResponse;
+                }): _134.MsgCreateResponse;
             };
             MsgClaim: {
-                encode(message: _66.MsgClaim, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _66.MsgClaim;
-                fromJSON(object: any): _66.MsgClaim;
-                toJSON(message: _66.MsgClaim): unknown;
+                encode(message: _134.MsgClaim, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _134.MsgClaim;
+                fromJSON(object: any): _134.MsgClaim;
+                toJSON(message: _134.MsgClaim): unknown;
                 fromPartial(object: {
                     sender?: string;
                     merkledropId?: any;
                     index?: any;
                     amount?: string;
                     proofs?: string[];
-                }): _66.MsgClaim;
+                }): _134.MsgClaim;
             };
             MsgClaimResponse: {
-                encode(message: _66.MsgClaimResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _66.MsgClaimResponse;
-                fromJSON(object: any): _66.MsgClaimResponse;
-                toJSON(message: _66.MsgClaimResponse): unknown;
+                encode(message: _134.MsgClaimResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _134.MsgClaimResponse;
+                fromJSON(object: any): _134.MsgClaimResponse;
+                toJSON(message: _134.MsgClaimResponse): unknown;
                 fromPartial(object: {
                     id?: any;
                     index?: any;
                     amount?: string;
-                }): _66.MsgClaimResponse;
+                }): _134.MsgClaimResponse;
             };
             QueryMerkledropRequest: {
-                encode(message: _65.QueryMerkledropRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _65.QueryMerkledropRequest;
-                fromJSON(object: any): _65.QueryMerkledropRequest;
-                toJSON(message: _65.QueryMerkledropRequest): unknown;
+                encode(message: _133.QueryMerkledropRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _133.QueryMerkledropRequest;
+                fromJSON(object: any): _133.QueryMerkledropRequest;
+                toJSON(message: _133.QueryMerkledropRequest): unknown;
                 fromPartial(object: {
                     id?: any;
-                }): _65.QueryMerkledropRequest;
+                }): _133.QueryMerkledropRequest;
             };
             QueryMerkledropResponse: {
-                encode(message: _65.QueryMerkledropResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _65.QueryMerkledropResponse;
-                fromJSON(object: any): _65.QueryMerkledropResponse;
-                toJSON(message: _65.QueryMerkledropResponse): unknown;
+                encode(message: _133.QueryMerkledropResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _133.QueryMerkledropResponse;
+                fromJSON(object: any): _133.QueryMerkledropResponse;
+                toJSON(message: _133.QueryMerkledropResponse): unknown;
                 fromPartial(object: {
                     merkledrop?: {
                         id?: any;
@@ -576,39 +576,39 @@ export declare namespace bitsong {
                         claimed?: string;
                         owner?: string;
                     };
-                }): _65.QueryMerkledropResponse;
+                }): _133.QueryMerkledropResponse;
             };
             QueryIndexClaimedRequest: {
-                encode(message: _65.QueryIndexClaimedRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _65.QueryIndexClaimedRequest;
-                fromJSON(object: any): _65.QueryIndexClaimedRequest;
-                toJSON(message: _65.QueryIndexClaimedRequest): unknown;
+                encode(message: _133.QueryIndexClaimedRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _133.QueryIndexClaimedRequest;
+                fromJSON(object: any): _133.QueryIndexClaimedRequest;
+                toJSON(message: _133.QueryIndexClaimedRequest): unknown;
                 fromPartial(object: {
                     id?: any;
                     index?: any;
-                }): _65.QueryIndexClaimedRequest;
+                }): _133.QueryIndexClaimedRequest;
             };
             QueryIndexClaimedResponse: {
-                encode(message: _65.QueryIndexClaimedResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _65.QueryIndexClaimedResponse;
-                fromJSON(object: any): _65.QueryIndexClaimedResponse;
-                toJSON(message: _65.QueryIndexClaimedResponse): unknown;
+                encode(message: _133.QueryIndexClaimedResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _133.QueryIndexClaimedResponse;
+                fromJSON(object: any): _133.QueryIndexClaimedResponse;
+                toJSON(message: _133.QueryIndexClaimedResponse): unknown;
                 fromPartial(object: {
                     isClaimed?: boolean;
-                }): _65.QueryIndexClaimedResponse;
+                }): _133.QueryIndexClaimedResponse;
             };
             QueryParamsRequest: {
-                encode(_: _65.QueryParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _65.QueryParamsRequest;
-                fromJSON(_: any): _65.QueryParamsRequest;
-                toJSON(_: _65.QueryParamsRequest): unknown;
-                fromPartial(_: {}): _65.QueryParamsRequest;
+                encode(_: _133.QueryParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _133.QueryParamsRequest;
+                fromJSON(_: any): _133.QueryParamsRequest;
+                toJSON(_: _133.QueryParamsRequest): unknown;
+                fromPartial(_: {}): _133.QueryParamsRequest;
             };
             QueryParamsResponse: {
-                encode(message: _65.QueryParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _65.QueryParamsResponse;
-                fromJSON(object: any): _65.QueryParamsResponse;
-                toJSON(message: _65.QueryParamsResponse): unknown;
+                encode(message: _133.QueryParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _133.QueryParamsResponse;
+                fromJSON(object: any): _133.QueryParamsResponse;
+                toJSON(message: _133.QueryParamsResponse): unknown;
                 fromPartial(object: {
                     params?: {
                         creationFee?: {
@@ -616,25 +616,25 @@ export declare namespace bitsong {
                             amount?: string;
                         };
                     };
-                }): _65.QueryParamsResponse;
+                }): _133.QueryParamsResponse;
             };
             Params: {
-                encode(message: _64.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _64.Params;
-                fromJSON(object: any): _64.Params;
-                toJSON(message: _64.Params): unknown;
+                encode(message: _132.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _132.Params;
+                fromJSON(object: any): _132.Params;
+                toJSON(message: _132.Params): unknown;
                 fromPartial(object: {
                     creationFee?: {
                         denom?: string;
                         amount?: string;
                     };
-                }): _64.Params;
+                }): _132.Params;
             };
             Merkledrop: {
-                encode(message: _63.Merkledrop, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _63.Merkledrop;
-                fromJSON(object: any): _63.Merkledrop;
-                toJSON(message: _63.Merkledrop): unknown;
+                encode(message: _131.Merkledrop, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _131.Merkledrop;
+                fromJSON(object: any): _131.Merkledrop;
+                toJSON(message: _131.Merkledrop): unknown;
                 fromPartial(object: {
                     id?: any;
                     merkleRoot?: string;
@@ -644,13 +644,13 @@ export declare namespace bitsong {
                     amount?: string;
                     claimed?: string;
                     owner?: string;
-                }): _63.Merkledrop;
+                }): _131.Merkledrop;
             };
             UpdateFeesProposal: {
-                encode(message: _62.UpdateFeesProposal, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _62.UpdateFeesProposal;
-                fromJSON(object: any): _62.UpdateFeesProposal;
-                toJSON(message: _62.UpdateFeesProposal): unknown;
+                encode(message: _130.UpdateFeesProposal, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _130.UpdateFeesProposal;
+                fromJSON(object: any): _130.UpdateFeesProposal;
+                toJSON(message: _130.UpdateFeesProposal): unknown;
                 fromPartial(object: {
                     title?: string;
                     description?: string;
@@ -658,35 +658,35 @@ export declare namespace bitsong {
                         denom?: string;
                         amount?: string;
                     };
-                }): _62.UpdateFeesProposal;
+                }): _130.UpdateFeesProposal;
             };
             UpdateFeesProposalWithDeposit: {
-                encode(message: _62.UpdateFeesProposalWithDeposit, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _62.UpdateFeesProposalWithDeposit;
-                fromJSON(object: any): _62.UpdateFeesProposalWithDeposit;
-                toJSON(message: _62.UpdateFeesProposalWithDeposit): unknown;
+                encode(message: _130.UpdateFeesProposalWithDeposit, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _130.UpdateFeesProposalWithDeposit;
+                fromJSON(object: any): _130.UpdateFeesProposalWithDeposit;
+                toJSON(message: _130.UpdateFeesProposalWithDeposit): unknown;
                 fromPartial(object: {
                     title?: string;
                     description?: string;
                     creationFee?: string;
                     deposit?: string;
-                }): _62.UpdateFeesProposalWithDeposit;
+                }): _130.UpdateFeesProposalWithDeposit;
             };
             Indexes: {
-                encode(message: _61.Indexes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _61.Indexes;
-                fromJSON(object: any): _61.Indexes;
-                toJSON(message: _61.Indexes): unknown;
+                encode(message: _129.Indexes, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _129.Indexes;
+                fromJSON(object: any): _129.Indexes;
+                toJSON(message: _129.Indexes): unknown;
                 fromPartial(object: {
                     merkledropId?: any;
                     index?: any[];
-                }): _61.Indexes;
+                }): _129.Indexes;
             };
             GenesisState: {
-                encode(message: _61.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _61.GenesisState;
-                fromJSON(object: any): _61.GenesisState;
-                toJSON(message: _61.GenesisState): unknown;
+                encode(message: _129.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _129.GenesisState;
+                fromJSON(object: any): _129.GenesisState;
+                toJSON(message: _129.GenesisState): unknown;
                 fromPartial(object: {
                     lastMerkledropId?: any;
                     merkledrops?: {
@@ -709,23 +709,23 @@ export declare namespace bitsong {
                             amount?: string;
                         };
                     };
-                }): _61.GenesisState;
+                }): _129.GenesisState;
             };
             EventCreate: {
-                encode(message: _60.EventCreate, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _60.EventCreate;
-                fromJSON(object: any): _60.EventCreate;
-                toJSON(message: _60.EventCreate): unknown;
+                encode(message: _128.EventCreate, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _128.EventCreate;
+                fromJSON(object: any): _128.EventCreate;
+                toJSON(message: _128.EventCreate): unknown;
                 fromPartial(object: {
                     owner?: string;
                     merkledropId?: any;
-                }): _60.EventCreate;
+                }): _128.EventCreate;
             };
             EventClaim: {
-                encode(message: _60.EventClaim, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _60.EventClaim;
-                fromJSON(object: any): _60.EventClaim;
-                toJSON(message: _60.EventClaim): unknown;
+                encode(message: _128.EventClaim, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _128.EventClaim;
+                fromJSON(object: any): _128.EventClaim;
+                toJSON(message: _128.EventClaim): unknown;
                 fromPartial(object: {
                     merkledropId?: any;
                     index?: any;
@@ -733,20 +733,20 @@ export declare namespace bitsong {
                         denom?: string;
                         amount?: string;
                     };
-                }): _60.EventClaim;
+                }): _128.EventClaim;
             };
             EventWithdraw: {
-                encode(message: _60.EventWithdraw, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _60.EventWithdraw;
-                fromJSON(object: any): _60.EventWithdraw;
-                toJSON(message: _60.EventWithdraw): unknown;
+                encode(message: _128.EventWithdraw, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _128.EventWithdraw;
+                fromJSON(object: any): _128.EventWithdraw;
+                toJSON(message: _128.EventWithdraw): unknown;
                 fromPartial(object: {
                     merkledropId?: any;
                     coin?: {
                         denom?: string;
                         amount?: string;
                     };
-                }): _60.EventWithdraw;
+                }): _128.EventWithdraw;
             };
         };
     }

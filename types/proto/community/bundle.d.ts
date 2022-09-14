@@ -1,73 +1,73 @@
-import * as _208 from "../decentr/community/community";
-import * as _209 from "../decentr/community/genesis";
-import * as _210 from "../decentr/community/query";
-import * as _211 from "../decentr/community/tx";
+import * as _276 from "../decentr/community/community";
+import * as _277 from "../decentr/community/genesis";
+import * as _278 from "../decentr/community/query";
+import * as _279 from "../decentr/community/tx";
 export declare const community: {
     registry: readonly [string, import("@cosmjs/proto-signing").GeneratedType][];
     load: (protoRegistry: import("@cosmjs/proto-signing").Registry) => void;
     MessageComposer: {
         encoded: {
-            createPost(value: _211.MsgCreatePost): {
+            createPost(value: _279.MsgCreatePost): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            deletePost(value: _211.MsgDeletePost): {
+            deletePost(value: _279.MsgDeletePost): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            setLike(value: _211.MsgSetLike): {
+            setLike(value: _279.MsgSetLike): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            follow(value: _211.MsgFollow): {
+            follow(value: _279.MsgFollow): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            unfollow(value: _211.MsgUnfollow): {
+            unfollow(value: _279.MsgUnfollow): {
                 typeUrl: string;
                 value: Uint8Array;
             };
         };
         withTypeUrl: {
-            createPost(value: _211.MsgCreatePost): {
+            createPost(value: _279.MsgCreatePost): {
                 typeUrl: string;
-                value: _211.MsgCreatePost;
+                value: _279.MsgCreatePost;
             };
-            deletePost(value: _211.MsgDeletePost): {
+            deletePost(value: _279.MsgDeletePost): {
                 typeUrl: string;
-                value: _211.MsgDeletePost;
+                value: _279.MsgDeletePost;
             };
-            setLike(value: _211.MsgSetLike): {
+            setLike(value: _279.MsgSetLike): {
                 typeUrl: string;
-                value: _211.MsgSetLike;
+                value: _279.MsgSetLike;
             };
-            follow(value: _211.MsgFollow): {
+            follow(value: _279.MsgFollow): {
                 typeUrl: string;
-                value: _211.MsgFollow;
+                value: _279.MsgFollow;
             };
-            unfollow(value: _211.MsgUnfollow): {
+            unfollow(value: _279.MsgUnfollow): {
                 typeUrl: string;
-                value: _211.MsgUnfollow;
+                value: _279.MsgUnfollow;
             };
         };
         toJSON: {
-            createPost(value: _211.MsgCreatePost): {
+            createPost(value: _279.MsgCreatePost): {
                 typeUrl: string;
                 value: unknown;
             };
-            deletePost(value: _211.MsgDeletePost): {
+            deletePost(value: _279.MsgDeletePost): {
                 typeUrl: string;
                 value: unknown;
             };
-            setLike(value: _211.MsgSetLike): {
+            setLike(value: _279.MsgSetLike): {
                 typeUrl: string;
                 value: unknown;
             };
-            follow(value: _211.MsgFollow): {
+            follow(value: _279.MsgFollow): {
                 typeUrl: string;
                 value: unknown;
             };
-            unfollow(value: _211.MsgUnfollow): {
+            unfollow(value: _279.MsgUnfollow): {
                 typeUrl: string;
                 value: unknown;
             };
@@ -75,52 +75,52 @@ export declare const community: {
         fromJSON: {
             createPost(value: any): {
                 typeUrl: string;
-                value: _211.MsgCreatePost;
+                value: _279.MsgCreatePost;
             };
             deletePost(value: any): {
                 typeUrl: string;
-                value: _211.MsgDeletePost;
+                value: _279.MsgDeletePost;
             };
             setLike(value: any): {
                 typeUrl: string;
-                value: _211.MsgSetLike;
+                value: _279.MsgSetLike;
             };
             follow(value: any): {
                 typeUrl: string;
-                value: _211.MsgFollow;
+                value: _279.MsgFollow;
             };
             unfollow(value: any): {
                 typeUrl: string;
-                value: _211.MsgUnfollow;
+                value: _279.MsgUnfollow;
             };
         };
         fromPartial: {
-            createPost(value: _211.MsgCreatePost): {
+            createPost(value: _279.MsgCreatePost): {
                 typeUrl: string;
-                value: _211.MsgCreatePost;
+                value: _279.MsgCreatePost;
             };
-            deletePost(value: _211.MsgDeletePost): {
+            deletePost(value: _279.MsgDeletePost): {
                 typeUrl: string;
-                value: _211.MsgDeletePost;
+                value: _279.MsgDeletePost;
             };
-            setLike(value: _211.MsgSetLike): {
+            setLike(value: _279.MsgSetLike): {
                 typeUrl: string;
-                value: _211.MsgSetLike;
+                value: _279.MsgSetLike;
             };
-            follow(value: _211.MsgFollow): {
+            follow(value: _279.MsgFollow): {
                 typeUrl: string;
-                value: _211.MsgFollow;
+                value: _279.MsgFollow;
             };
-            unfollow(value: _211.MsgUnfollow): {
+            unfollow(value: _279.MsgUnfollow): {
                 typeUrl: string;
-                value: _211.MsgUnfollow;
+                value: _279.MsgUnfollow;
             };
         };
     };
     AminoConverter: {
         "/community.MsgCreatePost": {
             aminoType: string;
-            toAmino: ({ post }: _211.MsgCreatePost) => {
+            toAmino: ({ post }: _279.MsgCreatePost) => {
                 post: {
                     owner: string;
                     uuid: string;
@@ -139,11 +139,11 @@ export declare const community: {
                     category: number;
                     text: string;
                 };
-            }) => _211.MsgCreatePost;
+            }) => _279.MsgCreatePost;
         };
         "/community.MsgDeletePost": {
             aminoType: string;
-            toAmino: ({ postOwner, postUuid, owner }: _211.MsgDeletePost) => {
+            toAmino: ({ postOwner, postUuid, owner }: _279.MsgDeletePost) => {
                 post_owner: string;
                 post_uuid: string;
                 owner: string;
@@ -152,11 +152,11 @@ export declare const community: {
                 post_owner: string;
                 post_uuid: string;
                 owner: string;
-            }) => _211.MsgDeletePost;
+            }) => _279.MsgDeletePost;
         };
         "/community.MsgSetLike": {
             aminoType: string;
-            toAmino: ({ like }: _211.MsgSetLike) => {
+            toAmino: ({ like }: _279.MsgSetLike) => {
                 like: {
                     owner: string;
                     post_owner: string;
@@ -171,158 +171,158 @@ export declare const community: {
                     post_uuid: string;
                     weight: number;
                 };
-            }) => _211.MsgSetLike;
+            }) => _279.MsgSetLike;
         };
         "/community.MsgFollow": {
             aminoType: string;
-            toAmino: ({ owner, whom }: _211.MsgFollow) => {
+            toAmino: ({ owner, whom }: _279.MsgFollow) => {
                 owner: string;
                 whom: string;
             };
             fromAmino: ({ owner, whom }: {
                 owner: string;
                 whom: string;
-            }) => _211.MsgFollow;
+            }) => _279.MsgFollow;
         };
         "/community.MsgUnfollow": {
             aminoType: string;
-            toAmino: ({ owner, whom }: _211.MsgUnfollow) => {
+            toAmino: ({ owner, whom }: _279.MsgUnfollow) => {
                 owner: string;
                 whom: string;
             };
             fromAmino: ({ owner, whom }: {
                 owner: string;
                 whom: string;
-            }) => _211.MsgUnfollow;
+            }) => _279.MsgUnfollow;
         };
     };
     MsgCreatePost: {
-        encode(message: _211.MsgCreatePost, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _211.MsgCreatePost;
-        fromJSON(object: any): _211.MsgCreatePost;
-        toJSON(message: _211.MsgCreatePost): unknown;
+        encode(message: _279.MsgCreatePost, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _279.MsgCreatePost;
+        fromJSON(object: any): _279.MsgCreatePost;
+        toJSON(message: _279.MsgCreatePost): unknown;
         fromPartial(object: {
             post?: {
                 owner?: string;
                 uuid?: string;
                 title?: string;
                 previewImage?: string;
-                category?: _208.Category;
+                category?: _276.Category;
                 text?: string;
             };
-        }): _211.MsgCreatePost;
+        }): _279.MsgCreatePost;
     };
     MsgCreatePostResponse: {
-        encode(_: _211.MsgCreatePostResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _211.MsgCreatePostResponse;
-        fromJSON(_: any): _211.MsgCreatePostResponse;
-        toJSON(_: _211.MsgCreatePostResponse): unknown;
-        fromPartial(_: {}): _211.MsgCreatePostResponse;
+        encode(_: _279.MsgCreatePostResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _279.MsgCreatePostResponse;
+        fromJSON(_: any): _279.MsgCreatePostResponse;
+        toJSON(_: _279.MsgCreatePostResponse): unknown;
+        fromPartial(_: {}): _279.MsgCreatePostResponse;
     };
     MsgDeletePost: {
-        encode(message: _211.MsgDeletePost, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _211.MsgDeletePost;
-        fromJSON(object: any): _211.MsgDeletePost;
-        toJSON(message: _211.MsgDeletePost): unknown;
+        encode(message: _279.MsgDeletePost, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _279.MsgDeletePost;
+        fromJSON(object: any): _279.MsgDeletePost;
+        toJSON(message: _279.MsgDeletePost): unknown;
         fromPartial(object: {
             postOwner?: string;
             postUuid?: string;
             owner?: string;
-        }): _211.MsgDeletePost;
+        }): _279.MsgDeletePost;
     };
     MsgDeletePostResponse: {
-        encode(_: _211.MsgDeletePostResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _211.MsgDeletePostResponse;
-        fromJSON(_: any): _211.MsgDeletePostResponse;
-        toJSON(_: _211.MsgDeletePostResponse): unknown;
-        fromPartial(_: {}): _211.MsgDeletePostResponse;
+        encode(_: _279.MsgDeletePostResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _279.MsgDeletePostResponse;
+        fromJSON(_: any): _279.MsgDeletePostResponse;
+        toJSON(_: _279.MsgDeletePostResponse): unknown;
+        fromPartial(_: {}): _279.MsgDeletePostResponse;
     };
     MsgSetLike: {
-        encode(message: _211.MsgSetLike, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _211.MsgSetLike;
-        fromJSON(object: any): _211.MsgSetLike;
-        toJSON(message: _211.MsgSetLike): unknown;
+        encode(message: _279.MsgSetLike, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _279.MsgSetLike;
+        fromJSON(object: any): _279.MsgSetLike;
+        toJSON(message: _279.MsgSetLike): unknown;
         fromPartial(object: {
             like?: {
                 owner?: string;
                 postOwner?: string;
                 postUuid?: string;
-                weight?: _208.LikeWeight;
+                weight?: _276.LikeWeight;
             };
-        }): _211.MsgSetLike;
+        }): _279.MsgSetLike;
     };
     MsgSetLikeResponse: {
-        encode(_: _211.MsgSetLikeResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _211.MsgSetLikeResponse;
-        fromJSON(_: any): _211.MsgSetLikeResponse;
-        toJSON(_: _211.MsgSetLikeResponse): unknown;
-        fromPartial(_: {}): _211.MsgSetLikeResponse;
+        encode(_: _279.MsgSetLikeResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _279.MsgSetLikeResponse;
+        fromJSON(_: any): _279.MsgSetLikeResponse;
+        toJSON(_: _279.MsgSetLikeResponse): unknown;
+        fromPartial(_: {}): _279.MsgSetLikeResponse;
     };
     MsgFollow: {
-        encode(message: _211.MsgFollow, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _211.MsgFollow;
-        fromJSON(object: any): _211.MsgFollow;
-        toJSON(message: _211.MsgFollow): unknown;
+        encode(message: _279.MsgFollow, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _279.MsgFollow;
+        fromJSON(object: any): _279.MsgFollow;
+        toJSON(message: _279.MsgFollow): unknown;
         fromPartial(object: {
             owner?: string;
             whom?: string;
-        }): _211.MsgFollow;
+        }): _279.MsgFollow;
     };
     MsgFollowResponse: {
-        encode(_: _211.MsgFollowResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _211.MsgFollowResponse;
-        fromJSON(_: any): _211.MsgFollowResponse;
-        toJSON(_: _211.MsgFollowResponse): unknown;
-        fromPartial(_: {}): _211.MsgFollowResponse;
+        encode(_: _279.MsgFollowResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _279.MsgFollowResponse;
+        fromJSON(_: any): _279.MsgFollowResponse;
+        toJSON(_: _279.MsgFollowResponse): unknown;
+        fromPartial(_: {}): _279.MsgFollowResponse;
     };
     MsgUnfollow: {
-        encode(message: _211.MsgUnfollow, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _211.MsgUnfollow;
-        fromJSON(object: any): _211.MsgUnfollow;
-        toJSON(message: _211.MsgUnfollow): unknown;
+        encode(message: _279.MsgUnfollow, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _279.MsgUnfollow;
+        fromJSON(object: any): _279.MsgUnfollow;
+        toJSON(message: _279.MsgUnfollow): unknown;
         fromPartial(object: {
             owner?: string;
             whom?: string;
-        }): _211.MsgUnfollow;
+        }): _279.MsgUnfollow;
     };
     MsgUnfollowResponse: {
-        encode(_: _211.MsgUnfollowResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _211.MsgUnfollowResponse;
-        fromJSON(_: any): _211.MsgUnfollowResponse;
-        toJSON(_: _211.MsgUnfollowResponse): unknown;
-        fromPartial(_: {}): _211.MsgUnfollowResponse;
+        encode(_: _279.MsgUnfollowResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _279.MsgUnfollowResponse;
+        fromJSON(_: any): _279.MsgUnfollowResponse;
+        toJSON(_: _279.MsgUnfollowResponse): unknown;
+        fromPartial(_: {}): _279.MsgUnfollowResponse;
     };
     GetPostRequest: {
-        encode(message: _210.GetPostRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _210.GetPostRequest;
-        fromJSON(object: any): _210.GetPostRequest;
-        toJSON(message: _210.GetPostRequest): unknown;
+        encode(message: _278.GetPostRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _278.GetPostRequest;
+        fromJSON(object: any): _278.GetPostRequest;
+        toJSON(message: _278.GetPostRequest): unknown;
         fromPartial(object: {
             postOwner?: string;
             postUuid?: string;
-        }): _210.GetPostRequest;
+        }): _278.GetPostRequest;
     };
     GetPostResponse: {
-        encode(message: _210.GetPostResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _210.GetPostResponse;
-        fromJSON(object: any): _210.GetPostResponse;
-        toJSON(message: _210.GetPostResponse): unknown;
+        encode(message: _278.GetPostResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _278.GetPostResponse;
+        fromJSON(object: any): _278.GetPostResponse;
+        toJSON(message: _278.GetPostResponse): unknown;
         fromPartial(object: {
             post?: {
                 owner?: string;
                 uuid?: string;
                 title?: string;
                 previewImage?: string;
-                category?: _208.Category;
+                category?: _276.Category;
                 text?: string;
             };
-        }): _210.GetPostResponse;
+        }): _278.GetPostResponse;
     };
     ListUserPostsRequest: {
-        encode(message: _210.ListUserPostsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _210.ListUserPostsRequest;
-        fromJSON(object: any): _210.ListUserPostsRequest;
-        toJSON(message: _210.ListUserPostsRequest): unknown;
+        encode(message: _278.ListUserPostsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _278.ListUserPostsRequest;
+        fromJSON(object: any): _278.ListUserPostsRequest;
+        toJSON(message: _278.ListUserPostsRequest): unknown;
         fromPartial(object: {
             owner?: string;
             pagination?: {
@@ -332,49 +332,49 @@ export declare const community: {
                 countTotal?: boolean;
                 reverse?: boolean;
             };
-        }): _210.ListUserPostsRequest;
+        }): _278.ListUserPostsRequest;
     };
     ListUserPostsResponse: {
-        encode(message: _210.ListUserPostsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _210.ListUserPostsResponse;
-        fromJSON(object: any): _210.ListUserPostsResponse;
-        toJSON(message: _210.ListUserPostsResponse): unknown;
+        encode(message: _278.ListUserPostsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _278.ListUserPostsResponse;
+        fromJSON(object: any): _278.ListUserPostsResponse;
+        toJSON(message: _278.ListUserPostsResponse): unknown;
         fromPartial(object: {
             posts?: {
                 owner?: string;
                 uuid?: string;
                 title?: string;
                 previewImage?: string;
-                category?: _208.Category;
+                category?: _276.Category;
                 text?: string;
             }[];
             pagination?: {
                 nextKey?: Uint8Array;
                 total?: any;
             };
-        }): _210.ListUserPostsResponse;
+        }): _278.ListUserPostsResponse;
     };
     ModeratorsRequest: {
-        encode(_: _210.ModeratorsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _210.ModeratorsRequest;
-        fromJSON(_: any): _210.ModeratorsRequest;
-        toJSON(_: _210.ModeratorsRequest): unknown;
-        fromPartial(_: {}): _210.ModeratorsRequest;
+        encode(_: _278.ModeratorsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _278.ModeratorsRequest;
+        fromJSON(_: any): _278.ModeratorsRequest;
+        toJSON(_: _278.ModeratorsRequest): unknown;
+        fromPartial(_: {}): _278.ModeratorsRequest;
     };
     ModeratorsResponse: {
-        encode(message: _210.ModeratorsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _210.ModeratorsResponse;
-        fromJSON(object: any): _210.ModeratorsResponse;
-        toJSON(message: _210.ModeratorsResponse): unknown;
+        encode(message: _278.ModeratorsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _278.ModeratorsResponse;
+        fromJSON(object: any): _278.ModeratorsResponse;
+        toJSON(message: _278.ModeratorsResponse): unknown;
         fromPartial(object: {
             moderators?: string[];
-        }): _210.ModeratorsResponse;
+        }): _278.ModeratorsResponse;
     };
     ListFollowedRequest: {
-        encode(message: _210.ListFollowedRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _210.ListFollowedRequest;
-        fromJSON(object: any): _210.ListFollowedRequest;
-        toJSON(message: _210.ListFollowedRequest): unknown;
+        encode(message: _278.ListFollowedRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _278.ListFollowedRequest;
+        fromJSON(object: any): _278.ListFollowedRequest;
+        toJSON(message: _278.ListFollowedRequest): unknown;
         fromPartial(object: {
             owner?: string;
             pagination?: {
@@ -384,36 +384,36 @@ export declare const community: {
                 countTotal?: boolean;
                 reverse?: boolean;
             };
-        }): _210.ListFollowedRequest;
+        }): _278.ListFollowedRequest;
     };
     ListFollowedResponse: {
-        encode(message: _210.ListFollowedResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _210.ListFollowedResponse;
-        fromJSON(object: any): _210.ListFollowedResponse;
-        toJSON(message: _210.ListFollowedResponse): unknown;
+        encode(message: _278.ListFollowedResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _278.ListFollowedResponse;
+        fromJSON(object: any): _278.ListFollowedResponse;
+        toJSON(message: _278.ListFollowedResponse): unknown;
         fromPartial(object: {
             followed?: string[];
             pagination?: {
                 nextKey?: Uint8Array;
                 total?: any;
             };
-        }): _210.ListFollowedResponse;
+        }): _278.ListFollowedResponse;
     };
     GenesisState_FollowingEntry: {
-        encode(message: _209.GenesisState_FollowingEntry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _209.GenesisState_FollowingEntry;
-        fromJSON(object: any): _209.GenesisState_FollowingEntry;
-        toJSON(message: _209.GenesisState_FollowingEntry): unknown;
+        encode(message: _277.GenesisState_FollowingEntry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _277.GenesisState_FollowingEntry;
+        fromJSON(object: any): _277.GenesisState_FollowingEntry;
+        toJSON(message: _277.GenesisState_FollowingEntry): unknown;
         fromPartial(object: {
             key?: string;
             value?: any;
-        }): _209.GenesisState_FollowingEntry;
+        }): _277.GenesisState_FollowingEntry;
     };
     GenesisState: {
-        encode(message: _209.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _209.GenesisState;
-        fromJSON(object: any): _209.GenesisState;
-        toJSON(message: _209.GenesisState): unknown;
+        encode(message: _277.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _277.GenesisState;
+        fromJSON(object: any): _277.GenesisState;
+        toJSON(message: _277.GenesisState): unknown;
         fromPartial(object: {
             params?: {
                 moderators?: string[];
@@ -430,42 +430,42 @@ export declare const community: {
                 uuid?: string;
                 title?: string;
                 previewImage?: string;
-                category?: _208.Category;
+                category?: _276.Category;
                 text?: string;
             }[];
             likes?: {
                 owner?: string;
                 postOwner?: string;
                 postUuid?: string;
-                weight?: _208.LikeWeight;
+                weight?: _276.LikeWeight;
             }[];
             following?: {
                 [x: string]: {
                     address?: string[];
                 };
             };
-        }): _209.GenesisState;
+        }): _277.GenesisState;
     };
     GenesisState_AddressList: {
-        encode(message: _209.GenesisState_AddressList, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _209.GenesisState_AddressList;
-        fromJSON(object: any): _209.GenesisState_AddressList;
-        toJSON(message: _209.GenesisState_AddressList): unknown;
+        encode(message: _277.GenesisState_AddressList, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _277.GenesisState_AddressList;
+        fromJSON(object: any): _277.GenesisState_AddressList;
+        toJSON(message: _277.GenesisState_AddressList): unknown;
         fromPartial(object: {
             address?: string[];
-        }): _209.GenesisState_AddressList;
+        }): _277.GenesisState_AddressList;
     };
-    categoryFromJSON(object: any): _208.Category;
-    categoryToJSON(object: _208.Category): string;
-    likeWeightFromJSON(object: any): _208.LikeWeight;
-    likeWeightToJSON(object: _208.LikeWeight): string;
-    Category: typeof _208.Category;
-    LikeWeight: typeof _208.LikeWeight;
+    categoryFromJSON(object: any): _276.Category;
+    categoryToJSON(object: _276.Category): string;
+    likeWeightFromJSON(object: any): _276.LikeWeight;
+    likeWeightToJSON(object: _276.LikeWeight): string;
+    Category: typeof _276.Category;
+    LikeWeight: typeof _276.LikeWeight;
     Params: {
-        encode(message: _208.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _208.Params;
-        fromJSON(object: any): _208.Params;
-        toJSON(message: _208.Params): unknown;
+        encode(message: _276.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _276.Params;
+        fromJSON(object: any): _276.Params;
+        toJSON(message: _276.Params): unknown;
         fromPartial(object: {
             moderators?: string[];
             fixedGas?: {
@@ -475,45 +475,45 @@ export declare const community: {
                 follow?: any;
                 unfollow?: any;
             };
-        }): _208.Params;
+        }): _276.Params;
     };
     FixedGasParams: {
-        encode(message: _208.FixedGasParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _208.FixedGasParams;
-        fromJSON(object: any): _208.FixedGasParams;
-        toJSON(message: _208.FixedGasParams): unknown;
+        encode(message: _276.FixedGasParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _276.FixedGasParams;
+        fromJSON(object: any): _276.FixedGasParams;
+        toJSON(message: _276.FixedGasParams): unknown;
         fromPartial(object: {
             createPost?: any;
             deletePost?: any;
             setLike?: any;
             follow?: any;
             unfollow?: any;
-        }): _208.FixedGasParams;
+        }): _276.FixedGasParams;
     };
     Post: {
-        encode(message: _208.Post, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _208.Post;
-        fromJSON(object: any): _208.Post;
-        toJSON(message: _208.Post): unknown;
+        encode(message: _276.Post, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _276.Post;
+        fromJSON(object: any): _276.Post;
+        toJSON(message: _276.Post): unknown;
         fromPartial(object: {
             owner?: string;
             uuid?: string;
             title?: string;
             previewImage?: string;
-            category?: _208.Category;
+            category?: _276.Category;
             text?: string;
-        }): _208.Post;
+        }): _276.Post;
     };
     Like: {
-        encode(message: _208.Like, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _208.Like;
-        fromJSON(object: any): _208.Like;
-        toJSON(message: _208.Like): unknown;
+        encode(message: _276.Like, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _276.Like;
+        fromJSON(object: any): _276.Like;
+        toJSON(message: _276.Like): unknown;
         fromPartial(object: {
             owner?: string;
             postOwner?: string;
             postUuid?: string;
-            weight?: _208.LikeWeight;
-        }): _208.Like;
+            weight?: _276.LikeWeight;
+        }): _276.Like;
     };
 };

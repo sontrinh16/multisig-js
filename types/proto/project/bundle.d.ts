@@ -1,109 +1,109 @@
-import * as _383 from "../ixo/project/genesis";
-import * as _384 from "../ixo/project/project";
-import * as _385 from "../ixo/project/query";
-import * as _386 from "../ixo/project/tx";
+import * as _451 from "../ixo/project/genesis";
+import * as _452 from "../ixo/project/project";
+import * as _453 from "../ixo/project/query";
+import * as _454 from "../ixo/project/tx";
 export declare const project: {
     registry: readonly [string, import("@cosmjs/proto-signing").GeneratedType][];
     load: (protoRegistry: import("@cosmjs/proto-signing").Registry) => void;
     MessageComposer: {
         encoded: {
-            createProject(value: _386.MsgCreateProject): {
+            createProject(value: _454.MsgCreateProject): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            updateProjectStatus(value: _386.MsgUpdateProjectStatus): {
+            updateProjectStatus(value: _454.MsgUpdateProjectStatus): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            createAgent(value: _386.MsgCreateAgent): {
+            createAgent(value: _454.MsgCreateAgent): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            updateAgent(value: _386.MsgUpdateAgent): {
+            updateAgent(value: _454.MsgUpdateAgent): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            createClaim(value: _386.MsgCreateClaim): {
+            createClaim(value: _454.MsgCreateClaim): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            createEvaluation(value: _386.MsgCreateEvaluation): {
+            createEvaluation(value: _454.MsgCreateEvaluation): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            withdrawFunds(value: _386.MsgWithdrawFunds): {
+            withdrawFunds(value: _454.MsgWithdrawFunds): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            updateProjectDoc(value: _386.MsgUpdateProjectDoc): {
+            updateProjectDoc(value: _454.MsgUpdateProjectDoc): {
                 typeUrl: string;
                 value: Uint8Array;
             };
         };
         withTypeUrl: {
-            createProject(value: _386.MsgCreateProject): {
+            createProject(value: _454.MsgCreateProject): {
                 typeUrl: string;
-                value: _386.MsgCreateProject;
+                value: _454.MsgCreateProject;
             };
-            updateProjectStatus(value: _386.MsgUpdateProjectStatus): {
+            updateProjectStatus(value: _454.MsgUpdateProjectStatus): {
                 typeUrl: string;
-                value: _386.MsgUpdateProjectStatus;
+                value: _454.MsgUpdateProjectStatus;
             };
-            createAgent(value: _386.MsgCreateAgent): {
+            createAgent(value: _454.MsgCreateAgent): {
                 typeUrl: string;
-                value: _386.MsgCreateAgent;
+                value: _454.MsgCreateAgent;
             };
-            updateAgent(value: _386.MsgUpdateAgent): {
+            updateAgent(value: _454.MsgUpdateAgent): {
                 typeUrl: string;
-                value: _386.MsgUpdateAgent;
+                value: _454.MsgUpdateAgent;
             };
-            createClaim(value: _386.MsgCreateClaim): {
+            createClaim(value: _454.MsgCreateClaim): {
                 typeUrl: string;
-                value: _386.MsgCreateClaim;
+                value: _454.MsgCreateClaim;
             };
-            createEvaluation(value: _386.MsgCreateEvaluation): {
+            createEvaluation(value: _454.MsgCreateEvaluation): {
                 typeUrl: string;
-                value: _386.MsgCreateEvaluation;
+                value: _454.MsgCreateEvaluation;
             };
-            withdrawFunds(value: _386.MsgWithdrawFunds): {
+            withdrawFunds(value: _454.MsgWithdrawFunds): {
                 typeUrl: string;
-                value: _386.MsgWithdrawFunds;
+                value: _454.MsgWithdrawFunds;
             };
-            updateProjectDoc(value: _386.MsgUpdateProjectDoc): {
+            updateProjectDoc(value: _454.MsgUpdateProjectDoc): {
                 typeUrl: string;
-                value: _386.MsgUpdateProjectDoc;
+                value: _454.MsgUpdateProjectDoc;
             };
         };
         toJSON: {
-            createProject(value: _386.MsgCreateProject): {
+            createProject(value: _454.MsgCreateProject): {
                 typeUrl: string;
                 value: unknown;
             };
-            updateProjectStatus(value: _386.MsgUpdateProjectStatus): {
+            updateProjectStatus(value: _454.MsgUpdateProjectStatus): {
                 typeUrl: string;
                 value: unknown;
             };
-            createAgent(value: _386.MsgCreateAgent): {
+            createAgent(value: _454.MsgCreateAgent): {
                 typeUrl: string;
                 value: unknown;
             };
-            updateAgent(value: _386.MsgUpdateAgent): {
+            updateAgent(value: _454.MsgUpdateAgent): {
                 typeUrl: string;
                 value: unknown;
             };
-            createClaim(value: _386.MsgCreateClaim): {
+            createClaim(value: _454.MsgCreateClaim): {
                 typeUrl: string;
                 value: unknown;
             };
-            createEvaluation(value: _386.MsgCreateEvaluation): {
+            createEvaluation(value: _454.MsgCreateEvaluation): {
                 typeUrl: string;
                 value: unknown;
             };
-            withdrawFunds(value: _386.MsgWithdrawFunds): {
+            withdrawFunds(value: _454.MsgWithdrawFunds): {
                 typeUrl: string;
                 value: unknown;
             };
-            updateProjectDoc(value: _386.MsgUpdateProjectDoc): {
+            updateProjectDoc(value: _454.MsgUpdateProjectDoc): {
                 typeUrl: string;
                 value: unknown;
             };
@@ -111,76 +111,76 @@ export declare const project: {
         fromJSON: {
             createProject(value: any): {
                 typeUrl: string;
-                value: _386.MsgCreateProject;
+                value: _454.MsgCreateProject;
             };
             updateProjectStatus(value: any): {
                 typeUrl: string;
-                value: _386.MsgUpdateProjectStatus;
+                value: _454.MsgUpdateProjectStatus;
             };
             createAgent(value: any): {
                 typeUrl: string;
-                value: _386.MsgCreateAgent;
+                value: _454.MsgCreateAgent;
             };
             updateAgent(value: any): {
                 typeUrl: string;
-                value: _386.MsgUpdateAgent;
+                value: _454.MsgUpdateAgent;
             };
             createClaim(value: any): {
                 typeUrl: string;
-                value: _386.MsgCreateClaim;
+                value: _454.MsgCreateClaim;
             };
             createEvaluation(value: any): {
                 typeUrl: string;
-                value: _386.MsgCreateEvaluation;
+                value: _454.MsgCreateEvaluation;
             };
             withdrawFunds(value: any): {
                 typeUrl: string;
-                value: _386.MsgWithdrawFunds;
+                value: _454.MsgWithdrawFunds;
             };
             updateProjectDoc(value: any): {
                 typeUrl: string;
-                value: _386.MsgUpdateProjectDoc;
+                value: _454.MsgUpdateProjectDoc;
             };
         };
         fromPartial: {
-            createProject(value: _386.MsgCreateProject): {
+            createProject(value: _454.MsgCreateProject): {
                 typeUrl: string;
-                value: _386.MsgCreateProject;
+                value: _454.MsgCreateProject;
             };
-            updateProjectStatus(value: _386.MsgUpdateProjectStatus): {
+            updateProjectStatus(value: _454.MsgUpdateProjectStatus): {
                 typeUrl: string;
-                value: _386.MsgUpdateProjectStatus;
+                value: _454.MsgUpdateProjectStatus;
             };
-            createAgent(value: _386.MsgCreateAgent): {
+            createAgent(value: _454.MsgCreateAgent): {
                 typeUrl: string;
-                value: _386.MsgCreateAgent;
+                value: _454.MsgCreateAgent;
             };
-            updateAgent(value: _386.MsgUpdateAgent): {
+            updateAgent(value: _454.MsgUpdateAgent): {
                 typeUrl: string;
-                value: _386.MsgUpdateAgent;
+                value: _454.MsgUpdateAgent;
             };
-            createClaim(value: _386.MsgCreateClaim): {
+            createClaim(value: _454.MsgCreateClaim): {
                 typeUrl: string;
-                value: _386.MsgCreateClaim;
+                value: _454.MsgCreateClaim;
             };
-            createEvaluation(value: _386.MsgCreateEvaluation): {
+            createEvaluation(value: _454.MsgCreateEvaluation): {
                 typeUrl: string;
-                value: _386.MsgCreateEvaluation;
+                value: _454.MsgCreateEvaluation;
             };
-            withdrawFunds(value: _386.MsgWithdrawFunds): {
+            withdrawFunds(value: _454.MsgWithdrawFunds): {
                 typeUrl: string;
-                value: _386.MsgWithdrawFunds;
+                value: _454.MsgWithdrawFunds;
             };
-            updateProjectDoc(value: _386.MsgUpdateProjectDoc): {
+            updateProjectDoc(value: _454.MsgUpdateProjectDoc): {
                 typeUrl: string;
-                value: _386.MsgUpdateProjectDoc;
+                value: _454.MsgUpdateProjectDoc;
             };
         };
     };
     AminoConverter: {
         "/project.MsgCreateProject": {
             aminoType: string;
-            toAmino: ({ txHash, senderDid, projectDid, pubKey, data }: _386.MsgCreateProject) => {
+            toAmino: ({ txHash, senderDid, projectDid, pubKey, data }: _454.MsgCreateProject) => {
                 tx_hash: string;
                 sender_did: string;
                 project_did: string;
@@ -193,11 +193,11 @@ export declare const project: {
                 project_did: string;
                 pub_key: string;
                 data: Uint8Array;
-            }) => _386.MsgCreateProject;
+            }) => _454.MsgCreateProject;
         };
         "/project.MsgUpdateProjectStatus": {
             aminoType: string;
-            toAmino: ({ txHash, senderDid, projectDid, data }: _386.MsgUpdateProjectStatus) => {
+            toAmino: ({ txHash, senderDid, projectDid, data }: _454.MsgUpdateProjectStatus) => {
                 tx_hash: string;
                 sender_did: string;
                 project_did: string;
@@ -214,11 +214,11 @@ export declare const project: {
                     status: string;
                     eth_funding_txn_id: string;
                 };
-            }) => _386.MsgUpdateProjectStatus;
+            }) => _454.MsgUpdateProjectStatus;
         };
         "/project.MsgCreateAgent": {
             aminoType: string;
-            toAmino: ({ txHash, senderDid, projectDid, data }: _386.MsgCreateAgent) => {
+            toAmino: ({ txHash, senderDid, projectDid, data }: _454.MsgCreateAgent) => {
                 tx_hash: string;
                 sender_did: string;
                 project_did: string;
@@ -235,11 +235,11 @@ export declare const project: {
                     agent_did: string;
                     role: string;
                 };
-            }) => _386.MsgCreateAgent;
+            }) => _454.MsgCreateAgent;
         };
         "/project.MsgUpdateAgent": {
             aminoType: string;
-            toAmino: ({ txHash, senderDid, projectDid, data }: _386.MsgUpdateAgent) => {
+            toAmino: ({ txHash, senderDid, projectDid, data }: _454.MsgUpdateAgent) => {
                 tx_hash: string;
                 sender_did: string;
                 project_did: string;
@@ -258,11 +258,11 @@ export declare const project: {
                     status: string;
                     role: string;
                 };
-            }) => _386.MsgUpdateAgent;
+            }) => _454.MsgUpdateAgent;
         };
         "/project.MsgCreateClaim": {
             aminoType: string;
-            toAmino: ({ txHash, senderDid, projectDid, data }: _386.MsgCreateClaim) => {
+            toAmino: ({ txHash, senderDid, projectDid, data }: _454.MsgCreateClaim) => {
                 tx_hash: string;
                 sender_did: string;
                 project_did: string;
@@ -279,11 +279,11 @@ export declare const project: {
                     claim_id: string;
                     claim_template_id: string;
                 };
-            }) => _386.MsgCreateClaim;
+            }) => _454.MsgCreateClaim;
         };
         "/project.MsgCreateEvaluation": {
             aminoType: string;
-            toAmino: ({ txHash, senderDid, projectDid, data }: _386.MsgCreateEvaluation) => {
+            toAmino: ({ txHash, senderDid, projectDid, data }: _454.MsgCreateEvaluation) => {
                 tx_hash: string;
                 sender_did: string;
                 project_did: string;
@@ -300,11 +300,11 @@ export declare const project: {
                     claim_id: string;
                     status: string;
                 };
-            }) => _386.MsgCreateEvaluation;
+            }) => _454.MsgCreateEvaluation;
         };
         "/project.MsgWithdrawFunds": {
             aminoType: string;
-            toAmino: ({ senderDid, data }: _386.MsgWithdrawFunds) => {
+            toAmino: ({ senderDid, data }: _454.MsgWithdrawFunds) => {
                 sender_did: string;
                 data: {
                     project_did: string;
@@ -321,11 +321,11 @@ export declare const project: {
                     amount: string;
                     is_refund: boolean;
                 };
-            }) => _386.MsgWithdrawFunds;
+            }) => _454.MsgWithdrawFunds;
         };
         "/project.MsgUpdateProjectDoc": {
             aminoType: string;
-            toAmino: ({ txHash, senderDid, projectDid, data }: _386.MsgUpdateProjectDoc) => {
+            toAmino: ({ txHash, senderDid, projectDid, data }: _454.MsgUpdateProjectDoc) => {
                 tx_hash: string;
                 sender_did: string;
                 project_did: string;
@@ -336,34 +336,34 @@ export declare const project: {
                 sender_did: string;
                 project_did: string;
                 data: Uint8Array;
-            }) => _386.MsgUpdateProjectDoc;
+            }) => _454.MsgUpdateProjectDoc;
         };
     };
     MsgCreateProject: {
-        encode(message: _386.MsgCreateProject, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _386.MsgCreateProject;
-        fromJSON(object: any): _386.MsgCreateProject;
-        toJSON(message: _386.MsgCreateProject): unknown;
+        encode(message: _454.MsgCreateProject, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.MsgCreateProject;
+        fromJSON(object: any): _454.MsgCreateProject;
+        toJSON(message: _454.MsgCreateProject): unknown;
         fromPartial(object: {
             txHash?: string;
             senderDid?: string;
             projectDid?: string;
             pubKey?: string;
             data?: Uint8Array;
-        }): _386.MsgCreateProject;
+        }): _454.MsgCreateProject;
     };
     MsgCreateProjectResponse: {
-        encode(_: _386.MsgCreateProjectResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _386.MsgCreateProjectResponse;
-        fromJSON(_: any): _386.MsgCreateProjectResponse;
-        toJSON(_: _386.MsgCreateProjectResponse): unknown;
-        fromPartial(_: {}): _386.MsgCreateProjectResponse;
+        encode(_: _454.MsgCreateProjectResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.MsgCreateProjectResponse;
+        fromJSON(_: any): _454.MsgCreateProjectResponse;
+        toJSON(_: _454.MsgCreateProjectResponse): unknown;
+        fromPartial(_: {}): _454.MsgCreateProjectResponse;
     };
     MsgUpdateProjectStatus: {
-        encode(message: _386.MsgUpdateProjectStatus, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _386.MsgUpdateProjectStatus;
-        fromJSON(object: any): _386.MsgUpdateProjectStatus;
-        toJSON(message: _386.MsgUpdateProjectStatus): unknown;
+        encode(message: _454.MsgUpdateProjectStatus, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.MsgUpdateProjectStatus;
+        fromJSON(object: any): _454.MsgUpdateProjectStatus;
+        toJSON(message: _454.MsgUpdateProjectStatus): unknown;
         fromPartial(object: {
             txHash?: string;
             senderDid?: string;
@@ -372,20 +372,20 @@ export declare const project: {
                 status?: string;
                 ethFundingTxnId?: string;
             };
-        }): _386.MsgUpdateProjectStatus;
+        }): _454.MsgUpdateProjectStatus;
     };
     MsgUpdateProjectStatusResponse: {
-        encode(_: _386.MsgUpdateProjectStatusResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _386.MsgUpdateProjectStatusResponse;
-        fromJSON(_: any): _386.MsgUpdateProjectStatusResponse;
-        toJSON(_: _386.MsgUpdateProjectStatusResponse): unknown;
-        fromPartial(_: {}): _386.MsgUpdateProjectStatusResponse;
+        encode(_: _454.MsgUpdateProjectStatusResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.MsgUpdateProjectStatusResponse;
+        fromJSON(_: any): _454.MsgUpdateProjectStatusResponse;
+        toJSON(_: _454.MsgUpdateProjectStatusResponse): unknown;
+        fromPartial(_: {}): _454.MsgUpdateProjectStatusResponse;
     };
     MsgCreateAgent: {
-        encode(message: _386.MsgCreateAgent, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _386.MsgCreateAgent;
-        fromJSON(object: any): _386.MsgCreateAgent;
-        toJSON(message: _386.MsgCreateAgent): unknown;
+        encode(message: _454.MsgCreateAgent, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.MsgCreateAgent;
+        fromJSON(object: any): _454.MsgCreateAgent;
+        toJSON(message: _454.MsgCreateAgent): unknown;
         fromPartial(object: {
             txHash?: string;
             senderDid?: string;
@@ -394,20 +394,20 @@ export declare const project: {
                 agentDid?: string;
                 role?: string;
             };
-        }): _386.MsgCreateAgent;
+        }): _454.MsgCreateAgent;
     };
     MsgCreateAgentResponse: {
-        encode(_: _386.MsgCreateAgentResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _386.MsgCreateAgentResponse;
-        fromJSON(_: any): _386.MsgCreateAgentResponse;
-        toJSON(_: _386.MsgCreateAgentResponse): unknown;
-        fromPartial(_: {}): _386.MsgCreateAgentResponse;
+        encode(_: _454.MsgCreateAgentResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.MsgCreateAgentResponse;
+        fromJSON(_: any): _454.MsgCreateAgentResponse;
+        toJSON(_: _454.MsgCreateAgentResponse): unknown;
+        fromPartial(_: {}): _454.MsgCreateAgentResponse;
     };
     MsgUpdateAgent: {
-        encode(message: _386.MsgUpdateAgent, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _386.MsgUpdateAgent;
-        fromJSON(object: any): _386.MsgUpdateAgent;
-        toJSON(message: _386.MsgUpdateAgent): unknown;
+        encode(message: _454.MsgUpdateAgent, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.MsgUpdateAgent;
+        fromJSON(object: any): _454.MsgUpdateAgent;
+        toJSON(message: _454.MsgUpdateAgent): unknown;
         fromPartial(object: {
             txHash?: string;
             senderDid?: string;
@@ -417,20 +417,20 @@ export declare const project: {
                 status?: string;
                 role?: string;
             };
-        }): _386.MsgUpdateAgent;
+        }): _454.MsgUpdateAgent;
     };
     MsgUpdateAgentResponse: {
-        encode(_: _386.MsgUpdateAgentResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _386.MsgUpdateAgentResponse;
-        fromJSON(_: any): _386.MsgUpdateAgentResponse;
-        toJSON(_: _386.MsgUpdateAgentResponse): unknown;
-        fromPartial(_: {}): _386.MsgUpdateAgentResponse;
+        encode(_: _454.MsgUpdateAgentResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.MsgUpdateAgentResponse;
+        fromJSON(_: any): _454.MsgUpdateAgentResponse;
+        toJSON(_: _454.MsgUpdateAgentResponse): unknown;
+        fromPartial(_: {}): _454.MsgUpdateAgentResponse;
     };
     MsgCreateClaim: {
-        encode(message: _386.MsgCreateClaim, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _386.MsgCreateClaim;
-        fromJSON(object: any): _386.MsgCreateClaim;
-        toJSON(message: _386.MsgCreateClaim): unknown;
+        encode(message: _454.MsgCreateClaim, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.MsgCreateClaim;
+        fromJSON(object: any): _454.MsgCreateClaim;
+        toJSON(message: _454.MsgCreateClaim): unknown;
         fromPartial(object: {
             txHash?: string;
             senderDid?: string;
@@ -439,20 +439,20 @@ export declare const project: {
                 claimId?: string;
                 claimTemplateId?: string;
             };
-        }): _386.MsgCreateClaim;
+        }): _454.MsgCreateClaim;
     };
     MsgCreateClaimResponse: {
-        encode(_: _386.MsgCreateClaimResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _386.MsgCreateClaimResponse;
-        fromJSON(_: any): _386.MsgCreateClaimResponse;
-        toJSON(_: _386.MsgCreateClaimResponse): unknown;
-        fromPartial(_: {}): _386.MsgCreateClaimResponse;
+        encode(_: _454.MsgCreateClaimResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.MsgCreateClaimResponse;
+        fromJSON(_: any): _454.MsgCreateClaimResponse;
+        toJSON(_: _454.MsgCreateClaimResponse): unknown;
+        fromPartial(_: {}): _454.MsgCreateClaimResponse;
     };
     MsgCreateEvaluation: {
-        encode(message: _386.MsgCreateEvaluation, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _386.MsgCreateEvaluation;
-        fromJSON(object: any): _386.MsgCreateEvaluation;
-        toJSON(message: _386.MsgCreateEvaluation): unknown;
+        encode(message: _454.MsgCreateEvaluation, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.MsgCreateEvaluation;
+        fromJSON(object: any): _454.MsgCreateEvaluation;
+        toJSON(message: _454.MsgCreateEvaluation): unknown;
         fromPartial(object: {
             txHash?: string;
             senderDid?: string;
@@ -461,20 +461,20 @@ export declare const project: {
                 claimId?: string;
                 status?: string;
             };
-        }): _386.MsgCreateEvaluation;
+        }): _454.MsgCreateEvaluation;
     };
     MsgCreateEvaluationResponse: {
-        encode(_: _386.MsgCreateEvaluationResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _386.MsgCreateEvaluationResponse;
-        fromJSON(_: any): _386.MsgCreateEvaluationResponse;
-        toJSON(_: _386.MsgCreateEvaluationResponse): unknown;
-        fromPartial(_: {}): _386.MsgCreateEvaluationResponse;
+        encode(_: _454.MsgCreateEvaluationResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.MsgCreateEvaluationResponse;
+        fromJSON(_: any): _454.MsgCreateEvaluationResponse;
+        toJSON(_: _454.MsgCreateEvaluationResponse): unknown;
+        fromPartial(_: {}): _454.MsgCreateEvaluationResponse;
     };
     MsgWithdrawFunds: {
-        encode(message: _386.MsgWithdrawFunds, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _386.MsgWithdrawFunds;
-        fromJSON(object: any): _386.MsgWithdrawFunds;
-        toJSON(message: _386.MsgWithdrawFunds): unknown;
+        encode(message: _454.MsgWithdrawFunds, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.MsgWithdrawFunds;
+        fromJSON(object: any): _454.MsgWithdrawFunds;
+        toJSON(message: _454.MsgWithdrawFunds): unknown;
         fromPartial(object: {
             senderDid?: string;
             data?: {
@@ -483,48 +483,48 @@ export declare const project: {
                 amount?: string;
                 isRefund?: boolean;
             };
-        }): _386.MsgWithdrawFunds;
+        }): _454.MsgWithdrawFunds;
     };
     MsgWithdrawFundsResponse: {
-        encode(_: _386.MsgWithdrawFundsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _386.MsgWithdrawFundsResponse;
-        fromJSON(_: any): _386.MsgWithdrawFundsResponse;
-        toJSON(_: _386.MsgWithdrawFundsResponse): unknown;
-        fromPartial(_: {}): _386.MsgWithdrawFundsResponse;
+        encode(_: _454.MsgWithdrawFundsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.MsgWithdrawFundsResponse;
+        fromJSON(_: any): _454.MsgWithdrawFundsResponse;
+        toJSON(_: _454.MsgWithdrawFundsResponse): unknown;
+        fromPartial(_: {}): _454.MsgWithdrawFundsResponse;
     };
     MsgUpdateProjectDoc: {
-        encode(message: _386.MsgUpdateProjectDoc, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _386.MsgUpdateProjectDoc;
-        fromJSON(object: any): _386.MsgUpdateProjectDoc;
-        toJSON(message: _386.MsgUpdateProjectDoc): unknown;
+        encode(message: _454.MsgUpdateProjectDoc, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.MsgUpdateProjectDoc;
+        fromJSON(object: any): _454.MsgUpdateProjectDoc;
+        toJSON(message: _454.MsgUpdateProjectDoc): unknown;
         fromPartial(object: {
             txHash?: string;
             senderDid?: string;
             projectDid?: string;
             data?: Uint8Array;
-        }): _386.MsgUpdateProjectDoc;
+        }): _454.MsgUpdateProjectDoc;
     };
     MsgUpdateProjectDocResponse: {
-        encode(_: _386.MsgUpdateProjectDocResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _386.MsgUpdateProjectDocResponse;
-        fromJSON(_: any): _386.MsgUpdateProjectDocResponse;
-        toJSON(_: _386.MsgUpdateProjectDocResponse): unknown;
-        fromPartial(_: {}): _386.MsgUpdateProjectDocResponse;
+        encode(_: _454.MsgUpdateProjectDocResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.MsgUpdateProjectDocResponse;
+        fromJSON(_: any): _454.MsgUpdateProjectDocResponse;
+        toJSON(_: _454.MsgUpdateProjectDocResponse): unknown;
+        fromPartial(_: {}): _454.MsgUpdateProjectDocResponse;
     };
     QueryProjectDocRequest: {
-        encode(message: _385.QueryProjectDocRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _385.QueryProjectDocRequest;
-        fromJSON(object: any): _385.QueryProjectDocRequest;
-        toJSON(message: _385.QueryProjectDocRequest): unknown;
+        encode(message: _453.QueryProjectDocRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _453.QueryProjectDocRequest;
+        fromJSON(object: any): _453.QueryProjectDocRequest;
+        toJSON(message: _453.QueryProjectDocRequest): unknown;
         fromPartial(object: {
             projectDid?: string;
-        }): _385.QueryProjectDocRequest;
+        }): _453.QueryProjectDocRequest;
     };
     QueryProjectDocResponse: {
-        encode(message: _385.QueryProjectDocResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _385.QueryProjectDocResponse;
-        fromJSON(object: any): _385.QueryProjectDocResponse;
-        toJSON(message: _385.QueryProjectDocResponse): unknown;
+        encode(message: _453.QueryProjectDocResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _453.QueryProjectDocResponse;
+        fromJSON(object: any): _453.QueryProjectDocResponse;
+        toJSON(message: _453.QueryProjectDocResponse): unknown;
         fromPartial(object: {
             projectDoc?: {
                 txHash?: string;
@@ -534,44 +534,44 @@ export declare const project: {
                 status?: string;
                 data?: Uint8Array;
             };
-        }): _385.QueryProjectDocResponse;
+        }): _453.QueryProjectDocResponse;
     };
     QueryProjectAccountsRequest: {
-        encode(message: _385.QueryProjectAccountsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _385.QueryProjectAccountsRequest;
-        fromJSON(object: any): _385.QueryProjectAccountsRequest;
-        toJSON(message: _385.QueryProjectAccountsRequest): unknown;
+        encode(message: _453.QueryProjectAccountsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _453.QueryProjectAccountsRequest;
+        fromJSON(object: any): _453.QueryProjectAccountsRequest;
+        toJSON(message: _453.QueryProjectAccountsRequest): unknown;
         fromPartial(object: {
             projectDid?: string;
-        }): _385.QueryProjectAccountsRequest;
+        }): _453.QueryProjectAccountsRequest;
     };
     QueryProjectAccountsResponse: {
-        encode(message: _385.QueryProjectAccountsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _385.QueryProjectAccountsResponse;
-        fromJSON(object: any): _385.QueryProjectAccountsResponse;
-        toJSON(message: _385.QueryProjectAccountsResponse): unknown;
+        encode(message: _453.QueryProjectAccountsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _453.QueryProjectAccountsResponse;
+        fromJSON(object: any): _453.QueryProjectAccountsResponse;
+        toJSON(message: _453.QueryProjectAccountsResponse): unknown;
         fromPartial(object: {
             accountMap?: {
                 map?: {
                     [x: string]: string;
                 };
             };
-        }): _385.QueryProjectAccountsResponse;
+        }): _453.QueryProjectAccountsResponse;
     };
     QueryProjectTxRequest: {
-        encode(message: _385.QueryProjectTxRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _385.QueryProjectTxRequest;
-        fromJSON(object: any): _385.QueryProjectTxRequest;
-        toJSON(message: _385.QueryProjectTxRequest): unknown;
+        encode(message: _453.QueryProjectTxRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _453.QueryProjectTxRequest;
+        fromJSON(object: any): _453.QueryProjectTxRequest;
+        toJSON(message: _453.QueryProjectTxRequest): unknown;
         fromPartial(object: {
             projectDid?: string;
-        }): _385.QueryProjectTxRequest;
+        }): _453.QueryProjectTxRequest;
     };
     QueryProjectTxResponse: {
-        encode(message: _385.QueryProjectTxResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _385.QueryProjectTxResponse;
-        fromJSON(object: any): _385.QueryProjectTxResponse;
-        toJSON(message: _385.QueryProjectTxResponse): unknown;
+        encode(message: _453.QueryProjectTxResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _453.QueryProjectTxResponse;
+        fromJSON(object: any): _453.QueryProjectTxResponse;
+        toJSON(message: _453.QueryProjectTxResponse): unknown;
         fromPartial(object: {
             txs?: {
                 docsList?: {
@@ -583,20 +583,20 @@ export declare const project: {
                     };
                 }[];
             };
-        }): _385.QueryProjectTxResponse;
+        }): _453.QueryProjectTxResponse;
     };
     QueryParamsRequest: {
-        encode(_: _385.QueryParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _385.QueryParamsRequest;
-        fromJSON(_: any): _385.QueryParamsRequest;
-        toJSON(_: _385.QueryParamsRequest): unknown;
-        fromPartial(_: {}): _385.QueryParamsRequest;
+        encode(_: _453.QueryParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _453.QueryParamsRequest;
+        fromJSON(_: any): _453.QueryParamsRequest;
+        toJSON(_: _453.QueryParamsRequest): unknown;
+        fromPartial(_: {}): _453.QueryParamsRequest;
     };
     QueryParamsResponse: {
-        encode(message: _385.QueryParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _385.QueryParamsResponse;
-        fromJSON(object: any): _385.QueryParamsResponse;
-        toJSON(message: _385.QueryParamsResponse): unknown;
+        encode(message: _453.QueryParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _453.QueryParamsResponse;
+        fromJSON(object: any): _453.QueryParamsResponse;
+        toJSON(message: _453.QueryParamsResponse): unknown;
         fromPartial(object: {
             params?: {
                 ixoDid?: string;
@@ -607,76 +607,76 @@ export declare const project: {
                 oracleFeePercentage?: string;
                 nodeFeePercentage?: string;
             };
-        }): _385.QueryParamsResponse;
+        }): _453.QueryParamsResponse;
     };
     UpdateProjectStatusDoc: {
-        encode(message: _384.UpdateProjectStatusDoc, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _384.UpdateProjectStatusDoc;
-        fromJSON(object: any): _384.UpdateProjectStatusDoc;
-        toJSON(message: _384.UpdateProjectStatusDoc): unknown;
+        encode(message: _452.UpdateProjectStatusDoc, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _452.UpdateProjectStatusDoc;
+        fromJSON(object: any): _452.UpdateProjectStatusDoc;
+        toJSON(message: _452.UpdateProjectStatusDoc): unknown;
         fromPartial(object: {
             status?: string;
             ethFundingTxnId?: string;
-        }): _384.UpdateProjectStatusDoc;
+        }): _452.UpdateProjectStatusDoc;
     };
     CreateAgentDoc: {
-        encode(message: _384.CreateAgentDoc, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _384.CreateAgentDoc;
-        fromJSON(object: any): _384.CreateAgentDoc;
-        toJSON(message: _384.CreateAgentDoc): unknown;
+        encode(message: _452.CreateAgentDoc, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _452.CreateAgentDoc;
+        fromJSON(object: any): _452.CreateAgentDoc;
+        toJSON(message: _452.CreateAgentDoc): unknown;
         fromPartial(object: {
             agentDid?: string;
             role?: string;
-        }): _384.CreateAgentDoc;
+        }): _452.CreateAgentDoc;
     };
     UpdateAgentDoc: {
-        encode(message: _384.UpdateAgentDoc, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _384.UpdateAgentDoc;
-        fromJSON(object: any): _384.UpdateAgentDoc;
-        toJSON(message: _384.UpdateAgentDoc): unknown;
+        encode(message: _452.UpdateAgentDoc, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _452.UpdateAgentDoc;
+        fromJSON(object: any): _452.UpdateAgentDoc;
+        toJSON(message: _452.UpdateAgentDoc): unknown;
         fromPartial(object: {
             did?: string;
             status?: string;
             role?: string;
-        }): _384.UpdateAgentDoc;
+        }): _452.UpdateAgentDoc;
     };
     CreateClaimDoc: {
-        encode(message: _384.CreateClaimDoc, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _384.CreateClaimDoc;
-        fromJSON(object: any): _384.CreateClaimDoc;
-        toJSON(message: _384.CreateClaimDoc): unknown;
+        encode(message: _452.CreateClaimDoc, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _452.CreateClaimDoc;
+        fromJSON(object: any): _452.CreateClaimDoc;
+        toJSON(message: _452.CreateClaimDoc): unknown;
         fromPartial(object: {
             claimId?: string;
             claimTemplateId?: string;
-        }): _384.CreateClaimDoc;
+        }): _452.CreateClaimDoc;
     };
     CreateEvaluationDoc: {
-        encode(message: _384.CreateEvaluationDoc, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _384.CreateEvaluationDoc;
-        fromJSON(object: any): _384.CreateEvaluationDoc;
-        toJSON(message: _384.CreateEvaluationDoc): unknown;
+        encode(message: _452.CreateEvaluationDoc, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _452.CreateEvaluationDoc;
+        fromJSON(object: any): _452.CreateEvaluationDoc;
+        toJSON(message: _452.CreateEvaluationDoc): unknown;
         fromPartial(object: {
             claimId?: string;
             status?: string;
-        }): _384.CreateEvaluationDoc;
+        }): _452.CreateEvaluationDoc;
     };
     WithdrawFundsDoc: {
-        encode(message: _384.WithdrawFundsDoc, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _384.WithdrawFundsDoc;
-        fromJSON(object: any): _384.WithdrawFundsDoc;
-        toJSON(message: _384.WithdrawFundsDoc): unknown;
+        encode(message: _452.WithdrawFundsDoc, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _452.WithdrawFundsDoc;
+        fromJSON(object: any): _452.WithdrawFundsDoc;
+        toJSON(message: _452.WithdrawFundsDoc): unknown;
         fromPartial(object: {
             projectDid?: string;
             recipientDid?: string;
             amount?: string;
             isRefund?: boolean;
-        }): _384.WithdrawFundsDoc;
+        }): _452.WithdrawFundsDoc;
     };
     ProjectDoc: {
-        encode(message: _384.ProjectDoc, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _384.ProjectDoc;
-        fromJSON(object: any): _384.ProjectDoc;
-        toJSON(message: _384.ProjectDoc): unknown;
+        encode(message: _452.ProjectDoc, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _452.ProjectDoc;
+        fromJSON(object: any): _452.ProjectDoc;
+        toJSON(message: _452.ProjectDoc): unknown;
         fromPartial(object: {
             txHash?: string;
             projectDid?: string;
@@ -684,13 +684,13 @@ export declare const project: {
             pubKey?: string;
             status?: string;
             data?: Uint8Array;
-        }): _384.ProjectDoc;
+        }): _452.ProjectDoc;
     };
     WithdrawalInfoDoc: {
-        encode(message: _384.WithdrawalInfoDoc, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _384.WithdrawalInfoDoc;
-        fromJSON(object: any): _384.WithdrawalInfoDoc;
-        toJSON(message: _384.WithdrawalInfoDoc): unknown;
+        encode(message: _452.WithdrawalInfoDoc, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _452.WithdrawalInfoDoc;
+        fromJSON(object: any): _452.WithdrawalInfoDoc;
+        toJSON(message: _452.WithdrawalInfoDoc): unknown;
         fromPartial(object: {
             projectDid?: string;
             recipientDid?: string;
@@ -698,13 +698,13 @@ export declare const project: {
                 denom?: string;
                 amount?: string;
             };
-        }): _384.WithdrawalInfoDoc;
+        }): _452.WithdrawalInfoDoc;
     };
     Params: {
-        encode(message: _384.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _384.Params;
-        fromJSON(object: any): _384.Params;
-        toJSON(message: _384.Params): unknown;
+        encode(message: _452.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _452.Params;
+        fromJSON(object: any): _452.Params;
+        toJSON(message: _452.Params): unknown;
         fromPartial(object: {
             ixoDid?: string;
             projectMinimumInitialFunding?: {
@@ -713,67 +713,67 @@ export declare const project: {
             }[];
             oracleFeePercentage?: string;
             nodeFeePercentage?: string;
-        }): _384.Params;
+        }): _452.Params;
     };
     Claim: {
-        encode(message: _384.Claim, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _384.Claim;
-        fromJSON(object: any): _384.Claim;
-        toJSON(message: _384.Claim): unknown;
+        encode(message: _452.Claim, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _452.Claim;
+        fromJSON(object: any): _452.Claim;
+        toJSON(message: _452.Claim): unknown;
         fromPartial(object: {
             id?: string;
             templateId?: string;
             claimerDid?: string;
             status?: string;
-        }): _384.Claim;
+        }): _452.Claim;
     };
     GenesisAccountMap_MapEntry: {
-        encode(message: _384.GenesisAccountMap_MapEntry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _384.GenesisAccountMap_MapEntry;
-        fromJSON(object: any): _384.GenesisAccountMap_MapEntry;
-        toJSON(message: _384.GenesisAccountMap_MapEntry): unknown;
+        encode(message: _452.GenesisAccountMap_MapEntry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _452.GenesisAccountMap_MapEntry;
+        fromJSON(object: any): _452.GenesisAccountMap_MapEntry;
+        toJSON(message: _452.GenesisAccountMap_MapEntry): unknown;
         fromPartial(object: {
             key?: string;
             value?: string;
-        }): _384.GenesisAccountMap_MapEntry;
+        }): _452.GenesisAccountMap_MapEntry;
     };
     GenesisAccountMap: {
-        encode(message: _384.GenesisAccountMap, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _384.GenesisAccountMap;
-        fromJSON(object: any): _384.GenesisAccountMap;
-        toJSON(message: _384.GenesisAccountMap): unknown;
+        encode(message: _452.GenesisAccountMap, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _452.GenesisAccountMap;
+        fromJSON(object: any): _452.GenesisAccountMap;
+        toJSON(message: _452.GenesisAccountMap): unknown;
         fromPartial(object: {
             map?: {
                 [x: string]: string;
             };
-        }): _384.GenesisAccountMap;
+        }): _452.GenesisAccountMap;
     };
     AccountMap_MapEntry: {
-        encode(message: _384.AccountMap_MapEntry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _384.AccountMap_MapEntry;
-        fromJSON(object: any): _384.AccountMap_MapEntry;
-        toJSON(message: _384.AccountMap_MapEntry): unknown;
+        encode(message: _452.AccountMap_MapEntry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _452.AccountMap_MapEntry;
+        fromJSON(object: any): _452.AccountMap_MapEntry;
+        toJSON(message: _452.AccountMap_MapEntry): unknown;
         fromPartial(object: {
             key?: string;
             value?: string;
-        }): _384.AccountMap_MapEntry;
+        }): _452.AccountMap_MapEntry;
     };
     AccountMap: {
-        encode(message: _384.AccountMap, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _384.AccountMap;
-        fromJSON(object: any): _384.AccountMap;
-        toJSON(message: _384.AccountMap): unknown;
+        encode(message: _452.AccountMap, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _452.AccountMap;
+        fromJSON(object: any): _452.AccountMap;
+        toJSON(message: _452.AccountMap): unknown;
         fromPartial(object: {
             map?: {
                 [x: string]: string;
             };
-        }): _384.AccountMap;
+        }): _452.AccountMap;
     };
     WithdrawalInfoDocs: {
-        encode(message: _384.WithdrawalInfoDocs, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _384.WithdrawalInfoDocs;
-        fromJSON(object: any): _384.WithdrawalInfoDocs;
-        toJSON(message: _384.WithdrawalInfoDocs): unknown;
+        encode(message: _452.WithdrawalInfoDocs, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _452.WithdrawalInfoDocs;
+        fromJSON(object: any): _452.WithdrawalInfoDocs;
+        toJSON(message: _452.WithdrawalInfoDocs): unknown;
         fromPartial(object: {
             docsList?: {
                 projectDid?: string;
@@ -783,13 +783,13 @@ export declare const project: {
                     amount?: string;
                 };
             }[];
-        }): _384.WithdrawalInfoDocs;
+        }): _452.WithdrawalInfoDocs;
     };
     Claims: {
-        encode(message: _384.Claims, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _384.Claims;
-        fromJSON(object: any): _384.Claims;
-        toJSON(message: _384.Claims): unknown;
+        encode(message: _452.Claims, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _452.Claims;
+        fromJSON(object: any): _452.Claims;
+        toJSON(message: _452.Claims): unknown;
         fromPartial(object: {
             claimsList?: {
                 id?: string;
@@ -797,13 +797,13 @@ export declare const project: {
                 claimerDid?: string;
                 status?: string;
             }[];
-        }): _384.Claims;
+        }): _452.Claims;
     };
     GenesisState: {
-        encode(message: _383.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _383.GenesisState;
-        fromJSON(object: any): _383.GenesisState;
-        toJSON(message: _383.GenesisState): unknown;
+        encode(message: _451.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _451.GenesisState;
+        fromJSON(object: any): _451.GenesisState;
+        toJSON(message: _451.GenesisState): unknown;
         fromPartial(object: {
             projectDocs?: {
                 txHash?: string;
@@ -845,6 +845,6 @@ export declare const project: {
                 oracleFeePercentage?: string;
                 nodeFeePercentage?: string;
             };
-        }): _383.GenesisState;
+        }): _451.GenesisState;
     };
 };

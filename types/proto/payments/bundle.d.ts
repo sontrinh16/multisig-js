@@ -1,97 +1,97 @@
-import * as _379 from "../ixo/payments/genesis";
-import * as _380 from "../ixo/payments/payments";
-import * as _381 from "../ixo/payments/query";
-import * as _382 from "../ixo/payments/tx";
+import * as _447 from "../ixo/payments/genesis";
+import * as _448 from "../ixo/payments/payments";
+import * as _449 from "../ixo/payments/query";
+import * as _450 from "../ixo/payments/tx";
 export declare const payments: {
     registry: readonly [string, import("@cosmjs/proto-signing").GeneratedType][];
     load: (protoRegistry: import("@cosmjs/proto-signing").Registry) => void;
     MessageComposer: {
         encoded: {
-            setPaymentContractAuthorisation(value: _382.MsgSetPaymentContractAuthorisation): {
+            setPaymentContractAuthorisation(value: _450.MsgSetPaymentContractAuthorisation): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            createPaymentTemplate(value: _382.MsgCreatePaymentTemplate): {
+            createPaymentTemplate(value: _450.MsgCreatePaymentTemplate): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            createPaymentContract(value: _382.MsgCreatePaymentContract): {
+            createPaymentContract(value: _450.MsgCreatePaymentContract): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            createSubscription(value: _382.MsgCreateSubscription): {
+            createSubscription(value: _450.MsgCreateSubscription): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            grantDiscount(value: _382.MsgGrantDiscount): {
+            grantDiscount(value: _450.MsgGrantDiscount): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            revokeDiscount(value: _382.MsgRevokeDiscount): {
+            revokeDiscount(value: _450.MsgRevokeDiscount): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            effectPayment(value: _382.MsgEffectPayment): {
+            effectPayment(value: _450.MsgEffectPayment): {
                 typeUrl: string;
                 value: Uint8Array;
             };
         };
         withTypeUrl: {
-            setPaymentContractAuthorisation(value: _382.MsgSetPaymentContractAuthorisation): {
+            setPaymentContractAuthorisation(value: _450.MsgSetPaymentContractAuthorisation): {
                 typeUrl: string;
-                value: _382.MsgSetPaymentContractAuthorisation;
+                value: _450.MsgSetPaymentContractAuthorisation;
             };
-            createPaymentTemplate(value: _382.MsgCreatePaymentTemplate): {
+            createPaymentTemplate(value: _450.MsgCreatePaymentTemplate): {
                 typeUrl: string;
-                value: _382.MsgCreatePaymentTemplate;
+                value: _450.MsgCreatePaymentTemplate;
             };
-            createPaymentContract(value: _382.MsgCreatePaymentContract): {
+            createPaymentContract(value: _450.MsgCreatePaymentContract): {
                 typeUrl: string;
-                value: _382.MsgCreatePaymentContract;
+                value: _450.MsgCreatePaymentContract;
             };
-            createSubscription(value: _382.MsgCreateSubscription): {
+            createSubscription(value: _450.MsgCreateSubscription): {
                 typeUrl: string;
-                value: _382.MsgCreateSubscription;
+                value: _450.MsgCreateSubscription;
             };
-            grantDiscount(value: _382.MsgGrantDiscount): {
+            grantDiscount(value: _450.MsgGrantDiscount): {
                 typeUrl: string;
-                value: _382.MsgGrantDiscount;
+                value: _450.MsgGrantDiscount;
             };
-            revokeDiscount(value: _382.MsgRevokeDiscount): {
+            revokeDiscount(value: _450.MsgRevokeDiscount): {
                 typeUrl: string;
-                value: _382.MsgRevokeDiscount;
+                value: _450.MsgRevokeDiscount;
             };
-            effectPayment(value: _382.MsgEffectPayment): {
+            effectPayment(value: _450.MsgEffectPayment): {
                 typeUrl: string;
-                value: _382.MsgEffectPayment;
+                value: _450.MsgEffectPayment;
             };
         };
         toJSON: {
-            setPaymentContractAuthorisation(value: _382.MsgSetPaymentContractAuthorisation): {
+            setPaymentContractAuthorisation(value: _450.MsgSetPaymentContractAuthorisation): {
                 typeUrl: string;
                 value: unknown;
             };
-            createPaymentTemplate(value: _382.MsgCreatePaymentTemplate): {
+            createPaymentTemplate(value: _450.MsgCreatePaymentTemplate): {
                 typeUrl: string;
                 value: unknown;
             };
-            createPaymentContract(value: _382.MsgCreatePaymentContract): {
+            createPaymentContract(value: _450.MsgCreatePaymentContract): {
                 typeUrl: string;
                 value: unknown;
             };
-            createSubscription(value: _382.MsgCreateSubscription): {
+            createSubscription(value: _450.MsgCreateSubscription): {
                 typeUrl: string;
                 value: unknown;
             };
-            grantDiscount(value: _382.MsgGrantDiscount): {
+            grantDiscount(value: _450.MsgGrantDiscount): {
                 typeUrl: string;
                 value: unknown;
             };
-            revokeDiscount(value: _382.MsgRevokeDiscount): {
+            revokeDiscount(value: _450.MsgRevokeDiscount): {
                 typeUrl: string;
                 value: unknown;
             };
-            effectPayment(value: _382.MsgEffectPayment): {
+            effectPayment(value: _450.MsgEffectPayment): {
                 typeUrl: string;
                 value: unknown;
             };
@@ -99,68 +99,68 @@ export declare const payments: {
         fromJSON: {
             setPaymentContractAuthorisation(value: any): {
                 typeUrl: string;
-                value: _382.MsgSetPaymentContractAuthorisation;
+                value: _450.MsgSetPaymentContractAuthorisation;
             };
             createPaymentTemplate(value: any): {
                 typeUrl: string;
-                value: _382.MsgCreatePaymentTemplate;
+                value: _450.MsgCreatePaymentTemplate;
             };
             createPaymentContract(value: any): {
                 typeUrl: string;
-                value: _382.MsgCreatePaymentContract;
+                value: _450.MsgCreatePaymentContract;
             };
             createSubscription(value: any): {
                 typeUrl: string;
-                value: _382.MsgCreateSubscription;
+                value: _450.MsgCreateSubscription;
             };
             grantDiscount(value: any): {
                 typeUrl: string;
-                value: _382.MsgGrantDiscount;
+                value: _450.MsgGrantDiscount;
             };
             revokeDiscount(value: any): {
                 typeUrl: string;
-                value: _382.MsgRevokeDiscount;
+                value: _450.MsgRevokeDiscount;
             };
             effectPayment(value: any): {
                 typeUrl: string;
-                value: _382.MsgEffectPayment;
+                value: _450.MsgEffectPayment;
             };
         };
         fromPartial: {
-            setPaymentContractAuthorisation(value: _382.MsgSetPaymentContractAuthorisation): {
+            setPaymentContractAuthorisation(value: _450.MsgSetPaymentContractAuthorisation): {
                 typeUrl: string;
-                value: _382.MsgSetPaymentContractAuthorisation;
+                value: _450.MsgSetPaymentContractAuthorisation;
             };
-            createPaymentTemplate(value: _382.MsgCreatePaymentTemplate): {
+            createPaymentTemplate(value: _450.MsgCreatePaymentTemplate): {
                 typeUrl: string;
-                value: _382.MsgCreatePaymentTemplate;
+                value: _450.MsgCreatePaymentTemplate;
             };
-            createPaymentContract(value: _382.MsgCreatePaymentContract): {
+            createPaymentContract(value: _450.MsgCreatePaymentContract): {
                 typeUrl: string;
-                value: _382.MsgCreatePaymentContract;
+                value: _450.MsgCreatePaymentContract;
             };
-            createSubscription(value: _382.MsgCreateSubscription): {
+            createSubscription(value: _450.MsgCreateSubscription): {
                 typeUrl: string;
-                value: _382.MsgCreateSubscription;
+                value: _450.MsgCreateSubscription;
             };
-            grantDiscount(value: _382.MsgGrantDiscount): {
+            grantDiscount(value: _450.MsgGrantDiscount): {
                 typeUrl: string;
-                value: _382.MsgGrantDiscount;
+                value: _450.MsgGrantDiscount;
             };
-            revokeDiscount(value: _382.MsgRevokeDiscount): {
+            revokeDiscount(value: _450.MsgRevokeDiscount): {
                 typeUrl: string;
-                value: _382.MsgRevokeDiscount;
+                value: _450.MsgRevokeDiscount;
             };
-            effectPayment(value: _382.MsgEffectPayment): {
+            effectPayment(value: _450.MsgEffectPayment): {
                 typeUrl: string;
-                value: _382.MsgEffectPayment;
+                value: _450.MsgEffectPayment;
             };
         };
     };
     AminoConverter: {
         "/payments.MsgSetPaymentContractAuthorisation": {
             aminoType: string;
-            toAmino: ({ paymentContractId, payerDid, authorised }: _382.MsgSetPaymentContractAuthorisation) => {
+            toAmino: ({ paymentContractId, payerDid, authorised }: _450.MsgSetPaymentContractAuthorisation) => {
                 payment_contract_id: string;
                 payer_did: string;
                 authorised: boolean;
@@ -169,11 +169,11 @@ export declare const payments: {
                 payment_contract_id: string;
                 payer_did: string;
                 authorised: boolean;
-            }) => _382.MsgSetPaymentContractAuthorisation;
+            }) => _450.MsgSetPaymentContractAuthorisation;
         };
         "/payments.MsgCreatePaymentTemplate": {
             aminoType: string;
-            toAmino: ({ creatorDid, paymentTemplate }: _382.MsgCreatePaymentTemplate) => {
+            toAmino: ({ creatorDid, paymentTemplate }: _450.MsgCreatePaymentTemplate) => {
                 creator_did: string;
                 payment_template: {
                     id: string;
@@ -216,11 +216,11 @@ export declare const payments: {
                         percent: string;
                     }[];
                 };
-            }) => _382.MsgCreatePaymentTemplate;
+            }) => _450.MsgCreatePaymentTemplate;
         };
         "/payments.MsgCreatePaymentContract": {
             aminoType: string;
-            toAmino: ({ creatorDid, paymentTemplateId, paymentContractId, payer, recipients, canDeauthorise, discountId }: _382.MsgCreatePaymentContract) => {
+            toAmino: ({ creatorDid, paymentTemplateId, paymentContractId, payer, recipients, canDeauthorise, discountId }: _450.MsgCreatePaymentContract) => {
                 creator_did: string;
                 payment_template_id: string;
                 payment_contract_id: string;
@@ -243,11 +243,11 @@ export declare const payments: {
                 }[];
                 can_deauthorise: boolean;
                 discount_id: string;
-            }) => _382.MsgCreatePaymentContract;
+            }) => _450.MsgCreatePaymentContract;
         };
         "/payments.MsgCreateSubscription": {
             aminoType: string;
-            toAmino: ({ creatorDid, subscriptionId, paymentContractId, maxPeriods, period }: _382.MsgCreateSubscription) => {
+            toAmino: ({ creatorDid, subscriptionId, paymentContractId, maxPeriods, period }: _450.MsgCreateSubscription) => {
                 creator_did: string;
                 subscription_id: string;
                 payment_contract_id: string;
@@ -266,11 +266,11 @@ export declare const payments: {
                     type_url: string;
                     value: Uint8Array;
                 };
-            }) => _382.MsgCreateSubscription;
+            }) => _450.MsgCreateSubscription;
         };
         "/payments.MsgGrantDiscount": {
             aminoType: string;
-            toAmino: ({ senderDid, paymentContractId, discountId, recipient }: _382.MsgGrantDiscount) => {
+            toAmino: ({ senderDid, paymentContractId, discountId, recipient }: _450.MsgGrantDiscount) => {
                 sender_did: string;
                 payment_contract_id: string;
                 discount_id: string;
@@ -281,11 +281,11 @@ export declare const payments: {
                 payment_contract_id: string;
                 discount_id: string;
                 recipient: string;
-            }) => _382.MsgGrantDiscount;
+            }) => _450.MsgGrantDiscount;
         };
         "/payments.MsgRevokeDiscount": {
             aminoType: string;
-            toAmino: ({ senderDid, paymentContractId, holder }: _382.MsgRevokeDiscount) => {
+            toAmino: ({ senderDid, paymentContractId, holder }: _450.MsgRevokeDiscount) => {
                 sender_did: string;
                 payment_contract_id: string;
                 holder: string;
@@ -294,43 +294,43 @@ export declare const payments: {
                 sender_did: string;
                 payment_contract_id: string;
                 holder: string;
-            }) => _382.MsgRevokeDiscount;
+            }) => _450.MsgRevokeDiscount;
         };
         "/payments.MsgEffectPayment": {
             aminoType: string;
-            toAmino: ({ senderDid, paymentContractId }: _382.MsgEffectPayment) => {
+            toAmino: ({ senderDid, paymentContractId }: _450.MsgEffectPayment) => {
                 sender_did: string;
                 payment_contract_id: string;
             };
             fromAmino: ({ sender_did, payment_contract_id }: {
                 sender_did: string;
                 payment_contract_id: string;
-            }) => _382.MsgEffectPayment;
+            }) => _450.MsgEffectPayment;
         };
     };
     MsgSetPaymentContractAuthorisation: {
-        encode(message: _382.MsgSetPaymentContractAuthorisation, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _382.MsgSetPaymentContractAuthorisation;
-        fromJSON(object: any): _382.MsgSetPaymentContractAuthorisation;
-        toJSON(message: _382.MsgSetPaymentContractAuthorisation): unknown;
+        encode(message: _450.MsgSetPaymentContractAuthorisation, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _450.MsgSetPaymentContractAuthorisation;
+        fromJSON(object: any): _450.MsgSetPaymentContractAuthorisation;
+        toJSON(message: _450.MsgSetPaymentContractAuthorisation): unknown;
         fromPartial(object: {
             paymentContractId?: string;
             payerDid?: string;
             authorised?: boolean;
-        }): _382.MsgSetPaymentContractAuthorisation;
+        }): _450.MsgSetPaymentContractAuthorisation;
     };
     MsgSetPaymentContractAuthorisationResponse: {
-        encode(_: _382.MsgSetPaymentContractAuthorisationResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _382.MsgSetPaymentContractAuthorisationResponse;
-        fromJSON(_: any): _382.MsgSetPaymentContractAuthorisationResponse;
-        toJSON(_: _382.MsgSetPaymentContractAuthorisationResponse): unknown;
-        fromPartial(_: {}): _382.MsgSetPaymentContractAuthorisationResponse;
+        encode(_: _450.MsgSetPaymentContractAuthorisationResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _450.MsgSetPaymentContractAuthorisationResponse;
+        fromJSON(_: any): _450.MsgSetPaymentContractAuthorisationResponse;
+        toJSON(_: _450.MsgSetPaymentContractAuthorisationResponse): unknown;
+        fromPartial(_: {}): _450.MsgSetPaymentContractAuthorisationResponse;
     };
     MsgCreatePaymentTemplate: {
-        encode(message: _382.MsgCreatePaymentTemplate, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _382.MsgCreatePaymentTemplate;
-        fromJSON(object: any): _382.MsgCreatePaymentTemplate;
-        toJSON(message: _382.MsgCreatePaymentTemplate): unknown;
+        encode(message: _450.MsgCreatePaymentTemplate, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _450.MsgCreatePaymentTemplate;
+        fromJSON(object: any): _450.MsgCreatePaymentTemplate;
+        toJSON(message: _450.MsgCreatePaymentTemplate): unknown;
         fromPartial(object: {
             creatorDid?: string;
             paymentTemplate?: {
@@ -352,20 +352,20 @@ export declare const payments: {
                     percent?: string;
                 }[];
             };
-        }): _382.MsgCreatePaymentTemplate;
+        }): _450.MsgCreatePaymentTemplate;
     };
     MsgCreatePaymentTemplateResponse: {
-        encode(_: _382.MsgCreatePaymentTemplateResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _382.MsgCreatePaymentTemplateResponse;
-        fromJSON(_: any): _382.MsgCreatePaymentTemplateResponse;
-        toJSON(_: _382.MsgCreatePaymentTemplateResponse): unknown;
-        fromPartial(_: {}): _382.MsgCreatePaymentTemplateResponse;
+        encode(_: _450.MsgCreatePaymentTemplateResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _450.MsgCreatePaymentTemplateResponse;
+        fromJSON(_: any): _450.MsgCreatePaymentTemplateResponse;
+        toJSON(_: _450.MsgCreatePaymentTemplateResponse): unknown;
+        fromPartial(_: {}): _450.MsgCreatePaymentTemplateResponse;
     };
     MsgCreatePaymentContract: {
-        encode(message: _382.MsgCreatePaymentContract, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _382.MsgCreatePaymentContract;
-        fromJSON(object: any): _382.MsgCreatePaymentContract;
-        toJSON(message: _382.MsgCreatePaymentContract): unknown;
+        encode(message: _450.MsgCreatePaymentContract, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _450.MsgCreatePaymentContract;
+        fromJSON(object: any): _450.MsgCreatePaymentContract;
+        toJSON(message: _450.MsgCreatePaymentContract): unknown;
         fromPartial(object: {
             creatorDid?: string;
             paymentTemplateId?: string;
@@ -377,20 +377,20 @@ export declare const payments: {
             }[];
             canDeauthorise?: boolean;
             discountId?: string;
-        }): _382.MsgCreatePaymentContract;
+        }): _450.MsgCreatePaymentContract;
     };
     MsgCreatePaymentContractResponse: {
-        encode(_: _382.MsgCreatePaymentContractResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _382.MsgCreatePaymentContractResponse;
-        fromJSON(_: any): _382.MsgCreatePaymentContractResponse;
-        toJSON(_: _382.MsgCreatePaymentContractResponse): unknown;
-        fromPartial(_: {}): _382.MsgCreatePaymentContractResponse;
+        encode(_: _450.MsgCreatePaymentContractResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _450.MsgCreatePaymentContractResponse;
+        fromJSON(_: any): _450.MsgCreatePaymentContractResponse;
+        toJSON(_: _450.MsgCreatePaymentContractResponse): unknown;
+        fromPartial(_: {}): _450.MsgCreatePaymentContractResponse;
     };
     MsgCreateSubscription: {
-        encode(message: _382.MsgCreateSubscription, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _382.MsgCreateSubscription;
-        fromJSON(object: any): _382.MsgCreateSubscription;
-        toJSON(message: _382.MsgCreateSubscription): unknown;
+        encode(message: _450.MsgCreateSubscription, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _450.MsgCreateSubscription;
+        fromJSON(object: any): _450.MsgCreateSubscription;
+        toJSON(message: _450.MsgCreateSubscription): unknown;
         fromPartial(object: {
             creatorDid?: string;
             subscriptionId?: string;
@@ -400,83 +400,83 @@ export declare const payments: {
                 typeUrl?: string;
                 value?: Uint8Array;
             };
-        }): _382.MsgCreateSubscription;
+        }): _450.MsgCreateSubscription;
     };
     MsgCreateSubscriptionResponse: {
-        encode(_: _382.MsgCreateSubscriptionResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _382.MsgCreateSubscriptionResponse;
-        fromJSON(_: any): _382.MsgCreateSubscriptionResponse;
-        toJSON(_: _382.MsgCreateSubscriptionResponse): unknown;
-        fromPartial(_: {}): _382.MsgCreateSubscriptionResponse;
+        encode(_: _450.MsgCreateSubscriptionResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _450.MsgCreateSubscriptionResponse;
+        fromJSON(_: any): _450.MsgCreateSubscriptionResponse;
+        toJSON(_: _450.MsgCreateSubscriptionResponse): unknown;
+        fromPartial(_: {}): _450.MsgCreateSubscriptionResponse;
     };
     MsgGrantDiscount: {
-        encode(message: _382.MsgGrantDiscount, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _382.MsgGrantDiscount;
-        fromJSON(object: any): _382.MsgGrantDiscount;
-        toJSON(message: _382.MsgGrantDiscount): unknown;
+        encode(message: _450.MsgGrantDiscount, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _450.MsgGrantDiscount;
+        fromJSON(object: any): _450.MsgGrantDiscount;
+        toJSON(message: _450.MsgGrantDiscount): unknown;
         fromPartial(object: {
             senderDid?: string;
             paymentContractId?: string;
             discountId?: string;
             recipient?: string;
-        }): _382.MsgGrantDiscount;
+        }): _450.MsgGrantDiscount;
     };
     MsgGrantDiscountResponse: {
-        encode(_: _382.MsgGrantDiscountResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _382.MsgGrantDiscountResponse;
-        fromJSON(_: any): _382.MsgGrantDiscountResponse;
-        toJSON(_: _382.MsgGrantDiscountResponse): unknown;
-        fromPartial(_: {}): _382.MsgGrantDiscountResponse;
+        encode(_: _450.MsgGrantDiscountResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _450.MsgGrantDiscountResponse;
+        fromJSON(_: any): _450.MsgGrantDiscountResponse;
+        toJSON(_: _450.MsgGrantDiscountResponse): unknown;
+        fromPartial(_: {}): _450.MsgGrantDiscountResponse;
     };
     MsgRevokeDiscount: {
-        encode(message: _382.MsgRevokeDiscount, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _382.MsgRevokeDiscount;
-        fromJSON(object: any): _382.MsgRevokeDiscount;
-        toJSON(message: _382.MsgRevokeDiscount): unknown;
+        encode(message: _450.MsgRevokeDiscount, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _450.MsgRevokeDiscount;
+        fromJSON(object: any): _450.MsgRevokeDiscount;
+        toJSON(message: _450.MsgRevokeDiscount): unknown;
         fromPartial(object: {
             senderDid?: string;
             paymentContractId?: string;
             holder?: string;
-        }): _382.MsgRevokeDiscount;
+        }): _450.MsgRevokeDiscount;
     };
     MsgRevokeDiscountResponse: {
-        encode(_: _382.MsgRevokeDiscountResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _382.MsgRevokeDiscountResponse;
-        fromJSON(_: any): _382.MsgRevokeDiscountResponse;
-        toJSON(_: _382.MsgRevokeDiscountResponse): unknown;
-        fromPartial(_: {}): _382.MsgRevokeDiscountResponse;
+        encode(_: _450.MsgRevokeDiscountResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _450.MsgRevokeDiscountResponse;
+        fromJSON(_: any): _450.MsgRevokeDiscountResponse;
+        toJSON(_: _450.MsgRevokeDiscountResponse): unknown;
+        fromPartial(_: {}): _450.MsgRevokeDiscountResponse;
     };
     MsgEffectPayment: {
-        encode(message: _382.MsgEffectPayment, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _382.MsgEffectPayment;
-        fromJSON(object: any): _382.MsgEffectPayment;
-        toJSON(message: _382.MsgEffectPayment): unknown;
+        encode(message: _450.MsgEffectPayment, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _450.MsgEffectPayment;
+        fromJSON(object: any): _450.MsgEffectPayment;
+        toJSON(message: _450.MsgEffectPayment): unknown;
         fromPartial(object: {
             senderDid?: string;
             paymentContractId?: string;
-        }): _382.MsgEffectPayment;
+        }): _450.MsgEffectPayment;
     };
     MsgEffectPaymentResponse: {
-        encode(_: _382.MsgEffectPaymentResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _382.MsgEffectPaymentResponse;
-        fromJSON(_: any): _382.MsgEffectPaymentResponse;
-        toJSON(_: _382.MsgEffectPaymentResponse): unknown;
-        fromPartial(_: {}): _382.MsgEffectPaymentResponse;
+        encode(_: _450.MsgEffectPaymentResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _450.MsgEffectPaymentResponse;
+        fromJSON(_: any): _450.MsgEffectPaymentResponse;
+        toJSON(_: _450.MsgEffectPaymentResponse): unknown;
+        fromPartial(_: {}): _450.MsgEffectPaymentResponse;
     };
     QueryPaymentTemplateRequest: {
-        encode(message: _381.QueryPaymentTemplateRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _381.QueryPaymentTemplateRequest;
-        fromJSON(object: any): _381.QueryPaymentTemplateRequest;
-        toJSON(message: _381.QueryPaymentTemplateRequest): unknown;
+        encode(message: _449.QueryPaymentTemplateRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _449.QueryPaymentTemplateRequest;
+        fromJSON(object: any): _449.QueryPaymentTemplateRequest;
+        toJSON(message: _449.QueryPaymentTemplateRequest): unknown;
         fromPartial(object: {
             paymentTemplateId?: string;
-        }): _381.QueryPaymentTemplateRequest;
+        }): _449.QueryPaymentTemplateRequest;
     };
     QueryPaymentTemplateResponse: {
-        encode(message: _381.QueryPaymentTemplateResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _381.QueryPaymentTemplateResponse;
-        fromJSON(object: any): _381.QueryPaymentTemplateResponse;
-        toJSON(message: _381.QueryPaymentTemplateResponse): unknown;
+        encode(message: _449.QueryPaymentTemplateResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _449.QueryPaymentTemplateResponse;
+        fromJSON(object: any): _449.QueryPaymentTemplateResponse;
+        toJSON(message: _449.QueryPaymentTemplateResponse): unknown;
         fromPartial(object: {
             paymentTemplate?: {
                 id?: string;
@@ -497,22 +497,22 @@ export declare const payments: {
                     percent?: string;
                 }[];
             };
-        }): _381.QueryPaymentTemplateResponse;
+        }): _449.QueryPaymentTemplateResponse;
     };
     QueryPaymentContractRequest: {
-        encode(message: _381.QueryPaymentContractRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _381.QueryPaymentContractRequest;
-        fromJSON(object: any): _381.QueryPaymentContractRequest;
-        toJSON(message: _381.QueryPaymentContractRequest): unknown;
+        encode(message: _449.QueryPaymentContractRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _449.QueryPaymentContractRequest;
+        fromJSON(object: any): _449.QueryPaymentContractRequest;
+        toJSON(message: _449.QueryPaymentContractRequest): unknown;
         fromPartial(object: {
             paymentContractId?: string;
-        }): _381.QueryPaymentContractRequest;
+        }): _449.QueryPaymentContractRequest;
     };
     QueryPaymentContractResponse: {
-        encode(message: _381.QueryPaymentContractResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _381.QueryPaymentContractResponse;
-        fromJSON(object: any): _381.QueryPaymentContractResponse;
-        toJSON(message: _381.QueryPaymentContractResponse): unknown;
+        encode(message: _449.QueryPaymentContractResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _449.QueryPaymentContractResponse;
+        fromJSON(object: any): _449.QueryPaymentContractResponse;
+        toJSON(message: _449.QueryPaymentContractResponse): unknown;
         fromPartial(object: {
             paymentContract?: {
                 id?: string;
@@ -535,22 +535,22 @@ export declare const payments: {
                 authorised?: boolean;
                 discountId?: string;
             };
-        }): _381.QueryPaymentContractResponse;
+        }): _449.QueryPaymentContractResponse;
     };
     QueryPaymentContractsByIdPrefixRequest: {
-        encode(message: _381.QueryPaymentContractsByIdPrefixRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _381.QueryPaymentContractsByIdPrefixRequest;
-        fromJSON(object: any): _381.QueryPaymentContractsByIdPrefixRequest;
-        toJSON(message: _381.QueryPaymentContractsByIdPrefixRequest): unknown;
+        encode(message: _449.QueryPaymentContractsByIdPrefixRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _449.QueryPaymentContractsByIdPrefixRequest;
+        fromJSON(object: any): _449.QueryPaymentContractsByIdPrefixRequest;
+        toJSON(message: _449.QueryPaymentContractsByIdPrefixRequest): unknown;
         fromPartial(object: {
             paymentContractsIdPrefix?: string;
-        }): _381.QueryPaymentContractsByIdPrefixRequest;
+        }): _449.QueryPaymentContractsByIdPrefixRequest;
     };
     QueryPaymentContractsByIdPrefixResponse: {
-        encode(message: _381.QueryPaymentContractsByIdPrefixResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _381.QueryPaymentContractsByIdPrefixResponse;
-        fromJSON(object: any): _381.QueryPaymentContractsByIdPrefixResponse;
-        toJSON(message: _381.QueryPaymentContractsByIdPrefixResponse): unknown;
+        encode(message: _449.QueryPaymentContractsByIdPrefixResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _449.QueryPaymentContractsByIdPrefixResponse;
+        fromJSON(object: any): _449.QueryPaymentContractsByIdPrefixResponse;
+        toJSON(message: _449.QueryPaymentContractsByIdPrefixResponse): unknown;
         fromPartial(object: {
             paymentContracts?: {
                 id?: string;
@@ -573,22 +573,22 @@ export declare const payments: {
                 authorised?: boolean;
                 discountId?: string;
             }[];
-        }): _381.QueryPaymentContractsByIdPrefixResponse;
+        }): _449.QueryPaymentContractsByIdPrefixResponse;
     };
     QuerySubscriptionRequest: {
-        encode(message: _381.QuerySubscriptionRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _381.QuerySubscriptionRequest;
-        fromJSON(object: any): _381.QuerySubscriptionRequest;
-        toJSON(message: _381.QuerySubscriptionRequest): unknown;
+        encode(message: _449.QuerySubscriptionRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _449.QuerySubscriptionRequest;
+        fromJSON(object: any): _449.QuerySubscriptionRequest;
+        toJSON(message: _449.QuerySubscriptionRequest): unknown;
         fromPartial(object: {
             subscriptionId?: string;
-        }): _381.QuerySubscriptionRequest;
+        }): _449.QuerySubscriptionRequest;
     };
     QuerySubscriptionResponse: {
-        encode(message: _381.QuerySubscriptionResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _381.QuerySubscriptionResponse;
-        fromJSON(object: any): _381.QuerySubscriptionResponse;
-        toJSON(message: _381.QuerySubscriptionResponse): unknown;
+        encode(message: _449.QuerySubscriptionResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _449.QuerySubscriptionResponse;
+        fromJSON(object: any): _449.QuerySubscriptionResponse;
+        toJSON(message: _449.QuerySubscriptionResponse): unknown;
         fromPartial(object: {
             subscription?: {
                 id?: string;
@@ -601,13 +601,13 @@ export declare const payments: {
                     value?: Uint8Array;
                 };
             };
-        }): _381.QuerySubscriptionResponse;
+        }): _449.QuerySubscriptionResponse;
     };
     PaymentTemplate: {
-        encode(message: _380.PaymentTemplate, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _380.PaymentTemplate;
-        fromJSON(object: any): _380.PaymentTemplate;
-        toJSON(message: _380.PaymentTemplate): unknown;
+        encode(message: _448.PaymentTemplate, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _448.PaymentTemplate;
+        fromJSON(object: any): _448.PaymentTemplate;
+        toJSON(message: _448.PaymentTemplate): unknown;
         fromPartial(object: {
             id?: string;
             paymentAmount?: {
@@ -626,33 +626,33 @@ export declare const payments: {
                 id?: string;
                 percent?: string;
             }[];
-        }): _380.PaymentTemplate;
+        }): _448.PaymentTemplate;
     };
     Discount: {
-        encode(message: _380.Discount, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _380.Discount;
-        fromJSON(object: any): _380.Discount;
-        toJSON(message: _380.Discount): unknown;
+        encode(message: _448.Discount, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _448.Discount;
+        fromJSON(object: any): _448.Discount;
+        toJSON(message: _448.Discount): unknown;
         fromPartial(object: {
             id?: string;
             percent?: string;
-        }): _380.Discount;
+        }): _448.Discount;
     };
     DistributionShare: {
-        encode(message: _380.DistributionShare, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _380.DistributionShare;
-        fromJSON(object: any): _380.DistributionShare;
-        toJSON(message: _380.DistributionShare): unknown;
+        encode(message: _448.DistributionShare, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _448.DistributionShare;
+        fromJSON(object: any): _448.DistributionShare;
+        toJSON(message: _448.DistributionShare): unknown;
         fromPartial(object: {
             address?: string;
             percentage?: string;
-        }): _380.DistributionShare;
+        }): _448.DistributionShare;
     };
     PaymentContract: {
-        encode(message: _380.PaymentContract, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _380.PaymentContract;
-        fromJSON(object: any): _380.PaymentContract;
-        toJSON(message: _380.PaymentContract): unknown;
+        encode(message: _448.PaymentContract, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _448.PaymentContract;
+        fromJSON(object: any): _448.PaymentContract;
+        toJSON(message: _448.PaymentContract): unknown;
         fromPartial(object: {
             id?: string;
             paymentTemplateId?: string;
@@ -673,13 +673,13 @@ export declare const payments: {
             canDeauthorise?: boolean;
             authorised?: boolean;
             discountId?: string;
-        }): _380.PaymentContract;
+        }): _448.PaymentContract;
     };
     Subscription: {
-        encode(message: _380.Subscription, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _380.Subscription;
-        fromJSON(object: any): _380.Subscription;
-        toJSON(message: _380.Subscription): unknown;
+        encode(message: _448.Subscription, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _448.Subscription;
+        fromJSON(object: any): _448.Subscription;
+        toJSON(message: _448.Subscription): unknown;
         fromPartial(object: {
             id?: string;
             paymentContractId?: string;
@@ -690,23 +690,23 @@ export declare const payments: {
                 typeUrl?: string;
                 value?: Uint8Array;
             };
-        }): _380.Subscription;
+        }): _448.Subscription;
     };
     BlockPeriod: {
-        encode(message: _380.BlockPeriod, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _380.BlockPeriod;
-        fromJSON(object: any): _380.BlockPeriod;
-        toJSON(message: _380.BlockPeriod): unknown;
+        encode(message: _448.BlockPeriod, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _448.BlockPeriod;
+        fromJSON(object: any): _448.BlockPeriod;
+        toJSON(message: _448.BlockPeriod): unknown;
         fromPartial(object: {
             periodLength?: any;
             periodStartBlock?: any;
-        }): _380.BlockPeriod;
+        }): _448.BlockPeriod;
     };
     TimePeriod: {
-        encode(message: _380.TimePeriod, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _380.TimePeriod;
-        fromJSON(object: any): _380.TimePeriod;
-        toJSON(message: _380.TimePeriod): unknown;
+        encode(message: _448.TimePeriod, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _448.TimePeriod;
+        fromJSON(object: any): _448.TimePeriod;
+        toJSON(message: _448.TimePeriod): unknown;
         fromPartial(object: {
             periodDurationNs?: {
                 seconds?: any;
@@ -716,23 +716,23 @@ export declare const payments: {
                 seconds?: any;
                 nanos?: number;
             };
-        }): _380.TimePeriod;
+        }): _448.TimePeriod;
     };
     TestPeriod: {
-        encode(message: _380.TestPeriod, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _380.TestPeriod;
-        fromJSON(object: any): _380.TestPeriod;
-        toJSON(message: _380.TestPeriod): unknown;
+        encode(message: _448.TestPeriod, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _448.TestPeriod;
+        fromJSON(object: any): _448.TestPeriod;
+        toJSON(message: _448.TestPeriod): unknown;
         fromPartial(object: {
             periodLength?: any;
             periodStartBlock?: any;
-        }): _380.TestPeriod;
+        }): _448.TestPeriod;
     };
     GenesisState: {
-        encode(message: _379.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _379.GenesisState;
-        fromJSON(object: any): _379.GenesisState;
-        toJSON(message: _379.GenesisState): unknown;
+        encode(message: _447.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _447.GenesisState;
+        fromJSON(object: any): _447.GenesisState;
+        toJSON(message: _447.GenesisState): unknown;
         fromPartial(object: {
             paymentTemplates?: {
                 id?: string;
@@ -785,6 +785,6 @@ export declare const payments: {
                     value?: Uint8Array;
                 };
             }[];
-        }): _379.GenesisState;
+        }): _447.GenesisState;
     };
 };

@@ -1,13 +1,13 @@
-import * as _212 from "../decentr/operations/genesis";
-import * as _213 from "../decentr/operations/operations";
-import * as _214 from "../decentr/operations/query";
-import * as _215 from "../decentr/operations/tx";
-import * as _784 from "../decentr/operations/tx.amino";
-import * as _785 from "../decentr/operations/tx.registry";
-export const operations = { ..._212,
-  ..._213,
-  ..._214,
-  ..._215,
-  ..._784,
-  ..._785
+import * as _280 from "../decentr/operations/genesis";
+import * as _281 from "../decentr/operations/operations";
+import * as _282 from "../decentr/operations/query";
+import * as _283 from "../decentr/operations/tx";
+import * as _854 from "../decentr/operations/tx.amino";
+import * as _855 from "../decentr/operations/tx.registry";
+export const operations = { ..._280,
+  ..._281,
+  ..._282,
+  ..._283,
+  ..._854,
+  ..._855
 };

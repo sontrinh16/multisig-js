@@ -51,33 +51,33 @@ import * as _49 from "./provider/v1beta1/provider";
 import * as _50 from "./provider/v1beta2/genesis";
 import * as _51 from "./provider/v1beta2/provider";
 import * as _52 from "./provider/v1beta2/query";
-import * as _722 from "./audit/v1beta1/audit.amino";
-import * as _723 from "./audit/v1beta2/audit.amino";
-import * as _724 from "./cert/v1beta2/cert.amino";
-import * as _725 from "./deployment/v1beta1/deployment.amino";
-import * as _726 from "./deployment/v1beta2/service.amino";
-import * as _727 from "./market/v1beta2/service.amino";
-import * as _728 from "./provider/v1beta1/provider.amino";
-import * as _729 from "./provider/v1beta2/provider.amino";
-import * as _730 from "./audit/v1beta1/audit.registry";
-import * as _731 from "./audit/v1beta2/audit.registry";
-import * as _732 from "./cert/v1beta2/cert.registry";
-import * as _733 from "./deployment/v1beta1/deployment.registry";
-import * as _734 from "./deployment/v1beta2/service.registry";
-import * as _735 from "./market/v1beta2/service.registry";
-import * as _736 from "./provider/v1beta1/provider.registry";
-import * as _737 from "./provider/v1beta2/provider.registry";
+import * as _790 from "./audit/v1beta1/audit.amino";
+import * as _791 from "./audit/v1beta2/audit.amino";
+import * as _792 from "./cert/v1beta2/cert.amino";
+import * as _793 from "./deployment/v1beta1/deployment.amino";
+import * as _794 from "./deployment/v1beta2/service.amino";
+import * as _795 from "./market/v1beta2/service.amino";
+import * as _796 from "./provider/v1beta1/provider.amino";
+import * as _797 from "./provider/v1beta2/provider.amino";
+import * as _798 from "./audit/v1beta1/audit.registry";
+import * as _799 from "./audit/v1beta2/audit.registry";
+import * as _800 from "./cert/v1beta2/cert.registry";
+import * as _801 from "./deployment/v1beta1/deployment.registry";
+import * as _802 from "./deployment/v1beta2/service.registry";
+import * as _803 from "./market/v1beta2/service.registry";
+import * as _804 from "./provider/v1beta1/provider.registry";
+import * as _805 from "./provider/v1beta2/provider.registry";
 export namespace akash {
   export namespace audit {
     export const v1beta1 = { ..._0,
-      ..._722,
-      ..._730
+      ..._790,
+      ..._798
     };
     export const v1beta2 = { ..._1,
       ..._2,
       ..._3,
-      ..._723,
-      ..._731
+      ..._791,
+      ..._799
     };
   }
   export namespace base {
@@ -97,8 +97,8 @@ export namespace akash {
     export const v1beta2 = { ..._13,
       ..._14,
       ..._15,
-      ..._724,
-      ..._732
+      ..._792,
+      ..._800
     };
   }
   export namespace deployment {
@@ -108,8 +108,8 @@ export namespace akash {
       ..._19,
       ..._20,
       ..._21,
-      ..._725,
-      ..._733
+      ..._793,
+      ..._801
     };
     export const v1beta2 = { ..._22,
       ..._23,
@@ -123,8 +123,8 @@ export namespace akash {
       ..._31,
       ..._32,
       ..._33,
-      ..._726,
-      ..._734
+      ..._794,
+      ..._802
     };
   }
   export namespace escrow {
@@ -150,20 +150,20 @@ export namespace akash {
       ..._46,
       ..._47,
       ..._48,
-      ..._727,
-      ..._735
+      ..._795,
+      ..._803
     };
   }
   export namespace provider {
     export const v1beta1 = { ..._49,
-      ..._728,
-      ..._736
+      ..._796,
+      ..._804
     };
     export const v1beta2 = { ..._50,
       ..._51,
       ..._52,
-      ..._729,
-      ..._737
+      ..._797,
+      ..._805
     };
   }
 }

@@ -1,85 +1,85 @@
-import * as _186 from "./bandwidth/v1beta1/genesis";
-import * as _187 from "./bandwidth/v1beta1/query";
-import * as _188 from "./bandwidth/v1beta1/types";
-import * as _189 from "./base/query/v1beta1/pagination";
-import * as _190 from "./dmn/v1beta1/genesis";
-import * as _191 from "./dmn/v1beta1/query";
-import * as _192 from "./dmn/v1beta1/tx";
-import * as _193 from "./dmn/v1beta1/types";
-import * as _194 from "./graph/v1beta1/query";
-import * as _195 from "./graph/v1beta1/tx";
-import * as _196 from "./graph/v1beta1/types";
-import * as _197 from "./grid/v1beta1/genesis";
-import * as _198 from "./grid/v1beta1/query";
-import * as _199 from "./grid/v1beta1/tx";
-import * as _200 from "./grid/v1beta1/types";
-import * as _201 from "./rank/v1beta1/genesis";
-import * as _202 from "./rank/v1beta1/query";
-import * as _203 from "./rank/v1beta1/types";
-import * as _204 from "./resources/v1beta1/genesis";
-import * as _205 from "./resources/v1beta1/query";
-import * as _206 from "./resources/v1beta1/tx";
-import * as _207 from "./resources/v1beta1/types";
-import * as _774 from "./dmn/v1beta1/tx.amino";
-import * as _775 from "./graph/v1beta1/tx.amino";
-import * as _776 from "./grid/v1beta1/tx.amino";
-import * as _777 from "./resources/v1beta1/tx.amino";
-import * as _778 from "./dmn/v1beta1/tx.registry";
-import * as _779 from "./graph/v1beta1/tx.registry";
-import * as _780 from "./grid/v1beta1/tx.registry";
-import * as _781 from "./resources/v1beta1/tx.registry";
+import * as _254 from "./bandwidth/v1beta1/genesis";
+import * as _255 from "./bandwidth/v1beta1/query";
+import * as _256 from "./bandwidth/v1beta1/types";
+import * as _257 from "./base/query/v1beta1/pagination";
+import * as _258 from "./dmn/v1beta1/genesis";
+import * as _259 from "./dmn/v1beta1/query";
+import * as _260 from "./dmn/v1beta1/tx";
+import * as _261 from "./dmn/v1beta1/types";
+import * as _262 from "./graph/v1beta1/query";
+import * as _263 from "./graph/v1beta1/tx";
+import * as _264 from "./graph/v1beta1/types";
+import * as _265 from "./grid/v1beta1/genesis";
+import * as _266 from "./grid/v1beta1/query";
+import * as _267 from "./grid/v1beta1/tx";
+import * as _268 from "./grid/v1beta1/types";
+import * as _269 from "./rank/v1beta1/genesis";
+import * as _270 from "./rank/v1beta1/query";
+import * as _271 from "./rank/v1beta1/types";
+import * as _272 from "./resources/v1beta1/genesis";
+import * as _273 from "./resources/v1beta1/query";
+import * as _274 from "./resources/v1beta1/tx";
+import * as _275 from "./resources/v1beta1/types";
+import * as _844 from "./dmn/v1beta1/tx.amino";
+import * as _845 from "./graph/v1beta1/tx.amino";
+import * as _846 from "./grid/v1beta1/tx.amino";
+import * as _847 from "./resources/v1beta1/tx.amino";
+import * as _848 from "./dmn/v1beta1/tx.registry";
+import * as _849 from "./graph/v1beta1/tx.registry";
+import * as _850 from "./grid/v1beta1/tx.registry";
+import * as _851 from "./resources/v1beta1/tx.registry";
 export namespace cyber {
   export namespace bandwidth {
-    export const v1beta1 = { ..._186,
-      ..._187,
-      ..._188
+    export const v1beta1 = { ..._254,
+      ..._255,
+      ..._256
     };
   }
   export namespace base {
     export namespace query {
-      export const v1beta1 = { ..._189
+      export const v1beta1 = { ..._257
       };
     }
   }
   export namespace dmn {
-    export const v1beta1 = { ..._190,
-      ..._191,
-      ..._192,
-      ..._193,
-      ..._774,
-      ..._778
+    export const v1beta1 = { ..._258,
+      ..._259,
+      ..._260,
+      ..._261,
+      ..._844,
+      ..._848
     };
   }
   export namespace graph {
-    export const v1beta1 = { ..._194,
-      ..._195,
-      ..._196,
-      ..._775,
-      ..._779
+    export const v1beta1 = { ..._262,
+      ..._263,
+      ..._264,
+      ..._845,
+      ..._849
     };
   }
   export namespace grid {
-    export const v1beta1 = { ..._197,
-      ..._198,
-      ..._199,
-      ..._200,
-      ..._776,
-      ..._780
+    export const v1beta1 = { ..._265,
+      ..._266,
+      ..._267,
+      ..._268,
+      ..._846,
+      ..._850
     };
   }
   export namespace rank {
-    export const v1beta1 = { ..._201,
-      ..._202,
-      ..._203
+    export const v1beta1 = { ..._269,
+      ..._270,
+      ..._271
     };
   }
   export namespace resources {
-    export const v1beta1 = { ..._204,
-      ..._205,
-      ..._206,
-      ..._207,
-      ..._777,
-      ..._781
+    export const v1beta1 = { ..._272,
+      ..._273,
+      ..._274,
+      ..._275,
+      ..._847,
+      ..._851
     };
   }
 }

@@ -1,122 +1,122 @@
-import * as _611 from "./deposit/v1/deposit";
-import * as _612 from "./deposit/v1/events";
-import * as _613 from "./deposit/v1/querier";
-import * as _614 from "./mint/v1/genesis";
-import * as _615 from "./mint/v1/inflation";
-import * as _616 from "./node/v1/events";
-import * as _617 from "./node/v1/genesis";
-import * as _618 from "./node/v1/msg";
-import * as _619 from "./node/v1/node";
-import * as _620 from "./node/v1/params";
-import * as _621 from "./node/v1/querier";
-import * as _622 from "./plan/v1/events";
-import * as _623 from "./plan/v1/genesis";
-import * as _624 from "./plan/v1/msg";
-import * as _625 from "./plan/v1/plan";
-import * as _626 from "./plan/v1/querier";
-import * as _627 from "./provider/v1/events";
-import * as _628 from "./provider/v1/genesis";
-import * as _629 from "./provider/v1/msg";
-import * as _630 from "./provider/v1/params";
-import * as _631 from "./provider/v1/provider";
-import * as _632 from "./provider/v1/querier";
-import * as _633 from "./session/v1/events";
-import * as _634 from "./session/v1/genesis";
-import * as _635 from "./session/v1/msg";
-import * as _636 from "./session/v1/params";
-import * as _637 from "./session/v1/proof";
-import * as _638 from "./session/v1/querier";
-import * as _639 from "./session/v1/session";
-import * as _640 from "./subscription/v1/events";
-import * as _641 from "./subscription/v1/genesis";
-import * as _642 from "./subscription/v1/msg";
-import * as _643 from "./subscription/v1/params";
-import * as _644 from "./subscription/v1/querier";
-import * as _645 from "./subscription/v1/quota";
-import * as _646 from "./subscription/v1/subscription";
-import * as _647 from "./swap/v1/events";
-import * as _648 from "./swap/v1/genesis";
-import * as _649 from "./swap/v1/msg";
-import * as _650 from "./swap/v1/params";
-import * as _651 from "./swap/v1/querier";
-import * as _652 from "./swap/v1/swap";
-import * as _653 from "./types/v1/bandwidth";
-import * as _654 from "./types/v1/status";
-import * as _655 from "./vpn/v1/genesis";
+import * as _679 from "./deposit/v1/deposit";
+import * as _680 from "./deposit/v1/events";
+import * as _681 from "./deposit/v1/querier";
+import * as _682 from "./mint/v1/genesis";
+import * as _683 from "./mint/v1/inflation";
+import * as _684 from "./node/v1/events";
+import * as _685 from "./node/v1/genesis";
+import * as _686 from "./node/v1/msg";
+import * as _687 from "./node/v1/node";
+import * as _688 from "./node/v1/params";
+import * as _689 from "./node/v1/querier";
+import * as _690 from "./plan/v1/events";
+import * as _691 from "./plan/v1/genesis";
+import * as _692 from "./plan/v1/msg";
+import * as _693 from "./plan/v1/plan";
+import * as _694 from "./plan/v1/querier";
+import * as _695 from "./provider/v1/events";
+import * as _696 from "./provider/v1/genesis";
+import * as _697 from "./provider/v1/msg";
+import * as _698 from "./provider/v1/params";
+import * as _699 from "./provider/v1/provider";
+import * as _700 from "./provider/v1/querier";
+import * as _701 from "./session/v1/events";
+import * as _702 from "./session/v1/genesis";
+import * as _703 from "./session/v1/msg";
+import * as _704 from "./session/v1/params";
+import * as _705 from "./session/v1/proof";
+import * as _706 from "./session/v1/querier";
+import * as _707 from "./session/v1/session";
+import * as _708 from "./subscription/v1/events";
+import * as _709 from "./subscription/v1/genesis";
+import * as _710 from "./subscription/v1/msg";
+import * as _711 from "./subscription/v1/params";
+import * as _712 from "./subscription/v1/querier";
+import * as _713 from "./subscription/v1/quota";
+import * as _714 from "./subscription/v1/subscription";
+import * as _715 from "./swap/v1/events";
+import * as _716 from "./swap/v1/genesis";
+import * as _717 from "./swap/v1/msg";
+import * as _718 from "./swap/v1/params";
+import * as _719 from "./swap/v1/querier";
+import * as _720 from "./swap/v1/swap";
+import * as _721 from "./types/v1/bandwidth";
+import * as _722 from "./types/v1/status";
+import * as _723 from "./vpn/v1/genesis";
 export namespace sentinel {
   export namespace deposit {
-    export const v1 = { ..._611,
-      ..._612,
-      ..._613
+    export const v1 = { ..._679,
+      ..._680,
+      ..._681
     };
   }
   export namespace mint {
-    export const v1 = { ..._614,
-      ..._615
+    export const v1 = { ..._682,
+      ..._683
     };
   }
   export namespace node {
-    export const v1 = { ..._616,
-      ..._617,
-      ..._618,
-      ..._619,
-      ..._620,
-      ..._621
+    export const v1 = { ..._684,
+      ..._685,
+      ..._686,
+      ..._687,
+      ..._688,
+      ..._689
     };
   }
   export namespace plan {
-    export const v1 = { ..._622,
-      ..._623,
-      ..._624,
-      ..._625,
-      ..._626
+    export const v1 = { ..._690,
+      ..._691,
+      ..._692,
+      ..._693,
+      ..._694
     };
   }
   export namespace provider {
-    export const v1 = { ..._627,
-      ..._628,
-      ..._629,
-      ..._630,
-      ..._631,
-      ..._632
+    export const v1 = { ..._695,
+      ..._696,
+      ..._697,
+      ..._698,
+      ..._699,
+      ..._700
     };
   }
   export namespace session {
-    export const v1 = { ..._633,
-      ..._634,
-      ..._635,
-      ..._636,
-      ..._637,
-      ..._638,
-      ..._639
+    export const v1 = { ..._701,
+      ..._702,
+      ..._703,
+      ..._704,
+      ..._705,
+      ..._706,
+      ..._707
     };
   }
   export namespace subscription {
-    export const v1 = { ..._640,
-      ..._641,
-      ..._642,
-      ..._643,
-      ..._644,
-      ..._645,
-      ..._646
+    export const v1 = { ..._708,
+      ..._709,
+      ..._710,
+      ..._711,
+      ..._712,
+      ..._713,
+      ..._714
     };
   }
   export namespace swap {
-    export const v1 = { ..._647,
-      ..._648,
-      ..._649,
-      ..._650,
-      ..._651,
-      ..._652
+    export const v1 = { ..._715,
+      ..._716,
+      ..._717,
+      ..._718,
+      ..._719,
+      ..._720
     };
   }
   export namespace types {
-    export const v1 = { ..._653,
-      ..._654
+    export const v1 = { ..._721,
+      ..._722
     };
   }
   export namespace vpn {
-    export const v1 = { ..._655
+    export const v1 = { ..._723
     };
   }
 }

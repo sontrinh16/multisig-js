@@ -1,68 +1,68 @@
-import * as _466 from "./v1beta1/keeper/CommissionPool";
-import * as _467 from "./v1beta1/keeper/DataAccountStatus";
-import * as _468 from "./v1beta1/keeper/DataActiveQuote";
-import * as _469 from "./v1beta1/keeper/DataActiveTrade";
-import * as _470 from "./v1beta1/keeper/DataMarket";
-import * as _471 from "./v1beta1/keeper/InternalDuration";
-import * as _472 from "./v1beta1/keeper/OrderedList";
-import * as _474 from "./v1beta1/msg/Proposal";
-import * as _475 from "./v1beta1/msg/QueryAccount";
-import * as _476 from "./v1beta1/msg/QueryConsensus";
-import * as _477 from "./v1beta1/msg/QueryMarket";
-import * as _478 from "./v1beta1/msg/QueryOrderBook";
-import * as _479 from "./v1beta1/msg/QueryParams";
-import * as _480 from "./v1beta1/msg/QueryQuote";
-import * as _481 from "./v1beta1/msg/QuerySynthetic";
-import * as _482 from "./v1beta1/msg/QueryTrade";
-import * as _483 from "./v1beta1/msg/TxCancel";
-import * as _484 from "./v1beta1/msg/TxCreate";
-import * as _485 from "./v1beta1/msg/TxDeposit";
-import * as _486 from "./v1beta1/msg/TxPick";
-import * as _487 from "./v1beta1/msg/TxSettle";
-import * as _488 from "./v1beta1/msg/TxTrade";
-import * as _489 from "./v1beta1/msg/TxUpdate";
-import * as _490 from "./v1beta1/msg/TxWithdraw";
-import * as _491 from "./v1beta1/types/Genesis";
-import * as _492 from "./v1beta1/types/Params";
+import * as _534 from "./v1beta1/keeper/CommissionPool";
+import * as _535 from "./v1beta1/keeper/DataAccountStatus";
+import * as _536 from "./v1beta1/keeper/DataActiveQuote";
+import * as _537 from "./v1beta1/keeper/DataActiveTrade";
+import * as _538 from "./v1beta1/keeper/DataMarket";
+import * as _539 from "./v1beta1/keeper/InternalDuration";
+import * as _540 from "./v1beta1/keeper/OrderedList";
+import * as _542 from "./v1beta1/msg/Proposal";
+import * as _543 from "./v1beta1/msg/QueryAccount";
+import * as _544 from "./v1beta1/msg/QueryConsensus";
+import * as _545 from "./v1beta1/msg/QueryMarket";
+import * as _546 from "./v1beta1/msg/QueryOrderBook";
+import * as _547 from "./v1beta1/msg/QueryParams";
+import * as _548 from "./v1beta1/msg/QueryQuote";
+import * as _549 from "./v1beta1/msg/QuerySynthetic";
+import * as _550 from "./v1beta1/msg/QueryTrade";
+import * as _551 from "./v1beta1/msg/TxCancel";
+import * as _552 from "./v1beta1/msg/TxCreate";
+import * as _553 from "./v1beta1/msg/TxDeposit";
+import * as _554 from "./v1beta1/msg/TxPick";
+import * as _555 from "./v1beta1/msg/TxSettle";
+import * as _556 from "./v1beta1/msg/TxTrade";
+import * as _557 from "./v1beta1/msg/TxUpdate";
+import * as _558 from "./v1beta1/msg/TxWithdraw";
+import * as _559 from "./v1beta1/types/Genesis";
+import * as _560 from "./v1beta1/types/Params";
 export declare namespace microtick {
     const keeper: {
         ListItem: {
-            encode(message: _472.ListItem, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _472.ListItem;
-            fromJSON(object: any): _472.ListItem;
-            toJSON(message: _472.ListItem): unknown;
+            encode(message: _540.ListItem, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _540.ListItem;
+            fromJSON(object: any): _540.ListItem;
+            toJSON(message: _540.ListItem): unknown;
             fromPartial(object: {
                 id?: number;
                 value?: string;
-            }): _472.ListItem;
+            }): _540.ListItem;
         };
         OrderedList: {
-            encode(message: _472.OrderedList, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _472.OrderedList;
-            fromJSON(object: any): _472.OrderedList;
-            toJSON(message: _472.OrderedList): unknown;
+            encode(message: _540.OrderedList, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _540.OrderedList;
+            fromJSON(object: any): _540.OrderedList;
+            toJSON(message: _540.OrderedList): unknown;
             fromPartial(object: {
                 data?: {
                     id?: number;
                     value?: string;
                 }[];
-            }): _472.OrderedList;
+            }): _540.OrderedList;
         };
         InternalDuration: {
-            encode(message: _471.InternalDuration, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _471.InternalDuration;
-            fromJSON(object: any): _471.InternalDuration;
-            toJSON(message: _471.InternalDuration): unknown;
+            encode(message: _539.InternalDuration, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _539.InternalDuration;
+            fromJSON(object: any): _539.InternalDuration;
+            toJSON(message: _539.InternalDuration): unknown;
             fromPartial(object: {
                 name?: string;
                 duration?: number;
-            }): _471.InternalDuration;
+            }): _539.InternalDuration;
         };
         DataOrderBook: {
-            encode(message: _470.DataOrderBook, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _470.DataOrderBook;
-            fromJSON(object: any): _470.DataOrderBook;
-            toJSON(message: _470.DataOrderBook): unknown;
+            encode(message: _538.DataOrderBook, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _538.DataOrderBook;
+            fromJSON(object: any): _538.DataOrderBook;
+            toJSON(message: _538.DataOrderBook): unknown;
             fromPartial(object: {
                 name?: string;
                 callAsks?: {
@@ -97,13 +97,13 @@ export declare namespace microtick {
                     denom?: string;
                     amount?: string;
                 };
-            }): _470.DataOrderBook;
+            }): _538.DataOrderBook;
         };
         DataMarket: {
-            encode(message: _470.DataMarket, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _470.DataMarket;
-            fromJSON(object: any): _470.DataMarket;
-            toJSON(message: _470.DataMarket): unknown;
+            encode(message: _538.DataMarket, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _538.DataMarket;
+            fromJSON(object: any): _538.DataMarket;
+            toJSON(message: _538.DataMarket): unknown;
             fromPartial(object: {
                 market?: string;
                 description?: string;
@@ -161,13 +161,13 @@ export declare namespace microtick {
                         value?: string;
                     }[];
                 };
-            }): _470.DataMarket;
+            }): _538.DataMarket;
         };
         DataQuotedParams: {
-            encode(message: _469.DataQuotedParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _469.DataQuotedParams;
-            fromJSON(object: any): _469.DataQuotedParams;
-            toJSON(message: _469.DataQuotedParams): unknown;
+            encode(message: _537.DataQuotedParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _537.DataQuotedParams;
+            fromJSON(object: any): _537.DataQuotedParams;
+            toJSON(message: _537.DataQuotedParams): unknown;
             fromPartial(object: {
                 id?: number;
                 final?: boolean;
@@ -183,13 +183,13 @@ export declare namespace microtick {
                     denom?: string;
                     amount?: string;
                 };
-            }): _469.DataQuotedParams;
+            }): _537.DataQuotedParams;
         };
         DataTradeLeg: {
-            encode(message: _469.DataTradeLeg, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _469.DataTradeLeg;
-            fromJSON(object: any): _469.DataTradeLeg;
-            toJSON(message: _469.DataTradeLeg): unknown;
+            encode(message: _537.DataTradeLeg, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _537.DataTradeLeg;
+            fromJSON(object: any): _537.DataTradeLeg;
+            toJSON(message: _537.DataTradeLeg): unknown;
             fromPartial(object: {
                 legId?: number;
                 type?: boolean;
@@ -227,13 +227,13 @@ export declare namespace microtick {
                         amount?: string;
                     };
                 };
-            }): _469.DataTradeLeg;
+            }): _537.DataTradeLeg;
         };
         DataActiveTrade: {
-            encode(message: _469.DataActiveTrade, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _469.DataActiveTrade;
-            fromJSON(object: any): _469.DataActiveTrade;
-            toJSON(message: _469.DataActiveTrade): unknown;
+            encode(message: _537.DataActiveTrade, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _537.DataActiveTrade;
+            fromJSON(object: any): _537.DataActiveTrade;
+            toJSON(message: _537.DataActiveTrade): unknown;
             fromPartial(object: {
                 id?: number;
                 market?: string;
@@ -296,13 +296,13 @@ export declare namespace microtick {
                     denom?: string;
                     amount?: string;
                 };
-            }): _469.DataActiveTrade;
+            }): _537.DataActiveTrade;
         };
         DataActiveQuote: {
-            encode(message: _468.DataActiveQuote, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _468.DataActiveQuote;
-            fromJSON(object: any): _468.DataActiveQuote;
-            toJSON(message: _468.DataActiveQuote): unknown;
+            encode(message: _536.DataActiveQuote, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _536.DataActiveQuote;
+            fromJSON(object: any): _536.DataActiveQuote;
+            toJSON(message: _536.DataActiveQuote): unknown;
             fromPartial(object: {
                 id?: number;
                 market?: string;
@@ -331,13 +331,13 @@ export declare namespace microtick {
                     denom?: string;
                     amount?: string;
                 };
-            }): _468.DataActiveQuote;
+            }): _536.DataActiveQuote;
         };
         DataAccountStatus: {
-            encode(message: _467.DataAccountStatus, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _467.DataAccountStatus;
-            fromJSON(object: any): _467.DataAccountStatus;
-            toJSON(message: _467.DataAccountStatus): unknown;
+            encode(message: _535.DataAccountStatus, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _535.DataAccountStatus;
+            fromJSON(object: any): _535.DataAccountStatus;
+            toJSON(message: _535.DataAccountStatus): unknown;
             fromPartial(object: {
                 account?: Uint8Array;
                 activeQuotes?: {
@@ -366,39 +366,39 @@ export declare namespace microtick {
                     denom?: string;
                     amount?: string;
                 };
-            }): _467.DataAccountStatus;
+            }): _535.DataAccountStatus;
         };
         commission_pool: {
-            encode(message: _466.commission_pool, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _466.commission_pool;
-            fromJSON(object: any): _466.commission_pool;
-            toJSON(message: _466.commission_pool): unknown;
+            encode(message: _534.commission_pool, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _534.commission_pool;
+            fromJSON(object: any): _534.commission_pool;
+            toJSON(message: _534.commission_pool): unknown;
             fromPartial(object: {
                 pool?: {
                     denom?: string;
                     amount?: string;
                 };
-            }): _466.commission_pool;
+            }): _534.commission_pool;
         };
     };
     namespace v1beta1 {
         const msg: {
             TxWithdrawQuote: {
-                encode(message: _490.TxWithdrawQuote, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _490.TxWithdrawQuote;
-                fromJSON(object: any): _490.TxWithdrawQuote;
-                toJSON(message: _490.TxWithdrawQuote): unknown;
+                encode(message: _558.TxWithdrawQuote, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _558.TxWithdrawQuote;
+                fromJSON(object: any): _558.TxWithdrawQuote;
+                toJSON(message: _558.TxWithdrawQuote): unknown;
                 fromPartial(object: {
                     id?: number;
                     requester?: Uint8Array;
                     withdraw?: string;
-                }): _490.TxWithdrawQuote;
+                }): _558.TxWithdrawQuote;
             };
             WithdrawQuoteData: {
-                encode(message: _490.WithdrawQuoteData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _490.WithdrawQuoteData;
-                fromJSON(object: any): _490.WithdrawQuoteData;
-                toJSON(message: _490.WithdrawQuoteData): unknown;
+                encode(message: _558.WithdrawQuoteData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _558.WithdrawQuoteData;
+                fromJSON(object: any): _558.WithdrawQuoteData;
+                toJSON(message: _558.WithdrawQuoteData): unknown;
                 fromPartial(object: {
                     time?: any;
                     market?: string;
@@ -415,26 +415,26 @@ export declare namespace microtick {
                         denom?: string;
                         amount?: string;
                     };
-                }): _490.WithdrawQuoteData;
+                }): _558.WithdrawQuoteData;
             };
             TxUpdateQuote: {
-                encode(message: _489.TxUpdateQuote, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _489.TxUpdateQuote;
-                fromJSON(object: any): _489.TxUpdateQuote;
-                toJSON(message: _489.TxUpdateQuote): unknown;
+                encode(message: _557.TxUpdateQuote, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _557.TxUpdateQuote;
+                fromJSON(object: any): _557.TxUpdateQuote;
+                toJSON(message: _557.TxUpdateQuote): unknown;
                 fromPartial(object: {
                     id?: number;
                     requester?: Uint8Array;
                     newSpot?: string;
                     newAsk?: string;
                     newBid?: string;
-                }): _489.TxUpdateQuote;
+                }): _557.TxUpdateQuote;
             };
             UpdateQuoteData: {
-                encode(message: _489.UpdateQuoteData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _489.UpdateQuoteData;
-                fromJSON(object: any): _489.UpdateQuoteData;
-                toJSON(message: _489.UpdateQuoteData): unknown;
+                encode(message: _557.UpdateQuoteData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _557.UpdateQuoteData;
+                fromJSON(object: any): _557.UpdateQuoteData;
+                toJSON(message: _557.UpdateQuoteData): unknown;
                 fromPartial(object: {
                     time?: any;
                     market?: string;
@@ -452,26 +452,26 @@ export declare namespace microtick {
                         amount?: string;
                     };
                     adjustment?: string;
-                }): _489.UpdateQuoteData;
+                }): _557.UpdateQuoteData;
             };
             TxMarketTrade: {
-                encode(message: _488.TxMarketTrade, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _488.TxMarketTrade;
-                fromJSON(object: any): _488.TxMarketTrade;
-                toJSON(message: _488.TxMarketTrade): unknown;
+                encode(message: _556.TxMarketTrade, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _556.TxMarketTrade;
+                fromJSON(object: any): _556.TxMarketTrade;
+                toJSON(message: _556.TxMarketTrade): unknown;
                 fromPartial(object: {
                     market?: string;
                     duration?: string;
                     taker?: Uint8Array;
                     orderType?: string;
                     quantity?: string;
-                }): _488.TxMarketTrade;
+                }): _556.TxMarketTrade;
             };
             MarketTradeData: {
-                encode(message: _488.MarketTradeData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _488.MarketTradeData;
-                fromJSON(object: any): _488.MarketTradeData;
-                toJSON(message: _488.MarketTradeData): unknown;
+                encode(message: _556.MarketTradeData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _556.MarketTradeData;
+                fromJSON(object: any): _556.MarketTradeData;
+                toJSON(message: _556.MarketTradeData): unknown;
                 fromPartial(object: {
                     time?: any;
                     trade?: {
@@ -549,23 +549,23 @@ export declare namespace microtick {
                         denom?: string;
                         amount?: string;
                     };
-                }): _488.MarketTradeData;
+                }): _556.MarketTradeData;
             };
             TxSettleTrade: {
-                encode(message: _487.TxSettleTrade, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _487.TxSettleTrade;
-                fromJSON(object: any): _487.TxSettleTrade;
-                toJSON(message: _487.TxSettleTrade): unknown;
+                encode(message: _555.TxSettleTrade, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _555.TxSettleTrade;
+                fromJSON(object: any): _555.TxSettleTrade;
+                toJSON(message: _555.TxSettleTrade): unknown;
                 fromPartial(object: {
                     id?: number;
                     requester?: Uint8Array;
-                }): _487.TxSettleTrade;
+                }): _555.TxSettleTrade;
             };
             SettleLegData: {
-                encode(message: _487.SettleLegData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _487.SettleLegData;
-                fromJSON(object: any): _487.SettleLegData;
-                toJSON(message: _487.SettleLegData): unknown;
+                encode(message: _555.SettleLegData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _555.SettleLegData;
+                fromJSON(object: any): _555.SettleLegData;
+                toJSON(message: _555.SettleLegData): unknown;
                 fromPartial(object: {
                     legId?: number;
                     settleAccount?: Uint8Array;
@@ -578,13 +578,13 @@ export declare namespace microtick {
                         denom?: string;
                         amount?: string;
                     };
-                }): _487.SettleLegData;
+                }): _555.SettleLegData;
             };
             SettleTradeData: {
-                encode(message: _487.SettleTradeData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _487.SettleTradeData;
-                fromJSON(object: any): _487.SettleTradeData;
-                toJSON(message: _487.SettleTradeData): unknown;
+                encode(message: _555.SettleTradeData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _555.SettleTradeData;
+                fromJSON(object: any): _555.SettleTradeData;
+                toJSON(message: _555.SettleTradeData): unknown;
                 fromPartial(object: {
                     time?: any;
                     id?: number;
@@ -618,24 +618,24 @@ export declare namespace microtick {
                         denom?: string;
                         amount?: string;
                     };
-                }): _487.SettleTradeData;
+                }): _555.SettleTradeData;
             };
             TxPickTrade: {
-                encode(message: _486.TxPickTrade, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _486.TxPickTrade;
-                fromJSON(object: any): _486.TxPickTrade;
-                toJSON(message: _486.TxPickTrade): unknown;
+                encode(message: _554.TxPickTrade, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _554.TxPickTrade;
+                fromJSON(object: any): _554.TxPickTrade;
+                toJSON(message: _554.TxPickTrade): unknown;
                 fromPartial(object: {
                     id?: number;
                     taker?: Uint8Array;
                     orderType?: string;
-                }): _486.TxPickTrade;
+                }): _554.TxPickTrade;
             };
             PickTradeData: {
-                encode(message: _486.PickTradeData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _486.PickTradeData;
-                fromJSON(object: any): _486.PickTradeData;
-                toJSON(message: _486.PickTradeData): unknown;
+                encode(message: _554.PickTradeData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _554.PickTradeData;
+                fromJSON(object: any): _554.PickTradeData;
+                toJSON(message: _554.PickTradeData): unknown;
                 fromPartial(object: {
                     time?: any;
                     market?: string;
@@ -715,24 +715,24 @@ export declare namespace microtick {
                         denom?: string;
                         amount?: string;
                     };
-                }): _486.PickTradeData;
+                }): _554.PickTradeData;
             };
             TxDepositQuote: {
-                encode(message: _485.TxDepositQuote, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _485.TxDepositQuote;
-                fromJSON(object: any): _485.TxDepositQuote;
-                toJSON(message: _485.TxDepositQuote): unknown;
+                encode(message: _553.TxDepositQuote, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _553.TxDepositQuote;
+                fromJSON(object: any): _553.TxDepositQuote;
+                toJSON(message: _553.TxDepositQuote): unknown;
                 fromPartial(object: {
                     id?: number;
                     requester?: Uint8Array;
                     deposit?: string;
-                }): _485.TxDepositQuote;
+                }): _553.TxDepositQuote;
             };
             DepositQuoteData: {
-                encode(message: _485.DepositQuoteData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _485.DepositQuoteData;
-                fromJSON(object: any): _485.DepositQuoteData;
-                toJSON(message: _485.DepositQuoteData): unknown;
+                encode(message: _553.DepositQuoteData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _553.DepositQuoteData;
+                fromJSON(object: any): _553.DepositQuoteData;
+                toJSON(message: _553.DepositQuoteData): unknown;
                 fromPartial(object: {
                     time?: any;
                     market?: string;
@@ -754,13 +754,13 @@ export declare namespace microtick {
                         amount?: string;
                     };
                     adjustment?: string;
-                }): _485.DepositQuoteData;
+                }): _553.DepositQuoteData;
             };
             TxCreateQuote: {
-                encode(message: _484.TxCreateQuote, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _484.TxCreateQuote;
-                fromJSON(object: any): _484.TxCreateQuote;
-                toJSON(message: _484.TxCreateQuote): unknown;
+                encode(message: _552.TxCreateQuote, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _552.TxCreateQuote;
+                fromJSON(object: any): _552.TxCreateQuote;
+                toJSON(message: _552.TxCreateQuote): unknown;
                 fromPartial(object: {
                     market?: string;
                     duration?: string;
@@ -769,13 +769,13 @@ export declare namespace microtick {
                     spot?: string;
                     ask?: string;
                     bid?: string;
-                }): _484.TxCreateQuote;
+                }): _552.TxCreateQuote;
             };
             CreateQuoteData: {
-                encode(message: _484.CreateQuoteData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _484.CreateQuoteData;
-                fromJSON(object: any): _484.CreateQuoteData;
-                toJSON(message: _484.CreateQuoteData): unknown;
+                encode(message: _552.CreateQuoteData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _552.CreateQuoteData;
+                fromJSON(object: any): _552.CreateQuoteData;
+                toJSON(message: _552.CreateQuoteData): unknown;
                 fromPartial(object: {
                     time?: any;
                     id?: number;
@@ -792,23 +792,23 @@ export declare namespace microtick {
                         amount?: string;
                     };
                     adjustment?: string;
-                }): _484.CreateQuoteData;
+                }): _552.CreateQuoteData;
             };
             TxCancelQuote: {
-                encode(message: _483.TxCancelQuote, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _483.TxCancelQuote;
-                fromJSON(object: any): _483.TxCancelQuote;
-                toJSON(message: _483.TxCancelQuote): unknown;
+                encode(message: _551.TxCancelQuote, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _551.TxCancelQuote;
+                fromJSON(object: any): _551.TxCancelQuote;
+                toJSON(message: _551.TxCancelQuote): unknown;
                 fromPartial(object: {
                     id?: number;
                     requester?: Uint8Array;
-                }): _483.TxCancelQuote;
+                }): _551.TxCancelQuote;
             };
             CancelQuoteData: {
-                encode(message: _483.CancelQuoteData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _483.CancelQuoteData;
-                fromJSON(object: any): _483.CancelQuoteData;
-                toJSON(message: _483.CancelQuoteData): unknown;
+                encode(message: _551.CancelQuoteData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _551.CancelQuoteData;
+                fromJSON(object: any): _551.CancelQuoteData;
+                toJSON(message: _551.CancelQuoteData): unknown;
                 fromPartial(object: {
                     time?: any;
                     account?: Uint8Array;
@@ -830,22 +830,22 @@ export declare namespace microtick {
                         denom?: string;
                         amount?: string;
                     };
-                }): _483.CancelQuoteData;
+                }): _551.CancelQuoteData;
             };
             QueryTradeRequest: {
-                encode(message: _482.QueryTradeRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _482.QueryTradeRequest;
-                fromJSON(object: any): _482.QueryTradeRequest;
-                toJSON(message: _482.QueryTradeRequest): unknown;
+                encode(message: _550.QueryTradeRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _550.QueryTradeRequest;
+                fromJSON(object: any): _550.QueryTradeRequest;
+                toJSON(message: _550.QueryTradeRequest): unknown;
                 fromPartial(object: {
                     id?: number;
-                }): _482.QueryTradeRequest;
+                }): _550.QueryTradeRequest;
             };
             ResponseQuotedParams: {
-                encode(message: _482.ResponseQuotedParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _482.ResponseQuotedParams;
-                fromJSON(object: any): _482.ResponseQuotedParams;
-                toJSON(message: _482.ResponseQuotedParams): unknown;
+                encode(message: _550.ResponseQuotedParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _550.ResponseQuotedParams;
+                fromJSON(object: any): _550.ResponseQuotedParams;
+                toJSON(message: _550.ResponseQuotedParams): unknown;
                 fromPartial(object: {
                     id?: number;
                     premium?: {
@@ -857,13 +857,13 @@ export declare namespace microtick {
                         denom?: string;
                         amount?: string;
                     };
-                }): _482.ResponseQuotedParams;
+                }): _550.ResponseQuotedParams;
             };
             ResponseTradeLeg: {
-                encode(message: _482.ResponseTradeLeg, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _482.ResponseTradeLeg;
-                fromJSON(object: any): _482.ResponseTradeLeg;
-                toJSON(message: _482.ResponseTradeLeg): unknown;
+                encode(message: _550.ResponseTradeLeg, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _550.ResponseTradeLeg;
+                fromJSON(object: any): _550.ResponseTradeLeg;
+                toJSON(message: _550.ResponseTradeLeg): unknown;
                 fromPartial(object: {
                     legId?: number;
                     type?: string;
@@ -898,13 +898,13 @@ export declare namespace microtick {
                         };
                     };
                     currentValue?: string;
-                }): _482.ResponseTradeLeg;
+                }): _550.ResponseTradeLeg;
             };
             QueryTradeResponse: {
-                encode(message: _482.QueryTradeResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _482.QueryTradeResponse;
-                fromJSON(object: any): _482.QueryTradeResponse;
-                toJSON(message: _482.QueryTradeResponse): unknown;
+                encode(message: _550.QueryTradeResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _550.QueryTradeResponse;
+                fromJSON(object: any): _550.QueryTradeResponse;
+                toJSON(message: _550.QueryTradeResponse): unknown;
                 fromPartial(object: {
                     id?: number;
                     market?: string;
@@ -969,25 +969,25 @@ export declare namespace microtick {
                         amount?: string;
                     };
                     currentValue?: string;
-                }): _482.QueryTradeResponse;
+                }): _550.QueryTradeResponse;
             };
             QuerySyntheticRequest: {
-                encode(message: _481.QuerySyntheticRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _481.QuerySyntheticRequest;
-                fromJSON(object: any): _481.QuerySyntheticRequest;
-                toJSON(message: _481.QuerySyntheticRequest): unknown;
+                encode(message: _549.QuerySyntheticRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _549.QuerySyntheticRequest;
+                fromJSON(object: any): _549.QuerySyntheticRequest;
+                toJSON(message: _549.QuerySyntheticRequest): unknown;
                 fromPartial(object: {
                     market?: string;
                     duration?: string;
                     offset?: number;
                     limit?: number;
-                }): _481.QuerySyntheticRequest;
+                }): _549.QuerySyntheticRequest;
             };
             SyntheticQuote: {
-                encode(message: _481.SyntheticQuote, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _481.SyntheticQuote;
-                fromJSON(object: any): _481.SyntheticQuote;
-                toJSON(message: _481.SyntheticQuote): unknown;
+                encode(message: _549.SyntheticQuote, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _549.SyntheticQuote;
+                fromJSON(object: any): _549.SyntheticQuote;
+                toJSON(message: _549.SyntheticQuote): unknown;
                 fromPartial(object: {
                     spot?: {
                         denom?: string;
@@ -997,13 +997,13 @@ export declare namespace microtick {
                         denom?: string;
                         amount?: string;
                     };
-                }): _481.SyntheticQuote;
+                }): _549.SyntheticQuote;
             };
             QuerySyntheticResponse: {
-                encode(message: _481.QuerySyntheticResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _481.QuerySyntheticResponse;
-                fromJSON(object: any): _481.QuerySyntheticResponse;
-                toJSON(message: _481.QuerySyntheticResponse): unknown;
+                encode(message: _549.QuerySyntheticResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _549.QuerySyntheticResponse;
+                fromJSON(object: any): _549.QuerySyntheticResponse;
+                toJSON(message: _549.QuerySyntheticResponse): unknown;
                 fromPartial(object: {
                     consensus?: {
                         denom?: string;
@@ -1041,22 +1041,22 @@ export declare namespace microtick {
                             amount?: string;
                         };
                     }[];
-                }): _481.QuerySyntheticResponse;
+                }): _549.QuerySyntheticResponse;
             };
             QueryQuoteRequest: {
-                encode(message: _480.QueryQuoteRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _480.QueryQuoteRequest;
-                fromJSON(object: any): _480.QueryQuoteRequest;
-                toJSON(message: _480.QueryQuoteRequest): unknown;
+                encode(message: _548.QueryQuoteRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _548.QueryQuoteRequest;
+                fromJSON(object: any): _548.QueryQuoteRequest;
+                toJSON(message: _548.QueryQuoteRequest): unknown;
                 fromPartial(object: {
                     id?: number;
-                }): _480.QueryQuoteRequest;
+                }): _548.QueryQuoteRequest;
             };
             QueryQuoteResponse: {
-                encode(message: _480.QueryQuoteResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _480.QueryQuoteResponse;
-                fromJSON(object: any): _480.QueryQuoteResponse;
-                toJSON(message: _480.QueryQuoteResponse): unknown;
+                encode(message: _548.QueryQuoteResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _548.QueryQuoteResponse;
+                fromJSON(object: any): _548.QueryQuoteResponse;
+                toJSON(message: _548.QueryQuoteResponse): unknown;
                 fromPartial(object: {
                     id?: number;
                     provider?: Uint8Array;
@@ -1104,20 +1104,20 @@ export declare namespace microtick {
                     };
                     modified?: any;
                     canModify?: any;
-                }): _480.QueryQuoteResponse;
+                }): _548.QueryQuoteResponse;
             };
             QueryParamsRequest: {
-                encode(_: _479.QueryParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _479.QueryParamsRequest;
-                fromJSON(_: any): _479.QueryParamsRequest;
-                toJSON(_: _479.QueryParamsRequest): unknown;
-                fromPartial(_: {}): _479.QueryParamsRequest;
+                encode(_: _547.QueryParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _547.QueryParamsRequest;
+                fromJSON(_: any): _547.QueryParamsRequest;
+                toJSON(_: _547.QueryParamsRequest): unknown;
+                fromPartial(_: {}): _547.QueryParamsRequest;
             };
             QueryParamsResponse: {
-                encode(message: _479.QueryParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _479.QueryParamsResponse;
-                fromJSON(object: any): _479.QueryParamsResponse;
-                toJSON(message: _479.QueryParamsResponse): unknown;
+                encode(message: _547.QueryParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _547.QueryParamsResponse;
+                fromJSON(object: any): _547.QueryParamsResponse;
+                toJSON(message: _547.QueryParamsResponse): unknown;
                 fromPartial(object: {
                     europeanOptions?: boolean;
                     commissionCreatePerunit?: string;
@@ -1135,25 +1135,25 @@ export declare namespace microtick {
                     cancelSlashRate?: string;
                     backingDenom?: string;
                     backingRatio?: string;
-                }): _479.QueryParamsResponse;
+                }): _547.QueryParamsResponse;
             };
             QueryOrderBookRequest: {
-                encode(message: _478.QueryOrderBookRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _478.QueryOrderBookRequest;
-                fromJSON(object: any): _478.QueryOrderBookRequest;
-                toJSON(message: _478.QueryOrderBookRequest): unknown;
+                encode(message: _546.QueryOrderBookRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _546.QueryOrderBookRequest;
+                fromJSON(object: any): _546.QueryOrderBookRequest;
+                toJSON(message: _546.QueryOrderBookRequest): unknown;
                 fromPartial(object: {
                     market?: string;
                     duration?: string;
                     offset?: number;
                     limit?: number;
-                }): _478.QueryOrderBookRequest;
+                }): _546.QueryOrderBookRequest;
             };
             OrderBookQuote: {
-                encode(message: _478.OrderBookQuote, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _478.OrderBookQuote;
-                fromJSON(object: any): _478.OrderBookQuote;
-                toJSON(message: _478.OrderBookQuote): unknown;
+                encode(message: _546.OrderBookQuote, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _546.OrderBookQuote;
+                fromJSON(object: any): _546.OrderBookQuote;
+                toJSON(message: _546.OrderBookQuote): unknown;
                 fromPartial(object: {
                     id?: number;
                     premium?: {
@@ -1164,13 +1164,13 @@ export declare namespace microtick {
                         denom?: string;
                         amount?: string;
                     };
-                }): _478.OrderBookQuote;
+                }): _546.OrderBookQuote;
             };
             QueryOrderBookResponse: {
-                encode(message: _478.QueryOrderBookResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _478.QueryOrderBookResponse;
-                fromJSON(object: any): _478.QueryOrderBookResponse;
-                toJSON(message: _478.QueryOrderBookResponse): unknown;
+                encode(message: _546.QueryOrderBookResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _546.QueryOrderBookResponse;
+                fromJSON(object: any): _546.QueryOrderBookResponse;
+                toJSON(message: _546.QueryOrderBookResponse): unknown;
                 fromPartial(object: {
                     consensus?: {
                         denom?: string;
@@ -1231,22 +1231,22 @@ export declare namespace microtick {
                             amount?: string;
                         };
                     }[];
-                }): _478.QueryOrderBookResponse;
+                }): _546.QueryOrderBookResponse;
             };
             QueryMarketRequest: {
-                encode(message: _477.QueryMarketRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _477.QueryMarketRequest;
-                fromJSON(object: any): _477.QueryMarketRequest;
-                toJSON(message: _477.QueryMarketRequest): unknown;
+                encode(message: _545.QueryMarketRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _545.QueryMarketRequest;
+                fromJSON(object: any): _545.QueryMarketRequest;
+                toJSON(message: _545.QueryMarketRequest): unknown;
                 fromPartial(object: {
                     market?: string;
-                }): _477.QueryMarketRequest;
+                }): _545.QueryMarketRequest;
             };
             MarketOrderBookStatus: {
-                encode(message: _477.MarketOrderBookStatus, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _477.MarketOrderBookStatus;
-                fromJSON(object: any): _477.MarketOrderBookStatus;
-                toJSON(message: _477.MarketOrderBookStatus): unknown;
+                encode(message: _545.MarketOrderBookStatus, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _545.MarketOrderBookStatus;
+                fromJSON(object: any): _545.MarketOrderBookStatus;
+                toJSON(message: _545.MarketOrderBookStatus): unknown;
                 fromPartial(object: {
                     name?: string;
                     sumBacking?: {
@@ -1281,13 +1281,13 @@ export declare namespace microtick {
                         denom?: string;
                         amount?: string;
                     };
-                }): _477.MarketOrderBookStatus;
+                }): _545.MarketOrderBookStatus;
             };
             QueryMarketResponse: {
-                encode(message: _477.QueryMarketResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _477.QueryMarketResponse;
-                fromJSON(object: any): _477.QueryMarketResponse;
-                toJSON(message: _477.QueryMarketResponse): unknown;
+                encode(message: _545.QueryMarketResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _545.QueryMarketResponse;
+                fromJSON(object: any): _545.QueryMarketResponse;
+                toJSON(message: _545.QueryMarketResponse): unknown;
                 fromPartial(object: {
                     market?: string;
                     description?: string;
@@ -1338,22 +1338,22 @@ export declare namespace microtick {
                         denom?: string;
                         amount?: string;
                     };
-                }): _477.QueryMarketResponse;
+                }): _545.QueryMarketResponse;
             };
             QueryConsensusRequest: {
-                encode(message: _476.QueryConsensusRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _476.QueryConsensusRequest;
-                fromJSON(object: any): _476.QueryConsensusRequest;
-                toJSON(message: _476.QueryConsensusRequest): unknown;
+                encode(message: _544.QueryConsensusRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _544.QueryConsensusRequest;
+                fromJSON(object: any): _544.QueryConsensusRequest;
+                toJSON(message: _544.QueryConsensusRequest): unknown;
                 fromPartial(object: {
                     market?: string;
-                }): _476.QueryConsensusRequest;
+                }): _544.QueryConsensusRequest;
             };
             QueryConsensusResponse: {
-                encode(message: _476.QueryConsensusResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _476.QueryConsensusResponse;
-                fromJSON(object: any): _476.QueryConsensusResponse;
-                toJSON(message: _476.QueryConsensusResponse): unknown;
+                encode(message: _544.QueryConsensusResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _544.QueryConsensusResponse;
+                fromJSON(object: any): _544.QueryConsensusResponse;
+                toJSON(message: _544.QueryConsensusResponse): unknown;
                 fromPartial(object: {
                     market?: string;
                     consensus?: {
@@ -1368,24 +1368,24 @@ export declare namespace microtick {
                         denom?: string;
                         amount?: string;
                     };
-                }): _476.QueryConsensusResponse;
+                }): _544.QueryConsensusResponse;
             };
             QueryAccountRequest: {
-                encode(message: _475.QueryAccountRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _475.QueryAccountRequest;
-                fromJSON(object: any): _475.QueryAccountRequest;
-                toJSON(message: _475.QueryAccountRequest): unknown;
+                encode(message: _543.QueryAccountRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _543.QueryAccountRequest;
+                fromJSON(object: any): _543.QueryAccountRequest;
+                toJSON(message: _543.QueryAccountRequest): unknown;
                 fromPartial(object: {
                     account?: Uint8Array;
                     offset?: number;
                     limit?: number;
-                }): _475.QueryAccountRequest;
+                }): _543.QueryAccountRequest;
             };
             QueryAccountResponse: {
-                encode(message: _475.QueryAccountResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _475.QueryAccountResponse;
-                fromJSON(object: any): _475.QueryAccountResponse;
-                toJSON(message: _475.QueryAccountResponse): unknown;
+                encode(message: _543.QueryAccountResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _543.QueryAccountResponse;
+                fromJSON(object: any): _543.QueryAccountResponse;
+                toJSON(message: _543.QueryAccountResponse): unknown;
                 fromPartial(object: {
                     account?: Uint8Array;
                     balances?: {
@@ -1412,35 +1412,35 @@ export declare namespace microtick {
                         denom?: string;
                         amount?: string;
                     };
-                }): _475.QueryAccountResponse;
+                }): _543.QueryAccountResponse;
             };
             DenomChangeProposal: {
-                encode(message: _474.DenomChangeProposal, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _474.DenomChangeProposal;
-                fromJSON(object: any): _474.DenomChangeProposal;
-                toJSON(message: _474.DenomChangeProposal): unknown;
+                encode(message: _542.DenomChangeProposal, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _542.DenomChangeProposal;
+                fromJSON(object: any): _542.DenomChangeProposal;
+                toJSON(message: _542.DenomChangeProposal): unknown;
                 fromPartial(object: {
                     title?: string;
                     description?: string;
                     backingDenom?: string;
                     backingRatio?: string;
-                }): _474.DenomChangeProposal;
+                }): _542.DenomChangeProposal;
             };
             MarketMetadata: {
-                encode(message: _474.MarketMetadata, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _474.MarketMetadata;
-                fromJSON(object: any): _474.MarketMetadata;
-                toJSON(message: _474.MarketMetadata): unknown;
+                encode(message: _542.MarketMetadata, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _542.MarketMetadata;
+                fromJSON(object: any): _542.MarketMetadata;
+                toJSON(message: _542.MarketMetadata): unknown;
                 fromPartial(object: {
                     name?: string;
                     description?: string;
-                }): _474.MarketMetadata;
+                }): _542.MarketMetadata;
             };
             AddMarketsProposal: {
-                encode(message: _474.AddMarketsProposal, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _474.AddMarketsProposal;
-                fromJSON(object: any): _474.AddMarketsProposal;
-                toJSON(message: _474.AddMarketsProposal): unknown;
+                encode(message: _542.AddMarketsProposal, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _542.AddMarketsProposal;
+                fromJSON(object: any): _542.AddMarketsProposal;
+                toJSON(message: _542.AddMarketsProposal): unknown;
                 fromPartial(object: {
                     title?: string;
                     description?: string;
@@ -1448,16 +1448,16 @@ export declare namespace microtick {
                         name?: string;
                         description?: string;
                     }[];
-                }): _474.AddMarketsProposal;
+                }): _542.AddMarketsProposal;
             };
         };
     }
     const types: {
         MicrotickParams: {
-            encode(message: _492.MicrotickParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _492.MicrotickParams;
-            fromJSON(object: any): _492.MicrotickParams;
-            toJSON(message: _492.MicrotickParams): unknown;
+            encode(message: _560.MicrotickParams, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _560.MicrotickParams;
+            fromJSON(object: any): _560.MicrotickParams;
+            toJSON(message: _560.MicrotickParams): unknown;
             fromPartial(object: {
                 europeanOptions?: boolean;
                 commissionCreatePerunit?: string;
@@ -1475,44 +1475,44 @@ export declare namespace microtick {
                 cancelSlashRate?: string;
                 backingDenom?: string;
                 backingRatio?: string;
-            }): _492.MicrotickParams;
+            }): _560.MicrotickParams;
         };
         GenesisAccount: {
-            encode(message: _491.GenesisAccount, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _491.GenesisAccount;
-            fromJSON(object: any): _491.GenesisAccount;
-            toJSON(message: _491.GenesisAccount): unknown;
+            encode(message: _559.GenesisAccount, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _559.GenesisAccount;
+            fromJSON(object: any): _559.GenesisAccount;
+            toJSON(message: _559.GenesisAccount): unknown;
             fromPartial(object: {
                 account?: Uint8Array;
                 placedQuotes?: number;
                 placedTrades?: number;
-            }): _491.GenesisAccount;
+            }): _559.GenesisAccount;
         };
         GenesisMarket: {
-            encode(message: _491.GenesisMarket, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _491.GenesisMarket;
-            fromJSON(object: any): _491.GenesisMarket;
-            toJSON(message: _491.GenesisMarket): unknown;
+            encode(message: _559.GenesisMarket, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _559.GenesisMarket;
+            fromJSON(object: any): _559.GenesisMarket;
+            toJSON(message: _559.GenesisMarket): unknown;
             fromPartial(object: {
                 name?: string;
                 description?: string;
-            }): _491.GenesisMarket;
+            }): _559.GenesisMarket;
         };
         GenesisDuration: {
-            encode(message: _491.GenesisDuration, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _491.GenesisDuration;
-            fromJSON(object: any): _491.GenesisDuration;
-            toJSON(message: _491.GenesisDuration): unknown;
+            encode(message: _559.GenesisDuration, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _559.GenesisDuration;
+            fromJSON(object: any): _559.GenesisDuration;
+            toJSON(message: _559.GenesisDuration): unknown;
             fromPartial(object: {
                 name?: string;
                 seconds?: number;
-            }): _491.GenesisDuration;
+            }): _559.GenesisDuration;
         };
         GenesisMicrotick: {
-            encode(message: _491.GenesisMicrotick, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _491.GenesisMicrotick;
-            fromJSON(object: any): _491.GenesisMicrotick;
-            toJSON(message: _491.GenesisMicrotick): unknown;
+            encode(message: _559.GenesisMicrotick, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _559.GenesisMicrotick;
+            fromJSON(object: any): _559.GenesisMicrotick;
+            toJSON(message: _559.GenesisMicrotick): unknown;
             fromPartial(object: {
                 params?: {
                     europeanOptions?: boolean;
@@ -1545,7 +1545,7 @@ export declare namespace microtick {
                     name?: string;
                     seconds?: number;
                 }[];
-            }): _491.GenesisMicrotick;
+            }): _559.GenesisMicrotick;
         };
     };
 }

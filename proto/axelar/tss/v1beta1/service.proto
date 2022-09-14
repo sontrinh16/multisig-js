@@ -1,0 +1,25 @@
+syntax = "proto3";
+package axelar.tss.v1beta1;
+
+option go_package = "github.com/axelarnetwork/axelar-core/x/tss/types";
+
+import "gogoproto/gogo.proto";
+import "google/api/annotations.proto";
+import "axelar/snapshot/v1beta1/tx.proto";
+import "axelar/tss/v1beta1/tx.proto";
+
+option (gogoproto.goproto_registration) = true;
+
+// Msg defines the tss Msg service.
+service MsgService {
+  rpc HeartBeat(HeartBeatRequest)
+      returns (HeartBeatResponse) {
+    option (google.api.http) = {
+      post : "/axelar/tss/heartbeat"
+      body : "*"
+    };
+  }
+}
+
+// Query defines the gRPC querier service.
+service QueryService {}

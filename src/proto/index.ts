@@ -6,6 +6,8 @@
  
 export * from "./akash/bundle";
 export * from "./akash/client";
+export * from "./axelar/bundle";
+export * from "./axelar/client";
 export * from "./BitCannaGlobal/bundle";
 export * from "./BitCannaGlobal/client";
 export * from "./bitsong/bundle";

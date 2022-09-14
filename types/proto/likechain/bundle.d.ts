@@ -1,70 +1,70 @@
-import * as _442 from "./iscn/genesis";
-import * as _443 from "./iscn/iscnid";
-import * as _444 from "./iscn/params";
-import * as _445 from "./iscn/query";
-import * as _446 from "./iscn/store";
-import * as _447 from "./iscn/tx";
-import * as _448 from "./likenft/v1/blind_box_content";
-import * as _449 from "./likenft/v1/class_data";
-import * as _450 from "./likenft/v1/class_input";
-import * as _451 from "./likenft/v1/class_reveal_queue";
-import * as _452 from "./likenft/v1/classes_by_account";
-import * as _453 from "./likenft/v1/classes_by_iscn";
-import * as _454 from "./likenft/v1/event";
-import * as _455 from "./likenft/v1/genesis";
-import * as _456 from "./likenft/v1/listing_expire_queue";
-import * as _457 from "./likenft/v1/listing";
-import * as _458 from "./likenft/v1/nft_data";
-import * as _459 from "./likenft/v1/nft_input";
-import * as _460 from "./likenft/v1/offer_expire_queue";
-import * as _461 from "./likenft/v1/offer";
-import * as _462 from "./likenft/v1/params";
-import * as _463 from "./likenft/v1/query";
-import * as _464 from "./likenft/v1/royalty_config";
-import * as _465 from "./likenft/v1/tx";
+import * as _510 from "./iscn/genesis";
+import * as _511 from "./iscn/iscnid";
+import * as _512 from "./iscn/params";
+import * as _513 from "./iscn/query";
+import * as _514 from "./iscn/store";
+import * as _515 from "./iscn/tx";
+import * as _516 from "./likenft/v1/blind_box_content";
+import * as _517 from "./likenft/v1/class_data";
+import * as _518 from "./likenft/v1/class_input";
+import * as _519 from "./likenft/v1/class_reveal_queue";
+import * as _520 from "./likenft/v1/classes_by_account";
+import * as _521 from "./likenft/v1/classes_by_iscn";
+import * as _522 from "./likenft/v1/event";
+import * as _523 from "./likenft/v1/genesis";
+import * as _524 from "./likenft/v1/listing_expire_queue";
+import * as _525 from "./likenft/v1/listing";
+import * as _526 from "./likenft/v1/nft_data";
+import * as _527 from "./likenft/v1/nft_input";
+import * as _528 from "./likenft/v1/offer_expire_queue";
+import * as _529 from "./likenft/v1/offer";
+import * as _530 from "./likenft/v1/params";
+import * as _531 from "./likenft/v1/query";
+import * as _532 from "./likenft/v1/royalty_config";
+import * as _533 from "./likenft/v1/tx";
 export declare namespace likechain {
     const iscn: {
         registry: readonly [string, import("@cosmjs/proto-signing").GeneratedType][];
         load: (protoRegistry: import("@cosmjs/proto-signing").Registry) => void;
         MessageComposer: {
             encoded: {
-                createIscnRecord(value: _447.MsgCreateIscnRecord): {
+                createIscnRecord(value: _515.MsgCreateIscnRecord): {
                     typeUrl: string;
                     value: Uint8Array;
                 };
-                updateIscnRecord(value: _447.MsgUpdateIscnRecord): {
+                updateIscnRecord(value: _515.MsgUpdateIscnRecord): {
                     typeUrl: string;
                     value: Uint8Array;
                 };
-                changeIscnRecordOwnership(value: _447.MsgChangeIscnRecordOwnership): {
+                changeIscnRecordOwnership(value: _515.MsgChangeIscnRecordOwnership): {
                     typeUrl: string;
                     value: Uint8Array;
                 };
             };
             withTypeUrl: {
-                createIscnRecord(value: _447.MsgCreateIscnRecord): {
+                createIscnRecord(value: _515.MsgCreateIscnRecord): {
                     typeUrl: string;
-                    value: _447.MsgCreateIscnRecord;
+                    value: _515.MsgCreateIscnRecord;
                 };
-                updateIscnRecord(value: _447.MsgUpdateIscnRecord): {
+                updateIscnRecord(value: _515.MsgUpdateIscnRecord): {
                     typeUrl: string;
-                    value: _447.MsgUpdateIscnRecord;
+                    value: _515.MsgUpdateIscnRecord;
                 };
-                changeIscnRecordOwnership(value: _447.MsgChangeIscnRecordOwnership): {
+                changeIscnRecordOwnership(value: _515.MsgChangeIscnRecordOwnership): {
                     typeUrl: string;
-                    value: _447.MsgChangeIscnRecordOwnership;
+                    value: _515.MsgChangeIscnRecordOwnership;
                 };
             };
             toJSON: {
-                createIscnRecord(value: _447.MsgCreateIscnRecord): {
+                createIscnRecord(value: _515.MsgCreateIscnRecord): {
                     typeUrl: string;
                     value: unknown;
                 };
-                updateIscnRecord(value: _447.MsgUpdateIscnRecord): {
+                updateIscnRecord(value: _515.MsgUpdateIscnRecord): {
                     typeUrl: string;
                     value: unknown;
                 };
-                changeIscnRecordOwnership(value: _447.MsgChangeIscnRecordOwnership): {
+                changeIscnRecordOwnership(value: _515.MsgChangeIscnRecordOwnership): {
                     typeUrl: string;
                     value: unknown;
                 };
@@ -72,36 +72,36 @@ export declare namespace likechain {
             fromJSON: {
                 createIscnRecord(value: any): {
                     typeUrl: string;
-                    value: _447.MsgCreateIscnRecord;
+                    value: _515.MsgCreateIscnRecord;
                 };
                 updateIscnRecord(value: any): {
                     typeUrl: string;
-                    value: _447.MsgUpdateIscnRecord;
+                    value: _515.MsgUpdateIscnRecord;
                 };
                 changeIscnRecordOwnership(value: any): {
                     typeUrl: string;
-                    value: _447.MsgChangeIscnRecordOwnership;
+                    value: _515.MsgChangeIscnRecordOwnership;
                 };
             };
             fromPartial: {
-                createIscnRecord(value: _447.MsgCreateIscnRecord): {
+                createIscnRecord(value: _515.MsgCreateIscnRecord): {
                     typeUrl: string;
-                    value: _447.MsgCreateIscnRecord;
+                    value: _515.MsgCreateIscnRecord;
                 };
-                updateIscnRecord(value: _447.MsgUpdateIscnRecord): {
+                updateIscnRecord(value: _515.MsgUpdateIscnRecord): {
                     typeUrl: string;
-                    value: _447.MsgUpdateIscnRecord;
+                    value: _515.MsgUpdateIscnRecord;
                 };
-                changeIscnRecordOwnership(value: _447.MsgChangeIscnRecordOwnership): {
+                changeIscnRecordOwnership(value: _515.MsgChangeIscnRecordOwnership): {
                     typeUrl: string;
-                    value: _447.MsgChangeIscnRecordOwnership;
+                    value: _515.MsgChangeIscnRecordOwnership;
                 };
             };
         };
         AminoConverter: {
             "/likechain.iscn.MsgCreateIscnRecord": {
                 aminoType: string;
-                toAmino: ({ from, record }: _447.MsgCreateIscnRecord) => {
+                toAmino: ({ from, record }: _515.MsgCreateIscnRecord) => {
                     from: string;
                     record: {
                         recordNotes: string;
@@ -118,11 +118,11 @@ export declare namespace likechain {
                         stakeholders: Uint8Array[];
                         contentMetadata: Uint8Array;
                     };
-                }) => _447.MsgCreateIscnRecord;
+                }) => _515.MsgCreateIscnRecord;
             };
             "/likechain.iscn.MsgUpdateIscnRecord": {
                 aminoType: string;
-                toAmino: ({ from, iscnId, record }: _447.MsgUpdateIscnRecord) => {
+                toAmino: ({ from, iscnId, record }: _515.MsgUpdateIscnRecord) => {
                     from: string;
                     iscn_id: string;
                     record: {
@@ -141,11 +141,11 @@ export declare namespace likechain {
                         stakeholders: Uint8Array[];
                         contentMetadata: Uint8Array;
                     };
-                }) => _447.MsgUpdateIscnRecord;
+                }) => _515.MsgUpdateIscnRecord;
             };
             "/likechain.iscn.MsgChangeIscnRecordOwnership": {
                 aminoType: string;
-                toAmino: ({ from, iscnId, newOwner }: _447.MsgChangeIscnRecordOwnership) => {
+                toAmino: ({ from, iscnId, newOwner }: _515.MsgChangeIscnRecordOwnership) => {
                     from: string;
                     iscn_id: string;
                     new_owner: string;
@@ -154,26 +154,26 @@ export declare namespace likechain {
                     from: string;
                     iscn_id: string;
                     new_owner: string;
-                }) => _447.MsgChangeIscnRecordOwnership;
+                }) => _515.MsgChangeIscnRecordOwnership;
             };
         };
         IscnRecord: {
-            encode(message: _447.IscnRecord, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _447.IscnRecord;
-            fromJSON(object: any): _447.IscnRecord;
-            toJSON(message: _447.IscnRecord): unknown;
+            encode(message: _515.IscnRecord, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _515.IscnRecord;
+            fromJSON(object: any): _515.IscnRecord;
+            toJSON(message: _515.IscnRecord): unknown;
             fromPartial(object: {
                 recordNotes?: string;
                 contentFingerprints?: string[];
                 stakeholders?: Uint8Array[];
                 contentMetadata?: Uint8Array;
-            }): _447.IscnRecord;
+            }): _515.IscnRecord;
         };
         MsgCreateIscnRecord: {
-            encode(message: _447.MsgCreateIscnRecord, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _447.MsgCreateIscnRecord;
-            fromJSON(object: any): _447.MsgCreateIscnRecord;
-            toJSON(message: _447.MsgCreateIscnRecord): unknown;
+            encode(message: _515.MsgCreateIscnRecord, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _515.MsgCreateIscnRecord;
+            fromJSON(object: any): _515.MsgCreateIscnRecord;
+            toJSON(message: _515.MsgCreateIscnRecord): unknown;
             fromPartial(object: {
                 from?: string;
                 record?: {
@@ -182,23 +182,23 @@ export declare namespace likechain {
                     stakeholders?: Uint8Array[];
                     contentMetadata?: Uint8Array;
                 };
-            }): _447.MsgCreateIscnRecord;
+            }): _515.MsgCreateIscnRecord;
         };
         MsgCreateIscnRecordResponse: {
-            encode(message: _447.MsgCreateIscnRecordResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _447.MsgCreateIscnRecordResponse;
-            fromJSON(object: any): _447.MsgCreateIscnRecordResponse;
-            toJSON(message: _447.MsgCreateIscnRecordResponse): unknown;
+            encode(message: _515.MsgCreateIscnRecordResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _515.MsgCreateIscnRecordResponse;
+            fromJSON(object: any): _515.MsgCreateIscnRecordResponse;
+            toJSON(message: _515.MsgCreateIscnRecordResponse): unknown;
             fromPartial(object: {
                 iscnId?: string;
                 recordIpld?: string;
-            }): _447.MsgCreateIscnRecordResponse;
+            }): _515.MsgCreateIscnRecordResponse;
         };
         MsgUpdateIscnRecord: {
-            encode(message: _447.MsgUpdateIscnRecord, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _447.MsgUpdateIscnRecord;
-            fromJSON(object: any): _447.MsgUpdateIscnRecord;
-            toJSON(message: _447.MsgUpdateIscnRecord): unknown;
+            encode(message: _515.MsgUpdateIscnRecord, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _515.MsgUpdateIscnRecord;
+            fromJSON(object: any): _515.MsgUpdateIscnRecord;
+            toJSON(message: _515.MsgUpdateIscnRecord): unknown;
             fromPartial(object: {
                 from?: string;
                 iscnId?: string;
@@ -208,41 +208,41 @@ export declare namespace likechain {
                     stakeholders?: Uint8Array[];
                     contentMetadata?: Uint8Array;
                 };
-            }): _447.MsgUpdateIscnRecord;
+            }): _515.MsgUpdateIscnRecord;
         };
         MsgUpdateIscnRecordResponse: {
-            encode(message: _447.MsgUpdateIscnRecordResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _447.MsgUpdateIscnRecordResponse;
-            fromJSON(object: any): _447.MsgUpdateIscnRecordResponse;
-            toJSON(message: _447.MsgUpdateIscnRecordResponse): unknown;
+            encode(message: _515.MsgUpdateIscnRecordResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _515.MsgUpdateIscnRecordResponse;
+            fromJSON(object: any): _515.MsgUpdateIscnRecordResponse;
+            toJSON(message: _515.MsgUpdateIscnRecordResponse): unknown;
             fromPartial(object: {
                 iscnId?: string;
                 recordIpld?: string;
-            }): _447.MsgUpdateIscnRecordResponse;
+            }): _515.MsgUpdateIscnRecordResponse;
         };
         MsgChangeIscnRecordOwnership: {
-            encode(message: _447.MsgChangeIscnRecordOwnership, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _447.MsgChangeIscnRecordOwnership;
-            fromJSON(object: any): _447.MsgChangeIscnRecordOwnership;
-            toJSON(message: _447.MsgChangeIscnRecordOwnership): unknown;
+            encode(message: _515.MsgChangeIscnRecordOwnership, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _515.MsgChangeIscnRecordOwnership;
+            fromJSON(object: any): _515.MsgChangeIscnRecordOwnership;
+            toJSON(message: _515.MsgChangeIscnRecordOwnership): unknown;
             fromPartial(object: {
                 from?: string;
                 iscnId?: string;
                 newOwner?: string;
-            }): _447.MsgChangeIscnRecordOwnership;
+            }): _515.MsgChangeIscnRecordOwnership;
         };
         MsgChangeIscnRecordOwnershipResponse: {
-            encode(_: _447.MsgChangeIscnRecordOwnershipResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _447.MsgChangeIscnRecordOwnershipResponse;
-            fromJSON(_: any): _447.MsgChangeIscnRecordOwnershipResponse;
-            toJSON(_: _447.MsgChangeIscnRecordOwnershipResponse): unknown;
-            fromPartial(_: {}): _447.MsgChangeIscnRecordOwnershipResponse;
+            encode(_: _515.MsgChangeIscnRecordOwnershipResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _515.MsgChangeIscnRecordOwnershipResponse;
+            fromJSON(_: any): _515.MsgChangeIscnRecordOwnershipResponse;
+            toJSON(_: _515.MsgChangeIscnRecordOwnershipResponse): unknown;
+            fromPartial(_: {}): _515.MsgChangeIscnRecordOwnershipResponse;
         };
         StoreRecord: {
-            encode(message: _446.StoreRecord, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _446.StoreRecord;
-            fromJSON(object: any): _446.StoreRecord;
-            toJSON(message: _446.StoreRecord): unknown;
+            encode(message: _514.StoreRecord, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _514.StoreRecord;
+            fromJSON(object: any): _514.StoreRecord;
+            toJSON(message: _514.StoreRecord): unknown;
             fromPartial(object: {
                 iscnId?: {
                     prefix?: {
@@ -253,44 +253,44 @@ export declare namespace likechain {
                 };
                 cidBytes?: Uint8Array;
                 data?: Uint8Array;
-            }): _446.StoreRecord;
+            }): _514.StoreRecord;
         };
         ContentIdRecord: {
-            encode(message: _446.ContentIdRecord, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _446.ContentIdRecord;
-            fromJSON(object: any): _446.ContentIdRecord;
-            toJSON(message: _446.ContentIdRecord): unknown;
+            encode(message: _514.ContentIdRecord, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _514.ContentIdRecord;
+            fromJSON(object: any): _514.ContentIdRecord;
+            toJSON(message: _514.ContentIdRecord): unknown;
             fromPartial(object: {
                 ownerAddressBytes?: Uint8Array;
                 latestVersion?: any;
-            }): _446.ContentIdRecord;
+            }): _514.ContentIdRecord;
         };
         QueryResponseRecord: {
-            encode(message: _445.QueryResponseRecord, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _445.QueryResponseRecord;
-            fromJSON(object: any): _445.QueryResponseRecord;
-            toJSON(message: _445.QueryResponseRecord): unknown;
+            encode(message: _513.QueryResponseRecord, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _513.QueryResponseRecord;
+            fromJSON(object: any): _513.QueryResponseRecord;
+            toJSON(message: _513.QueryResponseRecord): unknown;
             fromPartial(object: {
                 ipld?: string;
                 data?: Uint8Array;
-            }): _445.QueryResponseRecord;
+            }): _513.QueryResponseRecord;
         };
         QueryRecordsByIdRequest: {
-            encode(message: _445.QueryRecordsByIdRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _445.QueryRecordsByIdRequest;
-            fromJSON(object: any): _445.QueryRecordsByIdRequest;
-            toJSON(message: _445.QueryRecordsByIdRequest): unknown;
+            encode(message: _513.QueryRecordsByIdRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _513.QueryRecordsByIdRequest;
+            fromJSON(object: any): _513.QueryRecordsByIdRequest;
+            toJSON(message: _513.QueryRecordsByIdRequest): unknown;
             fromPartial(object: {
                 iscnId?: string;
                 fromVersion?: any;
                 toVersion?: any;
-            }): _445.QueryRecordsByIdRequest;
+            }): _513.QueryRecordsByIdRequest;
         };
         QueryRecordsByIdResponse: {
-            encode(message: _445.QueryRecordsByIdResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _445.QueryRecordsByIdResponse;
-            fromJSON(object: any): _445.QueryRecordsByIdResponse;
-            toJSON(message: _445.QueryRecordsByIdResponse): unknown;
+            encode(message: _513.QueryRecordsByIdResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _513.QueryRecordsByIdResponse;
+            fromJSON(object: any): _513.QueryRecordsByIdResponse;
+            toJSON(message: _513.QueryRecordsByIdResponse): unknown;
             fromPartial(object: {
                 owner?: string;
                 latestVersion?: any;
@@ -298,66 +298,66 @@ export declare namespace likechain {
                     ipld?: string;
                     data?: Uint8Array;
                 }[];
-            }): _445.QueryRecordsByIdResponse;
+            }): _513.QueryRecordsByIdResponse;
         };
         QueryRecordsByFingerprintRequest: {
-            encode(message: _445.QueryRecordsByFingerprintRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _445.QueryRecordsByFingerprintRequest;
-            fromJSON(object: any): _445.QueryRecordsByFingerprintRequest;
-            toJSON(message: _445.QueryRecordsByFingerprintRequest): unknown;
+            encode(message: _513.QueryRecordsByFingerprintRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _513.QueryRecordsByFingerprintRequest;
+            fromJSON(object: any): _513.QueryRecordsByFingerprintRequest;
+            toJSON(message: _513.QueryRecordsByFingerprintRequest): unknown;
             fromPartial(object: {
                 fingerprint?: string;
                 fromSequence?: any;
-            }): _445.QueryRecordsByFingerprintRequest;
+            }): _513.QueryRecordsByFingerprintRequest;
         };
         QueryRecordsByFingerprintResponse: {
-            encode(message: _445.QueryRecordsByFingerprintResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _445.QueryRecordsByFingerprintResponse;
-            fromJSON(object: any): _445.QueryRecordsByFingerprintResponse;
-            toJSON(message: _445.QueryRecordsByFingerprintResponse): unknown;
+            encode(message: _513.QueryRecordsByFingerprintResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _513.QueryRecordsByFingerprintResponse;
+            fromJSON(object: any): _513.QueryRecordsByFingerprintResponse;
+            toJSON(message: _513.QueryRecordsByFingerprintResponse): unknown;
             fromPartial(object: {
                 records?: {
                     ipld?: string;
                     data?: Uint8Array;
                 }[];
                 nextSequence?: any;
-            }): _445.QueryRecordsByFingerprintResponse;
+            }): _513.QueryRecordsByFingerprintResponse;
         };
         QueryRecordsByOwnerRequest: {
-            encode(message: _445.QueryRecordsByOwnerRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _445.QueryRecordsByOwnerRequest;
-            fromJSON(object: any): _445.QueryRecordsByOwnerRequest;
-            toJSON(message: _445.QueryRecordsByOwnerRequest): unknown;
+            encode(message: _513.QueryRecordsByOwnerRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _513.QueryRecordsByOwnerRequest;
+            fromJSON(object: any): _513.QueryRecordsByOwnerRequest;
+            toJSON(message: _513.QueryRecordsByOwnerRequest): unknown;
             fromPartial(object: {
                 owner?: string;
                 fromSequence?: any;
-            }): _445.QueryRecordsByOwnerRequest;
+            }): _513.QueryRecordsByOwnerRequest;
         };
         QueryRecordsByOwnerResponse: {
-            encode(message: _445.QueryRecordsByOwnerResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _445.QueryRecordsByOwnerResponse;
-            fromJSON(object: any): _445.QueryRecordsByOwnerResponse;
-            toJSON(message: _445.QueryRecordsByOwnerResponse): unknown;
+            encode(message: _513.QueryRecordsByOwnerResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _513.QueryRecordsByOwnerResponse;
+            fromJSON(object: any): _513.QueryRecordsByOwnerResponse;
+            toJSON(message: _513.QueryRecordsByOwnerResponse): unknown;
             fromPartial(object: {
                 records?: {
                     ipld?: string;
                     data?: Uint8Array;
                 }[];
                 nextSequence?: any;
-            }): _445.QueryRecordsByOwnerResponse;
+            }): _513.QueryRecordsByOwnerResponse;
         };
         QueryParamsRequest: {
-            encode(_: _445.QueryParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _445.QueryParamsRequest;
-            fromJSON(_: any): _445.QueryParamsRequest;
-            toJSON(_: _445.QueryParamsRequest): unknown;
-            fromPartial(_: {}): _445.QueryParamsRequest;
+            encode(_: _513.QueryParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _513.QueryParamsRequest;
+            fromJSON(_: any): _513.QueryParamsRequest;
+            toJSON(_: _513.QueryParamsRequest): unknown;
+            fromPartial(_: {}): _513.QueryParamsRequest;
         };
         QueryParamsResponse: {
-            encode(message: _445.QueryParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _445.QueryParamsResponse;
-            fromJSON(object: any): _445.QueryParamsResponse;
-            toJSON(message: _445.QueryParamsResponse): unknown;
+            encode(message: _513.QueryParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _513.QueryParamsResponse;
+            fromJSON(object: any): _513.QueryParamsResponse;
+            toJSON(message: _513.QueryParamsResponse): unknown;
             fromPartial(object: {
                 params?: {
                     registryName?: string;
@@ -366,103 +366,103 @@ export declare namespace likechain {
                         amount?: string;
                     };
                 };
-            }): _445.QueryParamsResponse;
+            }): _513.QueryParamsResponse;
         };
         QueryGetCidRequest: {
-            encode(message: _445.QueryGetCidRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _445.QueryGetCidRequest;
-            fromJSON(object: any): _445.QueryGetCidRequest;
-            toJSON(message: _445.QueryGetCidRequest): unknown;
+            encode(message: _513.QueryGetCidRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _513.QueryGetCidRequest;
+            fromJSON(object: any): _513.QueryGetCidRequest;
+            toJSON(message: _513.QueryGetCidRequest): unknown;
             fromPartial(object: {
                 cid?: string;
-            }): _445.QueryGetCidRequest;
+            }): _513.QueryGetCidRequest;
         };
         QueryGetCidResponse: {
-            encode(message: _445.QueryGetCidResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _445.QueryGetCidResponse;
-            fromJSON(object: any): _445.QueryGetCidResponse;
-            toJSON(message: _445.QueryGetCidResponse): unknown;
+            encode(message: _513.QueryGetCidResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _513.QueryGetCidResponse;
+            fromJSON(object: any): _513.QueryGetCidResponse;
+            toJSON(message: _513.QueryGetCidResponse): unknown;
             fromPartial(object: {
                 data?: Uint8Array;
-            }): _445.QueryGetCidResponse;
+            }): _513.QueryGetCidResponse;
         };
         QueryGetCidSizeRequest: {
-            encode(message: _445.QueryGetCidSizeRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _445.QueryGetCidSizeRequest;
-            fromJSON(object: any): _445.QueryGetCidSizeRequest;
-            toJSON(message: _445.QueryGetCidSizeRequest): unknown;
+            encode(message: _513.QueryGetCidSizeRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _513.QueryGetCidSizeRequest;
+            fromJSON(object: any): _513.QueryGetCidSizeRequest;
+            toJSON(message: _513.QueryGetCidSizeRequest): unknown;
             fromPartial(object: {
                 cid?: string;
-            }): _445.QueryGetCidSizeRequest;
+            }): _513.QueryGetCidSizeRequest;
         };
         QueryGetCidSizeResponse: {
-            encode(message: _445.QueryGetCidSizeResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _445.QueryGetCidSizeResponse;
-            fromJSON(object: any): _445.QueryGetCidSizeResponse;
-            toJSON(message: _445.QueryGetCidSizeResponse): unknown;
+            encode(message: _513.QueryGetCidSizeResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _513.QueryGetCidSizeResponse;
+            fromJSON(object: any): _513.QueryGetCidSizeResponse;
+            toJSON(message: _513.QueryGetCidSizeResponse): unknown;
             fromPartial(object: {
                 size?: any;
-            }): _445.QueryGetCidSizeResponse;
+            }): _513.QueryGetCidSizeResponse;
         };
         QueryHasCidRequest: {
-            encode(message: _445.QueryHasCidRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _445.QueryHasCidRequest;
-            fromJSON(object: any): _445.QueryHasCidRequest;
-            toJSON(message: _445.QueryHasCidRequest): unknown;
+            encode(message: _513.QueryHasCidRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _513.QueryHasCidRequest;
+            fromJSON(object: any): _513.QueryHasCidRequest;
+            toJSON(message: _513.QueryHasCidRequest): unknown;
             fromPartial(object: {
                 cid?: string;
-            }): _445.QueryHasCidRequest;
+            }): _513.QueryHasCidRequest;
         };
         QueryHasCidResponse: {
-            encode(message: _445.QueryHasCidResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _445.QueryHasCidResponse;
-            fromJSON(object: any): _445.QueryHasCidResponse;
-            toJSON(message: _445.QueryHasCidResponse): unknown;
+            encode(message: _513.QueryHasCidResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _513.QueryHasCidResponse;
+            fromJSON(object: any): _513.QueryHasCidResponse;
+            toJSON(message: _513.QueryHasCidResponse): unknown;
             fromPartial(object: {
                 exist?: boolean;
-            }): _445.QueryHasCidResponse;
+            }): _513.QueryHasCidResponse;
         };
         Params: {
-            encode(message: _444.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _444.Params;
-            fromJSON(object: any): _444.Params;
-            toJSON(message: _444.Params): unknown;
+            encode(message: _512.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _512.Params;
+            fromJSON(object: any): _512.Params;
+            toJSON(message: _512.Params): unknown;
             fromPartial(object: {
                 registryName?: string;
                 feePerByte?: {
                     denom?: string;
                     amount?: string;
                 };
-            }): _444.Params;
+            }): _512.Params;
         };
         IscnIdPrefix: {
-            encode(message: _443.IscnIdPrefix, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _443.IscnIdPrefix;
-            fromJSON(object: any): _443.IscnIdPrefix;
-            toJSON(message: _443.IscnIdPrefix): unknown;
+            encode(message: _511.IscnIdPrefix, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _511.IscnIdPrefix;
+            fromJSON(object: any): _511.IscnIdPrefix;
+            toJSON(message: _511.IscnIdPrefix): unknown;
             fromPartial(object: {
                 registryName?: string;
                 contentId?: string;
-            }): _443.IscnIdPrefix;
+            }): _511.IscnIdPrefix;
         };
         IscnId: {
-            encode(message: _443.IscnId, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _443.IscnId;
-            fromJSON(object: any): _443.IscnId;
-            toJSON(message: _443.IscnId): unknown;
+            encode(message: _511.IscnId, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _511.IscnId;
+            fromJSON(object: any): _511.IscnId;
+            toJSON(message: _511.IscnId): unknown;
             fromPartial(object: {
                 prefix?: {
                     registryName?: string;
                     contentId?: string;
                 };
                 version?: any;
-            }): _443.IscnId;
+            }): _511.IscnId;
         };
         GenesisState: {
-            encode(message: _442.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _442.GenesisState;
-            fromJSON(object: any): _442.GenesisState;
-            toJSON(message: _442.GenesisState): unknown;
+            encode(message: _510.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _510.GenesisState;
+            fromJSON(object: any): _510.GenesisState;
+            toJSON(message: _510.GenesisState): unknown;
             fromPartial(object: {
                 params?: {
                     registryName?: string;
@@ -477,18 +477,18 @@ export declare namespace likechain {
                     latestVersion?: any;
                 }[];
                 iscnRecords?: Uint8Array[];
-            }): _442.GenesisState;
+            }): _510.GenesisState;
         };
         GenesisState_ContentIdRecord: {
-            encode(message: _442.GenesisState_ContentIdRecord, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _442.GenesisState_ContentIdRecord;
-            fromJSON(object: any): _442.GenesisState_ContentIdRecord;
-            toJSON(message: _442.GenesisState_ContentIdRecord): unknown;
+            encode(message: _510.GenesisState_ContentIdRecord, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _510.GenesisState_ContentIdRecord;
+            fromJSON(object: any): _510.GenesisState_ContentIdRecord;
+            toJSON(message: _510.GenesisState_ContentIdRecord): unknown;
             fromPartial(object: {
                 iscnId?: string;
                 owner?: string;
                 latestVersion?: any;
-            }): _442.GenesisState_ContentIdRecord;
+            }): _510.GenesisState_ContentIdRecord;
         };
     };
     namespace likenft {
@@ -497,223 +497,223 @@ export declare namespace likechain {
             load: (protoRegistry: import("@cosmjs/proto-signing").Registry) => void;
             MessageComposer: {
                 encoded: {
-                    newClass(value: _465.MsgNewClass): {
+                    newClass(value: _533.MsgNewClass): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updateClass(value: _465.MsgUpdateClass): {
+                    updateClass(value: _533.MsgUpdateClass): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    mintNFT(value: _465.MsgMintNFT): {
+                    mintNFT(value: _533.MsgMintNFT): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    burnNFT(value: _465.MsgBurnNFT): {
+                    burnNFT(value: _533.MsgBurnNFT): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    createBlindBoxContent(value: _465.MsgCreateBlindBoxContent): {
+                    createBlindBoxContent(value: _533.MsgCreateBlindBoxContent): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updateBlindBoxContent(value: _465.MsgUpdateBlindBoxContent): {
+                    updateBlindBoxContent(value: _533.MsgUpdateBlindBoxContent): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    deleteBlindBoxContent(value: _465.MsgDeleteBlindBoxContent): {
+                    deleteBlindBoxContent(value: _533.MsgDeleteBlindBoxContent): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    createOffer(value: _465.MsgCreateOffer): {
+                    createOffer(value: _533.MsgCreateOffer): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updateOffer(value: _465.MsgUpdateOffer): {
+                    updateOffer(value: _533.MsgUpdateOffer): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    deleteOffer(value: _465.MsgDeleteOffer): {
+                    deleteOffer(value: _533.MsgDeleteOffer): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    createListing(value: _465.MsgCreateListing): {
+                    createListing(value: _533.MsgCreateListing): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updateListing(value: _465.MsgUpdateListing): {
+                    updateListing(value: _533.MsgUpdateListing): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    deleteListing(value: _465.MsgDeleteListing): {
+                    deleteListing(value: _533.MsgDeleteListing): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    sellNFT(value: _465.MsgSellNFT): {
+                    sellNFT(value: _533.MsgSellNFT): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    buyNFT(value: _465.MsgBuyNFT): {
+                    buyNFT(value: _533.MsgBuyNFT): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    createRoyaltyConfig(value: _465.MsgCreateRoyaltyConfig): {
+                    createRoyaltyConfig(value: _533.MsgCreateRoyaltyConfig): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    updateRoyaltyConfig(value: _465.MsgUpdateRoyaltyConfig): {
+                    updateRoyaltyConfig(value: _533.MsgUpdateRoyaltyConfig): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
-                    deleteRoyaltyConfig(value: _465.MsgDeleteRoyaltyConfig): {
+                    deleteRoyaltyConfig(value: _533.MsgDeleteRoyaltyConfig): {
                         typeUrl: string;
                         value: Uint8Array;
                     };
                 };
                 withTypeUrl: {
-                    newClass(value: _465.MsgNewClass): {
+                    newClass(value: _533.MsgNewClass): {
                         typeUrl: string;
-                        value: _465.MsgNewClass;
+                        value: _533.MsgNewClass;
                     };
-                    updateClass(value: _465.MsgUpdateClass): {
+                    updateClass(value: _533.MsgUpdateClass): {
                         typeUrl: string;
-                        value: _465.MsgUpdateClass;
+                        value: _533.MsgUpdateClass;
                     };
-                    mintNFT(value: _465.MsgMintNFT): {
+                    mintNFT(value: _533.MsgMintNFT): {
                         typeUrl: string;
-                        value: _465.MsgMintNFT;
+                        value: _533.MsgMintNFT;
                     };
-                    burnNFT(value: _465.MsgBurnNFT): {
+                    burnNFT(value: _533.MsgBurnNFT): {
                         typeUrl: string;
-                        value: _465.MsgBurnNFT;
+                        value: _533.MsgBurnNFT;
                     };
-                    createBlindBoxContent(value: _465.MsgCreateBlindBoxContent): {
+                    createBlindBoxContent(value: _533.MsgCreateBlindBoxContent): {
                         typeUrl: string;
-                        value: _465.MsgCreateBlindBoxContent;
+                        value: _533.MsgCreateBlindBoxContent;
                     };
-                    updateBlindBoxContent(value: _465.MsgUpdateBlindBoxContent): {
+                    updateBlindBoxContent(value: _533.MsgUpdateBlindBoxContent): {
                         typeUrl: string;
-                        value: _465.MsgUpdateBlindBoxContent;
+                        value: _533.MsgUpdateBlindBoxContent;
                     };
-                    deleteBlindBoxContent(value: _465.MsgDeleteBlindBoxContent): {
+                    deleteBlindBoxContent(value: _533.MsgDeleteBlindBoxContent): {
                         typeUrl: string;
-                        value: _465.MsgDeleteBlindBoxContent;
+                        value: _533.MsgDeleteBlindBoxContent;
                     };
-                    createOffer(value: _465.MsgCreateOffer): {
+                    createOffer(value: _533.MsgCreateOffer): {
                         typeUrl: string;
-                        value: _465.MsgCreateOffer;
+                        value: _533.MsgCreateOffer;
                     };
-                    updateOffer(value: _465.MsgUpdateOffer): {
+                    updateOffer(value: _533.MsgUpdateOffer): {
                         typeUrl: string;
-                        value: _465.MsgUpdateOffer;
+                        value: _533.MsgUpdateOffer;
                     };
-                    deleteOffer(value: _465.MsgDeleteOffer): {
+                    deleteOffer(value: _533.MsgDeleteOffer): {
                         typeUrl: string;
-                        value: _465.MsgDeleteOffer;
+                        value: _533.MsgDeleteOffer;
                     };
-                    createListing(value: _465.MsgCreateListing): {
+                    createListing(value: _533.MsgCreateListing): {
                         typeUrl: string;
-                        value: _465.MsgCreateListing;
+                        value: _533.MsgCreateListing;
                     };
-                    updateListing(value: _465.MsgUpdateListing): {
+                    updateListing(value: _533.MsgUpdateListing): {
                         typeUrl: string;
-                        value: _465.MsgUpdateListing;
+                        value: _533.MsgUpdateListing;
                     };
-                    deleteListing(value: _465.MsgDeleteListing): {
+                    deleteListing(value: _533.MsgDeleteListing): {
                         typeUrl: string;
-                        value: _465.MsgDeleteListing;
+                        value: _533.MsgDeleteListing;
                     };
-                    sellNFT(value: _465.MsgSellNFT): {
+                    sellNFT(value: _533.MsgSellNFT): {
                         typeUrl: string;
-                        value: _465.MsgSellNFT;
+                        value: _533.MsgSellNFT;
                     };
-                    buyNFT(value: _465.MsgBuyNFT): {
+                    buyNFT(value: _533.MsgBuyNFT): {
                         typeUrl: string;
-                        value: _465.MsgBuyNFT;
+                        value: _533.MsgBuyNFT;
                     };
-                    createRoyaltyConfig(value: _465.MsgCreateRoyaltyConfig): {
+                    createRoyaltyConfig(value: _533.MsgCreateRoyaltyConfig): {
                         typeUrl: string;
-                        value: _465.MsgCreateRoyaltyConfig;
+                        value: _533.MsgCreateRoyaltyConfig;
                     };
-                    updateRoyaltyConfig(value: _465.MsgUpdateRoyaltyConfig): {
+                    updateRoyaltyConfig(value: _533.MsgUpdateRoyaltyConfig): {
                         typeUrl: string;
-                        value: _465.MsgUpdateRoyaltyConfig;
+                        value: _533.MsgUpdateRoyaltyConfig;
                     };
-                    deleteRoyaltyConfig(value: _465.MsgDeleteRoyaltyConfig): {
+                    deleteRoyaltyConfig(value: _533.MsgDeleteRoyaltyConfig): {
                         typeUrl: string;
-                        value: _465.MsgDeleteRoyaltyConfig;
+                        value: _533.MsgDeleteRoyaltyConfig;
                     };
                 };
                 toJSON: {
-                    newClass(value: _465.MsgNewClass): {
+                    newClass(value: _533.MsgNewClass): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updateClass(value: _465.MsgUpdateClass): {
+                    updateClass(value: _533.MsgUpdateClass): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    mintNFT(value: _465.MsgMintNFT): {
+                    mintNFT(value: _533.MsgMintNFT): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    burnNFT(value: _465.MsgBurnNFT): {
+                    burnNFT(value: _533.MsgBurnNFT): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    createBlindBoxContent(value: _465.MsgCreateBlindBoxContent): {
+                    createBlindBoxContent(value: _533.MsgCreateBlindBoxContent): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updateBlindBoxContent(value: _465.MsgUpdateBlindBoxContent): {
+                    updateBlindBoxContent(value: _533.MsgUpdateBlindBoxContent): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    deleteBlindBoxContent(value: _465.MsgDeleteBlindBoxContent): {
+                    deleteBlindBoxContent(value: _533.MsgDeleteBlindBoxContent): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    createOffer(value: _465.MsgCreateOffer): {
+                    createOffer(value: _533.MsgCreateOffer): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updateOffer(value: _465.MsgUpdateOffer): {
+                    updateOffer(value: _533.MsgUpdateOffer): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    deleteOffer(value: _465.MsgDeleteOffer): {
+                    deleteOffer(value: _533.MsgDeleteOffer): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    createListing(value: _465.MsgCreateListing): {
+                    createListing(value: _533.MsgCreateListing): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updateListing(value: _465.MsgUpdateListing): {
+                    updateListing(value: _533.MsgUpdateListing): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    deleteListing(value: _465.MsgDeleteListing): {
+                    deleteListing(value: _533.MsgDeleteListing): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    sellNFT(value: _465.MsgSellNFT): {
+                    sellNFT(value: _533.MsgSellNFT): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    buyNFT(value: _465.MsgBuyNFT): {
+                    buyNFT(value: _533.MsgBuyNFT): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    createRoyaltyConfig(value: _465.MsgCreateRoyaltyConfig): {
+                    createRoyaltyConfig(value: _533.MsgCreateRoyaltyConfig): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    updateRoyaltyConfig(value: _465.MsgUpdateRoyaltyConfig): {
+                    updateRoyaltyConfig(value: _533.MsgUpdateRoyaltyConfig): {
                         typeUrl: string;
                         value: unknown;
                     };
-                    deleteRoyaltyConfig(value: _465.MsgDeleteRoyaltyConfig): {
+                    deleteRoyaltyConfig(value: _533.MsgDeleteRoyaltyConfig): {
                         typeUrl: string;
                         value: unknown;
                     };
@@ -721,156 +721,156 @@ export declare namespace likechain {
                 fromJSON: {
                     newClass(value: any): {
                         typeUrl: string;
-                        value: _465.MsgNewClass;
+                        value: _533.MsgNewClass;
                     };
                     updateClass(value: any): {
                         typeUrl: string;
-                        value: _465.MsgUpdateClass;
+                        value: _533.MsgUpdateClass;
                     };
                     mintNFT(value: any): {
                         typeUrl: string;
-                        value: _465.MsgMintNFT;
+                        value: _533.MsgMintNFT;
                     };
                     burnNFT(value: any): {
                         typeUrl: string;
-                        value: _465.MsgBurnNFT;
+                        value: _533.MsgBurnNFT;
                     };
                     createBlindBoxContent(value: any): {
                         typeUrl: string;
-                        value: _465.MsgCreateBlindBoxContent;
+                        value: _533.MsgCreateBlindBoxContent;
                     };
                     updateBlindBoxContent(value: any): {
                         typeUrl: string;
-                        value: _465.MsgUpdateBlindBoxContent;
+                        value: _533.MsgUpdateBlindBoxContent;
                     };
                     deleteBlindBoxContent(value: any): {
                         typeUrl: string;
-                        value: _465.MsgDeleteBlindBoxContent;
+                        value: _533.MsgDeleteBlindBoxContent;
                     };
                     createOffer(value: any): {
                         typeUrl: string;
-                        value: _465.MsgCreateOffer;
+                        value: _533.MsgCreateOffer;
                     };
                     updateOffer(value: any): {
                         typeUrl: string;
-                        value: _465.MsgUpdateOffer;
+                        value: _533.MsgUpdateOffer;
                     };
                     deleteOffer(value: any): {
                         typeUrl: string;
-                        value: _465.MsgDeleteOffer;
+                        value: _533.MsgDeleteOffer;
                     };
                     createListing(value: any): {
                         typeUrl: string;
-                        value: _465.MsgCreateListing;
+                        value: _533.MsgCreateListing;
                     };
                     updateListing(value: any): {
                         typeUrl: string;
-                        value: _465.MsgUpdateListing;
+                        value: _533.MsgUpdateListing;
                     };
                     deleteListing(value: any): {
                         typeUrl: string;
-                        value: _465.MsgDeleteListing;
+                        value: _533.MsgDeleteListing;
                     };
                     sellNFT(value: any): {
                         typeUrl: string;
-                        value: _465.MsgSellNFT;
+                        value: _533.MsgSellNFT;
                     };
                     buyNFT(value: any): {
                         typeUrl: string;
-                        value: _465.MsgBuyNFT;
+                        value: _533.MsgBuyNFT;
                     };
                     createRoyaltyConfig(value: any): {
                         typeUrl: string;
-                        value: _465.MsgCreateRoyaltyConfig;
+                        value: _533.MsgCreateRoyaltyConfig;
                     };
                     updateRoyaltyConfig(value: any): {
                         typeUrl: string;
-                        value: _465.MsgUpdateRoyaltyConfig;
+                        value: _533.MsgUpdateRoyaltyConfig;
                     };
                     deleteRoyaltyConfig(value: any): {
                         typeUrl: string;
-                        value: _465.MsgDeleteRoyaltyConfig;
+                        value: _533.MsgDeleteRoyaltyConfig;
                     };
                 };
                 fromPartial: {
-                    newClass(value: _465.MsgNewClass): {
+                    newClass(value: _533.MsgNewClass): {
                         typeUrl: string;
-                        value: _465.MsgNewClass;
+                        value: _533.MsgNewClass;
                     };
-                    updateClass(value: _465.MsgUpdateClass): {
+                    updateClass(value: _533.MsgUpdateClass): {
                         typeUrl: string;
-                        value: _465.MsgUpdateClass;
+                        value: _533.MsgUpdateClass;
                     };
-                    mintNFT(value: _465.MsgMintNFT): {
+                    mintNFT(value: _533.MsgMintNFT): {
                         typeUrl: string;
-                        value: _465.MsgMintNFT;
+                        value: _533.MsgMintNFT;
                     };
-                    burnNFT(value: _465.MsgBurnNFT): {
+                    burnNFT(value: _533.MsgBurnNFT): {
                         typeUrl: string;
-                        value: _465.MsgBurnNFT;
+                        value: _533.MsgBurnNFT;
                     };
-                    createBlindBoxContent(value: _465.MsgCreateBlindBoxContent): {
+                    createBlindBoxContent(value: _533.MsgCreateBlindBoxContent): {
                         typeUrl: string;
-                        value: _465.MsgCreateBlindBoxContent;
+                        value: _533.MsgCreateBlindBoxContent;
                     };
-                    updateBlindBoxContent(value: _465.MsgUpdateBlindBoxContent): {
+                    updateBlindBoxContent(value: _533.MsgUpdateBlindBoxContent): {
                         typeUrl: string;
-                        value: _465.MsgUpdateBlindBoxContent;
+                        value: _533.MsgUpdateBlindBoxContent;
                     };
-                    deleteBlindBoxContent(value: _465.MsgDeleteBlindBoxContent): {
+                    deleteBlindBoxContent(value: _533.MsgDeleteBlindBoxContent): {
                         typeUrl: string;
-                        value: _465.MsgDeleteBlindBoxContent;
+                        value: _533.MsgDeleteBlindBoxContent;
                     };
-                    createOffer(value: _465.MsgCreateOffer): {
+                    createOffer(value: _533.MsgCreateOffer): {
                         typeUrl: string;
-                        value: _465.MsgCreateOffer;
+                        value: _533.MsgCreateOffer;
                     };
-                    updateOffer(value: _465.MsgUpdateOffer): {
+                    updateOffer(value: _533.MsgUpdateOffer): {
                         typeUrl: string;
-                        value: _465.MsgUpdateOffer;
+                        value: _533.MsgUpdateOffer;
                     };
-                    deleteOffer(value: _465.MsgDeleteOffer): {
+                    deleteOffer(value: _533.MsgDeleteOffer): {
                         typeUrl: string;
-                        value: _465.MsgDeleteOffer;
+                        value: _533.MsgDeleteOffer;
                     };
-                    createListing(value: _465.MsgCreateListing): {
+                    createListing(value: _533.MsgCreateListing): {
                         typeUrl: string;
-                        value: _465.MsgCreateListing;
+                        value: _533.MsgCreateListing;
                     };
-                    updateListing(value: _465.MsgUpdateListing): {
+                    updateListing(value: _533.MsgUpdateListing): {
                         typeUrl: string;
-                        value: _465.MsgUpdateListing;
+                        value: _533.MsgUpdateListing;
                     };
-                    deleteListing(value: _465.MsgDeleteListing): {
+                    deleteListing(value: _533.MsgDeleteListing): {
                         typeUrl: string;
-                        value: _465.MsgDeleteListing;
+                        value: _533.MsgDeleteListing;
                     };
-                    sellNFT(value: _465.MsgSellNFT): {
+                    sellNFT(value: _533.MsgSellNFT): {
                         typeUrl: string;
-                        value: _465.MsgSellNFT;
+                        value: _533.MsgSellNFT;
                     };
-                    buyNFT(value: _465.MsgBuyNFT): {
+                    buyNFT(value: _533.MsgBuyNFT): {
                         typeUrl: string;
-                        value: _465.MsgBuyNFT;
+                        value: _533.MsgBuyNFT;
                     };
-                    createRoyaltyConfig(value: _465.MsgCreateRoyaltyConfig): {
+                    createRoyaltyConfig(value: _533.MsgCreateRoyaltyConfig): {
                         typeUrl: string;
-                        value: _465.MsgCreateRoyaltyConfig;
+                        value: _533.MsgCreateRoyaltyConfig;
                     };
-                    updateRoyaltyConfig(value: _465.MsgUpdateRoyaltyConfig): {
+                    updateRoyaltyConfig(value: _533.MsgUpdateRoyaltyConfig): {
                         typeUrl: string;
-                        value: _465.MsgUpdateRoyaltyConfig;
+                        value: _533.MsgUpdateRoyaltyConfig;
                     };
-                    deleteRoyaltyConfig(value: _465.MsgDeleteRoyaltyConfig): {
+                    deleteRoyaltyConfig(value: _533.MsgDeleteRoyaltyConfig): {
                         typeUrl: string;
-                        value: _465.MsgDeleteRoyaltyConfig;
+                        value: _533.MsgDeleteRoyaltyConfig;
                     };
                 };
             };
             AminoConverter: {
                 "/likechain.likenft.v1.MsgNewClass": {
                     aminoType: string;
-                    toAmino: ({ creator, parent, input }: _465.MsgNewClass) => {
+                    toAmino: ({ creator, parent, input }: _533.MsgNewClass) => {
                         creator: string;
                         parent: {
                             type: number;
@@ -935,11 +935,11 @@ export declare namespace likechain {
                                 };
                             };
                         };
-                    }) => _465.MsgNewClass;
+                    }) => _533.MsgNewClass;
                 };
                 "/likechain.likenft.v1.MsgUpdateClass": {
                     aminoType: string;
-                    toAmino: ({ creator, classId, input }: _465.MsgUpdateClass) => {
+                    toAmino: ({ creator, classId, input }: _533.MsgUpdateClass) => {
                         creator: string;
                         class_id: string;
                         input: {
@@ -998,11 +998,11 @@ export declare namespace likechain {
                                 };
                             };
                         };
-                    }) => _465.MsgUpdateClass;
+                    }) => _533.MsgUpdateClass;
                 };
                 "/likechain.likenft.v1.MsgMintNFT": {
                     aminoType: string;
-                    toAmino: ({ creator, classId, id, input }: _465.MsgMintNFT) => {
+                    toAmino: ({ creator, classId, id, input }: _533.MsgMintNFT) => {
                         creator: string;
                         class_id: string;
                         id: string;
@@ -1021,11 +1021,11 @@ export declare namespace likechain {
                             uri_hash: string;
                             metadata: Uint8Array;
                         };
-                    }) => _465.MsgMintNFT;
+                    }) => _533.MsgMintNFT;
                 };
                 "/likechain.likenft.v1.MsgBurnNFT": {
                     aminoType: string;
-                    toAmino: ({ creator, classId, nftId }: _465.MsgBurnNFT) => {
+                    toAmino: ({ creator, classId, nftId }: _533.MsgBurnNFT) => {
                         creator: string;
                         class_id: string;
                         nft_id: string;
@@ -1034,11 +1034,11 @@ export declare namespace likechain {
                         creator: string;
                         class_id: string;
                         nft_id: string;
-                    }) => _465.MsgBurnNFT;
+                    }) => _533.MsgBurnNFT;
                 };
                 "/likechain.likenft.v1.MsgCreateBlindBoxContent": {
                     aminoType: string;
-                    toAmino: ({ creator, classId, id, input }: _465.MsgCreateBlindBoxContent) => {
+                    toAmino: ({ creator, classId, id, input }: _533.MsgCreateBlindBoxContent) => {
                         creator: string;
                         class_id: string;
                         id: string;
@@ -1057,11 +1057,11 @@ export declare namespace likechain {
                             uri_hash: string;
                             metadata: Uint8Array;
                         };
-                    }) => _465.MsgCreateBlindBoxContent;
+                    }) => _533.MsgCreateBlindBoxContent;
                 };
                 "/likechain.likenft.v1.MsgUpdateBlindBoxContent": {
                     aminoType: string;
-                    toAmino: ({ creator, classId, id, input }: _465.MsgUpdateBlindBoxContent) => {
+                    toAmino: ({ creator, classId, id, input }: _533.MsgUpdateBlindBoxContent) => {
                         creator: string;
                         class_id: string;
                         id: string;
@@ -1080,11 +1080,11 @@ export declare namespace likechain {
                             uri_hash: string;
                             metadata: Uint8Array;
                         };
-                    }) => _465.MsgUpdateBlindBoxContent;
+                    }) => _533.MsgUpdateBlindBoxContent;
                 };
                 "/likechain.likenft.v1.MsgDeleteBlindBoxContent": {
                     aminoType: string;
-                    toAmino: ({ creator, classId, id }: _465.MsgDeleteBlindBoxContent) => {
+                    toAmino: ({ creator, classId, id }: _533.MsgDeleteBlindBoxContent) => {
                         creator: string;
                         class_id: string;
                         id: string;
@@ -1093,11 +1093,11 @@ export declare namespace likechain {
                         creator: string;
                         class_id: string;
                         id: string;
-                    }) => _465.MsgDeleteBlindBoxContent;
+                    }) => _533.MsgDeleteBlindBoxContent;
                 };
                 "/likechain.likenft.v1.MsgCreateOffer": {
                     aminoType: string;
-                    toAmino: ({ creator, classId, nftId, price, expiration }: _465.MsgCreateOffer) => {
+                    toAmino: ({ creator, classId, nftId, price, expiration }: _533.MsgCreateOffer) => {
                         creator: string;
                         class_id: string;
                         nft_id: string;
@@ -1116,11 +1116,11 @@ export declare namespace likechain {
                             seconds: string;
                             nanos: number;
                         };
-                    }) => _465.MsgCreateOffer;
+                    }) => _533.MsgCreateOffer;
                 };
                 "/likechain.likenft.v1.MsgUpdateOffer": {
                     aminoType: string;
-                    toAmino: ({ creator, classId, nftId, price, expiration }: _465.MsgUpdateOffer) => {
+                    toAmino: ({ creator, classId, nftId, price, expiration }: _533.MsgUpdateOffer) => {
                         creator: string;
                         class_id: string;
                         nft_id: string;
@@ -1139,11 +1139,11 @@ export declare namespace likechain {
                             seconds: string;
                             nanos: number;
                         };
-                    }) => _465.MsgUpdateOffer;
+                    }) => _533.MsgUpdateOffer;
                 };
                 "/likechain.likenft.v1.MsgDeleteOffer": {
                     aminoType: string;
-                    toAmino: ({ creator, classId, nftId }: _465.MsgDeleteOffer) => {
+                    toAmino: ({ creator, classId, nftId }: _533.MsgDeleteOffer) => {
                         creator: string;
                         class_id: string;
                         nft_id: string;
@@ -1152,11 +1152,11 @@ export declare namespace likechain {
                         creator: string;
                         class_id: string;
                         nft_id: string;
-                    }) => _465.MsgDeleteOffer;
+                    }) => _533.MsgDeleteOffer;
                 };
                 "/likechain.likenft.v1.MsgCreateListing": {
                     aminoType: string;
-                    toAmino: ({ creator, classId, nftId, price, expiration }: _465.MsgCreateListing) => {
+                    toAmino: ({ creator, classId, nftId, price, expiration }: _533.MsgCreateListing) => {
                         creator: string;
                         class_id: string;
                         nft_id: string;
@@ -1175,11 +1175,11 @@ export declare namespace likechain {
                             seconds: string;
                             nanos: number;
                         };
-                    }) => _465.MsgCreateListing;
+                    }) => _533.MsgCreateListing;
                 };
                 "/likechain.likenft.v1.MsgUpdateListing": {
                     aminoType: string;
-                    toAmino: ({ creator, classId, nftId, price, expiration }: _465.MsgUpdateListing) => {
+                    toAmino: ({ creator, classId, nftId, price, expiration }: _533.MsgUpdateListing) => {
                         creator: string;
                         class_id: string;
                         nft_id: string;
@@ -1198,11 +1198,11 @@ export declare namespace likechain {
                             seconds: string;
                             nanos: number;
                         };
-                    }) => _465.MsgUpdateListing;
+                    }) => _533.MsgUpdateListing;
                 };
                 "/likechain.likenft.v1.MsgDeleteListing": {
                     aminoType: string;
-                    toAmino: ({ creator, classId, nftId }: _465.MsgDeleteListing) => {
+                    toAmino: ({ creator, classId, nftId }: _533.MsgDeleteListing) => {
                         creator: string;
                         class_id: string;
                         nft_id: string;
@@ -1211,11 +1211,11 @@ export declare namespace likechain {
                         creator: string;
                         class_id: string;
                         nft_id: string;
-                    }) => _465.MsgDeleteListing;
+                    }) => _533.MsgDeleteListing;
                 };
                 "/likechain.likenft.v1.MsgSellNFT": {
                     aminoType: string;
-                    toAmino: ({ creator, classId, nftId, buyer, price }: _465.MsgSellNFT) => {
+                    toAmino: ({ creator, classId, nftId, buyer, price }: _533.MsgSellNFT) => {
                         creator: string;
                         class_id: string;
                         nft_id: string;
@@ -1228,11 +1228,11 @@ export declare namespace likechain {
                         nft_id: string;
                         buyer: string;
                         price: string;
-                    }) => _465.MsgSellNFT;
+                    }) => _533.MsgSellNFT;
                 };
                 "/likechain.likenft.v1.MsgBuyNFT": {
                     aminoType: string;
-                    toAmino: ({ creator, classId, nftId, seller, price }: _465.MsgBuyNFT) => {
+                    toAmino: ({ creator, classId, nftId, seller, price }: _533.MsgBuyNFT) => {
                         creator: string;
                         class_id: string;
                         nft_id: string;
@@ -1245,11 +1245,11 @@ export declare namespace likechain {
                         nft_id: string;
                         seller: string;
                         price: string;
-                    }) => _465.MsgBuyNFT;
+                    }) => _533.MsgBuyNFT;
                 };
                 "/likechain.likenft.v1.MsgCreateRoyaltyConfig": {
                     aminoType: string;
-                    toAmino: ({ creator, classId, royaltyConfig }: _465.MsgCreateRoyaltyConfig) => {
+                    toAmino: ({ creator, classId, royaltyConfig }: _533.MsgCreateRoyaltyConfig) => {
                         creator: string;
                         class_id: string;
                         royalty_config: {
@@ -1270,11 +1270,11 @@ export declare namespace likechain {
                                 weight: string;
                             }[];
                         };
-                    }) => _465.MsgCreateRoyaltyConfig;
+                    }) => _533.MsgCreateRoyaltyConfig;
                 };
                 "/likechain.likenft.v1.MsgUpdateRoyaltyConfig": {
                     aminoType: string;
-                    toAmino: ({ creator, classId, royaltyConfig }: _465.MsgUpdateRoyaltyConfig) => {
+                    toAmino: ({ creator, classId, royaltyConfig }: _533.MsgUpdateRoyaltyConfig) => {
                         creator: string;
                         class_id: string;
                         royalty_config: {
@@ -1295,29 +1295,29 @@ export declare namespace likechain {
                                 weight: string;
                             }[];
                         };
-                    }) => _465.MsgUpdateRoyaltyConfig;
+                    }) => _533.MsgUpdateRoyaltyConfig;
                 };
                 "/likechain.likenft.v1.MsgDeleteRoyaltyConfig": {
                     aminoType: string;
-                    toAmino: ({ creator, classId }: _465.MsgDeleteRoyaltyConfig) => {
+                    toAmino: ({ creator, classId }: _533.MsgDeleteRoyaltyConfig) => {
                         creator: string;
                         class_id: string;
                     };
                     fromAmino: ({ creator, class_id }: {
                         creator: string;
                         class_id: string;
-                    }) => _465.MsgDeleteRoyaltyConfig;
+                    }) => _533.MsgDeleteRoyaltyConfig;
                 };
             };
             MsgNewClass: {
-                encode(message: _465.MsgNewClass, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgNewClass;
-                fromJSON(object: any): _465.MsgNewClass;
-                toJSON(message: _465.MsgNewClass): unknown;
+                encode(message: _533.MsgNewClass, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgNewClass;
+                fromJSON(object: any): _533.MsgNewClass;
+                toJSON(message: _533.MsgNewClass): unknown;
                 fromPartial(object: {
                     creator?: string;
                     parent?: {
-                        type?: _449.ClassParentType;
+                        type?: _517.ClassParentType;
                         iscnIdPrefix?: string;
                     };
                     input?: {
@@ -1346,13 +1346,13 @@ export declare namespace likechain {
                             };
                         };
                     };
-                }): _465.MsgNewClass;
+                }): _533.MsgNewClass;
             };
             MsgNewClassResponse: {
-                encode(message: _465.MsgNewClassResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgNewClassResponse;
-                fromJSON(object: any): _465.MsgNewClassResponse;
-                toJSON(message: _465.MsgNewClassResponse): unknown;
+                encode(message: _533.MsgNewClassResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgNewClassResponse;
+                fromJSON(object: any): _533.MsgNewClassResponse;
+                toJSON(message: _533.MsgNewClassResponse): unknown;
                 fromPartial(object: {
                     class?: {
                         id?: string;
@@ -1366,13 +1366,13 @@ export declare namespace likechain {
                             value?: Uint8Array;
                         };
                     };
-                }): _465.MsgNewClassResponse;
+                }): _533.MsgNewClassResponse;
             };
             MsgUpdateClass: {
-                encode(message: _465.MsgUpdateClass, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgUpdateClass;
-                fromJSON(object: any): _465.MsgUpdateClass;
-                toJSON(message: _465.MsgUpdateClass): unknown;
+                encode(message: _533.MsgUpdateClass, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgUpdateClass;
+                fromJSON(object: any): _533.MsgUpdateClass;
+                toJSON(message: _533.MsgUpdateClass): unknown;
                 fromPartial(object: {
                     creator?: string;
                     classId?: string;
@@ -1402,13 +1402,13 @@ export declare namespace likechain {
                             };
                         };
                     };
-                }): _465.MsgUpdateClass;
+                }): _533.MsgUpdateClass;
             };
             MsgUpdateClassResponse: {
-                encode(message: _465.MsgUpdateClassResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgUpdateClassResponse;
-                fromJSON(object: any): _465.MsgUpdateClassResponse;
-                toJSON(message: _465.MsgUpdateClassResponse): unknown;
+                encode(message: _533.MsgUpdateClassResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgUpdateClassResponse;
+                fromJSON(object: any): _533.MsgUpdateClassResponse;
+                toJSON(message: _533.MsgUpdateClassResponse): unknown;
                 fromPartial(object: {
                     class?: {
                         id?: string;
@@ -1422,13 +1422,13 @@ export declare namespace likechain {
                             value?: Uint8Array;
                         };
                     };
-                }): _465.MsgUpdateClassResponse;
+                }): _533.MsgUpdateClassResponse;
             };
             MsgMintNFT: {
-                encode(message: _465.MsgMintNFT, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgMintNFT;
-                fromJSON(object: any): _465.MsgMintNFT;
-                toJSON(message: _465.MsgMintNFT): unknown;
+                encode(message: _533.MsgMintNFT, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgMintNFT;
+                fromJSON(object: any): _533.MsgMintNFT;
+                toJSON(message: _533.MsgMintNFT): unknown;
                 fromPartial(object: {
                     creator?: string;
                     classId?: string;
@@ -1438,13 +1438,13 @@ export declare namespace likechain {
                         uriHash?: string;
                         metadata?: Uint8Array;
                     };
-                }): _465.MsgMintNFT;
+                }): _533.MsgMintNFT;
             };
             MsgMintNFTResponse: {
-                encode(message: _465.MsgMintNFTResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgMintNFTResponse;
-                fromJSON(object: any): _465.MsgMintNFTResponse;
-                toJSON(message: _465.MsgMintNFTResponse): unknown;
+                encode(message: _533.MsgMintNFTResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgMintNFTResponse;
+                fromJSON(object: any): _533.MsgMintNFTResponse;
+                toJSON(message: _533.MsgMintNFTResponse): unknown;
                 fromPartial(object: {
                     nft?: {
                         classId?: string;
@@ -1456,31 +1456,31 @@ export declare namespace likechain {
                             value?: Uint8Array;
                         };
                     };
-                }): _465.MsgMintNFTResponse;
+                }): _533.MsgMintNFTResponse;
             };
             MsgBurnNFT: {
-                encode(message: _465.MsgBurnNFT, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgBurnNFT;
-                fromJSON(object: any): _465.MsgBurnNFT;
-                toJSON(message: _465.MsgBurnNFT): unknown;
+                encode(message: _533.MsgBurnNFT, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgBurnNFT;
+                fromJSON(object: any): _533.MsgBurnNFT;
+                toJSON(message: _533.MsgBurnNFT): unknown;
                 fromPartial(object: {
                     creator?: string;
                     classId?: string;
                     nftId?: string;
-                }): _465.MsgBurnNFT;
+                }): _533.MsgBurnNFT;
             };
             MsgBurnNFTResponse: {
-                encode(_: _465.MsgBurnNFTResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgBurnNFTResponse;
-                fromJSON(_: any): _465.MsgBurnNFTResponse;
-                toJSON(_: _465.MsgBurnNFTResponse): unknown;
-                fromPartial(_: {}): _465.MsgBurnNFTResponse;
+                encode(_: _533.MsgBurnNFTResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgBurnNFTResponse;
+                fromJSON(_: any): _533.MsgBurnNFTResponse;
+                toJSON(_: _533.MsgBurnNFTResponse): unknown;
+                fromPartial(_: {}): _533.MsgBurnNFTResponse;
             };
             MsgCreateBlindBoxContent: {
-                encode(message: _465.MsgCreateBlindBoxContent, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgCreateBlindBoxContent;
-                fromJSON(object: any): _465.MsgCreateBlindBoxContent;
-                toJSON(message: _465.MsgCreateBlindBoxContent): unknown;
+                encode(message: _533.MsgCreateBlindBoxContent, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgCreateBlindBoxContent;
+                fromJSON(object: any): _533.MsgCreateBlindBoxContent;
+                toJSON(message: _533.MsgCreateBlindBoxContent): unknown;
                 fromPartial(object: {
                     creator?: string;
                     classId?: string;
@@ -1490,13 +1490,13 @@ export declare namespace likechain {
                         uriHash?: string;
                         metadata?: Uint8Array;
                     };
-                }): _465.MsgCreateBlindBoxContent;
+                }): _533.MsgCreateBlindBoxContent;
             };
             MsgCreateBlindBoxContentResponse: {
-                encode(message: _465.MsgCreateBlindBoxContentResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgCreateBlindBoxContentResponse;
-                fromJSON(object: any): _465.MsgCreateBlindBoxContentResponse;
-                toJSON(message: _465.MsgCreateBlindBoxContentResponse): unknown;
+                encode(message: _533.MsgCreateBlindBoxContentResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgCreateBlindBoxContentResponse;
+                fromJSON(object: any): _533.MsgCreateBlindBoxContentResponse;
+                toJSON(message: _533.MsgCreateBlindBoxContentResponse): unknown;
                 fromPartial(object: {
                     blindBoxContent?: {
                         classId?: string;
@@ -1507,13 +1507,13 @@ export declare namespace likechain {
                             metadata?: Uint8Array;
                         };
                     };
-                }): _465.MsgCreateBlindBoxContentResponse;
+                }): _533.MsgCreateBlindBoxContentResponse;
             };
             MsgUpdateBlindBoxContent: {
-                encode(message: _465.MsgUpdateBlindBoxContent, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgUpdateBlindBoxContent;
-                fromJSON(object: any): _465.MsgUpdateBlindBoxContent;
-                toJSON(message: _465.MsgUpdateBlindBoxContent): unknown;
+                encode(message: _533.MsgUpdateBlindBoxContent, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgUpdateBlindBoxContent;
+                fromJSON(object: any): _533.MsgUpdateBlindBoxContent;
+                toJSON(message: _533.MsgUpdateBlindBoxContent): unknown;
                 fromPartial(object: {
                     creator?: string;
                     classId?: string;
@@ -1523,13 +1523,13 @@ export declare namespace likechain {
                         uriHash?: string;
                         metadata?: Uint8Array;
                     };
-                }): _465.MsgUpdateBlindBoxContent;
+                }): _533.MsgUpdateBlindBoxContent;
             };
             MsgUpdateBlindBoxContentResponse: {
-                encode(message: _465.MsgUpdateBlindBoxContentResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgUpdateBlindBoxContentResponse;
-                fromJSON(object: any): _465.MsgUpdateBlindBoxContentResponse;
-                toJSON(message: _465.MsgUpdateBlindBoxContentResponse): unknown;
+                encode(message: _533.MsgUpdateBlindBoxContentResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgUpdateBlindBoxContentResponse;
+                fromJSON(object: any): _533.MsgUpdateBlindBoxContentResponse;
+                toJSON(message: _533.MsgUpdateBlindBoxContentResponse): unknown;
                 fromPartial(object: {
                     blindBoxContent?: {
                         classId?: string;
@@ -1540,31 +1540,31 @@ export declare namespace likechain {
                             metadata?: Uint8Array;
                         };
                     };
-                }): _465.MsgUpdateBlindBoxContentResponse;
+                }): _533.MsgUpdateBlindBoxContentResponse;
             };
             MsgDeleteBlindBoxContent: {
-                encode(message: _465.MsgDeleteBlindBoxContent, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgDeleteBlindBoxContent;
-                fromJSON(object: any): _465.MsgDeleteBlindBoxContent;
-                toJSON(message: _465.MsgDeleteBlindBoxContent): unknown;
+                encode(message: _533.MsgDeleteBlindBoxContent, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgDeleteBlindBoxContent;
+                fromJSON(object: any): _533.MsgDeleteBlindBoxContent;
+                toJSON(message: _533.MsgDeleteBlindBoxContent): unknown;
                 fromPartial(object: {
                     creator?: string;
                     classId?: string;
                     id?: string;
-                }): _465.MsgDeleteBlindBoxContent;
+                }): _533.MsgDeleteBlindBoxContent;
             };
             MsgDeleteBlindBoxContentResponse: {
-                encode(_: _465.MsgDeleteBlindBoxContentResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgDeleteBlindBoxContentResponse;
-                fromJSON(_: any): _465.MsgDeleteBlindBoxContentResponse;
-                toJSON(_: _465.MsgDeleteBlindBoxContentResponse): unknown;
-                fromPartial(_: {}): _465.MsgDeleteBlindBoxContentResponse;
+                encode(_: _533.MsgDeleteBlindBoxContentResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgDeleteBlindBoxContentResponse;
+                fromJSON(_: any): _533.MsgDeleteBlindBoxContentResponse;
+                toJSON(_: _533.MsgDeleteBlindBoxContentResponse): unknown;
+                fromPartial(_: {}): _533.MsgDeleteBlindBoxContentResponse;
             };
             MsgCreateOffer: {
-                encode(message: _465.MsgCreateOffer, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgCreateOffer;
-                fromJSON(object: any): _465.MsgCreateOffer;
-                toJSON(message: _465.MsgCreateOffer): unknown;
+                encode(message: _533.MsgCreateOffer, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgCreateOffer;
+                fromJSON(object: any): _533.MsgCreateOffer;
+                toJSON(message: _533.MsgCreateOffer): unknown;
                 fromPartial(object: {
                     creator?: string;
                     classId?: string;
@@ -1574,13 +1574,13 @@ export declare namespace likechain {
                         seconds?: any;
                         nanos?: number;
                     };
-                }): _465.MsgCreateOffer;
+                }): _533.MsgCreateOffer;
             };
             MsgCreateOfferResponse: {
-                encode(message: _465.MsgCreateOfferResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgCreateOfferResponse;
-                fromJSON(object: any): _465.MsgCreateOfferResponse;
-                toJSON(message: _465.MsgCreateOfferResponse): unknown;
+                encode(message: _533.MsgCreateOfferResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgCreateOfferResponse;
+                fromJSON(object: any): _533.MsgCreateOfferResponse;
+                toJSON(message: _533.MsgCreateOfferResponse): unknown;
                 fromPartial(object: {
                     offer?: {
                         classId?: string;
@@ -1592,13 +1592,13 @@ export declare namespace likechain {
                             nanos?: number;
                         };
                     };
-                }): _465.MsgCreateOfferResponse;
+                }): _533.MsgCreateOfferResponse;
             };
             MsgUpdateOffer: {
-                encode(message: _465.MsgUpdateOffer, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgUpdateOffer;
-                fromJSON(object: any): _465.MsgUpdateOffer;
-                toJSON(message: _465.MsgUpdateOffer): unknown;
+                encode(message: _533.MsgUpdateOffer, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgUpdateOffer;
+                fromJSON(object: any): _533.MsgUpdateOffer;
+                toJSON(message: _533.MsgUpdateOffer): unknown;
                 fromPartial(object: {
                     creator?: string;
                     classId?: string;
@@ -1608,13 +1608,13 @@ export declare namespace likechain {
                         seconds?: any;
                         nanos?: number;
                     };
-                }): _465.MsgUpdateOffer;
+                }): _533.MsgUpdateOffer;
             };
             MsgUpdateOfferResponse: {
-                encode(message: _465.MsgUpdateOfferResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgUpdateOfferResponse;
-                fromJSON(object: any): _465.MsgUpdateOfferResponse;
-                toJSON(message: _465.MsgUpdateOfferResponse): unknown;
+                encode(message: _533.MsgUpdateOfferResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgUpdateOfferResponse;
+                fromJSON(object: any): _533.MsgUpdateOfferResponse;
+                toJSON(message: _533.MsgUpdateOfferResponse): unknown;
                 fromPartial(object: {
                     offer?: {
                         classId?: string;
@@ -1626,31 +1626,31 @@ export declare namespace likechain {
                             nanos?: number;
                         };
                     };
-                }): _465.MsgUpdateOfferResponse;
+                }): _533.MsgUpdateOfferResponse;
             };
             MsgDeleteOffer: {
-                encode(message: _465.MsgDeleteOffer, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgDeleteOffer;
-                fromJSON(object: any): _465.MsgDeleteOffer;
-                toJSON(message: _465.MsgDeleteOffer): unknown;
+                encode(message: _533.MsgDeleteOffer, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgDeleteOffer;
+                fromJSON(object: any): _533.MsgDeleteOffer;
+                toJSON(message: _533.MsgDeleteOffer): unknown;
                 fromPartial(object: {
                     creator?: string;
                     classId?: string;
                     nftId?: string;
-                }): _465.MsgDeleteOffer;
+                }): _533.MsgDeleteOffer;
             };
             MsgDeleteOfferResponse: {
-                encode(_: _465.MsgDeleteOfferResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgDeleteOfferResponse;
-                fromJSON(_: any): _465.MsgDeleteOfferResponse;
-                toJSON(_: _465.MsgDeleteOfferResponse): unknown;
-                fromPartial(_: {}): _465.MsgDeleteOfferResponse;
+                encode(_: _533.MsgDeleteOfferResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgDeleteOfferResponse;
+                fromJSON(_: any): _533.MsgDeleteOfferResponse;
+                toJSON(_: _533.MsgDeleteOfferResponse): unknown;
+                fromPartial(_: {}): _533.MsgDeleteOfferResponse;
             };
             MsgCreateListing: {
-                encode(message: _465.MsgCreateListing, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgCreateListing;
-                fromJSON(object: any): _465.MsgCreateListing;
-                toJSON(message: _465.MsgCreateListing): unknown;
+                encode(message: _533.MsgCreateListing, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgCreateListing;
+                fromJSON(object: any): _533.MsgCreateListing;
+                toJSON(message: _533.MsgCreateListing): unknown;
                 fromPartial(object: {
                     creator?: string;
                     classId?: string;
@@ -1660,13 +1660,13 @@ export declare namespace likechain {
                         seconds?: any;
                         nanos?: number;
                     };
-                }): _465.MsgCreateListing;
+                }): _533.MsgCreateListing;
             };
             MsgCreateListingResponse: {
-                encode(message: _465.MsgCreateListingResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgCreateListingResponse;
-                fromJSON(object: any): _465.MsgCreateListingResponse;
-                toJSON(message: _465.MsgCreateListingResponse): unknown;
+                encode(message: _533.MsgCreateListingResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgCreateListingResponse;
+                fromJSON(object: any): _533.MsgCreateListingResponse;
+                toJSON(message: _533.MsgCreateListingResponse): unknown;
                 fromPartial(object: {
                     listing?: {
                         classId?: string;
@@ -1678,13 +1678,13 @@ export declare namespace likechain {
                             nanos?: number;
                         };
                     };
-                }): _465.MsgCreateListingResponse;
+                }): _533.MsgCreateListingResponse;
             };
             MsgUpdateListing: {
-                encode(message: _465.MsgUpdateListing, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgUpdateListing;
-                fromJSON(object: any): _465.MsgUpdateListing;
-                toJSON(message: _465.MsgUpdateListing): unknown;
+                encode(message: _533.MsgUpdateListing, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgUpdateListing;
+                fromJSON(object: any): _533.MsgUpdateListing;
+                toJSON(message: _533.MsgUpdateListing): unknown;
                 fromPartial(object: {
                     creator?: string;
                     classId?: string;
@@ -1694,13 +1694,13 @@ export declare namespace likechain {
                         seconds?: any;
                         nanos?: number;
                     };
-                }): _465.MsgUpdateListing;
+                }): _533.MsgUpdateListing;
             };
             MsgUpdateListingResponse: {
-                encode(message: _465.MsgUpdateListingResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgUpdateListingResponse;
-                fromJSON(object: any): _465.MsgUpdateListingResponse;
-                toJSON(message: _465.MsgUpdateListingResponse): unknown;
+                encode(message: _533.MsgUpdateListingResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgUpdateListingResponse;
+                fromJSON(object: any): _533.MsgUpdateListingResponse;
+                toJSON(message: _533.MsgUpdateListingResponse): unknown;
                 fromPartial(object: {
                     listing?: {
                         classId?: string;
@@ -1712,71 +1712,71 @@ export declare namespace likechain {
                             nanos?: number;
                         };
                     };
-                }): _465.MsgUpdateListingResponse;
+                }): _533.MsgUpdateListingResponse;
             };
             MsgDeleteListing: {
-                encode(message: _465.MsgDeleteListing, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgDeleteListing;
-                fromJSON(object: any): _465.MsgDeleteListing;
-                toJSON(message: _465.MsgDeleteListing): unknown;
+                encode(message: _533.MsgDeleteListing, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgDeleteListing;
+                fromJSON(object: any): _533.MsgDeleteListing;
+                toJSON(message: _533.MsgDeleteListing): unknown;
                 fromPartial(object: {
                     creator?: string;
                     classId?: string;
                     nftId?: string;
-                }): _465.MsgDeleteListing;
+                }): _533.MsgDeleteListing;
             };
             MsgDeleteListingResponse: {
-                encode(_: _465.MsgDeleteListingResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgDeleteListingResponse;
-                fromJSON(_: any): _465.MsgDeleteListingResponse;
-                toJSON(_: _465.MsgDeleteListingResponse): unknown;
-                fromPartial(_: {}): _465.MsgDeleteListingResponse;
+                encode(_: _533.MsgDeleteListingResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgDeleteListingResponse;
+                fromJSON(_: any): _533.MsgDeleteListingResponse;
+                toJSON(_: _533.MsgDeleteListingResponse): unknown;
+                fromPartial(_: {}): _533.MsgDeleteListingResponse;
             };
             MsgSellNFT: {
-                encode(message: _465.MsgSellNFT, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgSellNFT;
-                fromJSON(object: any): _465.MsgSellNFT;
-                toJSON(message: _465.MsgSellNFT): unknown;
+                encode(message: _533.MsgSellNFT, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgSellNFT;
+                fromJSON(object: any): _533.MsgSellNFT;
+                toJSON(message: _533.MsgSellNFT): unknown;
                 fromPartial(object: {
                     creator?: string;
                     classId?: string;
                     nftId?: string;
                     buyer?: string;
                     price?: any;
-                }): _465.MsgSellNFT;
+                }): _533.MsgSellNFT;
             };
             MsgSellNFTResponse: {
-                encode(_: _465.MsgSellNFTResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgSellNFTResponse;
-                fromJSON(_: any): _465.MsgSellNFTResponse;
-                toJSON(_: _465.MsgSellNFTResponse): unknown;
-                fromPartial(_: {}): _465.MsgSellNFTResponse;
+                encode(_: _533.MsgSellNFTResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgSellNFTResponse;
+                fromJSON(_: any): _533.MsgSellNFTResponse;
+                toJSON(_: _533.MsgSellNFTResponse): unknown;
+                fromPartial(_: {}): _533.MsgSellNFTResponse;
             };
             MsgBuyNFT: {
-                encode(message: _465.MsgBuyNFT, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgBuyNFT;
-                fromJSON(object: any): _465.MsgBuyNFT;
-                toJSON(message: _465.MsgBuyNFT): unknown;
+                encode(message: _533.MsgBuyNFT, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgBuyNFT;
+                fromJSON(object: any): _533.MsgBuyNFT;
+                toJSON(message: _533.MsgBuyNFT): unknown;
                 fromPartial(object: {
                     creator?: string;
                     classId?: string;
                     nftId?: string;
                     seller?: string;
                     price?: any;
-                }): _465.MsgBuyNFT;
+                }): _533.MsgBuyNFT;
             };
             MsgBuyNFTResponse: {
-                encode(_: _465.MsgBuyNFTResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgBuyNFTResponse;
-                fromJSON(_: any): _465.MsgBuyNFTResponse;
-                toJSON(_: _465.MsgBuyNFTResponse): unknown;
-                fromPartial(_: {}): _465.MsgBuyNFTResponse;
+                encode(_: _533.MsgBuyNFTResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgBuyNFTResponse;
+                fromJSON(_: any): _533.MsgBuyNFTResponse;
+                toJSON(_: _533.MsgBuyNFTResponse): unknown;
+                fromPartial(_: {}): _533.MsgBuyNFTResponse;
             };
             MsgCreateRoyaltyConfig: {
-                encode(message: _465.MsgCreateRoyaltyConfig, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgCreateRoyaltyConfig;
-                fromJSON(object: any): _465.MsgCreateRoyaltyConfig;
-                toJSON(message: _465.MsgCreateRoyaltyConfig): unknown;
+                encode(message: _533.MsgCreateRoyaltyConfig, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgCreateRoyaltyConfig;
+                fromJSON(object: any): _533.MsgCreateRoyaltyConfig;
+                toJSON(message: _533.MsgCreateRoyaltyConfig): unknown;
                 fromPartial(object: {
                     creator?: string;
                     classId?: string;
@@ -1787,13 +1787,13 @@ export declare namespace likechain {
                             weight?: any;
                         }[];
                     };
-                }): _465.MsgCreateRoyaltyConfig;
+                }): _533.MsgCreateRoyaltyConfig;
             };
             MsgCreateRoyaltyConfigResponse: {
-                encode(message: _465.MsgCreateRoyaltyConfigResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgCreateRoyaltyConfigResponse;
-                fromJSON(object: any): _465.MsgCreateRoyaltyConfigResponse;
-                toJSON(message: _465.MsgCreateRoyaltyConfigResponse): unknown;
+                encode(message: _533.MsgCreateRoyaltyConfigResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgCreateRoyaltyConfigResponse;
+                fromJSON(object: any): _533.MsgCreateRoyaltyConfigResponse;
+                toJSON(message: _533.MsgCreateRoyaltyConfigResponse): unknown;
                 fromPartial(object: {
                     royaltyConfig?: {
                         rateBasisPoints?: any;
@@ -1802,13 +1802,13 @@ export declare namespace likechain {
                             weight?: any;
                         }[];
                     };
-                }): _465.MsgCreateRoyaltyConfigResponse;
+                }): _533.MsgCreateRoyaltyConfigResponse;
             };
             MsgUpdateRoyaltyConfig: {
-                encode(message: _465.MsgUpdateRoyaltyConfig, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgUpdateRoyaltyConfig;
-                fromJSON(object: any): _465.MsgUpdateRoyaltyConfig;
-                toJSON(message: _465.MsgUpdateRoyaltyConfig): unknown;
+                encode(message: _533.MsgUpdateRoyaltyConfig, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgUpdateRoyaltyConfig;
+                fromJSON(object: any): _533.MsgUpdateRoyaltyConfig;
+                toJSON(message: _533.MsgUpdateRoyaltyConfig): unknown;
                 fromPartial(object: {
                     creator?: string;
                     classId?: string;
@@ -1819,13 +1819,13 @@ export declare namespace likechain {
                             weight?: any;
                         }[];
                     };
-                }): _465.MsgUpdateRoyaltyConfig;
+                }): _533.MsgUpdateRoyaltyConfig;
             };
             MsgUpdateRoyaltyConfigResponse: {
-                encode(message: _465.MsgUpdateRoyaltyConfigResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgUpdateRoyaltyConfigResponse;
-                fromJSON(object: any): _465.MsgUpdateRoyaltyConfigResponse;
-                toJSON(message: _465.MsgUpdateRoyaltyConfigResponse): unknown;
+                encode(message: _533.MsgUpdateRoyaltyConfigResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgUpdateRoyaltyConfigResponse;
+                fromJSON(object: any): _533.MsgUpdateRoyaltyConfigResponse;
+                toJSON(message: _533.MsgUpdateRoyaltyConfigResponse): unknown;
                 fromPartial(object: {
                     royaltyConfig?: {
                         rateBasisPoints?: any;
@@ -1834,30 +1834,30 @@ export declare namespace likechain {
                             weight?: any;
                         }[];
                     };
-                }): _465.MsgUpdateRoyaltyConfigResponse;
+                }): _533.MsgUpdateRoyaltyConfigResponse;
             };
             MsgDeleteRoyaltyConfig: {
-                encode(message: _465.MsgDeleteRoyaltyConfig, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgDeleteRoyaltyConfig;
-                fromJSON(object: any): _465.MsgDeleteRoyaltyConfig;
-                toJSON(message: _465.MsgDeleteRoyaltyConfig): unknown;
+                encode(message: _533.MsgDeleteRoyaltyConfig, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgDeleteRoyaltyConfig;
+                fromJSON(object: any): _533.MsgDeleteRoyaltyConfig;
+                toJSON(message: _533.MsgDeleteRoyaltyConfig): unknown;
                 fromPartial(object: {
                     creator?: string;
                     classId?: string;
-                }): _465.MsgDeleteRoyaltyConfig;
+                }): _533.MsgDeleteRoyaltyConfig;
             };
             MsgDeleteRoyaltyConfigResponse: {
-                encode(_: _465.MsgDeleteRoyaltyConfigResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _465.MsgDeleteRoyaltyConfigResponse;
-                fromJSON(_: any): _465.MsgDeleteRoyaltyConfigResponse;
-                toJSON(_: _465.MsgDeleteRoyaltyConfigResponse): unknown;
-                fromPartial(_: {}): _465.MsgDeleteRoyaltyConfigResponse;
+                encode(_: _533.MsgDeleteRoyaltyConfigResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _533.MsgDeleteRoyaltyConfigResponse;
+                fromJSON(_: any): _533.MsgDeleteRoyaltyConfigResponse;
+                toJSON(_: _533.MsgDeleteRoyaltyConfigResponse): unknown;
+                fromPartial(_: {}): _533.MsgDeleteRoyaltyConfigResponse;
             };
             RoyaltyConfigByClass: {
-                encode(message: _464.RoyaltyConfigByClass, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _464.RoyaltyConfigByClass;
-                fromJSON(object: any): _464.RoyaltyConfigByClass;
-                toJSON(message: _464.RoyaltyConfigByClass): unknown;
+                encode(message: _532.RoyaltyConfigByClass, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _532.RoyaltyConfigByClass;
+                fromJSON(object: any): _532.RoyaltyConfigByClass;
+                toJSON(message: _532.RoyaltyConfigByClass): unknown;
                 fromPartial(object: {
                     classId?: string;
                     royaltyConfig?: {
@@ -1867,66 +1867,66 @@ export declare namespace likechain {
                             weight?: any;
                         }[];
                     };
-                }): _464.RoyaltyConfigByClass;
+                }): _532.RoyaltyConfigByClass;
             };
             RoyaltyConfig: {
-                encode(message: _464.RoyaltyConfig, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _464.RoyaltyConfig;
-                fromJSON(object: any): _464.RoyaltyConfig;
-                toJSON(message: _464.RoyaltyConfig): unknown;
+                encode(message: _532.RoyaltyConfig, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _532.RoyaltyConfig;
+                fromJSON(object: any): _532.RoyaltyConfig;
+                toJSON(message: _532.RoyaltyConfig): unknown;
                 fromPartial(object: {
                     rateBasisPoints?: any;
                     stakeholders?: {
                         account?: Uint8Array;
                         weight?: any;
                     }[];
-                }): _464.RoyaltyConfig;
+                }): _532.RoyaltyConfig;
             };
             RoyaltyStakeholder: {
-                encode(message: _464.RoyaltyStakeholder, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _464.RoyaltyStakeholder;
-                fromJSON(object: any): _464.RoyaltyStakeholder;
-                toJSON(message: _464.RoyaltyStakeholder): unknown;
+                encode(message: _532.RoyaltyStakeholder, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _532.RoyaltyStakeholder;
+                fromJSON(object: any): _532.RoyaltyStakeholder;
+                toJSON(message: _532.RoyaltyStakeholder): unknown;
                 fromPartial(object: {
                     account?: Uint8Array;
                     weight?: any;
-                }): _464.RoyaltyStakeholder;
+                }): _532.RoyaltyStakeholder;
             };
             RoyaltyConfigInput: {
-                encode(message: _464.RoyaltyConfigInput, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _464.RoyaltyConfigInput;
-                fromJSON(object: any): _464.RoyaltyConfigInput;
-                toJSON(message: _464.RoyaltyConfigInput): unknown;
+                encode(message: _532.RoyaltyConfigInput, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _532.RoyaltyConfigInput;
+                fromJSON(object: any): _532.RoyaltyConfigInput;
+                toJSON(message: _532.RoyaltyConfigInput): unknown;
                 fromPartial(object: {
                     rateBasisPoints?: any;
                     stakeholders?: {
                         account?: string;
                         weight?: any;
                     }[];
-                }): _464.RoyaltyConfigInput;
+                }): _532.RoyaltyConfigInput;
             };
             RoyaltyStakeholderInput: {
-                encode(message: _464.RoyaltyStakeholderInput, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _464.RoyaltyStakeholderInput;
-                fromJSON(object: any): _464.RoyaltyStakeholderInput;
-                toJSON(message: _464.RoyaltyStakeholderInput): unknown;
+                encode(message: _532.RoyaltyStakeholderInput, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _532.RoyaltyStakeholderInput;
+                fromJSON(object: any): _532.RoyaltyStakeholderInput;
+                toJSON(message: _532.RoyaltyStakeholderInput): unknown;
                 fromPartial(object: {
                     account?: string;
                     weight?: any;
-                }): _464.RoyaltyStakeholderInput;
+                }): _532.RoyaltyStakeholderInput;
             };
             QueryParamsRequest: {
-                encode(_: _463.QueryParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryParamsRequest;
-                fromJSON(_: any): _463.QueryParamsRequest;
-                toJSON(_: _463.QueryParamsRequest): unknown;
-                fromPartial(_: {}): _463.QueryParamsRequest;
+                encode(_: _531.QueryParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryParamsRequest;
+                fromJSON(_: any): _531.QueryParamsRequest;
+                toJSON(_: _531.QueryParamsRequest): unknown;
+                fromPartial(_: {}): _531.QueryParamsRequest;
             };
             QueryParamsResponse: {
-                encode(message: _463.QueryParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryParamsResponse;
-                fromJSON(object: any): _463.QueryParamsResponse;
-                toJSON(message: _463.QueryParamsResponse): unknown;
+                encode(message: _531.QueryParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryParamsResponse;
+                fromJSON(object: any): _531.QueryParamsResponse;
+                toJSON(message: _531.QueryParamsResponse): unknown;
                 fromPartial(object: {
                     params?: {
                         priceDenom?: string;
@@ -1938,13 +1938,13 @@ export declare namespace likechain {
                         maxListingDurationDays?: any;
                         maxRoyaltyBasisPoints?: any;
                     };
-                }): _463.QueryParamsResponse;
+                }): _531.QueryParamsResponse;
             };
             QueryClassesByISCNRequest: {
-                encode(message: _463.QueryClassesByISCNRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryClassesByISCNRequest;
-                fromJSON(object: any): _463.QueryClassesByISCNRequest;
-                toJSON(message: _463.QueryClassesByISCNRequest): unknown;
+                encode(message: _531.QueryClassesByISCNRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryClassesByISCNRequest;
+                fromJSON(object: any): _531.QueryClassesByISCNRequest;
+                toJSON(message: _531.QueryClassesByISCNRequest): unknown;
                 fromPartial(object: {
                     iscnIdPrefix?: string;
                     pagination?: {
@@ -1954,13 +1954,13 @@ export declare namespace likechain {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _463.QueryClassesByISCNRequest;
+                }): _531.QueryClassesByISCNRequest;
             };
             QueryClassesByISCNResponse: {
-                encode(message: _463.QueryClassesByISCNResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryClassesByISCNResponse;
-                fromJSON(object: any): _463.QueryClassesByISCNResponse;
-                toJSON(message: _463.QueryClassesByISCNResponse): unknown;
+                encode(message: _531.QueryClassesByISCNResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryClassesByISCNResponse;
+                fromJSON(object: any): _531.QueryClassesByISCNResponse;
+                toJSON(message: _531.QueryClassesByISCNResponse): unknown;
                 fromPartial(object: {
                     iscnIdPrefix?: string;
                     classes?: {
@@ -1979,13 +1979,13 @@ export declare namespace likechain {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _463.QueryClassesByISCNResponse;
+                }): _531.QueryClassesByISCNResponse;
             };
             QueryClassesByISCNIndexRequest: {
-                encode(message: _463.QueryClassesByISCNIndexRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryClassesByISCNIndexRequest;
-                fromJSON(object: any): _463.QueryClassesByISCNIndexRequest;
-                toJSON(message: _463.QueryClassesByISCNIndexRequest): unknown;
+                encode(message: _531.QueryClassesByISCNIndexRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryClassesByISCNIndexRequest;
+                fromJSON(object: any): _531.QueryClassesByISCNIndexRequest;
+                toJSON(message: _531.QueryClassesByISCNIndexRequest): unknown;
                 fromPartial(object: {
                     pagination?: {
                         key?: Uint8Array;
@@ -1994,13 +1994,13 @@ export declare namespace likechain {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _463.QueryClassesByISCNIndexRequest;
+                }): _531.QueryClassesByISCNIndexRequest;
             };
             QueryClassesByISCNIndexResponse: {
-                encode(message: _463.QueryClassesByISCNIndexResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryClassesByISCNIndexResponse;
-                fromJSON(object: any): _463.QueryClassesByISCNIndexResponse;
-                toJSON(message: _463.QueryClassesByISCNIndexResponse): unknown;
+                encode(message: _531.QueryClassesByISCNIndexResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryClassesByISCNIndexResponse;
+                fromJSON(object: any): _531.QueryClassesByISCNIndexResponse;
+                toJSON(message: _531.QueryClassesByISCNIndexResponse): unknown;
                 fromPartial(object: {
                     classesByIscns?: {
                         iscnIdPrefix?: string;
@@ -2010,22 +2010,22 @@ export declare namespace likechain {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _463.QueryClassesByISCNIndexResponse;
+                }): _531.QueryClassesByISCNIndexResponse;
             };
             QueryISCNByClassRequest: {
-                encode(message: _463.QueryISCNByClassRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryISCNByClassRequest;
-                fromJSON(object: any): _463.QueryISCNByClassRequest;
-                toJSON(message: _463.QueryISCNByClassRequest): unknown;
+                encode(message: _531.QueryISCNByClassRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryISCNByClassRequest;
+                fromJSON(object: any): _531.QueryISCNByClassRequest;
+                toJSON(message: _531.QueryISCNByClassRequest): unknown;
                 fromPartial(object: {
                     classId?: string;
-                }): _463.QueryISCNByClassRequest;
+                }): _531.QueryISCNByClassRequest;
             };
             QueryISCNByClassResponse: {
-                encode(message: _463.QueryISCNByClassResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryISCNByClassResponse;
-                fromJSON(object: any): _463.QueryISCNByClassResponse;
-                toJSON(message: _463.QueryISCNByClassResponse): unknown;
+                encode(message: _531.QueryISCNByClassResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryISCNByClassResponse;
+                fromJSON(object: any): _531.QueryISCNByClassResponse;
+                toJSON(message: _531.QueryISCNByClassResponse): unknown;
                 fromPartial(object: {
                     iscnIdPrefix?: string;
                     owner?: string;
@@ -2034,13 +2034,13 @@ export declare namespace likechain {
                         ipld?: string;
                         data?: Uint8Array;
                     };
-                }): _463.QueryISCNByClassResponse;
+                }): _531.QueryISCNByClassResponse;
             };
             QueryClassesByAccountRequest: {
-                encode(message: _463.QueryClassesByAccountRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryClassesByAccountRequest;
-                fromJSON(object: any): _463.QueryClassesByAccountRequest;
-                toJSON(message: _463.QueryClassesByAccountRequest): unknown;
+                encode(message: _531.QueryClassesByAccountRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryClassesByAccountRequest;
+                fromJSON(object: any): _531.QueryClassesByAccountRequest;
+                toJSON(message: _531.QueryClassesByAccountRequest): unknown;
                 fromPartial(object: {
                     account?: string;
                     pagination?: {
@@ -2050,13 +2050,13 @@ export declare namespace likechain {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _463.QueryClassesByAccountRequest;
+                }): _531.QueryClassesByAccountRequest;
             };
             QueryClassesByAccountResponse: {
-                encode(message: _463.QueryClassesByAccountResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryClassesByAccountResponse;
-                fromJSON(object: any): _463.QueryClassesByAccountResponse;
-                toJSON(message: _463.QueryClassesByAccountResponse): unknown;
+                encode(message: _531.QueryClassesByAccountResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryClassesByAccountResponse;
+                fromJSON(object: any): _531.QueryClassesByAccountResponse;
+                toJSON(message: _531.QueryClassesByAccountResponse): unknown;
                 fromPartial(object: {
                     account?: string;
                     classes?: {
@@ -2075,13 +2075,13 @@ export declare namespace likechain {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _463.QueryClassesByAccountResponse;
+                }): _531.QueryClassesByAccountResponse;
             };
             QueryClassesByAccountIndexRequest: {
-                encode(message: _463.QueryClassesByAccountIndexRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryClassesByAccountIndexRequest;
-                fromJSON(object: any): _463.QueryClassesByAccountIndexRequest;
-                toJSON(message: _463.QueryClassesByAccountIndexRequest): unknown;
+                encode(message: _531.QueryClassesByAccountIndexRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryClassesByAccountIndexRequest;
+                fromJSON(object: any): _531.QueryClassesByAccountIndexRequest;
+                toJSON(message: _531.QueryClassesByAccountIndexRequest): unknown;
                 fromPartial(object: {
                     pagination?: {
                         key?: Uint8Array;
@@ -2090,13 +2090,13 @@ export declare namespace likechain {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _463.QueryClassesByAccountIndexRequest;
+                }): _531.QueryClassesByAccountIndexRequest;
             };
             QueryClassesByAccountIndexResponse: {
-                encode(message: _463.QueryClassesByAccountIndexResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryClassesByAccountIndexResponse;
-                fromJSON(object: any): _463.QueryClassesByAccountIndexResponse;
-                toJSON(message: _463.QueryClassesByAccountIndexResponse): unknown;
+                encode(message: _531.QueryClassesByAccountIndexResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryClassesByAccountIndexResponse;
+                fromJSON(object: any): _531.QueryClassesByAccountIndexResponse;
+                toJSON(message: _531.QueryClassesByAccountIndexResponse): unknown;
                 fromPartial(object: {
                     classesByAccounts?: {
                         account?: string;
@@ -2106,41 +2106,41 @@ export declare namespace likechain {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _463.QueryClassesByAccountIndexResponse;
+                }): _531.QueryClassesByAccountIndexResponse;
             };
             QueryAccountByClassRequest: {
-                encode(message: _463.QueryAccountByClassRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryAccountByClassRequest;
-                fromJSON(object: any): _463.QueryAccountByClassRequest;
-                toJSON(message: _463.QueryAccountByClassRequest): unknown;
+                encode(message: _531.QueryAccountByClassRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryAccountByClassRequest;
+                fromJSON(object: any): _531.QueryAccountByClassRequest;
+                toJSON(message: _531.QueryAccountByClassRequest): unknown;
                 fromPartial(object: {
                     classId?: string;
-                }): _463.QueryAccountByClassRequest;
+                }): _531.QueryAccountByClassRequest;
             };
             QueryAccountByClassResponse: {
-                encode(message: _463.QueryAccountByClassResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryAccountByClassResponse;
-                fromJSON(object: any): _463.QueryAccountByClassResponse;
-                toJSON(message: _463.QueryAccountByClassResponse): unknown;
+                encode(message: _531.QueryAccountByClassResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryAccountByClassResponse;
+                fromJSON(object: any): _531.QueryAccountByClassResponse;
+                toJSON(message: _531.QueryAccountByClassResponse): unknown;
                 fromPartial(object: {
                     address?: string;
-                }): _463.QueryAccountByClassResponse;
+                }): _531.QueryAccountByClassResponse;
             };
             QueryBlindBoxContentRequest: {
-                encode(message: _463.QueryBlindBoxContentRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryBlindBoxContentRequest;
-                fromJSON(object: any): _463.QueryBlindBoxContentRequest;
-                toJSON(message: _463.QueryBlindBoxContentRequest): unknown;
+                encode(message: _531.QueryBlindBoxContentRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryBlindBoxContentRequest;
+                fromJSON(object: any): _531.QueryBlindBoxContentRequest;
+                toJSON(message: _531.QueryBlindBoxContentRequest): unknown;
                 fromPartial(object: {
                     classId?: string;
                     id?: string;
-                }): _463.QueryBlindBoxContentRequest;
+                }): _531.QueryBlindBoxContentRequest;
             };
             QueryBlindBoxContentResponse: {
-                encode(message: _463.QueryBlindBoxContentResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryBlindBoxContentResponse;
-                fromJSON(object: any): _463.QueryBlindBoxContentResponse;
-                toJSON(message: _463.QueryBlindBoxContentResponse): unknown;
+                encode(message: _531.QueryBlindBoxContentResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryBlindBoxContentResponse;
+                fromJSON(object: any): _531.QueryBlindBoxContentResponse;
+                toJSON(message: _531.QueryBlindBoxContentResponse): unknown;
                 fromPartial(object: {
                     blindBoxContent?: {
                         classId?: string;
@@ -2151,13 +2151,13 @@ export declare namespace likechain {
                             metadata?: Uint8Array;
                         };
                     };
-                }): _463.QueryBlindBoxContentResponse;
+                }): _531.QueryBlindBoxContentResponse;
             };
             QueryBlindBoxContentIndexRequest: {
-                encode(message: _463.QueryBlindBoxContentIndexRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryBlindBoxContentIndexRequest;
-                fromJSON(object: any): _463.QueryBlindBoxContentIndexRequest;
-                toJSON(message: _463.QueryBlindBoxContentIndexRequest): unknown;
+                encode(message: _531.QueryBlindBoxContentIndexRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryBlindBoxContentIndexRequest;
+                fromJSON(object: any): _531.QueryBlindBoxContentIndexRequest;
+                toJSON(message: _531.QueryBlindBoxContentIndexRequest): unknown;
                 fromPartial(object: {
                     pagination?: {
                         key?: Uint8Array;
@@ -2166,13 +2166,13 @@ export declare namespace likechain {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _463.QueryBlindBoxContentIndexRequest;
+                }): _531.QueryBlindBoxContentIndexRequest;
             };
             QueryBlindBoxContentIndexResponse: {
-                encode(message: _463.QueryBlindBoxContentIndexResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryBlindBoxContentIndexResponse;
-                fromJSON(object: any): _463.QueryBlindBoxContentIndexResponse;
-                toJSON(message: _463.QueryBlindBoxContentIndexResponse): unknown;
+                encode(message: _531.QueryBlindBoxContentIndexResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryBlindBoxContentIndexResponse;
+                fromJSON(object: any): _531.QueryBlindBoxContentIndexResponse;
+                toJSON(message: _531.QueryBlindBoxContentIndexResponse): unknown;
                 fromPartial(object: {
                     blindBoxContents?: {
                         classId?: string;
@@ -2187,13 +2187,13 @@ export declare namespace likechain {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _463.QueryBlindBoxContentIndexResponse;
+                }): _531.QueryBlindBoxContentIndexResponse;
             };
             QueryBlindBoxContentsRequest: {
-                encode(message: _463.QueryBlindBoxContentsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryBlindBoxContentsRequest;
-                fromJSON(object: any): _463.QueryBlindBoxContentsRequest;
-                toJSON(message: _463.QueryBlindBoxContentsRequest): unknown;
+                encode(message: _531.QueryBlindBoxContentsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryBlindBoxContentsRequest;
+                fromJSON(object: any): _531.QueryBlindBoxContentsRequest;
+                toJSON(message: _531.QueryBlindBoxContentsRequest): unknown;
                 fromPartial(object: {
                     classId?: string;
                     pagination?: {
@@ -2203,13 +2203,13 @@ export declare namespace likechain {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _463.QueryBlindBoxContentsRequest;
+                }): _531.QueryBlindBoxContentsRequest;
             };
             QueryBlindBoxContentsResponse: {
-                encode(message: _463.QueryBlindBoxContentsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryBlindBoxContentsResponse;
-                fromJSON(object: any): _463.QueryBlindBoxContentsResponse;
-                toJSON(message: _463.QueryBlindBoxContentsResponse): unknown;
+                encode(message: _531.QueryBlindBoxContentsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryBlindBoxContentsResponse;
+                fromJSON(object: any): _531.QueryBlindBoxContentsResponse;
+                toJSON(message: _531.QueryBlindBoxContentsResponse): unknown;
                 fromPartial(object: {
                     blindBoxContents?: {
                         classId?: string;
@@ -2224,24 +2224,24 @@ export declare namespace likechain {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _463.QueryBlindBoxContentsResponse;
+                }): _531.QueryBlindBoxContentsResponse;
             };
             QueryOfferRequest: {
-                encode(message: _463.QueryOfferRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryOfferRequest;
-                fromJSON(object: any): _463.QueryOfferRequest;
-                toJSON(message: _463.QueryOfferRequest): unknown;
+                encode(message: _531.QueryOfferRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryOfferRequest;
+                fromJSON(object: any): _531.QueryOfferRequest;
+                toJSON(message: _531.QueryOfferRequest): unknown;
                 fromPartial(object: {
                     classId?: string;
                     nftId?: string;
                     buyer?: string;
-                }): _463.QueryOfferRequest;
+                }): _531.QueryOfferRequest;
             };
             QueryOfferResponse: {
-                encode(message: _463.QueryOfferResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryOfferResponse;
-                fromJSON(object: any): _463.QueryOfferResponse;
-                toJSON(message: _463.QueryOfferResponse): unknown;
+                encode(message: _531.QueryOfferResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryOfferResponse;
+                fromJSON(object: any): _531.QueryOfferResponse;
+                toJSON(message: _531.QueryOfferResponse): unknown;
                 fromPartial(object: {
                     offer?: {
                         classId?: string;
@@ -2253,13 +2253,13 @@ export declare namespace likechain {
                             nanos?: number;
                         };
                     };
-                }): _463.QueryOfferResponse;
+                }): _531.QueryOfferResponse;
             };
             QueryOfferIndexRequest: {
-                encode(message: _463.QueryOfferIndexRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryOfferIndexRequest;
-                fromJSON(object: any): _463.QueryOfferIndexRequest;
-                toJSON(message: _463.QueryOfferIndexRequest): unknown;
+                encode(message: _531.QueryOfferIndexRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryOfferIndexRequest;
+                fromJSON(object: any): _531.QueryOfferIndexRequest;
+                toJSON(message: _531.QueryOfferIndexRequest): unknown;
                 fromPartial(object: {
                     pagination?: {
                         key?: Uint8Array;
@@ -2268,13 +2268,13 @@ export declare namespace likechain {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _463.QueryOfferIndexRequest;
+                }): _531.QueryOfferIndexRequest;
             };
             QueryOfferIndexResponse: {
-                encode(message: _463.QueryOfferIndexResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryOfferIndexResponse;
-                fromJSON(object: any): _463.QueryOfferIndexResponse;
-                toJSON(message: _463.QueryOfferIndexResponse): unknown;
+                encode(message: _531.QueryOfferIndexResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryOfferIndexResponse;
+                fromJSON(object: any): _531.QueryOfferIndexResponse;
+                toJSON(message: _531.QueryOfferIndexResponse): unknown;
                 fromPartial(object: {
                     offers?: {
                         classId?: string;
@@ -2290,13 +2290,13 @@ export declare namespace likechain {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _463.QueryOfferIndexResponse;
+                }): _531.QueryOfferIndexResponse;
             };
             QueryOffersByClassRequest: {
-                encode(message: _463.QueryOffersByClassRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryOffersByClassRequest;
-                fromJSON(object: any): _463.QueryOffersByClassRequest;
-                toJSON(message: _463.QueryOffersByClassRequest): unknown;
+                encode(message: _531.QueryOffersByClassRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryOffersByClassRequest;
+                fromJSON(object: any): _531.QueryOffersByClassRequest;
+                toJSON(message: _531.QueryOffersByClassRequest): unknown;
                 fromPartial(object: {
                     classId?: string;
                     pagination?: {
@@ -2306,13 +2306,13 @@ export declare namespace likechain {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _463.QueryOffersByClassRequest;
+                }): _531.QueryOffersByClassRequest;
             };
             QueryOffersByClassResponse: {
-                encode(message: _463.QueryOffersByClassResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryOffersByClassResponse;
-                fromJSON(object: any): _463.QueryOffersByClassResponse;
-                toJSON(message: _463.QueryOffersByClassResponse): unknown;
+                encode(message: _531.QueryOffersByClassResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryOffersByClassResponse;
+                fromJSON(object: any): _531.QueryOffersByClassResponse;
+                toJSON(message: _531.QueryOffersByClassResponse): unknown;
                 fromPartial(object: {
                     offers?: {
                         classId?: string;
@@ -2328,13 +2328,13 @@ export declare namespace likechain {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _463.QueryOffersByClassResponse;
+                }): _531.QueryOffersByClassResponse;
             };
             QueryOffersByNFTRequest: {
-                encode(message: _463.QueryOffersByNFTRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryOffersByNFTRequest;
-                fromJSON(object: any): _463.QueryOffersByNFTRequest;
-                toJSON(message: _463.QueryOffersByNFTRequest): unknown;
+                encode(message: _531.QueryOffersByNFTRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryOffersByNFTRequest;
+                fromJSON(object: any): _531.QueryOffersByNFTRequest;
+                toJSON(message: _531.QueryOffersByNFTRequest): unknown;
                 fromPartial(object: {
                     classId?: string;
                     nftId?: string;
@@ -2345,13 +2345,13 @@ export declare namespace likechain {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _463.QueryOffersByNFTRequest;
+                }): _531.QueryOffersByNFTRequest;
             };
             QueryOffersByNFTResponse: {
-                encode(message: _463.QueryOffersByNFTResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryOffersByNFTResponse;
-                fromJSON(object: any): _463.QueryOffersByNFTResponse;
-                toJSON(message: _463.QueryOffersByNFTResponse): unknown;
+                encode(message: _531.QueryOffersByNFTResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryOffersByNFTResponse;
+                fromJSON(object: any): _531.QueryOffersByNFTResponse;
+                toJSON(message: _531.QueryOffersByNFTResponse): unknown;
                 fromPartial(object: {
                     offers?: {
                         classId?: string;
@@ -2367,24 +2367,24 @@ export declare namespace likechain {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _463.QueryOffersByNFTResponse;
+                }): _531.QueryOffersByNFTResponse;
             };
             QueryListingRequest: {
-                encode(message: _463.QueryListingRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryListingRequest;
-                fromJSON(object: any): _463.QueryListingRequest;
-                toJSON(message: _463.QueryListingRequest): unknown;
+                encode(message: _531.QueryListingRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryListingRequest;
+                fromJSON(object: any): _531.QueryListingRequest;
+                toJSON(message: _531.QueryListingRequest): unknown;
                 fromPartial(object: {
                     classId?: string;
                     nftId?: string;
                     seller?: string;
-                }): _463.QueryListingRequest;
+                }): _531.QueryListingRequest;
             };
             QueryListingResponse: {
-                encode(message: _463.QueryListingResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryListingResponse;
-                fromJSON(object: any): _463.QueryListingResponse;
-                toJSON(message: _463.QueryListingResponse): unknown;
+                encode(message: _531.QueryListingResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryListingResponse;
+                fromJSON(object: any): _531.QueryListingResponse;
+                toJSON(message: _531.QueryListingResponse): unknown;
                 fromPartial(object: {
                     listing?: {
                         classId?: string;
@@ -2396,13 +2396,13 @@ export declare namespace likechain {
                             nanos?: number;
                         };
                     };
-                }): _463.QueryListingResponse;
+                }): _531.QueryListingResponse;
             };
             QueryListingIndexRequest: {
-                encode(message: _463.QueryListingIndexRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryListingIndexRequest;
-                fromJSON(object: any): _463.QueryListingIndexRequest;
-                toJSON(message: _463.QueryListingIndexRequest): unknown;
+                encode(message: _531.QueryListingIndexRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryListingIndexRequest;
+                fromJSON(object: any): _531.QueryListingIndexRequest;
+                toJSON(message: _531.QueryListingIndexRequest): unknown;
                 fromPartial(object: {
                     pagination?: {
                         key?: Uint8Array;
@@ -2411,13 +2411,13 @@ export declare namespace likechain {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _463.QueryListingIndexRequest;
+                }): _531.QueryListingIndexRequest;
             };
             QueryListingIndexResponse: {
-                encode(message: _463.QueryListingIndexResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryListingIndexResponse;
-                fromJSON(object: any): _463.QueryListingIndexResponse;
-                toJSON(message: _463.QueryListingIndexResponse): unknown;
+                encode(message: _531.QueryListingIndexResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryListingIndexResponse;
+                fromJSON(object: any): _531.QueryListingIndexResponse;
+                toJSON(message: _531.QueryListingIndexResponse): unknown;
                 fromPartial(object: {
                     listings?: {
                         classId?: string;
@@ -2433,13 +2433,13 @@ export declare namespace likechain {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _463.QueryListingIndexResponse;
+                }): _531.QueryListingIndexResponse;
             };
             QueryListingsByClassRequest: {
-                encode(message: _463.QueryListingsByClassRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryListingsByClassRequest;
-                fromJSON(object: any): _463.QueryListingsByClassRequest;
-                toJSON(message: _463.QueryListingsByClassRequest): unknown;
+                encode(message: _531.QueryListingsByClassRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryListingsByClassRequest;
+                fromJSON(object: any): _531.QueryListingsByClassRequest;
+                toJSON(message: _531.QueryListingsByClassRequest): unknown;
                 fromPartial(object: {
                     classId?: string;
                     pagination?: {
@@ -2449,13 +2449,13 @@ export declare namespace likechain {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _463.QueryListingsByClassRequest;
+                }): _531.QueryListingsByClassRequest;
             };
             QueryListingsByClassResponse: {
-                encode(message: _463.QueryListingsByClassResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryListingsByClassResponse;
-                fromJSON(object: any): _463.QueryListingsByClassResponse;
-                toJSON(message: _463.QueryListingsByClassResponse): unknown;
+                encode(message: _531.QueryListingsByClassResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryListingsByClassResponse;
+                fromJSON(object: any): _531.QueryListingsByClassResponse;
+                toJSON(message: _531.QueryListingsByClassResponse): unknown;
                 fromPartial(object: {
                     listings?: {
                         classId?: string;
@@ -2471,13 +2471,13 @@ export declare namespace likechain {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _463.QueryListingsByClassResponse;
+                }): _531.QueryListingsByClassResponse;
             };
             QueryListingsByNFTRequest: {
-                encode(message: _463.QueryListingsByNFTRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryListingsByNFTRequest;
-                fromJSON(object: any): _463.QueryListingsByNFTRequest;
-                toJSON(message: _463.QueryListingsByNFTRequest): unknown;
+                encode(message: _531.QueryListingsByNFTRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryListingsByNFTRequest;
+                fromJSON(object: any): _531.QueryListingsByNFTRequest;
+                toJSON(message: _531.QueryListingsByNFTRequest): unknown;
                 fromPartial(object: {
                     classId?: string;
                     nftId?: string;
@@ -2488,13 +2488,13 @@ export declare namespace likechain {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _463.QueryListingsByNFTRequest;
+                }): _531.QueryListingsByNFTRequest;
             };
             QueryListingsByNFTResponse: {
-                encode(message: _463.QueryListingsByNFTResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryListingsByNFTResponse;
-                fromJSON(object: any): _463.QueryListingsByNFTResponse;
-                toJSON(message: _463.QueryListingsByNFTResponse): unknown;
+                encode(message: _531.QueryListingsByNFTResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryListingsByNFTResponse;
+                fromJSON(object: any): _531.QueryListingsByNFTResponse;
+                toJSON(message: _531.QueryListingsByNFTResponse): unknown;
                 fromPartial(object: {
                     listings?: {
                         classId?: string;
@@ -2510,22 +2510,22 @@ export declare namespace likechain {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _463.QueryListingsByNFTResponse;
+                }): _531.QueryListingsByNFTResponse;
             };
             QueryRoyaltyConfigRequest: {
-                encode(message: _463.QueryRoyaltyConfigRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryRoyaltyConfigRequest;
-                fromJSON(object: any): _463.QueryRoyaltyConfigRequest;
-                toJSON(message: _463.QueryRoyaltyConfigRequest): unknown;
+                encode(message: _531.QueryRoyaltyConfigRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryRoyaltyConfigRequest;
+                fromJSON(object: any): _531.QueryRoyaltyConfigRequest;
+                toJSON(message: _531.QueryRoyaltyConfigRequest): unknown;
                 fromPartial(object: {
                     classId?: string;
-                }): _463.QueryRoyaltyConfigRequest;
+                }): _531.QueryRoyaltyConfigRequest;
             };
             QueryRoyaltyConfigResponse: {
-                encode(message: _463.QueryRoyaltyConfigResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryRoyaltyConfigResponse;
-                fromJSON(object: any): _463.QueryRoyaltyConfigResponse;
-                toJSON(message: _463.QueryRoyaltyConfigResponse): unknown;
+                encode(message: _531.QueryRoyaltyConfigResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryRoyaltyConfigResponse;
+                fromJSON(object: any): _531.QueryRoyaltyConfigResponse;
+                toJSON(message: _531.QueryRoyaltyConfigResponse): unknown;
                 fromPartial(object: {
                     royaltyConfig?: {
                         rateBasisPoints?: any;
@@ -2534,13 +2534,13 @@ export declare namespace likechain {
                             weight?: any;
                         }[];
                     };
-                }): _463.QueryRoyaltyConfigResponse;
+                }): _531.QueryRoyaltyConfigResponse;
             };
             QueryRoyaltyConfigIndexRequest: {
-                encode(message: _463.QueryRoyaltyConfigIndexRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryRoyaltyConfigIndexRequest;
-                fromJSON(object: any): _463.QueryRoyaltyConfigIndexRequest;
-                toJSON(message: _463.QueryRoyaltyConfigIndexRequest): unknown;
+                encode(message: _531.QueryRoyaltyConfigIndexRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryRoyaltyConfigIndexRequest;
+                fromJSON(object: any): _531.QueryRoyaltyConfigIndexRequest;
+                toJSON(message: _531.QueryRoyaltyConfigIndexRequest): unknown;
                 fromPartial(object: {
                     pagination?: {
                         key?: Uint8Array;
@@ -2549,13 +2549,13 @@ export declare namespace likechain {
                         countTotal?: boolean;
                         reverse?: boolean;
                     };
-                }): _463.QueryRoyaltyConfigIndexRequest;
+                }): _531.QueryRoyaltyConfigIndexRequest;
             };
             QueryRoyaltyConfigIndexResponse: {
-                encode(message: _463.QueryRoyaltyConfigIndexResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _463.QueryRoyaltyConfigIndexResponse;
-                fromJSON(object: any): _463.QueryRoyaltyConfigIndexResponse;
-                toJSON(message: _463.QueryRoyaltyConfigIndexResponse): unknown;
+                encode(message: _531.QueryRoyaltyConfigIndexResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _531.QueryRoyaltyConfigIndexResponse;
+                fromJSON(object: any): _531.QueryRoyaltyConfigIndexResponse;
+                toJSON(message: _531.QueryRoyaltyConfigIndexResponse): unknown;
                 fromPartial(object: {
                     royaltyConfigByClass?: {
                         classId?: string;
@@ -2571,13 +2571,13 @@ export declare namespace likechain {
                         nextKey?: Uint8Array;
                         total?: any;
                     };
-                }): _463.QueryRoyaltyConfigIndexResponse;
+                }): _531.QueryRoyaltyConfigIndexResponse;
             };
             Params: {
-                encode(message: _462.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _462.Params;
-                fromJSON(object: any): _462.Params;
-                toJSON(message: _462.Params): unknown;
+                encode(message: _530.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _530.Params;
+                fromJSON(object: any): _530.Params;
+                toJSON(message: _530.Params): unknown;
                 fromPartial(object: {
                     priceDenom?: string;
                     feePerByte?: {
@@ -2587,13 +2587,13 @@ export declare namespace likechain {
                     maxOfferDurationDays?: any;
                     maxListingDurationDays?: any;
                     maxRoyaltyBasisPoints?: any;
-                }): _462.Params;
+                }): _530.Params;
             };
             Offer: {
-                encode(message: _461.Offer, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _461.Offer;
-                fromJSON(object: any): _461.Offer;
-                toJSON(message: _461.Offer): unknown;
+                encode(message: _529.Offer, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _529.Offer;
+                fromJSON(object: any): _529.Offer;
+                toJSON(message: _529.Offer): unknown;
                 fromPartial(object: {
                     classId?: string;
                     nftId?: string;
@@ -2603,13 +2603,13 @@ export declare namespace likechain {
                         seconds?: any;
                         nanos?: number;
                     };
-                }): _461.Offer;
+                }): _529.Offer;
             };
             OfferStoreRecord: {
-                encode(message: _461.OfferStoreRecord, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _461.OfferStoreRecord;
-                fromJSON(object: any): _461.OfferStoreRecord;
-                toJSON(message: _461.OfferStoreRecord): unknown;
+                encode(message: _529.OfferStoreRecord, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _529.OfferStoreRecord;
+                fromJSON(object: any): _529.OfferStoreRecord;
+                toJSON(message: _529.OfferStoreRecord): unknown;
                 fromPartial(object: {
                     classId?: string;
                     nftId?: string;
@@ -2619,53 +2619,53 @@ export declare namespace likechain {
                         seconds?: any;
                         nanos?: number;
                     };
-                }): _461.OfferStoreRecord;
+                }): _529.OfferStoreRecord;
             };
             OfferExpireQueueEntry: {
-                encode(message: _460.OfferExpireQueueEntry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _460.OfferExpireQueueEntry;
-                fromJSON(object: any): _460.OfferExpireQueueEntry;
-                toJSON(message: _460.OfferExpireQueueEntry): unknown;
+                encode(message: _528.OfferExpireQueueEntry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _528.OfferExpireQueueEntry;
+                fromJSON(object: any): _528.OfferExpireQueueEntry;
+                toJSON(message: _528.OfferExpireQueueEntry): unknown;
                 fromPartial(object: {
                     expireTime?: {
                         seconds?: any;
                         nanos?: number;
                     };
                     offerKey?: Uint8Array;
-                }): _460.OfferExpireQueueEntry;
+                }): _528.OfferExpireQueueEntry;
             };
             NFTInput: {
-                encode(message: _459.NFTInput, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _459.NFTInput;
-                fromJSON(object: any): _459.NFTInput;
-                toJSON(message: _459.NFTInput): unknown;
+                encode(message: _527.NFTInput, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _527.NFTInput;
+                fromJSON(object: any): _527.NFTInput;
+                toJSON(message: _527.NFTInput): unknown;
                 fromPartial(object: {
                     uri?: string;
                     uriHash?: string;
                     metadata?: Uint8Array;
-                }): _459.NFTInput;
+                }): _527.NFTInput;
             };
             NFTData: {
-                encode(message: _458.NFTData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _458.NFTData;
-                fromJSON(object: any): _458.NFTData;
-                toJSON(message: _458.NFTData): unknown;
+                encode(message: _526.NFTData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _526.NFTData;
+                fromJSON(object: any): _526.NFTData;
+                toJSON(message: _526.NFTData): unknown;
                 fromPartial(object: {
                     metadata?: Uint8Array;
                     classParent?: {
-                        type?: _449.ClassParentType;
+                        type?: _517.ClassParentType;
                         iscnIdPrefix?: string;
                         iscnVersionAtMint?: any;
                         account?: string;
                     };
                     toBeRevealed?: boolean;
-                }): _458.NFTData;
+                }): _526.NFTData;
             };
             Listing: {
-                encode(message: _457.Listing, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _457.Listing;
-                fromJSON(object: any): _457.Listing;
-                toJSON(message: _457.Listing): unknown;
+                encode(message: _525.Listing, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _525.Listing;
+                fromJSON(object: any): _525.Listing;
+                toJSON(message: _525.Listing): unknown;
                 fromPartial(object: {
                     classId?: string;
                     nftId?: string;
@@ -2675,13 +2675,13 @@ export declare namespace likechain {
                         seconds?: any;
                         nanos?: number;
                     };
-                }): _457.Listing;
+                }): _525.Listing;
             };
             ListingStoreRecord: {
-                encode(message: _457.ListingStoreRecord, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _457.ListingStoreRecord;
-                fromJSON(object: any): _457.ListingStoreRecord;
-                toJSON(message: _457.ListingStoreRecord): unknown;
+                encode(message: _525.ListingStoreRecord, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _525.ListingStoreRecord;
+                fromJSON(object: any): _525.ListingStoreRecord;
+                toJSON(message: _525.ListingStoreRecord): unknown;
                 fromPartial(object: {
                     classId?: string;
                     nftId?: string;
@@ -2691,26 +2691,26 @@ export declare namespace likechain {
                         seconds?: any;
                         nanos?: number;
                     };
-                }): _457.ListingStoreRecord;
+                }): _525.ListingStoreRecord;
             };
             ListingExpireQueueEntry: {
-                encode(message: _456.ListingExpireQueueEntry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _456.ListingExpireQueueEntry;
-                fromJSON(object: any): _456.ListingExpireQueueEntry;
-                toJSON(message: _456.ListingExpireQueueEntry): unknown;
+                encode(message: _524.ListingExpireQueueEntry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _524.ListingExpireQueueEntry;
+                fromJSON(object: any): _524.ListingExpireQueueEntry;
+                toJSON(message: _524.ListingExpireQueueEntry): unknown;
                 fromPartial(object: {
                     expireTime?: {
                         seconds?: any;
                         nanos?: number;
                     };
                     listingKey?: Uint8Array;
-                }): _456.ListingExpireQueueEntry;
+                }): _524.ListingExpireQueueEntry;
             };
             GenesisState: {
-                encode(message: _455.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _455.GenesisState;
-                fromJSON(object: any): _455.GenesisState;
-                toJSON(message: _455.GenesisState): unknown;
+                encode(message: _523.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _523.GenesisState;
+                fromJSON(object: any): _523.GenesisState;
+                toJSON(message: _523.GenesisState): unknown;
                 fromPartial(object: {
                     params?: {
                         priceDenom?: string;
@@ -2790,296 +2790,296 @@ export declare namespace likechain {
                             }[];
                         };
                     }[];
-                }): _455.GenesisState;
+                }): _523.GenesisState;
             };
             EventNewClass: {
-                encode(message: _454.EventNewClass, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.EventNewClass;
-                fromJSON(object: any): _454.EventNewClass;
-                toJSON(message: _454.EventNewClass): unknown;
+                encode(message: _522.EventNewClass, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _522.EventNewClass;
+                fromJSON(object: any): _522.EventNewClass;
+                toJSON(message: _522.EventNewClass): unknown;
                 fromPartial(object: {
                     classId?: string;
                     parentIscnIdPrefix?: string;
                     parentAccount?: string;
-                }): _454.EventNewClass;
+                }): _522.EventNewClass;
             };
             EventUpdateClass: {
-                encode(message: _454.EventUpdateClass, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.EventUpdateClass;
-                fromJSON(object: any): _454.EventUpdateClass;
-                toJSON(message: _454.EventUpdateClass): unknown;
+                encode(message: _522.EventUpdateClass, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _522.EventUpdateClass;
+                fromJSON(object: any): _522.EventUpdateClass;
+                toJSON(message: _522.EventUpdateClass): unknown;
                 fromPartial(object: {
                     classId?: string;
                     parentIscnIdPrefix?: string;
                     parentAccount?: string;
-                }): _454.EventUpdateClass;
+                }): _522.EventUpdateClass;
             };
             EventRevealClass: {
-                encode(message: _454.EventRevealClass, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.EventRevealClass;
-                fromJSON(object: any): _454.EventRevealClass;
-                toJSON(message: _454.EventRevealClass): unknown;
+                encode(message: _522.EventRevealClass, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _522.EventRevealClass;
+                fromJSON(object: any): _522.EventRevealClass;
+                toJSON(message: _522.EventRevealClass): unknown;
                 fromPartial(object: {
                     classId?: string;
                     success?: boolean;
                     error?: string;
-                }): _454.EventRevealClass;
+                }): _522.EventRevealClass;
             };
             EventMintNFT: {
-                encode(message: _454.EventMintNFT, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.EventMintNFT;
-                fromJSON(object: any): _454.EventMintNFT;
-                toJSON(message: _454.EventMintNFT): unknown;
+                encode(message: _522.EventMintNFT, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _522.EventMintNFT;
+                fromJSON(object: any): _522.EventMintNFT;
+                toJSON(message: _522.EventMintNFT): unknown;
                 fromPartial(object: {
                     classId?: string;
                     nftId?: string;
                     owner?: string;
                     classParentIscnIdPrefix?: string;
                     classParentAccount?: string;
-                }): _454.EventMintNFT;
+                }): _522.EventMintNFT;
             };
             EventBurnNFT: {
-                encode(message: _454.EventBurnNFT, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.EventBurnNFT;
-                fromJSON(object: any): _454.EventBurnNFT;
-                toJSON(message: _454.EventBurnNFT): unknown;
+                encode(message: _522.EventBurnNFT, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _522.EventBurnNFT;
+                fromJSON(object: any): _522.EventBurnNFT;
+                toJSON(message: _522.EventBurnNFT): unknown;
                 fromPartial(object: {
                     classId?: string;
                     nftId?: string;
                     owner?: string;
                     classParentIscnIdPrefix?: string;
                     classParentAccount?: string;
-                }): _454.EventBurnNFT;
+                }): _522.EventBurnNFT;
             };
             EventCreateBlindBoxContent: {
-                encode(message: _454.EventCreateBlindBoxContent, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.EventCreateBlindBoxContent;
-                fromJSON(object: any): _454.EventCreateBlindBoxContent;
-                toJSON(message: _454.EventCreateBlindBoxContent): unknown;
+                encode(message: _522.EventCreateBlindBoxContent, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _522.EventCreateBlindBoxContent;
+                fromJSON(object: any): _522.EventCreateBlindBoxContent;
+                toJSON(message: _522.EventCreateBlindBoxContent): unknown;
                 fromPartial(object: {
                     classId?: string;
                     contentId?: string;
                     classParentIscnIdPrefix?: string;
                     classParentAccount?: string;
-                }): _454.EventCreateBlindBoxContent;
+                }): _522.EventCreateBlindBoxContent;
             };
             EventUpdateBlindBoxContent: {
-                encode(message: _454.EventUpdateBlindBoxContent, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.EventUpdateBlindBoxContent;
-                fromJSON(object: any): _454.EventUpdateBlindBoxContent;
-                toJSON(message: _454.EventUpdateBlindBoxContent): unknown;
+                encode(message: _522.EventUpdateBlindBoxContent, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _522.EventUpdateBlindBoxContent;
+                fromJSON(object: any): _522.EventUpdateBlindBoxContent;
+                toJSON(message: _522.EventUpdateBlindBoxContent): unknown;
                 fromPartial(object: {
                     classId?: string;
                     contentId?: string;
                     classParentIscnIdPrefix?: string;
                     classParentAccount?: string;
-                }): _454.EventUpdateBlindBoxContent;
+                }): _522.EventUpdateBlindBoxContent;
             };
             EventDeleteBlindBoxContent: {
-                encode(message: _454.EventDeleteBlindBoxContent, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.EventDeleteBlindBoxContent;
-                fromJSON(object: any): _454.EventDeleteBlindBoxContent;
-                toJSON(message: _454.EventDeleteBlindBoxContent): unknown;
+                encode(message: _522.EventDeleteBlindBoxContent, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _522.EventDeleteBlindBoxContent;
+                fromJSON(object: any): _522.EventDeleteBlindBoxContent;
+                toJSON(message: _522.EventDeleteBlindBoxContent): unknown;
                 fromPartial(object: {
                     classId?: string;
                     contentId?: string;
                     classParentIscnIdPrefix?: string;
                     classParentAccount?: string;
-                }): _454.EventDeleteBlindBoxContent;
+                }): _522.EventDeleteBlindBoxContent;
             };
             EventCreateOffer: {
-                encode(message: _454.EventCreateOffer, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.EventCreateOffer;
-                fromJSON(object: any): _454.EventCreateOffer;
-                toJSON(message: _454.EventCreateOffer): unknown;
+                encode(message: _522.EventCreateOffer, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _522.EventCreateOffer;
+                fromJSON(object: any): _522.EventCreateOffer;
+                toJSON(message: _522.EventCreateOffer): unknown;
                 fromPartial(object: {
                     classId?: string;
                     nftId?: string;
                     buyer?: string;
-                }): _454.EventCreateOffer;
+                }): _522.EventCreateOffer;
             };
             EventUpdateOffer: {
-                encode(message: _454.EventUpdateOffer, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.EventUpdateOffer;
-                fromJSON(object: any): _454.EventUpdateOffer;
-                toJSON(message: _454.EventUpdateOffer): unknown;
+                encode(message: _522.EventUpdateOffer, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _522.EventUpdateOffer;
+                fromJSON(object: any): _522.EventUpdateOffer;
+                toJSON(message: _522.EventUpdateOffer): unknown;
                 fromPartial(object: {
                     classId?: string;
                     nftId?: string;
                     buyer?: string;
-                }): _454.EventUpdateOffer;
+                }): _522.EventUpdateOffer;
             };
             EventDeleteOffer: {
-                encode(message: _454.EventDeleteOffer, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.EventDeleteOffer;
-                fromJSON(object: any): _454.EventDeleteOffer;
-                toJSON(message: _454.EventDeleteOffer): unknown;
+                encode(message: _522.EventDeleteOffer, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _522.EventDeleteOffer;
+                fromJSON(object: any): _522.EventDeleteOffer;
+                toJSON(message: _522.EventDeleteOffer): unknown;
                 fromPartial(object: {
                     classId?: string;
                     nftId?: string;
                     buyer?: string;
-                }): _454.EventDeleteOffer;
+                }): _522.EventDeleteOffer;
             };
             EventCreateListing: {
-                encode(message: _454.EventCreateListing, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.EventCreateListing;
-                fromJSON(object: any): _454.EventCreateListing;
-                toJSON(message: _454.EventCreateListing): unknown;
+                encode(message: _522.EventCreateListing, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _522.EventCreateListing;
+                fromJSON(object: any): _522.EventCreateListing;
+                toJSON(message: _522.EventCreateListing): unknown;
                 fromPartial(object: {
                     classId?: string;
                     nftId?: string;
                     seller?: string;
-                }): _454.EventCreateListing;
+                }): _522.EventCreateListing;
             };
             EventUpdateListing: {
-                encode(message: _454.EventUpdateListing, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.EventUpdateListing;
-                fromJSON(object: any): _454.EventUpdateListing;
-                toJSON(message: _454.EventUpdateListing): unknown;
+                encode(message: _522.EventUpdateListing, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _522.EventUpdateListing;
+                fromJSON(object: any): _522.EventUpdateListing;
+                toJSON(message: _522.EventUpdateListing): unknown;
                 fromPartial(object: {
                     classId?: string;
                     nftId?: string;
                     seller?: string;
-                }): _454.EventUpdateListing;
+                }): _522.EventUpdateListing;
             };
             EventDeleteListing: {
-                encode(message: _454.EventDeleteListing, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.EventDeleteListing;
-                fromJSON(object: any): _454.EventDeleteListing;
-                toJSON(message: _454.EventDeleteListing): unknown;
+                encode(message: _522.EventDeleteListing, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _522.EventDeleteListing;
+                fromJSON(object: any): _522.EventDeleteListing;
+                toJSON(message: _522.EventDeleteListing): unknown;
                 fromPartial(object: {
                     classId?: string;
                     nftId?: string;
                     seller?: string;
-                }): _454.EventDeleteListing;
+                }): _522.EventDeleteListing;
             };
             EventSellNFT: {
-                encode(message: _454.EventSellNFT, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.EventSellNFT;
-                fromJSON(object: any): _454.EventSellNFT;
-                toJSON(message: _454.EventSellNFT): unknown;
+                encode(message: _522.EventSellNFT, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _522.EventSellNFT;
+                fromJSON(object: any): _522.EventSellNFT;
+                toJSON(message: _522.EventSellNFT): unknown;
                 fromPartial(object: {
                     classId?: string;
                     nftId?: string;
                     seller?: string;
                     buyer?: string;
                     price?: any;
-                }): _454.EventSellNFT;
+                }): _522.EventSellNFT;
             };
             EventBuyNFT: {
-                encode(message: _454.EventBuyNFT, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.EventBuyNFT;
-                fromJSON(object: any): _454.EventBuyNFT;
-                toJSON(message: _454.EventBuyNFT): unknown;
+                encode(message: _522.EventBuyNFT, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _522.EventBuyNFT;
+                fromJSON(object: any): _522.EventBuyNFT;
+                toJSON(message: _522.EventBuyNFT): unknown;
                 fromPartial(object: {
                     classId?: string;
                     nftId?: string;
                     seller?: string;
                     buyer?: string;
                     price?: any;
-                }): _454.EventBuyNFT;
+                }): _522.EventBuyNFT;
             };
             EventExpireOffer: {
-                encode(message: _454.EventExpireOffer, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.EventExpireOffer;
-                fromJSON(object: any): _454.EventExpireOffer;
-                toJSON(message: _454.EventExpireOffer): unknown;
+                encode(message: _522.EventExpireOffer, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _522.EventExpireOffer;
+                fromJSON(object: any): _522.EventExpireOffer;
+                toJSON(message: _522.EventExpireOffer): unknown;
                 fromPartial(object: {
                     classId?: string;
                     nftId?: string;
                     buyer?: string;
                     success?: boolean;
                     error?: string;
-                }): _454.EventExpireOffer;
+                }): _522.EventExpireOffer;
             };
             EventExpireListing: {
-                encode(message: _454.EventExpireListing, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.EventExpireListing;
-                fromJSON(object: any): _454.EventExpireListing;
-                toJSON(message: _454.EventExpireListing): unknown;
+                encode(message: _522.EventExpireListing, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _522.EventExpireListing;
+                fromJSON(object: any): _522.EventExpireListing;
+                toJSON(message: _522.EventExpireListing): unknown;
                 fromPartial(object: {
                     classId?: string;
                     nftId?: string;
                     seller?: string;
                     success?: boolean;
                     error?: string;
-                }): _454.EventExpireListing;
+                }): _522.EventExpireListing;
             };
             EventCreateRoyaltyConfig: {
-                encode(message: _454.EventCreateRoyaltyConfig, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.EventCreateRoyaltyConfig;
-                fromJSON(object: any): _454.EventCreateRoyaltyConfig;
-                toJSON(message: _454.EventCreateRoyaltyConfig): unknown;
+                encode(message: _522.EventCreateRoyaltyConfig, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _522.EventCreateRoyaltyConfig;
+                fromJSON(object: any): _522.EventCreateRoyaltyConfig;
+                toJSON(message: _522.EventCreateRoyaltyConfig): unknown;
                 fromPartial(object: {
                     classId?: string;
-                }): _454.EventCreateRoyaltyConfig;
+                }): _522.EventCreateRoyaltyConfig;
             };
             EventUpdateRoyaltyConfig: {
-                encode(message: _454.EventUpdateRoyaltyConfig, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.EventUpdateRoyaltyConfig;
-                fromJSON(object: any): _454.EventUpdateRoyaltyConfig;
-                toJSON(message: _454.EventUpdateRoyaltyConfig): unknown;
+                encode(message: _522.EventUpdateRoyaltyConfig, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _522.EventUpdateRoyaltyConfig;
+                fromJSON(object: any): _522.EventUpdateRoyaltyConfig;
+                toJSON(message: _522.EventUpdateRoyaltyConfig): unknown;
                 fromPartial(object: {
                     classId?: string;
-                }): _454.EventUpdateRoyaltyConfig;
+                }): _522.EventUpdateRoyaltyConfig;
             };
             EventDeleteRoyaltyConfig: {
-                encode(message: _454.EventDeleteRoyaltyConfig, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _454.EventDeleteRoyaltyConfig;
-                fromJSON(object: any): _454.EventDeleteRoyaltyConfig;
-                toJSON(message: _454.EventDeleteRoyaltyConfig): unknown;
+                encode(message: _522.EventDeleteRoyaltyConfig, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _522.EventDeleteRoyaltyConfig;
+                fromJSON(object: any): _522.EventDeleteRoyaltyConfig;
+                toJSON(message: _522.EventDeleteRoyaltyConfig): unknown;
                 fromPartial(object: {
                     classId?: string;
-                }): _454.EventDeleteRoyaltyConfig;
+                }): _522.EventDeleteRoyaltyConfig;
             };
             ClassesByISCN: {
-                encode(message: _453.ClassesByISCN, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _453.ClassesByISCN;
-                fromJSON(object: any): _453.ClassesByISCN;
-                toJSON(message: _453.ClassesByISCN): unknown;
+                encode(message: _521.ClassesByISCN, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _521.ClassesByISCN;
+                fromJSON(object: any): _521.ClassesByISCN;
+                toJSON(message: _521.ClassesByISCN): unknown;
                 fromPartial(object: {
                     iscnIdPrefix?: string;
                     classIds?: string[];
-                }): _453.ClassesByISCN;
+                }): _521.ClassesByISCN;
             };
             ClassesByAccount: {
-                encode(message: _452.ClassesByAccount, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _452.ClassesByAccount;
-                fromJSON(object: any): _452.ClassesByAccount;
-                toJSON(message: _452.ClassesByAccount): unknown;
+                encode(message: _520.ClassesByAccount, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _520.ClassesByAccount;
+                fromJSON(object: any): _520.ClassesByAccount;
+                toJSON(message: _520.ClassesByAccount): unknown;
                 fromPartial(object: {
                     account?: string;
                     classIds?: string[];
-                }): _452.ClassesByAccount;
+                }): _520.ClassesByAccount;
             };
             ClassesByAccountStoreRecord: {
-                encode(message: _452.ClassesByAccountStoreRecord, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _452.ClassesByAccountStoreRecord;
-                fromJSON(object: any): _452.ClassesByAccountStoreRecord;
-                toJSON(message: _452.ClassesByAccountStoreRecord): unknown;
+                encode(message: _520.ClassesByAccountStoreRecord, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _520.ClassesByAccountStoreRecord;
+                fromJSON(object: any): _520.ClassesByAccountStoreRecord;
+                toJSON(message: _520.ClassesByAccountStoreRecord): unknown;
                 fromPartial(object: {
                     accAddress?: Uint8Array;
                     classIds?: string[];
-                }): _452.ClassesByAccountStoreRecord;
+                }): _520.ClassesByAccountStoreRecord;
             };
             ClassRevealQueueEntry: {
-                encode(message: _451.ClassRevealQueueEntry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _451.ClassRevealQueueEntry;
-                fromJSON(object: any): _451.ClassRevealQueueEntry;
-                toJSON(message: _451.ClassRevealQueueEntry): unknown;
+                encode(message: _519.ClassRevealQueueEntry, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _519.ClassRevealQueueEntry;
+                fromJSON(object: any): _519.ClassRevealQueueEntry;
+                toJSON(message: _519.ClassRevealQueueEntry): unknown;
                 fromPartial(object: {
                     revealTime?: {
                         seconds?: any;
                         nanos?: number;
                     };
                     classId?: string;
-                }): _451.ClassRevealQueueEntry;
+                }): _519.ClassRevealQueueEntry;
             };
             ClassInput: {
-                encode(message: _450.ClassInput, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _450.ClassInput;
-                fromJSON(object: any): _450.ClassInput;
-                toJSON(message: _450.ClassInput): unknown;
+                encode(message: _518.ClassInput, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _518.ClassInput;
+                fromJSON(object: any): _518.ClassInput;
+                toJSON(message: _518.ClassInput): unknown;
                 fromPartial(object: {
                     name?: string;
                     symbol?: string;
@@ -3105,30 +3105,30 @@ export declare namespace likechain {
                             };
                         };
                     };
-                }): _450.ClassInput;
+                }): _518.ClassInput;
             };
             ClassParentInput: {
-                encode(message: _450.ClassParentInput, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _450.ClassParentInput;
-                fromJSON(object: any): _450.ClassParentInput;
-                toJSON(message: _450.ClassParentInput): unknown;
+                encode(message: _518.ClassParentInput, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _518.ClassParentInput;
+                fromJSON(object: any): _518.ClassParentInput;
+                toJSON(message: _518.ClassParentInput): unknown;
                 fromPartial(object: {
-                    type?: _449.ClassParentType;
+                    type?: _517.ClassParentType;
                     iscnIdPrefix?: string;
-                }): _450.ClassParentInput;
+                }): _518.ClassParentInput;
             };
-            classParentTypeFromJSON(object: any): _449.ClassParentType;
-            classParentTypeToJSON(object: _449.ClassParentType): string;
-            ClassParentType: typeof _449.ClassParentType;
+            classParentTypeFromJSON(object: any): _517.ClassParentType;
+            classParentTypeToJSON(object: _517.ClassParentType): string;
+            ClassParentType: typeof _517.ClassParentType;
             ClassData: {
-                encode(message: _449.ClassData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _449.ClassData;
-                fromJSON(object: any): _449.ClassData;
-                toJSON(message: _449.ClassData): unknown;
+                encode(message: _517.ClassData, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _517.ClassData;
+                fromJSON(object: any): _517.ClassData;
+                toJSON(message: _517.ClassData): unknown;
                 fromPartial(object: {
                     metadata?: Uint8Array;
                     parent?: {
-                        type?: _449.ClassParentType;
+                        type?: _517.ClassParentType;
                         iscnIdPrefix?: string;
                         iscnVersionAtMint?: any;
                         account?: string;
@@ -3155,25 +3155,25 @@ export declare namespace likechain {
                         contentCount?: any;
                         toBeRevealed?: boolean;
                     };
-                }): _449.ClassData;
+                }): _517.ClassData;
             };
             ClassParent: {
-                encode(message: _449.ClassParent, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _449.ClassParent;
-                fromJSON(object: any): _449.ClassParent;
-                toJSON(message: _449.ClassParent): unknown;
+                encode(message: _517.ClassParent, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _517.ClassParent;
+                fromJSON(object: any): _517.ClassParent;
+                toJSON(message: _517.ClassParent): unknown;
                 fromPartial(object: {
-                    type?: _449.ClassParentType;
+                    type?: _517.ClassParentType;
                     iscnIdPrefix?: string;
                     iscnVersionAtMint?: any;
                     account?: string;
-                }): _449.ClassParent;
+                }): _517.ClassParent;
             };
             MintPeriod: {
-                encode(message: _449.MintPeriod, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _449.MintPeriod;
-                fromJSON(object: any): _449.MintPeriod;
-                toJSON(message: _449.MintPeriod): unknown;
+                encode(message: _517.MintPeriod, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _517.MintPeriod;
+                fromJSON(object: any): _517.MintPeriod;
+                toJSON(message: _517.MintPeriod): unknown;
                 fromPartial(object: {
                     startTime?: {
                         seconds?: any;
@@ -3181,13 +3181,13 @@ export declare namespace likechain {
                     };
                     allowedAddresses?: string[];
                     mintPrice?: any;
-                }): _449.MintPeriod;
+                }): _517.MintPeriod;
             };
             ClassConfig: {
-                encode(message: _449.ClassConfig, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _449.ClassConfig;
-                fromJSON(object: any): _449.ClassConfig;
-                toJSON(message: _449.ClassConfig): unknown;
+                encode(message: _517.ClassConfig, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _517.ClassConfig;
+                fromJSON(object: any): _517.ClassConfig;
+                toJSON(message: _517.ClassConfig): unknown;
                 fromPartial(object: {
                     burnable?: boolean;
                     maxSupply?: any;
@@ -3205,13 +3205,13 @@ export declare namespace likechain {
                             nanos?: number;
                         };
                     };
-                }): _449.ClassConfig;
+                }): _517.ClassConfig;
             };
             BlindBoxConfig: {
-                encode(message: _449.BlindBoxConfig, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _449.BlindBoxConfig;
-                fromJSON(object: any): _449.BlindBoxConfig;
-                toJSON(message: _449.BlindBoxConfig): unknown;
+                encode(message: _517.BlindBoxConfig, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _517.BlindBoxConfig;
+                fromJSON(object: any): _517.BlindBoxConfig;
+                toJSON(message: _517.BlindBoxConfig): unknown;
                 fromPartial(object: {
                     mintPeriods?: {
                         startTime?: {
@@ -3225,23 +3225,23 @@ export declare namespace likechain {
                         seconds?: any;
                         nanos?: number;
                     };
-                }): _449.BlindBoxConfig;
+                }): _517.BlindBoxConfig;
             };
             BlindBoxState: {
-                encode(message: _449.BlindBoxState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _449.BlindBoxState;
-                fromJSON(object: any): _449.BlindBoxState;
-                toJSON(message: _449.BlindBoxState): unknown;
+                encode(message: _517.BlindBoxState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _517.BlindBoxState;
+                fromJSON(object: any): _517.BlindBoxState;
+                toJSON(message: _517.BlindBoxState): unknown;
                 fromPartial(object: {
                     contentCount?: any;
                     toBeRevealed?: boolean;
-                }): _449.BlindBoxState;
+                }): _517.BlindBoxState;
             };
             BlindBoxContent: {
-                encode(message: _448.BlindBoxContent, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _448.BlindBoxContent;
-                fromJSON(object: any): _448.BlindBoxContent;
-                toJSON(message: _448.BlindBoxContent): unknown;
+                encode(message: _516.BlindBoxContent, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _516.BlindBoxContent;
+                fromJSON(object: any): _516.BlindBoxContent;
+                toJSON(message: _516.BlindBoxContent): unknown;
                 fromPartial(object: {
                     classId?: string;
                     id?: string;
@@ -3250,7 +3250,7 @@ export declare namespace likechain {
                         uriHash?: string;
                         metadata?: Uint8Array;
                     };
-                }): _448.BlindBoxContent;
+                }): _516.BlindBoxContent;
             };
         };
     }

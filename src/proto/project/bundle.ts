@@ -1,13 +1,13 @@
-import * as _383 from "../ixo/project/genesis";
-import * as _384 from "../ixo/project/project";
-import * as _385 from "../ixo/project/query";
-import * as _386 from "../ixo/project/tx";
-import * as _828 from "../ixo/project/tx.amino";
-import * as _829 from "../ixo/project/tx.registry";
-export const project = { ..._383,
-  ..._384,
-  ..._385,
-  ..._386,
-  ..._828,
-  ..._829
+import * as _451 from "../ixo/project/genesis";
+import * as _452 from "../ixo/project/project";
+import * as _453 from "../ixo/project/query";
+import * as _454 from "../ixo/project/tx";
+import * as _898 from "../ixo/project/tx.amino";
+import * as _899 from "../ixo/project/tx.registry";
+export const project = { ..._451,
+  ..._452,
+  ..._453,
+  ..._454,
+  ..._898,
+  ..._899
 };

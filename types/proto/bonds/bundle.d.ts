@@ -1,133 +1,133 @@
-import * as _370 from "../ixo/bonds/bonds";
-import * as _371 from "../ixo/bonds/genesis";
-import * as _372 from "../ixo/bonds/query";
-import * as _373 from "../ixo/bonds/tx";
+import * as _438 from "../ixo/bonds/bonds";
+import * as _439 from "../ixo/bonds/genesis";
+import * as _440 from "../ixo/bonds/query";
+import * as _441 from "../ixo/bonds/tx";
 export declare const bonds: {
     registry: readonly [string, import("@cosmjs/proto-signing").GeneratedType][];
     load: (protoRegistry: import("@cosmjs/proto-signing").Registry) => void;
     MessageComposer: {
         encoded: {
-            createBond(value: _373.MsgCreateBond): {
+            createBond(value: _441.MsgCreateBond): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            editBond(value: _373.MsgEditBond): {
+            editBond(value: _441.MsgEditBond): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            setNextAlpha(value: _373.MsgSetNextAlpha): {
+            setNextAlpha(value: _441.MsgSetNextAlpha): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            updateBondState(value: _373.MsgUpdateBondState): {
+            updateBondState(value: _441.MsgUpdateBondState): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            buy(value: _373.MsgBuy): {
+            buy(value: _441.MsgBuy): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            sell(value: _373.MsgSell): {
+            sell(value: _441.MsgSell): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            swap(value: _373.MsgSwap): {
+            swap(value: _441.MsgSwap): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            makeOutcomePayment(value: _373.MsgMakeOutcomePayment): {
+            makeOutcomePayment(value: _441.MsgMakeOutcomePayment): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            withdrawShare(value: _373.MsgWithdrawShare): {
+            withdrawShare(value: _441.MsgWithdrawShare): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            withdrawReserve(value: _373.MsgWithdrawReserve): {
+            withdrawReserve(value: _441.MsgWithdrawReserve): {
                 typeUrl: string;
                 value: Uint8Array;
             };
         };
         withTypeUrl: {
-            createBond(value: _373.MsgCreateBond): {
+            createBond(value: _441.MsgCreateBond): {
                 typeUrl: string;
-                value: _373.MsgCreateBond;
+                value: _441.MsgCreateBond;
             };
-            editBond(value: _373.MsgEditBond): {
+            editBond(value: _441.MsgEditBond): {
                 typeUrl: string;
-                value: _373.MsgEditBond;
+                value: _441.MsgEditBond;
             };
-            setNextAlpha(value: _373.MsgSetNextAlpha): {
+            setNextAlpha(value: _441.MsgSetNextAlpha): {
                 typeUrl: string;
-                value: _373.MsgSetNextAlpha;
+                value: _441.MsgSetNextAlpha;
             };
-            updateBondState(value: _373.MsgUpdateBondState): {
+            updateBondState(value: _441.MsgUpdateBondState): {
                 typeUrl: string;
-                value: _373.MsgUpdateBondState;
+                value: _441.MsgUpdateBondState;
             };
-            buy(value: _373.MsgBuy): {
+            buy(value: _441.MsgBuy): {
                 typeUrl: string;
-                value: _373.MsgBuy;
+                value: _441.MsgBuy;
             };
-            sell(value: _373.MsgSell): {
+            sell(value: _441.MsgSell): {
                 typeUrl: string;
-                value: _373.MsgSell;
+                value: _441.MsgSell;
             };
-            swap(value: _373.MsgSwap): {
+            swap(value: _441.MsgSwap): {
                 typeUrl: string;
-                value: _373.MsgSwap;
+                value: _441.MsgSwap;
             };
-            makeOutcomePayment(value: _373.MsgMakeOutcomePayment): {
+            makeOutcomePayment(value: _441.MsgMakeOutcomePayment): {
                 typeUrl: string;
-                value: _373.MsgMakeOutcomePayment;
+                value: _441.MsgMakeOutcomePayment;
             };
-            withdrawShare(value: _373.MsgWithdrawShare): {
+            withdrawShare(value: _441.MsgWithdrawShare): {
                 typeUrl: string;
-                value: _373.MsgWithdrawShare;
+                value: _441.MsgWithdrawShare;
             };
-            withdrawReserve(value: _373.MsgWithdrawReserve): {
+            withdrawReserve(value: _441.MsgWithdrawReserve): {
                 typeUrl: string;
-                value: _373.MsgWithdrawReserve;
+                value: _441.MsgWithdrawReserve;
             };
         };
         toJSON: {
-            createBond(value: _373.MsgCreateBond): {
+            createBond(value: _441.MsgCreateBond): {
                 typeUrl: string;
                 value: unknown;
             };
-            editBond(value: _373.MsgEditBond): {
+            editBond(value: _441.MsgEditBond): {
                 typeUrl: string;
                 value: unknown;
             };
-            setNextAlpha(value: _373.MsgSetNextAlpha): {
+            setNextAlpha(value: _441.MsgSetNextAlpha): {
                 typeUrl: string;
                 value: unknown;
             };
-            updateBondState(value: _373.MsgUpdateBondState): {
+            updateBondState(value: _441.MsgUpdateBondState): {
                 typeUrl: string;
                 value: unknown;
             };
-            buy(value: _373.MsgBuy): {
+            buy(value: _441.MsgBuy): {
                 typeUrl: string;
                 value: unknown;
             };
-            sell(value: _373.MsgSell): {
+            sell(value: _441.MsgSell): {
                 typeUrl: string;
                 value: unknown;
             };
-            swap(value: _373.MsgSwap): {
+            swap(value: _441.MsgSwap): {
                 typeUrl: string;
                 value: unknown;
             };
-            makeOutcomePayment(value: _373.MsgMakeOutcomePayment): {
+            makeOutcomePayment(value: _441.MsgMakeOutcomePayment): {
                 typeUrl: string;
                 value: unknown;
             };
-            withdrawShare(value: _373.MsgWithdrawShare): {
+            withdrawShare(value: _441.MsgWithdrawShare): {
                 typeUrl: string;
                 value: unknown;
             };
-            withdrawReserve(value: _373.MsgWithdrawReserve): {
+            withdrawReserve(value: _441.MsgWithdrawReserve): {
                 typeUrl: string;
                 value: unknown;
             };
@@ -135,92 +135,92 @@ export declare const bonds: {
         fromJSON: {
             createBond(value: any): {
                 typeUrl: string;
-                value: _373.MsgCreateBond;
+                value: _441.MsgCreateBond;
             };
             editBond(value: any): {
                 typeUrl: string;
-                value: _373.MsgEditBond;
+                value: _441.MsgEditBond;
             };
             setNextAlpha(value: any): {
                 typeUrl: string;
-                value: _373.MsgSetNextAlpha;
+                value: _441.MsgSetNextAlpha;
             };
             updateBondState(value: any): {
                 typeUrl: string;
-                value: _373.MsgUpdateBondState;
+                value: _441.MsgUpdateBondState;
             };
             buy(value: any): {
                 typeUrl: string;
-                value: _373.MsgBuy;
+                value: _441.MsgBuy;
             };
             sell(value: any): {
                 typeUrl: string;
-                value: _373.MsgSell;
+                value: _441.MsgSell;
             };
             swap(value: any): {
                 typeUrl: string;
-                value: _373.MsgSwap;
+                value: _441.MsgSwap;
             };
             makeOutcomePayment(value: any): {
                 typeUrl: string;
-                value: _373.MsgMakeOutcomePayment;
+                value: _441.MsgMakeOutcomePayment;
             };
             withdrawShare(value: any): {
                 typeUrl: string;
-                value: _373.MsgWithdrawShare;
+                value: _441.MsgWithdrawShare;
             };
             withdrawReserve(value: any): {
                 typeUrl: string;
-                value: _373.MsgWithdrawReserve;
+                value: _441.MsgWithdrawReserve;
             };
         };
         fromPartial: {
-            createBond(value: _373.MsgCreateBond): {
+            createBond(value: _441.MsgCreateBond): {
                 typeUrl: string;
-                value: _373.MsgCreateBond;
+                value: _441.MsgCreateBond;
             };
-            editBond(value: _373.MsgEditBond): {
+            editBond(value: _441.MsgEditBond): {
                 typeUrl: string;
-                value: _373.MsgEditBond;
+                value: _441.MsgEditBond;
             };
-            setNextAlpha(value: _373.MsgSetNextAlpha): {
+            setNextAlpha(value: _441.MsgSetNextAlpha): {
                 typeUrl: string;
-                value: _373.MsgSetNextAlpha;
+                value: _441.MsgSetNextAlpha;
             };
-            updateBondState(value: _373.MsgUpdateBondState): {
+            updateBondState(value: _441.MsgUpdateBondState): {
                 typeUrl: string;
-                value: _373.MsgUpdateBondState;
+                value: _441.MsgUpdateBondState;
             };
-            buy(value: _373.MsgBuy): {
+            buy(value: _441.MsgBuy): {
                 typeUrl: string;
-                value: _373.MsgBuy;
+                value: _441.MsgBuy;
             };
-            sell(value: _373.MsgSell): {
+            sell(value: _441.MsgSell): {
                 typeUrl: string;
-                value: _373.MsgSell;
+                value: _441.MsgSell;
             };
-            swap(value: _373.MsgSwap): {
+            swap(value: _441.MsgSwap): {
                 typeUrl: string;
-                value: _373.MsgSwap;
+                value: _441.MsgSwap;
             };
-            makeOutcomePayment(value: _373.MsgMakeOutcomePayment): {
+            makeOutcomePayment(value: _441.MsgMakeOutcomePayment): {
                 typeUrl: string;
-                value: _373.MsgMakeOutcomePayment;
+                value: _441.MsgMakeOutcomePayment;
             };
-            withdrawShare(value: _373.MsgWithdrawShare): {
+            withdrawShare(value: _441.MsgWithdrawShare): {
                 typeUrl: string;
-                value: _373.MsgWithdrawShare;
+                value: _441.MsgWithdrawShare;
             };
-            withdrawReserve(value: _373.MsgWithdrawReserve): {
+            withdrawReserve(value: _441.MsgWithdrawReserve): {
                 typeUrl: string;
-                value: _373.MsgWithdrawReserve;
+                value: _441.MsgWithdrawReserve;
             };
         };
     };
     AminoConverter: {
         "/bonds.MsgCreateBond": {
             aminoType: string;
-            toAmino: ({ bondDid, token, name, description, functionType, functionParameters, creatorDid, controllerDid, reserveTokens, txFeePercentage, exitFeePercentage, feeAddress, reserveWithdrawalAddress, maxSupply, orderQuantityLimits, sanityRate, sanityMarginPercentage, allowSells, allowReserveWithdrawals, alphaBond, batchBlocks, outcomePayment }: _373.MsgCreateBond) => {
+            toAmino: ({ bondDid, token, name, description, functionType, functionParameters, creatorDid, controllerDid, reserveTokens, txFeePercentage, exitFeePercentage, feeAddress, reserveWithdrawalAddress, maxSupply, orderQuantityLimits, sanityRate, sanityMarginPercentage, allowSells, allowReserveWithdrawals, alphaBond, batchBlocks, outcomePayment }: _441.MsgCreateBond) => {
                 bond_did: string;
                 token: string;
                 name: string;
@@ -285,11 +285,11 @@ export declare const bonds: {
                 alpha_bond: boolean;
                 batch_blocks: string;
                 outcome_payment: string;
-            }) => _373.MsgCreateBond;
+            }) => _441.MsgCreateBond;
         };
         "/bonds.MsgEditBond": {
             aminoType: string;
-            toAmino: ({ bondDid, name, description, orderQuantityLimits, sanityRate, sanityMarginPercentage, editorDid }: _373.MsgEditBond) => {
+            toAmino: ({ bondDid, name, description, orderQuantityLimits, sanityRate, sanityMarginPercentage, editorDid }: _441.MsgEditBond) => {
                 bond_did: string;
                 name: string;
                 description: string;
@@ -306,11 +306,11 @@ export declare const bonds: {
                 sanity_rate: string;
                 sanity_margin_percentage: string;
                 editor_did: string;
-            }) => _373.MsgEditBond;
+            }) => _441.MsgEditBond;
         };
         "/bonds.MsgSetNextAlpha": {
             aminoType: string;
-            toAmino: ({ bondDid, alpha, editorDid }: _373.MsgSetNextAlpha) => {
+            toAmino: ({ bondDid, alpha, editorDid }: _441.MsgSetNextAlpha) => {
                 bond_did: string;
                 alpha: string;
                 editor_did: string;
@@ -319,11 +319,11 @@ export declare const bonds: {
                 bond_did: string;
                 alpha: string;
                 editor_did: string;
-            }) => _373.MsgSetNextAlpha;
+            }) => _441.MsgSetNextAlpha;
         };
         "/bonds.MsgUpdateBondState": {
             aminoType: string;
-            toAmino: ({ bondDid, state, editorDid }: _373.MsgUpdateBondState) => {
+            toAmino: ({ bondDid, state, editorDid }: _441.MsgUpdateBondState) => {
                 bond_did: string;
                 state: string;
                 editor_did: string;
@@ -332,11 +332,11 @@ export declare const bonds: {
                 bond_did: string;
                 state: string;
                 editor_did: string;
-            }) => _373.MsgUpdateBondState;
+            }) => _441.MsgUpdateBondState;
         };
         "/bonds.MsgBuy": {
             aminoType: string;
-            toAmino: ({ buyerDid, amount, maxPrices, bondDid }: _373.MsgBuy) => {
+            toAmino: ({ buyerDid, amount, maxPrices, bondDid }: _441.MsgBuy) => {
                 buyer_did: string;
                 amount: {
                     denom: string;
@@ -359,11 +359,11 @@ export declare const bonds: {
                     amount: string;
                 }[];
                 bond_did: string;
-            }) => _373.MsgBuy;
+            }) => _441.MsgBuy;
         };
         "/bonds.MsgSell": {
             aminoType: string;
-            toAmino: ({ sellerDid, amount, bondDid }: _373.MsgSell) => {
+            toAmino: ({ sellerDid, amount, bondDid }: _441.MsgSell) => {
                 seller_did: string;
                 amount: {
                     denom: string;
@@ -378,11 +378,11 @@ export declare const bonds: {
                     amount: string;
                 };
                 bond_did: string;
-            }) => _373.MsgSell;
+            }) => _441.MsgSell;
         };
         "/bonds.MsgSwap": {
             aminoType: string;
-            toAmino: ({ swapperDid, bondDid, from, toToken }: _373.MsgSwap) => {
+            toAmino: ({ swapperDid, bondDid, from, toToken }: _441.MsgSwap) => {
                 swapper_did: string;
                 bond_did: string;
                 from: {
@@ -399,11 +399,11 @@ export declare const bonds: {
                     amount: string;
                 };
                 to_token: string;
-            }) => _373.MsgSwap;
+            }) => _441.MsgSwap;
         };
         "/bonds.MsgMakeOutcomePayment": {
             aminoType: string;
-            toAmino: ({ senderDid, amount, bondDid }: _373.MsgMakeOutcomePayment) => {
+            toAmino: ({ senderDid, amount, bondDid }: _441.MsgMakeOutcomePayment) => {
                 sender_did: string;
                 amount: string;
                 bond_did: string;
@@ -412,22 +412,22 @@ export declare const bonds: {
                 sender_did: string;
                 amount: string;
                 bond_did: string;
-            }) => _373.MsgMakeOutcomePayment;
+            }) => _441.MsgMakeOutcomePayment;
         };
         "/bonds.MsgWithdrawShare": {
             aminoType: string;
-            toAmino: ({ recipientDid, bondDid }: _373.MsgWithdrawShare) => {
+            toAmino: ({ recipientDid, bondDid }: _441.MsgWithdrawShare) => {
                 recipient_did: string;
                 bond_did: string;
             };
             fromAmino: ({ recipient_did, bond_did }: {
                 recipient_did: string;
                 bond_did: string;
-            }) => _373.MsgWithdrawShare;
+            }) => _441.MsgWithdrawShare;
         };
         "/bonds.MsgWithdrawReserve": {
             aminoType: string;
-            toAmino: ({ withdrawerDid, amount, bondDid }: _373.MsgWithdrawReserve) => {
+            toAmino: ({ withdrawerDid, amount, bondDid }: _441.MsgWithdrawReserve) => {
                 withdrawer_did: string;
                 amount: {
                     denom: string;
@@ -442,14 +442,14 @@ export declare const bonds: {
                     amount: string;
                 }[];
                 bond_did: string;
-            }) => _373.MsgWithdrawReserve;
+            }) => _441.MsgWithdrawReserve;
         };
     };
     MsgCreateBond: {
-        encode(message: _373.MsgCreateBond, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _373.MsgCreateBond;
-        fromJSON(object: any): _373.MsgCreateBond;
-        toJSON(message: _373.MsgCreateBond): unknown;
+        encode(message: _441.MsgCreateBond, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _441.MsgCreateBond;
+        fromJSON(object: any): _441.MsgCreateBond;
+        toJSON(message: _441.MsgCreateBond): unknown;
         fromPartial(object: {
             bondDid?: string;
             token?: string;
@@ -482,20 +482,20 @@ export declare const bonds: {
             alphaBond?: boolean;
             batchBlocks?: string;
             outcomePayment?: string;
-        }): _373.MsgCreateBond;
+        }): _441.MsgCreateBond;
     };
     MsgCreateBondResponse: {
-        encode(_: _373.MsgCreateBondResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _373.MsgCreateBondResponse;
-        fromJSON(_: any): _373.MsgCreateBondResponse;
-        toJSON(_: _373.MsgCreateBondResponse): unknown;
-        fromPartial(_: {}): _373.MsgCreateBondResponse;
+        encode(_: _441.MsgCreateBondResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _441.MsgCreateBondResponse;
+        fromJSON(_: any): _441.MsgCreateBondResponse;
+        toJSON(_: _441.MsgCreateBondResponse): unknown;
+        fromPartial(_: {}): _441.MsgCreateBondResponse;
     };
     MsgEditBond: {
-        encode(message: _373.MsgEditBond, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _373.MsgEditBond;
-        fromJSON(object: any): _373.MsgEditBond;
-        toJSON(message: _373.MsgEditBond): unknown;
+        encode(message: _441.MsgEditBond, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _441.MsgEditBond;
+        fromJSON(object: any): _441.MsgEditBond;
+        toJSON(message: _441.MsgEditBond): unknown;
         fromPartial(object: {
             bondDid?: string;
             name?: string;
@@ -504,56 +504,56 @@ export declare const bonds: {
             sanityRate?: string;
             sanityMarginPercentage?: string;
             editorDid?: string;
-        }): _373.MsgEditBond;
+        }): _441.MsgEditBond;
     };
     MsgEditBondResponse: {
-        encode(_: _373.MsgEditBondResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _373.MsgEditBondResponse;
-        fromJSON(_: any): _373.MsgEditBondResponse;
-        toJSON(_: _373.MsgEditBondResponse): unknown;
-        fromPartial(_: {}): _373.MsgEditBondResponse;
+        encode(_: _441.MsgEditBondResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _441.MsgEditBondResponse;
+        fromJSON(_: any): _441.MsgEditBondResponse;
+        toJSON(_: _441.MsgEditBondResponse): unknown;
+        fromPartial(_: {}): _441.MsgEditBondResponse;
     };
     MsgSetNextAlpha: {
-        encode(message: _373.MsgSetNextAlpha, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _373.MsgSetNextAlpha;
-        fromJSON(object: any): _373.MsgSetNextAlpha;
-        toJSON(message: _373.MsgSetNextAlpha): unknown;
+        encode(message: _441.MsgSetNextAlpha, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _441.MsgSetNextAlpha;
+        fromJSON(object: any): _441.MsgSetNextAlpha;
+        toJSON(message: _441.MsgSetNextAlpha): unknown;
         fromPartial(object: {
             bondDid?: string;
             alpha?: string;
             editorDid?: string;
-        }): _373.MsgSetNextAlpha;
+        }): _441.MsgSetNextAlpha;
     };
     MsgSetNextAlphaResponse: {
-        encode(_: _373.MsgSetNextAlphaResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _373.MsgSetNextAlphaResponse;
-        fromJSON(_: any): _373.MsgSetNextAlphaResponse;
-        toJSON(_: _373.MsgSetNextAlphaResponse): unknown;
-        fromPartial(_: {}): _373.MsgSetNextAlphaResponse;
+        encode(_: _441.MsgSetNextAlphaResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _441.MsgSetNextAlphaResponse;
+        fromJSON(_: any): _441.MsgSetNextAlphaResponse;
+        toJSON(_: _441.MsgSetNextAlphaResponse): unknown;
+        fromPartial(_: {}): _441.MsgSetNextAlphaResponse;
     };
     MsgUpdateBondState: {
-        encode(message: _373.MsgUpdateBondState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _373.MsgUpdateBondState;
-        fromJSON(object: any): _373.MsgUpdateBondState;
-        toJSON(message: _373.MsgUpdateBondState): unknown;
+        encode(message: _441.MsgUpdateBondState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _441.MsgUpdateBondState;
+        fromJSON(object: any): _441.MsgUpdateBondState;
+        toJSON(message: _441.MsgUpdateBondState): unknown;
         fromPartial(object: {
             bondDid?: string;
             state?: string;
             editorDid?: string;
-        }): _373.MsgUpdateBondState;
+        }): _441.MsgUpdateBondState;
     };
     MsgUpdateBondStateResponse: {
-        encode(_: _373.MsgUpdateBondStateResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _373.MsgUpdateBondStateResponse;
-        fromJSON(_: any): _373.MsgUpdateBondStateResponse;
-        toJSON(_: _373.MsgUpdateBondStateResponse): unknown;
-        fromPartial(_: {}): _373.MsgUpdateBondStateResponse;
+        encode(_: _441.MsgUpdateBondStateResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _441.MsgUpdateBondStateResponse;
+        fromJSON(_: any): _441.MsgUpdateBondStateResponse;
+        toJSON(_: _441.MsgUpdateBondStateResponse): unknown;
+        fromPartial(_: {}): _441.MsgUpdateBondStateResponse;
     };
     MsgBuy: {
-        encode(message: _373.MsgBuy, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _373.MsgBuy;
-        fromJSON(object: any): _373.MsgBuy;
-        toJSON(message: _373.MsgBuy): unknown;
+        encode(message: _441.MsgBuy, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _441.MsgBuy;
+        fromJSON(object: any): _441.MsgBuy;
+        toJSON(message: _441.MsgBuy): unknown;
         fromPartial(object: {
             buyerDid?: string;
             amount?: {
@@ -565,20 +565,20 @@ export declare const bonds: {
                 amount?: string;
             }[];
             bondDid?: string;
-        }): _373.MsgBuy;
+        }): _441.MsgBuy;
     };
     MsgBuyResponse: {
-        encode(_: _373.MsgBuyResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _373.MsgBuyResponse;
-        fromJSON(_: any): _373.MsgBuyResponse;
-        toJSON(_: _373.MsgBuyResponse): unknown;
-        fromPartial(_: {}): _373.MsgBuyResponse;
+        encode(_: _441.MsgBuyResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _441.MsgBuyResponse;
+        fromJSON(_: any): _441.MsgBuyResponse;
+        toJSON(_: _441.MsgBuyResponse): unknown;
+        fromPartial(_: {}): _441.MsgBuyResponse;
     };
     MsgSell: {
-        encode(message: _373.MsgSell, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _373.MsgSell;
-        fromJSON(object: any): _373.MsgSell;
-        toJSON(message: _373.MsgSell): unknown;
+        encode(message: _441.MsgSell, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _441.MsgSell;
+        fromJSON(object: any): _441.MsgSell;
+        toJSON(message: _441.MsgSell): unknown;
         fromPartial(object: {
             sellerDid?: string;
             amount?: {
@@ -586,20 +586,20 @@ export declare const bonds: {
                 amount?: string;
             };
             bondDid?: string;
-        }): _373.MsgSell;
+        }): _441.MsgSell;
     };
     MsgSellResponse: {
-        encode(_: _373.MsgSellResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _373.MsgSellResponse;
-        fromJSON(_: any): _373.MsgSellResponse;
-        toJSON(_: _373.MsgSellResponse): unknown;
-        fromPartial(_: {}): _373.MsgSellResponse;
+        encode(_: _441.MsgSellResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _441.MsgSellResponse;
+        fromJSON(_: any): _441.MsgSellResponse;
+        toJSON(_: _441.MsgSellResponse): unknown;
+        fromPartial(_: {}): _441.MsgSellResponse;
     };
     MsgSwap: {
-        encode(message: _373.MsgSwap, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _373.MsgSwap;
-        fromJSON(object: any): _373.MsgSwap;
-        toJSON(message: _373.MsgSwap): unknown;
+        encode(message: _441.MsgSwap, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _441.MsgSwap;
+        fromJSON(object: any): _441.MsgSwap;
+        toJSON(message: _441.MsgSwap): unknown;
         fromPartial(object: {
             swapperDid?: string;
             bondDid?: string;
@@ -608,55 +608,55 @@ export declare const bonds: {
                 amount?: string;
             };
             toToken?: string;
-        }): _373.MsgSwap;
+        }): _441.MsgSwap;
     };
     MsgSwapResponse: {
-        encode(_: _373.MsgSwapResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _373.MsgSwapResponse;
-        fromJSON(_: any): _373.MsgSwapResponse;
-        toJSON(_: _373.MsgSwapResponse): unknown;
-        fromPartial(_: {}): _373.MsgSwapResponse;
+        encode(_: _441.MsgSwapResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _441.MsgSwapResponse;
+        fromJSON(_: any): _441.MsgSwapResponse;
+        toJSON(_: _441.MsgSwapResponse): unknown;
+        fromPartial(_: {}): _441.MsgSwapResponse;
     };
     MsgMakeOutcomePayment: {
-        encode(message: _373.MsgMakeOutcomePayment, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _373.MsgMakeOutcomePayment;
-        fromJSON(object: any): _373.MsgMakeOutcomePayment;
-        toJSON(message: _373.MsgMakeOutcomePayment): unknown;
+        encode(message: _441.MsgMakeOutcomePayment, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _441.MsgMakeOutcomePayment;
+        fromJSON(object: any): _441.MsgMakeOutcomePayment;
+        toJSON(message: _441.MsgMakeOutcomePayment): unknown;
         fromPartial(object: {
             senderDid?: string;
             amount?: string;
             bondDid?: string;
-        }): _373.MsgMakeOutcomePayment;
+        }): _441.MsgMakeOutcomePayment;
     };
     MsgMakeOutcomePaymentResponse: {
-        encode(_: _373.MsgMakeOutcomePaymentResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _373.MsgMakeOutcomePaymentResponse;
-        fromJSON(_: any): _373.MsgMakeOutcomePaymentResponse;
-        toJSON(_: _373.MsgMakeOutcomePaymentResponse): unknown;
-        fromPartial(_: {}): _373.MsgMakeOutcomePaymentResponse;
+        encode(_: _441.MsgMakeOutcomePaymentResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _441.MsgMakeOutcomePaymentResponse;
+        fromJSON(_: any): _441.MsgMakeOutcomePaymentResponse;
+        toJSON(_: _441.MsgMakeOutcomePaymentResponse): unknown;
+        fromPartial(_: {}): _441.MsgMakeOutcomePaymentResponse;
     };
     MsgWithdrawShare: {
-        encode(message: _373.MsgWithdrawShare, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _373.MsgWithdrawShare;
-        fromJSON(object: any): _373.MsgWithdrawShare;
-        toJSON(message: _373.MsgWithdrawShare): unknown;
+        encode(message: _441.MsgWithdrawShare, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _441.MsgWithdrawShare;
+        fromJSON(object: any): _441.MsgWithdrawShare;
+        toJSON(message: _441.MsgWithdrawShare): unknown;
         fromPartial(object: {
             recipientDid?: string;
             bondDid?: string;
-        }): _373.MsgWithdrawShare;
+        }): _441.MsgWithdrawShare;
     };
     MsgWithdrawShareResponse: {
-        encode(_: _373.MsgWithdrawShareResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _373.MsgWithdrawShareResponse;
-        fromJSON(_: any): _373.MsgWithdrawShareResponse;
-        toJSON(_: _373.MsgWithdrawShareResponse): unknown;
-        fromPartial(_: {}): _373.MsgWithdrawShareResponse;
+        encode(_: _441.MsgWithdrawShareResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _441.MsgWithdrawShareResponse;
+        fromJSON(_: any): _441.MsgWithdrawShareResponse;
+        toJSON(_: _441.MsgWithdrawShareResponse): unknown;
+        fromPartial(_: {}): _441.MsgWithdrawShareResponse;
     };
     MsgWithdrawReserve: {
-        encode(message: _373.MsgWithdrawReserve, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _373.MsgWithdrawReserve;
-        fromJSON(object: any): _373.MsgWithdrawReserve;
-        toJSON(message: _373.MsgWithdrawReserve): unknown;
+        encode(message: _441.MsgWithdrawReserve, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _441.MsgWithdrawReserve;
+        fromJSON(object: any): _441.MsgWithdrawReserve;
+        toJSON(message: _441.MsgWithdrawReserve): unknown;
         fromPartial(object: {
             withdrawerDid?: string;
             amount?: {
@@ -664,43 +664,43 @@ export declare const bonds: {
                 amount?: string;
             }[];
             bondDid?: string;
-        }): _373.MsgWithdrawReserve;
+        }): _441.MsgWithdrawReserve;
     };
     MsgWithdrawReserveResponse: {
-        encode(_: _373.MsgWithdrawReserveResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _373.MsgWithdrawReserveResponse;
-        fromJSON(_: any): _373.MsgWithdrawReserveResponse;
-        toJSON(_: _373.MsgWithdrawReserveResponse): unknown;
-        fromPartial(_: {}): _373.MsgWithdrawReserveResponse;
+        encode(_: _441.MsgWithdrawReserveResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _441.MsgWithdrawReserveResponse;
+        fromJSON(_: any): _441.MsgWithdrawReserveResponse;
+        toJSON(_: _441.MsgWithdrawReserveResponse): unknown;
+        fromPartial(_: {}): _441.MsgWithdrawReserveResponse;
     };
     QueryBondsRequest: {
-        encode(_: _372.QueryBondsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QueryBondsRequest;
-        fromJSON(_: any): _372.QueryBondsRequest;
-        toJSON(_: _372.QueryBondsRequest): unknown;
-        fromPartial(_: {}): _372.QueryBondsRequest;
+        encode(_: _440.QueryBondsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QueryBondsRequest;
+        fromJSON(_: any): _440.QueryBondsRequest;
+        toJSON(_: _440.QueryBondsRequest): unknown;
+        fromPartial(_: {}): _440.QueryBondsRequest;
     };
     QueryBondsResponse: {
-        encode(message: _372.QueryBondsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QueryBondsResponse;
-        fromJSON(object: any): _372.QueryBondsResponse;
-        toJSON(message: _372.QueryBondsResponse): unknown;
+        encode(message: _440.QueryBondsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QueryBondsResponse;
+        fromJSON(object: any): _440.QueryBondsResponse;
+        toJSON(message: _440.QueryBondsResponse): unknown;
         fromPartial(object: {
             bonds?: string[];
-        }): _372.QueryBondsResponse;
+        }): _440.QueryBondsResponse;
     };
     QueryBondsDetailedRequest: {
-        encode(_: _372.QueryBondsDetailedRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QueryBondsDetailedRequest;
-        fromJSON(_: any): _372.QueryBondsDetailedRequest;
-        toJSON(_: _372.QueryBondsDetailedRequest): unknown;
-        fromPartial(_: {}): _372.QueryBondsDetailedRequest;
+        encode(_: _440.QueryBondsDetailedRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QueryBondsDetailedRequest;
+        fromJSON(_: any): _440.QueryBondsDetailedRequest;
+        toJSON(_: _440.QueryBondsDetailedRequest): unknown;
+        fromPartial(_: {}): _440.QueryBondsDetailedRequest;
     };
     QueryBondsDetailedResponse: {
-        encode(message: _372.QueryBondsDetailedResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QueryBondsDetailedResponse;
-        fromJSON(object: any): _372.QueryBondsDetailedResponse;
-        toJSON(message: _372.QueryBondsDetailedResponse): unknown;
+        encode(message: _440.QueryBondsDetailedResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QueryBondsDetailedResponse;
+        fromJSON(object: any): _440.QueryBondsDetailedResponse;
+        toJSON(message: _440.QueryBondsDetailedResponse): unknown;
         fromPartial(object: {
             bondsDetailed?: {
                 bondDid?: string;
@@ -717,22 +717,22 @@ export declare const bonds: {
                     amount?: string;
                 }[];
             }[];
-        }): _372.QueryBondsDetailedResponse;
+        }): _440.QueryBondsDetailedResponse;
     };
     QueryBondRequest: {
-        encode(message: _372.QueryBondRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QueryBondRequest;
-        fromJSON(object: any): _372.QueryBondRequest;
-        toJSON(message: _372.QueryBondRequest): unknown;
+        encode(message: _440.QueryBondRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QueryBondRequest;
+        fromJSON(object: any): _440.QueryBondRequest;
+        toJSON(message: _440.QueryBondRequest): unknown;
         fromPartial(object: {
             bondDid?: string;
-        }): _372.QueryBondRequest;
+        }): _440.QueryBondRequest;
     };
     QueryBondResponse: {
-        encode(message: _372.QueryBondResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QueryBondResponse;
-        fromJSON(object: any): _372.QueryBondResponse;
-        toJSON(message: _372.QueryBondResponse): unknown;
+        encode(message: _440.QueryBondResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QueryBondResponse;
+        fromJSON(object: any): _440.QueryBondResponse;
+        toJSON(message: _440.QueryBondResponse): unknown;
         fromPartial(object: {
             bond?: {
                 token?: string;
@@ -784,22 +784,22 @@ export declare const bonds: {
                 state?: string;
                 bondDid?: string;
             };
-        }): _372.QueryBondResponse;
+        }): _440.QueryBondResponse;
     };
     QueryBatchRequest: {
-        encode(message: _372.QueryBatchRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QueryBatchRequest;
-        fromJSON(object: any): _372.QueryBatchRequest;
-        toJSON(message: _372.QueryBatchRequest): unknown;
+        encode(message: _440.QueryBatchRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QueryBatchRequest;
+        fromJSON(object: any): _440.QueryBatchRequest;
+        toJSON(message: _440.QueryBatchRequest): unknown;
         fromPartial(object: {
             bondDid?: string;
-        }): _372.QueryBatchRequest;
+        }): _440.QueryBatchRequest;
     };
     QueryBatchResponse: {
-        encode(message: _372.QueryBatchResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QueryBatchResponse;
-        fromJSON(object: any): _372.QueryBatchResponse;
-        toJSON(message: _372.QueryBatchResponse): unknown;
+        encode(message: _440.QueryBatchResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QueryBatchResponse;
+        fromJSON(object: any): _440.QueryBatchResponse;
+        toJSON(message: _440.QueryBatchResponse): unknown;
         fromPartial(object: {
             batch?: {
                 bondDid?: string;
@@ -860,22 +860,22 @@ export declare const bonds: {
                     toToken?: string;
                 }[];
             };
-        }): _372.QueryBatchResponse;
+        }): _440.QueryBatchResponse;
     };
     QueryLastBatchRequest: {
-        encode(message: _372.QueryLastBatchRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QueryLastBatchRequest;
-        fromJSON(object: any): _372.QueryLastBatchRequest;
-        toJSON(message: _372.QueryLastBatchRequest): unknown;
+        encode(message: _440.QueryLastBatchRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QueryLastBatchRequest;
+        fromJSON(object: any): _440.QueryLastBatchRequest;
+        toJSON(message: _440.QueryLastBatchRequest): unknown;
         fromPartial(object: {
             bondDid?: string;
-        }): _372.QueryLastBatchRequest;
+        }): _440.QueryLastBatchRequest;
     };
     QueryLastBatchResponse: {
-        encode(message: _372.QueryLastBatchResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QueryLastBatchResponse;
-        fromJSON(object: any): _372.QueryLastBatchResponse;
-        toJSON(message: _372.QueryLastBatchResponse): unknown;
+        encode(message: _440.QueryLastBatchResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QueryLastBatchResponse;
+        fromJSON(object: any): _440.QueryLastBatchResponse;
+        toJSON(message: _440.QueryLastBatchResponse): unknown;
         fromPartial(object: {
             lastBatch?: {
                 bondDid?: string;
@@ -936,108 +936,108 @@ export declare const bonds: {
                     toToken?: string;
                 }[];
             };
-        }): _372.QueryLastBatchResponse;
+        }): _440.QueryLastBatchResponse;
     };
     QueryCurrentPriceRequest: {
-        encode(message: _372.QueryCurrentPriceRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QueryCurrentPriceRequest;
-        fromJSON(object: any): _372.QueryCurrentPriceRequest;
-        toJSON(message: _372.QueryCurrentPriceRequest): unknown;
+        encode(message: _440.QueryCurrentPriceRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QueryCurrentPriceRequest;
+        fromJSON(object: any): _440.QueryCurrentPriceRequest;
+        toJSON(message: _440.QueryCurrentPriceRequest): unknown;
         fromPartial(object: {
             bondDid?: string;
-        }): _372.QueryCurrentPriceRequest;
+        }): _440.QueryCurrentPriceRequest;
     };
     QueryCurrentPriceResponse: {
-        encode(message: _372.QueryCurrentPriceResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QueryCurrentPriceResponse;
-        fromJSON(object: any): _372.QueryCurrentPriceResponse;
-        toJSON(message: _372.QueryCurrentPriceResponse): unknown;
+        encode(message: _440.QueryCurrentPriceResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QueryCurrentPriceResponse;
+        fromJSON(object: any): _440.QueryCurrentPriceResponse;
+        toJSON(message: _440.QueryCurrentPriceResponse): unknown;
         fromPartial(object: {
             currentPrice?: {
                 denom?: string;
                 amount?: string;
             }[];
-        }): _372.QueryCurrentPriceResponse;
+        }): _440.QueryCurrentPriceResponse;
     };
     QueryCurrentReserveRequest: {
-        encode(message: _372.QueryCurrentReserveRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QueryCurrentReserveRequest;
-        fromJSON(object: any): _372.QueryCurrentReserveRequest;
-        toJSON(message: _372.QueryCurrentReserveRequest): unknown;
+        encode(message: _440.QueryCurrentReserveRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QueryCurrentReserveRequest;
+        fromJSON(object: any): _440.QueryCurrentReserveRequest;
+        toJSON(message: _440.QueryCurrentReserveRequest): unknown;
         fromPartial(object: {
             bondDid?: string;
-        }): _372.QueryCurrentReserveRequest;
+        }): _440.QueryCurrentReserveRequest;
     };
     QueryCurrentReserveResponse: {
-        encode(message: _372.QueryCurrentReserveResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QueryCurrentReserveResponse;
-        fromJSON(object: any): _372.QueryCurrentReserveResponse;
-        toJSON(message: _372.QueryCurrentReserveResponse): unknown;
+        encode(message: _440.QueryCurrentReserveResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QueryCurrentReserveResponse;
+        fromJSON(object: any): _440.QueryCurrentReserveResponse;
+        toJSON(message: _440.QueryCurrentReserveResponse): unknown;
         fromPartial(object: {
             currentReserve?: {
                 denom?: string;
                 amount?: string;
             }[];
-        }): _372.QueryCurrentReserveResponse;
+        }): _440.QueryCurrentReserveResponse;
     };
     QueryAvailableReserveRequest: {
-        encode(message: _372.QueryAvailableReserveRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QueryAvailableReserveRequest;
-        fromJSON(object: any): _372.QueryAvailableReserveRequest;
-        toJSON(message: _372.QueryAvailableReserveRequest): unknown;
+        encode(message: _440.QueryAvailableReserveRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QueryAvailableReserveRequest;
+        fromJSON(object: any): _440.QueryAvailableReserveRequest;
+        toJSON(message: _440.QueryAvailableReserveRequest): unknown;
         fromPartial(object: {
             bondDid?: string;
-        }): _372.QueryAvailableReserveRequest;
+        }): _440.QueryAvailableReserveRequest;
     };
     QueryAvailableReserveResponse: {
-        encode(message: _372.QueryAvailableReserveResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QueryAvailableReserveResponse;
-        fromJSON(object: any): _372.QueryAvailableReserveResponse;
-        toJSON(message: _372.QueryAvailableReserveResponse): unknown;
+        encode(message: _440.QueryAvailableReserveResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QueryAvailableReserveResponse;
+        fromJSON(object: any): _440.QueryAvailableReserveResponse;
+        toJSON(message: _440.QueryAvailableReserveResponse): unknown;
         fromPartial(object: {
             availableReserve?: {
                 denom?: string;
                 amount?: string;
             }[];
-        }): _372.QueryAvailableReserveResponse;
+        }): _440.QueryAvailableReserveResponse;
     };
     QueryCustomPriceRequest: {
-        encode(message: _372.QueryCustomPriceRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QueryCustomPriceRequest;
-        fromJSON(object: any): _372.QueryCustomPriceRequest;
-        toJSON(message: _372.QueryCustomPriceRequest): unknown;
+        encode(message: _440.QueryCustomPriceRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QueryCustomPriceRequest;
+        fromJSON(object: any): _440.QueryCustomPriceRequest;
+        toJSON(message: _440.QueryCustomPriceRequest): unknown;
         fromPartial(object: {
             bondDid?: string;
             bondAmount?: string;
-        }): _372.QueryCustomPriceRequest;
+        }): _440.QueryCustomPriceRequest;
     };
     QueryCustomPriceResponse: {
-        encode(message: _372.QueryCustomPriceResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QueryCustomPriceResponse;
-        fromJSON(object: any): _372.QueryCustomPriceResponse;
-        toJSON(message: _372.QueryCustomPriceResponse): unknown;
+        encode(message: _440.QueryCustomPriceResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QueryCustomPriceResponse;
+        fromJSON(object: any): _440.QueryCustomPriceResponse;
+        toJSON(message: _440.QueryCustomPriceResponse): unknown;
         fromPartial(object: {
             price?: {
                 denom?: string;
                 amount?: string;
             }[];
-        }): _372.QueryCustomPriceResponse;
+        }): _440.QueryCustomPriceResponse;
     };
     QueryBuyPriceRequest: {
-        encode(message: _372.QueryBuyPriceRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QueryBuyPriceRequest;
-        fromJSON(object: any): _372.QueryBuyPriceRequest;
-        toJSON(message: _372.QueryBuyPriceRequest): unknown;
+        encode(message: _440.QueryBuyPriceRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QueryBuyPriceRequest;
+        fromJSON(object: any): _440.QueryBuyPriceRequest;
+        toJSON(message: _440.QueryBuyPriceRequest): unknown;
         fromPartial(object: {
             bondDid?: string;
             bondAmount?: string;
-        }): _372.QueryBuyPriceRequest;
+        }): _440.QueryBuyPriceRequest;
     };
     QueryBuyPriceResponse: {
-        encode(message: _372.QueryBuyPriceResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QueryBuyPriceResponse;
-        fromJSON(object: any): _372.QueryBuyPriceResponse;
-        toJSON(message: _372.QueryBuyPriceResponse): unknown;
+        encode(message: _440.QueryBuyPriceResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QueryBuyPriceResponse;
+        fromJSON(object: any): _440.QueryBuyPriceResponse;
+        toJSON(message: _440.QueryBuyPriceResponse): unknown;
         fromPartial(object: {
             adjustedSupply?: {
                 denom?: string;
@@ -1059,23 +1059,23 @@ export declare const bonds: {
                 denom?: string;
                 amount?: string;
             }[];
-        }): _372.QueryBuyPriceResponse;
+        }): _440.QueryBuyPriceResponse;
     };
     QuerySellReturnRequest: {
-        encode(message: _372.QuerySellReturnRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QuerySellReturnRequest;
-        fromJSON(object: any): _372.QuerySellReturnRequest;
-        toJSON(message: _372.QuerySellReturnRequest): unknown;
+        encode(message: _440.QuerySellReturnRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QuerySellReturnRequest;
+        fromJSON(object: any): _440.QuerySellReturnRequest;
+        toJSON(message: _440.QuerySellReturnRequest): unknown;
         fromPartial(object: {
             bondDid?: string;
             bondAmount?: string;
-        }): _372.QuerySellReturnRequest;
+        }): _440.QuerySellReturnRequest;
     };
     QuerySellReturnResponse: {
-        encode(message: _372.QuerySellReturnResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QuerySellReturnResponse;
-        fromJSON(object: any): _372.QuerySellReturnResponse;
-        toJSON(message: _372.QuerySellReturnResponse): unknown;
+        encode(message: _440.QuerySellReturnResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QuerySellReturnResponse;
+        fromJSON(object: any): _440.QuerySellReturnResponse;
+        toJSON(message: _440.QuerySellReturnResponse): unknown;
         fromPartial(object: {
             adjustedSupply?: {
                 denom?: string;
@@ -1101,24 +1101,24 @@ export declare const bonds: {
                 denom?: string;
                 amount?: string;
             }[];
-        }): _372.QuerySellReturnResponse;
+        }): _440.QuerySellReturnResponse;
     };
     QuerySwapReturnRequest: {
-        encode(message: _372.QuerySwapReturnRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QuerySwapReturnRequest;
-        fromJSON(object: any): _372.QuerySwapReturnRequest;
-        toJSON(message: _372.QuerySwapReturnRequest): unknown;
+        encode(message: _440.QuerySwapReturnRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QuerySwapReturnRequest;
+        fromJSON(object: any): _440.QuerySwapReturnRequest;
+        toJSON(message: _440.QuerySwapReturnRequest): unknown;
         fromPartial(object: {
             bondDid?: string;
             fromTokenWithAmount?: string;
             toToken?: string;
-        }): _372.QuerySwapReturnRequest;
+        }): _440.QuerySwapReturnRequest;
     };
     QuerySwapReturnResponse: {
-        encode(message: _372.QuerySwapReturnResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QuerySwapReturnResponse;
-        fromJSON(object: any): _372.QuerySwapReturnResponse;
-        toJSON(message: _372.QuerySwapReturnResponse): unknown;
+        encode(message: _440.QuerySwapReturnResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QuerySwapReturnResponse;
+        fromJSON(object: any): _440.QuerySwapReturnResponse;
+        toJSON(message: _440.QuerySwapReturnResponse): unknown;
         fromPartial(object: {
             totalReturns?: {
                 denom?: string;
@@ -1128,50 +1128,50 @@ export declare const bonds: {
                 denom?: string;
                 amount?: string;
             }[];
-        }): _372.QuerySwapReturnResponse;
+        }): _440.QuerySwapReturnResponse;
     };
     QueryAlphaMaximumsRequest: {
-        encode(message: _372.QueryAlphaMaximumsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QueryAlphaMaximumsRequest;
-        fromJSON(object: any): _372.QueryAlphaMaximumsRequest;
-        toJSON(message: _372.QueryAlphaMaximumsRequest): unknown;
+        encode(message: _440.QueryAlphaMaximumsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QueryAlphaMaximumsRequest;
+        fromJSON(object: any): _440.QueryAlphaMaximumsRequest;
+        toJSON(message: _440.QueryAlphaMaximumsRequest): unknown;
         fromPartial(object: {
             bondDid?: string;
-        }): _372.QueryAlphaMaximumsRequest;
+        }): _440.QueryAlphaMaximumsRequest;
     };
     QueryAlphaMaximumsResponse: {
-        encode(message: _372.QueryAlphaMaximumsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QueryAlphaMaximumsResponse;
-        fromJSON(object: any): _372.QueryAlphaMaximumsResponse;
-        toJSON(message: _372.QueryAlphaMaximumsResponse): unknown;
+        encode(message: _440.QueryAlphaMaximumsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QueryAlphaMaximumsResponse;
+        fromJSON(object: any): _440.QueryAlphaMaximumsResponse;
+        toJSON(message: _440.QueryAlphaMaximumsResponse): unknown;
         fromPartial(object: {
             maxSystemAlphaIncrease?: string;
             maxSystemAlpha?: string;
-        }): _372.QueryAlphaMaximumsResponse;
+        }): _440.QueryAlphaMaximumsResponse;
     };
     QueryParamsRequest: {
-        encode(_: _372.QueryParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QueryParamsRequest;
-        fromJSON(_: any): _372.QueryParamsRequest;
-        toJSON(_: _372.QueryParamsRequest): unknown;
-        fromPartial(_: {}): _372.QueryParamsRequest;
+        encode(_: _440.QueryParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QueryParamsRequest;
+        fromJSON(_: any): _440.QueryParamsRequest;
+        toJSON(_: _440.QueryParamsRequest): unknown;
+        fromPartial(_: {}): _440.QueryParamsRequest;
     };
     QueryParamsResponse: {
-        encode(message: _372.QueryParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _372.QueryParamsResponse;
-        fromJSON(object: any): _372.QueryParamsResponse;
-        toJSON(message: _372.QueryParamsResponse): unknown;
+        encode(message: _440.QueryParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _440.QueryParamsResponse;
+        fromJSON(object: any): _440.QueryParamsResponse;
+        toJSON(message: _440.QueryParamsResponse): unknown;
         fromPartial(object: {
             params?: {
                 reservedBondTokens?: string[];
             };
-        }): _372.QueryParamsResponse;
+        }): _440.QueryParamsResponse;
     };
     GenesisState: {
-        encode(message: _371.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _371.GenesisState;
-        fromJSON(object: any): _371.GenesisState;
-        toJSON(message: _371.GenesisState): unknown;
+        encode(message: _439.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _439.GenesisState;
+        fromJSON(object: any): _439.GenesisState;
+        toJSON(message: _439.GenesisState): unknown;
         fromPartial(object: {
             bonds?: {
                 token?: string;
@@ -1285,23 +1285,23 @@ export declare const bonds: {
             params?: {
                 reservedBondTokens?: string[];
             };
-        }): _371.GenesisState;
+        }): _439.GenesisState;
     };
     FunctionParam: {
-        encode(message: _370.FunctionParam, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _370.FunctionParam;
-        fromJSON(object: any): _370.FunctionParam;
-        toJSON(message: _370.FunctionParam): unknown;
+        encode(message: _438.FunctionParam, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _438.FunctionParam;
+        fromJSON(object: any): _438.FunctionParam;
+        toJSON(message: _438.FunctionParam): unknown;
         fromPartial(object: {
             param?: string;
             value?: string;
-        }): _370.FunctionParam;
+        }): _438.FunctionParam;
     };
     BondDetails: {
-        encode(message: _370.BondDetails, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _370.BondDetails;
-        fromJSON(object: any): _370.BondDetails;
-        toJSON(message: _370.BondDetails): unknown;
+        encode(message: _438.BondDetails, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _438.BondDetails;
+        fromJSON(object: any): _438.BondDetails;
+        toJSON(message: _438.BondDetails): unknown;
         fromPartial(object: {
             bondDid?: string;
             spotPrice?: {
@@ -1316,13 +1316,13 @@ export declare const bonds: {
                 denom?: string;
                 amount?: string;
             }[];
-        }): _370.BondDetails;
+        }): _438.BondDetails;
     };
     Bond: {
-        encode(message: _370.Bond, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _370.Bond;
-        fromJSON(object: any): _370.Bond;
-        toJSON(message: _370.Bond): unknown;
+        encode(message: _438.Bond, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _438.Bond;
+        fromJSON(object: any): _438.Bond;
+        toJSON(message: _438.Bond): unknown;
         fromPartial(object: {
             token?: string;
             name?: string;
@@ -1372,13 +1372,13 @@ export declare const bonds: {
             outcomePayment?: string;
             state?: string;
             bondDid?: string;
-        }): _370.Bond;
+        }): _438.Bond;
     };
     BaseOrder: {
-        encode(message: _370.BaseOrder, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _370.BaseOrder;
-        fromJSON(object: any): _370.BaseOrder;
-        toJSON(message: _370.BaseOrder): unknown;
+        encode(message: _438.BaseOrder, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _438.BaseOrder;
+        fromJSON(object: any): _438.BaseOrder;
+        toJSON(message: _438.BaseOrder): unknown;
         fromPartial(object: {
             accountDid?: string;
             amount?: {
@@ -1387,13 +1387,13 @@ export declare const bonds: {
             };
             cancelled?: boolean;
             cancelReason?: string;
-        }): _370.BaseOrder;
+        }): _438.BaseOrder;
     };
     BuyOrder: {
-        encode(message: _370.BuyOrder, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _370.BuyOrder;
-        fromJSON(object: any): _370.BuyOrder;
-        toJSON(message: _370.BuyOrder): unknown;
+        encode(message: _438.BuyOrder, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _438.BuyOrder;
+        fromJSON(object: any): _438.BuyOrder;
+        toJSON(message: _438.BuyOrder): unknown;
         fromPartial(object: {
             baseOrder?: {
                 accountDid?: string;
@@ -1408,13 +1408,13 @@ export declare const bonds: {
                 denom?: string;
                 amount?: string;
             }[];
-        }): _370.BuyOrder;
+        }): _438.BuyOrder;
     };
     SellOrder: {
-        encode(message: _370.SellOrder, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _370.SellOrder;
-        fromJSON(object: any): _370.SellOrder;
-        toJSON(message: _370.SellOrder): unknown;
+        encode(message: _438.SellOrder, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _438.SellOrder;
+        fromJSON(object: any): _438.SellOrder;
+        toJSON(message: _438.SellOrder): unknown;
         fromPartial(object: {
             baseOrder?: {
                 accountDid?: string;
@@ -1425,13 +1425,13 @@ export declare const bonds: {
                 cancelled?: boolean;
                 cancelReason?: string;
             };
-        }): _370.SellOrder;
+        }): _438.SellOrder;
     };
     SwapOrder: {
-        encode(message: _370.SwapOrder, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _370.SwapOrder;
-        fromJSON(object: any): _370.SwapOrder;
-        toJSON(message: _370.SwapOrder): unknown;
+        encode(message: _438.SwapOrder, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _438.SwapOrder;
+        fromJSON(object: any): _438.SwapOrder;
+        toJSON(message: _438.SwapOrder): unknown;
         fromPartial(object: {
             baseOrder?: {
                 accountDid?: string;
@@ -1443,13 +1443,13 @@ export declare const bonds: {
                 cancelReason?: string;
             };
             toToken?: string;
-        }): _370.SwapOrder;
+        }): _438.SwapOrder;
     };
     Batch: {
-        encode(message: _370.Batch, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _370.Batch;
-        fromJSON(object: any): _370.Batch;
-        toJSON(message: _370.Batch): unknown;
+        encode(message: _438.Batch, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _438.Batch;
+        fromJSON(object: any): _438.Batch;
+        toJSON(message: _438.Batch): unknown;
         fromPartial(object: {
             bondDid?: string;
             blocksRemaining?: string;
@@ -1508,15 +1508,15 @@ export declare const bonds: {
                 };
                 toToken?: string;
             }[];
-        }): _370.Batch;
+        }): _438.Batch;
     };
     Params: {
-        encode(message: _370.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _370.Params;
-        fromJSON(object: any): _370.Params;
-        toJSON(message: _370.Params): unknown;
+        encode(message: _438.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _438.Params;
+        fromJSON(object: any): _438.Params;
+        toJSON(message: _438.Params): unknown;
         fromPartial(object: {
             reservedBondTokens?: string[];
-        }): _370.Params;
+        }): _438.Params;
     };
 };

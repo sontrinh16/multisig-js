@@ -1,38 +1,38 @@
-import * as _374 from "../ixo/did/did";
-import * as _375 from "../ixo/did/diddoc";
-import * as _376 from "../ixo/did/genesis";
-import * as _377 from "../ixo/did/query";
-import * as _378 from "../ixo/did/tx";
+import * as _442 from "../ixo/did/did";
+import * as _443 from "../ixo/did/diddoc";
+import * as _444 from "../ixo/did/genesis";
+import * as _445 from "../ixo/did/query";
+import * as _446 from "../ixo/did/tx";
 export declare const did: {
     registry: readonly [string, import("@cosmjs/proto-signing").GeneratedType][];
     load: (protoRegistry: import("@cosmjs/proto-signing").Registry) => void;
     MessageComposer: {
         encoded: {
-            addDid(value: _378.MsgAddDid): {
+            addDid(value: _446.MsgAddDid): {
                 typeUrl: string;
                 value: Uint8Array;
             };
-            addCredential(value: _378.MsgAddCredential): {
+            addCredential(value: _446.MsgAddCredential): {
                 typeUrl: string;
                 value: Uint8Array;
             };
         };
         withTypeUrl: {
-            addDid(value: _378.MsgAddDid): {
+            addDid(value: _446.MsgAddDid): {
                 typeUrl: string;
-                value: _378.MsgAddDid;
+                value: _446.MsgAddDid;
             };
-            addCredential(value: _378.MsgAddCredential): {
+            addCredential(value: _446.MsgAddCredential): {
                 typeUrl: string;
-                value: _378.MsgAddCredential;
+                value: _446.MsgAddCredential;
             };
         };
         toJSON: {
-            addDid(value: _378.MsgAddDid): {
+            addDid(value: _446.MsgAddDid): {
                 typeUrl: string;
                 value: unknown;
             };
-            addCredential(value: _378.MsgAddCredential): {
+            addCredential(value: _446.MsgAddCredential): {
                 typeUrl: string;
                 value: unknown;
             };
@@ -40,39 +40,39 @@ export declare const did: {
         fromJSON: {
             addDid(value: any): {
                 typeUrl: string;
-                value: _378.MsgAddDid;
+                value: _446.MsgAddDid;
             };
             addCredential(value: any): {
                 typeUrl: string;
-                value: _378.MsgAddCredential;
+                value: _446.MsgAddCredential;
             };
         };
         fromPartial: {
-            addDid(value: _378.MsgAddDid): {
+            addDid(value: _446.MsgAddDid): {
                 typeUrl: string;
-                value: _378.MsgAddDid;
+                value: _446.MsgAddDid;
             };
-            addCredential(value: _378.MsgAddCredential): {
+            addCredential(value: _446.MsgAddCredential): {
                 typeUrl: string;
-                value: _378.MsgAddCredential;
+                value: _446.MsgAddCredential;
             };
         };
     };
     AminoConverter: {
         "/did.MsgAddDid": {
             aminoType: string;
-            toAmino: ({ did, pubKey }: _378.MsgAddDid) => {
+            toAmino: ({ did, pubKey }: _446.MsgAddDid) => {
                 did: string;
                 pubKey: string;
             };
             fromAmino: ({ did, pubKey }: {
                 did: string;
                 pubKey: string;
-            }) => _378.MsgAddDid;
+            }) => _446.MsgAddDid;
         };
         "/did.MsgAddCredential": {
             aminoType: string;
-            toAmino: ({ didCredential }: _378.MsgAddCredential) => {
+            toAmino: ({ didCredential }: _446.MsgAddCredential) => {
                 did_credential: {
                     cred_type: string[];
                     issuer: string;
@@ -93,31 +93,31 @@ export declare const did: {
                         KYC_validated: boolean;
                     };
                 };
-            }) => _378.MsgAddCredential;
+            }) => _446.MsgAddCredential;
         };
     };
     MsgAddDid: {
-        encode(message: _378.MsgAddDid, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _378.MsgAddDid;
-        fromJSON(object: any): _378.MsgAddDid;
-        toJSON(message: _378.MsgAddDid): unknown;
+        encode(message: _446.MsgAddDid, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _446.MsgAddDid;
+        fromJSON(object: any): _446.MsgAddDid;
+        toJSON(message: _446.MsgAddDid): unknown;
         fromPartial(object: {
             did?: string;
             pubKey?: string;
-        }): _378.MsgAddDid;
+        }): _446.MsgAddDid;
     };
     MsgAddDidResponse: {
-        encode(_: _378.MsgAddDidResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _378.MsgAddDidResponse;
-        fromJSON(_: any): _378.MsgAddDidResponse;
-        toJSON(_: _378.MsgAddDidResponse): unknown;
-        fromPartial(_: {}): _378.MsgAddDidResponse;
+        encode(_: _446.MsgAddDidResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _446.MsgAddDidResponse;
+        fromJSON(_: any): _446.MsgAddDidResponse;
+        toJSON(_: _446.MsgAddDidResponse): unknown;
+        fromPartial(_: {}): _446.MsgAddDidResponse;
     };
     MsgAddCredential: {
-        encode(message: _378.MsgAddCredential, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _378.MsgAddCredential;
-        fromJSON(object: any): _378.MsgAddCredential;
-        toJSON(message: _378.MsgAddCredential): unknown;
+        encode(message: _446.MsgAddCredential, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _446.MsgAddCredential;
+        fromJSON(object: any): _446.MsgAddCredential;
+        toJSON(message: _446.MsgAddCredential): unknown;
         fromPartial(object: {
             didCredential?: {
                 credType?: string[];
@@ -128,124 +128,124 @@ export declare const did: {
                     KYCValidated?: boolean;
                 };
             };
-        }): _378.MsgAddCredential;
+        }): _446.MsgAddCredential;
     };
     MsgAddCredentialResponse: {
-        encode(_: _378.MsgAddCredentialResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _378.MsgAddCredentialResponse;
-        fromJSON(_: any): _378.MsgAddCredentialResponse;
-        toJSON(_: _378.MsgAddCredentialResponse): unknown;
-        fromPartial(_: {}): _378.MsgAddCredentialResponse;
+        encode(_: _446.MsgAddCredentialResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _446.MsgAddCredentialResponse;
+        fromJSON(_: any): _446.MsgAddCredentialResponse;
+        toJSON(_: _446.MsgAddCredentialResponse): unknown;
+        fromPartial(_: {}): _446.MsgAddCredentialResponse;
     };
     QueryDidDocRequest: {
-        encode(message: _377.QueryDidDocRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _377.QueryDidDocRequest;
-        fromJSON(object: any): _377.QueryDidDocRequest;
-        toJSON(message: _377.QueryDidDocRequest): unknown;
+        encode(message: _445.QueryDidDocRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _445.QueryDidDocRequest;
+        fromJSON(object: any): _445.QueryDidDocRequest;
+        toJSON(message: _445.QueryDidDocRequest): unknown;
         fromPartial(object: {
             did?: string;
-        }): _377.QueryDidDocRequest;
+        }): _445.QueryDidDocRequest;
     };
     QueryDidDocResponse: {
-        encode(message: _377.QueryDidDocResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _377.QueryDidDocResponse;
-        fromJSON(object: any): _377.QueryDidDocResponse;
-        toJSON(message: _377.QueryDidDocResponse): unknown;
+        encode(message: _445.QueryDidDocResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _445.QueryDidDocResponse;
+        fromJSON(object: any): _445.QueryDidDocResponse;
+        toJSON(message: _445.QueryDidDocResponse): unknown;
         fromPartial(object: {
             diddoc?: {
                 typeUrl?: string;
                 value?: Uint8Array;
             };
-        }): _377.QueryDidDocResponse;
+        }): _445.QueryDidDocResponse;
     };
     QueryAllDidsRequest: {
-        encode(_: _377.QueryAllDidsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _377.QueryAllDidsRequest;
-        fromJSON(_: any): _377.QueryAllDidsRequest;
-        toJSON(_: _377.QueryAllDidsRequest): unknown;
-        fromPartial(_: {}): _377.QueryAllDidsRequest;
+        encode(_: _445.QueryAllDidsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _445.QueryAllDidsRequest;
+        fromJSON(_: any): _445.QueryAllDidsRequest;
+        toJSON(_: _445.QueryAllDidsRequest): unknown;
+        fromPartial(_: {}): _445.QueryAllDidsRequest;
     };
     QueryAllDidsResponse: {
-        encode(message: _377.QueryAllDidsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _377.QueryAllDidsResponse;
-        fromJSON(object: any): _377.QueryAllDidsResponse;
-        toJSON(message: _377.QueryAllDidsResponse): unknown;
+        encode(message: _445.QueryAllDidsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _445.QueryAllDidsResponse;
+        fromJSON(object: any): _445.QueryAllDidsResponse;
+        toJSON(message: _445.QueryAllDidsResponse): unknown;
         fromPartial(object: {
             dids?: string[];
-        }): _377.QueryAllDidsResponse;
+        }): _445.QueryAllDidsResponse;
     };
     QueryAllDidDocsRequest: {
-        encode(_: _377.QueryAllDidDocsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _377.QueryAllDidDocsRequest;
-        fromJSON(_: any): _377.QueryAllDidDocsRequest;
-        toJSON(_: _377.QueryAllDidDocsRequest): unknown;
-        fromPartial(_: {}): _377.QueryAllDidDocsRequest;
+        encode(_: _445.QueryAllDidDocsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _445.QueryAllDidDocsRequest;
+        fromJSON(_: any): _445.QueryAllDidDocsRequest;
+        toJSON(_: _445.QueryAllDidDocsRequest): unknown;
+        fromPartial(_: {}): _445.QueryAllDidDocsRequest;
     };
     QueryAllDidDocsResponse: {
-        encode(message: _377.QueryAllDidDocsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _377.QueryAllDidDocsResponse;
-        fromJSON(object: any): _377.QueryAllDidDocsResponse;
-        toJSON(message: _377.QueryAllDidDocsResponse): unknown;
+        encode(message: _445.QueryAllDidDocsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _445.QueryAllDidDocsResponse;
+        fromJSON(object: any): _445.QueryAllDidDocsResponse;
+        toJSON(message: _445.QueryAllDidDocsResponse): unknown;
         fromPartial(object: {
             diddocs?: {
                 typeUrl?: string;
                 value?: Uint8Array;
             }[];
-        }): _377.QueryAllDidDocsResponse;
+        }): _445.QueryAllDidDocsResponse;
     };
     QueryAddressFromDidRequest: {
-        encode(message: _377.QueryAddressFromDidRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _377.QueryAddressFromDidRequest;
-        fromJSON(object: any): _377.QueryAddressFromDidRequest;
-        toJSON(message: _377.QueryAddressFromDidRequest): unknown;
+        encode(message: _445.QueryAddressFromDidRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _445.QueryAddressFromDidRequest;
+        fromJSON(object: any): _445.QueryAddressFromDidRequest;
+        toJSON(message: _445.QueryAddressFromDidRequest): unknown;
         fromPartial(object: {
             did?: string;
-        }): _377.QueryAddressFromDidRequest;
+        }): _445.QueryAddressFromDidRequest;
     };
     QueryAddressFromDidResponse: {
-        encode(message: _377.QueryAddressFromDidResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _377.QueryAddressFromDidResponse;
-        fromJSON(object: any): _377.QueryAddressFromDidResponse;
-        toJSON(message: _377.QueryAddressFromDidResponse): unknown;
+        encode(message: _445.QueryAddressFromDidResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _445.QueryAddressFromDidResponse;
+        fromJSON(object: any): _445.QueryAddressFromDidResponse;
+        toJSON(message: _445.QueryAddressFromDidResponse): unknown;
         fromPartial(object: {
             address?: string;
-        }): _377.QueryAddressFromDidResponse;
+        }): _445.QueryAddressFromDidResponse;
     };
     QueryAddressFromBase58EncodedPubkeyRequest: {
-        encode(message: _377.QueryAddressFromBase58EncodedPubkeyRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _377.QueryAddressFromBase58EncodedPubkeyRequest;
-        fromJSON(object: any): _377.QueryAddressFromBase58EncodedPubkeyRequest;
-        toJSON(message: _377.QueryAddressFromBase58EncodedPubkeyRequest): unknown;
+        encode(message: _445.QueryAddressFromBase58EncodedPubkeyRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _445.QueryAddressFromBase58EncodedPubkeyRequest;
+        fromJSON(object: any): _445.QueryAddressFromBase58EncodedPubkeyRequest;
+        toJSON(message: _445.QueryAddressFromBase58EncodedPubkeyRequest): unknown;
         fromPartial(object: {
             pubKey?: string;
-        }): _377.QueryAddressFromBase58EncodedPubkeyRequest;
+        }): _445.QueryAddressFromBase58EncodedPubkeyRequest;
     };
     QueryAddressFromBase58EncodedPubkeyResponse: {
-        encode(message: _377.QueryAddressFromBase58EncodedPubkeyResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _377.QueryAddressFromBase58EncodedPubkeyResponse;
-        fromJSON(object: any): _377.QueryAddressFromBase58EncodedPubkeyResponse;
-        toJSON(message: _377.QueryAddressFromBase58EncodedPubkeyResponse): unknown;
+        encode(message: _445.QueryAddressFromBase58EncodedPubkeyResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _445.QueryAddressFromBase58EncodedPubkeyResponse;
+        fromJSON(object: any): _445.QueryAddressFromBase58EncodedPubkeyResponse;
+        toJSON(message: _445.QueryAddressFromBase58EncodedPubkeyResponse): unknown;
         fromPartial(object: {
             address?: string;
-        }): _377.QueryAddressFromBase58EncodedPubkeyResponse;
+        }): _445.QueryAddressFromBase58EncodedPubkeyResponse;
     };
     GenesisState: {
-        encode(message: _376.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _376.GenesisState;
-        fromJSON(object: any): _376.GenesisState;
-        toJSON(message: _376.GenesisState): unknown;
+        encode(message: _444.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _444.GenesisState;
+        fromJSON(object: any): _444.GenesisState;
+        toJSON(message: _444.GenesisState): unknown;
         fromPartial(object: {
             didDocs?: {
                 typeUrl?: string;
                 value?: Uint8Array;
             }[];
-        }): _376.GenesisState;
+        }): _444.GenesisState;
     };
     BaseDidDoc: {
-        encode(message: _375.BaseDidDoc, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _375.BaseDidDoc;
-        fromJSON(object: any): _375.BaseDidDoc;
-        toJSON(message: _375.BaseDidDoc): unknown;
+        encode(message: _443.BaseDidDoc, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _443.BaseDidDoc;
+        fromJSON(object: any): _443.BaseDidDoc;
+        toJSON(message: _443.BaseDidDoc): unknown;
         fromPartial(object: {
             did?: string;
             pubKey?: string;
@@ -258,13 +258,13 @@ export declare const did: {
                     KYCValidated?: boolean;
                 };
             }[];
-        }): _375.BaseDidDoc;
+        }): _443.BaseDidDoc;
     };
     DidCredential: {
-        encode(message: _374.DidCredential, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _374.DidCredential;
-        fromJSON(object: any): _374.DidCredential;
-        toJSON(message: _374.DidCredential): unknown;
+        encode(message: _442.DidCredential, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _442.DidCredential;
+        fromJSON(object: any): _442.DidCredential;
+        toJSON(message: _442.DidCredential): unknown;
         fromPartial(object: {
             credType?: string[];
             issuer?: string;
@@ -273,23 +273,23 @@ export declare const did: {
                 id?: string;
                 KYCValidated?: boolean;
             };
-        }): _374.DidCredential;
+        }): _442.DidCredential;
     };
     Claim: {
-        encode(message: _374.Claim, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _374.Claim;
-        fromJSON(object: any): _374.Claim;
-        toJSON(message: _374.Claim): unknown;
+        encode(message: _442.Claim, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _442.Claim;
+        fromJSON(object: any): _442.Claim;
+        toJSON(message: _442.Claim): unknown;
         fromPartial(object: {
             id?: string;
             KYCValidated?: boolean;
-        }): _374.Claim;
+        }): _442.Claim;
     };
     IxoDid: {
-        encode(message: _374.IxoDid, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _374.IxoDid;
-        fromJSON(object: any): _374.IxoDid;
-        toJSON(message: _374.IxoDid): unknown;
+        encode(message: _442.IxoDid, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _442.IxoDid;
+        fromJSON(object: any): _442.IxoDid;
+        toJSON(message: _442.IxoDid): unknown;
         fromPartial(object: {
             did?: string;
             verifyKey?: string;
@@ -299,17 +299,17 @@ export declare const did: {
                 signKey?: string;
                 encryptionPrivateKey?: string;
             };
-        }): _374.IxoDid;
+        }): _442.IxoDid;
     };
     Secret: {
-        encode(message: _374.Secret, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _374.Secret;
-        fromJSON(object: any): _374.Secret;
-        toJSON(message: _374.Secret): unknown;
+        encode(message: _442.Secret, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+        decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _442.Secret;
+        fromJSON(object: any): _442.Secret;
+        toJSON(message: _442.Secret): unknown;
         fromPartial(object: {
             seed?: string;
             signKey?: string;
             encryptionPrivateKey?: string;
-        }): _374.Secret;
+        }): _442.Secret;
     };
 };

@@ -1,142 +1,142 @@
-import * as _497 from "./epochs/genesis";
-import * as _498 from "./epochs/query";
-import * as _499 from "./gamm/pool-models/balancer/balancerPool";
-import * as _500 from "./gamm/v1beta1/genesis";
-import * as _501 from "./gamm/v1beta1/query";
-import * as _502 from "./gamm/v1beta1/tx";
-import * as _503 from "./gamm/pool-models/balancer/tx";
-import * as _504 from "./gamm/pool-models/stableswap/stableswap_pool";
-import * as _505 from "./gamm/pool-models/stableswap/tx";
-import * as _506 from "./incentives/gauge";
-import * as _507 from "./incentives/genesis";
-import * as _508 from "./incentives/params";
-import * as _509 from "./incentives/query";
-import * as _510 from "./incentives/tx";
-import * as _511 from "./lockup/genesis";
-import * as _512 from "./lockup/lock";
-import * as _513 from "./lockup/query";
-import * as _514 from "./lockup/tx";
-import * as _515 from "./mint/v1beta1/genesis";
-import * as _516 from "./mint/v1beta1/mint";
-import * as _517 from "./mint/v1beta1/query";
-import * as _518 from "./pool-incentives/v1beta1/genesis";
-import * as _519 from "./pool-incentives/v1beta1/gov";
-import * as _520 from "./pool-incentives/v1beta1/incentives";
-import * as _521 from "./pool-incentives/v1beta1/query";
-import * as _522 from "./store/v1beta1/tree";
-import * as _523 from "./superfluid/genesis";
-import * as _524 from "./superfluid/params";
-import * as _525 from "./superfluid/query";
-import * as _526 from "./superfluid/superfluid";
-import * as _527 from "./superfluid/tx";
-import * as _528 from "./tokenfactory/v1beta1/authorityMetadata";
-import * as _529 from "./tokenfactory/v1beta1/genesis";
-import * as _530 from "./tokenfactory/v1beta1/params";
-import * as _531 from "./tokenfactory/v1beta1/query";
-import * as _532 from "./tokenfactory/v1beta1/tx";
-import * as _533 from "./txfees/v1beta1/feetoken";
-import * as _534 from "./txfees/v1beta1/genesis";
-import * as _535 from "./txfees/v1beta1/gov";
-import * as _536 from "./txfees/v1beta1/query";
-import * as _856 from "./gamm/pool-models/balancer/tx.amino";
-import * as _857 from "./gamm/pool-models/stableswap/tx.amino";
-import * as _858 from "./gamm/v1beta1/tx.amino";
-import * as _859 from "./incentives/tx.amino";
-import * as _860 from "./lockup/tx.amino";
-import * as _861 from "./superfluid/tx.amino";
-import * as _862 from "./tokenfactory/v1beta1/tx.amino";
-import * as _863 from "./gamm/pool-models/balancer/tx.registry";
-import * as _864 from "./gamm/pool-models/stableswap/tx.registry";
-import * as _865 from "./gamm/v1beta1/tx.registry";
-import * as _866 from "./incentives/tx.registry";
-import * as _867 from "./lockup/tx.registry";
-import * as _868 from "./superfluid/tx.registry";
-import * as _869 from "./tokenfactory/v1beta1/tx.registry";
+import * as _565 from "./epochs/genesis";
+import * as _566 from "./epochs/query";
+import * as _567 from "./gamm/pool-models/balancer/balancerPool";
+import * as _568 from "./gamm/v1beta1/genesis";
+import * as _569 from "./gamm/v1beta1/query";
+import * as _570 from "./gamm/v1beta1/tx";
+import * as _571 from "./gamm/pool-models/balancer/tx";
+import * as _572 from "./gamm/pool-models/stableswap/stableswap_pool";
+import * as _573 from "./gamm/pool-models/stableswap/tx";
+import * as _574 from "./incentives/gauge";
+import * as _575 from "./incentives/genesis";
+import * as _576 from "./incentives/params";
+import * as _577 from "./incentives/query";
+import * as _578 from "./incentives/tx";
+import * as _579 from "./lockup/genesis";
+import * as _580 from "./lockup/lock";
+import * as _581 from "./lockup/query";
+import * as _582 from "./lockup/tx";
+import * as _583 from "./mint/v1beta1/genesis";
+import * as _584 from "./mint/v1beta1/mint";
+import * as _585 from "./mint/v1beta1/query";
+import * as _586 from "./pool-incentives/v1beta1/genesis";
+import * as _587 from "./pool-incentives/v1beta1/gov";
+import * as _588 from "./pool-incentives/v1beta1/incentives";
+import * as _589 from "./pool-incentives/v1beta1/query";
+import * as _590 from "./store/v1beta1/tree";
+import * as _591 from "./superfluid/genesis";
+import * as _592 from "./superfluid/params";
+import * as _593 from "./superfluid/query";
+import * as _594 from "./superfluid/superfluid";
+import * as _595 from "./superfluid/tx";
+import * as _596 from "./tokenfactory/v1beta1/authorityMetadata";
+import * as _597 from "./tokenfactory/v1beta1/genesis";
+import * as _598 from "./tokenfactory/v1beta1/params";
+import * as _599 from "./tokenfactory/v1beta1/query";
+import * as _600 from "./tokenfactory/v1beta1/tx";
+import * as _601 from "./txfees/v1beta1/feetoken";
+import * as _602 from "./txfees/v1beta1/genesis";
+import * as _603 from "./txfees/v1beta1/gov";
+import * as _604 from "./txfees/v1beta1/query";
+import * as _926 from "./gamm/pool-models/balancer/tx.amino";
+import * as _927 from "./gamm/pool-models/stableswap/tx.amino";
+import * as _928 from "./gamm/v1beta1/tx.amino";
+import * as _929 from "./incentives/tx.amino";
+import * as _930 from "./lockup/tx.amino";
+import * as _931 from "./superfluid/tx.amino";
+import * as _932 from "./tokenfactory/v1beta1/tx.amino";
+import * as _933 from "./gamm/pool-models/balancer/tx.registry";
+import * as _934 from "./gamm/pool-models/stableswap/tx.registry";
+import * as _935 from "./gamm/v1beta1/tx.registry";
+import * as _936 from "./incentives/tx.registry";
+import * as _937 from "./lockup/tx.registry";
+import * as _938 from "./superfluid/tx.registry";
+import * as _939 from "./tokenfactory/v1beta1/tx.registry";
 export namespace osmosis {
   export namespace epochs {
-    export const v1beta1 = { ..._497,
-      ..._498
+    export const v1beta1 = { ..._565,
+      ..._566
     };
   }
   export namespace gamm {
-    export const v1beta1 = { ..._499,
-      ..._500,
-      ..._501,
-      ..._502,
-      ..._858,
-      ..._865
+    export const v1beta1 = { ..._567,
+      ..._568,
+      ..._569,
+      ..._570,
+      ..._928,
+      ..._935
     };
     export namespace poolmodels {
       export namespace balancer {
-        export const v1beta1 = { ..._503,
-          ..._856,
-          ..._863
+        export const v1beta1 = { ..._571,
+          ..._926,
+          ..._933
         };
       }
       export namespace stableswap {
-        export const v1beta1 = { ..._504,
-          ..._505,
-          ..._857,
-          ..._864
+        export const v1beta1 = { ..._572,
+          ..._573,
+          ..._927,
+          ..._934
         };
       }
     }
   }
-  export const incentives = { ..._506,
-    ..._507,
-    ..._508,
-    ..._509,
-    ..._510,
-    ..._859,
-    ..._866
+  export const incentives = { ..._574,
+    ..._575,
+    ..._576,
+    ..._577,
+    ..._578,
+    ..._929,
+    ..._936
   };
-  export const lockup = { ..._511,
-    ..._512,
-    ..._513,
-    ..._514,
-    ..._860,
-    ..._867
+  export const lockup = { ..._579,
+    ..._580,
+    ..._581,
+    ..._582,
+    ..._930,
+    ..._937
   };
   export namespace mint {
-    export const v1beta1 = { ..._515,
-      ..._516,
-      ..._517
+    export const v1beta1 = { ..._583,
+      ..._584,
+      ..._585
     };
   }
   export namespace poolincentives {
-    export const v1beta1 = { ..._518,
-      ..._519,
-      ..._520,
-      ..._521
+    export const v1beta1 = { ..._586,
+      ..._587,
+      ..._588,
+      ..._589
     };
   }
   export namespace store {
-    export const v1beta1 = { ..._522
+    export const v1beta1 = { ..._590
     };
   }
-  export const superfluid = { ..._523,
-    ..._524,
-    ..._525,
-    ..._526,
-    ..._527,
-    ..._861,
-    ..._868
+  export const superfluid = { ..._591,
+    ..._592,
+    ..._593,
+    ..._594,
+    ..._595,
+    ..._931,
+    ..._938
   };
   export namespace tokenfactory {
-    export const v1beta1 = { ..._528,
-      ..._529,
-      ..._530,
-      ..._531,
-      ..._532,
-      ..._862,
-      ..._869
+    export const v1beta1 = { ..._596,
+      ..._597,
+      ..._598,
+      ..._599,
+      ..._600,
+      ..._932,
+      ..._939
     };
   }
   export namespace txfees {
-    export const v1beta1 = { ..._533,
-      ..._534,
-      ..._535,
-      ..._536
+    export const v1beta1 = { ..._601,
+      ..._602,
+      ..._603,
+      ..._604
     };
   }
 }

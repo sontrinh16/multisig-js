@@ -1,41 +1,41 @@
-import * as _363 from "../iris/guardian/genesis";
-import * as _364 from "../iris/guardian/guardian";
-import * as _365 from "../iris/guardian/query";
-import * as _366 from "../iris/guardian/tx";
-import * as _367 from "../iris/mint/genesis";
-import * as _368 from "../iris/mint/mint";
-import * as _369 from "../iris/mint/query";
+import * as _431 from "../iris/guardian/genesis";
+import * as _432 from "../iris/guardian/guardian";
+import * as _433 from "../iris/guardian/query";
+import * as _434 from "../iris/guardian/tx";
+import * as _435 from "../iris/mint/genesis";
+import * as _436 from "../iris/mint/mint";
+import * as _437 from "../iris/mint/query";
 export declare namespace irishub {
     const guardian: {
         registry: readonly [string, import("@cosmjs/proto-signing").GeneratedType][];
         load: (protoRegistry: import("@cosmjs/proto-signing").Registry) => void;
         MessageComposer: {
             encoded: {
-                addSuper(value: _366.MsgAddSuper): {
+                addSuper(value: _434.MsgAddSuper): {
                     typeUrl: string;
                     value: Uint8Array;
                 };
-                deleteSuper(value: _366.MsgDeleteSuper): {
+                deleteSuper(value: _434.MsgDeleteSuper): {
                     typeUrl: string;
                     value: Uint8Array;
                 };
             };
             withTypeUrl: {
-                addSuper(value: _366.MsgAddSuper): {
+                addSuper(value: _434.MsgAddSuper): {
                     typeUrl: string;
-                    value: _366.MsgAddSuper;
+                    value: _434.MsgAddSuper;
                 };
-                deleteSuper(value: _366.MsgDeleteSuper): {
+                deleteSuper(value: _434.MsgDeleteSuper): {
                     typeUrl: string;
-                    value: _366.MsgDeleteSuper;
+                    value: _434.MsgDeleteSuper;
                 };
             };
             toJSON: {
-                addSuper(value: _366.MsgAddSuper): {
+                addSuper(value: _434.MsgAddSuper): {
                     typeUrl: string;
                     value: unknown;
                 };
-                deleteSuper(value: _366.MsgDeleteSuper): {
+                deleteSuper(value: _434.MsgDeleteSuper): {
                     typeUrl: string;
                     value: unknown;
                 };
@@ -43,28 +43,28 @@ export declare namespace irishub {
             fromJSON: {
                 addSuper(value: any): {
                     typeUrl: string;
-                    value: _366.MsgAddSuper;
+                    value: _434.MsgAddSuper;
                 };
                 deleteSuper(value: any): {
                     typeUrl: string;
-                    value: _366.MsgDeleteSuper;
+                    value: _434.MsgDeleteSuper;
                 };
             };
             fromPartial: {
-                addSuper(value: _366.MsgAddSuper): {
+                addSuper(value: _434.MsgAddSuper): {
                     typeUrl: string;
-                    value: _366.MsgAddSuper;
+                    value: _434.MsgAddSuper;
                 };
-                deleteSuper(value: _366.MsgDeleteSuper): {
+                deleteSuper(value: _434.MsgDeleteSuper): {
                     typeUrl: string;
-                    value: _366.MsgDeleteSuper;
+                    value: _434.MsgDeleteSuper;
                 };
             };
         };
         AminoConverter: {
             "/irishub.guardian.MsgAddSuper": {
                 aminoType: string;
-                toAmino: ({ description, address, addedBy }: _366.MsgAddSuper) => {
+                toAmino: ({ description, address, addedBy }: _434.MsgAddSuper) => {
                     description: string;
                     address: string;
                     added_by: string;
@@ -73,60 +73,60 @@ export declare namespace irishub {
                     description: string;
                     address: string;
                     added_by: string;
-                }) => _366.MsgAddSuper;
+                }) => _434.MsgAddSuper;
             };
             "/irishub.guardian.MsgDeleteSuper": {
                 aminoType: string;
-                toAmino: ({ address, deletedBy }: _366.MsgDeleteSuper) => {
+                toAmino: ({ address, deletedBy }: _434.MsgDeleteSuper) => {
                     address: string;
                     deleted_by: string;
                 };
                 fromAmino: ({ address, deleted_by }: {
                     address: string;
                     deleted_by: string;
-                }) => _366.MsgDeleteSuper;
+                }) => _434.MsgDeleteSuper;
             };
         };
         MsgAddSuper: {
-            encode(message: _366.MsgAddSuper, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _366.MsgAddSuper;
-            fromJSON(object: any): _366.MsgAddSuper;
-            toJSON(message: _366.MsgAddSuper): unknown;
+            encode(message: _434.MsgAddSuper, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _434.MsgAddSuper;
+            fromJSON(object: any): _434.MsgAddSuper;
+            toJSON(message: _434.MsgAddSuper): unknown;
             fromPartial(object: {
                 description?: string;
                 address?: string;
                 addedBy?: string;
-            }): _366.MsgAddSuper;
+            }): _434.MsgAddSuper;
         };
         MsgAddSuperResponse: {
-            encode(_: _366.MsgAddSuperResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _366.MsgAddSuperResponse;
-            fromJSON(_: any): _366.MsgAddSuperResponse;
-            toJSON(_: _366.MsgAddSuperResponse): unknown;
-            fromPartial(_: {}): _366.MsgAddSuperResponse;
+            encode(_: _434.MsgAddSuperResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _434.MsgAddSuperResponse;
+            fromJSON(_: any): _434.MsgAddSuperResponse;
+            toJSON(_: _434.MsgAddSuperResponse): unknown;
+            fromPartial(_: {}): _434.MsgAddSuperResponse;
         };
         MsgDeleteSuper: {
-            encode(message: _366.MsgDeleteSuper, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _366.MsgDeleteSuper;
-            fromJSON(object: any): _366.MsgDeleteSuper;
-            toJSON(message: _366.MsgDeleteSuper): unknown;
+            encode(message: _434.MsgDeleteSuper, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _434.MsgDeleteSuper;
+            fromJSON(object: any): _434.MsgDeleteSuper;
+            toJSON(message: _434.MsgDeleteSuper): unknown;
             fromPartial(object: {
                 address?: string;
                 deletedBy?: string;
-            }): _366.MsgDeleteSuper;
+            }): _434.MsgDeleteSuper;
         };
         MsgDeleteSuperResponse: {
-            encode(_: _366.MsgDeleteSuperResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _366.MsgDeleteSuperResponse;
-            fromJSON(_: any): _366.MsgDeleteSuperResponse;
-            toJSON(_: _366.MsgDeleteSuperResponse): unknown;
-            fromPartial(_: {}): _366.MsgDeleteSuperResponse;
+            encode(_: _434.MsgDeleteSuperResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _434.MsgDeleteSuperResponse;
+            fromJSON(_: any): _434.MsgDeleteSuperResponse;
+            toJSON(_: _434.MsgDeleteSuperResponse): unknown;
+            fromPartial(_: {}): _434.MsgDeleteSuperResponse;
         };
         QuerySupersRequest: {
-            encode(message: _365.QuerySupersRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _365.QuerySupersRequest;
-            fromJSON(object: any): _365.QuerySupersRequest;
-            toJSON(message: _365.QuerySupersRequest): unknown;
+            encode(message: _433.QuerySupersRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _433.QuerySupersRequest;
+            fromJSON(object: any): _433.QuerySupersRequest;
+            toJSON(message: _433.QuerySupersRequest): unknown;
             fromPartial(object: {
                 pagination?: {
                     key?: Uint8Array;
@@ -135,17 +135,17 @@ export declare namespace irishub {
                     countTotal?: boolean;
                     reverse?: boolean;
                 };
-            }): _365.QuerySupersRequest;
+            }): _433.QuerySupersRequest;
         };
         QuerySupersResponse: {
-            encode(message: _365.QuerySupersResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _365.QuerySupersResponse;
-            fromJSON(object: any): _365.QuerySupersResponse;
-            toJSON(message: _365.QuerySupersResponse): unknown;
+            encode(message: _433.QuerySupersResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _433.QuerySupersResponse;
+            fromJSON(object: any): _433.QuerySupersResponse;
+            toJSON(message: _433.QuerySupersResponse): unknown;
             fromPartial(object: {
                 supers?: {
                     description?: string;
-                    accountType?: _364.AccountType;
+                    accountType?: _432.AccountType;
                     address?: string;
                     addedBy?: string;
                 }[];
@@ -153,51 +153,51 @@ export declare namespace irishub {
                     nextKey?: Uint8Array;
                     total?: any;
                 };
-            }): _365.QuerySupersResponse;
+            }): _433.QuerySupersResponse;
         };
-        accountTypeFromJSON(object: any): _364.AccountType;
-        accountTypeToJSON(object: _364.AccountType): string;
-        AccountType: typeof _364.AccountType;
+        accountTypeFromJSON(object: any): _432.AccountType;
+        accountTypeToJSON(object: _432.AccountType): string;
+        AccountType: typeof _432.AccountType;
         Super: {
-            encode(message: _364.Super, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _364.Super;
-            fromJSON(object: any): _364.Super;
-            toJSON(message: _364.Super): unknown;
+            encode(message: _432.Super, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _432.Super;
+            fromJSON(object: any): _432.Super;
+            toJSON(message: _432.Super): unknown;
             fromPartial(object: {
                 description?: string;
-                accountType?: _364.AccountType;
+                accountType?: _432.AccountType;
                 address?: string;
                 addedBy?: string;
-            }): _364.Super;
+            }): _432.Super;
         };
         GenesisState: {
-            encode(message: _363.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _363.GenesisState;
-            fromJSON(object: any): _363.GenesisState;
-            toJSON(message: _363.GenesisState): unknown;
+            encode(message: _431.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _431.GenesisState;
+            fromJSON(object: any): _431.GenesisState;
+            toJSON(message: _431.GenesisState): unknown;
             fromPartial(object: {
                 supers?: {
                     description?: string;
-                    accountType?: _364.AccountType;
+                    accountType?: _432.AccountType;
                     address?: string;
                     addedBy?: string;
                 }[];
-            }): _363.GenesisState;
+            }): _431.GenesisState;
         };
     };
     const mint: {
         QueryParamsRequest: {
-            encode(_: _369.QueryParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _369.QueryParamsRequest;
-            fromJSON(_: any): _369.QueryParamsRequest;
-            toJSON(_: _369.QueryParamsRequest): unknown;
-            fromPartial(_: {}): _369.QueryParamsRequest;
+            encode(_: _437.QueryParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _437.QueryParamsRequest;
+            fromJSON(_: any): _437.QueryParamsRequest;
+            toJSON(_: _437.QueryParamsRequest): unknown;
+            fromPartial(_: {}): _437.QueryParamsRequest;
         };
         QueryParamsResponse: {
-            encode(message: _369.QueryParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _369.QueryParamsResponse;
-            fromJSON(object: any): _369.QueryParamsResponse;
-            toJSON(message: _369.QueryParamsResponse): unknown;
+            encode(message: _437.QueryParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _437.QueryParamsResponse;
+            fromJSON(object: any): _437.QueryParamsResponse;
+            toJSON(message: _437.QueryParamsResponse): unknown;
             fromPartial(object: {
                 params?: {
                     mintDenom?: string;
@@ -207,36 +207,36 @@ export declare namespace irishub {
                     nextKey?: Uint8Array;
                     total?: any;
                 };
-            }): _369.QueryParamsResponse;
+            }): _437.QueryParamsResponse;
         };
         Minter: {
-            encode(message: _368.Minter, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _368.Minter;
-            fromJSON(object: any): _368.Minter;
-            toJSON(message: _368.Minter): unknown;
+            encode(message: _436.Minter, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _436.Minter;
+            fromJSON(object: any): _436.Minter;
+            toJSON(message: _436.Minter): unknown;
             fromPartial(object: {
                 lastUpdate?: {
                     seconds?: any;
                     nanos?: number;
                 };
                 inflationBase?: string;
-            }): _368.Minter;
+            }): _436.Minter;
         };
         Params: {
-            encode(message: _368.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _368.Params;
-            fromJSON(object: any): _368.Params;
-            toJSON(message: _368.Params): unknown;
+            encode(message: _436.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _436.Params;
+            fromJSON(object: any): _436.Params;
+            toJSON(message: _436.Params): unknown;
             fromPartial(object: {
                 mintDenom?: string;
                 inflation?: string;
-            }): _368.Params;
+            }): _436.Params;
         };
         GenesisState: {
-            encode(message: _367.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _367.GenesisState;
-            fromJSON(object: any): _367.GenesisState;
-            toJSON(message: _367.GenesisState): unknown;
+            encode(message: _435.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _435.GenesisState;
+            fromJSON(object: any): _435.GenesisState;
+            toJSON(message: _435.GenesisState): unknown;
             fromPartial(object: {
                 minter?: {
                     lastUpdate?: {
@@ -249,7 +249,7 @@ export declare namespace irishub {
                     mintDenom?: string;
                     inflation?: string;
                 };
-            }): _367.GenesisState;
+            }): _435.GenesisState;
         };
     };
 }

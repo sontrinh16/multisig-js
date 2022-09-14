@@ -1,21 +1,21 @@
-import * as _493 from "./alloc/v1beta1/genesis";
-import * as _494 from "./alloc/v1beta1/params";
-import * as _495 from "./alloc/v1beta1/query";
+import * as _561 from "./alloc/v1beta1/genesis";
+import * as _562 from "./alloc/v1beta1/params";
+import * as _563 from "./alloc/v1beta1/query";
 export declare namespace omniflix {
     namespace alloc {
         const v1beta1: {
             QueryParamsRequest: {
-                encode(_: _495.QueryParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _495.QueryParamsRequest;
-                fromJSON(_: any): _495.QueryParamsRequest;
-                toJSON(_: _495.QueryParamsRequest): unknown;
-                fromPartial(_: {}): _495.QueryParamsRequest;
+                encode(_: _563.QueryParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _563.QueryParamsRequest;
+                fromJSON(_: any): _563.QueryParamsRequest;
+                toJSON(_: _563.QueryParamsRequest): unknown;
+                fromPartial(_: {}): _563.QueryParamsRequest;
             };
             QueryParamsResponse: {
-                encode(message: _495.QueryParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _495.QueryParamsResponse;
-                fromJSON(object: any): _495.QueryParamsResponse;
-                toJSON(message: _495.QueryParamsResponse): unknown;
+                encode(message: _563.QueryParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _563.QueryParamsResponse;
+                fromJSON(object: any): _563.QueryParamsResponse;
+                toJSON(message: _563.QueryParamsResponse): unknown;
                 fromPartial(object: {
                     params?: {
                         distributionProportions?: {
@@ -30,36 +30,36 @@ export declare namespace omniflix {
                             weight?: string;
                         }[];
                     };
-                }): _495.QueryParamsResponse;
+                }): _563.QueryParamsResponse;
             };
             WeightedAddress: {
-                encode(message: _494.WeightedAddress, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _494.WeightedAddress;
-                fromJSON(object: any): _494.WeightedAddress;
-                toJSON(message: _494.WeightedAddress): unknown;
+                encode(message: _562.WeightedAddress, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _562.WeightedAddress;
+                fromJSON(object: any): _562.WeightedAddress;
+                toJSON(message: _562.WeightedAddress): unknown;
                 fromPartial(object: {
                     address?: string;
                     weight?: string;
-                }): _494.WeightedAddress;
+                }): _562.WeightedAddress;
             };
             DistributionProportions: {
-                encode(message: _494.DistributionProportions, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _494.DistributionProportions;
-                fromJSON(object: any): _494.DistributionProportions;
-                toJSON(message: _494.DistributionProportions): unknown;
+                encode(message: _562.DistributionProportions, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _562.DistributionProportions;
+                fromJSON(object: any): _562.DistributionProportions;
+                toJSON(message: _562.DistributionProportions): unknown;
                 fromPartial(object: {
                     stakingRewards?: string;
                     nftIncentives?: string;
                     nodeHostsIncentives?: string;
                     developerRewards?: string;
                     communityPool?: string;
-                }): _494.DistributionProportions;
+                }): _562.DistributionProportions;
             };
             Params: {
-                encode(message: _494.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _494.Params;
-                fromJSON(object: any): _494.Params;
-                toJSON(message: _494.Params): unknown;
+                encode(message: _562.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _562.Params;
+                fromJSON(object: any): _562.Params;
+                toJSON(message: _562.Params): unknown;
                 fromPartial(object: {
                     distributionProportions?: {
                         stakingRewards?: string;
@@ -72,13 +72,13 @@ export declare namespace omniflix {
                         address?: string;
                         weight?: string;
                     }[];
-                }): _494.Params;
+                }): _562.Params;
             };
             GenesisState: {
-                encode(message: _493.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _493.GenesisState;
-                fromJSON(object: any): _493.GenesisState;
-                toJSON(message: _493.GenesisState): unknown;
+                encode(message: _561.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+                decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _561.GenesisState;
+                fromJSON(object: any): _561.GenesisState;
+                toJSON(message: _561.GenesisState): unknown;
                 fromPartial(object: {
                     params?: {
                         distributionProportions?: {
@@ -93,7 +93,7 @@ export declare namespace omniflix {
                             weight?: string;
                         }[];
                     };
-                }): _493.GenesisState;
+                }): _561.GenesisState;
             };
         };
     }

@@ -1,21 +1,21 @@
-import * as _53 from "../bcna/bitcannaid";
-import * as _54 from "../bcna/genesis";
-import * as _55 from "../bcna/params";
-import * as _56 from "../bcna/query";
-import * as _57 from "../bcna/supplychain";
-import * as _58 from "../bcna/tx";
-import * as _738 from "../bcna/tx.amino";
-import * as _739 from "../bcna/tx.registry";
+import * as _121 from "../bcna/bitcannaid";
+import * as _122 from "../bcna/genesis";
+import * as _123 from "../bcna/params";
+import * as _124 from "../bcna/query";
+import * as _125 from "../bcna/supplychain";
+import * as _126 from "../bcna/tx";
+import * as _808 from "../bcna/tx.amino";
+import * as _809 from "../bcna/tx.registry";
 export namespace BitCannaGlobal {
   export namespace bcna {
-    export const bcna = { ..._53,
-      ..._54,
-      ..._55,
-      ..._56,
-      ..._57,
-      ..._58,
-      ..._738,
-      ..._739
+    export const bcna = { ..._121,
+      ..._122,
+      ..._123,
+      ..._124,
+      ..._125,
+      ..._126,
+      ..._808,
+      ..._809
     };
   }
 }

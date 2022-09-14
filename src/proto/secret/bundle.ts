@@ -1,39 +1,39 @@
-import * as _600 from "./compute/v1beta1/genesis";
-import * as _601 from "./compute/v1beta1/msg";
-import * as _602 from "./compute/v1beta1/query";
-import * as _603 from "./compute/v1beta1/types";
-import * as _604 from "./intertx/v1beta1/query";
-import * as _605 from "./intertx/v1beta1/tx";
-import * as _606 from "./registration/v1beta1/genesis";
-import * as _607 from "./registration/v1beta1/msg";
-import * as _608 from "./registration/v1beta1/query";
-import * as _609 from "./registration/v1beta1/types";
-import * as _610 from "./registration/v1beta1/remote_attestation/types";
-import * as _888 from "./intertx/v1beta1/tx.amino";
-import * as _889 from "./intertx/v1beta1/tx.registry";
+import * as _668 from "./compute/v1beta1/genesis";
+import * as _669 from "./compute/v1beta1/msg";
+import * as _670 from "./compute/v1beta1/query";
+import * as _671 from "./compute/v1beta1/types";
+import * as _672 from "./intertx/v1beta1/query";
+import * as _673 from "./intertx/v1beta1/tx";
+import * as _674 from "./registration/v1beta1/genesis";
+import * as _675 from "./registration/v1beta1/msg";
+import * as _676 from "./registration/v1beta1/query";
+import * as _677 from "./registration/v1beta1/types";
+import * as _678 from "./registration/v1beta1/remote_attestation/types";
+import * as _958 from "./intertx/v1beta1/tx.amino";
+import * as _959 from "./intertx/v1beta1/tx.registry";
 export namespace secret {
   export namespace compute {
-    export const v1beta1 = { ..._600,
-      ..._601,
-      ..._602,
-      ..._603
+    export const v1beta1 = { ..._668,
+      ..._669,
+      ..._670,
+      ..._671
     };
   }
   export namespace intertx {
-    export const v1beta1 = { ..._604,
-      ..._605,
-      ..._888,
-      ..._889
+    export const v1beta1 = { ..._672,
+      ..._673,
+      ..._958,
+      ..._959
     };
   }
   export namespace registration {
-    export const v1beta1 = { ..._606,
-      ..._607,
-      ..._608,
-      ..._609
+    export const v1beta1 = { ..._674,
+      ..._675,
+      ..._676,
+      ..._677
     };
     export namespace remote_attestation {
-      export const v1beta1 = { ..._610
+      export const v1beta1 = { ..._678
       };
     }
   }

@@ -1,91 +1,91 @@
-import * as _656 from "./admin/v1/query";
-import * as _657 from "./admin/v1/tx";
-import * as _658 from "./admin/v1/types";
-import * as _659 from "./clp/v1/genesis";
-import * as _660 from "./clp/v1/params";
-import * as _661 from "./clp/v1/pool";
-import * as _662 from "./clp/v1/querier";
-import * as _663 from "./clp/v1/tx";
-import * as _664 from "./clp/v1/types";
-import * as _665 from "./dispensation/v1/query";
-import * as _666 from "./dispensation/v1/tx";
-import * as _667 from "./dispensation/v1/types";
-import * as _668 from "./ethbridge/v1/query";
-import * as _669 from "./ethbridge/v1/tx";
-import * as _670 from "./ethbridge/v1/types";
-import * as _671 from "./margin/v1/query";
-import * as _672 from "./margin/v1/tx";
-import * as _673 from "./margin/v1/types";
-import * as _674 from "./oracle/v1/types";
-import * as _675 from "./tokenregistry/v1/query";
-import * as _676 from "./tokenregistry/v1/tx";
-import * as _677 from "./tokenregistry/v1/types";
-import * as _890 from "./admin/v1/tx.amino";
-import * as _891 from "./clp/v1/tx.amino";
-import * as _892 from "./dispensation/v1/tx.amino";
-import * as _893 from "./ethbridge/v1/tx.amino";
-import * as _894 from "./margin/v1/tx.amino";
-import * as _895 from "./tokenregistry/v1/tx.amino";
-import * as _896 from "./admin/v1/tx.registry";
-import * as _897 from "./clp/v1/tx.registry";
-import * as _898 from "./dispensation/v1/tx.registry";
-import * as _899 from "./ethbridge/v1/tx.registry";
-import * as _900 from "./margin/v1/tx.registry";
-import * as _901 from "./tokenregistry/v1/tx.registry";
+import * as _724 from "./admin/v1/query";
+import * as _725 from "./admin/v1/tx";
+import * as _726 from "./admin/v1/types";
+import * as _727 from "./clp/v1/genesis";
+import * as _728 from "./clp/v1/params";
+import * as _729 from "./clp/v1/pool";
+import * as _730 from "./clp/v1/querier";
+import * as _731 from "./clp/v1/tx";
+import * as _732 from "./clp/v1/types";
+import * as _733 from "./dispensation/v1/query";
+import * as _734 from "./dispensation/v1/tx";
+import * as _735 from "./dispensation/v1/types";
+import * as _736 from "./ethbridge/v1/query";
+import * as _737 from "./ethbridge/v1/tx";
+import * as _738 from "./ethbridge/v1/types";
+import * as _739 from "./margin/v1/query";
+import * as _740 from "./margin/v1/tx";
+import * as _741 from "./margin/v1/types";
+import * as _742 from "./oracle/v1/types";
+import * as _743 from "./tokenregistry/v1/query";
+import * as _744 from "./tokenregistry/v1/tx";
+import * as _745 from "./tokenregistry/v1/types";
+import * as _960 from "./admin/v1/tx.amino";
+import * as _961 from "./clp/v1/tx.amino";
+import * as _962 from "./dispensation/v1/tx.amino";
+import * as _963 from "./ethbridge/v1/tx.amino";
+import * as _964 from "./margin/v1/tx.amino";
+import * as _965 from "./tokenregistry/v1/tx.amino";
+import * as _966 from "./admin/v1/tx.registry";
+import * as _967 from "./clp/v1/tx.registry";
+import * as _968 from "./dispensation/v1/tx.registry";
+import * as _969 from "./ethbridge/v1/tx.registry";
+import * as _970 from "./margin/v1/tx.registry";
+import * as _971 from "./tokenregistry/v1/tx.registry";
 export namespace sifnode {
   export namespace admin {
-    export const v1 = { ..._656,
-      ..._657,
-      ..._658,
-      ..._890,
-      ..._896
+    export const v1 = { ..._724,
+      ..._725,
+      ..._726,
+      ..._960,
+      ..._966
     };
   }
   export namespace clp {
-    export const v1 = { ..._659,
-      ..._660,
-      ..._661,
-      ..._662,
-      ..._663,
-      ..._664,
-      ..._891,
-      ..._897
+    export const v1 = { ..._727,
+      ..._728,
+      ..._729,
+      ..._730,
+      ..._731,
+      ..._732,
+      ..._961,
+      ..._967
     };
   }
   export namespace dispensation {
-    export const v1 = { ..._665,
-      ..._666,
-      ..._667,
-      ..._892,
-      ..._898
+    export const v1 = { ..._733,
+      ..._734,
+      ..._735,
+      ..._962,
+      ..._968
     };
   }
   export namespace ethbridge {
-    export const v1 = { ..._668,
-      ..._669,
-      ..._670,
-      ..._893,
-      ..._899
+    export const v1 = { ..._736,
+      ..._737,
+      ..._738,
+      ..._963,
+      ..._969
     };
   }
   export namespace margin {
-    export const v1 = { ..._671,
-      ..._672,
-      ..._673,
-      ..._894,
-      ..._900
+    export const v1 = { ..._739,
+      ..._740,
+      ..._741,
+      ..._964,
+      ..._970
     };
   }
   export namespace oracle {
-    export const v1 = { ..._674
+    export const v1 = { ..._742
     };
   }
   export namespace tokenregistry {
-    export const v1 = { ..._675,
-      ..._676,
-      ..._677,
-      ..._895,
-      ..._901
+    export const v1 = { ..._743,
+      ..._744,
+      ..._745,
+      ..._965,
+      ..._971
     };
   }
 }

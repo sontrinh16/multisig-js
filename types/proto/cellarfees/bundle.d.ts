@@ -1,55 +1,55 @@
-import * as _678 from "../sommelier/cellarfees/v1/genesis";
-import * as _679 from "../sommelier/cellarfees/v1/params";
-import * as _680 from "../sommelier/cellarfees/v1/query";
+import * as _746 from "../sommelier/cellarfees/v1/genesis";
+import * as _747 from "../sommelier/cellarfees/v1/params";
+import * as _748 from "../sommelier/cellarfees/v1/query";
 export declare namespace cellarfees {
     const v1: {
         QueryParamsRequest: {
-            encode(_: _680.QueryParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _680.QueryParamsRequest;
-            fromJSON(_: any): _680.QueryParamsRequest;
-            toJSON(_: _680.QueryParamsRequest): unknown;
-            fromPartial(_: {}): _680.QueryParamsRequest;
+            encode(_: _748.QueryParamsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _748.QueryParamsRequest;
+            fromJSON(_: any): _748.QueryParamsRequest;
+            toJSON(_: _748.QueryParamsRequest): unknown;
+            fromPartial(_: {}): _748.QueryParamsRequest;
         };
         QueryParamsResponse: {
-            encode(message: _680.QueryParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _680.QueryParamsResponse;
-            fromJSON(object: any): _680.QueryParamsResponse;
-            toJSON(message: _680.QueryParamsResponse): unknown;
+            encode(message: _748.QueryParamsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _748.QueryParamsResponse;
+            fromJSON(object: any): _748.QueryParamsResponse;
+            toJSON(message: _748.QueryParamsResponse): unknown;
             fromPartial(object: {
                 params?: {};
-            }): _680.QueryParamsResponse;
+            }): _748.QueryParamsResponse;
         };
         QueryModuleAccountsRequest: {
-            encode(_: _680.QueryModuleAccountsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _680.QueryModuleAccountsRequest;
-            fromJSON(_: any): _680.QueryModuleAccountsRequest;
-            toJSON(_: _680.QueryModuleAccountsRequest): unknown;
-            fromPartial(_: {}): _680.QueryModuleAccountsRequest;
+            encode(_: _748.QueryModuleAccountsRequest, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _748.QueryModuleAccountsRequest;
+            fromJSON(_: any): _748.QueryModuleAccountsRequest;
+            toJSON(_: _748.QueryModuleAccountsRequest): unknown;
+            fromPartial(_: {}): _748.QueryModuleAccountsRequest;
         };
         QueryModuleAccountsResponse: {
-            encode(message: _680.QueryModuleAccountsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _680.QueryModuleAccountsResponse;
-            fromJSON(object: any): _680.QueryModuleAccountsResponse;
-            toJSON(message: _680.QueryModuleAccountsResponse): unknown;
+            encode(message: _748.QueryModuleAccountsResponse, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _748.QueryModuleAccountsResponse;
+            fromJSON(object: any): _748.QueryModuleAccountsResponse;
+            toJSON(message: _748.QueryModuleAccountsResponse): unknown;
             fromPartial(object: {
                 feesAddress?: string;
-            }): _680.QueryModuleAccountsResponse;
+            }): _748.QueryModuleAccountsResponse;
         };
         Params: {
-            encode(_: _679.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _679.Params;
-            fromJSON(_: any): _679.Params;
-            toJSON(_: _679.Params): unknown;
-            fromPartial(_: {}): _679.Params;
+            encode(_: _747.Params, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _747.Params;
+            fromJSON(_: any): _747.Params;
+            toJSON(_: _747.Params): unknown;
+            fromPartial(_: {}): _747.Params;
         };
         GenesisState: {
-            encode(message: _678.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
-            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _678.GenesisState;
-            fromJSON(object: any): _678.GenesisState;
-            toJSON(message: _678.GenesisState): unknown;
+            encode(message: _746.GenesisState, writer?: import("protobufjs").Writer): import("protobufjs").Writer;
+            decode(input: Uint8Array | import("protobufjs").Reader, length?: number): _746.GenesisState;
+            fromJSON(object: any): _746.GenesisState;
+            toJSON(message: _746.GenesisState): unknown;
             fromPartial(object: {
                 params?: {};
-            }): _678.GenesisState;
+            }): _746.GenesisState;
         };
     };
 }
